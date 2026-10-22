@@ -1,0 +1,13 @@
+# Obsidian workspace state (keep personal layouts out of Git)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*~
+
+# Local validation caches
+__pycache__/
+*.pyc
