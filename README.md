@@ -34,19 +34,29 @@ flowchart LR
 
 GitHub renders mathematics and Mermaid in Markdown previews. In Obsidian, enable core **MathJax** support if it has been disabled; Mermaid rendering is built in.
 
+## Lecture-aligned exam track
+
+The Russian exam track uses `МАТАН_Л` as its primary source and preserves lecture numbering:
+
+- [17 lecture sections and 148 original numbered items](MathInMind/ru/lectures/index.md), plus a clearly labelled reconstruction of Theorem 6.4.1;
+- [72 individual exam-ticket answers](MathInMind/ru/exam/index.md) with worked examples;
+- [54 Purgatory definitions](MathInMind/ru/purgatory/definitions.md) linked to 53 supplied scans and a transparent reconstruction for missing scan 15;
+- [300 possible Purgatory question themes](MathInMind/ru/purgatory/questions.md).
+
 ## Source archive
 
 The supplied `MathInMind.zip.txt` was a ZIP archive and has been unpacked unchanged into [`source/MathInMind`](source/README.md). Those Russian lectures and diagrams are retained as reference material. The trilingual course in `MathInMind` is a newly structured presentation, not a mechanical translation of those files or a reproduction of any textbook.
 
 ## Quality checks
 
-Run the dependency-free validation script:
+Run the dependency-free validation scripts:
 
 ```bash
 python3 scripts/validate_course.py
+python3 scripts/validate_exam_track.py
 ```
 
-It checks language parity, YAML metadata, local links, balanced code fences and display-math delimiters, and basic Mermaid safety.
+They check language parity, lecture-number coverage, all 72 tickets, Purgatory assets and numbering, YAML metadata, local links, balanced code fences and display-math delimiters, and basic Mermaid safety.
 
 ## References and authorship
 

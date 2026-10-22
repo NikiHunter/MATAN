@@ -11,4 +11,4 @@ The archive includes:
 
 The original filenames and contents are intentionally preserved for traceability. These files are **source material**, not the normalized trilingual course. Some Obsidian wiki-style image links in the legacy notes are not expected to render as links on GitHub. New course files use portable relative Markdown links instead.
 
-The curated course starts at [`../MathInMind/en/index.md`](../MathInMind/en/index.md), with parallel Russian and Spanish editions.
+The curated course starts at [`../MathInMind/en/index.md`](../MathInMind/en/index.md), with parallel Russian and Spanish editions. The lecture-number-preserving expansion is in [`../MathInMind/ru/lectures/index.md`](../MathInMind/ru/lectures/index.md), with separate exam-ticket and Purgatory sections linked from there.
