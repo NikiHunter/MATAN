@@ -22,6 +22,11 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 13 | 16 oct 2025 | Límites superior e inferior, sucesiones fundamentales, criterio de Bolzano–Cauchy | [lecture-13.md](lecture-13.md) | `ma25_26_лекция_13_notes.pdf` |
 | 14 | 16 oct 2025 | Puntos de acumulación y puntos aislados, límite de una función por Cauchy y por Heine, unicidad, acotación local | [lecture-14.md](lecture-14.md) | `ма25_26_лекция_14_notes.pdf` |
 | 15 | 23 oct 2025 | Conservación del signo, aritmética de límites de funciones, composición, límites laterales, funciones monótonas, criterio de Cauchy para funciones | [lecture-15.md](lecture-15.md) | `ма25_26_лекция_15_notes_pdf.pdf` |
+| 16 | 23 oct 2025 | Continuidad en un punto (5 formas), discontinuidades de 1.ª y 2.ª especie, discontinuidad evitable, funciones de Dirichlet y de Riemann, C(D) | [lecture-16.md](lecture-16.md) | `ма25_26_лекция_16_notes.pdf` |
+| 17–18 | 30 oct 2025 | Aritmética y composición de funciones continuas, teorema de Weierstrass, continuidad uniforme, teoremas de Cantor y de Bolzano–Cauchy | [lecture-17-18.md](lecture-17-18.md) | `ma25_26-lectures_17-18_notes.pdf` |
+| 19–20 | 6 nov 2025 | Funciones monótonas y función inversa, los cinco límites notables | [lecture-19-20.md](lecture-19-20.md) | `ma25_26-lectures_19-20_notes.pdf` |
+| 21 | 13 nov 2025 | Comparación de funciones: O, o, equivalencia; asíntotas verticales, oblicuas y horizontales | [lecture-21.md](lecture-21.md) | `ma25_26_lecture_21_notes.pdf` |
+| 22–23 | 13 nov 2025 | Derivada y diferenciabilidad, criterio de diferenciabilidad, la tangente como límite de secantes, reglas de derivación, regla de la cadena | [lecture-22-23.md](lecture-22-23.md) | `ma25_26_lectures_22-23_notes.pdf` |
 
 Las figuras extraídas de las páginas manuscritas están en la carpeta común [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
@@ -44,4 +49,9 @@ flowchart LR
     I --> J["Lección 13: límites superior e inferior, criterio de Cauchy"]
     J --> K["Lección 14: límite de una función por Cauchy y Heine"]
     K --> L["Lección 15: límites laterales, funciones monótonas"]
+    L --> M["Lección 16: continuidad y discontinuidades"]
+    M --> N["Lecciones 17–18: Weierstrass, Cantor, Bolzano–Cauchy"]
+    N --> O["Lecciones 19–20: funciones monótonas, límites notables"]
+    O --> P["Lección 21: O, o, equivalencia, asíntotas"]
+    P --> Q["Lecciones 22–23: derivada y reglas de derivación"]
 ```
