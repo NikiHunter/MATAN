@@ -24,8 +24,6 @@ source: "ма25_26_лекция_3_notes.pdf"
 - We give examples of countable and uncountable sets.
 - We talk about the continuum hypothesis and the cardinality of sets. a series of axioms of the field of real numbers (field, order and completeness axioms).
 
-> **Editor's note.** The last line of slide 3 contains the fragment "a series of axioms of the field of real numbers (field, order and completeness axioms)." It is visible on the slide image and appears to be left over from the aim of lecture 4. It is kept as written in the source and does not belong to the topic of lecture 3.
-
 ## §2. Cardinality. Countable and uncountable sets
 
 ### Slide 4. At most countable sets

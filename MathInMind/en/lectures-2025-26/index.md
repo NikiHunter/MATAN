@@ -13,20 +13,27 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 0 | 1 Sep 2025 | Sets, inclusion, mathematical logic, operations, De Morgan's laws | [lecture-00.md](lecture-00.md) | `МА2526_лекция_0.pdf` |
 | 1–2 | 4 Sep 2025 | Maps, injection, surjection, bijection, cardinality, countable sets | [lecture-01-02.md](lecture-01-02.md) | `ma25_26-lectures_1-2_notes.pdf` |
 | 3 | 11 Sep 2025 | At most countable sets, uncountability, the continuum | [lecture-03.md](lecture-03.md) | `ма25_26_лекция_3_notes.pdf` |
-| 4 | 11 Sep 2025 | Field and order axioms of the real numbers | [lecture-04.md](lecture-04.md) | `ма25_26_лекция_4_notes.pdf` |
+| 4 | 11 Sep 2025 | Axioms of the field and order of the real numbers | [lecture-04.md](lecture-04.md) | `ма25_26_лекция_4_notes.pdf` |
+| 5–6 | — | Intervals, extended real line, Archimedean and Cantor axioms, induction, binomial theorem, sup and inf | [lecture-05-06.md](lecture-05-06.md) | `ma25_26-lectures_5-6_notes.pdf` |
+| 7 | — | Maximum and minimum of a finite set, integer part, density of ℚ in ℝ | [lecture-07.md](lecture-07.md) | `ma25_26_лекция_7_notes.pdf` |
+| 8 | — | Limit of a sequence: definition, uniqueness, boundedness, passage to the limit, squeeze theorem | [lecture-08.md](lecture-08.md) | `ма25_26_лекция_8_notes.pdf` |
+| 9–10 | 2 Oct 2025 | Infinitesimal and infinitely large sequences, arithmetic of limits, indeterminate forms | [lecture-09-10.md](lecture-09-10.md) | `ma25_26-lectures_9-10_notes.pdf` |
 
-Illustrations taken from handwritten pages are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
+Figures extracted from handwritten pages are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
 ## Conventions
 
-- Numbers of definitions, theorems and corollaries are kept as on the original slides.
-- Handwritten pages are labelled "Handwritten page N (PDF p. N)".
-- Editor's notes are set as quotations and begin with "Note" or "Editor's".
-- The English translation follows the Russian source; Russian is the reference text.
+- Numbers of definitions, theorems and corollaries are kept as in the source slides. In lectures 5–6 the label "Definition 1.3.5" is repeated three times; see the note in the file.
+- Handwritten pages are headed "Handwritten page N (PDF p. N)".
+- Editor's notes are set as blockquotes and begin with "Editor's note" or "Remark".
 
 ```mermaid
 flowchart LR
     A["Lecture 0: sets"] --> B["Lectures 1–2: maps and countability"]
     B --> C["Lecture 3: at most countable sets and the continuum"]
     C --> D["Lecture 4: axioms of the real numbers"]
+    D --> E["Lectures 5–6: completeness axioms, induction, binomial"]
+    E --> F["Lecture 7: maximum, minimum, density of ℚ"]
+    F --> G["Lecture 8: limit of a sequence"]
+    G --> H["Lectures 9–10: infinitesimal and infinitely large"]
 ```

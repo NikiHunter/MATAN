@@ -24,8 +24,6 @@ source: "ма25_26_лекция_3_notes.pdf"
 - Daremos ejemplos de conjuntos numerables y no numerables.
 - Hablaremos de la hipótesis del continuo y de la cardinalidad de los conjuntos. una serie de axiomas del cuerpo de los números reales (axiomas de cuerpo, de orden y de completitud).
 
-> **Nota del editor.** La última línea de la diapositiva 3 contiene el fragmento «una serie de axiomas del cuerpo de los números reales (axiomas de cuerpo, de orden y de completitud).». Es visible en la imagen de la diapositiva y parece un resto del texto del objetivo de la lección 4. Se conserva tal como figura en la fuente y no pertenece al tema de la lección 3.
-
 ## §2. Cardinalidad. Conjuntos numerables y no numerables
 
 ### Diapositiva 4. Conjuntos a lo sumo numerables
