@@ -22,6 +22,11 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 13 | 16 Oct 2025 | Upper and lower limits, fundamental sequences, Bolzano–Cauchy criterion | [lecture-13.md](lecture-13.md) | `ma25_26_лекция_13_notes.pdf` |
 | 14 | 16 Oct 2025 | Limit points and isolated points, limit of a function by Cauchy and by Heine, uniqueness, local boundedness | [lecture-14.md](lecture-14.md) | `ма25_26_лекция_14_notes.pdf` |
 | 15 | 23 Oct 2025 | Stabilization of sign, arithmetic of function limits, composition, one-sided limits, monotone functions, Cauchy criterion for functions | [lecture-15.md](lecture-15.md) | `ма25_26_лекция_15_notes_pdf.pdf` |
+| 16 | 23 Oct 2025 | Continuity at a point (5 forms), discontinuities of the 1st and 2nd kind, removable discontinuity, Dirichlet and Riemann functions, C(D) | [lecture-16.md](lecture-16.md) | `ма25_26_лекция_16_notes.pdf` |
+| 17–18 | 30 Oct 2025 | Arithmetic and composition of continuous functions, Weierstrass theorem, uniform continuity, Cantor and Bolzano–Cauchy theorems | [lecture-17-18.md](lecture-17-18.md) | `ma25_26-lectures_17-18_notes.pdf` |
+| 19–20 | 6 Nov 2025 | Monotone functions and the inverse function, the five remarkable limits | [lecture-19-20.md](lecture-19-20.md) | `ma25_26-lectures_19-20_notes.pdf` |
+| 21 | 13 Nov 2025 | Comparison of functions: O, o, equivalence; vertical, oblique and horizontal asymptotes | [lecture-21.md](lecture-21.md) | `ma25_26_lecture_21_notes.pdf` |
+| 22–23 | 13 Nov 2025 | The derivative and differentiability, differentiability criterion, the tangent as a limit of secants, rules of differentiation, the chain rule | [lecture-22-23.md](lecture-22-23.md) | `ma25_26_lectures_22-23_notes.pdf` |
 
 Figures extracted from handwritten pages are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
@@ -44,4 +49,12 @@ flowchart LR
     I --> J["Lecture 13: upper and lower limits, Cauchy criterion"]
     J --> K["Lecture 14: limit of a function by Cauchy and Heine"]
     K --> L["Lecture 15: one-sided limits, monotone functions"]
+    L --> M["Lecture 16: continuity and discontinuities"]
+    M --> N["Lectures 17–18: Weierstrass, Cantor, Bolzano–Cauchy"]
+    N --> O["Lectures 19–20: monotone functions, remarkable limits"]
+    O --> P["Lecture 21: O, o, equivalence, asymptotes"]
+    P --> Q["Lectures 22–23: the derivative and rules of differentiation"]
+    Q --> R["Lectures 24–26: inverse function, mean value theorems, L'Hopital"]
+    R --> S["Lectures 27–28: higher derivatives, Taylor-Peano"]
+    S --> T["Lectures 29–30: Taylor-Lagrange, monotonicity, extrema"]
 ```
