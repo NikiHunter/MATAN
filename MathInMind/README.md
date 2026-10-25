@@ -8,6 +8,12 @@ Choose a language:
 
 The language folders have identical chapter numbers and filenames. This makes it easy to compare terminology while keeping each course independently readable.
 
+## Lecture notes 2025/26 (trilingual)
+
+- [Index in English](en/lectures-2025-26/index.md)
+- [Указатель на русском](ru/lectures-2025-26/index.md)
+- [Índice en español](es/lectures-2025-26/index.md)
+
 ## Lecture-aligned exam track (Russian)
 
 - [Lecture register with original numbering](ru/lectures/index.md)

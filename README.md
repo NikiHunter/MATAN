@@ -10,6 +10,16 @@ A comprehensive, trilingual mathematical analysis course written in portable Mar
 
 Open the `MathInMind` folder as an Obsidian vault, or browse the same files directly on GitHub. No plugins or build step are required.
 
+## Lecture notes 2025/26
+
+Transcriptions of the 2025/26 Mathematical Analysis lectures (lecture 0, lectures 1–2, lectures 3 and 4) are available in three languages:
+
+- [Русский](MathInMind/ru/lectures-2025-26/index.md)
+- [English](MathInMind/en/lectures-2025-26/index.md)
+- [Español](MathInMind/es/lectures-2025-26/index.md)
+
+Typed slides were extracted from the PDF text layers; handwritten pages were transcribed from images, and their figures are embedded as illustrations from [`MathInMind/assets/lectures-2025-26/`](MathInMind/assets/lectures-2025-26/).
+
 ## What is included
 
 The 21 chapters move from logic and the real numbers to sequences, series, differential and integral calculus, functions of several variables, vector calculus, measure theory, Lebesgue integration, and $L^p$ spaces. Every chapter contains learning goals, precise definitions, core theorems, examples, common mistakes, and exercises with short answers. Each language also has a notation guide, formula sheet, and glossary.
