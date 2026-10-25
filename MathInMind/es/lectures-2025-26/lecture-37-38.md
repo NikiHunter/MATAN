@@ -515,4 +515,4 @@ flowchart TD
 
 ---
 
-Anterior: [lección 36](lecture-36.md) · Continuación del tema en la carpeta duplicada: [§4.2 «Integral de Riemann»](../../ru/lectures/03-riemann-integral-4-2.md).
+Anterior: [lección 36](lecture-36.md) · Siguientes: [lecciones 39–40](lecture-39-40.md) · Continuación del tema en la carpeta duplicada: [§4.2 «Integral de Riemann»](../../ru/lectures/03-riemann-integral-4-2.md).

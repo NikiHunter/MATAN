@@ -8,7 +8,7 @@ lang: es
 
 Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de D. E. Apushkinskaya (Universidad RUDN). Las diapositivas impresas se extrajeron de la capa de texto del PDF, las páginas manuscritas se transcribieron a partir de su imagen, y las figuras se incluyen como ilustraciones. Las fórmulas usan LaTeX (MathJax) y los diagramas, Mermaid; ambos funcionan en Obsidian y en GitHub.
 
-**Cobertura: lecciones 0–38 sin lagunas, en ruso, inglés y español.** El semestre 1 termina con la lección 32; el semestre 2 abarca las lecciones 33–64. Para las lecciones 31–38 se revisaron las 123 páginas de los cinco nuevos PDF; las 17 figuras JPEG compartidas se inspeccionaron individualmente. Las páginas y las sumas de comprobación de las fuentes constan en el [manifiesto](../../assets/lectures-2025-26/figures-31-38.json).
+**Cobertura: lecciones 0–44 sin lagunas, en ruso, inglés y español.** El semestre 1 termina con la lección 32; el semestre 2 abarca las lecciones 33–64. Las lecciones 31–38 cubren 123 páginas de cinco PDF y 17 figuras; las lecciones 39–44, las 94 páginas de tres PDF y otras 17 figuras. Total: 217 páginas de ocho fuentes y 34 recortes JPEG compartidos, comprobados individualmente. Manifiestos: [31–38](../../assets/lectures-2025-26/figures-31-38.json) y [39–44](../../assets/lectures-2025-26/figures-39-44.json); [extracción y revisión de la nueva entrega](../../assets/lectures-2025-26/provenance-39-44.md).
 
 ## Semestre 1 — lecciones 0–32
 
@@ -36,9 +36,9 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 29–30 | 11 dic 2025 | Fórmula de Taylor–Lagrange, desarrollos de Taylor–Peano de las funciones elementales, estimación del resto, criterio de monotonía, extremos | [lecture-29-30.md](lecture-29-30.md) | `ma25_26-lectures_29-30_notes.pdf` |
 | 31–32 | 18 dic 2025 | Condiciones necesarias y suficientes de extremo, teorema de Darboux, convexidad y lema de las tres cuerdas; fin del semestre 1 | [lecture-31-32.md](lecture-31-32.md) | `ma25_26-lectures_31-32_notes.pdf` |
 
-## Semestre 2 — lecciones 33–64 (aquí: 33–38)
+## Semestre 2 — lecciones 33–64 (aquí: 33–44)
 
-> **Duplicación del semestre 2.** El material de las lecciones 33–64 ya está representado en la [carpeta rusa `ru/lectures/`](../../ru/lectures/index.md) y en el [archivo original `МАТАН_Л/`](../../../source/MathInMind/МАТАН_Л/). Los archivos 33–38 de abajo son transcripciones ilustradas completas de los nuevos PDF, no simples remisiones. Secciones coincidentes: [§3.8](../../ru/lectures/01-convexity-3-8.md), [§4.1](../../ru/lectures/02-antiderivatives-4-1.md) y [el inicio de §4.2](../../ru/lectures/03-riemann-integral-4-2.md). La continuación, 39–64, está disponible por ahora en esa carpeta existente, no en esta serie.
+> **Duplicación del semestre 2.** El material de las lecciones 33–64 ya está representado en la [carpeta rusa `ru/lectures/`](../../ru/lectures/index.md) y en el [archivo original `МАТАН_Л/`](../../../source/MathInMind/МАТАН_Л/). Los archivos 33–44 de abajo son transcripciones ilustradas completas de los nuevos PDF, no simples remisiones. Secciones coincidentes: [§3.8](../../ru/lectures/01-convexity-3-8.md), [§4.1](../../ru/lectures/02-antiderivatives-4-1.md), [§4.2](../../ru/lectures/03-riemann-integral-4-2.md) y [§4.3](../../ru/lectures/04-riemann-properties-4-3.md). La continuación, 45–64, está disponible por ahora en esa carpeta existente, no en esta serie.
 
 | Lección | Fecha | Contenido | Archivo | PDF original |
 |---|---|---|---|---|
@@ -46,15 +46,20 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 35 | 19 feb 2026 | Criterio de convexidad mediante la segunda derivada, puntos de inflexión | [lecture-35.md](lecture-35.md) | `ma25_26_lecture_35_notes.pdf` |
 | 36 | 19 feb 2026 | Primitivas, integral como familia, aritmética de conjuntos, condiciones de existencia | [lecture-36.md](lecture-36.md) | `ma25_26_lecture_36_notes.pdf` |
 | 37–38 | 26 feb 2026 | Sustitución, integración por partes, integrales racionales y no elementales, particiones y sumas de Riemann | [lecture-37-38.md](lecture-37-38.md) | `ma25_26-lectures_37-38_notes.pdf` |
+| 39–40 | 5 mar 2026 | Límite de sumas, integral de Riemann, propiedades de sumas de Darboux, acotación, oscilaciones y criterios | [lecture-39-40.md](lecture-39-40.md) | `ma25_26-lectures_39-40_notes.pdf` |
+| 41–42 | 12 mar 2026 | Funciones continuas y monótonas, cambios finitos, restricción y unión, criterio de Lebesgue, aritmética | [lecture-41-42.md](lecture-41-42.md) | `ma25_26-lectures_41-42_notes.pdf` |
+| 43–44 | 19 mar 2026 | Dirichlet y Riemann, propiedades, valor medio, Newton–Leibniz, contraejemplos, Barrow, integración por partes | [lecture-43-44.md](lecture-43-44.md) | `ma25_26-lectures_43-44_notes.pdf` |
 
-Las figuras extraídas de las páginas manuscritas están en la carpeta común [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
+Duplicados de la nueva entrega en el archivo: [39–40](../../../source/MathInMind/МАТАН_Л/Лекция%2039-40%201.md), [41–42](../../../source/MathInMind/МАТАН_Л/Лекция%2041-42.md), [43–44](../../../source/MathInMind/МАТАН_Л/Лекция%2043-44%201.md). Se conservan los sufijos originales ` 1`. En el PDF 43–44, la sustitución y el resto de Taylor solo figuran en los objetivos; el contenido efectivo termina en la integración por partes.
+
+Las figuras extraídas de las páginas PDF, incluidas las manuscritas y las anotaciones en diapositivas, están en la carpeta común [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
 ## Convenciones
 
 - Los números de definiciones, teoremas y corolarios se conservan tal como aparecen en las diapositivas originales. En las lecciones 5–6 la etiqueta «Definición 1.3.5» aparece tres veces; véase la nota en el archivo.
-- Las páginas manuscritas llevan el encabezado «Página manuscrita N (p. PDF N)».
-- Las notas del editor se presentan como citas y comienzan con «Nota del editor» u «Observación».
-- Las lecciones 31–38 distinguen números de diapositivas y de páginas PDF. La atribución de páginas manuscritas se comprobó con hojas de contacto que muestran el nombre de archivo en cada miniatura; cada recorte utilizado se vio por separado.
+- Las páginas manuscritas tienen encabezados propios con números de página PDF.
+- Las notas, explicaciones y correcciones editoriales se identifican explícitamente como citas.
+- Las lecciones 31–44 distinguen números de diapositivas y de páginas PDF. La atribución de páginas manuscritas se comprobó con hojas de contacto que muestran el nombre de archivo en cada miniatura; cada recorte utilizado se vio por separado.
 - Las hipótesis restituidas, las correcciones de erratas y las demostraciones complementarias se identifican explícitamente como editoriales, no como contenido del PDF.
 
 ```mermaid
@@ -83,4 +88,7 @@ flowchart LR
     V --> W["Lección 35: segunda derivada e inflexiones"]
     W --> X["Lección 36: primitivas e integral indefinida"]
     X --> Y["Lecciones 37–38: métodos de integración y sumas de Riemann"]
+    Y --> Z["Lecciones 39–40: integral, Darboux y criterios"]
+    Z --> AA["Lecciones 41–42: clases de funciones integrables"]
+    AA --> AB["Lecciones 43–44: propiedades, valor medio y Newton–Leibniz"]
 ```

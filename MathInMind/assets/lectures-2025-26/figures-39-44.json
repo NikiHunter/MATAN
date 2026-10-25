@@ -1,0 +1,477 @@
+{
+  "coordinate_system": "PDF points, origin top left; pages are 1-based",
+  "sources": {
+    "ma25_26-lectures_39-40_notes.pdf": {
+      "sha256": "f839a169a3e0568288d6971cd124848d50d818cf716d78d1813c9cda8c46327e",
+      "pages": 31,
+      "lecture": "39-40",
+      "lecture_file": "lecture-39-40.md",
+      "semester": 2,
+      "date": "2026-03-05",
+      "typed_slides": 13,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        12,
+        22,
+        23,
+        24,
+        28,
+        30
+      ],
+      "handwritten_pdf_pages": [
+        5,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        29,
+        31
+      ],
+      "duplicate_sections": [
+        "03-riemann-integral-4-2.md"
+      ],
+      "archive_file": "Лекция 39-40 1.md"
+    },
+    "ma25_26-lectures_41-42_notes.pdf": {
+      "sha256": "8f4e51f802d172ea656707a67ffa927ff430b689683cc20f4bbcc07381ae3478",
+      "pages": 25,
+      "lecture": "41-42",
+      "lecture_file": "lecture-41-42.md",
+      "semester": 2,
+      "date": "2026-03-12",
+      "typed_slides": 11,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        10,
+        12,
+        16,
+        19,
+        20,
+        21
+      ],
+      "handwritten_pdf_pages": [
+        5,
+        6,
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25
+      ],
+      "duplicate_sections": [
+        "03-riemann-integral-4-2.md"
+      ],
+      "archive_file": "Лекция 41-42.md"
+    },
+    "ma25_26-lectures_43-44_notes.pdf": {
+      "sha256": "0cbb7fce355f1ff5affaf91ea06943ee85ad0abc1340897f2bc78212a07d0e5d",
+      "pages": 38,
+      "lecture": "43-44",
+      "lecture_file": "lecture-43-44.md",
+      "semester": 2,
+      "date": "2026-03-19",
+      "typed_slides": 16,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        14,
+        17,
+        20,
+        22,
+        23,
+        24,
+        25,
+        28,
+        30,
+        33,
+        37
+      ],
+      "handwritten_pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        15,
+        16,
+        18,
+        19,
+        21,
+        26,
+        27,
+        29,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38
+      ],
+      "duplicate_sections": [
+        "03-riemann-integral-4-2.md",
+        "04-riemann-properties-4-3.md"
+      ],
+      "archive_file": "Лекция 43-44 1.md"
+    }
+  },
+  "figures": [
+    {
+      "file": "lec39-40-p02-riemann-lebesgue-trees.jpg",
+      "source": "ma25_26-lectures_39-40_notes.pdf",
+      "pdf_page": 2,
+      "crop_box": [
+        43.54,
+        46.261,
+        319.295,
+        247.635
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 883,
+      "height": 645,
+      "sha256": "e0770e53d7bb7522e29f8bc89f642d04fd4b43ddc7b11e556ea7323391c4b209",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec39-40-p10-darboux-sums.jpg",
+      "source": "ma25_26-lectures_39-40_notes.pdf",
+      "pdf_page": 10,
+      "crop_box": [
+        54.717,
+        14.88,
+        791.292,
+        586.272
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 1164,
+      "sha256": "eba402716d98088d1b277cb0bfc22473993376a7b58e3183730f0f22ecd8c2b6",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec39-40-p17-unbounded-function.jpg",
+      "source": "ma25_26-lectures_39-40_notes.pdf",
+      "pdf_page": 17,
+      "crop_box": [
+        54.717,
+        14.88,
+        799.71,
+        416.64
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 810,
+      "sha256": "1e1a103e338808b34f323d508aeee2e5ff81d6ee361a4b95be3485242a438dc7",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec39-40-p20-one-point-refinement.jpg",
+      "source": "ma25_26-lectures_39-40_notes.pdf",
+      "pdf_page": 20,
+      "crop_box": [
+        58.926,
+        11.904,
+        808.128,
+        136.896
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 252,
+      "sha256": "c9d1ea949f18a4cbd0bf9ca211fcca1b83322a9a6cd5fa4a3dd950878b5c7aab",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec39-40-p21-common-refinement.jpg",
+      "source": "ma25_26-lectures_39-40_notes.pdf",
+      "pdf_page": 21,
+      "crop_box": [
+        412.482,
+        422.592,
+        791.292,
+        586.272
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1214,
+      "height": 525,
+      "sha256": "8ddcbd908e82f6c4847b2f170eaf4ac281b44a4d04032b4766a1361a6d5e200b",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p10-finite-changes.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 10,
+      "crop_box": [
+        181.417,
+        34.016,
+        344.693,
+        111.572
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 524,
+      "height": 250,
+      "sha256": "dc8c4754b4bcc2ecc6b405c08eaaee6e3619d476859e4c8bf5647c1fe1d986ce",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p12-restriction.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 12,
+      "crop_box": [
+        170.532,
+        54.425,
+        337.437,
+        117.014
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 535,
+      "height": 201,
+      "sha256": "cf47060e7401c2a94ddc42bac25d32b0a2116468e526fae98f1d2a1943b4179e",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p12-gluing.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 12,
+      "crop_box": [
+        79.824,
+        190.488,
+        308.41,
+        244.913
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 732,
+      "height": 175,
+      "sha256": "b99af3372a418dd7afb159ef4ed4bfab67183cd7303f983b0c4d255975b2eb85",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p13-extended-partition.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 13,
+      "crop_box": [
+        67.344,
+        282.72,
+        791.292,
+        482.112
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 414,
+      "sha256": "3449febf3b54dcef2db0c7337db8bb2b3520e4ef5f035b06cb2ebf36aa2e5d51",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p15-crossing-interval.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 15,
+      "crop_box": [
+        159.942,
+        196.416,
+        673.44,
+        285.696
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 262,
+      "sha256": "d9cf97ad2a30836cfeaa4d07b0a6b6d81b2e9652cfe22bd5a5751c630cdadc9c",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p17-piecewise-partition.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 17,
+      "crop_box": [
+        67.344,
+        190.464,
+        791.292,
+        294.624
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 217,
+      "sha256": "fa57571b5e19de6be723c98be8981d2e2a7e1bc54c805bca35649ed63596af97",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec41-42-p18-continuous-integrable-classes.jpg",
+      "source": "ma25_26-lectures_41-42_notes.pdf",
+      "pdf_page": 18,
+      "crop_box": [
+        155.733,
+        252.96,
+        673.44,
+        488.064
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 683,
+      "sha256": "b1ade5ddadc27a19260c214a43501f7a690c810f3a640df914b0ae780b76b6de",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec43-44-p06-bounded-denominators.jpg",
+      "source": "ma25_26-lectures_43-44_notes.pdf",
+      "pdf_page": 6,
+      "crop_box": [
+        46.299,
+        8.928,
+        791.292,
+        291.648
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 571,
+      "sha256": "d28b31d4abcd2becf50ef2ff1c5f3409865538b5fa66b88de28c11ca6f25baa1",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec43-44-p11-additivity-partition.jpg",
+      "source": "ma25_26-lectures_43-44_notes.pdf",
+      "pdf_page": 11,
+      "crop_box": [
+        75.762,
+        160.704,
+        791.292,
+        547.584
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 812,
+      "sha256": "c220322df6c2813c8dbd2245560d4eddc07b14e575e5b3d7b0d3d4a4ffc0bb7a",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec43-44-p24-mean-value-rectangle.jpg",
+      "source": "ma25_26-lectures_43-44_notes.pdf",
+      "pdf_page": 24,
+      "crop_box": [
+        126.992,
+        176.882,
+        235.843,
+        260.425
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 655,
+      "height": 502,
+      "sha256": "412a300a487a03608da2363276e5656bfe0a3bda253cc3264e003c9194276fc0",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec43-44-p26-newton-leibniz-partition.jpg",
+      "source": "ma25_26-lectures_43-44_notes.pdf",
+      "pdf_page": 26,
+      "crop_box": [
+        84.18,
+        110.112,
+        791.292,
+        226.176
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 247,
+      "sha256": "6a7a6593fced7acc9e80a44cd1eea21cfafa4749beb7e45d5395ca8207485cee",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec43-44-p34-finite-exceptional-points.jpg",
+      "source": "ma25_26-lectures_43-44_notes.pdf",
+      "pdf_page": 34,
+      "crop_box": [
+        71.553,
+        264.864,
+        740.784,
+        342.24
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1501,
+      "height": 175,
+      "sha256": "bd9096d9ebdc3c0f65dbaf73dd371b70ff46b53d4afa78b194065ec0b8dd374e",
+      "reviewed_individually": true
+    }
+  ],
+  "review_method": "Every page reviewed against the text layer and contact sheets with the source filename burned into every tile. Handwriting with garbage OCR is classified visually. Each final figure is opened separately before use."
+}

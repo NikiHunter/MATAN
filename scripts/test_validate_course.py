@@ -14,7 +14,7 @@ import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import call, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import validate_course as course
@@ -132,7 +132,9 @@ class ChronologyRegressionTests(unittest.TestCase):
         self.assertTrue(any("duplicate/extra=[32]" in e for e in self.run_tree()))
 
 
-class BatchRegressionTests(unittest.TestCase):
+class BatchFixture:
+    batch = "31-38"
+
     def setUp(self) -> None:
         course.errors.clear()
         temporary = tempfile.TemporaryDirectory()
@@ -140,11 +142,11 @@ class BatchRegressionTests(unittest.TestCase):
         self.root = Path(temporary.name)
         self.vault = self.root / "MathInMind"
         self.assets = self.vault / "assets" / course.LECTURE_DIRECTORY
-        manifest = course.VAULT / "assets" / course.LECTURE_DIRECTORY / "figures-31-38.json"
+        manifest = course.VAULT / "assets" / course.LECTURE_DIRECTORY / f"figures-{self.batch}.json"
         data = json.loads(manifest.read_text(encoding="utf-8"))
         paths = [manifest] + [manifest.parent / f["file"] for f in data["figures"]]
         paths += [course.VAULT / lang / course.LECTURE_DIRECTORY / name
-                  for lang in course.LANGUAGES for name in course.NEW_LECTURES]
+                  for lang in course.LANGUAGES for name in course.LECTURE_BATCHES[self.batch]]
         for source in paths:
             target = self.root / source.relative_to(course.ROOT)
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -160,9 +162,11 @@ class BatchRegressionTests(unittest.TestCase):
 
     def run_batch(self) -> tuple[int, list[str]]:
         with patch.multiple(course, ROOT=self.root, VAULT=self.vault):
-            count = course.check_new_lecture_batch()
+            count = course.check_new_lecture_batch(self.batch)
         return count, list(course.errors)
 
+
+class BatchRegressionTests(BatchFixture, unittest.TestCase):
     def test_complete_batch_passes(self) -> None:
         self.assertEqual(self.run_batch(), (17, []))
 
@@ -209,6 +213,158 @@ class BatchRegressionTests(unittest.TestCase):
         count, errors = self.run_batch()
         self.assertEqual(count, 0)
         self.assertTrue(any("invalid/missing provenance manifest" in e for e in errors))
+
+
+class ExtendedHelperTests(unittest.TestCase):
+    def test_printed_and_typed_slide_aliases(self) -> None:
+        for name in ("Typed", "Printed"):
+            for plural, span, pdf in (("", "4", "p. 4"), ("s", "1–3", "pp. 1–3")):
+                with self.subTest(name=name, span=span):
+                    heading = f"### {name} slide{plural} {span} (PDF {pdf}). Topic"
+                    expected = Counter(course.number_range(span))
+                    self.assertEqual(course.heading_coverage(heading, "slides"), expected)
+                    self.assertEqual(course.heading_coverage(heading, "pdf"), expected)
+
+    def test_combined_printed_and_handwritten_headings(self) -> None:
+        for heading in (
+            "### Printed slide 5 and handwritten page (PDF pp. 6–7). Integral",
+            "### Печатный слайд 5 и рукописная страница (стр. PDF 6–7). Интеграл",
+            "### Diapositiva impresa 5 y página manuscrita (pp. PDF 6–7). Integral",
+        ):
+            with self.subTest(heading=heading):
+                self.assertEqual(course.heading_coverage(heading, "slides"), Counter([5]))
+                self.assertEqual(course.heading_coverage(heading, "pdf"), Counter([6, 7]))
+
+
+class NewBatchRegressionTests(BatchFixture, unittest.TestCase):
+    batch = "39-44"
+
+    @property
+    def manifest(self) -> Path:
+        return self.assets / f"figures-{self.batch}.json"
+
+    def edit_manifest(self, edit) -> None:
+        data = json.loads(self.manifest.read_text(encoding="utf-8"))
+        edit(data)
+        self.manifest.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+    def test_complete_new_batch_passes(self) -> None:
+        self.assertEqual(self.run_batch(), (17, []))
+
+    def test_new_jpeg_checksum_is_checked(self) -> None:
+        image = self.assets / "lec43-44-p24-mean-value-rectangle.jpg"
+        image.write_bytes(image.read_bytes() + b"changed")
+        _, errors = self.run_batch()
+        self.assertTrue(any("JPEG checksum" in error for error in errors))
+
+    def test_missing_final_translation_is_detected(self) -> None:
+        self.lecture("es", "43-44").unlink()
+        _, errors = self.run_batch()
+        self.assertTrue(any("missing new lecture translation" in error for error in errors))
+
+    def test_new_pdf_page_gap_is_detected(self) -> None:
+        self.mutate(self.lecture("en", "41-42"), "(PDF p. 7)", "(PDF p. 8)")
+        _, errors = self.run_batch()
+        self.assertTrue(any("PDF-page headings" in error for error in errors))
+
+    def test_new_slide_number_gap_is_detected(self) -> None:
+        self.mutate(self.lecture("en", "39-40"), "Printed slide 13", "Printed slide 14")
+        _, errors = self.run_batch()
+        self.assertTrue(any("typed-slide headings" in error for error in errors))
+
+    def test_swapped_page_types_are_detected_despite_complete_page_coverage(self) -> None:
+        path = self.lecture("en", "41-42")
+        text = path.read_text(encoding="utf-8")
+        self.assertIn("(PDF p. 7)", text)
+        self.assertIn("(PDF pp. 8–9)", text)
+        # Exchange the single printed page with the following handwritten pair.
+        text = text.replace("(PDF p. 7)", "(PDF SWAP)", 1)
+        text = text.replace("(PDF pp. 8–9)", "(PDF pp. 7–8)", 1)
+        text = text.replace("(PDF SWAP)", "(PDF p. 9)", 1)
+        path.write_text(text, encoding="utf-8")
+        self.assertEqual(course.heading_coverage(text, "pdf"), Counter(range(1, 26)))
+        _, errors = self.run_batch()
+        self.assertTrue(any("printed-slide PDF-page attributions" in error for error in errors))
+
+    def test_changed_continuity_hypothesis_is_detected(self) -> None:
+        self.mutate(self.lecture("es", "43-44"), r"f\in C[a,b]", r"f\in\mathcal R[a,b]")
+        _, errors = self.run_batch()
+        self.assertTrue(any("translated display formulas" in error for error in errors))
+
+    def test_new_theorem_number_is_checked(self) -> None:
+        self.mutate(self.lecture("en", "43-44"), "**Theorem 4.3.3.**", "**Theorem 4.3.4.**")
+        _, errors = self.run_batch()
+        self.assertTrue(any("numbered statement" in error for error in errors))
+
+    def test_exact_archive_suffix_is_required(self) -> None:
+        self.mutate(self.lecture("en", "43-44"), "Лекция%2043-44%201.md", "Лекция%2043-44.md")
+        _, errors = self.run_batch()
+        self.assertTrue(any("missing duplicate-material cross-reference" in error and
+                            "Лекция 43-44 1.md" in error for error in errors))
+
+    def test_archive_override_cannot_be_silently_dropped(self) -> None:
+        self.edit_manifest(lambda data: data["sources"]["ma25_26-lectures_39-40_notes.pdf"].pop("archive_file"))
+        _, errors = self.run_batch()
+        self.assertTrue(any("missing duplicate-material cross-reference" in error and
+                            "Лекция 39-40.md" in error for error in errors))
+
+    def test_invalid_archive_path_fails_cleanly(self) -> None:
+        self.edit_manifest(lambda data: data["sources"]["ma25_26-lectures_43-44_notes.pdf"].update(
+            archive_file="../outside.md"))
+        _, errors = self.run_batch()
+        self.assertTrue(any("invalid archive filename" in error for error in errors))
+
+    def test_new_curated_section_link_is_required(self) -> None:
+        self.mutate(self.lecture("es", "43-44"), "../../ru/lectures/04-riemann-properties-4-3.md", "#removed")
+        _, errors = self.run_batch()
+        self.assertTrue(any("missing duplicate-material cross-reference" in error and
+                            "04-riemann-properties-4-3.md" in error for error in errors))
+
+    def test_same_source_figure_order_is_checked(self) -> None:
+        path = self.lecture("en", "41-42")
+        text = path.read_text(encoding="utf-8")
+        first, second = "lec41-42-p12-restriction.jpg", "lec41-42-p12-gluing.jpg"
+        self.assertIn(first, text)
+        self.assertIn(second, text)
+        text = text.replace(first, "SWAP.jpg").replace(second, first).replace("SWAP.jpg", second)
+        path.write_text(text, encoding="utf-8")
+        _, errors = self.run_batch()
+        self.assertTrue(any("figure references/order" in error for error in errors))
+
+    def test_individual_review_flag_is_required(self) -> None:
+        self.edit_manifest(lambda data: data["figures"][0].update(reviewed_individually=False))
+        _, errors = self.run_batch()
+        self.assertTrue(any("individual visual review" in error for error in errors))
+
+    def test_incomplete_source_inventory_is_detected(self) -> None:
+        self.edit_manifest(lambda data: data["sources"]["ma25_26-lectures_39-40_notes.pdf"]["handwritten_pdf_pages"].pop())
+        _, errors = self.run_batch()
+        self.assertTrue(any("page inventory is incomplete" in error for error in errors))
+
+    def test_duplicate_source_record_is_detected(self) -> None:
+        def duplicate(data):
+            data["sources"]["duplicate.pdf"] = data["sources"]["ma25_26-lectures_43-44_notes.pdf"].copy()
+        self.edit_manifest(duplicate)
+        _, errors = self.run_batch()
+        self.assertTrue(any("each lecture file" in error and "exactly once" in error for error in errors))
+
+    def test_invalid_figure_filename_type_fails_cleanly(self) -> None:
+        self.edit_manifest(lambda data: data["figures"][0].update(file=["bad.jpg"]))
+        _, errors = self.run_batch()
+        self.assertTrue(any("invalid JPEG filename" in error for error in errors))
+
+    def test_missing_second_manifest_fails_cleanly(self) -> None:
+        self.manifest.unlink()
+        count, errors = self.run_batch()
+        self.assertEqual(count, 0)
+        self.assertTrue(any("invalid/missing provenance manifest" in error for error in errors))
+
+
+class BatchOrchestrationTests(unittest.TestCase):
+    def test_main_checks_both_manifests(self) -> None:
+        with patch.object(course, "check_new_lecture_batch", return_value=0) as check, patch("builtins.print"):
+            self.assertEqual(course.main(), 0)
+        self.assertEqual(check.call_args_list, [call("31-38"), call("39-44")])
 
 
 if __name__ == "__main__":

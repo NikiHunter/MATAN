@@ -12,7 +12,7 @@ Open the `MathInMind` folder as an Obsidian vault, or browse the same files dire
 
 ## Lecture notes 2025/26
 
-Full illustrated transcriptions of the 2025/26 Mathematical Analysis **lectures 0–38**, including handwritten proofs and examples, are available in three languages:
+Full illustrated transcriptions of the 2025/26 Mathematical Analysis **lectures 0–44**, including handwritten proofs and examples, are available in three languages:
 
 - [Русский](MathInMind/ru/lectures-2025-26/index.md)
 - [English](MathInMind/en/lectures-2025-26/index.md)
@@ -20,9 +20,9 @@ Full illustrated transcriptions of the 2025/26 Mathematical Analysis **lectures 
 
 Typed slides were extracted from the PDF text layers; handwritten pages were transcribed from images, and their figures are embedded as illustrations from [`MathInMind/assets/lectures-2025-26/`](MathInMind/assets/lectures-2025-26/).
 
-**Semester boundary:** semester 1 ends with lecture 32; semester 2 spans lectures 33–64. The new files for 33–38 are complete, not pointers, and explicitly flag their overlap with the existing [Russian semester-2 lecture folder](MathInMind/ru/lectures/index.md) and [original archive](source/MathInMind/МАТАН_Л/). Both files and indexes cross-link the duplicated material.
+**Semester boundary:** semester 1 ends with lecture 32; semester 2 spans lectures 33–64. The new files for 33–44 are complete, not pointers, and explicitly flag their overlap with the existing [Russian semester-2 lecture folder](MathInMind/ru/lectures/index.md) and [original archive](source/MathInMind/МАТАН_Л/). Both files and indexes cross-link the duplicated material.
 
-Lectures 31–38 cover 123 PDF pages and share 17 individually verified JPEG crops. Their [provenance manifest](MathInMind/assets/lectures-2025-26/figures-31-38.json) records source hashes, page numbers and crop geometry; [extraction and review notes](MathInMind/assets/lectures-2025-26/provenance-31-38.md) document the checks. Source PDFs and temporary renders are kept out of Git.
+Lectures 31–38 cover 123 PDF pages with 17 shared crops ([manifest](MathInMind/assets/lectures-2025-26/figures-31-38.json), [review notes](MathInMind/assets/lectures-2025-26/provenance-31-38.md)); lectures 39–44 add 94 pages and 17 crops ([manifest](MathInMind/assets/lectures-2025-26/figures-39-44.json), [review notes](MathInMind/assets/lectures-2025-26/provenance-39-44.md)). All 217 pages from eight PDFs were reviewed, and every final JPEG was checked individually. Source hashes, page attribution and crop geometry are recorded; source PDFs, temporary renders and dependencies stay out of Git.
 
 ## What is included
 
@@ -71,7 +71,7 @@ python3 scripts/validate_exam_track.py
 python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-They check language and index parity, continuous 2025/26 lecture coverage (0–38), semester metadata and duplicate-material links for 33–38, figure provenance and translation parity for 31–38, all 72 tickets, Purgatory assets and numbering, YAML metadata, local links, balanced code fences and math delimiters, and basic Mermaid safety.
+They check language and index parity, continuous 2025/26 lecture coverage (0–44), semester metadata and duplicate-material links for 33–44, figure provenance and translation parity for both illustrated batches (31–38 and 39–44), all 72 tickets, Purgatory assets and numbering, YAML metadata, local links, balanced code fences and math delimiters, and basic Mermaid safety.
 
 ## References and authorship
 

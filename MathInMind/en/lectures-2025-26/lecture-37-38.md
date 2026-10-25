@@ -515,4 +515,4 @@ flowchart TD
 
 ---
 
-Previous: [lecture 36](lecture-36.md) · Continue the topic in the duplicate folder: [§4.2 “The Riemann integral”](../../ru/lectures/03-riemann-integral-4-2.md).
+Previous: [lecture 36](lecture-36.md) · Next: [lectures 39–40](lecture-39-40.md) · Continue the topic in the duplicate folder: [§4.2 “The Riemann integral”](../../ru/lectures/03-riemann-integral-4-2.md).

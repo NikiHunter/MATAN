@@ -40,9 +40,13 @@ CHAPTERS = (
 SUPPORTING = ("index.md", "00-notation.md", "formula-sheet.md", "glossary.md")
 EXPECTED = set(CHAPTERS + SUPPORTING)
 LECTURE_DIRECTORY = "lectures-2025-26"
-LAST_LECTURE = 38
+LAST_LECTURE = 44
 SEMESTER_ONE_LAST = 32
-NEW_LECTURES = tuple(f"lecture-{n}.md" for n in ("31-32", "33-34", "35", "36", "37-38"))
+LECTURE_BATCHES = {
+    "31-38": tuple(f"lecture-{n}.md" for n in ("31-32", "33-34", "35", "36", "37-38")),
+    "39-44": tuple(f"lecture-{n}.md" for n in ("39-40", "41-42", "43-44")),
+}
+NEW_LECTURES = tuple(name for filenames in LECTURE_BATCHES.values() for name in filenames)
 # One level of brackets in a label is needed for interval notation in image alt text.
 LINK_RE = re.compile(r"(!?)\[(?:[^\[\]\n]|\[[^\[\]\n]*\])*\]\(([^)\n]+)\)")
 
@@ -192,7 +196,7 @@ def heading_coverage(text: str, kind: str) -> Counter[int]:
         pattern = r"\((?:стр\. PDF |PDF pp?\. |pp?\. PDF )(\d+(?:[–-]\d+)?)\)"
     else:
         pattern = (
-            r"^#{2,6} (?:Печатн(?:ый слайд|ые слайды)|Typed slides?|"
+            r"^#{2,6} (?:Печатн(?:ый слайд|ые слайды)|(?:Typed|Printed) slides?|"
             r"Diapositivas? impresas?) (\d+(?:[–-]\d+)?)"
         )
     result: Counter[int] = Counter()
@@ -274,6 +278,8 @@ def check_lecture_tree() -> list[Path]:
             fail(directory, f"lecture coverage must be exactly 0–{LAST_LECTURE}; "
                  f"missing={sorted((expected - coverage).elements())}, "
                  f"duplicate/extra={sorted((coverage - expected).elements())}")
+        if f"0–{LAST_LECTURE}" not in index_text:
+            fail(index, f"index must state current lecture coverage: 0–{LAST_LECTURE}")
         if "0–32" not in index_text or "33–64" not in index_text:
             fail(index, "index must state both semester ranges: 0–32 and 33–64")
         if not re.search(r"дублир|duplic", index_text, re.IGNORECASE):
@@ -288,14 +294,15 @@ def check_lecture_tree() -> list[Path]:
     return checked
 
 
-def check_new_lecture_batch() -> int:
-    """Check provenance, all 123 page attributions, figures and RU/EN/ES parity.
+def check_new_lecture_batch(batch: str = "31-38") -> int:
+    """Check one registered batch: provenance, page attributions and RU/EN/ES parity.
 
     Visual-review flags document human review; checksums and references are
     verified independently. Source PDFs are intentionally not stored in Git.
     """
     assets = VAULT / "assets" / LECTURE_DIRECTORY
-    manifest = assets / "figures-31-38.json"
+    expected_lectures = LECTURE_BATCHES[batch]
+    manifest = assets / f"figures-{batch}.json"
     try:
         data = json.loads(manifest.read_text(encoding="utf-8"))
         sources, figures = data["sources"], data["figures"]
@@ -306,15 +313,17 @@ def check_new_lecture_batch() -> int:
     except (OSError, ValueError, KeyError, TypeError) as exc:
         fail(manifest, f"invalid/missing provenance manifest: {exc}")
         return 0
-    if {s.get("lecture_file") for s in sources.values()} != set(NEW_LECTURES):
-        fail(manifest, "source records must cover all five lecture files 31–38")
+    source_files = [source.get("lecture_file") for source in sources.values()]
+    if (not all(isinstance(name, str) for name in source_files) or
+            Counter(source_files) != Counter(expected_lectures)):
+        fail(manifest, f"source records must cover each lecture file in {batch} exactly once")
     figure_by_file = {}
     for figure in figures:
         name = figure.get("file", "")
-        image = assets / name
-        if not name or Path(name).name != name or not name.endswith(".jpg"):
+        if not isinstance(name, str) or not name or Path(name).name != name or not name.endswith(".jpg"):
             fail(manifest, f"invalid JPEG filename: {name!r}")
             continue
+        image = assets / name
         if name in figure_by_file:
             fail(manifest, f"duplicate figure record: {name}")
         figure_by_file[name] = figure
@@ -352,12 +361,13 @@ def check_new_lecture_batch() -> int:
             fail(manifest, f"invalid page/slide count for {source_name}")
             continue
         typed, hand = source.get("typed_pdf_pages", []), source.get("handwritten_pdf_pages", [])
-        if (not isinstance(typed, list) or not isinstance(hand, list) or
-                not all(type(n) is int for n in typed + hand) or
-                Counter(typed + hand) != Counter(range(1, pages + 1)) or len(typed) != slides):
+        inventory_valid = (isinstance(typed, list) and isinstance(hand, list) and
+                           all(type(n) is int for n in typed + hand) and
+                           Counter(typed + hand) == Counter(range(1, pages + 1)) and len(typed) == slides)
+        if not inventory_valid:
             fail(manifest, f"typed/handwritten page inventory is incomplete for {source_name}")
         filename = source.get("lecture_file", "")
-        if filename not in NEW_LECTURES:
+        if filename not in expected_lectures:
             continue
         try:
             expected_semester = 1 if max(number_range(source.get("lecture", ""))) <= SEMESTER_ONE_LAST else 2
@@ -366,6 +376,17 @@ def check_new_lecture_batch() -> int:
             continue
         if source.get("semester") != expected_semester:
             fail(manifest, f"incorrect semester for {filename}")
+        archive_name = source.get("archive_file", f"Лекция {source['lecture']}.md")
+        if (not isinstance(archive_name, str) or Path(archive_name).name != archive_name or
+                not archive_name.endswith(".md")):
+            fail(manifest, f"invalid archive filename for {filename}")
+            continue
+        duplicate_sections = source.get("duplicate_sections", [])
+        if (not isinstance(duplicate_sections, list) or
+                not all(isinstance(name, str) and Path(name).name == name and name.endswith(".md")
+                        for name in duplicate_sections)):
+            fail(manifest, f"invalid duplicate sections for {filename}")
+            continue
         reference_text = None
         reference_images = None
         for lang in LANGUAGES:
@@ -385,6 +406,15 @@ def check_new_lecture_batch() -> int:
                 fail(path, "PDF-page headings must cover every source page exactly once")
             if heading_coverage(text, "slides") != Counter(range(1, slides + 1)):
                 fail(path, "typed-slide headings must cover every printed slide exactly once")
+            printed_pdf_pages: Counter[int] = Counter()
+            for heading in re.findall(r"(?m)^#{2,6} .+$", text):
+                slide_count = sum(heading_coverage(heading, "slides").values())
+                # Combined headings list the printed page(s) first, then the
+                # handwritten follow-up, e.g. slide 8 + PDF pages 9–10.
+                pdf_numbers = sorted(heading_coverage(heading, "pdf").elements())
+                printed_pdf_pages.update(pdf_numbers[:slide_count])
+            if inventory_valid and printed_pdf_pages != Counter(typed):
+                fail(path, "printed-slide PDF-page attributions differ from the source inventory")
             links = {(path.parent / raw).resolve() for _, raw in local_links(text)}
             images = [(path.parent / raw).resolve() for is_image, raw in local_links(text) if is_image]
             for image in images:
@@ -406,8 +436,8 @@ def check_new_lecture_batch() -> int:
                 if not re.search(r"дублир|duplic", text, re.IGNORECASE) or "33–64" not in text:
                     fail(path, "semester-2 duplication notice is missing")
                 required = [VAULT / "ru/lectures/index.md"]
-                required += [VAULT / "ru/lectures" / name for name in source.get("duplicate_sections", [])]
-                required += [ROOT / "source/MathInMind/МАТАН_Л" / f"Лекция {source['lecture']}.md"]
+                required += [VAULT / "ru/lectures" / name for name in duplicate_sections]
+                required += [ROOT / "source/MathInMind/МАТАН_Л" / archive_name]
                 for target in required:
                     if target.resolve() not in links:
                         fail(path, f"missing duplicate-material cross-reference: {target.relative_to(ROOT)}")
@@ -448,10 +478,10 @@ def main() -> int:
                     fail(index, f"index does not link to {chapter}")
 
     checked_paths.extend(check_lecture_tree())
-    figure_count = check_new_lecture_batch()
-    # Also check the entry points and provenance guide changed with this batch.
-    for path in (ROOT / "README.md", VAULT / "README.md", VAULT / "ru/lectures/index.md",
-                 VAULT / "assets" / LECTURE_DIRECTORY / "provenance-31-38.md"):
+    figure_count = sum(check_new_lecture_batch(batch) for batch in LECTURE_BATCHES)
+    # Check entry points and the provenance guide for every registered batch.
+    guides = [VAULT / "assets" / LECTURE_DIRECTORY / f"provenance-{batch}.md" for batch in LECTURE_BATCHES]
+    for path in (ROOT / "README.md", VAULT / "README.md", VAULT / "ru/lectures/index.md", *guides):
         if path.is_file():
             checked_paths.append(path)
             text = path.read_text(encoding="utf-8")
@@ -485,8 +515,8 @@ def main() -> int:
     print(f"  Languages: {', '.join(LANGUAGES)}")
     print(f"  Core chapters: {len(CHAPTERS)} per language")
     print(f"  2025/26 lecture coverage: 0–{LAST_LECTURE} in all languages")
-    print("  Semesters: 0–32 / 33–64; duplicated 33–38 cross-references checked")
-    print("  Lectures 31–38: complete PDF/slide headings, metadata and translation parity checked")
+    print(f"  Semesters: 0–32 / 33–64; duplicated 33–{LAST_LECTURE} cross-references checked")
+    print(f"  Illustrated batches: {', '.join(LECTURE_BATCHES)}; PDF/slide headings, metadata and translation parity checked")
     print(f"  Shared JPEG crops with provenance and matching checksums: {figure_count}")
     print(f"  Markdown files checked: {len(checked_paths)}")
     print(f"  Mermaid diagrams checked: {mermaid_count}")
