@@ -18,6 +18,10 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 7 | — | Maximum and minimum of a finite set, integer part, density of ℚ in ℝ | [lecture-07.md](lecture-07.md) | `ma25_26_лекция_7_notes.pdf` |
 | 8 | — | Limit of a sequence: definition, uniqueness, boundedness, passage to the limit, squeeze theorem | [lecture-08.md](lecture-08.md) | `ма25_26_лекция_8_notes.pdf` |
 | 9–10 | 2 Oct 2025 | Infinitesimal and infinitely large sequences, arithmetic of limits, indeterminate forms | [lecture-09-10.md](lecture-09-10.md) | `ma25_26-lectures_9-10_notes.pdf` |
+| 11–12 | 9 Oct 2025 | Exact bounds, monotone sequences, the number e, subsequences, Bolzano–Weierstrass theorem | [lecture-11-12.md](lecture-11-12.md) | `ma25_26-lectures_11-12_notes.pdf` |
+| 13 | 16 Oct 2025 | Upper and lower limits, fundamental sequences, Bolzano–Cauchy criterion | [lecture-13.md](lecture-13.md) | `ma25_26_лекция_13_notes.pdf` |
+| 14 | 16 Oct 2025 | Limit points and isolated points, limit of a function by Cauchy and by Heine, uniqueness, local boundedness | [lecture-14.md](lecture-14.md) | `ма25_26_лекция_14_notes.pdf` |
+| 15 | 23 Oct 2025 | Stabilization of sign, arithmetic of function limits, composition, one-sided limits, monotone functions, Cauchy criterion for functions | [lecture-15.md](lecture-15.md) | `ма25_26_лекция_15_notes_pdf.pdf` |
 
 Figures extracted from handwritten pages are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
@@ -36,4 +40,8 @@ flowchart LR
     E --> F["Lecture 7: maximum, minimum, density of ℚ"]
     F --> G["Lecture 8: limit of a sequence"]
     G --> H["Lectures 9–10: infinitesimal and infinitely large"]
+    H --> I["Lectures 11–12: exact bounds, monotone sequences"]
+    I --> J["Lecture 13: upper and lower limits, Cauchy criterion"]
+    J --> K["Lecture 14: limit of a function by Cauchy and Heine"]
+    K --> L["Lecture 15: one-sided limits, monotone functions"]
 ```
