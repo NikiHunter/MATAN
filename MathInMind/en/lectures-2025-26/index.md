@@ -54,4 +54,7 @@ flowchart LR
     N --> O["Lectures 19–20: monotone functions, remarkable limits"]
     O --> P["Lecture 21: O, o, equivalence, asymptotes"]
     P --> Q["Lectures 22–23: the derivative and rules of differentiation"]
+    Q --> R["Lectures 24–26: inverse function, mean value theorems, L'Hopital"]
+    R --> S["Lectures 27–28: higher derivatives, Taylor-Peano"]
+    S --> T["Lectures 29–30: Taylor-Lagrange, monotonicity, extrema"]
 ```

@@ -27,6 +27,9 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 19–20 | 6 nov 2025 | Funciones monótonas y función inversa, los cinco límites notables | [lecture-19-20.md](lecture-19-20.md) | `ma25_26-lectures_19-20_notes.pdf` |
 | 21 | 13 nov 2025 | Comparación de funciones: O, o, equivalencia; asíntotas verticales, oblicuas y horizontales | [lecture-21.md](lecture-21.md) | `ma25_26_lecture_21_notes.pdf` |
 | 22–23 | 13 nov 2025 | Derivada y diferenciabilidad, criterio de diferenciabilidad, la tangente como límite de secantes, reglas de derivación, regla de la cadena | [lecture-22-23.md](lecture-22-23.md) | `ma25_26_lectures_22-23_notes.pdf` |
+| 24–25–26 | 20 nov 2025 | Derivada de la función inversa, diferencial, derivadas de las funciones elementales, teoremas de Fermat, Rolle, Lagrange y Cauchy, regla de L'Hôpital | [lecture-24-25-26.md](lecture-24-25-26.md) | `ma25_26-lectures_24-25-26_notes.pdf` |
+| 27–28 | 4 dic 2025 | Derivadas y diferenciales de orden superior, la escala C^k, fórmula de Leibniz, polinomio de Taylor, fórmula de Taylor–Peano | [lecture-27-28.md](lecture-27-28.md) | `ma25_26-lectures_27-28_notes.pdf` |
+| 29–30 | 11 dic 2025 | Fórmula de Taylor–Lagrange, desarrollos de Taylor–Peano de las funciones elementales, estimación del resto, criterio de monotonía, extremos | [lecture-29-30.md](lecture-29-30.md) | `ma25_26-lectures_29-30_notes.pdf` |
 
 Las figuras extraídas de las páginas manuscritas están en la carpeta común [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
