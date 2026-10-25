@@ -12,13 +12,17 @@ Open the `MathInMind` folder as an Obsidian vault, or browse the same files dire
 
 ## Lecture notes 2025/26
 
-Transcriptions of the 2025/26 Mathematical Analysis lectures (lecture 0, lectures 1–2, lectures 3 and 4) are available in three languages:
+Full illustrated transcriptions of the 2025/26 Mathematical Analysis **lectures 0–38**, including handwritten proofs and examples, are available in three languages:
 
 - [Русский](MathInMind/ru/lectures-2025-26/index.md)
 - [English](MathInMind/en/lectures-2025-26/index.md)
 - [Español](MathInMind/es/lectures-2025-26/index.md)
 
 Typed slides were extracted from the PDF text layers; handwritten pages were transcribed from images, and their figures are embedded as illustrations from [`MathInMind/assets/lectures-2025-26/`](MathInMind/assets/lectures-2025-26/).
+
+**Semester boundary:** semester 1 ends with lecture 32; semester 2 spans lectures 33–64. The new files for 33–38 are complete, not pointers, and explicitly flag their overlap with the existing [Russian semester-2 lecture folder](MathInMind/ru/lectures/index.md) and [original archive](source/MathInMind/МАТАН_Л/). Both files and indexes cross-link the duplicated material.
+
+Lectures 31–38 cover 123 PDF pages and share 17 individually verified JPEG crops. Their [provenance manifest](MathInMind/assets/lectures-2025-26/figures-31-38.json) records source hashes, page numbers and crop geometry; [extraction and review notes](MathInMind/assets/lectures-2025-26/provenance-31-38.md) document the checks. Source PDFs and temporary renders are kept out of Git.
 
 ## What is included
 
@@ -64,9 +68,10 @@ Run the dependency-free validation scripts:
 ```bash
 python3 scripts/validate_course.py
 python3 scripts/validate_exam_track.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-They check language parity, lecture-number coverage, all 72 tickets, Purgatory assets and numbering, YAML metadata, local links, balanced code fences and display-math delimiters, and basic Mermaid safety.
+They check language and index parity, continuous 2025/26 lecture coverage (0–38), semester metadata and duplicate-material links for 33–38, figure provenance and translation parity for 31–38, all 72 tickets, Purgatory assets and numbering, YAML metadata, local links, balanced code fences and math delimiters, and basic Mermaid safety.
 
 ## References and authorship
 
