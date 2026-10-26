@@ -40,11 +40,13 @@ CHAPTERS = (
 SUPPORTING = ("index.md", "00-notation.md", "formula-sheet.md", "glossary.md")
 EXPECTED = set(CHAPTERS + SUPPORTING)
 LECTURE_DIRECTORY = "lectures-2025-26"
-LAST_LECTURE = 44
+LAST_LECTURE = 54
 SEMESTER_ONE_LAST = 32
 LECTURE_BATCHES = {
     "31-38": tuple(f"lecture-{n}.md" for n in ("31-32", "33-34", "35", "36", "37-38")),
     "39-44": tuple(f"lecture-{n}.md" for n in ("39-40", "41-42", "43-44")),
+    "45-50": tuple(f"lecture-{n}.md" for n in ("45-46", "47-48", "49-50")),
+    "51-54": tuple(f"lecture-{n}.md" for n in ("51-52", "53", "54")),
 }
 NEW_LECTURES = tuple(name for filenames in LECTURE_BATCHES.values() for name in filenames)
 # One level of brackets in a label is needed for interval notation in image alt text.
@@ -376,8 +378,15 @@ def check_new_lecture_batch(batch: str = "31-38") -> int:
             continue
         if source.get("semester") != expected_semester:
             fail(manifest, f"incorrect semester for {filename}")
-        archive_name = source.get("archive_file", f"Лекция {source['lecture']}.md")
-        if (not isinstance(archive_name, str) or Path(archive_name).name != archive_name or
+        # The 51–54 transcription is based only on the supplied PDFs, per the
+        # user's instruction not to consult the source archive. Archive links
+        # are optional for that batch; earlier batches retain their checks.
+        if batch == "51-54" and "archive_file" not in source:
+            archive_name = None
+        else:
+            archive_name = source.get("archive_file", f"Лекция {source['lecture']}.md")
+        if archive_name is not None and (
+                not isinstance(archive_name, str) or Path(archive_name).name != archive_name or
                 not archive_name.endswith(".md")):
             fail(manifest, f"invalid archive filename for {filename}")
             continue
@@ -399,6 +408,10 @@ def check_new_lecture_batch(batch: str = "31-38") -> int:
             expected = {"lecture": source["lecture"], "source": source_name,
                         "semester": expected_semester, "date": source.get("date", ""),
                         "pdf_pages": pages, "typed_slides": slides}
+            # The 45–50 batch records exact archive filenames (including suffixes)
+            # as lecture metadata; older batches predate this field.
+            if batch == "45-50":
+                expected["archive_file"] = archive_name
             for key, value in expected.items():
                 if meta.get(key) != str(value):
                     fail(path, f"metadata {key} must be {value!r}")
@@ -437,7 +450,8 @@ def check_new_lecture_batch(batch: str = "31-38") -> int:
                     fail(path, "semester-2 duplication notice is missing")
                 required = [VAULT / "ru/lectures/index.md"]
                 required += [VAULT / "ru/lectures" / name for name in duplicate_sections]
-                required += [ROOT / "source/MathInMind/МАТАН_Л" / archive_name]
+                if archive_name is not None:
+                    required += [ROOT / "source/MathInMind/МАТАН_Л" / archive_name]
                 for target in required:
                     if target.resolve() not in links:
                         fail(path, f"missing duplicate-material cross-reference: {target.relative_to(ROOT)}")

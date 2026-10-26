@@ -17,8 +17,8 @@ Un curso riguroso desde los fundamentos hasta la integración moderna. Los 21 ca
 
 ## Lecciones ilustradas 2025/26
 
-- [Índice completo de las lecciones 0–44: originales RU y traducciones EN/ES](lectures-2025-26/index.md).
-- **Semestre 1: 0–32; semestre 2: 33–64.** Las lecciones 33–44 son completas e ilustradas, pero duplican parte de la [carpeta rusa existente del semestre 2 `ru/lectures/`](../ru/lectures/index.md). El índice y cada nuevo archivo enlazan las secciones coincidentes y el archivo original.
+- [Índice completo de las lecciones 0–50: originales RU y traducciones EN/ES](lectures-2025-26/index.md).
+- **Semestre 1: 0–32; semestre 2: 33–64.** Las lecciones 33–50 son completas e ilustradas, pero duplican parte de la [carpeta rusa existente del semestre 2 `ru/lectures/`](../ru/lectures/index.md). El índice y cada nuevo archivo enlazan las secciones coincidentes y el archivo original. Las lecciones 45–50 añaden 84 páginas de tres PDF y cuatro figuras: [manifiesto](../assets/lectures-2025-26/figures-45-50.json) y [registro de revisión](../assets/lectures-2025-26/provenance-45-50.md).
 
 ## Mapa del curso
 

@@ -603,4 +603,4 @@ flowchart TD
 
 ---
 
-Previous: [lectures 41–42](lecture-41-42.md) · [Lecture index](index.md) · [Figure provenance](../../assets/lectures-2025-26/provenance-39-44.md).
+Previous: [lectures 41–42](lecture-41-42.md) · [Lecture index](index.md) · [Figure provenance](../../assets/lectures-2025-26/provenance-39-44.md) · Next: [lectures 45–46](lecture-45-46.md).

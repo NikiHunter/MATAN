@@ -14,7 +14,7 @@ The language folders have identical chapter numbers and filenames. This makes it
 - [Указатель на русском](ru/lectures-2025-26/index.md)
 - [Índice en español](es/lectures-2025-26/index.md)
 
-Coverage: **lectures 0–44** in RU/EN/ES, with source illustrations and handwritten proofs. **Semester 1: 0–32; semester 2: 33–64.** The full illustrated files for 33–44 overlap the existing [Russian semester-2 folder](ru/lectures/index.md) and [source archive](../source/MathInMind/МАТАН_Л/); duplication notices and specific cross-references appear in the files and all three indexes.
+Coverage: **lectures 0–54** in RU/EN/ES, with source illustrations and handwritten proofs. **Semester 1: 0–32; semester 2: 33–64.** The full illustrated files for 33–54 overlap the existing [Russian semester-2 folder](ru/lectures/index.md); duplication notices and specific cross-references appear in the files and all three indexes. Lectures 51–54 use only the PDFs attached in chat; the source folder was not consulted, and no archive filenames are claimed. The 51–54 batch covers 85 PDF pages and includes eight individually reviewed source-page illustrations; see [manifest](assets/lectures-2025-26/figures-51-54.json) and [review provenance](assets/lectures-2025-26/provenance-51-54.md).
 
 ## Lecture-aligned exam track (Russian)
 

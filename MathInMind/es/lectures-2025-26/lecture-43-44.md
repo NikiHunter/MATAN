@@ -603,4 +603,4 @@ flowchart TD
 
 ---
 
-Anteriores: [lecciones 41–42](lecture-41-42.md) · [Índice de lecciones](index.md) · [Procedencia de las ilustraciones](../../assets/lectures-2025-26/provenance-39-44.md).
+Anteriores: [lecciones 41–42](lecture-41-42.md) · [Índice de lecciones](index.md) · [Procedencia de las ilustraciones](../../assets/lectures-2025-26/provenance-39-44.md) · Siguientes: [lecciones 45–46](lecture-45-46.md).
