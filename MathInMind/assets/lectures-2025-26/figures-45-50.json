@@ -1,0 +1,220 @@
+{
+  "coordinate_system": "PDF points, origin top left; pages are 1-based",
+  "sources": {
+    "ma25_26-lectures_45-46_notes.pdf": {
+      "sha256": "293661572adc3cdf0b3da87186c77f18295bc222e22ea16965796c8f765f1398",
+      "pages": 29,
+      "lecture": "45-46",
+      "lecture_file": "lecture-45-46.md",
+      "semester": 2,
+      "date": "2026-03-26",
+      "typed_slides": 14,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        18,
+        22,
+        26,
+        29
+      ],
+      "handwritten_pdf_pages": [
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        27,
+        28
+      ],
+      "duplicate_sections": [
+        "04-riemann-properties-4-3.md",
+        "05-taylor-wallis-inequalities-4-4.md"
+      ],
+      "archive_file": "Лекция 45-46.md"
+    },
+    "ma25_26-lectures_47-48_notes.pdf": {
+      "sha256": "bb9d3991277ae8c7d68cb56ccce0f732215d730068bf349a172e9a9ac3bab908",
+      "pages": 41,
+      "lecture": "47-48",
+      "lecture_file": "lecture-47-48.md",
+      "semester": 2,
+      "date": "2026-04-02",
+      "typed_slides": 25,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        29,
+        31,
+        32,
+        34,
+        36
+      ],
+      "handwritten_pdf_pages": [
+        5,
+        6,
+        14,
+        16,
+        19,
+        24,
+        27,
+        28,
+        30,
+        33,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "duplicate_sections": [
+        "05-taylor-wallis-inequalities-4-4.md",
+        "06-improper-integrals-4-5.md"
+      ],
+      "archive_file": "Лекция 47-48 1.md"
+    },
+    "ma25_26-lectures_49-50_notes.pdf": {
+      "sha256": "3d1dafd779456a14fe478c8b9f60aa0299ec64400ac5e6ad0d51cc97f90f8b2f",
+      "pages": 14,
+      "lecture": "49-50",
+      "lecture_file": "lecture-49-50.md",
+      "semester": 2,
+      "date": "2026-04-09",
+      "typed_slides": 10,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12,
+        14
+      ],
+      "handwritten_pdf_pages": [
+        8,
+        10,
+        11,
+        13
+      ],
+      "duplicate_sections": [
+        "06-improper-integrals-4-5.md"
+      ],
+      "archive_file": "Лекция 49-50.md"
+    }
+  },
+  "figures": [
+    {
+      "file": "lec45-46-p21-bonnet-interval.jpg",
+      "source": "ma25_26-lectures_45-46_notes.pdf",
+      "pdf_page": 21,
+      "crop_box": [
+        78,
+        12,
+        565,
+        265
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 1121,
+      "height": 583,
+      "sha256": "61c62102083f3801f030b20a9483978c8048850a5a24a140538787215f1162e6",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec47-48-p20-improper-tail.jpg",
+      "source": "ma25_26-lectures_47-48_notes.pdf",
+      "pdf_page": 20,
+      "crop_box": [
+        0,
+        0,
+        362.835,
+        272.126
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 908,
+      "height": 681,
+      "sha256": "1ba35e6b07364799121bc02f654b4965837bf37ab50d3d483e38e8180248d8b2",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec47-48-p40-spike-graph.jpg",
+      "source": "ma25_26-lectures_47-48_notes.pdf",
+      "pdf_page": 40,
+      "crop_box": [
+        265,
+        285,
+        660,
+        587
+      ],
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "width": 869,
+      "height": 665,
+      "sha256": "b5d4b5718baf15437cc5cf322c499907481fde59b5bea97532177bd8cd903207",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec49-50-p02-improper-integral-cartoon.jpg",
+      "source": "ma25_26-lectures_49-50_notes.pdf",
+      "pdf_page": 2,
+      "crop_box": [
+        35,
+        70,
+        332,
+        239
+      ],
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "width": 891,
+      "height": 507,
+      "sha256": "35dbf18ce27dd82d9ae972bb7d7eb74c557d749c6ba8b5ebfab8f233a4db4f2e",
+      "reviewed_individually": true
+    }
+  ]
+}

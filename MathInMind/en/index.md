@@ -17,8 +17,8 @@ A rigorous course from first principles to modern integration. The 21 chapters u
 
 ## Illustrated lectures 2025/26
 
-- [Complete index of lectures 0–44: RU originals and EN/ES translations](lectures-2025-26/index.md).
-- **Semester 1: 0–32; semester 2: 33–64.** Lectures 33–44 here are full and illustrated, but duplicate part of the existing [Russian semester-2 folder `ru/lectures/`](../ru/lectures/index.md). The index and each new file link to the overlapping sections and original archive.
+- [Complete index of lectures 0–50: RU originals and EN/ES translations](lectures-2025-26/index.md).
+- **Semester 1: 0–32; semester 2: 33–64.** Lectures 33–50 here are full and illustrated, but duplicate part of the existing [Russian semester-2 folder `ru/lectures/`](../ru/lectures/index.md). The index and each new file link to the overlapping sections and original archive. Lectures 45–50 add 84 pages from three PDFs and four figures: [manifest](../assets/lectures-2025-26/figures-45-50.json) and [review log](../assets/lectures-2025-26/provenance-45-50.md).
 
 ## Course map
 
