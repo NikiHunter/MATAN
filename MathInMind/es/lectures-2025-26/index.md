@@ -8,7 +8,7 @@ lang: es
 
 Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de D. E. Apushkinskaya (Universidad RUDN). Las diapositivas impresas se extrajeron de la capa de texto del PDF, las páginas manuscritas se transcribieron a partir de su imagen, y las figuras se incluyen como ilustraciones. Las fórmulas usan LaTeX (MathJax) y los diagramas, Mermaid; ambos funcionan en Obsidian y en GitHub.
 
-**Cobertura: lecciones 0–50 sin lagunas, en ruso, inglés y español.** El semestre 1 termina con la lección 32; el semestre 2 abarca las lecciones 33–64. Las lecciones 31–38 cubren 123 páginas de cinco PDF y 17 figuras; 39–44, 94 páginas de tres PDF y 17 figuras; 45–50 añaden las 84 páginas de tres PDF y 4 ilustraciones compartidas. En total, las lecciones 31–50 reúnen 301 páginas de 11 PDF y 38 recortes JPEG compartidos; cada recorte final se abrió individualmente. Manifiestos: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json); [extracción y revisión de esta entrega](../../assets/lectures-2025-26/provenance-45-50.md).
+**Cobertura: lecciones 0–54 sin lagunas, en ruso, inglés y español.** El semestre 1 termina con la lección 32; el semestre 2 abarca las lecciones 33–64. Las lecciones 31–38 cubren 123 páginas de cinco PDF y 17 figuras; 39–44, 94 páginas de tres PDF y 17 figuras; 45–50 añaden 84 páginas de tres PDF y 4 ilustraciones; la nueva entrega 51–54 añade 85 páginas de los tres PDF adjuntos y 8 ilustraciones revisadas individualmente. En total, las lecciones 31–54 reúnen 386 páginas de 14 PDF y 46 imágenes JPEG compartidas; cada archivo final se abrió individualmente. Las lecciones 51–54 usan solo los PDF del chat; no se consultó la carpeta de fuentes. Manifiestos: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json), [51–54](../../assets/lectures-2025-26/figures-51-54.json); [registro de revisión de la entrega 51–54](../../assets/lectures-2025-26/provenance-51-54.md).
 
 ## Semestre 1 — lecciones 0–32
 
@@ -36,9 +36,9 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 29–30 | 11 dic 2025 | Fórmula de Taylor–Lagrange, desarrollos de Taylor–Peano de las funciones elementales, estimación del resto, criterio de monotonía, extremos | [lecture-29-30.md](lecture-29-30.md) | `ma25_26-lectures_29-30_notes.pdf` |
 | 31–32 | 18 dic 2025 | Condiciones necesarias y suficientes de extremo, teorema de Darboux, convexidad y lema de las tres cuerdas; fin del semestre 1 | [lecture-31-32.md](lecture-31-32.md) | `ma25_26-lectures_31-32_notes.pdf` |
 
-## Semestre 2 — lecciones 33–64 (aquí: 33–50)
+## Semestre 2 — lecciones 33–64 (aquí: 33–54)
 
-> **Duplicación del semestre 2.** El material de las lecciones 33–64 ya está representado en la [carpeta rusa `ru/lectures/`](../../ru/lectures/index.md) y en el [archivo original `МАТАН_Л/`](../../../source/MathInMind/МАТАН_Л/). Los archivos 33–50 son transcripciones ilustradas completas de los nuevos PDF, no simples remisiones. Secciones coincidentes: [§3.8](../../ru/lectures/01-convexity-3-8.md), [§4.1](../../ru/lectures/02-antiderivatives-4-1.md), [§4.2](../../ru/lectures/03-riemann-integral-4-2.md), [§4.3](../../ru/lectures/04-riemann-properties-4-3.md), [§4.4](../../ru/lectures/05-taylor-wallis-inequalities-4-4.md) y [§4.5](../../ru/lectures/06-improper-integrals-4-5.md). Las lecciones 51–64 siguen disponibles en el archivo existente, no en esta serie.
+> **Duplicación del semestre 2.** Las lecciones 33–64 también están representadas en la [carpeta rusa `ru/lectures/`](../../ru/lectures/index.md) y coinciden temáticamente con §§3.8–5.2. Los archivos 33–54 son transcripciones ilustradas completas de los PDF, no simples remisiones. Las lecciones 51–54 se prepararon exclusivamente a partir de los PDF adjuntos en el chat; no se consultó la carpeta de fuentes y no se indican nombres del archivo para ellas. Se incluyen las páginas manuscritas y las anotaciones. El semestre 2 abarca las lecciones 33–64.
 
 | Lección | Fecha | Contenido | Archivo | PDF original |
 |---|---|---|---|---|
@@ -52,8 +52,11 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 45–46 | 26 mar 2026 | Sustitución, resto integral de Taylor, fórmula de Wallis, teoremas de Bonnet y Jensen | [lecture-45-46.md](lecture-45-46.md) | `ma25_26-lectures_45-46_notes.pdf` |
 | 47–48 | 2 abr 2026 | Desigualdades de Hölder y Minkowski, integrales impropias, sustitución, partes y comparación | [lecture-47-48.md](lecture-47-48.md) | `ma25_26-lectures_47-48_notes.pdf` |
 | 49–50 | 9 abr 2026 | Convergencia absoluta y criterios de Dirichlet y Abel | [lecture-49-50.md](lecture-49-50.md) | `ma25_26-lectures_49-50_notes.pdf` |
+| 51–52 | 16 abr 2026 | Área, volumen, caminos, fórmulas integrales de área y volumen, coordenadas polares, sólidos de revolución | [lecture-51-52.md](lecture-51-52.md) | `ma25_26-lectures_51-52_notes.pdf.txt` |
+| 53 | 23 abr 2026 | Longitud de caminos suaves, gráficas y curvas polares; trabajo de una fuerza variable | [lecture-53.md](lecture-53.md) | `ма25_26_лекция_53_notes.pdf.txt` |
+| 54 | 23 abr 2026 | Norma euclídea, entornos en $\mathbb R^n$, operaciones vectoriales y límites de sucesiones vectoriales | [lecture-54.md](lecture-54.md) | `ма25_26_лекция_54_notes.pdf.txt` |
 
-Duplicados de la nueva entrega en el archivo: [39–40](../../../source/MathInMind/МАТАН_Л/Лекция%2039-40%201.md), [41–42](../../../source/MathInMind/МАТАН_Л/Лекция%2041-42.md), [43–44](../../../source/MathInMind/МАТАН_Л/Лекция%2043-44%201.md), [45–46](../../../source/MathInMind/МАТАН_Л/Лекция%2045-46.md), [47–48](../../../source/MathInMind/МАТАН_Л/Лекция%2047-48%201.md), [49–50](../../../source/MathInMind/МАТАН_Л/Лекция%2049-50.md). Se conservan exactamente los nombres originales y el sufijo ` 1`. En el PDF 43–44, sustitución y el resto de Taylor solo aparecen en los objetivos; la exposición real termina con integración por partes.
+Se conservan exactamente los nombres y el sufijo ` 1` de los duplicados anteriores indicados arriba. En el PDF 43–44, la sustitución y el resto de Taylor solo aparecen en los objetivos; la exposición real termina con integración por partes. No se añadieron enlaces al archivo para 51–54 porque no se consultó la carpeta de fuentes.
 
 Las figuras extraídas de las páginas PDF, incluidas las manuscritas y las anotaciones en diapositivas, están en la carpeta común [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
@@ -62,7 +65,7 @@ Las figuras extraídas de las páginas PDF, incluidas las manuscritas y las anot
 - Los números de definiciones, teoremas y corolarios se conservan tal como aparecen en las diapositivas originales. En las lecciones 5–6 la etiqueta «Definición 1.3.5» aparece tres veces; véase la nota en el archivo.
 - Las páginas manuscritas tienen encabezados propios con números de página PDF.
 - Las notas, explicaciones y correcciones editoriales se identifican explícitamente como citas.
-- En las lecciones 31–50 se distinguen los números de diapositiva impresa y los de página PDF. Las páginas PDF de las lecciones 45–50 se atribuyeron con hojas de contacto rotuladas con archivo de origen y página en cada mosaico; cada recorte final referenciado se abrió por separado.
+- En las lecciones 31–54 se distinguen los números de diapositiva impresa y de página PDF. Las lecciones 45–50 se atribuyeron mediante hojas de contacto rotuladas con archivo y página; las páginas 51–54 también se comprobaron con los PDF y hojas de contacto rotuladas. Cada JPEG final de 31–54 se abrió individualmente.
 - Las hipótesis restituidas, las correcciones de erratas y las demostraciones complementarias se identifican explícitamente como editoriales, no como contenido del PDF.
 
 ```mermaid
@@ -97,4 +100,7 @@ flowchart LR
     AB --> AC["Lecciones 45–46: sustitución, Taylor, Wallis y desigualdades"]
     AC --> AD["Lecciones 47–48: desigualdades integrales e integrales impropias"]
     AD --> AE["Lecciones 49–50: convergencia absoluta, Dirichlet y Abel"]
+    AE --> AF["Lecciones 51–52: geometría, longitud y aplicaciones integrales"]
+    AF --> AG["Lección 53: longitud de caminos suaves y trabajo"]
+    AG --> AH["Lección 54: normas, entornos y límites vectoriales"]
 ```
