@@ -8,7 +8,7 @@ lang: en
 
 These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (RUDN University). Typed slides were extracted from the PDF text layer, handwritten pages were transcribed from their images, and the figures are embedded as illustrations. Formulas use LaTeX (MathJax) and diagrams use Mermaid; both work in Obsidian and on GitHub.
 
-**Coverage: lectures 0–54 without gaps, in Russian, English and Spanish.** Semester 1 ends with lecture 32; semester 2 spans lectures 33–64. Lectures 31–38 cover 123 pages from five PDFs and 17 figures; 39–44 cover 94 pages from three PDFs and 17 figures; 45–50 add 84 pages from three PDFs and 4 illustrations; the new 51–54 batch adds 85 pages from the three attached PDFs and 8 individually reviewed illustrations. In total, lectures 31–54 comprise 386 pages from 14 PDFs and 46 shared JPEG images; every final file was opened individually. Lectures 51–54 use only the chat PDFs; the source folder was not consulted. Manifests: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json), [51–54](../../assets/lectures-2025-26/figures-51-54.json); [review log for batch 51–54](../../assets/lectures-2025-26/provenance-51-54.md).
+**Coverage: lectures 0–60 without gaps, in Russian, English and Spanish.** Semester 1 ends with lecture 32; semester 2 spans lectures 33–64. Lectures 31–38 cover 123 pages from five PDFs and 17 figures; 39–44 cover 94 pages from three PDFs and 17 figures; 45–50 add 84 pages from three PDFs and 4 illustrations; the new 51–54 batch adds 85 pages from the three attached PDFs and 8 individually reviewed illustrations. the new 55–60 batch adds 96 pages from the three attached PDFs and 20 individually reviewed illustrations. In total, lectures 31–60 comprise 482 pages from 17 PDFs and 66 shared JPEG images; every final file was opened individually. Lectures 51–60 use only the chat PDFs; the source folder was not consulted. Manifests: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json), [51–54](../../assets/lectures-2025-26/figures-51-54.json), [55–60](../../assets/lectures-2025-26/figures-55-60.json); review logs for batches [51–54](../../assets/lectures-2025-26/provenance-51-54.md) and [55–60](../../assets/lectures-2025-26/provenance-55-60.md).
 
 ## Semester 1 — lectures 0–32
 
@@ -36,9 +36,9 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 29–30 | 11 Dec 2025 | Taylor–Lagrange, remainders, monotonicity and extrema | [lecture-29-30.md](lecture-29-30.md) | `ma25_26-lectures_29-30_notes.pdf` |
 | 31–32 | 18 Dec 2025 | Necessary and sufficient extremum conditions, Darboux’s theorem, convexity and the three-chords lemma; end of semester 1 | [lecture-31-32.md](lecture-31-32.md) | `ma25_26-lectures_31-32_notes.pdf` |
 
-## Semester 2 — lectures 33–64 (here: 33–54)
+## Semester 2 — lectures 33–64 (here: 33–60)
 
-> **Semester-2 duplication.** Lectures 33–64 are also represented in the [Russian `ru/lectures/` folder](../../ru/lectures/index.md) and overlap thematically with §§3.8–5.2. Files 33–54 below are complete illustrated PDF transcriptions, not replacement pointers. Lectures 51–54 were prepared exclusively from the PDFs attached in chat; the source folder was not consulted, and no archive filenames are claimed for them. Handwritten pages and slide annotations are included. Semester 2 spans lectures 33–64.
+> **Semester-2 duplication.** Lectures 33–64 are also represented in the [Russian `ru/lectures/` folder](../../ru/lectures/index.md) and overlap thematically with §§3.8–5.5 and §6.1. Files 33–60 below are complete illustrated PDF transcriptions, not replacement pointers. Lectures 51–60 were prepared exclusively from the PDFs attached in chat; the source folder was not consulted, and no archive filenames are claimed for them. Handwritten pages and slide annotations are included. Semester 2 spans lectures 33–64.
 
 | Lecture | Date | Content | File | Source PDF |
 |---|---|---|---|---|
@@ -55,8 +55,11 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 51–52 | 16 Apr 2026 | Area, volume, paths, integral formulas for area and volume, polar coordinates, solids of revolution | [lecture-51-52.md](lecture-51-52.md) | `ma25_26-lectures_51-52_notes.pdf.txt` |
 | 53 | 23 Apr 2026 | Length of smooth paths, graphs and polar curves; work by a variable force | [lecture-53.md](lecture-53.md) | `ма25_26_лекция_53_notes.pdf.txt` |
 | 54 | 23 Apr 2026 | Euclidean norm, neighborhoods in $\mathbb R^n$, vector operations and limits of vector sequences | [lecture-54.md](lecture-54.md) | `ма25_26_лекция_54_notes.pdf.txt` |
+| 55–56 | 30 Apr 2026 | Limits of subsequences, Bolzano–Weierstrass and Cauchy, limit points, open and closed sets, closure | [lecture-55-56.md](lecture-55-56.md) | `MA25-26_ktrwbb_55-56_notes.pdf.txt` |
+| 57–58 | 7 May 2026 | Interior, boundary, openness in $E$, covers and compactness, criterion of compactness, limits of maps in the Cauchy and Heine senses | [lecture-57-58.md](lecture-57-58.md) | `ma25_26-lectures_57-58_notes.pdf.txt` |
+| 59–60 | 14 May 2026 | Continuous maps, preimages of open sets, Weierstrass and Cantor, the symbols $o$ and $O$, the differential at a point | [lecture-59-60.md](lecture-59-60.md) | `ma25_26-lectures_59-60_notes.pdf.txt` |
 
-Exact names and ` 1` suffixes are preserved for the earlier archive duplicates listed above. In the 43–44 PDF, substitution and Taylor’s remainder occur only in the goals; the actual exposition ends with integration by parts. No archive links were added for 51–54 because the source folder was not consulted.
+Exact names and ` 1` suffixes are preserved for the earlier archive duplicates listed above. In the 43–44 PDF, substitution and Taylor’s remainder occur only in the goals; the actual exposition ends with integration by parts. No archive links were added for 51–60 because the source folder was not consulted.
 
 Figures extracted from the PDF pages, including handwritten pages and slide annotations, are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
@@ -65,7 +68,7 @@ Figures extracted from the PDF pages, including handwritten pages and slide anno
 - Numbers of definitions, theorems and corollaries are kept as in the source slides. In lectures 5–6 the label "Definition 1.3.5" is repeated three times; see the note in the file.
 - Handwritten pages have separate headings with PDF-page numbers.
 - Editorial notes, explanations and corrections are explicitly labelled blockquotes.
-- Lectures 31–54 distinguish printed-slide numbers from PDF-page numbers. Lectures 45–50 were attributed using contact sheets with source filenames and page numbers on every tile; pages 51–54 were likewise checked against the PDFs and labeled contact sheets. Every final JPEG for 31–54 was opened individually.
+- Lectures 31–60 distinguish printed-slide numbers from PDF-page numbers. Lectures 45–50 were attributed using contact sheets with source filenames and page numbers on every tile; pages 51–60 were likewise checked against the PDFs and labeled contact sheets. Every final JPEG for 31–60 was opened individually.
 - Restored hypotheses, source-typo corrections and supplementary proofs are explicitly labelled as editorial, not attributed to the PDF.
 
 ```mermaid
@@ -103,4 +106,7 @@ flowchart LR
     AE --> AF["Lectures 51–52: geometry, length and integral applications"]
     AF --> AG["Lecture 53: smooth-path length and work"]
     AG --> AH["Lecture 54: norms, neighborhoods and vector limits"]
+    AH --> AI["Lectures 55–56: subsequences, topology and closure"]
+    AI --> AJ["Lectures 57–58: interior, boundary and compactness; limits of maps"]
+    AJ --> AK["Lectures 59–60: continuity and the differential at a point"]
 ```
