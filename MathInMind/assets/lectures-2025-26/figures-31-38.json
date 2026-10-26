@@ -1,0 +1,533 @@
+{
+  "coordinate_system": "PDF points, origin top left; pages are 1-based",
+  "sources": {
+    "ma25_26-lectures_31-32_notes.pdf": {
+      "sha256": "1747f9a4ae659cf8fc66e1ba254a68029f6107fa40d42ad19dbfb4e9c45435de",
+      "pages": 29,
+      "lecture": "31-32",
+      "lecture_file": "lecture-31-32.md",
+      "semester": 1,
+      "date": "2025-12-18",
+      "typed_slides": 20,
+      "handwritten_pdf_pages": [
+        6,
+        10,
+        12,
+        15,
+        17,
+        18,
+        19,
+        27,
+        28
+      ],
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29
+      ],
+      "duplicate_sections": []
+    },
+    "ma25_26-lectures_33-34_notes.pdf": {
+      "sha256": "70945e4c93dce0b93234ed3a10a972ebc08b49e429c3e75f79a30146a4e4b288",
+      "pages": 28,
+      "lecture": "33-34",
+      "lecture_file": "lecture-33-34.md",
+      "semester": 2,
+      "date": "2026-02-12",
+      "typed_slides": 16,
+      "handwritten_pdf_pages": [
+        6,
+        7,
+        9,
+        10,
+        12,
+        17,
+        18,
+        22,
+        24,
+        25,
+        27,
+        28
+      ],
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21,
+        23,
+        26
+      ],
+      "duplicate_sections": [
+        "01-convexity-3-8.md"
+      ]
+    },
+    "ma25_26_lecture_35_notes.pdf": {
+      "sha256": "2aef42cef3809e818a3d6a7e272b491eccce90648588c2490061035ee0803f4e",
+      "pages": 8,
+      "lecture": "35",
+      "lecture_file": "lecture-35.md",
+      "semester": 2,
+      "date": "2026-02-19",
+      "typed_slides": 7,
+      "handwritten_pdf_pages": [
+        5
+      ],
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "duplicate_sections": [
+        "01-convexity-3-8.md"
+      ]
+    },
+    "ma25_26_lecture_36_notes.pdf": {
+      "sha256": "058bb6322a3de84f2cbcc171a3b03c3a338fdf5b2212f2b4904fa596ed7912ba",
+      "pages": 20,
+      "lecture": "36",
+      "lecture_file": "lecture-36.md",
+      "semester": 2,
+      "date": "2026-02-19",
+      "typed_slides": 14,
+      "handwritten_pdf_pages": [
+        8,
+        10,
+        11,
+        12,
+        18,
+        19
+      ],
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20
+      ],
+      "duplicate_sections": [
+        "02-antiderivatives-4-1.md"
+      ]
+    },
+    "ma25_26-lectures_37-38_notes.pdf": {
+      "sha256": "ca5e1e101be229958dbb7ee138778b002facc9943afb72d37e4cfd08f31bdf57",
+      "pages": 38,
+      "lecture": "37-38",
+      "lecture_file": "lecture-37-38.md",
+      "semester": 2,
+      "date": "2026-02-26",
+      "typed_slides": 21,
+      "handwritten_pdf_pages": [
+        6,
+        8,
+        10,
+        12,
+        13,
+        15,
+        16,
+        19,
+        20,
+        21,
+        26,
+        27,
+        29,
+        30,
+        31,
+        32,
+        35
+      ],
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11,
+        14,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25,
+        28,
+        33,
+        34,
+        36,
+        37,
+        38
+      ],
+      "duplicate_sections": [
+        "02-antiderivatives-4-1.md",
+        "03-riemann-integral-4-2.md"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "file": "lec31-32-p08-first-derivative-test.jpg",
+      "source": "ma25_26-lectures_31-32_notes.pdf",
+      "pdf_page": 8,
+      "crop_box": [
+        42.094,
+        41.669,
+        804.005,
+        178.583
+      ],
+      "width": 1501,
+      "height": 270,
+      "page_size": [
+        841.89,
+        595.276
+      ],
+      "sha256": "78413e33742cce1128df4ae09dfa643a871a90aa074dbc81a5a9ea34aaadf0b3",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec31-32-p09-cubic-no-extremum.jpg",
+      "source": "ma25_26-lectures_31-32_notes.pdf",
+      "pdf_page": 9,
+      "crop_box": [
+        33.676,
+        32.74,
+        808.214,
+        226.205
+      ],
+      "width": 1501,
+      "height": 376,
+      "page_size": [
+        841.89,
+        595.276
+      ],
+      "sha256": "5b99044da1f3fdc2f1f76c746f518ec025665e3c531cb49f6a4dbe5d8f3ec9de",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec31-32-p11-second-derivative-test.jpg",
+      "source": "ma25_26-lectures_31-32_notes.pdf",
+      "pdf_page": 11,
+      "crop_box": [
+        513.553,
+        95.244,
+        791.376,
+        248.825
+      ],
+      "width": 890,
+      "height": 493,
+      "page_size": [
+        841.89,
+        595.276
+      ],
+      "sha256": "0b7febd31a964c3a76e91c5923fd119e67a0703fdec23b87f10a1b75cd77cc2b",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec31-32-p23-convex-concave-chords.jpg",
+      "source": "ma25_26-lectures_31-32_notes.pdf",
+      "pdf_page": 23,
+      "crop_box": [
+        67.351,
+        279.78,
+        799.795,
+        517.89
+      ],
+      "width": 1501,
+      "height": 489,
+      "page_size": [
+        841.89,
+        595.276
+      ],
+      "sha256": "834f6cb2d91032887ae160f17bf738b6e48678f0f93bb84d996dc8bf422c637d",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec31-32-p25-three-chords.jpg",
+      "source": "ma25_26-lectures_31-32_notes.pdf",
+      "pdf_page": 25,
+      "crop_box": [
+        134.702,
+        291.685,
+        707.187,
+        541.701
+      ],
+      "width": 1501,
+      "height": 656,
+      "page_size": [
+        841.89,
+        595.276
+      ],
+      "sha256": "4d59125f5234889554cf0e009dc21d15cb2c190c0fbb895e77d4c77902ee67c5",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec33-34-p15-supporting-lines.jpg",
+      "source": "ma25_26-lectures_33-34_notes.pdf",
+      "pdf_page": 15,
+      "crop_box": [
+        36.283,
+        65.31,
+        333.808,
+        250.356
+      ],
+      "width": 953,
+      "height": 594,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "02e013e3504c6c1bbd31702e53815b8e2060fa3ad238fb479220ba89165ff297",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec33-34-p21-tangent-envelopes.jpg",
+      "source": "ma25_26-lectures_33-34_notes.pdf",
+      "pdf_page": 21,
+      "crop_box": [
+        29.027,
+        114.293,
+        344.693,
+        234.028
+      ],
+      "width": 1012,
+      "height": 384,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "6d44e45d4de83b1f85916da3dc71eac01ff55443d063b63c91445570aacbc374",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec33-34-p22-asymptote-sketches.jpg",
+      "source": "ma25_26-lectures_33-34_notes.pdf",
+      "pdf_page": 22,
+      "crop_box": [
+        126.27,
+        357.12,
+        808.128,
+        589.248
+      ],
+      "width": 1501,
+      "height": 512,
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "sha256": "55662b51594c9b49d75af47333114d998b51359c874ea78e2859ba7f25f6f79a",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec35-p06-vertical-inflection.jpg",
+      "source": "ma25_26_lecture_35_notes.pdf",
+      "pdf_page": 6,
+      "crop_box": [
+        268.498,
+        28.573,
+        348.322,
+        117.014
+      ],
+      "width": 480,
+      "height": 532,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "f99da2a19228963abf2bcec880fa00bd2e6e52f4ecf77c83e02c469c0661e77f",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec36-p04-differentiation-integration.jpg",
+      "source": "ma25_26_lecture_36_notes.pdf",
+      "pdf_page": 4,
+      "crop_box": [
+        14.513,
+        73.474,
+        351.95,
+        244.913
+      ],
+      "width": 1081,
+      "height": 549,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "02721955cf0669898a5e7fdbf76935c2f80ce835063054b3a7cd99a16d2ad12e",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec36-p19-jump-no-antiderivative.jpg",
+      "source": "ma25_26_lecture_36_notes.pdf",
+      "pdf_page": 19,
+      "crop_box": [
+        488.244,
+        65.472,
+        787.083,
+        211.296
+      ],
+      "width": 957,
+      "height": 468,
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "sha256": "7bb3523156bb259f647e04092073c7b757db93a303ab6912ba14476bfc817845",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec37-38-p05-elementary-operations.jpg",
+      "source": "ma25_26-lectures_37-38_notes.pdf",
+      "pdf_page": 5,
+      "crop_box": [
+        7.257,
+        43.54,
+        359.207,
+        255.798
+      ],
+      "width": 1127,
+      "height": 680,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "2836317b3ba7d1fc15ea16d726700eccfb662073d89282f45376d4b56245cee1",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec37-38-p16-smoothness-classes.jpg",
+      "source": "ma25_26-lectures_37-38_notes.pdf",
+      "pdf_page": 16,
+      "crop_box": [
+        67.344,
+        232.128,
+        761.829,
+        573.178
+      ],
+      "width": 1501,
+      "height": 737,
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "sha256": "ba2061f89aba508e4f539ca2e44f74a79a5f5896379d31dcc5a04bb44441a1ff",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec37-38-p35-integral-approaches.jpg",
+      "source": "ma25_26-lectures_37-38_notes.pdf",
+      "pdf_page": 35,
+      "crop_box": [
+        16.836,
+        5.952,
+        824.964,
+        589.248
+      ],
+      "width": 1501,
+      "height": 1083,
+      "page_size": [
+        841.8,
+        595.2
+      ],
+      "sha256": "128960c8950463461fbf8abf0a1896d4abf84979982233f338a5813c097cc51c",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec37-38-p36-partition.jpg",
+      "source": "ma25_26-lectures_37-38_notes.pdf",
+      "pdf_page": 36,
+      "crop_box": [
+        172.347,
+        114.293,
+        357.392,
+        144.227
+      ],
+      "width": 593,
+      "height": 97,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "27922808a6dd3fdfc86c957d62c0bdc6059a06ba2609e4d16c45ff09406de33c",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec37-38-p37-tagged-partition.jpg",
+      "source": "ma25_26-lectures_37-38_notes.pdf",
+      "pdf_page": 37,
+      "crop_box": [
+        139.691,
+        17.688,
+        355.578,
+        55.786
+      ],
+      "width": 691,
+      "height": 123,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "77596e2e915f13eb45d92634dcfcd50157d74e11d3c914ae5d5c56a63193e060",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec37-38-p38-riemann-sum.jpg",
+      "source": "ma25_26-lectures_37-38_notes.pdf",
+      "pdf_page": 38,
+      "crop_box": [
+        32.655,
+        51.704,
+        341.065,
+        255.798
+      ],
+      "width": 988,
+      "height": 654,
+      "page_size": [
+        362.835,
+        272.126
+      ],
+      "sha256": "e1ebbb15f4f446775f846a81600d4708534a21cc381952563bc5e04ce2b2acce",
+      "reviewed_individually": true
+    }
+  ],
+  "review_method": "All PDF pages reviewed against extracted text and contact sheets with a filename burned into every tile. Each final figure crop opened individually to verify source attribution and bounds; handwritten pages with garbage OCR were identified visually."
+}

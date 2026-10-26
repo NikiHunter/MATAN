@@ -8,6 +8,10 @@ lang: en
 
 These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (RUDN University). Typed slides were extracted from the PDF text layer, handwritten pages were transcribed from their images, and the figures are embedded as illustrations. Formulas use LaTeX (MathJax) and diagrams use Mermaid; both work in Obsidian and on GitHub.
 
+**Coverage: lectures 0–44 without gaps, in Russian, English and Spanish.** Semester 1 ends with lecture 32; semester 2 spans lectures 33–64. Lectures 31–38 cover 123 pages from five PDFs and 17 figures; lectures 39–44 cover all 94 pages from three PDFs and 17 more figures. Total: 217 pages from eight sources and 34 shared JPEG crops, each checked individually. Manifests: [31–38](../../assets/lectures-2025-26/figures-31-38.json) and [39–44](../../assets/lectures-2025-26/figures-39-44.json); [extraction and review of the new batch](../../assets/lectures-2025-26/provenance-39-44.md).
+
+## Semester 1 — lectures 0–32
+
 | Lecture | Date | Content | File | Source PDF |
 |---|---|---|---|---|
 | 0 | 1 Sep 2025 | Sets, inclusion, mathematical logic, operations, De Morgan's laws | [lecture-00.md](lecture-00.md) | `МА2526_лекция_0.pdf` |
@@ -27,14 +31,36 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 19–20 | 6 Nov 2025 | Monotone functions and the inverse function, the five remarkable limits | [lecture-19-20.md](lecture-19-20.md) | `ma25_26-lectures_19-20_notes.pdf` |
 | 21 | 13 Nov 2025 | Comparison of functions: O, o, equivalence; vertical, oblique and horizontal asymptotes | [lecture-21.md](lecture-21.md) | `ma25_26_lecture_21_notes.pdf` |
 | 22–23 | 13 Nov 2025 | The derivative and differentiability, differentiability criterion, the tangent as a limit of secants, rules of differentiation, the chain rule | [lecture-22-23.md](lecture-22-23.md) | `ma25_26_lectures_22-23_notes.pdf` |
+| 24–25–26 | 20 Nov 2025 | Inverse-function derivative, differentials, mean value theorems and L’Hôpital’s rule | [lecture-24-25-26.md](lecture-24-25-26.md) | `ma25_26-lectures_24-25-26_notes.pdf` |
+| 27–28 | 4 Dec 2025 | Higher derivatives and differentials, Leibniz formula, Taylor–Peano | [lecture-27-28.md](lecture-27-28.md) | `ma25_26-lectures_27-28_notes.pdf` |
+| 29–30 | 11 Dec 2025 | Taylor–Lagrange, remainders, monotonicity and extrema | [lecture-29-30.md](lecture-29-30.md) | `ma25_26-lectures_29-30_notes.pdf` |
+| 31–32 | 18 Dec 2025 | Necessary and sufficient extremum conditions, Darboux’s theorem, convexity and the three-chords lemma; end of semester 1 | [lecture-31-32.md](lecture-31-32.md) | `ma25_26-lectures_31-32_notes.pdf` |
 
-Figures extracted from handwritten pages are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
+## Semester 2 — lectures 33–64 (here: 33–44)
+
+> **Semester-2 duplication.** Material for lectures 33–64 is already represented in the [Russian `ru/lectures/` folder](../../ru/lectures/index.md) and the [original `МАТАН_Л/` archive](../../../source/MathInMind/МАТАН_Л/). The files for 33–44 below are full illustrated transcriptions of the new PDFs, not replacement pointers. Overlapping sections: [§3.8](../../ru/lectures/01-convexity-3-8.md), [§4.1](../../ru/lectures/02-antiderivatives-4-1.md), [§4.2](../../ru/lectures/03-riemann-integral-4-2.md) and [§4.3](../../ru/lectures/04-riemann-properties-4-3.md). The continuation, 45–64, is currently available in that existing folder, not in this series.
+
+| Lecture | Date | Content | File | Source PDF |
+|---|---|---|---|---|
+| 33–34 | 12 Feb 2026 | Convexity, one-sided derivatives, supporting lines, tangents and asymptotes | [lecture-33-34.md](lecture-33-34.md) | `ma25_26-lectures_33-34_notes.pdf` |
+| 35 | 19 Feb 2026 | Second-derivative criterion for convexity, inflection points | [lecture-35.md](lecture-35.md) | `ma25_26_lecture_35_notes.pdf` |
+| 36 | 19 Feb 2026 | Antiderivatives, the integral as a family, set arithmetic, existence conditions | [lecture-36.md](lecture-36.md) | `ma25_26_lecture_36_notes.pdf` |
+| 37–38 | 26 Feb 2026 | Substitution, integration by parts, rational and non-elementary integrals, partitions and Riemann sums | [lecture-37-38.md](lecture-37-38.md) | `ma25_26-lectures_37-38_notes.pdf` |
+| 39–40 | 5 Mar 2026 | Limits of sums, the Riemann integral, Darboux-sum properties, boundedness, oscillations and criteria | [lecture-39-40.md](lecture-39-40.md) | `ma25_26-lectures_39-40_notes.pdf` |
+| 41–42 | 12 Mar 2026 | Continuous and monotone functions, finite modifications, restriction and gluing, the Lebesgue criterion, arithmetic | [lecture-41-42.md](lecture-41-42.md) | `ma25_26-lectures_41-42_notes.pdf` |
+| 43–44 | 19 Mar 2026 | Dirichlet and Riemann functions, integral properties, mean values, Newton–Leibniz, counterexamples, Barrow, parts | [lecture-43-44.md](lecture-43-44.md) | `ma25_26-lectures_43-44_notes.pdf` |
+
+Archive duplicates for the new batch: [39–40](../../../source/MathInMind/МАТАН_Л/Лекция%2039-40%201.md), [41–42](../../../source/MathInMind/МАТАН_Л/Лекция%2041-42.md), [43–44](../../../source/MathInMind/МАТАН_Л/Лекция%2043-44%201.md). The original filename suffixes ` 1` are preserved. In the 43–44 PDF, substitution and Taylor’s remainder occur only in the goals; the actual content ends at integration by parts.
+
+Figures extracted from the PDF pages, including handwritten pages and slide annotations, are in the shared folder [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
 ## Conventions
 
 - Numbers of definitions, theorems and corollaries are kept as in the source slides. In lectures 5–6 the label "Definition 1.3.5" is repeated three times; see the note in the file.
-- Handwritten pages are headed "Handwritten page N (PDF p. N)".
-- Editor's notes are set as blockquotes and begin with "Editor's note" or "Remark".
+- Handwritten pages have separate headings with PDF-page numbers.
+- Editorial notes, explanations and corrections are explicitly labelled blockquotes.
+- Lectures 31–44 distinguish typed-slide numbers from PDF-page numbers. Handwritten-page attribution was checked using contact sheets with filenames on every tile; each referenced crop was viewed separately.
+- Restored hypotheses, source-typo corrections and supplementary proofs are explicitly labelled as editorial, not attributed to the PDF.
 
 ```mermaid
 flowchart LR
@@ -57,4 +83,12 @@ flowchart LR
     Q --> R["Lectures 24–26: inverse function, mean value theorems, L'Hopital"]
     R --> S["Lectures 27–28: higher derivatives, Taylor-Peano"]
     S --> T["Lectures 29–30: Taylor-Lagrange, monotonicity, extrema"]
+    T --> U["Lectures 31–32: extrema, Darboux, convexity — end of semester 1"]
+    U --> V["Lectures 33–34: supporting lines and asymptotes — semester 2"]
+    V --> W["Lecture 35: second derivative and inflection points"]
+    W --> X["Lecture 36: antiderivatives and the indefinite integral"]
+    X --> Y["Lectures 37–38: integration methods and Riemann sums"]
+    Y --> Z["Lectures 39–40: integral, Darboux and criteria"]
+    Z --> AA["Lectures 41–42: classes of integrable functions"]
+    AA --> AB["Lectures 43–44: properties, means and Newton–Leibniz"]
 ```
