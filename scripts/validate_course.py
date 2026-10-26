@@ -40,13 +40,14 @@ CHAPTERS = (
 SUPPORTING = ("index.md", "00-notation.md", "formula-sheet.md", "glossary.md")
 EXPECTED = set(CHAPTERS + SUPPORTING)
 LECTURE_DIRECTORY = "lectures-2025-26"
-LAST_LECTURE = 54
+LAST_LECTURE = 60
 SEMESTER_ONE_LAST = 32
 LECTURE_BATCHES = {
     "31-38": tuple(f"lecture-{n}.md" for n in ("31-32", "33-34", "35", "36", "37-38")),
     "39-44": tuple(f"lecture-{n}.md" for n in ("39-40", "41-42", "43-44")),
     "45-50": tuple(f"lecture-{n}.md" for n in ("45-46", "47-48", "49-50")),
     "51-54": tuple(f"lecture-{n}.md" for n in ("51-52", "53", "54")),
+    "55-60": tuple(f"lecture-{n}.md" for n in ("55-56", "57-58", "59-60")),
 }
 NEW_LECTURES = tuple(name for filenames in LECTURE_BATCHES.values() for name in filenames)
 # One level of brackets in a label is needed for interval notation in image alt text.
@@ -378,10 +379,11 @@ def check_new_lecture_batch(batch: str = "31-38") -> int:
             continue
         if source.get("semester") != expected_semester:
             fail(manifest, f"incorrect semester for {filename}")
-        # The 51–54 transcription is based only on the supplied PDFs, per the
-        # user's instruction not to consult the source archive. Archive links
-        # are optional for that batch; earlier batches retain their checks.
-        if batch == "51-54" and "archive_file" not in source:
+        # The 51–54 and 55–60 transcriptions are based only on the supplied
+        # PDFs, per the user's instruction not to consult the source archive.
+        # Archive links are optional for those batches; earlier batches retain
+        # their checks.
+        if batch in ("51-54", "55-60") and "archive_file" not in source:
             archive_name = None
         else:
             archive_name = source.get("archive_file", f"Лекция {source['lecture']}.md")
