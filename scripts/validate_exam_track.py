@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import argparse
+import os
 import re
 import sys
 from pathlib import Path
@@ -13,7 +15,8 @@ RU = ROOT / "MathInMind" / "ru"
 LECTURES = RU / "lectures"
 TICKETS = RU / "exam" / "tickets"
 PURGATORY = RU / "purgatory"
-SOURCE_LECTURES = ROOT / "source" / "MathInMind" / "МАТАН_Л"
+SOURCE_ROOT = ROOT / "source"
+SOURCE_LECTURES = SOURCE_ROOT / "MathInMind" / "МАТАН_Л"
 
 SECTIONS = (
     "01-convexity-3-8.md",
@@ -83,7 +86,7 @@ def check_text_basics(path: Path, text: str) -> None:
         fail(path, "unbalanced details blocks")
 
 
-def check_links(path: Path, text: str) -> None:
+def check_links(path: Path, text: str, source_safe: bool = False) -> None:
     prose = re.sub(r"^```.*?^```\s*$", "", text, flags=re.MULTILINE | re.DOTALL)
     for match in re.finditer(r"!?\[[^\]]*\]\(([^)]+)\)", prose):
         raw = match.group(1).strip()
@@ -101,7 +104,16 @@ def check_links(path: Path, text: str) -> None:
         if target.is_absolute():
             fail(path, f"absolute link: {raw}")
             continue
-        resolved = (path.parent / target).resolve()
+        candidate = Path(os.path.abspath(path.parent / target))
+        if source_safe:
+            try:
+                candidate.relative_to(SOURCE_ROOT)
+            except ValueError:
+                pass
+            else:
+                # Do not even stat links into the restricted source tree.
+                continue
+        resolved = candidate.resolve()
         try:
             resolved.relative_to(ROOT.resolve())
         except ValueError:
@@ -118,12 +130,18 @@ def check_links(path: Path, text: str) -> None:
                     fail(path, f"missing explicit anchor {fragment} in {resolved.relative_to(ROOT)}")
 
 
-def validate_lecture_register() -> None:
+def validate_lecture_register(compare_source_archive: bool = True) -> None:
+    """Check curated numbering; optionally compare with the restricted archive.
+
+    The source-safe mode intentionally skips opening or listing SOURCE_LECTURES,
+    while retaining all checks against the curated lecture register itself.
+    """
     pattern = re.compile(r"(?i)(Определение|Теорема|Лемма|Следствие)\s+(\d+\.\d+\.\d+)")
     source_items: set[tuple[str, str]] = set()
-    for path in SOURCE_LECTURES.glob("*.md"):
-        for match in pattern.finditer(path.read_text(encoding="utf-8")):
-            source_items.add((match.group(1).capitalize(), match.group(2)))
+    if compare_source_archive:
+        for path in SOURCE_LECTURES.glob("*.md"):
+            for match in pattern.finditer(path.read_text(encoding="utf-8")):
+                source_items.add((match.group(1).capitalize(), match.group(2)))
     curated_items: set[tuple[str, str]] = set()
     heading_pattern = re.compile(r"(?m)^##\s+(Определение|Теорема|Лемма|Следствие)\s+(\d+\.\d+\.\d+)\b")
     anchor_count = 0
@@ -137,14 +155,17 @@ def validate_lecture_register() -> None:
         anchor_count += len(anchors)
     if anchor_count != 149:
         fail(LECTURES, f"expected 149 explicit anchors, found {anchor_count}")
-    missing = sorted(source_items - curated_items)
-    if missing:
-        fail(LECTURES, f"numbered lecture items missing: {missing}")
-    if len(source_items) != 148:
-        fail(SOURCE_LECTURES, f"expected 148 source items, found {len(source_items)}")
+    if compare_source_archive:
+        missing = sorted(source_items - curated_items)
+        if missing:
+            fail(LECTURES, f"numbered lecture items missing: {missing}")
+        if len(source_items) != 148:
+            fail(SOURCE_LECTURES, f"expected 148 source items, found {len(source_items)}")
+        print(f"Lecture register: {len(source_items)} source items covered; {len(curated_items)} including reconstruction")
+    else:
+        print(f"Lecture register: source-archive comparison skipped; {len(curated_items)} curated items including reconstruction")
     if ("Теорема", "6.4.1") not in curated_items:
         fail(LECTURES / "17-higher-derivatives-6-4.md", "reconstructed theorem 6.4.1 is missing")
-    print(f"Lecture register: {len(source_items)} source items covered; {len(curated_items)} including reconstruction")
 
 
 def validate_tickets() -> None:
@@ -189,7 +210,11 @@ def validate_purgatory() -> None:
     print(f"Purgatory: {len(headings)} definitions, {len(actual_assets)} scans, {len(numbers)} question themes")
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source-safe", action="store_true",
+                        help="skip reading/listing the restricted source lecture archive")
+    args = parser.parse_args(argv)
     required = [LECTURES / "index.md", LECTURES / "terms.md", RU / "exam" / "index.md", PURGATORY / "definitions.md", PURGATORY / "questions.md"]
     required.extend(LECTURES / name for name in SECTIONS)
     required.extend(TICKETS / f"{n:02d}.md" for n in range(1, 73))
@@ -197,8 +222,8 @@ def main() -> int:
         text = read(path)
         check_frontmatter(path, text)
         check_text_basics(path, text)
-        check_links(path, text)
-    validate_lecture_register()
+        check_links(path, text, source_safe=args.source_safe)
+    validate_lecture_register(compare_source_archive=not args.source_safe)
     validate_tickets()
     validate_purgatory()
     if errors:

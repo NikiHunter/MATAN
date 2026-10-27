@@ -8,7 +8,7 @@ lang: es
 
 Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de D. E. Apushkinskaya (Universidad RUDN). Las diapositivas impresas se extrajeron de la capa de texto del PDF, las páginas manuscritas se transcribieron a partir de su imagen, y las figuras se incluyen como ilustraciones. Las fórmulas usan LaTeX (MathJax) y los diagramas, Mermaid; ambos funcionan en Obsidian y en GitHub.
 
-**Cobertura: lecciones 0–60 sin lagunas, en ruso, inglés y español.** El semestre 1 termina con la lección 32; el semestre 2 abarca las lecciones 33–64. Las lecciones 31–38 cubren 123 páginas de cinco PDF y 17 figuras; 39–44, 94 páginas de tres PDF y 17 figuras; 45–50 añaden 84 páginas de tres PDF y 4 ilustraciones; la nueva entrega 51–54 añade 85 páginas de los tres PDF adjuntos y 8 ilustraciones revisadas individualmente. la nueva entrega 55–60 añade 96 páginas de los tres PDF adjuntos y 20 ilustraciones revisadas individualmente. En total, las lecciones 31–60 reúnen 482 páginas de 17 PDF y 66 imágenes JPEG compartidas; cada archivo final se abrió individualmente. Las lecciones 51–60 usan solo los PDF del chat; no se consultó la carpeta de fuentes. Manifiestos: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json), [51–54](../../assets/lectures-2025-26/figures-51-54.json), [55–60](../../assets/lectures-2025-26/figures-55-60.json); registros de revisión de las entregas [51–54](../../assets/lectures-2025-26/provenance-51-54.md) y [55–60](../../assets/lectures-2025-26/provenance-55-60.md).
+**Cobertura: lecciones 0–64 sin lagunas, en ruso, inglés y español.** El semestre 1 termina con la lección 32; el semestre 2 abarca las lecciones 33–64. Las lecciones 31–38 cubren 123 páginas de cinco PDF y 17 figuras; 39–44, 94 páginas de tres PDF y 17 figuras; 45–50 añaden 84 páginas de tres PDF y 4 ilustraciones; 51–54 añaden 85 páginas de los tres PDF adjuntos y 8 ilustraciones revisadas individualmente; 55–60 añaden 96 páginas de los tres PDF adjuntos y 20 ilustraciones revisadas individualmente; 61–64 añaden 82 páginas de los dos PDF adjuntos y 26 imágenes de página revisadas individualmente. En total, las lecciones 31–64 suman 564 páginas de 19 PDF y 92 imágenes JPEG compartidas; cada imagen final se abrió individualmente. Las lecciones 51–64 se prepararon solo a partir de los PDF adjuntos en el chat; no se consultó la carpeta de fuentes y no se atribuyen nombres de archivo de esa carpeta. Manifiestos: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json), [51–54](../../assets/lectures-2025-26/figures-51-54.json), [55–60](../../assets/lectures-2025-26/figures-55-60.json), [61–64](../../assets/lectures-2025-26/figures-61-64.json); registros de revisión: [51–54](../../assets/lectures-2025-26/provenance-51-54.md), [55–60](../../assets/lectures-2025-26/provenance-55-60.md), [61–64](../../assets/lectures-2025-26/provenance-61-64.md).
 
 ## Semestre 1 — lecciones 0–32
 
@@ -36,9 +36,9 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 29–30 | 11 dic 2025 | Fórmula de Taylor–Lagrange, desarrollos de Taylor–Peano de las funciones elementales, estimación del resto, criterio de monotonía, extremos | [lecture-29-30.md](lecture-29-30.md) | `ma25_26-lectures_29-30_notes.pdf` |
 | 31–32 | 18 dic 2025 | Condiciones necesarias y suficientes de extremo, teorema de Darboux, convexidad y lema de las tres cuerdas; fin del semestre 1 | [lecture-31-32.md](lecture-31-32.md) | `ma25_26-lectures_31-32_notes.pdf` |
 
-## Semestre 2 — lecciones 33–64 (aquí: 33–60)
+## Semestre 2 — lecciones 33–64 (aquí: 33–64)
 
-> **Duplicación del semestre 2.** Las lecciones 33–64 también están representadas en la [carpeta rusa `ru/lectures/`](../../ru/lectures/index.md) y coinciden temáticamente con §§3.8–5.5 y §6.1. Los archivos 33–60 son transcripciones ilustradas completas de los PDF, no simples remisiones. Las lecciones 51–60 se prepararon exclusivamente a partir de los PDF adjuntos en el chat; no se consultó la carpeta de fuentes y no se indican nombres del archivo para ellas. Se incluyen las páginas manuscritas y las anotaciones. El semestre 2 abarca las lecciones 33–64.
+> **Duplicación del semestre 2.** Las lecciones 33–64 también están representadas en la [carpeta rusa `ru/lectures/`](../../ru/lectures/index.md) y coinciden temáticamente con §§3.8–5.5 y §§6.1–6.4. Los archivos 33–64 son transcripciones ilustradas completas de los PDF, no simples remisiones. Las lecciones 51–64 se prepararon exclusivamente a partir de los PDF adjuntos en el chat; no se consultó la carpeta de fuentes y no se atribuyen nombres de archivo de esa carpeta. Se incluyen las páginas manuscritas y las anotaciones. El semestre 2 abarca las lecciones 33–64.
 
 | Lección | Fecha | Contenido | Archivo | PDF original |
 |---|---|---|---|---|
@@ -58,8 +58,10 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 55–56 | 30 abr 2026 | Límite de una subsucesión, Bolzano–Weierstrass y Cauchy, puntos de acumulación, conjuntos abiertos y cerrados, clausura | [lecture-55-56.md](lecture-55-56.md) | `MA25-26_ktrwbb_55-56_notes.pdf.txt` |
 | 57–58 | 7 may 2026 | Interior, frontera, apertura en $E$, recubrimientos y compacidad, criterio de compacidad, límite de una aplicación según Cauchy y Heine | [lecture-57-58.md](lecture-57-58.md) | `ma25_26-lectures_57-58_notes.pdf.txt` |
 | 59–60 | 14 may 2026 | Aplicaciones continuas, imágenes inversas de abiertos, Weierstrass y Cantor, los símbolos $o$ y $O$, el diferencial en un punto | [lecture-59-60.md](lecture-59-60.md) | `ma25_26-lectures_59-60_notes.pdf.txt` |
+| 61–62 | 21 may 2026 | Derivadas según un vector, diferencial, Jacobiano y gradiente, reglas de derivación y diferenciabilidad continua | [lecture-61-62.md](lecture-61-62.md) | `ma25_26-lectures_61-62_notes.pdf.txt` |
+| 63–64 | 28 may 2026 | Diferenciabilidad continua, derivadas parciales de orden superior, simetría de las mixtas y diferenciales superiores | [lecture-63-64.md](lecture-63-64.md) | `ma25_26-lectures_63-64_notes.pdf.txt` |
 
-Se conservan exactamente los nombres y el sufijo ` 1` de los duplicados anteriores indicados arriba. En el PDF 43–44, la sustitución y el resto de Taylor solo aparecen en los objetivos; la exposición real termina con integración por partes. No se añadieron enlaces al archivo para 51–60 porque no se consultó la carpeta de fuentes.
+Se conservan exactamente los nombres y el sufijo ` 1` de los duplicados anteriores indicados arriba. En el PDF 43–44, la sustitución y el resto de Taylor solo aparecen en los objetivos; la exposición real termina con integración por partes. No se añadieron enlaces al archivo para 51–64 porque no se consultó la carpeta de fuentes.
 
 Las figuras extraídas de las páginas PDF, incluidas las manuscritas y las anotaciones en diapositivas, están en la carpeta común [`../../assets/lectures-2025-26/`](../../assets/lectures-2025-26/).
 
@@ -68,7 +70,7 @@ Las figuras extraídas de las páginas PDF, incluidas las manuscritas y las anot
 - Los números de definiciones, teoremas y corolarios se conservan tal como aparecen en las diapositivas originales. En las lecciones 5–6 la etiqueta «Definición 1.3.5» aparece tres veces; véase la nota en el archivo.
 - Las páginas manuscritas tienen encabezados propios con números de página PDF.
 - Las notas, explicaciones y correcciones editoriales se identifican explícitamente como citas.
-- En las lecciones 31–60 se distinguen los números de diapositiva impresa y de página PDF. Las lecciones 45–50 se atribuyeron mediante hojas de contacto rotuladas con archivo y página; las páginas 51–60 también se comprobaron con los PDF y hojas de contacto rotuladas. Cada JPEG final de 31–60 se abrió individualmente.
+- En las lecciones 31–64 se distinguen los números de diapositiva impresa y de página PDF. Las hojas de contacto de 45–64 muestran el nombre completo de la fuente y la página PDF en cada mosaico; cada JPEG final de 31–64 se abrió individualmente.
 - Las hipótesis restituidas, las correcciones de erratas y las demostraciones complementarias se identifican explícitamente como editoriales, no como contenido del PDF.
 
 ```mermaid
@@ -109,4 +111,6 @@ flowchart LR
     AH --> AI["Lecciones 55–56: subsucesiones, topología y clausura"]
     AI --> AJ["Lecciones 57–58: interior, frontera y compacidad; límite de aplicaciones"]
     AJ --> AK["Lecciones 59–60: continuidad y diferencial en un punto"]
+    AK --> AL["Lecciones 61–62: derivadas direccionales y reglas de derivación"]
+    AL --> AM["Lecciones 63–64: diferenciabilidad continua y de orden superior"]
 ```
