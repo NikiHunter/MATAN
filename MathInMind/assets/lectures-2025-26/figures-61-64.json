@@ -1,0 +1,619 @@
+{
+ "coordinate_system": "PDF points, origin top left; pages are 1-based",
+ "scope_note": "Built solely from the two PDF uploads supplied in chat. The source archive was not consulted; archive-file references are omitted intentionally.",
+ "sources": {
+  "ma25_26-lectures_61-62_notes.pdf.txt": {
+   "sha256": "1134c8b1da1cc0bb640db362255d50daca144917d512badcaf660f797ec586a5",
+   "pages": 40,
+   "lecture": "61-62",
+   "lecture_file": "lecture-61-62.md",
+   "semester": 2,
+   "date": "2026-05-21",
+   "typed_slides": 25,
+   "typed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    14,
+    16,
+    17,
+    19,
+    21,
+    22,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40
+   ],
+   "handwritten_pdf_pages": [
+    7,
+    11,
+    13,
+    15,
+    18,
+    20,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    38
+   ],
+   "duplicate_sections": [
+    "14-differentiability-6-1.md",
+    "15-differentiation-rules-6-2.md",
+    "16-continuous-differentiability-6-3.md"
+   ]
+  },
+  "ma25_26-lectures_63-64_notes.pdf.txt": {
+   "sha256": "91843b3c5f22ad5bc8c59b282a8b458cc38d868f5799d9269a4646fa8fdc99fa",
+   "pages": 42,
+   "lecture": "63-64",
+   "lecture_file": "lecture-63-64.md",
+   "semester": 2,
+   "date": "2026-05-28",
+   "typed_slides": 21,
+   "typed_pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    11,
+    12,
+    14,
+    16,
+    18,
+    21,
+    24,
+    25,
+    27,
+    28,
+    30,
+    34,
+    35,
+    39,
+    40,
+    41
+   ],
+   "handwritten_pdf_pages": [
+    5,
+    6,
+    8,
+    9,
+    10,
+    13,
+    15,
+    17,
+    19,
+    20,
+    22,
+    23,
+    26,
+    29,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    42
+   ],
+   "duplicate_sections": [
+    "16-continuous-differentiability-6-3.md",
+    "17-higher-derivatives-6-4.md"
+   ]
+  }
+ },
+ "figures": [
+  {
+   "file": "lec61-62-p07-vector-derivative-proof.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 7,
+   "crop_box": [
+    0.0,
+    289.971,
+    841.68,
+    559.944
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 540,
+   "sha256": "3a98eab404a1a8d3e46c5c37b6289aab5001863a7827362b705090344e5ab11a",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p08-differential-uniqueness.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 8,
+   "crop_box": [
+    0.0,
+    159.78,
+    362.835,
+    259.643
+   ],
+   "page_size": [
+    362.835,
+    272.126
+   ],
+   "width": 726,
+   "height": 200,
+   "sha256": "a56faa4c709a9cc48c1dd8e344ff03c06e54bbd4f103533206d5dc5526f7bd98",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p11-partial-derivative-example.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 11,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    309.969
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 620,
+   "sha256": "aefbf300cad1ddf41c7f30e9fd1ea53782301208356a9d782f08e8332d9f8c6d",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p13-differential-formula-proof.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 13,
+   "crop_box": [
+    0.0,
+    239.976,
+    841.68,
+    499.95
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 520,
+   "sha256": "3ce3d7f3f0b5e2b9399cc2e5ff2e67608b024f814e52b9ca8584c1a3640b750e",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p15-jacobian-gradient.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 15,
+   "crop_box": [
+    0.0,
+    59.994,
+    841.68,
+    574.942
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 1030,
+   "sha256": "25761e8b96c0bce756aaf19a2570c698fc5c397cdf92aee326d0e728233cfe3b",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p18-coordinate-functions-lemma.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 18,
+   "crop_box": [
+    0.0,
+    49.995,
+    841.68,
+    449.955
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 800,
+   "sha256": "5d6fa752ae4c2237a47c646d1cbb61b52738a21f9897bc5b73be12aeed303685",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p20-jacobian-matrix-proof.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 20,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    299.97
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 600,
+   "sha256": "b15afad0ad888120cb242fcbaa37b2c3c961cfd17a8a6c1fc8abf7eeef19be6a",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p23-gradient-extremal-proof.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 23,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    439.956
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 880,
+   "sha256": "2111541edbf284afd5ba708b2c7436b27028d1a4a032ba7567cc1d13f44a3652",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p24-differentiable-partials-example.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 24,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    274.972
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 550,
+   "sha256": "9e3c66638bbe0be4db926c5f06cfbe243febffd19bca0d51dde42bc6ba347003",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p26-directional-derivative-counterexample.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 26,
+   "crop_box": [
+    0.0,
+    64.993,
+    841.68,
+    239.976
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 350,
+   "sha256": "14633ade1bdbc05939f35ac34e9df352d66594fefe47ae5412f995b88b7d8295",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p29-zero-directional-derivatives-example.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 29,
+   "crop_box": [
+    0.0,
+    259.974,
+    499.81,
+    374.962
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1000,
+   "height": 230,
+   "sha256": "0a51bfd0742c4c19fd00c83a51ec95105956184f964e3a868a58a81ebd1885dc",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p30-directional-derivative-conclusions.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 30,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    524.947
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 1050,
+   "sha256": "906824eb633f9041afd948f3be7208134399c9f0245ecbe7e139450faa852529",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p32-chain-rule-diagram.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 32,
+   "crop_box": [
+    0.0,
+    39.945,
+    362.835,
+    254.65
+   ],
+   "page_size": [
+    362.835,
+    272.126
+   ],
+   "width": 726,
+   "height": 430,
+   "sha256": "9a9525cd06c6e3d47a752fa469dd52e27cedf70006b1fd715c99e16676b23996",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec61-62-p38-linearity-proof.jpg",
+   "source": "ma25_26-lectures_61-62_notes.pdf.txt",
+   "pdf_page": 38,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    539.946
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 1080,
+   "sha256": "881afca19d8c6c8959dbf07d34fcedd6e2fd47e47a7727a491aee9a676e56c77",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p05-coordinate-increment-proof.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 5,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.68,
+    169.983
+   ],
+   "page_size": [
+    841.68,
+    595.44
+   ],
+   "width": 1684,
+   "height": 340,
+   "sha256": "20423be1ff7069f755fda6d7ae15a251caaf27a1fe9b34387557d22fee4b20db",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p08-local-continuity-proof.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 8,
+   "crop_box": [
+    0.0,
+    49.981,
+    841.89,
+    539.797
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 980,
+   "sha256": "a45da8187f721379a548a7a04d4375f0b2c31fda1a73ce386e13ed250b875652",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p10-differentiability-remainder.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 10,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.89,
+    539.797
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 1080,
+   "sha256": "f959958084005a28c9299a0f607288da541e38af1c99375621e4bffd41c50686",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p11-pure-mixed-annotation.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 11,
+   "crop_box": [
+    0.0,
+    59.918,
+    362.835,
+    259.643
+   ],
+   "page_size": [
+    362.835,
+    272.126
+   ],
+   "width": 726,
+   "height": 400,
+   "sha256": "3b0aa6d91282006567e6da28200d241171bc5256af7335ee15d8e01ef71307e7",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p15-order-derivative-lemma.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 15,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.89,
+    359.865
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 720,
+   "sha256": "4d56361db26fc7f300624ecc4c36271ab16d034a78a7891d98da314e0ff2b5c4",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p22-mixed-partials-counterexample.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 22,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.89,
+    124.953
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 250,
+   "sha256": "847fadd86769b8e072b0049f7ba9f542f23e0347bcdfb947464ff75070b93373",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p26-double-increment-mean-value.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 26,
+   "crop_box": [
+    0.0,
+    39.985,
+    841.89,
+    549.793
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 1020,
+   "sha256": "26f6d4e98f1f33a3d805122162e2e460e33778cb6312e4b50c163a8f780269a8",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p29-double-increment-criterion.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 29,
+   "crop_box": [
+    0.0,
+    49.981,
+    841.89,
+    559.789
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 1020,
+   "sha256": "58b62c7f5283bf93feb0186ca93515163b5d8be08dbf5bbbb225a5011b93c437",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p31-mixed-partial-symmetry-proof.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 31,
+   "crop_box": [
+    0.0,
+    39.985,
+    841.89,
+    554.791
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 1030,
+   "sha256": "8ff02e32662a5ddb81d8a54acb0200e17edc4d0d25ae56f7c04dd84fdfc5ddbc",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p33-differentiability-remainder-proof.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 33,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.89,
+    349.868
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 700,
+   "sha256": "6c6f2fccd63cc9de3642608c2116674393f5cd3831dfa072b303b90f76f391e4",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p38-mixed-partial-independence-examples.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 38,
+   "crop_box": [
+    0.0,
+    39.985,
+    841.89,
+    539.797
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 1000,
+   "sha256": "635bc10b3d3dc74ab43778eba011f8c35cf1618b52924154446912a16f30f648",
+   "reviewed_individually": true
+  },
+  {
+   "file": "lec63-64-p42-multi-index-differential.jpg",
+   "source": "ma25_26-lectures_63-64_notes.pdf.txt",
+   "pdf_page": 42,
+   "crop_box": [
+    0.0,
+    0.0,
+    841.89,
+    474.821
+   ],
+   "page_size": [
+    841.89,
+    595.276
+   ],
+   "width": 1684,
+   "height": 950,
+   "sha256": "4c3398ae7657af5f45cad373e1f6a3167b3c61d9985e645a837b6aa58a5cf000",
+   "reviewed_individually": true
+  }
+ ]
+}
