@@ -6,19 +6,21 @@ lang: en
 
 **English** · [Русский](../ru/index.md) · [Español](../es/index.md)
 
-A rigorous course from first principles to modern integration. The 21 chapters use standard Markdown, MathJax, and simple Mermaid diagrams for both Obsidian and GitHub.
+A rigorous course from first principles to modern integration, in 21 chapters. Read it here on GitHub, or open `MathInMind-Obsidian/` as an Obsidian vault for wikilinks, hover previews and theorem callouts; [the guide to both views](00-notation.md) explains the difference.
 
 ## Study aids
 
-- [How to use this vault and notation](00-notation.md)
+- [Index of terms and theorems](term-index.md) — every definition and result, one click from its statement.
+- [How to read the course: views and notation](00-notation.md)
 - [Formula sheet](formula-sheet.md)
 - [Trilingual glossary](glossary.md)
 - [Recommended books and problem collections](../../REFERENCES.md)
 
 ## Illustrated lectures 2025/26
 
-- [Complete index of lectures 0–50: RU originals and EN/ES translations](lectures-2025-26/index.md).
-- **Semester 1: 0–32; semester 2: 33–64.** Lectures 33–50 here are full and illustrated, but duplicate part of the existing [Russian semester-2 folder `ru/lectures/`](../ru/lectures/index.md). The index and each new file link to the overlapping sections and original archive. Lectures 45–50 add 84 pages from three PDFs and four figures: [manifest](../assets/lectures-2025-26/figures-45-50.json) and [review log](../assets/lectures-2025-26/provenance-45-50.md).
+- [Index of all lectures 0–64](lectures-2025-26/index.md): full transcriptions of the 2025/26 lectures, Russian originals with English and Spanish translations, including the handwritten proofs and figures.
+- **Semester 1:** lectures 0–32. **Semester 2:** lectures 33–64. Semester 2 overlaps the Russian exam-oriented [register `ru/lectures/`](../ru/lectures/index.md); every lecture links to the matching register section.
+- Where each figure comes from (PDF, page and crop) is recorded batch by batch in [`assets/lectures-2025-26/`](../assets/lectures-2025-26/).
 
 ## Course map
 
