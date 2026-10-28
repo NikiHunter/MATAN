@@ -72,7 +72,7 @@ flowchart TD
 
 19. [Measure theory and measurable functions](19-measure-theory.md).
 20. [Lebesgue integration and convergence theorems](20-lebesgue-integration.md).
-21. [$L^p$ spaces and modes of convergence](21-lp-spaces.md) — Hölder, completeness, Hilbert-space geometry.
+21. [$`L^p`$ spaces and modes of convergence](21-lp-spaces.md) — Hölder, completeness, Hilbert-space geometry.
 
 ## Suggested study routine
 

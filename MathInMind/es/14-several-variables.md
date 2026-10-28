@@ -6,89 +6,95 @@ part: "Varias variables y topología"
 ---
 # 14. Funciones de varias variables
 
-[Anterior](13-metric-spaces.md) · [Índice](index.md) · [Siguiente](15-multivariable-differentiation.md)
+[← 13. Espacios métricos, compacidad y completitud](13-metric-spaces.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [15. Derivación de aplicaciones de varias variables →](15-multivariable-differentiation.md)
 
-> **Objetivo.** Estudiar límites y continuidad en $\mathbb R^n$, distinguiendo el comportamiento conjunto del coordenado.
+> **Objetivo.** Estudiar límites y continuidad en $`\mathbb R^n`$, distinguiendo el comportamiento conjunto del coordenado.
 
+<a id="sec-14-1"></a>
 ## 14.1 Espacio euclidiano y normas
 
-Un punto de $\mathbb R^n$ es $x=(x_1,\ldots,x_n)$. La norma y la distancia euclidianas son
+Un punto de $`\mathbb R^n`$ es $`x=(x_1,\ldots,x_n)`$. La norma y la distancia euclidianas son
 
-$$
+```math
 \|x\|_2=\left(\sum_{i=1}^{n}x_i^2\right)^{1/2},
 \qquad d(x,y)=\|x-y\|_2.
-$$
+```
 
-La desigualdad de Cauchy–Schwarz $|x\cdot y|\le\|x\|_2\|y\|_2$ da la desigualdad triangular. Otras normas son $\|x\|_1=\sum|x_i|$ y $\|x\|_\infty=\max|x_i|$.
+La [desigualdad de Cauchy–Schwarz](21-lp-spaces.md#sec-21-4) $`|x\cdot y|\le\|x\|_2\|y\|_2`$ da la desigualdad triangular. Otras normas son $`\|x\|_1=\sum|x_i|`$ y $`\|x\|_\infty=\max|x_i|`$.
 
-Todas las normas en un espacio vectorial real de dimensión finita son equivalentes: existen $c,C>0$ con $c\|x\|_a\le\|x\|_b\le C\|x\|_a$. Por ello convergencia, apertura y continuidad no dependen de la norma elegida en $\mathbb R^n$.
+Todas las normas en un espacio vectorial real de dimensión finita son equivalentes: existen $`c,C>0`$ con $`c\|x\|_a\le\|x\|_b\le C\|x\|_a`$. Por ello convergencia, apertura y continuidad no dependen de la norma elegida en $`\mathbb R^n`$.
 
-Una función escalar es $f:D\to\mathbb R$ con $D\subseteq\mathbb R^n$; una aplicación vectorial es $F:D\to\mathbb R^m$. Los conjuntos de nivel $\{x:f(x)=c\}$ y las gráficas dan descripciones geométricas útiles.
+Una función escalar es $`f:D\to\mathbb R`$ con $`D\subseteq\mathbb R^n`$; una aplicación vectorial es $`F:D\to\mathbb R^m`$. Los conjuntos de nivel $`\{x:f(x)=c\}`$ y las gráficas dan descripciones geométricas útiles.
 
+<a id="sec-14-2"></a>
 ## 14.2 Límites
 
-Para $f:D\to\mathbb R$ y un punto de acumulación $a$ de $D$,
+Para $`f:D\to\mathbb R`$ y un punto de acumulación $`a`$ de $`D`$,
 
-$$
+```math
 \lim_{x\to a}f(x)=L
-$$
+```
 
-significa que para todo $\varepsilon>0$ existe $\delta>0$ tal que $x\in D$ y $0<\|x-a\|<\delta$ implican $|f(x)-L|<\varepsilon$.
+significa que para todo $`\varepsilon>0`$ existe $`\delta>0`$ tal que $`x\in D`$ y $`0<\|x-a\|<\delta`$ implican $`|f(x)-L|<\varepsilon`$.
 
-Para $F=(F_1,\ldots,F_m)$, la convergencia equivale a la de cada componente. Siguen valiendo el criterio sucesional y las leyes algebraicas usuales.
+Para $`F=(F_1,\ldots,F_m)`$, la convergencia equivale a la de cada componente. Siguen valiendo el criterio sucesional y las leyes algebraicas usuales.
 
-> **Advertencia sobre límites iterados.** La existencia de
-> $$\lim_{x\to a}\lim_{y\to b}f(x,y),\qquad
-> \lim_{y\to b}\lim_{x\to a}f(x,y)$$
-> no implica la existencia del límite conjunto cuando $(x,y)\to(a,b)$.
+> <a id="iterated-limit-warning"></a>**Advertencia sobre límites iterados.** La existencia de
+> ```math
+> \lim_{x\to a}\lim_{y\to b}f(x,y),\qquad
+> \lim_{y\to b}\lim_{x\to a}f(x,y)
+> ```
+> no implica la existencia del límite conjunto cuando $`(x,y)\to(a,b)`$.
 
-Comprobar finitas rectas nunca demuestra un límite conjunto. Una prueba positiva suele usar una estimación en términos de $\|x-a\|$.
+Comprobar finitas rectas nunca demuestra un límite conjunto. Una prueba positiva suele usar una estimación en términos de $`\|x-a\|`$.
 
+<a id="sec-14-3"></a>
 ## 14.3 Continuidad y dominios compactos
 
-Una función es continua en $a$ si $f(x)\to f(a)$ cuando $x\to a$. Sumas, productos, cocientes lejos de ceros y composiciones conservan continuidad. Los polinomios son continuos en todas partes; las funciones racionales donde el denominador no se anula.
+Una función es continua en $`a`$ si $`f(x)\to f(a)`$ cuando $`x\to a`$. Sumas, productos, cocientes lejos de ceros y composiciones conservan continuidad. Los polinomios son continuos en todas partes; las funciones racionales donde el denominador no se anula.
 
-En un compacto $K\subseteq\mathbb R^n$, una función real continua está acotada y alcanza sus extremos. También es uniformemente continua:
+En un [compacto](13-metric-spaces.md#sec-13-4) $`K\subseteq\mathbb R^n`$, una función real continua está acotada y alcanza sus extremos. También es [uniformemente continua](05-limits-continuity.md#sec-5-4):
 
-$$
+```math
 \forall\varepsilon>0\;\exists\delta>0:\quad
 \|x-y\|<\delta\implies|f(x)-f(y)|<\varepsilon.
-$$
+```
 
-En un conjunto conexo, una función continua tiene la propiedad del valor intermedio. Las proyecciones coordenadas y las normas son continuas, lo que ayuda con muchos ejemplos.
+En un conjunto [conexo](13-metric-spaces.md#sec-13-5), una función continua tiene la propiedad del valor intermedio. Las proyecciones coordenadas y las [normas](#sec-14-1) son continuas, lo que ayuda con muchos ejemplos.
 
+<a id="sec-14-4"></a>
 ## 14.4 Dos ejemplos diagnósticos
 
 Para
 
-$$
+```math
 f(x,y)=\frac{xy}{x^2+y^2},\qquad (x,y)\ne(0,0),
-$$
+```
 
-el valor sobre $y=kx$ es $k/(1+k^2)$ si $x\ne0$. Distintas pendientes dan límites distintos, así que no existe límite conjunto en el origen. Sin embargo, ambos límites iterados son cero.
+el valor sobre $`y=kx`$ es $`k/(1+k^2)`$ si $`x\ne0`$. Distintas pendientes dan límites distintos, así que no existe límite conjunto en el origen. Sin embargo, ambos [límites iterados](#iterated-limit-warning) son cero.
 
 En cambio, para
 
-$$
+```math
 g(x,y)=\frac{x^2y}{x^2+y^2},
-$$
+```
 
-tenemos $|g(x,y)|\le|y|$ porque $x^2/(x^2+y^2)\le1$. Por tanto $g(x,y)\to0$ cuando $(x,y)\to(0,0)$, y definir $g(0,0)=0$ la hace continua.
+tenemos $`|g(x,y)|\le|y|`$ porque $`x^2/(x^2+y^2)\le1`$. Por tanto $`g(x,y)\to0`$ cuando $`(x,y)\to(0,0)`$, y definir $`g(0,0)=0`$ la hace continua.
 
 ## Ejemplo resuelto
 
 Probemos
 
-$$
+```math
 \lim_{(x,y)\to(0,0)}\frac{x^3+y^3}{x^2+y^2}=0.
-$$
+```
 
-Usando $|x|,|y|\le r=\sqrt{x^2+y^2}$,
+Usando $`|x|,|y|\le r=\sqrt{x^2+y^2}`$,
 
-$$
+```math
 \frac{|x^3+y^3|}{x^2+y^2}
 \le\frac{|x|r^2+|y|r^2}{r^2}\le2r\to0.
-$$
+```
 
 Esta estimación radial prueba el límite para todas las trayectorias simultáneamente.
 
@@ -100,18 +106,18 @@ Esta estimación radial prueba el límite para todas las trayectorias simultáne
 
 ## Ejercicios
 
-1. Prueba que $xy/(x^2+y^2)^{1/2}$ tiende a cero en el origen.
-2. Estudia el límite de $x^2y/(x^4+y^2)$ en el origen sobre $y=kx^2$.
-3. Demuestra que $F(x,y)=(x+y,xy)$ es continua.
+1. Prueba que $`xy/(x^2+y^2)^{1/2}`$ tiende a cero en el origen.
+2. Estudia el límite de $`x^2y/(x^4+y^2)`$ en el origen sobre $`y=kx^2`$.
+3. Demuestra que $`F(x,y)=(x+y,xy)`$ es continua.
 
 <details>
 <summary>Respuestas breves</summary>
 
-1. Con $r=\sqrt{x^2+y^2}$, $|xy|\le r^2/2$, así que el valor absoluto es como máximo $r/2$.
-2. Sobre esa trayectoria el valor es $k/(1+k^2)$ si $x\ne0$, por lo que no existe límite conjunto.
+1. Con $`r=\sqrt{x^2+y^2}`$, $`|xy|\le r^2/2`$, así que el valor absoluto es como máximo $`r/2`$.
+2. Sobre esa trayectoria el valor es $`k/(1+k^2)`$ si $`x\ne0`$, por lo que no existe límite conjunto.
 3. Sus componentes son sumas y productos de proyecciones coordenadas continuas.
 </details>
 
 ---
 
-[Anterior](13-metric-spaces.md) · [Índice](index.md) · [Siguiente](15-multivariable-differentiation.md)
+[← 13. Espacios métricos, compacidad y completitud](13-metric-spaces.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [15. Derivación de aplicaciones de varias variables →](15-multivariable-differentiation.md)

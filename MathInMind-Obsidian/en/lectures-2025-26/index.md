@@ -1,0 +1,118 @@
+---
+title: "Lectures 2025/26 — index"
+lang: en
+tags: [mathinmind/en, mathinmind/index]
+---
+# Mathematical Analysis, lectures 2025/26
+
+[[ru/lectures-2025-26/index|Русский]] · **English** · [[es/lectures-2025-26/index|Español]]
+
+These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (RUDN University). Typed slides were extracted from the PDF text layer, handwritten pages were transcribed from their images, and the figures are embedded as illustrations. Formulas use LaTeX (MathJax) and diagrams use Mermaid; both work in Obsidian and on GitHub.
+
+**Coverage: lectures 0–64 without gaps, in Russian, English and Spanish.** Semester 1 ends with lecture 32; semester 2 spans lectures 33–64. Lectures 31–38 cover 123 pages from five PDFs and 17 figures; 39–44 cover 94 pages from three PDFs and 17 figures; 45–50 add 84 pages from three PDFs and 4 illustrations; 51–54 add 85 pages from the three attached PDFs and 8 individually reviewed illustrations; 55–60 add 96 pages from the three attached PDFs and 20 individually reviewed illustrations; 61–64 add 82 pages from the two attached PDFs and 26 individually reviewed source-page illustrations. In total, lectures 31–64 cover 564 pages from 19 PDFs and 92 shared JPEGs, with every final image opened individually. Lectures 51–64 were prepared only from PDFs supplied in chat; the repository source folder was not consulted, and no archive filenames are claimed. Manifests: [31–38](../../assets/lectures-2025-26/figures-31-38.json), [39–44](../../assets/lectures-2025-26/figures-39-44.json), [45–50](../../assets/lectures-2025-26/figures-45-50.json), [51–54](../../assets/lectures-2025-26/figures-51-54.json), [55–60](../../assets/lectures-2025-26/figures-55-60.json), [61–64](../../assets/lectures-2025-26/figures-61-64.json); review logs: [[assets/lectures-2025-26/provenance-51-54|51–54]], [[assets/lectures-2025-26/provenance-55-60|55–60]], [[assets/lectures-2025-26/provenance-61-64|61–64]].
+
+## Semester 1 — lectures 0–32
+
+| Lecture | Date | Content | File | Source PDF |
+|---|---|---|---|---|
+| 0 | 1 Sep 2025 | Sets, inclusion, mathematical logic, operations, De Morgan's laws | [[en/lectures-2025-26/lecture-00\|lecture-00.md]] | `МА2526_лекция_0.pdf` |
+| 1–2 | 4 Sep 2025 | Maps, injection, surjection, bijection, cardinality, countable sets | [[en/lectures-2025-26/lecture-01-02\|lecture-01-02.md]] | `ma25_26-lectures_1-2_notes.pdf` |
+| 3 | 11 Sep 2025 | At most countable sets, uncountability, the continuum | [[en/lectures-2025-26/lecture-03\|lecture-03.md]] | `ма25_26_лекция_3_notes.pdf` |
+| 4 | 11 Sep 2025 | Axioms of the field and order of the real numbers | [[en/lectures-2025-26/lecture-04\|lecture-04.md]] | `ма25_26_лекция_4_notes.pdf` |
+| 5–6 | — | Intervals, extended real line, Archimedean and Cantor axioms, induction, binomial theorem, sup and inf | [[en/lectures-2025-26/lecture-05-06\|lecture-05-06.md]] | `ma25_26-lectures_5-6_notes.pdf` |
+| 7 | — | Maximum and minimum of a finite set, integer part, density of ℚ in ℝ | [[en/lectures-2025-26/lecture-07\|lecture-07.md]] | `ma25_26_лекция_7_notes.pdf` |
+| 8 | — | Limit of a sequence: definition, uniqueness, boundedness, passage to the limit, squeeze theorem | [[en/lectures-2025-26/lecture-08\|lecture-08.md]] | `ма25_26_лекция_8_notes.pdf` |
+| 9–10 | 2 Oct 2025 | Infinitesimal and infinitely large sequences, arithmetic of limits, indeterminate forms | [[en/lectures-2025-26/lecture-09-10\|lecture-09-10.md]] | `ma25_26-lectures_9-10_notes.pdf` |
+| 11–12 | 9 Oct 2025 | Exact bounds, monotone sequences, the number e, subsequences, Bolzano–Weierstrass theorem | [[en/lectures-2025-26/lecture-11-12\|lecture-11-12.md]] | `ma25_26-lectures_11-12_notes.pdf` |
+| 13 | 16 Oct 2025 | Upper and lower limits, fundamental sequences, Bolzano–Cauchy criterion | [[en/lectures-2025-26/lecture-13\|lecture-13.md]] | `ma25_26_лекция_13_notes.pdf` |
+| 14 | 16 Oct 2025 | Limit points and isolated points, limit of a function by Cauchy and by Heine, uniqueness, local boundedness | [[en/lectures-2025-26/lecture-14\|lecture-14.md]] | `ма25_26_лекция_14_notes.pdf` |
+| 15 | 23 Oct 2025 | Stabilization of sign, arithmetic of function limits, composition, one-sided limits, monotone functions, Cauchy criterion for functions | [[en/lectures-2025-26/lecture-15\|lecture-15.md]] | `ма25_26_лекция_15_notes_pdf.pdf` |
+| 16 | 23 Oct 2025 | Continuity at a point (5 forms), discontinuities of the 1st and 2nd kind, removable discontinuity, Dirichlet and Riemann functions, C(D) | [[en/lectures-2025-26/lecture-16\|lecture-16.md]] | `ма25_26_лекция_16_notes.pdf` |
+| 17–18 | 30 Oct 2025 | Arithmetic and composition of continuous functions, Weierstrass theorem, uniform continuity, Cantor and Bolzano–Cauchy theorems | [[en/lectures-2025-26/lecture-17-18\|lecture-17-18.md]] | `ma25_26-lectures_17-18_notes.pdf` |
+| 19–20 | 6 Nov 2025 | Monotone functions and the inverse function, the five remarkable limits | [[en/lectures-2025-26/lecture-19-20\|lecture-19-20.md]] | `ma25_26-lectures_19-20_notes.pdf` |
+| 21 | 13 Nov 2025 | Comparison of functions: O, o, equivalence; vertical, oblique and horizontal asymptotes | [[en/lectures-2025-26/lecture-21\|lecture-21.md]] | `ma25_26_lecture_21_notes.pdf` |
+| 22–23 | 13 Nov 2025 | The derivative and differentiability, differentiability criterion, the tangent as a limit of secants, rules of differentiation, the chain rule | [[en/lectures-2025-26/lecture-22-23\|lecture-22-23.md]] | `ma25_26_lectures_22-23_notes.pdf` |
+| 24–25–26 | 20 Nov 2025 | Inverse-function derivative, differentials, mean value theorems and L’Hôpital’s rule | [[en/lectures-2025-26/lecture-24-25-26\|lecture-24-25-26.md]] | `ma25_26-lectures_24-25-26_notes.pdf` |
+| 27–28 | 4 Dec 2025 | Higher derivatives and differentials, Leibniz formula, Taylor–Peano | [[en/lectures-2025-26/lecture-27-28\|lecture-27-28.md]] | `ma25_26-lectures_27-28_notes.pdf` |
+| 29–30 | 11 Dec 2025 | Taylor–Lagrange, remainders, monotonicity and extrema | [[en/lectures-2025-26/lecture-29-30\|lecture-29-30.md]] | `ma25_26-lectures_29-30_notes.pdf` |
+| 31–32 | 18 Dec 2025 | Necessary and sufficient extremum conditions, Darboux’s theorem, convexity and the three-chords lemma; end of semester 1 | [[en/lectures-2025-26/lecture-31-32\|lecture-31-32.md]] | `ma25_26-lectures_31-32_notes.pdf` |
+
+## Semester 2 — lectures 33–64 (here: 33–64)
+
+> [!info] Semester-2 duplication
+> Lectures 33–64 are also represented in the [[ru/lectures/index|Russian `ru/lectures/` folder]] and overlap thematically with §§3.8–5.5 and §§6.1–6.4. Files 33–64 below are complete illustrated PDF transcriptions, not replacement pointers. Lectures 51–64 were prepared exclusively from the PDFs attached in chat; the source folder was not consulted, and no archive filenames are claimed. Handwritten pages and slide annotations are included. Semester 2 spans lectures 33–64.
+
+| Lecture | Date | Content | File | Source PDF |
+|---|---|---|---|---|
+| 33–34 | 12 Feb 2026 | Convexity, one-sided derivatives, supporting lines, tangents and asymptotes | [[en/lectures-2025-26/lecture-33-34\|lecture-33-34.md]] | `ma25_26-lectures_33-34_notes.pdf` |
+| 35 | 19 Feb 2026 | Second-derivative criterion for convexity, inflection points | [[en/lectures-2025-26/lecture-35\|lecture-35.md]] | `ma25_26_lecture_35_notes.pdf` |
+| 36 | 19 Feb 2026 | Antiderivatives, the integral as a family, set arithmetic, existence conditions | [[en/lectures-2025-26/lecture-36\|lecture-36.md]] | `ma25_26_lecture_36_notes.pdf` |
+| 37–38 | 26 Feb 2026 | Substitution, integration by parts, rational and non-elementary integrals, partitions and Riemann sums | [[en/lectures-2025-26/lecture-37-38\|lecture-37-38.md]] | `ma25_26-lectures_37-38_notes.pdf` |
+| 39–40 | 5 Mar 2026 | Limits of sums, the Riemann integral, Darboux-sum properties, boundedness, oscillations and criteria | [[en/lectures-2025-26/lecture-39-40\|lecture-39-40.md]] | `ma25_26-lectures_39-40_notes.pdf` |
+| 41–42 | 12 Mar 2026 | Continuous and monotone functions, finite modifications, restriction and gluing, the Lebesgue criterion, arithmetic | [[en/lectures-2025-26/lecture-41-42\|lecture-41-42.md]] | `ma25_26-lectures_41-42_notes.pdf` |
+| 43–44 | 19 Mar 2026 | Dirichlet and Riemann functions, integral properties, mean values, Newton–Leibniz, counterexamples, Barrow, parts | [[en/lectures-2025-26/lecture-43-44\|lecture-43-44.md]] | `ma25_26-lectures_43-44_notes.pdf` |
+| 45–46 | 26 Mar 2026 | Substitution, Taylor’s integral remainder, Wallis formula, Bonnet and Jensen theorems | [[en/lectures-2025-26/lecture-45-46\|lecture-45-46.md]] | `ma25_26-lectures_45-46_notes.pdf` |
+| 47–48 | 2 Apr 2026 | Hölder and Minkowski inequalities, improper integrals, substitution, parts and comparison | [[en/lectures-2025-26/lecture-47-48\|lecture-47-48.md]] | `ma25_26-lectures_47-48_notes.pdf` |
+| 49–50 | 9 Apr 2026 | Absolute convergence, Dirichlet’s and Abel’s tests | [[en/lectures-2025-26/lecture-49-50\|lecture-49-50.md]] | `ma25_26-lectures_49-50_notes.pdf` |
+| 51–52 | 16 Apr 2026 | Area, volume, paths, integral formulas for area and volume, polar coordinates, solids of revolution | [[en/lectures-2025-26/lecture-51-52\|lecture-51-52.md]] | `ma25_26-lectures_51-52_notes.pdf.txt` |
+| 53 | 23 Apr 2026 | Length of smooth paths, graphs and polar curves; work by a variable force | [[en/lectures-2025-26/lecture-53\|lecture-53.md]] | `ма25_26_лекция_53_notes.pdf.txt` |
+| 54 | 23 Apr 2026 | Euclidean norm, neighborhoods in $\mathbb R^n$, vector operations and limits of vector sequences | [[en/lectures-2025-26/lecture-54\|lecture-54.md]] | `ма25_26_лекция_54_notes.pdf.txt` |
+| 55–56 | 30 Apr 2026 | Limits of subsequences, Bolzano–Weierstrass and Cauchy, limit points, open and closed sets, closure | [[en/lectures-2025-26/lecture-55-56\|lecture-55-56.md]] | `MA25-26_ktrwbb_55-56_notes.pdf.txt` |
+| 57–58 | 7 May 2026 | Interior, boundary, openness in $E$, covers and compactness, criterion of compactness, limits of maps in the Cauchy and Heine senses | [[en/lectures-2025-26/lecture-57-58\|lecture-57-58.md]] | `ma25_26-lectures_57-58_notes.pdf.txt` |
+| 59–60 | 14 May 2026 | Continuous maps, preimages of open sets, Weierstrass and Cantor, the symbols $o$ and $O$, the differential at a point | [[en/lectures-2025-26/lecture-59-60\|lecture-59-60.md]] | `ma25_26-lectures_59-60_notes.pdf.txt` |
+| 61–62 | 21 May 2026 | Directional derivatives, differentials, Jacobian and gradient, differentiation rules and continuous differentiability | [[en/lectures-2025-26/lecture-61-62\|lecture-61-62.md]] | `ma25_26-lectures_61-62_notes.pdf.txt` |
+| 63–64 | 28 May 2026 | Continuous differentiability, higher partial derivatives, symmetry of mixed partials and higher differentials | [[en/lectures-2025-26/lecture-63-64\|lecture-63-64.md]] | `ma25_26-lectures_63-64_notes.pdf.txt` |
+
+Exact names and ` 1` suffixes are preserved for the earlier archive duplicates listed above. In the 43–44 PDF, substitution and Taylor’s remainder occur only in the goals; the actual exposition ends with integration by parts. No archive links were added for 51–64 because the source folder was not consulted.
+
+Figures extracted from the PDF pages, including handwritten pages and slide annotations, are in the shared folder [`../../assets/lectures-2025-26/`](https://github.com/NikiHunter/matan/tree/main/MathInMind/assets/lectures-2025-26).
+
+## Conventions
+
+- Numbers of definitions, theorems and corollaries are kept as in the source slides. In lectures 5–6 the label "Definition 1.3.5" is repeated three times; see the note in the file.
+- Handwritten pages have separate headings with PDF-page numbers.
+- Editorial notes, explanations and corrections are explicitly labelled blockquotes.
+- Lectures 31–64 distinguish printed-slide numbers from PDF-page numbers. Contact sheets for 45–64 carry the full source filename and PDF page on every tile; every final JPEG for 31–64 was opened individually.
+- Restored hypotheses, source-typo corrections and supplementary proofs are explicitly labelled as editorial, not attributed to the PDF.
+
+```mermaid
+flowchart LR
+    A["Lecture 0: sets"] --> B["Lectures 1–2: maps and countability"]
+    B --> C["Lecture 3: at most countable sets and the continuum"]
+    C --> D["Lecture 4: axioms of the real numbers"]
+    D --> E["Lectures 5–6: completeness axioms, induction, binomial"]
+    E --> F["Lecture 7: maximum, minimum, density of ℚ"]
+    F --> G["Lecture 8: limit of a sequence"]
+    G --> H["Lectures 9–10: infinitesimal and infinitely large"]
+    H --> I["Lectures 11–12: exact bounds, monotone sequences"]
+    I --> J["Lecture 13: upper and lower limits, Cauchy criterion"]
+    J --> K["Lecture 14: limit of a function by Cauchy and Heine"]
+    K --> L["Lecture 15: one-sided limits, monotone functions"]
+    L --> M["Lecture 16: continuity and discontinuities"]
+    M --> N["Lectures 17–18: Weierstrass, Cantor, Bolzano–Cauchy"]
+    N --> O["Lectures 19–20: monotone functions, remarkable limits"]
+    O --> P["Lecture 21: O, o, equivalence, asymptotes"]
+    P --> Q["Lectures 22–23: the derivative and rules of differentiation"]
+    Q --> R["Lectures 24–26: inverse function, mean value theorems, L'Hopital"]
+    R --> S["Lectures 27–28: higher derivatives, Taylor-Peano"]
+    S --> T["Lectures 29–30: Taylor-Lagrange, monotonicity, extrema"]
+    T --> U["Lectures 31–32: extrema, Darboux, convexity — end of semester 1"]
+    U --> V["Lectures 33–34: supporting lines and asymptotes — semester 2"]
+    V --> W["Lecture 35: second derivative and inflection points"]
+    W --> X["Lecture 36: antiderivatives and the indefinite integral"]
+    X --> Y["Lectures 37–38: integration methods and Riemann sums"]
+    Y --> Z["Lectures 39–40: integral, Darboux and criteria"]
+    Z --> AA["Lectures 41–42: classes of integrable functions"]
+    AA --> AB["Lectures 43–44: properties, means and Newton–Leibniz"]
+    AB --> AC["Lectures 45–46: substitution, Taylor, Wallis and inequalities"]
+    AC --> AD["Lectures 47–48: integral inequalities and improper integrals"]
+    AD --> AE["Lectures 49–50: absolute convergence, Dirichlet and Abel"]
+    AE --> AF["Lectures 51–52: geometry, length and integral applications"]
+    AF --> AG["Lecture 53: smooth-path length and work"]
+    AG --> AH["Lecture 54: norms, neighborhoods and vector limits"]
+    AH --> AI["Lectures 55–56: subsequences, topology and closure"]
+    AI --> AJ["Lectures 57–58: interior, boundary and compactness; limits of maps"]
+    AJ --> AK["Lectures 59–60: continuity and the differential at a point"]
+    AK --> AL["Lectures 61–62: directional derivatives and differentiation rules"]
+    AL --> AM["Lectures 63–64: continuous and higher-order differentiability"]
+```

@@ -11,6 +11,9 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from mdtext import inline_spans, to_dollar_math  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 VAULT = ROOT / "MathInMind"
 LANGUAGES = ("en", "ru", "es")
@@ -37,7 +40,7 @@ CHAPTERS = (
     "20-lebesgue-integration.md",
     "21-lp-spaces.md",
 )
-SUPPORTING = ("index.md", "00-notation.md", "formula-sheet.md", "glossary.md")
+SUPPORTING = ("index.md", "00-notation.md", "formula-sheet.md", "glossary.md", "term-index.md")
 EXPECTED = set(CHAPTERS + SUPPORTING)
 LECTURE_DIRECTORY = "lectures-2025-26"
 LAST_LECTURE = 64
@@ -64,6 +67,16 @@ def fail(path: Path | str, message: str) -> None:
 
 def without_fenced_code(text: str) -> str:
     return re.sub(r"^```.*?^```\s*$", "", text, flags=re.MULTILINE | re.DOTALL)
+
+
+def without_inline_code(text: str) -> str:
+    lines = []
+    for line in text.split("\n"):
+        for start, end, kind in reversed(inline_spans(line)):
+            if kind == "code":
+                line = line[:start] + line[end:]
+        lines.append(line)
+    return "\n".join(lines)
 
 
 def check_frontmatter(path: Path, lang: str, text: str) -> None:
@@ -129,7 +142,7 @@ def check_fences_and_math(path: Path, text: str) -> None:
     if html_prose.count("<summary>") != html_prose.count("</summary>"):
         fail(path, "unbalanced <summary> elements")
     # A bare ']]' also ends ordinary alt text such as ![interval [a,b]](...).
-    if re.search(r"\[\[[^\n]*?\]\]", prose):
+    if re.search(r"\[\[[^\n]*?\]\]", without_inline_code(prose)):
         fail(path, "wiki-style links are not portable to GitHub; use relative Markdown links")
 
 
@@ -216,7 +229,7 @@ def math_tokens(text: str) -> tuple[list[str], Counter[str]]:
     Translated prose can legitimately reorder inline symbols. Only translated
     \\text{...} labels and whitespace are ignored, never mathematical operators.
     """
-    prose = without_fenced_code(text)
+    prose = without_fenced_code(to_dollar_math(text))
     display, inline = [], []
     pattern = r"(?<!\\)\$\$(.*?)\$\$|(?<!\\)\$([^$\n]+?)(?<!\\)\$"
     for match in re.finditer(pattern, prose, re.DOTALL):

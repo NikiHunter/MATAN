@@ -1,0 +1,295 @@
+{
+  "coordinate_system": "PDF points, origin top left; pages are 1-based",
+  "scope_note": "Built solely from the three PDF uploads supplied in chat. The source archive was not consulted; archive-file references are intentionally omitted.",
+  "sources": {
+    "ma25_26-lectures_51-52_notes.pdf.txt": {
+      "sha256": "6789d77f446d3f85cb6e6dd11c982ef2e478bf50ba67953917d4516db83606ef",
+      "pages": 40,
+      "lecture": "51-52",
+      "lecture_file": "lecture-51-52.md",
+      "semester": 2,
+      "date": "2026-04-16",
+      "typed_slides": 37,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "handwritten_pdf_pages": [
+        9,
+        17,
+        27
+      ],
+      "duplicate_sections": [
+        "07-measure-paths-4-6.md",
+        "08-integral-applications-4-7.md"
+      ]
+    },
+    "ма25_26_лекция_53_notes.pdf.txt": {
+      "sha256": "4fd7304a7060606fe92dfe0b7bd5cde126042d41f8fcc141257c0de1e2756114",
+      "pages": 20,
+      "lecture": "53",
+      "lecture_file": "lecture-53.md",
+      "semester": 2,
+      "date": "2026-04-23",
+      "typed_slides": 11,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        17,
+        18,
+        19,
+        20
+      ],
+      "handwritten_pdf_pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16
+      ],
+      "duplicate_sections": [
+        "08-integral-applications-4-7.md"
+      ]
+    },
+    "ма25_26_лекция_54_notes.pdf.txt": {
+      "sha256": "3c42e04e0a2e7eb3e74ef031ba70b4fe75196160692ede0e2f8f81f30c86d65e",
+      "pages": 25,
+      "lecture": "54",
+      "lecture_file": "lecture-54.md",
+      "semester": 2,
+      "date": "2026-04-23",
+      "typed_slides": 21,
+      "typed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        22,
+        23,
+        25
+      ],
+      "handwritten_pdf_pages": [
+        8,
+        19,
+        21,
+        24
+      ],
+      "duplicate_sections": [
+        "09-rn-foundations-5-1.md",
+        "10-vector-sequences-5-2.md"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "file": "lec51-52-p17-path-example.jpg",
+      "source": "ma25_26-lectures_51-52_notes.pdf.txt",
+      "pdf_page": 17,
+      "crop_box": [
+        0,
+        0,
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "page_size": [
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "width": 1852,
+      "height": 1310,
+      "sha256": "8eee4ee279f014baa0b924fc9414c356adf1a49e5ca57307b2d9e3541ba29ec6",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec51-52-p28-polar-sector.jpg",
+      "source": "ma25_26-lectures_51-52_notes.pdf.txt",
+      "pdf_page": 28,
+      "crop_box": [
+        0,
+        0,
+        362.8349914550781,
+        272.1260070800781
+      ],
+      "page_size": [
+        362.8349914550781,
+        272.1260070800781
+      ],
+      "width": 799,
+      "height": 599,
+      "sha256": "71e4b6a4f2ae9397c19d03870594a0dced25e8413f4cd19345da213610b9cf31",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec51-52-p32-volume-slice.jpg",
+      "source": "ma25_26-lectures_51-52_notes.pdf.txt",
+      "pdf_page": 32,
+      "crop_box": [
+        0,
+        0,
+        362.8349914550781,
+        272.1260070800781
+      ],
+      "page_size": [
+        362.8349914550781,
+        272.1260070800781
+      ],
+      "width": 799,
+      "height": 599,
+      "sha256": "1a32b49056998dbfa0f41283c3c07223258d3f88477f4ac5ca4b7a55dcc165db",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec53-p11-length-estimate.jpg",
+      "source": "ма25_26_лекция_53_notes.pdf.txt",
+      "pdf_page": 11,
+      "crop_box": [
+        0,
+        0,
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "page_size": [
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "width": 1852,
+      "height": 1310,
+      "sha256": "2f59434c53a8f15353743cef33bfbe7f0985d75709c84a80c8df336c272e1654",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec53-p15-polar-path.jpg",
+      "source": "ма25_26_лекция_53_notes.pdf.txt",
+      "pdf_page": 15,
+      "crop_box": [
+        0,
+        0,
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "page_size": [
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "width": 1852,
+      "height": 1310,
+      "sha256": "c2008f233d3d5d6e8e79ad5a449b5c3dc3df82696ca9d473c46734e93df369a1",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec53-p16-polar-path.jpg",
+      "source": "ма25_26_лекция_53_notes.pdf.txt",
+      "pdf_page": 16,
+      "crop_box": [
+        0,
+        0,
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "page_size": [
+        841.7999877929688,
+        595.2000122070312
+      ],
+      "width": 1852,
+      "height": 1310,
+      "sha256": "c1b84dfccf0d4463891f3887c8a070c607f25b9889dfda53b032ef8017ba0faa",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec54-p10-neighborhoods-infinity.jpg",
+      "source": "ма25_26_лекция_54_notes.pdf.txt",
+      "pdf_page": 10,
+      "crop_box": [
+        0,
+        0,
+        362.8349914550781,
+        272.1260070800781
+      ],
+      "page_size": [
+        362.8349914550781,
+        272.1260070800781
+      ],
+      "width": 799,
+      "height": 599,
+      "sha256": "7b5f92833be6a21c9c6152bbf933b1389aa85354f02ecf13b163bd983447442a",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec54-p21-coordinate-limit-proof.jpg",
+      "source": "ма25_26_лекция_54_notes.pdf.txt",
+      "pdf_page": 21,
+      "crop_box": [
+        0,
+        0,
+        841.6799926757812,
+        595.4400024414062
+      ],
+      "page_size": [
+        841.6799926757812,
+        595.4400024414062
+      ],
+      "width": 1852,
+      "height": 1310,
+      "sha256": "4ce4c3fcae2c33b21270ee175cacac00e0e700763c766794b0a7eb37b536e3a4",
+      "reviewed_individually": true
+    }
+  ]
+}

@@ -6,83 +6,89 @@ part: "Varias variables y topología"
 ---
 # 16. Funciones inversas e implícitas; extremos
 
-[Anterior](15-multivariable-differentiation.md) · [Índice](index.md) · [Siguiente](17-multiple-integrals.md)
+[← 15. Derivación de aplicaciones de varias variables](15-multivariable-differentiation.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [17. Integrales múltiples y cambio de variables →](17-multiple-integrals.md)
 
 > **Objetivo.** Aplicar condiciones de no degeneración de la derivada y hallar extremos locales o condicionados sistemáticamente.
 
+<a id="sec-16-1"></a>
 ## 16.1 Extremos locales sin restricciones
 
-Sea $f$ derivable en un abierto. Si tiene un extremo local en un punto interior $a$, entonces $\nabla f(a)=0$. Estos puntos se llaman estacionarios o críticos. Los puntos frontera se estudian por separado.
+Sea $`f`$ derivable en un abierto. Si tiene un extremo local en un punto interior $`a`$, entonces $`\nabla f(a)=0`$. Estos puntos se llaman estacionarios o críticos. Los [puntos frontera](13-metric-spaces.md#sec-13-2) se estudian por separado.
 
-Para $f\in C^2$, se examina la hessiana $H=Hf(a)$ en un punto crítico:
+Para $`f\in C^2`$, se examina la [hessiana](15-multivariable-differentiation.md#sec-15-4) $`H=Hf(a)`$ en un punto crítico:
 
-- $H$ definida positiva $\implies$ mínimo local estricto;
-- $H$ definida negativa $\implies$ máximo local estricto;
-- $H$ indefinida $\implies$ punto de silla;
-- $H$ semidefinida o singular $\implies$ el criterio no decide.
+- $`H`$ definida positiva $`\implies`$ mínimo local estricto;
+- $`H`$ definida negativa $`\implies`$ máximo local estricto;
+- $`H`$ indefinida $`\implies`$ punto de silla;
+- $`H`$ semidefinida o singular $`\implies`$ el criterio no decide.
 
-En dos variables, con $D=f_{xx}f_{yy}-f_{xy}^2$: mínimo si $D>0$ y $f_{xx}>0$; máximo si $D>0$ y $f_{xx}<0$; silla si $D<0$.
+En dos variables, con $`D=f_{xx}f_{yy}-f_{xy}^2`$: mínimo si $`D>0`$ y $`f_{xx}>0`$; máximo si $`D>0`$ y $`f_{xx}<0`$; silla si $`D<0`$.
 
-Por ejemplo, $f(x,y)=x^2-y^2$ tiene hessiana $\operatorname{diag}(2,-2)$ en el origen, luego una silla. Las funciones $x^4+y^4$ y $-x^4-y^4$ muestran por qué $D=0$ exige más análisis.
+Por ejemplo, $`f(x,y)=x^2-y^2`$ tiene hessiana $`\operatorname{diag}(2,-2)`$ en el origen, luego una silla. Las funciones $`x^4+y^4`$ y $`-x^4-y^4`$ muestran por qué $`D=0`$ exige más análisis.
 
+<a id="sec-16-2"></a>
 ## 16.2 Teorema de la función inversa
 
-> **Teorema.** Sea $F:\mathbb R^n\to\mathbb R^n$ de clase $C^1$ cerca de $a$, con $DF(a)$ invertible. Entonces $F$ aplica biyectivamente un entorno de $a$ sobre un entorno de $F(a)$, la inversa es $C^1$ y
-> $$DF^{-1}(F(a))=(DF(a))^{-1}.$$
+> <a id="inverse-function-theorem"></a>**Teorema.** Sea $`F:\mathbb R^n\to\mathbb R^n`$ de clase $`C^1`$ cerca de $`a`$, con $`DF(a)`$ invertible. Entonces $`F`$ aplica biyectivamente un entorno de $`a`$ sobre un entorno de $`F(a)`$, la inversa es $`C^1`$ y
+> ```math
+> DF^{-1}(F(a))=(DF(a))^{-1}.
+> ```
 
-En coordenadas, la condición es $\det DF(a)\ne0$. El teorema es local: un jacobiano no nulo en todas partes no implica por sí solo inyectividad global.
+En coordenadas, la condición es $`\det DF(a)\ne0`$. El teorema es local: un [jacobiano](17-multiple-integrals.md#sec-17-2) no nulo en todas partes no implica por sí solo inyectividad global.
 
-Explica cuándo un cambio de coordenadas es localmente reversible y fundamenta el teorema de la función implícita.
+Explica cuándo un cambio de coordenadas es localmente reversible y fundamenta el [teorema de la función implícita](#sec-16-3).
 
+<a id="sec-16-3"></a>
 ## 16.3 Teorema de la función implícita
 
-Supongamos que $F(x,y)$ toma valores en $\mathbb R^k$, con $x\in\mathbb R^n$ e $y\in\mathbb R^k$. Si $F$ es $C^1$, $F(a,b)=0$ y la jacobiana parcial $D_yF(a,b)$ es invertible, entonces cerca de $(a,b)$ la ecuación
+Supongamos que $`F(x,y)`$ toma valores en $`\mathbb R^k`$, con $`x\in\mathbb R^n`$ e $`y\in\mathbb R^k`$. Si $`F`$ es $`C^1`$, $`F(a,b)=0`$ y la jacobiana parcial $`D_yF(a,b)`$ es invertible, entonces cerca de $`(a,b)`$ la ecuación
 
-$$
+```math
 F(x,y)=0
-$$
+```
 
-define $y$ únicamente como función $C^1$, $y=g(x)$, con $g(a)=b$. Además,
+define $`y`$ únicamente como función $`C^1`$, $`y=g(x)`$, con $`g(a)=b`$. Además,
 
-$$
+```math
 Dg(a)=-(D_yF(a,b))^{-1}D_xF(a,b).
-$$
+```
 
-Para una ecuación $F(x,y)=0$ con $F_y\ne0$, se reduce a
+Para una ecuación $`F(x,y)=0`$ con $`F_y\ne0`$, se reduce a
 
-$$
+```math
 \frac{dy}{dx}=-\frac{F_x}{F_y}.
-$$
+```
 
 El teorema garantiza existencia y suavidad, no necesariamente una fórmula elemental explícita.
 
+<a id="sec-16-4"></a>
 ## 16.4 Multiplicadores de Lagrange
 
-Para una restricción suave $g(x)=c$, supongamos $\nabla g(a)\ne0$. Si $f$ tiene un extremo local en la superficie de restricción en $a$, existe $\lambda$ tal que
+Para una restricción suave $`g(x)=c`$, supongamos $`\nabla g(a)\ne0`$. Si $`f`$ tiene un extremo local en la superficie de restricción en $`a`$, existe $`\lambda`$ tal que
 
-$$
+```math
 \nabla f(a)=\lambda\nabla g(a),\qquad g(a)=c.
-$$
+```
 
-Geométricamente, ambos gradientes son normales a la misma superficie de nivel y deben ser paralelos. Para varias restricciones independientes $g_1,\ldots,g_k$,
+Geométricamente, ambos [gradientes](15-multivariable-differentiation.md#sec-15-2) son normales a la misma superficie de nivel y deben ser paralelos. Para varias restricciones independientes $`g_1,\ldots,g_k`$,
 
-$$
+```math
 \nabla f(a)=\sum_{i=1}^{k}\lambda_i\nabla g_i(a),
-$$
+```
 
 siempre que los gradientes sean linealmente independientes.
 
-La condición es necesaria, no siempre suficiente. Compara todos los puntos críticos, puntos singulares donde falla el rango y el comportamiento frontera; usa compacidad para extremos globales cuando proceda.
+La condición es necesaria, no siempre suficiente. Compara todos los puntos críticos, puntos singulares donde falla el rango y el comportamiento frontera; usa [compacidad](13-metric-spaces.md#sec-13-4) para extremos globales cuando proceda.
 
 ## Ejemplo resuelto
 
-Optimizamos $f(x,y)=x+y$ con $x^2+y^2=1$. Las ecuaciones de Lagrange dan
+Optimizamos $`f(x,y)=x+y`$ con $`x^2+y^2=1`$. Las ecuaciones de Lagrange dan
 
-$$
+```math
 1=2\lambda x,\qquad 1=2\lambda y,
-$$
+```
 
-así que $x=y$. En la circunferencia aparecen $\pm(1/\sqrt2,1/\sqrt2)$. El máximo es $\sqrt2$ y el mínimo $-\sqrt2$. Coincide con Cauchy–Schwarz: $|x+y|\le\sqrt2\sqrt{x^2+y^2}$.
+así que $`x=y`$. En la circunferencia aparecen $`\pm(1/\sqrt2,1/\sqrt2)`$. El máximo es $`\sqrt2`$ y el mínimo $`-\sqrt2`$. Coincide con [Cauchy–Schwarz](21-lp-spaces.md#sec-21-4): $`|x+y|\le\sqrt2\sqrt{x^2+y^2}`$.
 
 ## Errores frecuentes
 
@@ -92,18 +98,18 @@ así que $x=y$. En la circunferencia aparecen $\pm(1/\sqrt2,1/\sqrt2)$. El máxi
 
 ## Ejercicios
 
-1. Clasifica el origen para $f(x,y)=x^2+2y^2$.
-2. Para $x^2+y^2=1$ cerca de $(0,1)$, halla $dy/dx$ implícitamente.
-3. Halla los extremos de $xy$ en $x^2+y^2=1$.
+1. Clasifica el origen para $`f(x,y)=x^2+2y^2`$.
+2. Para $`x^2+y^2=1`$ cerca de $`(0,1)`$, halla $`dy/dx`$ implícitamente.
+3. Halla los extremos de $`xy`$ en $`x^2+y^2=1`$.
 
 <details>
 <summary>Respuestas breves</summary>
 
-1. La hessiana $\operatorname{diag}(2,4)$ es definida positiva: mínimo local y global estricto.
-2. $2x+2yy'=0$, luego $y'=-x/y$ e $y'(0)=0$ en $(0,1)$.
-3. Máximo $1/2$ en $x=y=1/\sqrt2$ o $x=y=-1/\sqrt2$; mínimo $-1/2$ con signos opuestos.
+1. La hessiana $`\operatorname{diag}(2,4)`$ es definida positiva: mínimo local y global estricto.
+2. $`2x+2yy'=0`$, luego $`y'=-x/y`$ e $`y'(0)=0`$ en $`(0,1)`$.
+3. Máximo $`1/2`$ en $`x=y=1/\sqrt2`$ o $`x=y=-1/\sqrt2`$; mínimo $`-1/2`$ con signos opuestos.
 </details>
 
 ---
 
-[Anterior](15-multivariable-differentiation.md) · [Índice](index.md) · [Siguiente](17-multiple-integrals.md)
+[← 15. Derivación de aplicaciones de varias variables](15-multivariable-differentiation.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [17. Integrales múltiples y cambio de variables →](17-multiple-integrals.md)

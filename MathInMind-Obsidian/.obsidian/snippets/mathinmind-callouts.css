@@ -1,0 +1,10 @@
+/* MathInMind callouts: definitions, theorems and proofs at a glance. */
+.callout[data-callout="definition"] { --callout-color: 46, 125, 230; --callout-icon: lucide-book-open; }
+.callout[data-callout="theorem"] { --callout-color: 124, 77, 255; --callout-icon: lucide-sigma; }
+.callout[data-callout="lemma"] { --callout-color: 0, 150, 136; --callout-icon: lucide-puzzle; }
+.callout[data-callout="corollary"] { --callout-color: 0, 172, 193; --callout-icon: lucide-git-branch; }
+.callout[data-callout="proposition"] { --callout-color: 94, 53, 177; --callout-icon: lucide-sigma; }
+.callout[data-callout="axiom"] { --callout-color: 216, 67, 21; --callout-icon: lucide-anchor; }
+.callout[data-callout="proof"] { --callout-color: 120, 144, 156; --callout-icon: lucide-check-square; }
+.callout[data-callout="remark"] { --callout-color: 141, 110, 99; --callout-icon: lucide-message-square; }
+.callout[data-callout="answer"] { --callout-color: 67, 160, 71; --callout-icon: lucide-check-circle; }

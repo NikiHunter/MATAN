@@ -11,13 +11,13 @@ typed_slides: 16
 ---
 # Lecciones 33–34 — Convexidad, rectas de apoyo y criterios de convexidad
 
-[Índice de lecciones](index.md) · [Русский](../../ru/lectures-2025-26/lecture-33-34.md) · [English](../../en/lectures-2025-26/lecture-33-34.md)
+[← Lecciones 31–32](lecture-31-32.md) · [Índice de lecciones](index.md) · [Lección 35 →](lecture-35.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-33-34.md) · [English](../../en/lectures-2025-26/lecture-33-34.md)
 
 > **Fuente:** `ma25_26-lectures_33-34_notes.pdf` — 28 páginas, 16 diapositivas impresas. Páginas manuscritas: 6–7, 9–10, 12, 17–18, 22, 24–25, 27–28. Algunas páginas manuscritas tienen una capa de texto sin sentido: se han transcrito de las imágenes, no de esa capa. Fecha de las diapositivas: 12 de febrero de 2026.
 >
 > **Semestre 2, lecciones 33–64.** El semestre 1 terminó con la lección 32. **A partir de la lección 33 ya existe material duplicado** en otra carpeta: el [registro ruso `ru/lectures/`](../../ru/lectures/index.md), [§3.8 «Convexidad»](../../ru/lectures/01-convexity-3-8.md). También se conservan los [apuntes archivados «Lección 33-34»](../../../source/MathInMind/МАТАН_Л/Лекция%2033-34.md). Este archivo es una transcripción ilustrada completa e independiente del nuevo PDF, no una mera remisión al material antiguo.
 >
-> **Notación.** $I=\langle A,B\rangle$; $f'_-(a)$ y $f'_+(a)$ son las derivadas izquierda y derecha. «Creciente» no estricto en ruso significa «no decreciente». Los signos estrictos accidentales de la demostración manuscrita para la convexidad ordinaria se sustituyen por no estrictos, con explicación; se conservan los enunciados impresos.
+> **Notación.** $`I=\langle A,B\rangle`$; $`f'_-(a)`$ y $`f'_+(a)`$ son las [derivadas](lecture-22-23.md#def-3-1-1) izquierda y derecha. «Creciente» no estricto en ruso significa «no decreciente». Los signos estrictos accidentales de la demostración manuscrita para la [convexidad](lecture-31-32.md#def-3-8-1) ordinaria se sustituyen por no estrictos, con explicación; se conservan los enunciados impresos.
 
 ## Diapositivas impresas 1–3 (pp. PDF 1–3). Introducción
 
@@ -29,192 +29,192 @@ typed_slides: 16
 
 ### Diapositiva impresa 4 (p. PDF 4). Recordatorio de la definición
 
-La **definición 3.8.1** se repite de las [lecciones 31–32](lecture-31-32.md). Para $f:I\to\mathbb R$,
+La **definición 3.8.1** se repite de las [lecciones 31–32](lecture-31-32.md). Para $`f:I\to\mathbb R`$,
 
-$$
+```math
 f(\lambda a+(1-\lambda)b)\le\lambda f(a)+(1-\lambda)f(b)
 \qquad(a,b\in I,\ 0<\lambda<1)
-$$
+```
 
-significa convexidad; la desigualdad estricta para $a\ne b$ significa convexidad estricta. Anotación manuscrita: «Recordamos la definición de convexidad».
+significa convexidad; la desigualdad estricta para $`a\ne b`$ significa convexidad estricta. Anotación manuscrita: «Recordamos la definición de convexidad».
 
 ### Diapositiva impresa 5 (p. PDF 5). Convexidad y monotonía de las pendientes secantes
 
-**Corolario 3.8.1.** Sean $f:I\to\mathbb R$, $a\in I$ y
+<a id="cor-3-8-1"></a>**Corolario 3.8.1.** Sean $`f:I\to\mathbb R`$, $`a\in I`$ y
 
-$$
+```math
 F(x)=\frac{f(x)-f(a)}{x-a},\qquad x\in I\setminus\{a\}.
-$$
+```
 
-1. Si $f$ es convexa en $I$, entonces $F$ es no decreciente en $I\setminus\{a\}$.
-2. Si $f$ es estrictamente convexa, entonces $F$ es estrictamente creciente en ese conjunto.
+1. Si $`f`$ es convexa en $`I`$, entonces $`F`$ es no decreciente en $`I\setminus\{a\}`$.
+2. Si $`f`$ es estrictamente convexa, entonces $`F`$ es estrictamente creciente en ese conjunto.
 
 ### Página manuscrita (p. PDF 6). Demostración del corolario 3.8.1
 
-Se demuestra la afirmación 2. Para $x<y$, $x,y\ne a$, el lema de las tres cuerdas da, respectivamente,
+Se demuestra la afirmación 2. Para $`x<y`$, $`x,y\ne a`$, el lema de las tres cuerdas da, respectivamente,
 
-$$
+```math
 \begin{array}{ll}
 \dfrac{f(x)-f(a)}{x-a}<\dfrac{f(y)-f(a)}{y-a},&a<x<y,\\[6pt]
 \dfrac{f(a)-f(x)}{a-x}<\dfrac{f(a)-f(y)}{a-y},&x<y<a,\\[6pt]
 \dfrac{f(a)-f(x)}{a-x}<\dfrac{f(y)-f(a)}{y-a},&x<a<y.
 \end{array}
-$$
+```
 
-En cada caso es $F(x)<F(y)$. Para la afirmación 1 se usan desigualdades no estrictas. $\blacksquare$
+En cada caso es $`F(x)<F(y)`$. Para la afirmación 1 se usan desigualdades no estrictas. $`\blacksquare`$
 
 ### Página manuscrita (p. PDF 7). Ejemplo de convexidad estricta
 
-La función $f(x)=x^2$ es estrictamente convexa en $\mathbb R$. En efecto, para $a<c<b$,
+La función $`f(x)=x^2`$ es estrictamente convexa en $`\mathbb R`$. En efecto, para $`a<c<b`$,
 
-$$
+```math
 \frac{f(c)-f(a)}{c-a}-\frac{f(b)-f(c)}{b-c}
 =\frac{c^2-a^2}{c-a}-\frac{b^2-c^2}{b-c}
 =c+a-(b+c)=a-b<0.
-$$
+```
 
-Se aplica el lema 3.8.1.
+Se aplica el [lema 3.8.1](lecture-31-32.md#lem-3-8-1).
 
 ### Diapositiva impresa 6 (p. PDF 8). Derivadas laterales
 
 Hasta ahora no se había supuesto continuidad ni diferenciabilidad. La convexidad por sí misma garantiza cierta regularidad.
 
-**Teorema 3.8.1.** Sean $f$ convexa en $I$ y $a\in I$.
+<a id="thm-3-8-1"></a>**Teorema 3.8.1.** Sean $`f`$ convexa en $`I`$ y $`a\in I`$.
 
-1. Si $a<B$, existe $f'_+(a)\in[-\infty,+\infty)$; si $a>A$, existe $f'_-(a)\in(-\infty,+\infty]$.
-2. Si $a\in(A,B)$, ambas derivadas son finitas y
+1. Si $`a<B`$, existe $`f'_+(a)\in[-\infty,+\infty)`$; si $`a>A`$, existe $`f'_-(a)\in(-\infty,+\infty]`$.
+2. Si $`a\in(A,B)`$, ambas derivadas son finitas y
 
-$$
+```math
 f'_-(a)\le f'_+(a).
-$$
+```
 
 ### Páginas manuscritas (pp. PDF 9–10). Demostración del teorema 3.8.1
 
-Volvemos a considerar $F(x)=(f(x)-f(a))/(x-a)$. Por el corolario 3.8.1 es no decreciente. Si $a<B$, el teorema sobre límites de funciones monótonas da
+Volvemos a considerar $`F(x)=(f(x)-f(a))/(x-a)`$. Por el [corolario 3.8.1](#cor-3-8-1) es no decreciente. Si $`a<B`$, el teorema sobre límites de funciones monótonas da
 
-$$
+```math
 f'_+(a)=\lim_{x\to a+}F(x)=\inf_{x>a}F(x)\in[-\infty,+\infty).
-$$
+```
 
 Análogamente,
 
-$$
+```math
 f'_-(a)=\lim_{x\to a-}F(x)=\sup_{x<a}F(x)\in(-\infty,+\infty].
-$$
+```
 
-En un punto interior, pasando a los límites laterales en $F(x)\le F(y)$ para $x<a<y$, se obtiene $f'_-(a)\le f'_+(a)$. Fijando $u<a<v$ en $I$, también tenemos
+En un punto interior, pasando a los [límites laterales](lecture-15.md#def-2-4-5) en $`F(x)\le F(y)`$ para $`x<a<y`$, se obtiene $`f'_-(a)\le f'_+(a)`$. Fijando $`u<a<v`$ en $`I`$, también tenemos
 
-$$
+```math
 F(u)\le f'_-(a)\le f'_+(a)\le F(v).
-$$
+```
 
-Los valores exteriores son finitos, luego ambas derivadas son finitas. $\blacksquare$
+Los valores exteriores son finitos, luego ambas derivadas son finitas. $`\blacksquare`$
 
-> **Nota del editor.** En las pp. manuscritas 9–10 aparecen «estrictamente creciente» y desigualdades estrictas, aunque el teorema solo supone convexidad. Aquí se necesitan y son válidas las desigualdades no estrictas. La desigualdad límite tampoco es estricta en general, incluso para convexidad estricta: las derivadas laterales de $x^2$ coinciden.
+> **Nota del editor.** En las pp. manuscritas 9–10 aparecen «estrictamente creciente» y desigualdades estrictas, aunque el teorema solo supone convexidad. Aquí se necesitan y son válidas las desigualdades no estrictas. La desigualdad límite tampoco es estricta en general, incluso para convexidad estricta: las [derivadas laterales](../06-derivatives.md#sec-6-1) de $`x^2`$ coinciden.
 
 ### Diapositiva impresa 7 (p. PDF 11). Continuidad en el interior
 
-**Corolario 3.8.2.** Una función convexa en $I$ es continua en $(A,B)$.
+<a id="cor-3-8-2"></a>**Corolario 3.8.2.** Una función convexa en $`I`$ es continua en $`(A,B)`$.
 
-**Demostración manuscrita sobre la diapositiva.** En cada punto interior existen las derivadas finitas izquierda y derecha. Esto implica continuidad por ambos lados y, por tanto, continuidad en el punto. $\blacksquare$
+**Demostración manuscrita sobre la diapositiva.** En cada punto interior existen las derivadas finitas izquierda y derecha. Esto implica continuidad por ambos lados y, por tanto, continuidad en el punto. $`\blacksquare`$
 
 ### Página manuscrita (p. PDF 12). Peor comportamiento en los extremos
 
 Ejemplo:
 
-$$
+```math
 f(x)=-\sqrt{1-x^2}\quad(-1<x\le1),\qquad f(-1)=1.
-$$
+```
 
-La función es convexa en $[-1,1]$: su gráfica en $(-1,1]$ es la semicircunferencia inferior y elevar el valor en el extremo izquierdo no viola la convexidad. Sin embargo,
+La función es convexa en $`[-1,1]`$: su gráfica en $`(-1,1]`$ es la semicircunferencia inferior y elevar el valor en el extremo izquierdo no viola la convexidad. Sin embargo,
 
-$$
+```math
 f'_+(-1)=-\infty,\qquad f'_-(1)=+\infty,
-$$
+```
 
-y la función es discontinua en $-1$. Una función convexa puede ser menos regular en los extremos que en el interior del intervalo.
+y la función es discontinua en $`-1`$. Una función convexa puede ser menos regular en los extremos que en el interior del intervalo.
 
 ### Diapositiva impresa 8 (p. PDF 13). Recta de apoyo
 
-**Definición 3.8.2.** Sean $f:I\to\mathbb R$, $a\in I$, $k\in\mathbb R$ y $g(x)=f(a)+k(x-a)$.
+<a id="def-3-8-2"></a>**Definición 3.8.2.** Sean $`f:I\to\mathbb R`$, $`a\in I`$, $`k\in\mathbb R`$ y $`g(x)=f(a)+k(x-a)`$.
 
-1. La recta $y=g(x)$ es **de apoyo** para $f$ en $a$ si $f(x)\ge g(x)$ para todo $x\in I$.
-2. Es **estrictamente de apoyo** si $f(x)>g(x)$ para todo $x\in I\setminus\{a\}$.
+1. La recta $`y=g(x)`$ es **de apoyo** para $`f`$ en $`a`$ si $`f(x)\ge g(x)`$ para todo $`x\in I`$.
+2. Es **estrictamente de apoyo** si $`f(x)>g(x)`$ para todo $`x\in I\setminus\{a\}`$.
 
-Una recta de apoyo pasa por $(a,f(a))$ y no queda por encima de la gráfica; una recta estrictamente de apoyo solo la corta en ese punto.
+Una recta de apoyo pasa por $`(a,f(a))`$ y no queda por encima de la gráfica; una recta estrictamente de apoyo solo la corta en ese punto.
 
 ### Diapositivas impresas 9–10 (pp. PDF 14–15). Todas las rectas de apoyo
 
-**Lema 3.8.2.** Sean $f:I\to\mathbb R$, $a\in(A,B)$, $k\in\mathbb R$ y $\ell:\ y=f(a)+k(x-a)$.
+<a id="lem-3-8-2"></a>**Lema 3.8.2.** Sean $`f:I\to\mathbb R`$, $`a\in(A,B)`$, $`k\in\mathbb R`$ y $`\ell:\ y=f(a)+k(x-a)`$.
 
-1. Si $f$ es convexa en $I$, entonces $\ell$ es de apoyo en $a$ si y solo si
+1. Si $`f`$ es convexa en $`I`$, entonces $`\ell`$ es de apoyo en $`a`$ si y solo si
 
-$$
+```math
 k\in[f'_-(a),f'_+(a)].
-$$
+```
 
-2. Si $f$ es estrictamente convexa, entonces $\ell$ es estrictamente de apoyo si y solo si se cumple la misma condición sobre $k$.
+2. Si $`f`$ es estrictamente convexa, entonces $`\ell`$ es estrictamente de apoyo si y solo si se cumple la misma condición sobre $`k`$.
 
 ![P. PDF 15: familia de rectas de apoyo en un punto angular de una función convexa](../../assets/lectures-2025-26/lec33-34-p15-supporting-lines.jpg)
 
 ### Diapositiva impresa 11 (p. PDF 16). Existencia y unicidad
 
-1. Por el teorema 3.8.1, $[f'_-(a),f'_+(a)]$ es un intervalo finito no vacío en un punto interior. Por tanto, una función convexa tiene recta de apoyo en cada punto interior, y una estrictamente convexa tiene una estrictamente de apoyo. En un extremo basta exigir una derivada lateral finita.
-2. Si $f$ es diferenciable en $a\in(A,B)$, la recta de apoyo es única y coincide con la tangente.
+1. Por el [teorema 3.8.1](#thm-3-8-1), $`[f'_-(a),f'_+(a)]`$ es un intervalo finito no vacío en un punto interior. Por tanto, una función convexa tiene recta de apoyo en cada punto interior, y una estrictamente convexa tiene una estrictamente de apoyo. En un extremo basta exigir una derivada lateral finita.
+2. Si $`f`$ es [diferenciable](lecture-22-23.md#def-3-2-1) en $`a\in(A,B)`$, la recta de apoyo es única y coincide con la tangente.
 
 Anotación manuscrita:
 
-$$
+```math
 f'_-(a)=f'_+(a)=f'(a)\quad\Longrightarrow\quad k=f'(a).
-$$
+```
 
 ### Páginas manuscritas (pp. PDF 17–18). Demostración del lema 3.8.2
 
 El manuscrito trata el caso estrictamente convexo, afirmación 2.
 
-**Necesidad.** Si $\ell$ es estrictamente de apoyo, entonces para $x\to a+$,
+**Necesidad.** Si $`\ell`$ es estrictamente de apoyo, entonces para $`x\to a+`$,
 
-$$
+```math
 0<f(x)-f(a)-k(x-a)
 =(x-a)\bigl(f'_+(a)-k+o(1)\bigr).
-$$
+```
 
-Dividimos por $x-a>0$ y pasamos al límite para obtener $k\le f'_+(a)$. Análogamente por la izquierda, donde $x-a<0$, se obtiene $f'_-(a)\le k$.
+Dividimos por $`x-a>0`$ y pasamos al límite para obtener $`k\le f'_+(a)`$. Análogamente por la izquierda, donde $`x-a<0`$, se obtiene $`f'_-(a)\le k`$.
 
-**Suficiencia.** Supongamos $f'_-(a)\le k\le f'_+(a)$. Para $x>a$, la monotonía estricta de las pendientes secantes da
+**Suficiencia.** Supongamos $`f'_-(a)\le k\le f'_+(a)`$. Para $`x>a`$, la monotonía estricta de las pendientes secantes da
 
-$$
+```math
 F(x)>\inf_{t>a}F(t)=f'_+(a)\ge k.
-$$
+```
 
-Por tanto, $f(x)-f(a)>k(x-a)$. Para $x<a$, tenemos $F(x)<\sup_{t<a}F(t)=f'_-(a)\le k$; al multiplicar por el número negativo $x-a$ se obtiene de nuevo la misma desigualdad estricta de apoyo. Así, la gráfica fuera de $a$ queda por encima de $\ell$. Para la convexidad ordinaria se usan las desigualdades no estrictas correspondientes. $\blacksquare$
+Por tanto, $`f(x)-f(a)>k(x-a)`$. Para $`x<a`$, tenemos $`F(x)<\sup_{t<a}F(t)=f'_-(a)\le k`$; al multiplicar por el número negativo $`x-a`$ se obtiene de nuevo la misma desigualdad estricta de apoyo. Así, la gráfica fuera de $`a`$ queda por encima de $`\ell`$. Para la convexidad ordinaria se usan las desigualdades no estrictas correspondientes. $`\blacksquare`$
 
 ### Diapositiva impresa 12 (p. PDF 19). Las rectas de apoyo caracterizan la convexidad
 
-**Lema 3.8.3.** Sea $f:I\to\mathbb R$.
+<a id="lem-3-8-3"></a>**Lema 3.8.3.** Sea $`f:I\to\mathbb R`$.
 
-1. Si hay una recta de apoyo en cada $a\in I$, entonces $f$ es convexa en $I$.
-2. Si hay una recta estrictamente de apoyo en cada punto, entonces $f$ es estrictamente convexa.
+1. Si hay una recta de apoyo en cada $`a\in I`$, entonces $`f`$ es convexa en $`I`$.
+2. Si hay una recta estrictamente de apoyo en cada punto, entonces $`f`$ es estrictamente convexa.
 
-> **Explicación editorial.** El PDF no contiene una demostración separada de este lema. Para $c=\lambda a+(1-\lambda)b$, se toma una recta de apoyo en $c$, se multiplican $f(a)\ge f(c)+k(a-c)$ y $f(b)\ge f(c)+k(b-c)$ por $\lambda$ y $1-\lambda$, y se suman. Los términos con $k$ se cancelan; con apoyo estricto y $a\ne b$, la desigualdad es estricta.
+> **Explicación editorial.** El PDF no contiene una demostración separada de este lema. Para $`c=\lambda a+(1-\lambda)b`$, se toma una recta de apoyo en $`c`$, se multiplican $`f(a)\ge f(c)+k(a-c)`$ y $`f(b)\ge f(c)+k(b-c)`$ por $`\lambda`$ y $`1-\lambda`$, y se suman. Los términos con $`k`$ se cancelan; con apoyo estricto y $`a\ne b`$, la desigualdad es estricta.
 
 ### Diapositivas impresas 13–14 (pp. PDF 20–21). Criterio de las tangentes
 
-Sea $T_{a,1}f(x)=f(a)+f'(a)(x-a)$.
+Sea $`T_{a,1}f(x)=f(a)+f'(a)(x-a)`$.
 
-**Teorema 3.8.2.** Sea $f:I\to\mathbb R$ diferenciable en $I$.
+<a id="thm-3-8-2"></a>**Teorema 3.8.2.** Sea $`f:I\to\mathbb R`$ diferenciable en $`I`$.
 
-1. $f$ es convexa en $I$ si y solo si para cualesquiera $a,x\in I$,
+1. $`f`$ es convexa en $`I`$ si y solo si para cualesquiera $`a,x\in I`$,
 
-$$
+```math
 f(x)\ge T_{a,1}f(x).
-$$
+```
 
-2. $f$ es estrictamente convexa en $I$ si y solo si para cualesquiera $a,x\in(A,B)$ distintos,
+2. $`f`$ es estrictamente convexa en $`I`$ si y solo si para cualesquiera $`a,x\in(A,B)`$ distintos,
 
-$$
+```math
 f(x)>T_{a,1}f(x).
-$$
+```
 
 La gráfica de una función convexa es la envolvente superior de sus tangentes. Para convexidad estricta, cada tangente tiene un solo punto común con la gráfica.
 
@@ -222,85 +222,85 @@ La gráfica de una función convexa es la envolvente superior de sus tangentes. 
 
 ### Página manuscrita (p. PDF 22). Demostración del teorema 3.8.2
 
-Se demuestra el caso estricto. Bajo diferenciabilidad, la recta de apoyo coincide con la tangente, y el hecho necesario ya se demostró para las rectas de apoyo. Recíprocamente, si $f(x)>T_{a,1}f(x)$ para $x\ne a$, la tangente es estrictamente de apoyo; el lema 3.8.3 da la convexidad estricta. $\blacksquare$
+Se demuestra el caso estricto. Bajo diferenciabilidad, la recta de apoyo coincide con la tangente, y el hecho necesario ya se demostró para las rectas de apoyo. Recíprocamente, si $`f(x)>T_{a,1}f(x)`$ para $`x\ne a`$, la tangente es estrictamente de apoyo; el [lema 3.8.3](#lem-3-8-3) da la convexidad estricta. $`\blacksquare`$
 
-> **Nota del editor.** La diapositiva enuncia la condición estricta para $a,x$ interiores. Esto da convexidad estricta en el interior; la continuidad en los extremos incluidos, consecuencia de la diferenciabilidad supuesta en el teorema, la extiende a todo $I$.
+> **Nota del editor.** La diapositiva enuncia la condición estricta para $`a,x`$ interiores. Esto da convexidad estricta en el interior; la continuidad en los extremos incluidos, consecuencia de la diferenciabilidad supuesta en el teorema, la extiende a todo $`I`$.
 
 ### Diapositiva impresa 15 (p. PDF 23). Convexidad y asíntota
 
-**Teorema 3.8.3.** Sea $f:(A,+\infty)\to\mathbb R$ con asíntota $y=kx+b$ cuando $x\to+\infty$.
+<a id="thm-3-8-3"></a>**Teorema 3.8.3.** Sea $`f:(A,+\infty)\to\mathbb R`$ con asíntota $`y=kx+b`$ cuando $`x\to+\infty`$.
 
-1. Si $f$ es convexa, entonces $f(x)\ge kx+b$ para todo $x>A$.
-2. Si $f$ es estrictamente convexa, entonces $f(x)>kx+b$ para todo $x>A$.
+1. Si $`f`$ es convexa, entonces $`f(x)\ge kx+b`$ para todo $`x>A`$.
+2. Si $`f`$ es estrictamente convexa, entonces $`f(x)>kx+b`$ para todo $`x>A`$.
 
-Las afirmaciones también son válidas para asíntotas cuando $x\to-\infty$. Una asíntota puede entenderse como una «recta de apoyo en el infinito».
+Las afirmaciones también son válidas para [asíntotas](lecture-21.md#thm-2-6-2) cuando $`x\to-\infty`$. Una asíntota puede entenderse como una «recta de apoyo en el infinito».
 
 ![P. manuscrita PDF 22: bocetos preparatorios de asíntotas; rama superior convexa a la izquierda y rama inferior cóncava a la derecha](../../assets/lectures-2025-26/lec33-34-p22-asymptote-sketches.jpg)
 
-> **Corrección editorial.** La observación de la diapositiva 15 imprime $f(x)=kx-b\to0$. La condición de asíntota es $f(x)-kx-b\to0$. Cada rama del dibujo se considera en su propio intervalo; no se afirma que la función sea convexa en toda la recta atravesando una asíntota vertical.
+> **Corrección editorial.** La observación de la diapositiva 15 imprime $`f(x)=kx-b\to0`$. La condición de asíntota es $`f(x)-kx-b\to0`$. Cada rama del dibujo se considera en su propio intervalo; no se afirma que la función sea convexa en toda la recta atravesando una asíntota vertical.
 
 ### Páginas manuscritas (pp. PDF 24–25). Demostración del teorema 3.8.3
 
-Se demuestra la afirmación estricta. Sea $g(x)=f(x)-kx$. Por la definición de asíntota, $g(x)\to b$. Mostraremos que $g$ es estrictamente decreciente.
+Se demuestra la afirmación estricta. Sea $`g(x)=f(x)-kx`$. Por la definición de asíntota, $`g(x)\to b`$. Mostraremos que $`g`$ es estrictamente decreciente.
 
-Para $A<x<y$, consideremos
+Para $`A<x<y`$, consideremos
 
-$$
+```math
 F(t)=\frac{f(t)-f(x)}{t-x},\qquad t>x.
-$$
+```
 
-La convexidad estricta hace que $F$ sea estrictamente creciente. Además,
+La convexidad estricta hace que $`F`$ sea estrictamente creciente. Además,
 
-$$
+```math
 \lim_{t\to+\infty}F(t)
 =\lim_{t\to+\infty}\frac{kt+b+o(1)-f(x)}{t-x}=k.
-$$
+```
 
-Así, $F(y)<k$, es decir,
+Así, $`F(y)<k`$, es decir,
 
-$$
+```math
 f(y)-f(x)<k(y-x)
 \quad\Longleftrightarrow\quad
 g(y)<g(x).
-$$
+```
 
-Una función estrictamente decreciente con límite $b$ satisface $g(x)>b$. Por tanto, $f(x)>kx+b$. En el caso no estricto se obtienen $g(y)\le g(x)$ y $g(x)\ge b$. $\blacksquare$
+Una función estrictamente decreciente con límite $`b`$ satisface $`g(x)>b`$. Por tanto, $`f(x)>kx+b`$. En el caso no estricto se obtienen $`g(y)\le g(x)`$ y $`g(x)\ge b`$. $`\blacksquare`$
 
-> **Nota del editor.** El cálculo del límite usa la definición de asíntota. La p. manuscrita 24 solo menciona $f(t)\to+\infty$ para $k\ne0$; si $k<0$, el límite es $-\infty$, pero el cálculo anterior funciona para cualquier $k$.
+> **Nota del editor.** El cálculo del límite usa la definición de asíntota. La p. manuscrita 24 solo menciona $`f(t)\to+\infty`$ para $`k\ne0`$; si $`k<0`$, el límite es $`-\infty`$, pero el cálculo anterior funciona para cualquier $`k`$.
 
 ### Diapositiva impresa 16 (p. PDF 26). Criterio mediante la primera derivada
 
-**Teorema 3.8.4.** Sea $f:I\to\mathbb R$ continua en $I$ y diferenciable en $(A,B)$.
+<a id="thm-3-8-4"></a>**Teorema 3.8.4.** Sea $`f:I\to\mathbb R`$ continua en $`I`$ y diferenciable en $`(A,B)`$.
 
-1. $f$ es convexa en $I$ si y solo si $f'$ es no decreciente en $(A,B)$.
-2. $f$ es estrictamente convexa en $I$ si y solo si $f'$ es estrictamente creciente en $(A,B)$.
+1. $`f`$ es convexa en $`I`$ si y solo si $`f'`$ es no decreciente en $`(A,B)`$.
+2. $`f`$ es estrictamente convexa en $`I`$ si y solo si $`f'`$ es estrictamente creciente en $`(A,B)`$.
 
 ### Páginas manuscritas (pp. PDF 27–28). Demostración del teorema 3.8.4
 
 Se demuestra la afirmación 2.
 
-**Necesidad.** Para $x<y$ de $(A,B)$, mostraremos que
+**Necesidad.** Para $`x<y`$ de $`(A,B)`$, mostraremos que
 
-$$
+```math
 f'(x)<\frac{f(y)-f(x)}{y-x}<f'(y).
-$$
+```
 
-La función $F(t)=(f(t)-f(x))/(t-x)$ es estrictamente creciente en $(x,y]$. Por tanto,
+La función $`F(t)=(f(t)-f(x))/(t-x)`$ es estrictamente creciente en $`(x,y]`$. Por tanto,
 
-$$
+```math
 f'(x)=\lim_{t\to x+}F(t)=\inf_{t\in(x,y]}F(t)<F(y).
-$$
+```
 
-La desigualdad derecha se demuestra análogamente con secantes desde $y$. En particular, $f'(x)<f'(y)$.
+La desigualdad derecha se demuestra análogamente con secantes desde $`y`$. En particular, $`f'(x)<f'(y)`$.
 
-**Suficiencia.** Sean $a<c<b$ de $I$. Por el teorema de Lagrange existen $\alpha\in(a,c)$ y $\beta\in(c,b)$ tales que
+**Suficiencia.** Sean $`a<c<b`$ de $`I`$. Por el [teorema de Lagrange](lecture-24-25-26.md#thm-3-4-3) existen $`\alpha\in(a,c)`$ y $`\beta\in(c,b)`$ tales que
 
-$$
+```math
 \frac{f(c)-f(a)}{c-a}=f'(\alpha)
 <f'(\beta)=\frac{f(b)-f(c)}{b-c},
-$$
+```
 
-porque $\alpha<\beta$ y $f'$ es estrictamente creciente. El lema de las tres cuerdas da la convexidad estricta. El caso no estricto se demuestra sustituyendo las desigualdades correspondientes. $\blacksquare$
+porque $`\alpha<\beta`$ y $`f'`$ es estrictamente creciente. El lema de las tres cuerdas da la convexidad estricta. El caso no estricto se demuestra sustituyendo las desigualdades correspondientes. $`\blacksquare`$
 
 ## Estructura de la lección
 
