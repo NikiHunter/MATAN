@@ -54,10 +54,10 @@ These notes are transcribed from the PDF lecture files of D. E. Apushkinskaya (R
 | 49–50 | 9 Apr 2026 | Absolute convergence, Dirichlet’s and Abel’s tests | [lecture-49-50.md](lecture-49-50.md) | `ma25_26-lectures_49-50_notes.pdf` |
 | 51–52 | 16 Apr 2026 | Area, volume, paths, integral formulas for area and volume, polar coordinates, solids of revolution | [lecture-51-52.md](lecture-51-52.md) | `ma25_26-lectures_51-52_notes.pdf.txt` |
 | 53 | 23 Apr 2026 | Length of smooth paths, graphs and polar curves; work by a variable force | [lecture-53.md](lecture-53.md) | `ма25_26_лекция_53_notes.pdf.txt` |
-| 54 | 23 Apr 2026 | Euclidean norm, neighborhoods in $\mathbb R^n$, vector operations and limits of vector sequences | [lecture-54.md](lecture-54.md) | `ма25_26_лекция_54_notes.pdf.txt` |
+| 54 | 23 Apr 2026 | Euclidean norm, neighborhoods in $`\mathbb R^n`$, vector operations and limits of vector sequences | [lecture-54.md](lecture-54.md) | `ма25_26_лекция_54_notes.pdf.txt` |
 | 55–56 | 30 Apr 2026 | Limits of subsequences, Bolzano–Weierstrass and Cauchy, limit points, open and closed sets, closure | [lecture-55-56.md](lecture-55-56.md) | `MA25-26_ktrwbb_55-56_notes.pdf.txt` |
-| 57–58 | 7 May 2026 | Interior, boundary, openness in $E$, covers and compactness, criterion of compactness, limits of maps in the Cauchy and Heine senses | [lecture-57-58.md](lecture-57-58.md) | `ma25_26-lectures_57-58_notes.pdf.txt` |
-| 59–60 | 14 May 2026 | Continuous maps, preimages of open sets, Weierstrass and Cantor, the symbols $o$ and $O$, the differential at a point | [lecture-59-60.md](lecture-59-60.md) | `ma25_26-lectures_59-60_notes.pdf.txt` |
+| 57–58 | 7 May 2026 | Interior, boundary, openness in $`E`$, covers and compactness, criterion of compactness, limits of maps in the Cauchy and Heine senses | [lecture-57-58.md](lecture-57-58.md) | `ma25_26-lectures_57-58_notes.pdf.txt` |
+| 59–60 | 14 May 2026 | Continuous maps, preimages of open sets, Weierstrass and Cantor, the symbols $`o`$ and $`O`$, the differential at a point | [lecture-59-60.md](lecture-59-60.md) | `ma25_26-lectures_59-60_notes.pdf.txt` |
 | 61–62 | 21 May 2026 | Directional derivatives, differentials, Jacobian and gradient, differentiation rules and continuous differentiability | [lecture-61-62.md](lecture-61-62.md) | `ma25_26-lectures_61-62_notes.pdf.txt` |
 | 63–64 | 28 May 2026 | Continuous differentiability, higher partial derivatives, symmetry of mixed partials and higher differentials | [lecture-63-64.md](lecture-63-64.md) | `ma25_26-lectures_63-64_notes.pdf.txt` |
 

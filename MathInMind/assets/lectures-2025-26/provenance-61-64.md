@@ -30,16 +30,16 @@ All **26 final JPEGs** are cropped illustrations from selected PDF pages; none i
 
 | JPEG | Source PDF / page | Content inspected in the final image |
 |---|---|---|
-| `lec61-62-p07-vector-derivative-proof.jpg` | 61–62, p. 7 | Handwritten substitution $h=te$ into the differentiability expansion and the identification $T=d_af$ |
+| `lec61-62-p07-vector-derivative-proof.jpg` | 61–62, p. 7 | Handwritten substitution $`h=te`$ into the differentiability expansion and the identification $`T=d_af`$ |
 | `lec61-62-p08-differential-uniqueness.jpg` | 61–62, p. 8 | Corollary and handwritten uniqueness argument, including the value at the zero vector |
 | `lec61-62-p11-partial-derivative-example.jpg` | 61–62, p. 11 | Function in three variables and its three partial-derivative calculations |
 | `lec61-62-p13-differential-formula-proof.jpg` | 61–62, p. 13 | Linearity and basis-vector proof of the differential formula |
 | `lec61-62-p15-jacobian-gradient.jpg` | 61–62, p. 15 | Jacobian matrix and coordinate notation for the gradient |
 | `lec61-62-p18-coordinate-functions-lemma.jpg` | 61–62, p. 18 | Handwritten proof relating differentiability of a map to its coordinate functions |
-| `lec61-62-p20-jacobian-matrix-proof.jpg` | 61–62, p. 20 | Columns $T(e^j)=\partial f/\partial x_j(a)$ and entries $\partial f_i/\partial x_j(a)$ of the Jacobian |
+| `lec61-62-p20-jacobian-matrix-proof.jpg` | 61–62, p. 20 | Columns $`T(e^j)=\partial f/\partial x_j(a)`$ and entries $`\partial f_i/\partial x_j(a)`$ of the Jacobian |
 | `lec61-62-p23-gradient-extremal-proof.jpg` | 61–62, p. 23 | Gradient’s extremal property and the handwritten equality case |
 | `lec61-62-p24-differentiable-partials-example.jpg` | 61–62, p. 24 | Differentiability and partial-derivative example |
-| `lec61-62-p26-directional-derivative-counterexample.jpg` | 61–62, p. 26 | Sequence approaching the origin along the $x$-axis, its graph, and the note on discontinuity of $\partial f/\partial x$ |
+| `lec61-62-p26-directional-derivative-counterexample.jpg` | 61–62, p. 26 | Sequence approaching the origin along the $`x`$-axis, its graph, and the note on discontinuity of $`\partial f/\partial x`$ |
 | `lec61-62-p29-zero-directional-derivatives-example.jpg` | 61–62, p. 29 | Directional-derivative limit formula along a fixed direction, with value zero |
 | `lec61-62-p30-directional-derivative-conclusions.jpg` | 61–62, p. 30 | Conclusions separating partial derivatives, directional derivatives and differentiability |
 | `lec61-62-p32-chain-rule-diagram.jpg` | 61–62, p. 32 | Composition diagram for the chain rule |
@@ -53,7 +53,7 @@ All **26 final JPEGs** are cropped illustrations from selected PDF pages; none i
 | `lec63-64-p26-double-increment-mean-value.jpg` | 63–64, p. 26 | Mean-value proof of the double-increment formula |
 | `lec63-64-p29-double-increment-criterion.jpg` | 63–64, p. 29 | Double-increment criterion and its proof |
 | `lec63-64-p31-mixed-partial-symmetry-proof.jpg` | 63–64, p. 31 | Continuous-mixed-partials proof of symmetry |
-| `lec63-64-p33-differentiability-remainder-proof.jpg` | 63–64, p. 33 | Estimate proving $\beta(u,v)u=o(u^2+v^2)$ |
+| `lec63-64-p33-differentiability-remainder-proof.jpg` | 63–64, p. 33 | Estimate proving $`\beta(u,v)u=o(u^2+v^2)`$ |
 | `lec63-64-p38-mixed-partial-independence-examples.jpg` | 63–64, p. 38 | Contrasting examples showing neither stated condition is necessary |
 | `lec63-64-p42-multi-index-differential.jpg` | 63–64, p. 42 | Second differential as the quadratic form in the Hessian entries |
 
@@ -61,13 +61,13 @@ Crop coordinates are PDF points from the top-left origin; source and image pages
 
 ## Source-specific mathematical and transcription notes
 
-- **61–62, p. 7:** the handwritten note identifies $T=d_af$; setting $h=te$ in the differentiability expansion gives the directional derivative $T(e)$.
+- **61–62, p. 7:** the handwritten note identifies $`T=d_af`$; setting $`h=te`$ in the differentiability expansion gives the directional derivative $`T(e)`$.
 - **61–62, pp. 26 and 29:** p. 26 is the coordinate-axes-only example. The separate p. 29 example is discontinuous at the origin although every nonzero directional derivative exists and equals zero; the crop name reflects p. 29’s content.
-- **63–64, p. 12:** Definition 6.4.2 prints $f:E\to\mathbb R^n$, whereas surrounding general statements use $\mathbb R^m$; the printed codomain is retained and the inconsistency flagged.
-- **63–64, pp. 22–23 and 26–33:** the mixed-partial counterexample and double-increment arguments are transcribed across their handwritten pages. The p. 33 estimate gives $\beta(u,v)u=o(u^2+v^2)$ and yields the equality of mixed partials under the theorem’s second condition.
-- **63–64, pp. 36–38:** the examples use $\phi(t)=t^2\sin(1/t^2)$ for $t\ne0$ and $\phi(0)=0$; the product example has unbounded mixed partials. The comparison on p. 38 is retained.
-- **63–64, p. 41:** the printed multinomial formula omits $h^\alpha$; the transcription restores the factor and flags the printed omission.
-- **63–64, p. 42:** the handwritten formula is $d_a^2f(h)=\sum_{i=1}^{n}\sum_{j=1}^{n}(\partial^2 f/\partial x_i\partial x_j)(a)h_i h_j$.
+- **63–64, p. 12:** Definition 6.4.2 prints $`f:E\to\mathbb R^n`$, whereas surrounding general statements use $`\mathbb R^m`$; the printed codomain is retained and the inconsistency flagged.
+- **63–64, pp. 22–23 and 26–33:** the mixed-partial counterexample and double-increment arguments are transcribed across their handwritten pages. The p. 33 estimate gives $`\beta(u,v)u=o(u^2+v^2)`$ and yields the equality of mixed partials under the theorem’s second condition.
+- **63–64, pp. 36–38:** the examples use $`\phi(t)=t^2\sin(1/t^2)`$ for $`t\ne0`$ and $`\phi(0)=0`$; the product example has unbounded mixed partials. The comparison on p. 38 is retained.
+- **63–64, p. 41:** the printed multinomial formula omits $`h^\alpha`$; the transcription restores the factor and flags the printed omission.
+- **63–64, p. 42:** the handwritten formula is $`d_a^2f(h)=\sum_{i=1}^{n}\sum_{j=1}^{n}(\partial^2 f/\partial x_i\partial x_j)(a)h_i h_j`$.
 
 ## Thematic overlap with the semester-2 register
 

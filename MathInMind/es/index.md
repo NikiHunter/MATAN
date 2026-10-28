@@ -6,19 +6,21 @@ lang: es
 
 [English](../en/index.md) · [Русский](../ru/index.md) · **Español**
 
-Un curso riguroso desde los fundamentos hasta la integración moderna. Los 21 capítulos usan Markdown estándar, MathJax y diagramas Mermaid sencillos para Obsidian y GitHub.
+Un curso riguroso desde los fundamentos hasta la integración moderna, en 21 capítulos. Léelo aquí en GitHub o abre `MathInMind-Obsidian/` como vault de Obsidian para tener wikienlaces, vista previa al pasar el ratón y recuadros de teoremas; [la guía de ambas vistas](00-notation.md) explica la diferencia.
 
 ## Material de apoyo
 
-- [Uso del vault y notación](00-notation.md)
+- [Índice de términos y teoremas](term-index.md) — cada definición y resultado, a un clic de su enunciado.
+- [Cómo leer el curso: vistas y notación](00-notation.md)
 - [Hoja de fórmulas](formula-sheet.md)
 - [Glosario trilingüe](glossary.md)
 - [Libros y colecciones de problemas recomendados](../../REFERENCES.md)
 
 ## Lecciones ilustradas 2025/26
 
-- [Índice completo de las lecciones 0–50: originales RU y traducciones EN/ES](lectures-2025-26/index.md).
-- **Semestre 1: 0–32; semestre 2: 33–64.** Las lecciones 33–50 son completas e ilustradas, pero duplican parte de la [carpeta rusa existente del semestre 2 `ru/lectures/`](../ru/lectures/index.md). El índice y cada nuevo archivo enlazan las secciones coincidentes y el archivo original. Las lecciones 45–50 añaden 84 páginas de tres PDF y cuatro figuras: [manifiesto](../assets/lectures-2025-26/figures-45-50.json) y [registro de revisión](../assets/lectures-2025-26/provenance-45-50.md).
+- [Índice de todas las lecciones 0–64](lectures-2025-26/index.md): transcripciones completas de las lecciones 2025/26, originales en ruso con traducciones al inglés y al español, incluidas las demostraciones manuscritas y las figuras.
+- **Semestre 1:** lecciones 0–32. **Semestre 2:** lecciones 33–64. El semestre 2 se solapa con el [registro ruso `ru/lectures/`](../ru/lectures/index.md), orientado al examen; cada lección enlaza con la sección correspondiente del registro.
+- El origen de cada figura (PDF, página y recorte) se registra por lotes en [`assets/lectures-2025-26/`](../assets/lectures-2025-26/).
 
 ## Mapa del curso
 
@@ -70,7 +72,7 @@ flowchart TD
 
 19. [Teoría de la medida y funciones medibles](19-measure-theory.md).
 20. [Integración de Lebesgue y teoremas de convergencia](20-lebesgue-integration.md).
-21. [Espacios $L^p$ y modos de convergencia](21-lp-spaces.md) — Hölder, completitud, geometría de Hilbert.
+21. [Espacios $`L^p`$ y modos de convergencia](21-lp-spaces.md) — Hölder, completitud, geometría de Hilbert.
 
 ## Rutina de estudio sugerida
 

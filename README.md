@@ -1,32 +1,40 @@
 # MATAN — Mathematical Analysis / Математический анализ / Análisis matemático
 
-A comprehensive, trilingual mathematical analysis course written in portable Markdown for **Obsidian** and **GitHub**.
+A trilingual mathematical analysis course: 21 concise chapters, full illustrated notes of the 2025/26 lectures (0–64) and a Russian exam track. Every term and theorem is linked to the place where it is defined.
 
-## Open the course
+## Start here
 
-- [English course](MathInMind/en/index.md)
-- [Курс на русском](MathInMind/ru/index.md)
-- [Curso en español](MathInMind/es/index.md)
+| | English | Русский | Español |
+|---|---|---|---|
+| Course, 21 chapters | [Course index](MathInMind/en/index.md) | [Оглавление курса](MathInMind/ru/index.md) | [Índice del curso](MathInMind/es/index.md) |
+| Lectures 2025/26, 0–64 | [Lecture index](MathInMind/en/lectures-2025-26/index.md) | [Указатель лекций](MathInMind/ru/lectures-2025-26/index.md) | [Índice de lecciones](MathInMind/es/lectures-2025-26/index.md) |
+| Terms and theorems | [Index](MathInMind/en/term-index.md) | [Указатель](MathInMind/ru/term-index.md) | [Índice](MathInMind/es/term-index.md) |
+| Exam track | — | [72 билета](MathInMind/ru/exam/index.md) · [реестр лекций](MathInMind/ru/lectures/index.md) | — |
 
-Open the `MathInMind` folder as an Obsidian vault, or browse the same files directly on GitHub. No plugins or build step are required.
+## Two views: GitHub and Obsidian
 
-## Lecture notes 2025/26
+The same notes are published twice, each in the form its viewer renders best:
 
-Full illustrated transcriptions of the 2025/26 Mathematical Analysis **lectures 0–64**, including handwritten proofs and examples, are available in three languages:
+| | [`MathInMind/`](MathInMind/README.md) — GitHub view | [`MathInMind-Obsidian/`](MathInMind-Obsidian/README.md) — Obsidian view |
+|---|---|---|
+| How to open | browse this repository | Obsidian → **Open folder as vault** → `MathInMind-Obsidian` |
+| Links | relative links to `#anchors` on every definition and theorem | `[[wikilinks]]` to block ids: hover preview, backlinks, graph |
+| Formulas | `` $`...`$ `` and ```` ```math ```` (GitHub's Markdown pass otherwise drops `\{`, `\|`, `\,` and can turn `a<b>c` into HTML) | `$...$` and `$$...$$` (MathJax) |
+| Definitions and theorems | blockquotes with a bold label | coloured callouts: `[!definition]`, `[!theorem]`, `[!lemma]`, … |
+| Exercise answers | `<details>` blocks | folded `[!answer]-` callouts |
 
-- [Русский](MathInMind/ru/lectures-2025-26/index.md)
-- [English](MathInMind/en/lectures-2025-26/index.md)
-- [Español](MathInMind/es/lectures-2025-26/index.md)
+`MathInMind/` is the source of both. After editing it, rebuild the views:
 
-Typed slides were extracted from the PDF text layers; handwritten pages were transcribed from images, and their figures are embedded as illustrations from [`MathInMind/assets/lectures-2025-26/`](MathInMind/assets/lectures-2025-26/).
+```bash
+python3 scripts/build_views.py           # converts math, adds anchors and links, regenerates the Obsidian vault
+python3 scripts/build_views.py --check   # fails if either view is out of date
+```
 
-**Semester boundary:** semester 1 ends with lecture 32; semester 2 spans lectures 33–64. The files for lectures 33–64 are complete, not pointers, and cross-reference their thematic overlap with the existing [Russian semester-2 lecture folder](MathInMind/ru/lectures/index.md). The transcriptions for 33–50 preserve previously established archive links. Lectures 51–64 were prepared only from the PDFs attached in chat; the source folder was not consulted and no archive filenames are claimed for those batches.
-
-Lectures 31–38 cover 123 PDF pages with 17 shared crops ([manifest](MathInMind/assets/lectures-2025-26/figures-31-38.json), [review notes](MathInMind/assets/lectures-2025-26/provenance-31-38.md)); lectures 39–44 add 94 pages and 17 crops ([manifest](MathInMind/assets/lectures-2025-26/figures-39-44.json), [review notes](MathInMind/assets/lectures-2025-26/provenance-39-44.md)). All 217 pages in the 31–44 batches, from eight PDFs, were reviewed, and every final JPEG was checked individually. The 45–50 batch adds 84 reviewed pages from three PDFs and four individually reviewed crops; the 51–54 batch adds 85 pages from three attached PDFs and eight individually reviewed source-page images; the 55–60 batch adds 96 pages from three attached PDFs and twenty individually reviewed source-page images; the 61–64 batch adds 82 pages from two attached PDFs and 26 individually reviewed source-page images. Across lectures 31–64, the transcriptions cover 564 pages from 19 PDFs with 92 shared images. Source hashes, page attribution and crop geometry are recorded; source PDFs, temporary renders and dependencies stay out of Git. See the [51–54 manifest](MathInMind/assets/lectures-2025-26/figures-51-54.json), its [review log](MathInMind/assets/lectures-2025-26/provenance-51-54.md), the [55–60 manifest](MathInMind/assets/lectures-2025-26/figures-55-60.json) and its [review log](MathInMind/assets/lectures-2025-26/provenance-55-60.md), and the [61–64 manifest](MathInMind/assets/lectures-2025-26/figures-61-64.json) and [review log](MathInMind/assets/lectures-2025-26/provenance-61-64.md).
+Plain `$...$` math is fine in new text; the build converts it. Never edit `MathInMind-Obsidian/` by hand. To link a new term, add it to [`scripts/term_registry.py`](scripts/term_registry.py).
 
 ## What is included
 
-The 21 chapters move from logic and the real numbers to sequences, series, differential and integral calculus, functions of several variables, vector calculus, measure theory, Lebesgue integration, and $L^p$ spaces. Every chapter contains learning goals, precise definitions, core theorems, examples, common mistakes, and exercises with short answers. Each language also has a notation guide, formula sheet, and glossary.
+The 21 chapters move from logic and the real numbers to sequences, series, differential and integral calculus, functions of several variables, vector calculus, measure theory, Lebesgue integration, and $`L^p`$ spaces. Every chapter contains learning goals, precise definitions, core theorems, examples, common mistakes, and exercises with short answers. Each language also has a notation guide, formula sheet, glossary and an index of terms and theorems.
 
 ```mermaid
 flowchart LR
@@ -38,19 +46,27 @@ flowchart LR
     F --> G[Lp spaces]
 ```
 
-## Compatibility conventions
+## Lecture notes 2025/26
 
-- Inline mathematics uses `$...$`; display mathematics uses `$$...$$`.
-- Links are ordinary relative Markdown links, so they work in Obsidian and on GitHub.
-- Diagrams use simple Mermaid `flowchart` blocks without custom styling.
-- Definitions and theorems use Markdown blockquotes rather than platform-specific callouts.
-- Formulas use standard MathJax commands and define notation locally; no global macros are needed.
+Full illustrated transcriptions of the 2025/26 lectures 0–64 in Russian, English and Spanish, including handwritten proofs and examples. Typed slides were extracted from the PDF text layers; handwritten pages were transcribed from images, and their figures are embedded from [`MathInMind/assets/lectures-2025-26/`](MathInMind/assets/lectures-2025-26/).
 
-GitHub renders mathematics and Mermaid in Markdown previews. In Obsidian, enable core **MathJax** support if it has been disabled; Mermaid rendering is built in.
+**Semester 1** ends with lecture 32; **semester 2** spans lectures 33–64. The files for 33–64 are complete, not pointers, and cross-reference their overlap with the Russian [semester-2 register](MathInMind/ru/lectures/index.md). The transcriptions for 33–50 keep the previously established archive links. Lectures 51–64 were prepared only from the PDFs attached in chat; the source folder was not consulted and no archive filenames are claimed for those batches.
 
-## Lecture-aligned exam track
+For lectures 31–64 every page was reviewed and every final image checked individually. Source hashes, page attribution and crop geometry are recorded; source PDFs, temporary renders and dependencies stay out of Git.
 
-The Russian exam track uses `МАТАН_Л` as its primary source and preserves lecture numbering:
+| Lectures | PDF pages | PDFs | Shared images | Manifest | Review log |
+|---|---|---|---|---|---|
+| 31–38 | 123 | 5 | 17 | [figures-31-38.json](MathInMind/assets/lectures-2025-26/figures-31-38.json) | [provenance-31-38.md](MathInMind/assets/lectures-2025-26/provenance-31-38.md) |
+| 39–44 | 94 | 3 | 17 | [figures-39-44.json](MathInMind/assets/lectures-2025-26/figures-39-44.json) | [provenance-39-44.md](MathInMind/assets/lectures-2025-26/provenance-39-44.md) |
+| 45–50 | 84 | 3 | 4 | [figures-45-50.json](MathInMind/assets/lectures-2025-26/figures-45-50.json) | [provenance-45-50.md](MathInMind/assets/lectures-2025-26/provenance-45-50.md) |
+| 51–54 | 85 | 3 | 8 | [figures-51-54.json](MathInMind/assets/lectures-2025-26/figures-51-54.json) | [provenance-51-54.md](MathInMind/assets/lectures-2025-26/provenance-51-54.md) |
+| 55–60 | 96 | 3 | 20 | [figures-55-60.json](MathInMind/assets/lectures-2025-26/figures-55-60.json) | [provenance-55-60.md](MathInMind/assets/lectures-2025-26/provenance-55-60.md) |
+| 61–64 | 82 | 2 | 26 | [figures-61-64.json](MathInMind/assets/lectures-2025-26/figures-61-64.json) | [provenance-61-64.md](MathInMind/assets/lectures-2025-26/provenance-61-64.md) |
+| **31–64** | **564** | **19** | **92** | | |
+
+## Lecture-aligned exam track (Russian)
+
+The Russian exam track uses `МАТАН_Л` as its primary source and keeps the lecture numbering:
 
 - [17 lecture sections and 148 original numbered items](MathInMind/ru/lectures/index.md), plus a clearly labelled reconstruction of Theorem 6.4.1;
 - [72 individual exam-ticket answers](MathInMind/ru/exam/index.md) with worked examples;
@@ -59,19 +75,20 @@ The Russian exam track uses `МАТАН_Л` as its primary source and preserves 
 
 ## Source archive
 
-The supplied `MathInMind.zip.txt` was a ZIP archive and has been unpacked unchanged into [`source/MathInMind`](source/README.md). Those Russian lectures and diagrams are retained as reference material. The trilingual course in `MathInMind` is a newly structured presentation, not a mechanical translation of those files or a reproduction of any textbook.
+The supplied `MathInMind.zip.txt` was a ZIP archive and has been unpacked unchanged into [`source/MathInMind`](source/README.md). Those Russian lectures and diagrams are kept as reference material. The trilingual course in `MathInMind` is a newly structured presentation, not a mechanical translation of those files or a reproduction of any textbook.
 
 ## Quality checks
 
-Run the dependency-free validation scripts:
+Run the dependency-free checks:
 
 ```bash
+python3 scripts/build_views.py --check
 python3 scripts/validate_course.py
 python3 scripts/validate_exam_track.py --source-safe
 python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-They check language and index parity, continuous 2025/26 lecture coverage (0–64), semester metadata and duplicate-material links for 33–64, figure provenance and translation parity for all illustrated batches (31–38, 39–44, 45–50, 51–54, 55–60 and 61–64), all 72 tickets, Purgatory assets and numbering, YAML metadata, local links, balanced code fences and math delimiters, and basic Mermaid safety.
+They check that both views are up to date and that every Obsidian wikilink resolves to an existing note, block or heading; language and index parity; continuous 2025/26 lecture coverage (0–64); semester metadata and duplicate-material links for 33–64; figure provenance and translation parity for all illustrated batches; all 72 tickets; Purgatory assets and numbering; YAML metadata; local links; balanced code fences and math delimiters; and basic Mermaid safety.
 
 ## References and authorship
 

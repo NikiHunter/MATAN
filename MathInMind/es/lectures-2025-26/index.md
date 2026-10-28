@@ -54,10 +54,10 @@ Estos apuntes se han transcrito a partir de los archivos PDF de las lecciones de
 | 49–50 | 9 abr 2026 | Convergencia absoluta y criterios de Dirichlet y Abel | [lecture-49-50.md](lecture-49-50.md) | `ma25_26-lectures_49-50_notes.pdf` |
 | 51–52 | 16 abr 2026 | Área, volumen, caminos, fórmulas integrales de área y volumen, coordenadas polares, sólidos de revolución | [lecture-51-52.md](lecture-51-52.md) | `ma25_26-lectures_51-52_notes.pdf.txt` |
 | 53 | 23 abr 2026 | Longitud de caminos suaves, gráficas y curvas polares; trabajo de una fuerza variable | [lecture-53.md](lecture-53.md) | `ма25_26_лекция_53_notes.pdf.txt` |
-| 54 | 23 abr 2026 | Norma euclídea, entornos en $\mathbb R^n$, operaciones vectoriales y límites de sucesiones vectoriales | [lecture-54.md](lecture-54.md) | `ма25_26_лекция_54_notes.pdf.txt` |
+| 54 | 23 abr 2026 | Norma euclídea, entornos en $`\mathbb R^n`$, operaciones vectoriales y límites de sucesiones vectoriales | [lecture-54.md](lecture-54.md) | `ма25_26_лекция_54_notes.pdf.txt` |
 | 55–56 | 30 abr 2026 | Límite de una subsucesión, Bolzano–Weierstrass y Cauchy, puntos de acumulación, conjuntos abiertos y cerrados, clausura | [lecture-55-56.md](lecture-55-56.md) | `MA25-26_ktrwbb_55-56_notes.pdf.txt` |
-| 57–58 | 7 may 2026 | Interior, frontera, apertura en $E$, recubrimientos y compacidad, criterio de compacidad, límite de una aplicación según Cauchy y Heine | [lecture-57-58.md](lecture-57-58.md) | `ma25_26-lectures_57-58_notes.pdf.txt` |
-| 59–60 | 14 may 2026 | Aplicaciones continuas, imágenes inversas de abiertos, Weierstrass y Cantor, los símbolos $o$ y $O$, el diferencial en un punto | [lecture-59-60.md](lecture-59-60.md) | `ma25_26-lectures_59-60_notes.pdf.txt` |
+| 57–58 | 7 may 2026 | Interior, frontera, apertura en $`E`$, recubrimientos y compacidad, criterio de compacidad, límite de una aplicación según Cauchy y Heine | [lecture-57-58.md](lecture-57-58.md) | `ma25_26-lectures_57-58_notes.pdf.txt` |
+| 59–60 | 14 may 2026 | Aplicaciones continuas, imágenes inversas de abiertos, Weierstrass y Cantor, los símbolos $`o`$ y $`O`$, el diferencial en un punto | [lecture-59-60.md](lecture-59-60.md) | `ma25_26-lectures_59-60_notes.pdf.txt` |
 | 61–62 | 21 may 2026 | Derivadas según un vector, diferencial, Jacobiano y gradiente, reglas de derivación y diferenciabilidad continua | [lecture-61-62.md](lecture-61-62.md) | `ma25_26-lectures_61-62_notes.pdf.txt` |
 | 63–64 | 28 may 2026 | Diferenciabilidad continua, derivadas parciales de orden superior, simetría de las mixtas y diferenciales superiores | [lecture-63-64.md](lecture-63-64.md) | `ma25_26-lectures_63-64_notes.pdf.txt` |
 

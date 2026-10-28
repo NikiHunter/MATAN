@@ -12,7 +12,7 @@ archive_file: "Лекция 45-46.md"
 ---
 # Lectures 45–46 — Substitution, Taylor and Wallis formulas, integral inequalities
 
-[Lecture index](index.md) · [Русский](../../ru/lectures-2025-26/lecture-45-46.md) · [Español](../../es/lectures-2025-26/lecture-45-46.md) · [Previous: 43–44](lecture-43-44.md) · [Next: 47–48](lecture-47-48.md)
+[← Lectures 43–44](lecture-43-44.md) · [Lecture index](index.md) · [Lectures 47–48 →](lecture-47-48.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-45-46.md) · [Español](../../es/lectures-2025-26/lecture-45-46.md)
 
 > **Source:** `ma25_26-lectures_45-46_notes.pdf` — 29 PDF pages, 14 printed slides; the date printed on the slides is 26 March 2026. Printed pages: 1–7, 10–12, 18, 22, 26, 29. Handwritten pages: 8–9, 13–17, 19–21, 23–25, 27–28. No PDF page is missing: all 29 are accounted for exactly once below. Printed-slide numbers (1–14) are distinct from PDF-page numbers.
 >
@@ -30,24 +30,24 @@ archive_file: "Лекция 45-46.md"
 
 ## Printed slide 3 (PDF p. 3). Lecture goals
 
-1. Remarks on the change-of-variable theorem for a definite integral.
+1. Remarks on the change-of-variable theorem for a [definite integral](lecture-39-40.md#def-4-2-6).
 2. Taylor and Wallis formulas and integral inequalities.
 
 ## Chapter 4. Integral calculus, §3. Properties of the Riemann integral
 
 ### Printed slide 4 (PDF p. 4). Change of variable
 
-**Theorem 4.3.5.** Let $\varphi:[\alpha,\beta]\to[A,B]$, let $\varphi$ be differentiable on $[\alpha,\beta]$, with $\varphi'\in\mathcal R[\alpha,\beta]$, and let $f\in C[A,B]$. Then
+<a id="thm-4-3-5"></a>**Theorem 4.3.5.** Let $`\varphi:[\alpha,\beta]\to[A,B]`$, let $`\varphi`$ be differentiable on $`[\alpha,\beta]`$, with $`\varphi'\in\mathcal R[\alpha,\beta]`$, and let $`f\in C[A,B]`$. Then
 
-$$
+```math
 \int_\alpha^\beta (f\circ\varphi)(x)\varphi'(x)\,dx
 =\int_{\varphi(\alpha)}^{\varphi(\beta)} f(t)\,dt.
-$$
+```
 
 ### Printed slide 5 (PDF p. 5). Remarks on substitution
 
-1. Some values $\varphi(t)$ for $t\in[\alpha,\beta]$ need not lie between $\varphi(\alpha)$ and $\varphi(\beta)$. What matters is that every value $\varphi(t)$ belongs to $[A,B]$, the interval on which $f$ is defined.
-2. The lower integration limit need not be smaller than the upper one. If $\varphi$ is strictly decreasing and $\alpha<\beta$, then $\varphi(\alpha)>\varphi(\beta)$; the oriented integral accounts for this without a separate reversal of limits.
+1. Some values $`\varphi(t)`$ for $`t\in[\alpha,\beta]`$ need not lie between $`\varphi(\alpha)`$ and $`\varphi(\beta)`$. What matters is that every value $`\varphi(t)`$ belongs to $`[A,B]`$, the interval on which $`f`$ is defined.
+2. The lower integration limit need not be smaller than the upper one. If $`\varphi`$ is strictly decreasing and $`\alpha<\beta`$, then $`\varphi(\alpha)>\varphi(\beta)`$; the oriented integral accounts for this without a separate reversal of limits.
 
 ## §4. Taylor and Wallis formulas and integral inequalities
 
@@ -57,281 +57,281 @@ $$
 
 ### Printed slide 7 (PDF p. 7). Taylor formula with integral remainder
 
-**Theorem 4.4.1.** Let $n\in\mathbb Z_+$, $f\in C^{n+1}\langle A,B\rangle$, and $a,x\in\langle A,B\rangle$. Then
+<a id="thm-4-4-1"></a>**Theorem 4.4.1.** Let $`n\in\mathbb Z_+`$, $`f\in C^{n+1}\langle A,B\rangle`$, and $`a,x\in\langle A,B\rangle`$. Then
 
-$$
+```math
 f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k+
 \frac1{n!}\int_a^x f^{(n+1)}(t)(x-t)^n\,dt.
-$$
+```
 
 ### Handwritten page (PDF p. 8). Proof of Theorem 4.4.1: base case and integration by parts
 
-The blackboard proof starts by induction. For $n=0$, the fundamental theorem of calculus gives
+The blackboard proof starts by [induction](../01-logic-sets-functions.md#example-induction). For $`n=0`$, the [fundamental theorem of calculus](lecture-43-44.md#thm-4-3-2) gives
 
-$$
+```math
 f(x)=f(a)+\int_a^x f'(t)\,dt.
-$$
+```
 
-Assuming the formula for $n-1$, its remainder is
+Assuming the formula for $`n-1`$, its remainder is
 
-$$
+```math
 \frac1{(n-1)!}\int_a^x f^{(n)}(t)(x-t)^{n-1}\,dt
 =\int_a^x f^{(n)}(t)\,d\!\left(-\frac{(x-t)^n}{n!}\right).
-$$
+```
 
-Integration by parts gives the expression at the end of this page:
+[Integration by parts](lecture-37-38.md#thm-4-1-4) gives the expression at the end of this page:
 
-$$
+```math
 =-\frac1{n!}\left[f^{(n)}(t)(x-t)^n\right]_{t=a}^{x}
 +\frac1{n!}\int_a^x f^{(n+1)}(t)(x-t)^n\,dt.
-$$
+```
 
 ### Handwritten page (PDF p. 9). Completion of the Taylor proof
 
 The boundary term simplifies to
 
-$$
+```math
 -\frac1{n!}\left[f^{(n)}(t)(x-t)^n\right]_{a}^{x}
 =-\frac1{n!}\left(0-f^{(n)}(a)(x-a)^n\right)
 =\frac{f^{(n)}(a)}{n!}(x-a)^n.
-$$
+```
 
-Substitution into the induction hypothesis adds the term with index $n$ to the sum and leaves the order-$n+1$ remainder in Theorem 4.4.1. The board identifies the integration-by-parts factors as $f^{(n)}(t)$ and $-(x-t)^n/n!$.
+Substitution into the induction hypothesis adds the term with index $`n`$ to the sum and leaves the order-$`n+1`$ remainder in [Theorem 4.4.1](#thm-4-4-1). The board identifies the integration-by-parts factors as $`f^{(n)}(t)`$ and $`-(x-t)^n/n!`$.
 
 ### Printed slide 8 (PDF p. 10). Remarks on the integral remainder
 
 1. The integral form of the remainder is sometimes called the C. Jacobi form.
-2. By the first mean-value theorem, under the assumptions of Theorem 4.4.1 there is a $c\in[a,x]$ (for $x<a$, use the oriented-integral convention) such that
+2. By the first mean-value theorem, under the assumptions of [Theorem 4.4.1](#thm-4-4-1) there is a $`c\in[a,x]`$ (for $`x<a`$, use the oriented-integral convention) such that
 
-$$
+```math
 \frac1{n!}\int_a^x f^{(n+1)}(t)(x-t)^n\,dt
 =\frac{f^{(n+1)}(c)}{n!}\int_a^x(x-t)^n\,dt
 =\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}.
-$$
+```
 
-3. The advantage of the integral form is that it contains no unknown point $c$.
+3. The advantage of the integral form is that it contains no unknown point $`c`$.
 
 ### Printed slide 9 (PDF p. 11). Wallis formula
 
-The double factorial $m!!$ is the product of the positive integers not exceeding $m$ that have the same parity as $m$; by convention, $0!!=(-1)!!=1$.
+The double factorial $`m!!`$ is the product of the positive integers not exceeding $`m`$ that have the same parity as $`m`$; by convention, $`0!!=(-1)!!=1`$.
 
-**Theorem 4.4.2.**
+<a id="thm-4-4-2"></a>**Theorem 4.4.2.**
 
-$$
+```math
 \pi=\lim_{n\to\infty}\frac1n\left(\frac{(2n)!!}{(2n-1)!!}\right)^2.
-$$
+```
 
 ### Printed slide 10 (PDF p. 12). Integrals of powers of sine
 
-**Lemma 4.4.1.** If $m\in\mathbb Z_+$, then
+<a id="lem-4-4-1"></a>**Lemma 4.4.1.** If $`m\in\mathbb Z_+`$, then
 
-$$
+```math
 \int_0^{\pi/2}\sin^m x\,dx
 =\frac{(m-1)!!}{m!!}\begin{cases}
 \dfrac\pi2,&m\text{ even},\\[2pt]
 1,&m\text{ odd}.
 \end{cases}
-$$
+```
 
 ### Handwritten page (PDF p. 13). Proof of Lemma 4.4.1: notation and base cases
 
-Set $J_m=\int_0^{\pi/2}\sin^m x\,dx$. The base cases are
+Set $`J_m=\int_0^{\pi/2}\sin^m x\,dx`$. The base cases are
 
-$$
+```math
 J_0=\int_0^{\pi/2}dx=\frac\pi2,\qquad
 J_1=\int_0^{\pi/2}\sin x\,dx=[-\cos x]_0^{\pi/2}=1.
-$$
+```
 
-Red annotations verify the double-factorial formula for $m=0$ and $m=1$; the recurrence is then derived by integration by parts for $m\ge2$.
+Red annotations verify the double-factorial formula for $`m=0`$ and $`m=1`$; the recurrence is then derived by integration by parts for $`m\ge2`$.
 
-### Handwritten page (PDF p. 14). Recurrence for $J_m$
+### Handwritten page (PDF p. 14). Recurrence for $`J_m`$
 
-Write $J_m=\int_0^{\pi/2}\sin^{m-1}x\,d(-\cos x)$. Integration by parts, $d(\sin^{m-1}x)=(m-1)\sin^{m-2}x\cos x\,dx$, and $\cos^2x=1-\sin^2x$ give
+Write $`J_m=\int_0^{\pi/2}\sin^{m-1}x\,d(-\cos x)`$. Integration by parts, $`d(\sin^{m-1}x)=(m-1)\sin^{m-2}x\cos x\,dx`$, and $`\cos^2x=1-\sin^2x`$ give
 
-$$
+```math
 J_m=(m-1)\left(J_{m-2}-J_m\right),\qquad
 mJ_m=(m-1)J_{m-2},\qquad
 J_m=\frac{m-1}{m}J_{m-2}.
-$$
+```
 
-The boundary term $[-\sin^{m-1}x\cos x]_0^{\pi/2}$ is zero.
+The boundary term $`[-\sin^{m-1}x\cos x]_0^{\pi/2}`$ is zero.
 
 ### Handwritten page (PDF p. 15). First odd-index values and comparison
 
 For odd indices the board lists
 
-$$
+```math
 J_3=\frac23J_1=\frac23,\qquad
 J_5=\frac45J_3=\frac45\frac23,
 \qquad J_7=\frac67J_5=\frac67\frac45\frac23.
-$$
+```
 
-It then uses $0<\sin x<1$ for $0<x<\pi/2$:
+It then uses $`0<\sin x<1`$ for $`0<x<\pi/2`$:
 
-$$
+```math
 \sin^{2n+1}x<\sin^{2n}x<\sin^{2n-1}x.
-$$
+```
 
 ### Handwritten page (PDF p. 16). First even-index values and integral comparison
 
 For even indices:
 
-$$
+```math
 J_2=\frac12J_0=\frac\pi4,\qquad
 J_4=\frac34J_2=\frac34\frac12\frac\pi2,
 \qquad J_6=\frac56J_4=\frac56\frac34\frac12\frac\pi2.
-$$
+```
 
-Integrating the comparison on PDF p. 15 gives $J_{2n+1}<J_{2n}<J_{2n-1}$.
+Integrating the comparison on PDF p. 15 gives $`J_{2n+1}<J_{2n}<J_{2n-1}`$.
 
 ### Handwritten page (PDF p. 17). Proof of Wallis' formula
 
 Substituting the expressions from the lemma gives
 
-$$
+```math
 \frac{(2n)!!}{(2n+1)!!}
 <\frac{(2n-1)!!}{(2n)!!}\frac\pi2
 <\frac{(2n-2)!!}{(2n-1)!!}.
-$$
+```
 
-Multiplication by $\frac{(2n)!!}{(2n-1)!!}$ and the identities $(2n+1)!!=(2n+1)(2n-1)!!$, $(2n)!!=2n(2n-2)!!$ yield
+Multiplication by $`\frac{(2n)!!}{(2n-1)!!}`$ and the identities $`(2n+1)!!=(2n+1)(2n-1)!!`$, $`(2n)!!=2n(2n-2)!!`$ yield
 
-$$
+```math
 \frac1{2n+1}\left(\frac{(2n)!!}{(2n-1)!!}\right)^2
 <\frac\pi2<
 \frac1{2n}\left(\frac{(2n)!!}{(2n-1)!!}\right)^2.
-$$
+```
 
-Set $x_n=\frac1n\left(\frac{(2n)!!}{(2n-1)!!}\right)^2$. Then $\frac{2n}{2n+1}x_n<\pi<x_n$, equivalently $\pi<x_n<\frac{2n+1}{2n}\pi$. Both bounds tend to $\pi$, so the squeeze theorem proves Theorem 4.4.2.
+Set $`x_n=\frac1n\left(\frac{(2n)!!}{(2n-1)!!}\right)^2`$. Then $`\frac{2n}{2n+1}x_n<\pi<x_n`$, equivalently $`\pi<x_n<\frac{2n+1}{2n}\pi`$. Both bounds tend to $`\pi`$, so the [squeeze theorem](lecture-08.md#thm-2-1-4) proves [Theorem 4.4.2](#thm-4-4-2).
 
 ### Printed slide 11 (PDF p. 18). Bonnet's second mean-value theorem for integrals
 
-**Theorem 4.4.3 (O. Bonnet).** Let $f\in C[a,b]$, $g\in C^1[a,b]$, and suppose $g$ is monotone on $[a,b]$. Then there is a $c\in[a,b]$ such that
+<a id="thm-4-4-3"></a>**Theorem 4.4.3 (O. Bonnet).** Let $`f\in C[a,b]`$, $`g\in C^1[a,b]`$, and suppose $`g`$ is monotone on $`[a,b]`$. Then there is a $`c\in[a,b]`$ such that
 
-$$
+```math
 \int_a^b fg=g(a)\int_a^c f+g(b)\int_c^b f.
-$$
+```
 
 ### Handwritten page (PDF p. 19). Proof of Bonnet's theorem: integration by parts
 
-Set $F(x)=\int_a^x f$, so $F(a)=0$ and $F'=f$. Then
+Set $`F(x)=\int_a^x f`$, so $`F(a)=0`$ and $`F'=f`$. Then
 
-$$
+```math
 \int_a^b fg=\int_a^b gF'
 =-\int_a^b Fg'+[Fg]_a^b
 =-\int_a^b Fg'+g(b)\int_a^b f.
-$$
+```
 
 ### Handwritten page (PDF p. 20). Applying the first mean-value theorem
 
-Since $g$ is monotone and differentiable, $g'$ has constant sign. The first weighted mean-value theorem applied to $F$ with weight $g'$ gives a $c\in[a,b]$ such that
+Since $`g`$ is monotone and [differentiable](lecture-22-23.md#def-3-2-1), $`g'`$ has constant sign. The first weighted mean-value theorem applied to $`F`$ with weight $`g'`$ gives a $`c\in[a,b]`$ such that
 
-$$
+```math
 \int_a^b Fg'=F(c)\int_a^b g'=F(c)(g(b)-g(a)).
-$$
+```
 
-Since $F(c)=\int_a^c f$, substitution into the previous line gives
+Since $`F(c)=\int_a^c f`$, substitution into the previous line gives
 
-$$
+```math
 \int_a^b fg
 =-\left(g(b)-g(a)\right)\int_a^c f+g(b)\int_a^b f
 =g(a)\int_a^c f+g(b)\int_c^b f.
-$$
+```
 
 ### Handwritten page (PDF p. 21). Geometric interval sketch
 
-The handwritten sketch marks $[a,b]$, the point $c$, and the two integral pieces $\int_a^c f$ and $\int_c^b f$. The red arc spans the full interval and the green arc the first part. It illustrates the decomposition in Bonnet's formula; it is not a graph of a function.
+The handwritten sketch marks $`[a,b]`$, the point $`c`$, and the two integral pieces $`\int_a^c f`$ and $`\int_c^b f`$. The red arc spans the full interval and the green arc the first part. It illustrates the decomposition in [Bonnet's formula](lecture-43-44.md#thm-4-3-1); it is not a graph of a function.
 
 ![PDF p. 21: original Bonnet interval sketch with c and the two integration intervals](../../assets/lectures-2025-26/lec45-46-p21-bonnet-interval.jpg)
 
 ### Printed slide 12 (PDF p. 22). Remarks on Bonnet's theorem
 
-1. Bonnet's theorem remains valid under weaker assumptions: $f\in\mathcal R[a,b]$ and $g$ monotone on $[a,b]$.
+1. Bonnet's theorem remains valid under weaker assumptions: $`f\in\mathcal R[a,b]`$ and $`g`$ monotone on $`[a,b]`$.
 2. The second mean-value theorem usually yields no new results beyond those obtainable by integration by parts.
 
 ### Handwritten page (PDF p. 23). Estimate for an oscillatory integral
 
 The board considers
 
-$$
+```math
 I=\int_{100\pi}^{200\pi}\frac{\sin x}{x}\,dx.
-$$
+```
 
-The integral has no elementary antiderivative, but it can be estimated. Since $x>0$ on the interval,
+The integral has no elementary [antiderivative](lecture-36.md#def-4-1-1), but it can be estimated. Since $`x>0`$ on the interval,
 
-$$
+```math
 |I|\le\int_{100\pi}^{200\pi}\frac{|\sin x|}{x}\,dx
 \le\int_{100\pi}^{200\pi}\frac{dx}{x}
 =\log 2.
-$$
+```
 
 The page also begins a more detailed estimate by periods:
 
-$$
+```math
 I=\sum_{k=100}^{199}\int_{k\pi}^{(k+1)\pi}\frac{\sin x}{x}\,dx,
 \qquad
 \left|\int_{k\pi}^{(k+1)\pi}\frac{\sin x}{x}\,dx\right|
 \le\frac{2}{k\pi}.
-$$
+```
 
-This gives a coarse bound of order $\sum_{k=100}^{199}2/(k\pi)$; the page also records the upper bound $\log 2$ for the integral of the absolute value.
+This gives a coarse bound of order $`\sum_{k=100}^{199}2/(k\pi)`$; the page also records the [upper bound](../02-real-numbers.md#sec-2-2) $`\log 2`$ for the integral of the absolute value.
 
 ### Handwritten page (PDF p. 24). Estimating with Bonnet's formula
 
-Take $g(x)=1/x$, which is monotone, and $f(x)=\sin x$. Bonnet's theorem on $[100\pi,200\pi]$ gives some $c\in[100\pi,200\pi]$ with
+Take $`g(x)=1/x`$, which is monotone, and $`f(x)=\sin x`$. Bonnet's theorem on $`[100\pi,200\pi]`$ gives some $`c\in[100\pi,200\pi]`$ with
 
-$$
+```math
 I=g(100\pi)\int_{100\pi}^{c}\sin x\,dx
 +g(200\pi)\int_c^{200\pi}\sin x\,dx.
-$$
+```
 
-Integrating $\sin x$ gives endpoint expressions involving $[-\cos x]$. Since $\cos(100\pi)=\cos(200\pi)=1$, the boundary terms simplify and the two terms can be bounded.
+Integrating $`\sin x`$ gives endpoint expressions involving $`[-\cos x]`$. Since $`\cos(100\pi)=\cos(200\pi)=1`$, the boundary terms simplify and the two terms can be bounded.
 
 ### Handwritten page (PDF p. 25). Completion of the estimate
 
-Using $\cos c\in[-1,1]$ and the preceding formula, the written calculation simplifies to $(1-\cos c)/(200\pi)$, hence $0\le I\le1/(100\pi)$. **Transcription note:** on the handwritten page the notation for the integral of the absolute value and the signed integral is close together. They are kept distinct here: estimating the signed integral does not establish absolute convergence of the integrand $f$.
+Using $`\cos c\in[-1,1]`$ and the preceding formula, the written calculation simplifies to $`(1-\cos c)/(200\pi)`$, hence $`0\le I\le1/(100\pi)`$. **Transcription note:** on the handwritten page the notation for the integral of the absolute value and the signed integral is close together. They are kept distinct here: estimating the signed integral does not establish [absolute convergence](../04-numeric-series.md#sec-4-3) of the integrand $`f`$.
 
 ### Printed slide 13 (PDF p. 26). Jensen's integral inequality
 
-**Theorem 4.4.4.** Let $f$ be convex and continuous on $\langle A,B\rangle$, let $\varphi:[a,b]\to\langle A,B\rangle$ be continuous, and let $\lambda:[a,b]\to[0,+\infty)$ be continuous with $\int_a^b\lambda=1$. Then
+<a id="thm-4-4-4"></a>**Theorem 4.4.4.** Let $`f`$ be convex and continuous on $`\langle A,B\rangle`$, let $`\varphi:[a,b]\to\langle A,B\rangle`$ be continuous, and let $`\lambda:[a,b]\to[0,+\infty)`$ be continuous with $`\int_a^b\lambda=1`$. Then
 
-$$
+```math
 f\left(\int_a^b\lambda\varphi\right)
 \le\int_a^b\lambda\,(f\circ\varphi).
-$$
+```
 
 ### Handwritten page (PDF p. 27). Jensen proof: support-line setup
 
 The page defines
 
-$$
+```math
 E=\{x\in[a,b]:\lambda(x)>0\},\qquad
 m=\inf_E\varphi,\qquad M=\sup_E\varphi,
-$$
+```
 
-and $c=\int_a^b\lambda\varphi$. By continuity, $\varphi$ is bounded on the interval. If $m=M$, $\varphi$ is constant on $E$ and equality holds. If $m<M$, then $c\in[m,M]$; convexity supplies a supporting line $y=\alpha x+\beta$ at $c$:
+and $`c=\int_a^b\lambda\varphi`$. By continuity, $`\varphi`$ is bounded on the interval. If $`m=M`$, $`\varphi`$ is constant on $`E`$ and equality holds. If $`m<M`$, then $`c\in[m,M]`$; [convexity](lecture-31-32.md#def-3-8-1) supplies a supporting line $`y=\alpha x+\beta`$ at $`c`$:
 
-$$
+```math
 f(c)=\alpha c+\beta,\qquad f(t)\ge\alpha t+\beta.
-$$
+```
 
 ### Handwritten page (PDF p. 28). Jensen proof: integrate the support-line inequality
 
-Multiply the support-line inequality by $\lambda\ge0$ and integrate:
+Multiply the support-line inequality by $`\lambda\ge0`$ and integrate:
 
-$$
+```math
 \int_a^b\lambda f(\varphi)
 \ge\int_a^b\lambda(\alpha\varphi+\beta)
 =\alpha\int_a^b\lambda\varphi+\beta\int_a^b\lambda
 =\alpha c+\beta=f(c).
-$$
+```
 
-This proves Theorem 4.4.4. The handwritten argument uses continuity and convexity on the interval of values of $\varphi$.
+This proves [Theorem 4.4.4](#thm-4-4-4). The handwritten argument uses continuity and convexity on the interval of values of $`\varphi`$.
 
 ### Printed slide 14 (PDF p. 29). Remarks on Jensen's inequality
 
-1. If $\varphi$ is not constant on $E=\{x\in[a,b]:\lambda(x)>0\}$ and $f$ is strictly convex, Jensen's inequality is strict.
-2. For a concave function $f$, the inequality holds with the opposite sign.
+1. If $`\varphi`$ is not constant on $`E=\{x\in[a,b]:\lambda(x)>0\}`$ and $`f`$ is strictly convex, [Jensen's inequality](#thm-4-4-4) is strict.
+2. For a concave function $`f`$, the inequality holds with the opposite sign.
 
 ---
 
