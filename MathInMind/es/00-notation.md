@@ -8,9 +8,20 @@ lang: es
 
 ## Obsidian y GitHub
 
-Abre el directorio `MathInMind` como vault de Obsidian. La navegación usa enlaces Markdown relativos ordinarios, que también funcionan en GitHub. Las fórmulas en línea usan `$...$`, las destacadas `$$...$$` y los diagramas bloques Mermaid `flowchart` sencillos. Las respuestas están dentro de `<details>`; expándelas solo después de intentar el ejercicio.
+El curso existe en dos vistas, generadas a partir del mismo texto con `python3 scripts/build_views.py`:
 
-No se necesitan complementos comunitarios ni un preámbulo MathJax personalizado. Si Obsidian muestra las ecuaciones como texto, comprueba que MathJax esté activado en el editor.
+| | Vista GitHub — `MathInMind/` | Vista Obsidian — `MathInMind-Obsidian/` |
+|---|---|---|
+| Cómo abrirla | navegar por el repositorio en GitHub | **Open folder as vault** en Obsidian |
+| Enlaces | enlaces Markdown relativos con `#anclas` | `[[wikienlaces]]` con vista previa al pasar el ratón, retroenlaces y grafo |
+| Fórmula en línea | `` $`...`$ `` (resiste el procesado Markdown de GitHub) | `$...$` (MathJax) |
+| Fórmula destacada | un bloque ```` ```math ```` | `$$...$$` |
+| Definiciones y teoremas | citas con una etiqueta en negrita | recuadros de color (`[!definition]`, `[!theorem]`, …) |
+| Respuestas | bloques `<details>` | recuadros plegados `[!answer]-` |
+
+Cualquier término, teorema con nombre o enunciado numerado de las lecciones está a un clic: la primera mención de un término en cada nota enlaza con su definición, las referencias como «teorema 2.3.5» enlazan con el enunciado y el [índice de términos y teoremas](term-index.md) los reúne todos. Los diagramas son bloques Mermaid `flowchart` sencillos que ambas vistas muestran. Intenta cada ejercicio antes de abrir su respuesta.
+
+No se necesitan complementos comunitarios ni un preámbulo MathJax personalizado. Si Obsidian muestra las ecuaciones como texto, comprueba que abriste `MathInMind-Obsidian/` (no `MathInMind/`) y que MathJax esté activado en el editor.
 
 ## Lógica y conjuntos
 

@@ -8,9 +8,20 @@ lang: en
 
 ## Obsidian and GitHub
 
-Open the `MathInMind` directory as an Obsidian vault. All course navigation uses ordinary relative Markdown links, which also work on GitHub. Inline formulas use `$...$`, display formulas use `$$...$$`, and diagrams use simple Mermaid `flowchart` blocks. Exercise answers are inside `<details>` elements; click or expand them only after attempting the problem.
+The course exists in two views, generated from the same text by `python3 scripts/build_views.py`:
 
-No community plugin or custom MathJax preamble is required. If equations appear as source text in Obsidian, check that MathJax is enabled in the editor settings.
+| | GitHub view — `MathInMind/` | Obsidian view — `MathInMind-Obsidian/` |
+|---|---|---|
+| Open it | browse the repository on GitHub | **Open folder as vault** in Obsidian |
+| Links | relative Markdown links with `#anchors` | `[[wikilinks]]` with hover previews, backlinks and the graph view |
+| Inline formula | `` $`...`$ `` (survives GitHub's Markdown pass) | `$...$` (MathJax) |
+| Display formula | a ```` ```math ```` block | `$$...$$` |
+| Definitions and theorems | blockquotes with a bold label | coloured callouts (`[!definition]`, `[!theorem]`, …) |
+| Exercise answers | `<details>` blocks | folded `[!answer]-` callouts |
+
+Every term, named theorem and numbered lecture statement can be reached in one click: the first mention of a term in each note links to its definition, references such as "Theorem 2.3.5" link to the statement, and the [index of terms and theorems](term-index.md) lists them all. Diagrams are simple Mermaid `flowchart` blocks, which both views render. Try each exercise before opening its answer.
+
+No community plugin or custom MathJax preamble is required. If equations appear as source text in Obsidian, check that you opened `MathInMind-Obsidian/` (not `MathInMind/`) and that MathJax is enabled in the editor settings.
 
 ## Logical and set notation
 
