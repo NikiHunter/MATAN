@@ -54,7 +54,9 @@ Denote by $E_2$ the set of all points $a \in E_1$ such that
 Suppose we have already defined the functions $f^{(2)}, \ldots, f^{(n-1)}$, defined on $E_2, \ldots, E_{n-1}$ respectively. Denote by $E_n$ the set of all points $a \in E_{n-1}$ such that
 
 1. $\exists \delta > 0 : E_{n-1} \cap (a - \delta, a + \delta) = E \cap (a - \delta, a + \delta)$;
-2. The function $f^{(n-1)}$ is differentiable at the point $a$.**Definition 3.5.3.** Let $a \in E_n$. The number $(f^{(n-1)})'(a)$ is called the $n$-th derivative of $f$ at the point $a$ and is denoted $f^{(n)}(a)$, and the function $f$ is called $n$ times differentiable at the point $a$. The function $f^{(n)}$, defined on $E_n$ by $x \mapsto f^{(n)}(x)$, is called the $n$-th derivative of $f$.Conventions: $f^{(0)} = f$, $E_0 = E$.
+2. The function $f^{(n-1)}$ is differentiable at the point $a$.
+
+**Definition 3.5.3.** Let $a \in E_n$. The number $(f^{(n-1)})'(a)$ is called the $n$-th derivative of $f$ at the point $a$ and is denoted $f^{(n)}(a)$, and the function $f$ is called $n$ times differentiable at the point $a$. The function $f^{(n)}$, defined on $E_n$ by $x \mapsto f^{(n)}(x)$, is called the $n$-th derivative of $f$.Conventions: $f^{(0)} = f$, $E_0 = E$.
 
 ### Typed slide 7 (PDF p. 7). One-sided derivatives of higher order
 
@@ -68,7 +70,9 @@ Note that for $n = 1$ we obtain the definition of one-sided derivatives introduc
 
 ### Typed slide 8 (PDF p. 8). Differentials of order $n$ of the function $f$
 
-Let $h \in \mathbb{R}$. Denote $g_1(x) = d_x f(h) = f'(x) dh$, $x \in E_1$ (the notation $dh$ is used on the slides for the increment $h$).**Definition 3.5.4.** For $a \in E_2$ put
+Let $h \in \mathbb{R}$. Denote $g_1(x) = d_x f(h) = f'(x) dh$, $x \in E_1$ (the notation $dh$ is used on the slides for the increment $h$).
+
+**Definition 3.5.4.** For $a \in E_2$ put
 
 $$
 d^2_a f(h) = d_a g_1(g) = g_1'(a) dh = \big(f'(a) dh\big)' dh = f''(a)(dh)^2.
