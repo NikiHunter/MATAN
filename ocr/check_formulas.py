@@ -141,7 +141,8 @@ def main(argv: list[str]) -> int:
     for d in dirs:
         base = ROOT / d
         if base.exists():
-            files.extend(sorted(p for p in base.rglob("*.md")))
+            # README.md — служебная документация каталога, а не заметка с формулами
+            files.extend(sorted(p for p in base.rglob("*.md") if p.name != "README.md"))
     if not files:
         print("не найдено markdown-файлов")
         return 1
