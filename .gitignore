@@ -11,3 +11,7 @@ Thumbs.db
 # Local validation caches
 __pycache__/
 *.pyc
+
+# Part 2 scans: 40 MB added on top of part 1 (41 MB) exceeds the 50 MB budget,
+# so the new page images stay out of Git. Text artefacts reference them by name.
+raw/scans/p0[234]*.jpg
