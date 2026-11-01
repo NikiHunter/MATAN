@@ -6,7 +6,7 @@ lang: en
 aliases: ["Riemann integral over an interval (Def. 10.1.6)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p073]
-translations: ["[[ru/Понятия/Интеграл Римана по промежутку (Опр 10.1.6)]]"]
+translations: ["[[ru/Понятия/Интеграл Римана по промежутку (Опр 10.1.6)]]", "[[es/Conceptos/Integral de Riemann sobre un intervalo (Def. 10.1.6)]]"]
 status: draft
 ---
 # Riemann integral over an interval (Def. 10.1.6)

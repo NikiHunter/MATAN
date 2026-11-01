@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 81"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p074, p075, p076, p077]
-translations: ["[[ru/Лекции/Лекция 81]]"]
+translations: ["[[ru/Лекции/Лекция 81]]", "[[es/Clases/Clase 81]]"]
 status: draft
 ---
 # Lecture 81 — Necessary condition for integrability and the Lebesgue criterion

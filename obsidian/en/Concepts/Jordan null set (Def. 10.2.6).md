@@ -6,7 +6,7 @@ lang: en
 aliases: ["Jordan null set (Def. 10.2.6)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p080]
-translations: ["[[ru/Понятия/Множество меры нуль по Жордану (Опр 10.2.6)]]"]
+translations: ["[[ru/Понятия/Множество меры нуль по Жордану (Опр 10.2.6)]]", "[[es/Conceptos/Conjunto de medida nula según Jordan (Def. 10.2.6)]]"]
 status: draft
 ---
 # Jordan null set (Def. 10.2.6)

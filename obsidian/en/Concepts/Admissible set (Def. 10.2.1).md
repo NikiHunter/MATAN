@@ -6,7 +6,7 @@ lang: en
 aliases: ["Admissible set (Def. 10.2.1)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p078]
-translations: ["[[ru/Понятия/Допустимое множество (Опр 10.2.1)]]"]
+translations: ["[[ru/Понятия/Допустимое множество (Опр 10.2.1)]]", "[[es/Conceptos/Conjunto admissible (Def. 10.2.1)]]"]
 status: draft
 ---
 # Admissible set (Def. 10.2.1)

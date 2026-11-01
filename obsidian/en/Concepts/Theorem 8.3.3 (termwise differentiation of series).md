@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.3.3 (termwise differentiation of series)"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p044]
-translations: ["[[ru/Понятия/Теорема 8.3.3 (дифференцирование рядов)]]"]
+translations: ["[[ru/Понятия/Теорема 8.3.3 (дифференцирование рядов)]]", "[[es/Conceptos/Teorema 8.3.3 (derivación término a término)]]"]
 status: draft
 ---
 # Theorem 8.3.3 (termwise differentiation of series)

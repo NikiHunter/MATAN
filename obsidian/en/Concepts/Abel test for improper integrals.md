@@ -6,7 +6,7 @@ lang: en
 aliases: ["Abel test for improper integrals"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p062, p063]
-translations: ["[[ru/Понятия/Признак Абеля для несобственных интегралов]]"]
+translations: ["[[ru/Понятия/Признак Абеля для несобственных интегралов]]", "[[es/Conceptos/Criterio de Abel para integrales impropias]]"]
 status: draft
 ---
 # Abel test for improper integrals

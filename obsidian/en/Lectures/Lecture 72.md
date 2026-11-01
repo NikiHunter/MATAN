@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 72"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p036, p037, p038, p039, p040, p041]
-translations: ["[[ru/Лекции/Лекция 72]]"]
+translations: ["[[ru/Лекции/Лекция 72]]", "[[es/Clases/Clase 72]]"]
 status: draft
 ---
 # Lecture 72 — Passing to the limit under the integral sign, differentiating the limit function, functional series

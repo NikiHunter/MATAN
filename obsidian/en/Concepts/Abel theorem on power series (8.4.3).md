@@ -6,7 +6,7 @@ lang: en
 aliases: ["Abel theorem on power series (8.4.3)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p048, p049]
-translations: ["[[ru/Понятия/Теорема Абеля о степенных рядах (8.4.3)]]"]
+translations: ["[[ru/Понятия/Теорема Абеля о степенных рядах (8.4.3)]]", "[[es/Conceptos/Teorema de Abel sobre series de potencias (8.4.3)]]"]
 status: draft
 ---
 # Abel theorem on power series (8.4.3)

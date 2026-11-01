@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 76"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p054, p055, p056, p057]
-translations: ["[[ru/Лекции/Лекция 76]]"]
+translations: ["[[ru/Лекции/Лекция 76]]", "[[es/Clases/Clase 76]]"]
 status: draft
 ---
 # Lecture 76 — Expandability in a Taylor series, analytic functions, integrals depending on a parameter

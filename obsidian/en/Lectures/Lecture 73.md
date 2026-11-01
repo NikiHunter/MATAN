@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 73"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p042, p043, p044, p045, p046]
-translations: ["[[ru/Лекции/Лекция 73]]"]
+translations: ["[[ru/Лекции/Лекция 73]]", "[[es/Clases/Clase 73]]"]
 status: draft
 ---
 # Lecture 73 — Integration and differentiation of uniformly convergent series, power series, Cauchy–Hadamard formula

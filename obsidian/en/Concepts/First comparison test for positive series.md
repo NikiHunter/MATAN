@@ -6,7 +6,7 @@ lang: en
 aliases: ["First comparison test for positive series"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p023]
-translations: ["[[ru/Понятия/Первый признак сравнения положительных рядов]]"]
+translations: ["[[ru/Понятия/Первый признак сравнения положительных рядов]]", "[[es/Conceptos/Primer criterio de comparación de series positivas]]"]
 status: draft
 ---
 # First comparison test for positive series

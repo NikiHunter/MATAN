@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 78"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p063, p064, p065, p066]
-translations: ["[[ru/Лекции/Лекция 78]]"]
+translations: ["[[ru/Лекции/Лекция 78]]", "[[es/Clases/Clase 78]]"]
 status: draft
 ---
 # Lecture 78 — Abel test, continuity and differentiation in a parameter, the Feynman method

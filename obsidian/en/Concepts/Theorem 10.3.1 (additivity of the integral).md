@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 10.3.1 (additivity of the integral)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p082]
-translations: ["[[ru/Понятия/Теорема 10.3.1 (аддитивность интеграла)]]"]
+translations: ["[[ru/Понятия/Теорема 10.3.1 (аддитивность интеграла)]]", "[[es/Conceptos/Teorema 10.3.1 (aditividad de la integral)]]"]
 status: draft
 ---
 # Theorem 10.3.1 (additivity of the integral)

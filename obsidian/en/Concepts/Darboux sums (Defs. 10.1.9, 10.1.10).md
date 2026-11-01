@@ -6,7 +6,7 @@ lang: en
 aliases: ["Darboux sums (Defs. 10.1.9, 10.1.10)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p079]
-translations: ["[[ru/Понятия/Интегральные суммы Дарбу (Опр 10.1.9, 10.1.10)]]"]
+translations: ["[[ru/Понятия/Интегральные суммы Дарбу (Опр 10.1.9, 10.1.10)]]", "[[es/Conceptos/Sumas de Darboux (Defs. 10.1.9, 10.1.10)]]"]
 status: draft
 ---
 # Darboux sums (Defs. 10.1.9, 10.1.10)

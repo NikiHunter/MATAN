@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.3.2 (termwise integration of series)"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p042]
-translations: ["[[ru/Понятия/Теорема 8.3.2 (интегрирование рядов)]]"]
+translations: ["[[ru/Понятия/Теорема 8.3.2 (интегрирование рядов)]]", "[[es/Conceptos/Teorema 8.3.2 (integración término a término)]]"]
 status: draft
 ---
 # Theorem 8.3.2 (termwise integration of series)

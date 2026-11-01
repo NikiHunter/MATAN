@@ -6,7 +6,7 @@ lang: en
 aliases: ["Uniform deviation (Def. 8.3)"]
 tags: [analysis/series, sem3, definition]
 source_pages: [p034]
-translations: ["[[ru/Понятия/Равномерное уклонение (Опр 8.3)]]"]
+translations: ["[[ru/Понятия/Равномерное уклонение (Опр 8.3)]]", "[[es/Conceptos/Desviación uniforme (Def. 8.3)]]"]
 status: draft
 ---
 # Uniform deviation (Def. 8.3)

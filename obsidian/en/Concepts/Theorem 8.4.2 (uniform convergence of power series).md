@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.4.2 (uniform convergence of power series)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p047, p048]
-translations: ["[[ru/Понятия/Теорема 8.4.2 (равномерная сходимость степенных рядов)]]"]
+translations: ["[[ru/Понятия/Теорема 8.4.2 (равномерная сходимость степенных рядов)]]", "[[es/Conceptos/Teorema 8.4.2 (convergencia uniforme de series de potencias)]]"]
 status: draft
 ---
 # Theorem 8.4.2 (uniform convergence of power series)

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 67"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p012, p013, p014, p015, p016, p017]
-translations: ["[[ru/Лекции/Лекция 67]]"]
+translations: ["[[ru/Лекции/Лекция 67]]", "[[es/Clases/Clase 67]]"]
 status: draft
 ---
 # Lecture 67 — Sufficient conditions for an extremum, conditional extrema and Lagrange multipliers

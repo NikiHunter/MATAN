@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 82"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p078, p079, p080, p081, p082]
-translations: ["[[ru/Лекции/Лекция 82]]"]
+translations: ["[[ru/Лекции/Лекция 82]]", "[[es/Clases/Clase 82]]"]
 status: draft
 ---
 # Lecture 82 — Integral over a set, Darboux sums, Jordan measure, general properties of the integral

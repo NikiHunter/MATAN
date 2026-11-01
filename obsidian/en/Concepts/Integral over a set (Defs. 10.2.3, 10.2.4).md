@@ -6,7 +6,7 @@ lang: en
 aliases: ["Integral over a set (Defs. 10.2.3, 10.2.4)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p078, p081]
-translations: ["[[ru/Понятия/Интеграл по множеству (Опр 10.2.3, 10.2.4)]]"]
+translations: ["[[ru/Понятия/Интеграл по множеству (Опр 10.2.3, 10.2.4)]]", "[[es/Conceptos/Integral sobre un conjunto (Defs. 10.2.3, 10.2.4)]]"]
 status: draft
 ---
 # Integral over a set (Defs. 10.2.3, 10.2.4)

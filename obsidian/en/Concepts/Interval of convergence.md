@@ -6,7 +6,7 @@ lang: en
 aliases: ["Interval of convergence"]
 tags: [analysis/power-series, sem3, property]
 source_pages: [p046]
-translations: ["[[ru/Понятия/Интервал сходимости]]"]
+translations: ["[[ru/Понятия/Интервал сходимости]]", "[[es/Conceptos/Intervalo de convergencia]]"]
 status: draft
 ---
 # Interval of convergence

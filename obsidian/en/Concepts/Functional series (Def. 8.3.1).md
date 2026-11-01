@@ -6,7 +6,7 @@ lang: en
 aliases: ["Functional series (Def. 8.3.1)"]
 tags: [analysis/series, sem3, definition]
 source_pages: [p038]
-translations: ["[[ru/Понятия/Функциональный ряд (Опр 8.3.1)]]"]
+translations: ["[[ru/Понятия/Функциональный ряд (Опр 8.3.1)]]", "[[es/Conceptos/Serie funcional (Def. 8.3.1)]]"]
 status: draft
 ---
 # Functional series (Def. 8.3.1)

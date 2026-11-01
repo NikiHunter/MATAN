@@ -6,7 +6,7 @@ lang: en
 aliases: ["Cauchy lemma"]
 tags: [analysis/series, sem3, lemma]
 source_pages: [p026]
-translations: ["[[ru/Понятия/Лемма Коши]]"]
+translations: ["[[ru/Понятия/Лемма Коши]]", "[[es/Conceptos/Lema de Cauchy]]"]
 status: draft
 ---
 # Cauchy lemma

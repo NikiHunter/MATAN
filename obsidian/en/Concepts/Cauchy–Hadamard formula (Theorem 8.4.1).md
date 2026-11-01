@@ -6,7 +6,7 @@ lang: en
 aliases: ["Cauchy–Hadamard formula (Theorem 8.4.1)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p046]
-translations: ["[[ru/Понятия/Формула Коши – Адамара (Теорема 8.4.1)]]"]
+translations: ["[[ru/Понятия/Формула Коши – Адамара (Теорема 8.4.1)]]", "[[es/Conceptos/Fórmula de Cauchy–Hadamard (Teorema 8.4.1)]]"]
 status: draft
 ---
 # Cauchy–Hadamard formula (Theorem 8.4.1)

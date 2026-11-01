@@ -6,7 +6,7 @@ lang: en
 aliases: ["Rearrangement properties of series"]
 tags: [analysis/series, sem3, property]
 source_pages: [p029, p030]
-translations: ["[[ru/Понятия/Переместительные свойства рядов]]"]
+translations: ["[[ru/Понятия/Переместительные свойства рядов]]", "[[es/Conceptos/Propiedades de reordenación de las series]]"]
 status: draft
 ---
 # Rearrangement properties of series

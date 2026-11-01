@@ -6,7 +6,7 @@ lang: en
 aliases: ["Uniform convergence (Def. 8.1.1)"]
 tags: [analysis/series, sem3, definition]
 source_pages: [p031]
-translations: ["[[ru/Понятия/Равномерная сходимость (Опр 8.1.1)]]"]
+translations: ["[[ru/Понятия/Равномерная сходимость (Опр 8.1.1)]]", "[[es/Conceptos/Convergencia uniforme (Def. 8.1.1)]]"]
 status: draft
 ---
 # Uniform convergence (Def. 8.1.1)

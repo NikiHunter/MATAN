@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.4.4 (termwise integration of power series)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p050, p051]
-translations: ["[[ru/Понятия/Теорема 8.4.4 (интегрирование степенных рядов)]]"]
+translations: ["[[ru/Понятия/Теорема 8.4.4 (интегрирование степенных рядов)]]", "[[es/Conceptos/Teorema 8.4.4 (integración de series de potencias)]]"]
 status: draft
 ---
 # Theorem 8.4.4 (termwise integration of power series)

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 80"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p071, p072, p073]
-translations: ["[[ru/Лекции/Лекция 80]]"]
+translations: ["[[ru/Лекции/Лекция 80]]", "[[es/Clases/Clase 80]]"]
 status: draft
 ---
 # Lecture 80 — Multiple integrals: intervals, measure, partitions, Riemann sums and the Riemann integral

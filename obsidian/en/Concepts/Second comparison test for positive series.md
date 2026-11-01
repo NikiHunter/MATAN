@@ -6,7 +6,7 @@ lang: en
 aliases: ["Second comparison test for positive series"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p024]
-translations: ["[[ru/Понятия/Второй признак сравнения положительных рядов]]"]
+translations: ["[[ru/Понятия/Второй признак сравнения положительных рядов]]", "[[es/Conceptos/Segundo criterio de comparación de series positivas]]"]
 status: draft
 ---
 # Second comparison test for positive series

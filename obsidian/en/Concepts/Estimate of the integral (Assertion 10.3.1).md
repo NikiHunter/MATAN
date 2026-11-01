@@ -6,7 +6,7 @@ lang: en
 aliases: ["Estimate of the integral (Assertion 10.3.1)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p082]
-translations: ["[[ru/Понятия/Оценка интеграла (Утв 10.3.1)]]"]
+translations: ["[[ru/Понятия/Оценка интеграла (Утв 10.3.1)]]", "[[es/Conceptos/Estimación de la integral (Afirmación 10.3.1)]]"]
 status: draft
 ---
 # Estimate of the integral (Assertion 10.3.1)

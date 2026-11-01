@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.4.8 (expandability in a Taylor series)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p053, p054]
-translations: ["[[ru/Понятия/Теорема 8.4.8 (разложимость в ряд Тейлора)]]"]
+translations: ["[[ru/Понятия/Теорема 8.4.8 (разложимость в ряд Тейлора)]]", "[[es/Conceptos/Teorema 8.4.8 (desarrollo en serie de Taylor)]]"]
 status: draft
 ---
 # Theorem 8.4.8 (expandability in a Taylor series)

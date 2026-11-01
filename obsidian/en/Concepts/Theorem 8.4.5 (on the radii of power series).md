@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.4.5 (on the radii of power series)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p051]
-translations: ["[[ru/Понятия/Теорема 8.4.5 (о радиусах степенных рядов)]]"]
+translations: ["[[ru/Понятия/Теорема 8.4.5 (о радиусах степенных рядов)]]", "[[es/Conceptos/Teorema 8.4.5 (sobre los radios de las series de potencias)]]"]
 status: draft
 ---
 # Theorem 8.4.5 (on the radii of power series)

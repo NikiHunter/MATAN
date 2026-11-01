@@ -6,7 +6,7 @@ lang: en
 aliases: ["Darboux criterion (Theorem 10.1.13)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p079]
-translations: ["[[ru/Понятия/Критерий Дарбу (Теорема 10.1.13)]]"]
+translations: ["[[ru/Понятия/Критерий Дарбу (Теорема 10.1.13)]]", "[[es/Conceptos/Criterio de Darboux (Teorema 10.1.13)]]"]
 status: draft
 ---
 # Darboux criterion (Theorem 10.1.13)

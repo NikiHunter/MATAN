@@ -6,7 +6,7 @@ lang: en
 aliases: ["Riemann-integrable function (Def. 10.1.7)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p073]
-translations: ["[[ru/Понятия/Интегрируемая по Риману функция (Опр 10.1.7)]]"]
+translations: ["[[ru/Понятия/Интегрируемая по Риману функция (Опр 10.1.7)]]", "[[es/Conceptos/Función integrable según Riemann (Def. 10.1.7)]]"]
 status: draft
 ---
 # Riemann-integrable function (Def. 10.1.7)

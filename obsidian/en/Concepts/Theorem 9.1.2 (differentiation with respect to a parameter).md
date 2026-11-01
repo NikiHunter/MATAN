@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 9.1.2 (differentiation with respect to a parameter)"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p057]
-translations: ["[[ru/Понятия/Теорема 9.1.2 (дифференцирование по параметру)]]"]
+translations: ["[[ru/Понятия/Теорема 9.1.2 (дифференцирование по параметру)]]", "[[es/Conceptos/Teorema 9.1.2 (derivación respecto de un parámetro)]]"]
 status: draft
 ---
 # Theorem 9.1.2 (differentiation with respect to a parameter)

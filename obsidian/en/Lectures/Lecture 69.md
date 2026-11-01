@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 69"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p022, p023, p024, p025, p026]
-translations: ["[[ru/Лекции/Лекция 69]]"]
+translations: ["[[ru/Лекции/Лекция 69]]", "[[es/Clases/Clase 69]]"]
 status: draft
 ---
 # Lecture 69 — Properties of convergent series, comparison and ratio tests, Cauchy lemma

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Dirichlet test for improper integrals"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p061, p062]
-translations: ["[[ru/Понятия/Признак Дирихле для несобственных интегралов]]"]
+translations: ["[[ru/Понятия/Признак Дирихле для несобственных интегралов]]", "[[es/Conceptos/Criterio de Dirichlet para integrales impropias]]"]
 status: draft
 ---
 # Dirichlet test for improper integrals

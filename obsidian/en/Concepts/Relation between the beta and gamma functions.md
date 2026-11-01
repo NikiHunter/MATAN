@@ -6,7 +6,7 @@ lang: en
 aliases: ["Relation between the beta and gamma functions"]
 tags: [analysis/gamma, sem3, theorem]
 source_pages: [p070]
-translations: ["[[ru/Понятия/Связь бета- и гамма-функции]]"]
+translations: ["[[ru/Понятия/Связь бета- и гамма-функции]]", "[[es/Conceptos/Relación entre las funciones beta y gamma]]"]
 status: draft
 ---
 # Relation between the beta and gamma functions

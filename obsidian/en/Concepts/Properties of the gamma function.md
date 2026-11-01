@@ -6,7 +6,7 @@ lang: en
 aliases: ["Properties of the gamma function"]
 tags: [analysis/gamma, sem3, property]
 source_pages: [p067, p070]
-translations: ["[[ru/Понятия/Свойства гамма-функции]]"]
+translations: ["[[ru/Понятия/Свойства гамма-функции]]", "[[es/Conceptos/Propiedades de la función gamma]]"]
 status: draft
 ---
 # Properties of the gamma function

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Rearrangement of a series (Def. 7.5.1)"]
 tags: [analysis/series, sem3, definition]
 source_pages: [p029]
-translations: ["[[ru/Понятия/Перестановка ряда (Опр 7.5.1)]]"]
+translations: ["[[ru/Понятия/Перестановка ряда (Опр 7.5.1)]]", "[[es/Conceptos/Reordenación de una serie (Def. 7.5.1)]]"]
 status: draft
 ---
 # Rearrangement of a series (Def. 7.5.1)

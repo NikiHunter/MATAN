@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.4.7 (uniqueness of the expansion)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p052]
-translations: ["[[ru/Понятия/Теорема 8.4.7 (единственность разложения)]]"]
+translations: ["[[ru/Понятия/Теорема 8.4.7 (единственность разложения)]]", "[[es/Conceptos/Teorema 8.4.7 (unicidad del desarrollo)]]"]
 status: draft
 ---
 # Theorem 8.4.7 (uniqueness of the expansion)

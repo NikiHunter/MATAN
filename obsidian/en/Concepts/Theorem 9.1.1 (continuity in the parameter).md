@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 9.1.1 (continuity in the parameter)"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p056]
-translations: ["[[ru/Понятия/Теорема 9.1.1 (непрерывность по параметру)]]"]
+translations: ["[[ru/Понятия/Теорема 9.1.1 (непрерывность по параметру)]]", "[[es/Conceptos/Teorema 9.1.1 (continuidad respecto del parámetro)]]"]
 status: draft
 ---
 # Theorem 9.1.1 (continuity in the parameter)

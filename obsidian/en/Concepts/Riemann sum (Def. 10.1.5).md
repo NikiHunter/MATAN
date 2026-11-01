@@ -6,7 +6,7 @@ lang: en
 aliases: ["Riemann sum (Def. 10.1.5)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p073]
-translations: ["[[ru/Понятия/Интегральная сумма (Опр 10.1.5)]]"]
+translations: ["[[ru/Понятия/Интегральная сумма (Опр 10.1.5)]]", "[[es/Conceptos/Suma integral (Def. 10.1.5)]]"]
 status: draft
 ---
 # Riemann sum (Def. 10.1.5)

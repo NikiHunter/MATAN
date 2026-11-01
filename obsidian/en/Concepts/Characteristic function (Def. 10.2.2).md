@@ -6,7 +6,7 @@ lang: en
 aliases: ["Characteristic function (Def. 10.2.2)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p078]
-translations: ["[[ru/Понятия/Характеристическая функция (Опр 10.2.2)]]"]
+translations: ["[[ru/Понятия/Характеристическая функция (Опр 10.2.2)]]", "[[es/Conceptos/Función característica (Def. 10.2.2)]]"]
 status: draft
 ---
 # Characteristic function (Def. 10.2.2)

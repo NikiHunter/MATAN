@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 66"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p007, p008, p009, p010, p011]
-translations: ["[[ru/Лекции/Лекция 66]]"]
+translations: ["[[ru/Лекции/Лекция 66]]", "[[es/Clases/Clase 66]]"]
 status: draft
 ---
 # Lecture 66 — Taylor–Peano, Taylor–Lagrange, implicit maps, necessary condition for an extremum

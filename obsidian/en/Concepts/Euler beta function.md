@@ -6,7 +6,7 @@ lang: en
 aliases: ["Euler beta function"]
 tags: [analysis/gamma, sem3, definition]
 source_pages: [p070]
-translations: ["[[ru/Понятия/Бета-функция Эйлера]]"]
+translations: ["[[ru/Понятия/Бета-функция Эйлера]]", "[[es/Conceptos/Función beta de Euler]]"]
 status: draft
 ---
 # Euler beta function

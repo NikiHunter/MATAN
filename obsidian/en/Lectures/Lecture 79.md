@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 79"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p067, p068, p069, p070]
-translations: ["[[ru/Лекции/Лекция 79]]"]
+translations: ["[[ru/Лекции/Лекция 79]]", "[[es/Clases/Clase 79]]"]
 status: draft
 ---
 # Lecture 79 — Gamma function and its properties, Stirling formula, Euler beta integral

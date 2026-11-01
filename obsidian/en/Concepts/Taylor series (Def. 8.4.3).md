@@ -6,7 +6,7 @@ lang: en
 aliases: ["Taylor series (Def. 8.4.3)"]
 tags: [analysis/power-series, sem3, definition]
 source_pages: [p053]
-translations: ["[[ru/Понятия/Ряд Тейлора (Опр 8.4.3)]]"]
+translations: ["[[ru/Понятия/Ряд Тейлора (Опр 8.4.3)]]", "[[es/Conceptos/Serie de Taylor (Def. 8.4.3)]]"]
 status: draft
 ---
 # Taylor series (Def. 8.4.3)

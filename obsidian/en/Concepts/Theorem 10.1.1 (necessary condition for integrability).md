@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 10.1.1 (necessary condition for integrability)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p073, p074]
-translations: ["[[ru/Понятия/Теорема 10.1.1 (необходимое условие интегрируемости)]]"]
+translations: ["[[ru/Понятия/Теорема 10.1.1 (необходимое условие интегрируемости)]]", "[[es/Conceptos/Teorema 10.1.1 (condición necesaria de integrabilidad)]]"]
 status: draft
 ---
 # Theorem 10.1.1 (necessary condition for integrability)

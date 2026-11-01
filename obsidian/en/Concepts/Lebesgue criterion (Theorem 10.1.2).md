@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lebesgue criterion (Theorem 10.1.2)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p075, p077]
-translations: ["[[ru/Понятия/Критерий Лебега (Теорема 10.1.2)]]"]
+translations: ["[[ru/Понятия/Критерий Лебега (Теорема 10.1.2)]]", "[[es/Conceptos/Criterio de Lebesgue (Teorema 10.1.2)]]"]
 status: draft
 ---
 # Lebesgue criterion (Theorem 10.1.2)

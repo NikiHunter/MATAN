@@ -6,7 +6,7 @@ lang: en
 aliases: ["Uniform convergence of an improper integral (Def. 9.2.1)"]
 tags: [analysis/parameter-integrals, sem3, definition]
 source_pages: [p059]
-translations: ["[[ru/Понятия/Равномерная сходимость несобственного интеграла (Опр 9.2.1)]]"]
+translations: ["[[ru/Понятия/Равномерная сходимость несобственного интеграла (Опр 9.2.1)]]", "[[es/Conceptos/Convergencia uniforme de una integral impropia (Def. 9.2.1)]]"]
 status: draft
 ---
 # Uniform convergence of an improper integral (Def. 9.2.1)

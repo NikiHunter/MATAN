@@ -6,7 +6,7 @@ lang: en
 aliases: ["Weierstrass M-test for series"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p040]
-translations: ["[[ru/Понятия/Признак Вейерштрасса для рядов]]"]
+translations: ["[[ru/Понятия/Признак Вейерштрасса для рядов]]", "[[es/Conceptos/Criterio M de Weierstrass para series]]"]
 status: draft
 ---
 # Weierstrass M-test for series

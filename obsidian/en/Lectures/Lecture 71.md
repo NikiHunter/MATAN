@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 71"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p030, p031, p032, p033, p034, p035]
-translations: ["[[ru/Лекции/Лекция 71]]"]
+translations: ["[[ru/Лекции/Лекция 71]]", "[[es/Clases/Clase 71]]"]
 status: draft
 ---
 # Lecture 71 — Functional sequences and series: uniform convergence

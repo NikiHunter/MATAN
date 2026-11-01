@@ -11,6 +11,7 @@ status: draft
 ---
 
 
+
 # Glossary
 
 Terms used by the Russian branch; the English and Spanish branches use exactly these correspondences.

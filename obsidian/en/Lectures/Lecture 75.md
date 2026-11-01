@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 75"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p050, p051, p052, p053]
-translations: ["[[ru/Лекции/Лекция 75]]"]
+translations: ["[[ru/Лекции/Лекция 75]]", "[[es/Clases/Clase 75]]"]
 status: draft
 ---
 # Lecture 75 — Integration and differentiation of power series, uniqueness of the expansion, Taylor series

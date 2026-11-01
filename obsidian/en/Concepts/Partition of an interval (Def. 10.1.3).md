@@ -6,7 +6,7 @@ lang: en
 aliases: ["Partition of an interval (Def. 10.1.3)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p072]
-translations: ["[[ru/Понятия/Разбиение промежутка (Опр 10.1.3)]]"]
+translations: ["[[ru/Понятия/Разбиение промежутка (Опр 10.1.3)]]", "[[es/Conceptos/Partición de un intervalo (Def. 10.1.3)]]"]
 status: draft
 ---
 # Partition of an interval (Def. 10.1.3)

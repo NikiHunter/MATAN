@@ -6,7 +6,7 @@ lang: en
 aliases: ["Analytic function (Def. 8.4.4)"]
 tags: [analysis/power-series, sem3, definition]
 source_pages: [p054]
-translations: ["[[ru/Понятия/Аналитическая функция (Опр 8.4.4)]]"]
+translations: ["[[ru/Понятия/Аналитическая функция (Опр 8.4.4)]]", "[[es/Conceptos/Función analítica (Def. 8.4.4)]]"]
 status: draft
 ---
 # Analytic function (Def. 8.4.4)

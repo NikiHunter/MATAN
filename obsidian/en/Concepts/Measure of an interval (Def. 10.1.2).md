@@ -6,7 +6,7 @@ lang: en
 aliases: ["Measure of an interval (Def. 10.1.2)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p071]
-translations: ["[[ru/Понятия/Мера промежутка (Опр 10.1.2)]]"]
+translations: ["[[ru/Понятия/Мера промежутка (Опр 10.1.2)]]", "[[es/Conceptos/Medida de un intervalo (Def. 10.1.2)]]"]
 status: draft
 ---
 # Measure of an interval (Def. 10.1.2)

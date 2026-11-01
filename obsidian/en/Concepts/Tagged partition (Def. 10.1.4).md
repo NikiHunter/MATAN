@@ -6,7 +6,7 @@ lang: en
 aliases: ["Tagged partition (Def. 10.1.4)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p073]
-translations: ["[[ru/Понятия/Разбиение с отмеченными точками (Опр 10.1.4)]]"]
+translations: ["[[ru/Понятия/Разбиение с отмеченными точками (Опр 10.1.4)]]", "[[es/Conceptos/Partición con puntos marcados (Def. 10.1.4)]]"]
 status: draft
 ---
 # Tagged partition (Def. 10.1.4)

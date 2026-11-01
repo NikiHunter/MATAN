@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 70"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p027, p028, p029]
-translations: ["[[ru/Лекции/Лекция 70]]"]
+translations: ["[[ru/Лекции/Лекция 70]]", "[[es/Clases/Clase 70]]"]
 status: draft
 ---
 # Lecture 70 — Series with terms of arbitrary sign, the Leibniz test, rearrangements

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Taylor polynomial of a function"]
 tags: [analysis/power-series, sem3, definition]
 source_pages: [p053]
-translations: ["[[ru/Понятия/Многочлен Тейлора функции]]"]
+translations: ["[[ru/Понятия/Многочлен Тейлора функции]]", "[[es/Conceptos/Polinomio de Taylor de una función]]"]
 status: draft
 ---
 # Taylor polynomial of a function

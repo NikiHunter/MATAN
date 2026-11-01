@@ -6,7 +6,7 @@ lang: en
 aliases: ["Example: integral of powers of sine and cosine"]
 tags: [analysis/gamma, sem3, example]
 source_pages: [p071]
-translations: ["[[ru/Понятия/Пример: интеграл от синуса и косинуса]]"]
+translations: ["[[ru/Понятия/Пример: интеграл от синуса и косинуса]]", "[[es/Conceptos/Ejemplo: integral de potencias de seno y coseno]]"]
 status: draft
 ---
 # Example: integral of powers of sine and cosine

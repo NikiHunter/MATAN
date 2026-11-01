@@ -6,7 +6,7 @@ lang: en
 aliases: ["Jordan measure (volume) (Def. 10.2.5)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p080]
-translations: ["[[ru/Понятия/Мера (объём) Жордана (Опр 10.2.5)]]"]
+translations: ["[[ru/Понятия/Мера (объём) Жордана (Опр 10.2.5)]]", "[[es/Conceptos/Medida (volumen) de Jordan (Def. 10.2.5)]]"]
 status: draft
 ---
 # Jordan measure (volume) (Def. 10.2.5)

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Radius of convergence by the ratio test"]
 tags: [analysis/power-series, sem3, method]
 source_pages: [p047]
-translations: ["[[ru/Понятия/Радиус сходимости по признаку Даламбера]]"]
+translations: ["[[ru/Понятия/Радиус сходимости по признаку Даламбера]]", "[[es/Conceptos/Radio de convergencia por el criterio del cociente]]"]
 status: draft
 ---
 # Radius of convergence by the ratio test

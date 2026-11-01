@@ -6,7 +6,7 @@ lang: en
 aliases: ["Almost everywhere (Def. 10.1.8)"]
 tags: [analysis/multiple-integrals, sem3, definition]
 source_pages: [p074]
-translations: ["[[ru/Понятия/Почти всюду (Опр 10.1.8)]]"]
+translations: ["[[ru/Понятия/Почти всюду (Опр 10.1.8)]]", "[[es/Conceptos/Casi en todas partes (Def. 10.1.8)]]"]
 status: draft
 ---
 # Almost everywhere (Def. 10.1.8)

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.2.1 (continuity of the limit function)"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p034, p035]
-translations: ["[[ru/Понятия/Теорема 8.2.1 (о непрерывности предельной функции)]]"]
+translations: ["[[ru/Понятия/Теорема 8.2.1 (о непрерывности предельной функции)]]", "[[es/Conceptos/Teorema 8.2.1 (continuidad de la función límite)]]"]
 status: draft
 ---
 # Theorem 8.2.1 (continuity of the limit function)

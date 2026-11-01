@@ -6,7 +6,7 @@ lang: en
 aliases: ["Weierstrass test for improper integrals"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p060]
-translations: ["[[ru/Понятия/Признак Вейерштрасса для несобственных интегралов]]"]
+translations: ["[[ru/Понятия/Признак Вейерштрасса для несобственных интегралов]]", "[[es/Conceptos/Criterio de Weierstrass para integrales impropias]]"]
 status: draft
 ---
 # Weierstrass test for improper integrals

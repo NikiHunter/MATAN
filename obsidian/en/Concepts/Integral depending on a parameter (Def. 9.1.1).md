@@ -6,7 +6,7 @@ lang: en
 aliases: ["Integral depending on a parameter (Def. 9.1.1)"]
 tags: [analysis/parameter-integrals, sem3, definition]
 source_pages: [p056]
-translations: ["[[ru/Понятия/Интеграл, зависящий от параметра (Опр 9.1.1)]]"]
+translations: ["[[ru/Понятия/Интеграл, зависящий от параметра (Опр 9.1.1)]]", "[[es/Conceptos/Integral dependiente de un parámetro (Def. 9.1.1)]]"]
 status: draft
 ---
 # Integral depending on a parameter (Def. 9.1.1)

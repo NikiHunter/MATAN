@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 68"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p018, p019, p020, p021]
-translations: ["[[ru/Лекции/Лекция 68]]"]
+translations: ["[[ru/Лекции/Лекция 68]]", "[[es/Clases/Clase 68]]"]
 status: draft
 ---
 # Lecture 68 — Numeric series, the Bolzano–Cauchy criterion, absolute convergence

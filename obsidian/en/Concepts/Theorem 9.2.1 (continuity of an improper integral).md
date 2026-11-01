@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 9.2.1 (continuity of an improper integral)"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p065]
-translations: ["[[ru/Понятия/Теорема 9.2.1 (непрерывность несобственного интеграла)]]"]
+translations: ["[[ru/Понятия/Теорема 9.2.1 (непрерывность несобственного интеграла)]]", "[[es/Conceptos/Teorema 9.2.1 (continuidad de una integral impropia)]]"]
 status: draft
 ---
 # Theorem 9.2.1 (continuity of an improper integral)

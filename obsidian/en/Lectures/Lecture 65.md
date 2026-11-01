@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 65"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p001, p002, p003, p004, p005, p006]
-translations: ["[[ru/Лекции/Лекция 65]]"]
+translations: ["[[ru/Лекции/Лекция 65]]", "[[es/Clases/Clase 65]]"]
 status: draft
 ---
 # Lecture 65 — Multidimensional Taylor polynomial: setup, multi-indices, uniqueness

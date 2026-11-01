@@ -6,7 +6,7 @@ lang: en
 aliases: ["Leibniz test"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p027]
-translations: ["[[ru/Понятия/Признак Лейбница]]"]
+translations: ["[[ru/Понятия/Признак Лейбница]]", "[[es/Conceptos/Criterio de Leibniz]]"]
 status: draft
 ---
 # Leibniz test

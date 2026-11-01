@@ -6,7 +6,7 @@ lang: en
 aliases: ["Bolzano–Cauchy criterion for improper integrals"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p060]
-translations: ["[[ru/Понятия/Критерий Больцано – Коши для несобственных интегралов]]"]
+translations: ["[[ru/Понятия/Критерий Больцано – Коши для несобственных интегралов]]", "[[es/Conceptos/Criterio de Bolzano–Cauchy para integrales impropias]]"]
 status: draft
 ---
 # Bolzano–Cauchy criterion for improper integrals

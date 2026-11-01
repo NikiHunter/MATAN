@@ -6,7 +6,7 @@ lang: en
 aliases: ["Power series (Def. 8.4.1)"]
 tags: [analysis/power-series, sem3, definition]
 source_pages: [p045]
-translations: ["[[ru/Понятия/Степенной ряд (Опр 8.4.1)]]"]
+translations: ["[[ru/Понятия/Степенной ряд (Опр 8.4.1)]]", "[[es/Conceptos/Serie de potencias (Def. 8.4.1)]]"]
 status: draft
 ---
 # Power series (Def. 8.4.1)

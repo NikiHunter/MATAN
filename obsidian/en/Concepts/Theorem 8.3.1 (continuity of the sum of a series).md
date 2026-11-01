@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.3.1 (continuity of the sum of a series)"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p041]
-translations: ["[[ru/Понятия/Теорема 8.3.1 (непрерывность суммы ряда)]]"]
+translations: ["[[ru/Понятия/Теорема 8.3.1 (непрерывность суммы ряда)]]", "[[es/Conceptos/Teorema 8.3.1 (continuidad de la suma de una serie)]]"]
 status: draft
 ---
 # Theorem 8.3.1 (continuity of the sum of a series)

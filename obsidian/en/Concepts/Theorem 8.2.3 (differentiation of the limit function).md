@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.2.3 (differentiation of the limit function)"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p038]
-translations: ["[[ru/Понятия/Теорема 8.2.3 (о дифференцировании предельной функции)]]"]
+translations: ["[[ru/Понятия/Теорема 8.2.3 (о дифференцировании предельной функции)]]", "[[es/Conceptos/Teorema 8.2.3 (derivación de la función límite)]]"]
 status: draft
 ---
 # Theorem 8.2.3 (differentiation of the limit function)

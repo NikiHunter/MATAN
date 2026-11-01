@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.4.6 (termwise differentiation of power series)"]
 tags: [analysis/power-series, sem3, theorem]
 source_pages: [p051, p052]
-translations: ["[[ru/Понятия/Теорема 8.4.6 (дифференцирование степенных рядов)]]"]
+translations: ["[[ru/Понятия/Теорема 8.4.6 (дифференцирование степенных рядов)]]", "[[es/Conceptos/Teorema 8.4.6 (derivación de series de potencias)]]"]
 status: draft
 ---
 # Theorem 8.4.6 (termwise differentiation of power series)

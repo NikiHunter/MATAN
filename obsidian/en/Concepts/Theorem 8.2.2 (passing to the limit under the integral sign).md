@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 8.2.2 (passing to the limit under the integral sign)"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p036]
-translations: ["[[ru/Понятия/Теорема 8.2.2 (предельный переход под знаком интеграла)]]"]
+translations: ["[[ru/Понятия/Теорема 8.2.2 (предельный переход под знаком интеграла)]]", "[[es/Conceptos/Teorema 8.2.2 (paso al límite bajo el signo integral)]]"]
 status: draft
 ---
 # Theorem 8.2.2 (passing to the limit under the integral sign)

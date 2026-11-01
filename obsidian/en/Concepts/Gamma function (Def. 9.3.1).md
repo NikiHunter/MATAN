@@ -6,7 +6,7 @@ lang: en
 aliases: ["Gamma function (Def. 9.3.1)"]
 tags: [analysis/gamma, sem3, definition]
 source_pages: [p067]
-translations: ["[[ru/Понятия/Гамма-функция (Опр 9.3.1)]]"]
+translations: ["[[ru/Понятия/Гамма-функция (Опр 9.3.1)]]", "[[es/Conceptos/Función gamma (Def. 9.3.1)]]"]
 status: draft
 ---
 # Gamma function (Def. 9.3.1)

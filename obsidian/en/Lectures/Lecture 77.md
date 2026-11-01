@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 77"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p058, p059, p060, p061, p062]
-translations: ["[[ru/Лекции/Лекция 77]]"]
+translations: ["[[ru/Лекции/Лекция 77]]", "[[es/Clases/Clase 77]]"]
 status: draft
 ---
 # Lecture 77 — Integrating a parameter integral, improper integrals, criteria of uniform convergence

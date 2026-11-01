@@ -6,7 +6,7 @@ lang: en
 aliases: ["Feynman method of computing integrals"]
 tags: [analysis/parameter-integrals, sem3, method]
 source_pages: [p066]
-translations: ["[[ru/Понятия/Метод Фейнмана вычисления интегралов]]"]
+translations: ["[[ru/Понятия/Метод Фейнмана вычисления интегралов]]", "[[es/Conceptos/Método de Feynman para calcular integrales]]"]
 status: draft
 ---
 # Feynman method of computing integrals

@@ -6,7 +6,7 @@ lang: en
 aliases: ["D’Alembert ratio test"]
 tags: [analysis/series, sem3, theorem]
 source_pages: [p025]
-translations: ["[[ru/Понятия/Признак сходимости Даламбера]]"]
+translations: ["[[ru/Понятия/Признак сходимости Даламбера]]", "[[es/Conceptos/Criterio del cociente de D’Alembert]]"]
 status: draft
 ---
 # D’Alembert ratio test

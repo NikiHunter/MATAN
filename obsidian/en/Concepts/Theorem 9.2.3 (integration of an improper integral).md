@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 9.2.3 (integration of an improper integral)"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p065]
-translations: ["[[ru/Понятия/Теорема 9.2.3 (интегрирование несобственного интеграла)]]"]
+translations: ["[[ru/Понятия/Теорема 9.2.3 (интегрирование несобственного интеграла)]]", "[[es/Conceptos/Teorema 9.2.3 (integración de una integral impropia)]]"]
 status: draft
 ---
 # Theorem 9.2.3 (integration of an improper integral)

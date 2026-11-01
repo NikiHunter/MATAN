@@ -6,7 +6,7 @@ lang: en
 aliases: ["Lecture 74"]
 tags: [analysis/lecture, sem3, lecture]
 source_pages: [p047, p048, p049]
-translations: ["[[ru/Лекции/Лекция 74]]"]
+translations: ["[[ru/Лекции/Лекция 74]]", "[[es/Clases/Clase 74]]"]
 status: draft
 ---
 # Lecture 74 — Radius of convergence, uniform convergence of power series, Abel theorem

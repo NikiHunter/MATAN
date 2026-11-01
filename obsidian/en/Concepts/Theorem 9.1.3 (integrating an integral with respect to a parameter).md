@@ -6,7 +6,7 @@ lang: en
 aliases: ["Theorem 9.1.3 (integrating an integral with respect to a parameter)"]
 tags: [analysis/parameter-integrals, sem3, theorem]
 source_pages: [p058]
-translations: ["[[ru/Понятия/Теорема 9.1.3 (интегрирование интеграла по параметру)]]"]
+translations: ["[[ru/Понятия/Теорема 9.1.3 (интегрирование интеграла по параметру)]]", "[[es/Conceptos/Teorema 9.1.3 (integración de una integral respecto del parámetro)]]"]
 status: draft
 ---
 # Theorem 9.1.3 (integrating an integral with respect to a parameter)
