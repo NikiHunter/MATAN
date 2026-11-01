@@ -15,24 +15,15 @@ Map of semester 3: lectures 65–82 and concepts. Every concept is an atomic not
 
 ## Lectures 65–82
 
-- [[Lecture 65]] — Multidimensional Taylor polynomial: setup, multi-indices, uniqueness
-- [[Lecture 66]] — Taylor–Peano, Taylor–Lagrange, implicit maps, necessary condition for an extremum
-- [[Lecture 67]] — Sufficient conditions for an extremum, conditional extrema and Lagrange multipliers
-- [[Lecture 68]] — Numeric series, the Bolzano–Cauchy criterion, absolute convergence
-- [[Lecture 69]] — Properties of convergent series, comparison and ratio tests, Cauchy lemma
-- [[Lecture 70]] — Series with terms of arbitrary sign, the Leibniz test, rearrangements
-- [[Lecture 71]] — Functional sequences and series: uniform convergence
-- [[Lecture 72]] — Passing to the limit under the integral sign, differentiating the limit function, functional series
-- [[Lecture 73]] — Integration and differentiation of uniformly convergent series, power series, Cauchy–Hadamard formula
-- [[Lecture 74]] — Radius of convergence, uniform convergence of power series, Abel theorem
-- [[Lecture 75]] — Integration and differentiation of power series, uniqueness of the expansion, Taylor series
-- [[Lecture 76]] — Expandability in a Taylor series, analytic functions, integrals depending on a parameter
-- [[Lecture 77]] — Integrating a parameter integral, improper integrals, criteria of uniform convergence
-- [[Lecture 78]] — Abel test, continuity and differentiation in a parameter, the Feynman method
-- [[Lecture 79]] — Gamma function and its properties, Stirling formula, Euler beta integral
-- [[Lecture 80]] — Multiple integrals: intervals, measure, partitions, Riemann sums and the Riemann integral
-- [[Lecture 81]] — Necessary condition for integrability and the Lebesgue criterion
-- [[Lecture 82]] — Integral over a set, Darboux sums, Jordan measure, general properties of the integral
+- [[Lecture 65–66]] — Multidimensional Taylor polynomial, Taylor formulas, implicit maps, extrema
+- [[Lecture 67–68]] — Extremum conditions, numeric series and absolute convergence
+- [[Lecture 69–70]] — Properties of series, comparison tests, the Leibniz test, rearrangements
+- [[Lecture 71–72]] — Uniform convergence, passing to the limit, functional series
+- [[Lecture 73–74]] — Power series, the Cauchy–Hadamard formula, Abel theorem
+- [[Lecture 75–76]] — Taylor series, analytic functions, integrals depending on a parameter
+- [[Lecture 77–78]] — Improper integrals, convergence tests, the Feynman method
+- [[Lecture 79–80]] — Gamma and beta functions, multiple integrals
+- [[Lecture 81–82]] — Lebesgue criterion, integral over a set, Darboux sums
 
 - [[Lecture 65–66 — multidimensional Taylor formula and implicit maps]]
 - [[Lecture 67–68 — extrema, conditional extrema and numeric series]]

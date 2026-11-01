@@ -118,6 +118,13 @@
         "a": 1,
         "rgb": 11621088
       }
+    },
+    {
+      "query": "tag:#analysis/fubini",
+      "color": {
+        "a": 1,
+        "rgb": 15447084
+      }
     }
   ],
   "collapse-display": true,

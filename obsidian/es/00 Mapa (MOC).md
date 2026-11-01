@@ -15,24 +15,15 @@ Mapa del semestre 3: clases 65–82 y conceptos. Cada concepto es una nota atóm
 
 ## Clases 65–82
 
-- [[Clase 65]] — Polinomio de Taylor multidimensional: planteamiento, multiíndices, unicidad
-- [[Clase 66]] — Taylor–Peano, Taylor–Lagrange, aplicaciones implícitas, condición necesaria de extremo
-- [[Clase 67]] — Condiciones suficientes de extremo, extremos condicionales y multiplicadores de Lagrange
-- [[Clase 68]] — Series numéricas, criterio de Bolzano–Cauchy, convergencia absoluta
-- [[Clase 69]] — Propiedades de las series convergentes, criterios de comparación y del cociente, lema de Cauchy
-- [[Clase 70]] — Series con términos de signo arbitrario, criterio de Leibniz, reordenaciones
-- [[Clase 71]] — Sucesiones y series funcionales: convergencia uniforme
-- [[Clase 72]] — Paso al límite bajo el signo integral, derivación de la función límite, series funcionales
-- [[Clase 73]] — Integración y derivación de series uniformemente convergentes, series de potencias, fórmula de Cauchy–Hadamard
-- [[Clase 74]] — Radio de convergencia, convergencia uniforme de series de potencias, teorema de Abel
-- [[Clase 75]] — Integración y derivación de series de potencias, unicidad del desarrollo, serie de Taylor
-- [[Clase 76]] — Desarrollo en serie de Taylor, funciones analíticas, integrales dependientes de un parámetro
-- [[Clase 77]] — Integración de una integral con parámetro, integrales impropias, criterios de convergencia uniforme
-- [[Clase 78]] — Criterio de Abel, continuidad y derivación respecto del parámetro, método de Feynman
-- [[Clase 79]] — Función gamma y sus propiedades, fórmula de Stirling, integral beta de Euler
-- [[Clase 80]] — Integrales múltiples: intervalos, medida, particiones, sumas de Riemann y la integral de Riemann
-- [[Clase 81]] — Condición necesaria de integrabilidad y criterio de Lebesgue
-- [[Clase 82]] — Integral sobre un conjunto, sumas de Darboux, medida de Jordan, propiedades generales de la integral
+- [[Clase 65–66]] — Polinomio de Taylor multidimensional, fórmulas de Taylor, aplicaciones implícitas, extremos
+- [[Clase 67–68]] — Condiciones de extremo, series numéricas y convergencia absoluta
+- [[Clase 69–70]] — Propiedades de las series, criterios de comparación, criterio de Leibniz, reordenaciones
+- [[Clase 71–72]] — Convergencia uniforme, paso al límite, series funcionales
+- [[Clase 73–74]] — Series de potencias, fórmula de Cauchy–Hadamard, teorema de Abel
+- [[Clase 75–76]] — Serie de Taylor, funciones analíticas, integrales dependientes de un parámetro
+- [[Clase 77–78]] — Integrales impropias, criterios de convergencia, método de Feynman
+- [[Clase 79–80]] — Funciones gamma y beta, integrales múltiples
+- [[Clase 81–82]] — Criterio de Lebesgue, integral sobre un conjunto, sumas de Darboux
 
 - [[Clase 65–66 — fórmula de Taylor multidimensional y aplicaciones implícitas]]
 - [[Clase 67–68 — extremos, extremos condicionales y series numéricas]]
