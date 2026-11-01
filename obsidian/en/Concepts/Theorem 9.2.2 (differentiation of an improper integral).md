@@ -1,0 +1,32 @@
+---
+id: thm-9-2-2
+type: theorem
+semester: 3
+lang: en
+aliases: ["Theorem 9.2.2 (differentiation of an improper integral)"]
+tags: [analysis/parameter-integrals, sem3, theorem]
+source_pages: [p065]
+translations: ["[[ru/Понятия/Теорема 9.2.2 (дифференцирование несобственного интеграла)]]", "[[es/Conceptos/Teorema 9.2.2 (derivación de una integral impropia)]]"]
+status: draft
+---
+# Theorem 9.2.2 (differentiation of an improper integral)
+
+> [!theorem] Theorem 9.2.2 (differentiation of an improper integral)
+> Under uniform convergence of the integral of $f'_y$ one has $I\'(y)=\int_a^b f\'_y(x,y)\,dx$.
+
+> [!editor] Structure
+> The full Russian text, proofs and computations remain in `lectures/sem3/`;
+> only the statement is given here.
+
+## Related
+
+- [[Theorem 9.2.1 (continuity of an improper integral)]]
+- [[Theorem 9.2.3 (integration of an improper integral)]]
+- [[00 Map (MOC)]]
+
+> [!warning] Open markers: ⟦U305⟧, ⟦U306⟧, ⟦T307⟧, ⟦S308⟧, ⟦U309⟧ — see `ocr/ISSUES.md`
+
+## Other languages
+
+- ru: Теорема 9.2.2 (дифференцирование несобственного интеграла) — `ru/Понятия/Теорема 9.2.2 (дифференцирование несобственного интеграла).md`
+- es: Teorema 9.2.2 (derivación de una integral impropia) — `es/Conceptos/Teorema 9.2.2 (derivación de una integral impropia).md`
