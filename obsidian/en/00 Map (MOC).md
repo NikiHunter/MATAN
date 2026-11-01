@@ -5,15 +5,15 @@ semester: 3
 lang: en
 aliases: ["Map of content"]
 tags: [analysis/moc, sem3, lecture]
-source_pages: [p001, p082]
+source_pages: [p001, p124]
 translations: ["[[ru/00 Карта (MOC).md]]", "[[es/00 Mapa (MOC).md]]"]
 status: draft
 ---
 # 00 Map (MOC)
 
-Map of semester 3: lectures 65–82 and concepts. Every concept is an atomic note; lectures embed them, so the graph is connected.
+Map of semester 3: lectures 65–84 and concepts. Every concept is an atomic note; lectures embed them, so the graph is connected.
 
-## Lectures 65–82
+## Lectures 65–84
 
 - [[Lecture 65–66]] — Multidimensional Taylor polynomial, Taylor formulas, implicit maps, extrema
 - [[Lecture 67–68]] — Extremum conditions, numeric series and absolute convergence
@@ -24,6 +24,7 @@ Map of semester 3: lectures 65–82 and concepts. Every concept is an atomic not
 - [[Lecture 77–78]] — Improper integrals, convergence tests, the Feynman method
 - [[Lecture 79–80]] — Gamma and beta functions, multiple integrals
 - [[Lecture 81–82]] — Lebesgue criterion, integral over a set, Darboux sums
+- [[Lecture 83–84]] — Sufficiency of the Lebesgue criterion, properties of the integral, Fubini theorem
 
 - [[Lecture 65–66 — multidimensional Taylor formula and implicit maps]]
 - [[Lecture 67–68 — extrema, conditional extrema and numeric series]]
@@ -124,6 +125,23 @@ Map of semester 3: lectures 65–82 and concepts. Every concept is an atomic not
 | theorem | [[Theorem 10.3.1 (additivity of the integral)]] | p082 |
 | theorem | [[Estimate of the integral (Assertion 10.3.1)]] | p082 |
 
+### Fubini theorem and lectures 83–84
+
+| Type | Concept | Pages |
+|---|---|---|
+| theorem | [[Sufficiency of the Lebesgue criterion (Assertion)]] | p091–p101 |
+| property | [[Properties of the integral (1)–(6)]] | p086–p105 |
+| theorem | [[Property 4 (mean value)]] | p087–p087 |
+| theorem | [[Property 5 (mean value for continuous functions)]] | p087–p087 |
+| property | [[Property 6 (estimate of the integral of a product)]] | p087–p087 |
+| theorem | [[Fubini theorem (10.4.1)]] | p088–p116 |
+| definition | [[Iterated (repeated) integral]] | p106–p107 |
+| method | [[Reduction of the Fubini proof to Darboux sums]] | p110–p116 |
+| theorem | [[Corollary 10.4.1 (reduction to iterated integrals)]] | p089–p089 |
+| theorem | [[Corollary 10.4.2 (set between two graphs)]] | p090–p124 |
+| definition | [[Notation: double and triple integrals]] | p117–p118 |
+| example | [[Example: computing a triple integral]] | p119–p121 |
+
 ### Concepts from part 1
 
 - [[Absolute convergence]]
@@ -168,7 +186,9 @@ flowchart LR
     N7["Gamma function (Def. 9.3.1)"] --> N8
     N8["Interval in R^n (Def. 10.1.1)"] --> N9
     N9["Riemann integral over an interval (Def. 10.1.6)"] --> N10
-    N10["Lebesgue criterion (Theorem 10.1.2)"]
+    N10["Lebesgue criterion (Theorem 10.1.2)"] --> N11
+    N11["Fubini theorem (10.4.1)"] --> N12
+    N12["Corollary 10.4.2 (set between two graphs)"]
 ```
 
 ## Other languages
