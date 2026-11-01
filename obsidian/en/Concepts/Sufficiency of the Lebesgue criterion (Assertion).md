@@ -6,7 +6,7 @@ lang: en
 aliases: ["Sufficiency of the Lebesgue criterion (Assertion)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p091, p092, p101]
-translations: ["[[ru/Понятия/Достаточность критерия Лебега (Утв)]]"]
+translations: ["[[ru/Понятия/Достаточность критерия Лебега (Утв)]]", "[[es/Conceptos/Suficiencia del criterio de Lebesgue (Afirmación)]]"]
 status: draft
 ---
 # Sufficiency of the Lebesgue criterion (Assertion)

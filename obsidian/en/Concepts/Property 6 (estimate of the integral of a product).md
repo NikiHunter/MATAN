@@ -6,7 +6,7 @@ lang: en
 aliases: ["Property 6 (estimate of the integral of a product)"]
 tags: [analysis/multiple-integrals, sem3, property]
 source_pages: [p087]
-translations: ["[[ru/Понятия/Свойство 6 (оценка интеграла от произведения)]]"]
+translations: ["[[ru/Понятия/Свойство 6 (оценка интеграла от произведения)]]", "[[es/Conceptos/Propiedad 6 (estimación de la integral de un producto)]]"]
 status: draft
 ---
 # Property 6 (estimate of the integral of a product)

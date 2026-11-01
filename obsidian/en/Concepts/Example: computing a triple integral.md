@@ -6,7 +6,7 @@ lang: en
 aliases: ["Example: computing a triple integral"]
 tags: [analysis/fubini, sem3, example]
 source_pages: [p119, p120, p121]
-translations: ["[[ru/Понятия/Пример: вычисление тройного интеграла]]"]
+translations: ["[[ru/Понятия/Пример: вычисление тройного интеграла]]", "[[es/Conceptos/Ejemplo: cálculo de una integral triple]]"]
 status: draft
 ---
 # Example: computing a triple integral

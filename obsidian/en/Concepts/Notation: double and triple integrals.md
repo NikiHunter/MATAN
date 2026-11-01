@@ -6,7 +6,7 @@ lang: en
 aliases: ["Notation: double and triple integrals"]
 tags: [analysis/fubini, sem3, definition]
 source_pages: [p117, p118]
-translations: ["[[ru/Понятия/Обозначения: двойной и тройной интегралы]]"]
+translations: ["[[ru/Понятия/Обозначения: двойной и тройной интегралы]]", "[[es/Conceptos/Notación: integrales dobles y triples]]"]
 status: draft
 ---
 # Notation: double and triple integrals

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Corollary 10.4.1 (reduction to iterated integrals)"]
 tags: [analysis/fubini, sem3, theorem]
 source_pages: [p089]
-translations: ["[[ru/Понятия/Следствие 10.4.1 (сведение к повторным)]]"]
+translations: ["[[ru/Понятия/Следствие 10.4.1 (сведение к повторным)]]", "[[es/Conceptos/Corolario 10.4.1 (reducción a integrales iteradas)]]"]
 status: draft
 ---
 # Corollary 10.4.1 (reduction to iterated integrals)

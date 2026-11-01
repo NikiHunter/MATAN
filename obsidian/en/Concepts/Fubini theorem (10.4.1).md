@@ -6,7 +6,7 @@ lang: en
 aliases: ["Fubini theorem (10.4.1)"]
 tags: [analysis/fubini, sem3, theorem]
 source_pages: [p088, p110, p116]
-translations: ["[[ru/Понятия/Теорема Фубини (10.4.1)]]"]
+translations: ["[[ru/Понятия/Теорема Фубини (10.4.1)]]", "[[es/Conceptos/Teorema de Fubini (10.4.1)]]"]
 status: draft
 ---
 # Fubini theorem (10.4.1)

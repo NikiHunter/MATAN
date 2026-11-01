@@ -6,7 +6,7 @@ lang: en
 aliases: ["Property 4 (mean value)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p087]
-translations: ["[[ru/Понятия/Свойство 4 (среднее значение)]]"]
+translations: ["[[ru/Понятия/Свойство 4 (среднее значение)]]", "[[es/Conceptos/Propiedad 4 (valor medio)]]"]
 status: draft
 ---
 # Property 4 (mean value)

@@ -6,7 +6,7 @@ lang: en
 aliases: ["Properties of the integral (1)–(6)"]
 tags: [analysis/multiple-integrals, sem3, property]
 source_pages: [p086, p087, p103, p104, p105]
-translations: ["[[ru/Понятия/Свойства интеграла (1)–(6)]]"]
+translations: ["[[ru/Понятия/Свойства интеграла (1)–(6)]]", "[[es/Conceptos/Propiedades de la integral (1)–(6)]]"]
 status: draft
 ---
 # Properties of the integral (1)–(6)

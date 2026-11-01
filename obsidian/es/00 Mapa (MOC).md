@@ -5,15 +5,15 @@ semester: 3
 lang: es
 aliases: ["Mapa de contenido"]
 tags: [analysis/moc, sem3, lecture]
-source_pages: [p001, p082]
+source_pages: [p001, p124]
 translations: ["[[ru/00 Карта (MOC).md]]", "[[en/00 Map (MOC).md]]"]
 status: draft
 ---
 # 00 Mapa (MOC)
 
-Mapa del semestre 3: clases 65–82 y conceptos. Cada concepto es una nota atómica; las clases las incrustan, por lo que el grafo es conexo.
+Mapa del semestre 3: clases 65–84 y conceptos. Cada concepto es una nota atómica; las clases las incrustan, por lo que el grafo es conexo.
 
-## Clases 65–82
+## Clases 65–84
 
 - [[Clase 65–66]] — Polinomio de Taylor multidimensional, fórmulas de Taylor, aplicaciones implícitas, extremos
 - [[Clase 67–68]] — Condiciones de extremo, series numéricas y convergencia absoluta
@@ -24,6 +24,7 @@ Mapa del semestre 3: clases 65–82 y conceptos. Cada concepto es una nota atóm
 - [[Clase 77–78]] — Integrales impropias, criterios de convergencia, método de Feynman
 - [[Clase 79–80]] — Funciones gamma y beta, integrales múltiples
 - [[Clase 81–82]] — Criterio de Lebesgue, integral sobre un conjunto, sumas de Darboux
+- [[Clase 83–84]] — Suficiencia del criterio de Lebesgue, propiedades de la integral, teorema de Fubini
 
 - [[Clase 65–66 — fórmula de Taylor multidimensional y aplicaciones implícitas]]
 - [[Clase 67–68 — extremos, extremos condicionales y series numéricas]]
@@ -124,6 +125,23 @@ Mapa del semestre 3: clases 65–82 y conceptos. Cada concepto es una nota atóm
 | teorema | [[Teorema 10.3.1 (aditividad de la integral)]] | p082 |
 | teorema | [[Estimación de la integral (Afirmación 10.3.1)]] | p082 |
 
+### Teorema de Fubini y clases 83–84
+
+| Tipo | Concepto | Páginas |
+|---|---|---|
+| teorema | [[Suficiencia del criterio de Lebesgue (Afirmación)]] | p091–p101 |
+| propiedad | [[Propiedades de la integral (1)–(6)]] | p086–p105 |
+| teorema | [[Propiedad 4 (valor medio)]] | p087–p087 |
+| teorema | [[Propiedad 5 (valor medio para funciones continuas)]] | p087–p087 |
+| propiedad | [[Propiedad 6 (estimación de la integral de un producto)]] | p087–p087 |
+| teorema | [[Teorema de Fubini (10.4.1)]] | p088–p116 |
+| definición | [[Integral iterada (repetida)]] | p106–p107 |
+| método | [[Reducción de la demostración de Fubini a sumas de Darboux]] | p110–p116 |
+| teorema | [[Corolario 10.4.1 (reducción a integrales iteradas)]] | p089–p089 |
+| teorema | [[Corolario 10.4.2 (conjunto entre dos gráficas)]] | p090–p124 |
+| definición | [[Notación: integrales dobles y triples]] | p117–p118 |
+| ejemplo | [[Ejemplo: cálculo de una integral triple]] | p119–p121 |
+
 ### Conceptos de la parte 1
 
 - [[Condición necesaria de extremo]]
@@ -168,7 +186,9 @@ flowchart LR
     N7["Función gamma (Def. 9.3.1)"] --> N8
     N8["Intervalo en R^n (Def. 10.1.1)"] --> N9
     N9["Integral de Riemann sobre un intervalo (Def. 10.1.6)"] --> N10
-    N10["Criterio de Lebesgue (Teorema 10.1.2)"]
+    N10["Criterio de Lebesgue (Teorema 10.1.2)"] --> N11
+    N11["Teorema de Fubini (10.4.1)"] --> N12
+    N12["Corolario 10.4.2 (conjunto entre dos gráficas)"]
 ```
 
 ## Otros idiomas

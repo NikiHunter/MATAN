@@ -6,7 +6,7 @@ lang: en
 aliases: ["Corollary 10.4.2 (set between two graphs)"]
 tags: [analysis/fubini, sem3, theorem]
 source_pages: [p090, p122, p123, p124]
-translations: ["[[ru/Понятия/Следствие 10.4.2 (множество между графиками)]]"]
+translations: ["[[ru/Понятия/Следствие 10.4.2 (множество между графиками)]]", "[[es/Conceptos/Corolario 10.4.2 (conjunto entre dos gráficas)]]"]
 status: draft
 ---
 # Corollary 10.4.2 (set between two graphs)

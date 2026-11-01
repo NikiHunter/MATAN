@@ -6,7 +6,7 @@ lang: en
 aliases: ["Iterated (repeated) integral"]
 tags: [analysis/fubini, sem3, definition]
 source_pages: [p106, p107]
-translations: ["[[ru/Понятия/Повторный (итерированный) интеграл]]"]
+translations: ["[[ru/Понятия/Повторный (итерированный) интеграл]]", "[[es/Conceptos/Integral iterada (repetida)]]"]
 status: draft
 ---
 # Iterated (repeated) integral

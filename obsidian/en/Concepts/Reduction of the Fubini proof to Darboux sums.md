@@ -6,7 +6,7 @@ lang: en
 aliases: ["Reduction of the Fubini proof to Darboux sums"]
 tags: [analysis/fubini, sem3, method]
 source_pages: [p110, p111, p112, p113, p114, p115, p116]
-translations: ["[[ru/Понятия/Сведение доказательства Фубини к суммам Дарбу]]"]
+translations: ["[[ru/Понятия/Сведение доказательства Фубини к суммам Дарбу]]", "[[es/Conceptos/Reducción de la demostración de Fubini a sumas de Darboux]]"]
 status: draft
 ---
 # Reduction of the Fubini proof to Darboux sums

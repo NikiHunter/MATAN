@@ -6,7 +6,7 @@ lang: en
 aliases: ["Property 5 (mean value for continuous functions)"]
 tags: [analysis/multiple-integrals, sem3, theorem]
 source_pages: [p087]
-translations: ["[[ru/Понятия/Свойство 5 (среднее значение для непрерывной функции)]]"]
+translations: ["[[ru/Понятия/Свойство 5 (среднее значение для непрерывной функции)]]", "[[es/Conceptos/Propiedad 5 (valor medio para funciones continuas)]]"]
 status: draft
 ---
 # Property 5 (mean value for continuous functions)
