@@ -48,6 +48,76 @@
         "a": 1,
         "rgb": 10066329
       }
+    },
+    {
+      "query": "path:Понятия/",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:Concepts/",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:Conceptos/",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:Лекции/",
+      "color": {
+        "a": 1,
+        "rgb": 10066329
+      }
+    },
+    {
+      "query": "path:Lectures/",
+      "color": {
+        "a": 1,
+        "rgb": 10066329
+      }
+    },
+    {
+      "query": "path:Clases/",
+      "color": {
+        "a": 1,
+        "rgb": 10066329
+      }
+    },
+    {
+      "query": "tag:#analysis/power-series",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#analysis/parameter-integrals",
+      "color": {
+        "a": 1,
+        "rgb": 14715360
+      }
+    },
+    {
+      "query": "tag:#analysis/gamma",
+      "color": {
+        "a": 1,
+        "rgb": 5732860
+      }
+    },
+    {
+      "query": "tag:#analysis/multiple-integrals",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
     }
   ],
   "collapse-display": true,
