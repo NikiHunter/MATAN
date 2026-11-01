@@ -5,10 +5,11 @@ semester: 3
 lang: en
 aliases: []
 tags: [analysis/glossary, sem3, note]
-source_pages: [p001, p002, p003, p004, p005, p006, p007, p008, p009, p010, p011, p012, p013, p014, p015, p016, p017, p018, p019, p020, p021]
+source_pages: [p001, p002, p003, p004, p005, p006, p007, p008, p009, p010, p011, p012, p013, p014, p015, p016, p017, p018, p019, p020, p021, p022, p023, p024, p025, p026, p027, p028, p029, p030, p031, p032, p033, p034, p035, p036, p037, p038, p039, p040, p041, p042, p043, p044, p045, p046, p047, p048, p049, p050, p051, p052, p053, p054, p055, p056, p057, p058, p059, p060, p061, p062, p063, p064, p065, p066, p067, p068, p069, p070, p071, p072, p073, p074, p075, p076, p077, p078, p079, p080, p081, p082]
 translations: ["[[ru/Глоссарий]]", "[[es/Glosario]]"]
 status: draft
 ---
+
 
 # Glossary
 
@@ -52,3 +53,42 @@ Terms used by the Russian branch; the English and Spanish branches use exactly t
 | критерий Больцано–Коши | Bolzano–Cauchy criterion | criterio de Bolzano–Cauchy |
 | гармонический ряд | harmonic series | serie armónica |
 | общий член ряда | general term of a series | término general de la serie |
+| равномерная сходимость | uniform convergence | convergencia uniforme |
+| функциональный ряд | functional series | serie funcional |
+| признак Вейерштрасса | Weierstrass M-test | criterio M de Weierstrass |
+| степенной ряд | power series | serie de potencias |
+| радиус сходимости | radius of convergence | radio de convergencia |
+| интервал сходимости | interval of convergence | intervalo de convergencia |
+| формула Коши – Адамара | Cauchy–Hadamard formula | fórmula de Cauchy–Hadamard |
+| теорема Абеля | Abel theorem | teorema de Abel |
+| ряд Тейлора | Taylor series | serie de Taylor |
+| ряд Маклорена | Maclaurin series | serie de Maclaurin |
+| коэффициенты Тейлора | Taylor coefficients | coeficientes de Taylor |
+| аналитическая функция | analytic function | función analítica |
+| почленное интегрирование | termwise integration | integración término a término |
+| почленное дифференцирование | termwise differentiation | derivación término a término |
+| перестановка ряда | rearrangement of a series | reordenación de una serie |
+| признак Лейбница | Leibniz test | criterio de Leibniz |
+| лемма Коши | Cauchy lemma | lema de Cauchy |
+| признак Даламбера | D’Alembert ratio test | criterio del cociente de D’Alembert |
+| интеграл, зависящий от параметра | integral depending on a parameter | integral dependiente de un parámetro |
+| несобственный интеграл | improper integral | integral impropia |
+| признак Дирихле | Dirichlet test | criterio de Dirichlet |
+| метод Фейнмана | Feynman method | método de Feynman |
+| гамма-функция | gamma function | función gamma |
+| формула Стирлинга | Stirling formula | fórmula de Stirling |
+| бета-функция | beta function | función beta |
+| характеристическая функция | characteristic function | función característica |
+| допустимое множество | admissible set | conjunto admisible |
+| мера Жордана | Jordan measure | medida de Jordan |
+| мера нуль | measure zero | medida nula |
+| почти всюду | almost everywhere | casi en todas partes |
+| критерий Лебега | Lebesgue criterion | criterio de Lebesgue |
+| суммы Дарбу | Darboux sums | sumas de Darboux |
+| разбиение | partition | partición |
+| разбиение с отмеченными точками | tagged partition | partición con puntos marcados |
+| интегральная сумма | Riemann sum | suma de Riemann |
+| интеграл Римана | Riemann integral | integral de Riemann |
+| промежуток | interval | intervalo |
+| мера промежутка | measure of an interval | medida de un intervalo |
+| интеграл по множеству | integral over a set | integral sobre un conjunto |

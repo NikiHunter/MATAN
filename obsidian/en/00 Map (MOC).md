@@ -3,89 +3,181 @@ id: moc
 type: lecture
 semester: 3
 lang: en
-aliases: ["Knowledge map"]
+aliases: ["Map of content"]
 tags: [analysis/moc, sem3, lecture]
-source_pages: [p001, p021]
+source_pages: [p001, p082]
 translations: ["[[ru/00 Карта (MOC).md]]", "[[es/00 Mapa (MOC).md]]"]
 status: draft
 ---
-
 # 00 Map (MOC)
 
-Map of semester 3: lectures and concepts. Every concept is a separate note; the lectures link to them, so the graph is connected.
+Map of semester 3: lectures 65–82 and concepts. Every concept is an atomic note; lectures embed them, so the graph is connected.
 
-## Semester 3
+## Lectures 65–82
 
-- [[Lecture 65–66 — multidimensional Taylor formula and implicit maps]] — multidimensional Taylor formula, Taylor–Peano, Taylor–Lagrange, implicit function, extrema
-- [[Lecture 67–68 — extrema, conditional extrema and numeric series]] — extrema, numeric series, convergent and divergent series, Cauchy, d’Alembert
-- [[Lecture 65–66 — multidimensional Taylor formula and implicit maps#Outline]] — jump to the outline
-- [[Lecture 67–68 — extrema, conditional extrema and numeric series#Outline]] — jump to the outline
+- [[Lecture 65]] — Multidimensional Taylor polynomial: setup, multi-indices, uniqueness
+- [[Lecture 66]] — Taylor–Peano, Taylor–Lagrange, implicit maps, necessary condition for an extremum
+- [[Lecture 67]] — Sufficient conditions for an extremum, conditional extrema and Lagrange multipliers
+- [[Lecture 68]] — Numeric series, the Bolzano–Cauchy criterion, absolute convergence
+- [[Lecture 69]] — Properties of convergent series, comparison and ratio tests, Cauchy lemma
+- [[Lecture 70]] — Series with terms of arbitrary sign, the Leibniz test, rearrangements
+- [[Lecture 71]] — Functional sequences and series: uniform convergence
+- [[Lecture 72]] — Passing to the limit under the integral sign, differentiating the limit function, functional series
+- [[Lecture 73]] — Integration and differentiation of uniformly convergent series, power series, Cauchy–Hadamard formula
+- [[Lecture 74]] — Radius of convergence, uniform convergence of power series, Abel theorem
+- [[Lecture 75]] — Integration and differentiation of power series, uniqueness of the expansion, Taylor series
+- [[Lecture 76]] — Expandability in a Taylor series, analytic functions, integrals depending on a parameter
+- [[Lecture 77]] — Integrating a parameter integral, improper integrals, criteria of uniform convergence
+- [[Lecture 78]] — Abel test, continuity and differentiation in a parameter, the Feynman method
+- [[Lecture 79]] — Gamma function and its properties, Stirling formula, Euler beta integral
+- [[Lecture 80]] — Multiple integrals: intervals, measure, partitions, Riemann sums and the Riemann integral
+- [[Lecture 81]] — Necessary condition for integrability and the Lebesgue criterion
+- [[Lecture 82]] — Integral over a set, Darboux sums, Jordan measure, general properties of the integral
 
-### Taylor formula
+- [[Lecture 65–66 — multidimensional Taylor formula and implicit maps]]
+- [[Lecture 67–68 — extrema, conditional extrema and numeric series]]
 
-| Type | Concept | Pages |
-|---|---|---|
-| definition | [[Multi-index]] | p001 |
-| definition | [[Taylor polynomial]] | p001, p002 |
-| theorem | [[Uniqueness of the Taylor polynomial]] | p002 |
-| lemma | [[Lemma 6.5.1]] | p003, p004 |
-| theorem | [[Taylor–Peano theorem]] | p004 |
-| theorem | [[Taylor–Lagrange theorem for functions]] | p005, p006 |
-| theorem | [[Mean value theorem]] | p006 |
-| theorem | [[Taylor–Lagrange theorem for maps]] | p007 |
-| theorem | [[Estimate of the Taylor remainder]] | p006, p007 |
+## Concepts by topic
 
-### Implicit maps
-
-| Type | Concept | Pages |
-|---|---|---|
-| definition | [[Implicit function]] | p007, p008, p010 |
-| theorem | [[Implicit mapping theorem]] | p009 |
-| property | [[Differentiating an implicit map]] | p010 |
-
-### Extrema
+### Series and uniform convergence
 
 | Type | Concept | Pages |
 |---|---|---|
-| definition | [[Extremum points]] | p011 |
-| theorem | [[Necessary condition for an extremum]] | p011, p012 |
-| theorem | [[Sufficient condition for an extremum]] | p012 |
-| definition | [[Definiteness of a quadratic form on a subspace]] | p017 |
-| theorem | [[Criterion for $n=2$ via $A$, $B$, $C$]] | p013 |
-| definition | [[Conditional extremum]] | p015 |
-| theorem | [[Lagrange multipliers]] | p015, p016, p017 |
-| property | [[Lagrange function]] | p017 |
-| theorem | [[Sufficient condition for a conditional extremum]] | p018 |
+| theorem | [[First comparison test for positive series]] | p023 |
+| theorem | [[Second comparison test for positive series]] | p024 |
+| theorem | [[D’Alembert ratio test]] | p025 |
+| lemma | [[Cauchy lemma]] | p026 |
+| theorem | [[Leibniz test]] | p027 |
+| definition | [[Rearrangement of a series (Def. 7.5.1)]] | p029 |
+| property | [[Rearrangement properties of series]] | p029, p030 |
+| definition | [[Uniform convergence (Def. 8.1.1)]] | p031 |
+| definition | [[Uniform deviation (Def. 8.3)]] | p034 |
+| theorem | [[Theorem 8.2.1 (continuity of the limit function)]] | p034, p035 |
+| theorem | [[Theorem 8.2.2 (passing to the limit under the integral sign)]] | p036 |
+| theorem | [[Theorem 8.2.3 (differentiation of the limit function)]] | p038 |
+| definition | [[Functional series (Def. 8.3.1)]] | p038 |
+| theorem | [[Weierstrass M-test for series]] | p040 |
+| theorem | [[Theorem 8.3.1 (continuity of the sum of a series)]] | p041 |
+| theorem | [[Theorem 8.3.2 (termwise integration of series)]] | p042 |
+| theorem | [[Theorem 8.3.3 (termwise differentiation of series)]] | p044 |
 
-### Numeric series
+### Power series and Taylor series
 
 | Type | Concept | Pages |
 |---|---|---|
-| definition | [[Numeric series]] | p018 |
-| definition | [[Convergence of a numeric series]] | p018, p019 |
-| theorem | [[Properties of convergent series]] | p019, p020 |
-| theorem | [[Bolzano–Cauchy criterion for series]] | p021 |
-| definition | [[Absolute convergence]] | p021 |
-| example | [[Harmonic series]] | p019 |
+| definition | [[Power series (Def. 8.4.1)]] | p045 |
+| definition | [[Radius of convergence (Def. 8.4.2)]] | p045 |
+| theorem | [[Cauchy–Hadamard formula (Theorem 8.4.1)]] | p046 |
+| property | [[Interval of convergence]] | p046 |
+| method | [[Radius of convergence by the ratio test]] | p047 |
+| theorem | [[Theorem 8.4.2 (uniform convergence of power series)]] | p047, p048 |
+| theorem | [[Abel theorem on power series (8.4.3)]] | p048, p049 |
+| theorem | [[Theorem 8.4.4 (termwise integration of power series)]] | p050, p051 |
+| theorem | [[Theorem 8.4.5 (on the radii of power series)]] | p051 |
+| theorem | [[Theorem 8.4.6 (termwise differentiation of power series)]] | p051, p052 |
+| theorem | [[Theorem 8.4.7 (uniqueness of the expansion)]] | p052 |
+| definition | [[Taylor series (Def. 8.4.3)]] | p053 |
+| definition | [[Taylor polynomial of a function]] | p053 |
+| theorem | [[Theorem 8.4.8 (expandability in a Taylor series)]] | p053, p054 |
+| definition | [[Analytic function (Def. 8.4.4)]] | p054 |
+
+### Integrals depending on a parameter
+
+| Type | Concept | Pages |
+|---|---|---|
+| definition | [[Integral depending on a parameter (Def. 9.1.1)]] | p056 |
+| theorem | [[Theorem 9.1.1 (continuity in the parameter)]] | p056 |
+| theorem | [[Theorem 9.1.2 (differentiation with respect to a parameter)]] | p057 |
+| theorem | [[Theorem 9.1.3 (integrating an integral with respect to a parameter)]] | p058 |
+| definition | [[Uniform convergence of an improper integral (Def. 9.2.1)]] | p059 |
+| theorem | [[Bolzano–Cauchy criterion for improper integrals]] | p060 |
+| theorem | [[Weierstrass test for improper integrals]] | p060 |
+| theorem | [[Dirichlet test for improper integrals]] | p061, p062 |
+| theorem | [[Abel test for improper integrals]] | p062, p063 |
+| theorem | [[Theorem 9.2.1 (continuity of an improper integral)]] | p065 |
+| theorem | [[Theorem 9.2.2 (differentiation of an improper integral)]] | p065 |
+| theorem | [[Theorem 9.2.3 (integration of an improper integral)]] | p065 |
+| method | [[Feynman method of computing integrals]] | p066 |
+
+### Gamma and beta functions
+
+| Type | Concept | Pages |
+|---|---|---|
+| definition | [[Gamma function (Def. 9.3.1)]] | p067 |
+| property | [[Properties of the gamma function]] | p067, p070 |
+| definition | [[Euler beta function]] | p070 |
+| theorem | [[Relation between the beta and gamma functions]] | p070 |
+| example | [[Example: integral of powers of sine and cosine]] | p071 |
+
+### Multiple integrals
+
+| Type | Concept | Pages |
+|---|---|---|
+| definition | [[Interval in R^n (Def. 10.1.1)]] | p071 |
+| definition | [[Measure of an interval (Def. 10.1.2)]] | p071 |
+| definition | [[Partition of an interval (Def. 10.1.3)]] | p072 |
+| definition | [[Tagged partition (Def. 10.1.4)]] | p073 |
+| definition | [[Riemann sum (Def. 10.1.5)]] | p073 |
+| definition | [[Riemann integral over an interval (Def. 10.1.6)]] | p073 |
+| definition | [[Riemann-integrable function (Def. 10.1.7)]] | p073 |
+| theorem | [[Theorem 10.1.1 (necessary condition for integrability)]] | p073, p074 |
+| definition | [[Almost everywhere (Def. 10.1.8)]] | p074 |
+| theorem | [[Lebesgue criterion (Theorem 10.1.2)]] | p075, p077 |
+| definition | [[Darboux sums (Defs. 10.1.9, 10.1.10)]] | p079 |
+| theorem | [[Darboux criterion (Theorem 10.1.13)]] | p079 |
+| definition | [[Admissible set (Def. 10.2.1)]] | p078 |
+| definition | [[Characteristic function (Def. 10.2.2)]] | p078 |
+| definition | [[Jordan measure (volume) (Def. 10.2.5)]] | p080 |
+| definition | [[Jordan null set (Def. 10.2.6)]] | p080 |
+| definition | [[Integral over a set (Defs. 10.2.3, 10.2.4)]] | p078, p081 |
+| theorem | [[Theorem 10.3.1 (additivity of the integral)]] | p082 |
+| theorem | [[Estimate of the integral (Assertion 10.3.1)]] | p082 |
+
+### Concepts from part 1
+
+- [[Absolute convergence]]
+- [[Bolzano–Cauchy criterion for series]]
+- [[Conditional extremum]]
+- [[Convergence of a numeric series]]
+- [[Criterion for $n=2$ via $A$, $B$, $C$]]
+- [[Definiteness of a quadratic form on a subspace]]
+- [[Differentiating an implicit map]]
+- [[Estimate of the Taylor remainder]]
+- [[Extremum points]]
+- [[Harmonic series]]
+- [[Implicit function]]
+- [[Implicit mapping theorem]]
+- [[Lagrange function]]
+- [[Lagrange multipliers]]
+- [[Lemma 6.5.1]]
+- [[Mean value theorem]]
+- [[Multi-index]]
+- [[Necessary condition for an extremum]]
+- [[Numeric series]]
+- [[Properties of convergent series]]
+- [[Sufficient condition for a conditional extremum]]
+- [[Sufficient condition for an extremum]]
+- [[Taylor polynomial]]
+- [[Taylor–Lagrange theorem for functions]]
+- [[Taylor–Lagrange theorem for maps]]
+- [[Taylor–Peano theorem]]
+- [[Uniqueness of the Taylor polynomial]]
 
 ## Dependency diagram
 
 ```mermaid
 flowchart LR
-    A[[Lecture 65–66 — multidimensional Taylor formula and implicit maps]] --> B[[Taylor polynomial]]
-    B --> C[[Taylor–Peano theorem]]
-    C --> D[[Taylor–Lagrange theorem for functions]]
-    D --> E[[Estimate of the Taylor remainder]]
-    C --> F[[Implicit mapping theorem]]
-    F --> G[[Lagrange multipliers]]
-    G --> H[[Sufficient condition for a conditional extremum]]
-    A --> I[[Necessary condition for an extremum]]
-    I --> J[[Sufficient condition for an extremum]]
-    J --> K[[Criterion for $n=2$ via $A$, $B$, $C$]]
-    A --> L[[Numeric series]]
-    L --> M[[Convergence of a numeric series]]
-    M --> N[[Bolzano–Cauchy criterion for series]]
-    N --> O[[Absolute convergence]]
+    N0["Functional series (Def. 8.3.1)"] --> N1
+    N1["Power series (Def. 8.4.1)"] --> N2
+    N2["Cauchy–Hadamard formula (Theorem 8.4.1)"] --> N3
+    N3["Abel theorem on power series (8.4.3)"] --> N4
+    N4["Taylor series (Def. 8.4.3)"] --> N5
+    N5["Integral depending on a parameter (Def. 9.1.1)"] --> N6
+    N6["Feynman method of computing integrals"] --> N7
+    N7["Gamma function (Def. 9.3.1)"] --> N8
+    N8["Interval in R^n (Def. 10.1.1)"] --> N9
+    N9["Riemann integral over an interval (Def. 10.1.6)"] --> N10
+    N10["Lebesgue criterion (Theorem 10.1.2)"]
 ```
 
 ## Other languages
