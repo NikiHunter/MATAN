@@ -33,7 +33,7 @@ LECTURE_BATCHES = {
 }
 # Batches transcribed from notebook photos and video frames (ocr/raw/pNNN.md)
 # instead of PDFs; their manifests map pages to lectures.
-NOTEBOOK_BATCHES: tuple[str, ...] = ()
+NOTEBOOK_BATCHES: tuple[str, ...] = ("65-84",)
 PAGE_ANCHOR_ANY = re.compile(r'<a id="(p\d{3})"></a>')
 PAGE_ANCHOR_LINE = re.compile(r'(?m)^<a id="(p\d{3})"></a>$')
 GENERATED_FRAGMENT = re.compile(r"^(?:sec|def|thm|lem|cor|rem|prop)-[\d-]+$|^p\d{3}$")

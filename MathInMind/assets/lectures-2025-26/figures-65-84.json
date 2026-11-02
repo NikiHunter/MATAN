@@ -1,0 +1,922 @@
+{
+  "scope_note": "Lectures 65–84 (semester 3) transcribed from a student's notebook (p001–p082) and from Zoom frames of lectures 83–84 (p083–p124). The verbatim page transcription is ocr/raw/pNNN.md; page images p022–p124 are not stored in Git. Page records give the original file name and the first 12 hex digits of its SHA-256 (see ocr/MANIFEST.md); duplicate_of marks re-shot pages.",
+  "sources": {
+    "handwritten_notes_part_1": {
+      "kind": "notebook",
+      "pages": "p001–p021",
+      "bytes": 96941029,
+      "sha256": null
+    },
+    "handwritten_notes_part_2": {
+      "kind": "notebook",
+      "pages": "p022–p042",
+      "bytes": 102702645,
+      "sha256": null
+    },
+    "handwritten_notes_part_3": {
+      "kind": "notebook",
+      "pages": "p043–p082",
+      "bytes": 78847514,
+      "sha256": "15b1b729400359cb47e76ff148ee16fb2f5e15989d4c2f4eeb316f6c5a226ceb"
+    },
+    "Videocaptures_lectures_83_84": {
+      "kind": "video",
+      "pages": "p083–p124",
+      "bytes": 12010775,
+      "sha256": "e4947ec2cc2e55eba5e414db295f3a8d420e9d727bd0051ed4d063968be5f95b"
+    }
+  },
+  "pages": {
+    "p001": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160546.jpg",
+      "sha256_prefix": "c9b50ed8fdd3"
+    },
+    "p002": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160554.jpg",
+      "sha256_prefix": "974016044f11"
+    },
+    "p003": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160602.jpg",
+      "sha256_prefix": "b869a7b1fd60"
+    },
+    "p004": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160611.jpg",
+      "sha256_prefix": "d2c3cda08347"
+    },
+    "p005": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160617.jpg",
+      "sha256_prefix": "a8592a1cd7f3"
+    },
+    "p006": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160624.jpg",
+      "sha256_prefix": "af1337ec3818"
+    },
+    "p007": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160629.jpg",
+      "sha256_prefix": "1e68c7d81e92"
+    },
+    "p008": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160637.jpg",
+      "sha256_prefix": "62731159bcf1"
+    },
+    "p009": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160642.jpg",
+      "sha256_prefix": "6a82046f84ac"
+    },
+    "p010": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160654.jpg",
+      "sha256_prefix": "346f03d606af"
+    },
+    "p011": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160703.jpg",
+      "sha256_prefix": "527af25125dd"
+    },
+    "p012": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160711.jpg",
+      "sha256_prefix": "813e94e9e3e0"
+    },
+    "p013": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160730.jpg",
+      "sha256_prefix": "7b48d48d04e1"
+    },
+    "p014": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160738.jpg",
+      "sha256_prefix": "28eb90a9c9a6"
+    },
+    "p015": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160744.jpg",
+      "sha256_prefix": "0496a2a6e124"
+    },
+    "p016": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160753.jpg",
+      "sha256_prefix": "71777a2cdbc6"
+    },
+    "p017": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160758.jpg",
+      "sha256_prefix": "fd039c2566dd"
+    },
+    "p018": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160806.jpg",
+      "sha256_prefix": "1b6a56c99ffd"
+    },
+    "p019": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160811.jpg",
+      "sha256_prefix": "ebd38e7b68ad"
+    },
+    "p020": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160822.jpg",
+      "sha256_prefix": "285c21fc258a"
+    },
+    "p021": {
+      "source": "handwritten_notes_part_1",
+      "original": "20261028_160835.jpg",
+      "sha256_prefix": "428ddbb5aa67"
+    },
+    "p022": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_160840.jpg",
+      "sha256_prefix": "b10a7bca4136"
+    },
+    "p023": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_160854.jpg",
+      "sha256_prefix": "243b195cc24c"
+    },
+    "p024": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_160909.jpg",
+      "sha256_prefix": "1e2ac478bb71"
+    },
+    "p025": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_160915.jpg",
+      "sha256_prefix": "5f9401dd2055"
+    },
+    "p026": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_160928.jpg",
+      "sha256_prefix": "b09dd2a69f5d"
+    },
+    "p027": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161038.jpg",
+      "sha256_prefix": "29f7c04fb680"
+    },
+    "p028": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161049.jpg",
+      "sha256_prefix": "3e638877fca6"
+    },
+    "p029": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161055.jpg",
+      "sha256_prefix": "412c3e9f20c2"
+    },
+    "p030": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161103.jpg",
+      "sha256_prefix": "72b8e3c0e827"
+    },
+    "p031": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161158.jpg",
+      "sha256_prefix": "4fbb7ccb1e04"
+    },
+    "p032": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161231.jpg",
+      "sha256_prefix": "5e1deeeef98c",
+      "duplicate_of": "p030"
+    },
+    "p033": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161257.jpg",
+      "sha256_prefix": "1b4d857b32ff",
+      "duplicate_of": "p031"
+    },
+    "p034": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161306.jpg",
+      "sha256_prefix": "5ab1cb79ffa0"
+    },
+    "p035": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161314.jpg",
+      "sha256_prefix": "b570b4d0853e"
+    },
+    "p036": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161321.jpg",
+      "sha256_prefix": "32cc8940ff6e"
+    },
+    "p037": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161330.jpg",
+      "sha256_prefix": "a825ac59be42"
+    },
+    "p038": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161338.jpg",
+      "sha256_prefix": "2b7d1c1b0c0c"
+    },
+    "p039": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161346.jpg",
+      "sha256_prefix": "b6f9e4a468ad"
+    },
+    "p040": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161354.jpg",
+      "sha256_prefix": "c726c2bd6176"
+    },
+    "p041": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161359.jpg",
+      "sha256_prefix": "2e33f7b81efe"
+    },
+    "p042": {
+      "source": "handwritten_notes_part_2",
+      "original": "20261028_161411.jpg",
+      "sha256_prefix": "f214b2b69ca7"
+    },
+    "p043": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_1.jpeg",
+      "sha256_prefix": "f732b802851c",
+      "duplicate_of": "p042"
+    },
+    "p044": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_2.jpeg",
+      "sha256_prefix": "00741cbb37a5"
+    },
+    "p045": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_3.jpeg",
+      "sha256_prefix": "34b57ef70263"
+    },
+    "p046": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_4.jpeg",
+      "sha256_prefix": "4f855eacf99b"
+    },
+    "p047": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_5.jpeg",
+      "sha256_prefix": "5b1320a29404"
+    },
+    "p048": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_6.jpeg",
+      "sha256_prefix": "78c155dab58b"
+    },
+    "p049": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_73_74_7.jpeg",
+      "sha256_prefix": "2e75082fd7eb"
+    },
+    "p050": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_1.jpeg",
+      "sha256_prefix": "81df5aa76913"
+    },
+    "p051": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_2.jpeg",
+      "sha256_prefix": "23fc5b1c4fca"
+    },
+    "p052": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_3.jpeg",
+      "sha256_prefix": "b3c139738dad"
+    },
+    "p053": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_4.jpeg",
+      "sha256_prefix": "208df1b58d9c"
+    },
+    "p054": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_5.jpeg",
+      "sha256_prefix": "c3a2f2ccb38a"
+    },
+    "p055": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_6.jpeg",
+      "sha256_prefix": "5680f0228a0e"
+    },
+    "p056": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_7.jpeg",
+      "sha256_prefix": "9a7a16f8c620"
+    },
+    "p057": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_75_76_8.jpeg",
+      "sha256_prefix": "971030c07754"
+    },
+    "p058": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_1.jpeg",
+      "sha256_prefix": "785d23b75666"
+    },
+    "p059": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_2.jpeg",
+      "sha256_prefix": "dd20e2c4a4fc"
+    },
+    "p060": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_3.jpeg",
+      "sha256_prefix": "b439ddbbbb28"
+    },
+    "p061": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_4.jpeg",
+      "sha256_prefix": "6e2342bad3e2"
+    },
+    "p062": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_5.jpeg",
+      "sha256_prefix": "6a55fac5fb88"
+    },
+    "p063": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_6.jpeg",
+      "sha256_prefix": "3a081d63a78f"
+    },
+    "p064": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_7.jpeg",
+      "sha256_prefix": "b73834ca0e70"
+    },
+    "p065": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_8.jpeg",
+      "sha256_prefix": "ac9d93fcb837"
+    },
+    "p066": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_77_78_9.jpeg",
+      "sha256_prefix": "a5d1ba0a11b3"
+    },
+    "p067": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_1.jpeg",
+      "sha256_prefix": "25975d7e073b"
+    },
+    "p068": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_2.jpeg",
+      "sha256_prefix": "ffd5cb96a742"
+    },
+    "p069": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_3.jpeg",
+      "sha256_prefix": "4c3863d75a75"
+    },
+    "p070": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_4.jpeg",
+      "sha256_prefix": "46b2292ae486"
+    },
+    "p071": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_5.jpeg",
+      "sha256_prefix": "ac51049379b3"
+    },
+    "p072": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_6.jpeg",
+      "sha256_prefix": "f7fcac7d4e34"
+    },
+    "p073": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_79_80_7.jpeg",
+      "sha256_prefix": "d17acb0f25f1"
+    },
+    "p074": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_1.jpeg",
+      "sha256_prefix": "cdff58652880"
+    },
+    "p075": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_2.jpeg",
+      "sha256_prefix": "749ffaa30347"
+    },
+    "p076": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_3.jpeg",
+      "sha256_prefix": "b463dd53bf49"
+    },
+    "p077": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_4.jpeg",
+      "sha256_prefix": "c10ec660ac4d"
+    },
+    "p078": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_5.jpeg",
+      "sha256_prefix": "624c54e8803f"
+    },
+    "p079": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_6.jpeg",
+      "sha256_prefix": "90383e9f5814"
+    },
+    "p080": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_7.jpeg",
+      "sha256_prefix": "2d1f0416b9a6"
+    },
+    "p081": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_8.jpeg",
+      "sha256_prefix": "fc55d2be88f2"
+    },
+    "p082": {
+      "source": "handwritten_notes_part_3",
+      "original": "Lecture_81_82_9.jpeg",
+      "sha256_prefix": "b25cbada1b4e"
+    },
+    "p083": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom.jpg",
+      "sha256_prefix": "97eda6fcf80e"
+    },
+    "p084": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(1).jpg",
+      "sha256_prefix": "7b2919749201"
+    },
+    "p085": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(2).jpg",
+      "sha256_prefix": "b8a73e6e4bca"
+    },
+    "p086": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(6).jpg",
+      "sha256_prefix": "7706ffece889"
+    },
+    "p087": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(7).jpg",
+      "sha256_prefix": "4c9484907785"
+    },
+    "p088": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(5).jpg",
+      "sha256_prefix": "b73c0a87c530"
+    },
+    "p089": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(17).jpg",
+      "sha256_prefix": "93d3a8049ba1"
+    },
+    "p090": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(22).jpg",
+      "sha256_prefix": "4d3ee50a4e9f"
+    },
+    "p091": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(3).jpg",
+      "sha256_prefix": "daea7ea227aa"
+    },
+    "p092": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(4).jpg",
+      "sha256_prefix": "c81a9e666424"
+    },
+    "p093": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(5).jpg",
+      "sha256_prefix": "a1faaf639e15"
+    },
+    "p094": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(6).jpg",
+      "sha256_prefix": "a4e591b7ae3a"
+    },
+    "p095": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(7).jpg",
+      "sha256_prefix": "4d7f39aeb261"
+    },
+    "p096": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_103711_Zoom(8).jpg",
+      "sha256_prefix": "02abf5352952"
+    },
+    "p097": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock.jpg",
+      "sha256_prefix": "e4ab98a04700"
+    },
+    "p098": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(1).jpg",
+      "sha256_prefix": "ccc027b6787d"
+    },
+    "p099": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(2).jpg",
+      "sha256_prefix": "353e11ea076b"
+    },
+    "p100": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(3).jpg",
+      "sha256_prefix": "9e5da6726a9d"
+    },
+    "p101": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(4).jpg",
+      "sha256_prefix": "90e28b57f1b2"
+    },
+    "p102": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(5).jpg",
+      "sha256_prefix": "b47ccb1035eb"
+    },
+    "p103": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(8).jpg",
+      "sha256_prefix": "62206784ca36"
+    },
+    "p104": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(9).jpg",
+      "sha256_prefix": "3fea4cc65c4b"
+    },
+    "p105": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_111949_Touch Lock(11).jpg",
+      "sha256_prefix": "461fa317a899"
+    },
+    "p106": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock.jpg",
+      "sha256_prefix": "465b0a05524a"
+    },
+    "p107": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(2).jpg",
+      "sha256_prefix": "ac9d07ca0360"
+    },
+    "p108": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(6).jpg",
+      "sha256_prefix": "5bcf12182082"
+    },
+    "p109": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(7).jpg",
+      "sha256_prefix": "cf1cceb22da2"
+    },
+    "p110": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(9).jpg",
+      "sha256_prefix": "c8973b32a806"
+    },
+    "p111": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(10).jpg",
+      "sha256_prefix": "182d7cbda3f8"
+    },
+    "p112": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(11).jpg",
+      "sha256_prefix": "ee99a3618ac2"
+    },
+    "p113": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(12).jpg",
+      "sha256_prefix": "a44d49f198f7"
+    },
+    "p114": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(13).jpg",
+      "sha256_prefix": "d6ac047a63be"
+    },
+    "p115": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(15).jpg",
+      "sha256_prefix": "45bf6be5d1e4"
+    },
+    "p116": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(16).jpg",
+      "sha256_prefix": "863c35d7eb89"
+    },
+    "p117": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(3).jpg",
+      "sha256_prefix": "20da33ab8fd8"
+    },
+    "p118": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(4).jpg",
+      "sha256_prefix": "5e5d8dbfd0b2"
+    },
+    "p119": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(18).jpg",
+      "sha256_prefix": "d5ebd8c4c1c0"
+    },
+    "p120": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(19).jpg",
+      "sha256_prefix": "eeb167734343"
+    },
+    "p121": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(20).jpg",
+      "sha256_prefix": "f42807b069cc"
+    },
+    "p122": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(23).jpg",
+      "sha256_prefix": "77d08f43cf79"
+    },
+    "p123": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(24).jpg",
+      "sha256_prefix": "e0c0fd9f328d"
+    },
+    "p124": {
+      "source": "Videocaptures_lectures_83_84",
+      "original": "Videocaptures/Screen_Recording_20261031_125517_Touch Lock(25).jpg",
+      "sha256_prefix": "ae103e692d29"
+    }
+  },
+  "lectures": {
+    "lecture-65-66.md": {
+      "lecture": "65-66",
+      "pages": [
+        "p001",
+        "p002",
+        "p003",
+        "p004",
+        "p005",
+        "p006",
+        "p007",
+        "p008",
+        "p009",
+        "p010",
+        "p011"
+      ],
+      "course_chapter": 22
+    },
+    "lecture-67-68.md": {
+      "lecture": "67-68",
+      "pages": [
+        "p012",
+        "p013",
+        "p014",
+        "p015",
+        "p016",
+        "p017",
+        "p018",
+        "p019",
+        "p020",
+        "p021"
+      ],
+      "course_chapter": 22
+    },
+    "lecture-69-70.md": {
+      "lecture": "69-70",
+      "pages": [
+        "p022",
+        "p023",
+        "p024",
+        "p025",
+        "p026",
+        "p027",
+        "p028",
+        "p029"
+      ],
+      "course_chapter": 23
+    },
+    "lecture-71-72.md": {
+      "lecture": "71-72",
+      "pages": [
+        "p030",
+        "p031",
+        "p034",
+        "p035",
+        "p036",
+        "p037",
+        "p038",
+        "p039",
+        "p040",
+        "p041"
+      ],
+      "course_chapter": 24
+    },
+    "lecture-73-74.md": {
+      "lecture": "73-74",
+      "pages": [
+        "p042",
+        "p044",
+        "p045",
+        "p046",
+        "p047",
+        "p048",
+        "p049"
+      ],
+      "course_chapter": 24
+    },
+    "lecture-75-76.md": {
+      "lecture": "75-76",
+      "pages": [
+        "p050",
+        "p051",
+        "p052",
+        "p053",
+        "p054",
+        "p055",
+        "p056",
+        "p057"
+      ],
+      "course_chapter": 24
+    },
+    "lecture-77-78.md": {
+      "lecture": "77-78",
+      "pages": [
+        "p058",
+        "p059",
+        "p060",
+        "p061",
+        "p062",
+        "p063",
+        "p064",
+        "p065",
+        "p066"
+      ],
+      "course_chapter": 25
+    },
+    "lecture-79-80.md": {
+      "lecture": "79-80",
+      "pages": [
+        "p067",
+        "p068",
+        "p069",
+        "p070",
+        "p071",
+        "p072",
+        "p073"
+      ],
+      "course_chapter": 25
+    },
+    "lecture-81-82.md": {
+      "lecture": "81-82",
+      "pages": [
+        "p074",
+        "p075",
+        "p076",
+        "p077",
+        "p078",
+        "p079",
+        "p080",
+        "p081",
+        "p082"
+      ],
+      "course_chapter": 26
+    },
+    "lecture-83-84.md": {
+      "lecture": "83-84",
+      "pages": [
+        "p083",
+        "p084",
+        "p085",
+        "p086",
+        "p087",
+        "p088",
+        "p089",
+        "p090",
+        "p091",
+        "p092",
+        "p093",
+        "p094",
+        "p095",
+        "p096",
+        "p097",
+        "p098",
+        "p099",
+        "p100",
+        "p101",
+        "p102",
+        "p103",
+        "p104",
+        "p105",
+        "p106",
+        "p107",
+        "p108",
+        "p109",
+        "p110",
+        "p111",
+        "p112",
+        "p113",
+        "p114",
+        "p115",
+        "p116",
+        "p117",
+        "p118",
+        "p119",
+        "p120",
+        "p121",
+        "p122",
+        "p123",
+        "p124"
+      ],
+      "course_chapter": 26,
+      "date": "2026-10-31"
+    }
+  },
+  "figures": [
+    {
+      "file": "lec65-66-p009-implicit-map-graph.jpg",
+      "page": "p009",
+      "lecture_file": "lecture-65-66.md",
+      "origin": "raw/scans/p009.jpg",
+      "crop_box": [
+        60,
+        2640,
+        2000,
+        3440
+      ],
+      "width": 1200,
+      "height": 495,
+      "sha256": "202acab1901e99d8d3466186f955f411eeac56ac61683598c7930ee9308656c6",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec81-82-p079-darboux-column.jpg",
+      "page": "p079",
+      "lecture_file": "lecture-81-82.md",
+      "origin": "ocr/crops/p079_fig1.jpg",
+      "crop_box": null,
+      "width": 1000,
+      "height": 762,
+      "sha256": "cec387331f0278f5a8ec32457144933465d4f29f6523ad761569be452db259ce",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec79-80-p070-gamma-graph.jpg",
+      "page": "p070",
+      "lecture_file": "lecture-79-80.md",
+      "origin": "ocr/crops/p070_fig1.jpg",
+      "crop_box": null,
+      "width": 1000,
+      "height": 276,
+      "sha256": "eafe12911f3def8985df3589737a21cc60fc6e5251a00cef32352f528c1d612c",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec79-80-p072-measure-properties.jpg",
+      "page": "p072",
+      "lecture_file": "lecture-79-80.md",
+      "origin": "ocr/crops/p072_fig1.jpg",
+      "crop_box": null,
+      "width": 1000,
+      "height": 800,
+      "sha256": "47e11dfb1f31edb7486f40d160e83ee50f20b1c16fbd02c68938358fd150cbb4",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec83-84-p097-two-partitions.jpg",
+      "page": "p097",
+      "lecture_file": "lecture-83-84.md",
+      "origin": "ocr/crops/p097_fig1.jpg",
+      "crop_box": null,
+      "width": 1350,
+      "height": 572,
+      "sha256": "195d55ac0af5519033f4193655f030854259afc2415c9e8efb956e49f522208a",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec83-84-p102-multidim-remark.jpg",
+      "page": "p102",
+      "lecture_file": "lecture-83-84.md",
+      "origin": "ocr/crops/p102_fig1.jpg",
+      "crop_box": null,
+      "width": 1230,
+      "height": 842,
+      "sha256": "6fd90126a31b824982f1251d8542c42cbef65faa7e5130c75c4da8593f93daf8",
+      "reviewed_individually": true
+    },
+    {
+      "file": "lec83-84-p117-rectangle-sections.jpg",
+      "page": "p117",
+      "lecture_file": "lecture-83-84.md",
+      "origin": "ocr/crops/p117_fig1.jpg",
+      "crop_box": null,
+      "width": 550,
+      "height": 450,
+      "sha256": "65134a388d19ead9fdca3785a5dc58be20f9b86a4472d97f43e3255c9f6a65c4",
+      "reviewed_individually": true
+    }
+  ]
+}
