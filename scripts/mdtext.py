@@ -331,6 +331,8 @@ LINK_SPAN_RE = re.compile(r"!?\[(?:[^\[\]\n]|\[[^\[\]\n]*\])*\]\([^)\n]*\)|\[\[[
 HTML_RE = re.compile(r"</?[A-Za-z][^<>\n]*>")
 BOLD_RE = re.compile(r"\*\*[^*\n]+?\*\*|__[^_\n]+?__")
 URL_RE = re.compile(r"https?://\S+")
+# Text that quotes another year's numbering is wrapped in <span class="nolink">…</span>.
+NOLINK_RE = re.compile(r'<span class="nolink">.*?</span>')
 
 
 def protected_mask(line: str, protect_bold: bool = True) -> list[bool]:
@@ -342,7 +344,7 @@ def protected_mask(line: str, protect_bold: bool = True) -> list[bool]:
             mask[k] = True
             masked[k] = "X"
     flat = "".join(masked)
-    patterns = [LINK_SPAN_RE, HTML_RE, URL_RE] + ([BOLD_RE] if protect_bold else [])
+    patterns = [LINK_SPAN_RE, HTML_RE, URL_RE, NOLINK_RE] + ([BOLD_RE] if protect_bold else [])
     for pattern in patterns:
         for match in pattern.finditer(flat):
             for k in range(*match.span()):

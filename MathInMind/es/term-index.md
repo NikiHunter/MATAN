@@ -7,7 +7,7 @@ generated: true
 
 [Índice](index.md) · [Índice de lecciones](lectures-2025-26/index.md) · [Glosario](glossary.md)
 
-Cada entrada lleva directamente al lugar donde se define la noción o se enuncia el resultado. La columna **Curso** apunta al curso conciso de 21 capítulos; la columna **Lecciones**, al enunciado numerado de los apuntes 2025/26. Los mismos enlaces se insertan automáticamente en la primera mención de cada término dentro de cada nota.
+Cada entrada lleva directamente al lugar donde se define la noción o se enuncia el resultado. La columna **Curso** apunta a los capítulos del curso conciso; la columna **Lecciones**, al enunciado numerado de los apuntes 2025/26. Los mismos enlaces se insertan automáticamente en la primera mención de cada término dentro de cada nota.
 
 ## Teoremas y resultados con nombre
 
@@ -71,7 +71,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | Término | Curso | Lecciones |
 |---|---|---|
 | aplicación biyectiva | [§1.4](01-logic-sets-functions.md#sec-1-4) | [Definición 1.1.6](lectures-2025-26/lecture-01-02.md#def-1-1-6) |
-| aplicación de clase C¹ | [§15.1](15-multivariable-differentiation.md#sec-15-1) | — |
+| aplicación de clase C¹ | [§15.1](15-multivariable-differentiation.md#sec-15-1) | [Teorema 6.3.1](lectures-2025-26/lecture-63-64.md#thm-6-3-1) |
 | aplicación inversa | [§1.4](01-logic-sets-functions.md#sec-1-4) | [Definición 1.1.8](lectures-2025-26/lecture-01-02.md#def-1-1-8) |
 | aplicación inyectiva | [§1.4](01-logic-sets-functions.md#sec-1-4) | [Definición 1.1.4](lectures-2025-26/lecture-01-02.md#def-1-1-4) |
 | aplicación sobreyectiva | [§1.4](01-logic-sets-functions.md#sec-1-4) | [Definición 1.1.5](lectures-2025-26/lecture-01-02.md#def-1-1-5) |
@@ -525,6 +525,7 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [Teorema 6.2.2](lectures-2025-26/lecture-61-62.md#thm-6-2-2) | PDF 34). Reglas aritméticas | [61–62](lectures-2025-26/lecture-61-62.md) |
 | [Teorema 6.2.3](lectures-2025-26/lecture-61-62.md#thm-6-2-3) | PDF 37). Derivación de la aplicación inversa | [61–62](lectures-2025-26/lecture-61-62.md) |
 | [Definición 6.3.1](lectures-2025-26/lecture-61-62.md#def-6-3-1) | Si $`E`$ es abierto en $`\mathbb R^n`$, una aplicación $`f:E\to\mathbb R^m`$ se llama … | [61–62](lectures-2025-26/lecture-61-62.md) |
+| [Teorema 6.3.1](lectures-2025-26/lecture-63-64.md#thm-6-3-1) | PDF 7). La diferenciabilidad continua implica diferenciabilidad | [63–64](lectures-2025-26/lecture-63-64.md) |
 | [Lema 6.3.1](lectures-2025-26/lecture-63-64.md#lem-6-3-1) | PDF 4). Lema del incremento coordenado | [63–64](lectures-2025-26/lecture-63-64.md) |
 | [Definición 6.3.2](lectures-2025-26/lecture-61-62.md#def-6-3-2) | Sean $`E\subset\mathbb R^n`$ y $`f:E\to\mathbb R^m`$. | [61–62](lectures-2025-26/lecture-61-62.md) |
 | [Definición 6.4.1](lectures-2025-26/lecture-63-64.md#def-6-4-1) | PDF 11). Derivadas parciales de orden superior | [63–64](lectures-2025-26/lecture-63-64.md) |

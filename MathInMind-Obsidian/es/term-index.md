@@ -8,7 +8,7 @@ tags: [mathinmind/es, mathinmind/term-index]
 
 [[es/index|Índice]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/glossary|Glosario]]
 
-Cada entrada lleva directamente al lugar donde se define la noción o se enuncia el resultado. La columna **Curso** apunta al curso conciso de 21 capítulos; la columna **Lecciones**, al enunciado numerado de los apuntes 2025/26. Los mismos enlaces se insertan automáticamente en la primera mención de cada término dentro de cada nota.
+Cada entrada lleva directamente al lugar donde se define la noción o se enuncia el resultado. La columna **Curso** apunta a los capítulos del curso conciso; la columna **Lecciones**, al enunciado numerado de los apuntes 2025/26. Los mismos enlaces se insertan automáticamente en la primera mención de cada término dentro de cada nota.
 
 ## Teoremas y resultados con nombre
 
@@ -72,7 +72,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | Término | Curso | Lecciones |
 |---|---|---|
 | aplicación biyectiva | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-6\|Definición 1.1.6]] |
-| aplicación de clase C¹ | [[es/15-multivariable-differentiation#15.1 Derivada total\|§15.1]] | — |
+| aplicación de clase C¹ | [[es/15-multivariable-differentiation#15.1 Derivada total\|§15.1]] | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 5 (pp. PDF 7). La diferenciabilidad continua implica diferenciabilidad — teorema 6.3.1\|Teorema 6.3.1]] |
 | aplicación inversa | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-8\|Definición 1.1.8]] |
 | aplicación inyectiva | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-4\|Definición 1.1.4]] |
 | aplicación sobreyectiva | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-5\|Definición 1.1.5]] |
@@ -526,6 +526,7 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-61-62#Diapositiva impresa 20 (pp. PDF 34). Reglas aritméticas — teorema 6.2.2\|Teorema 6.2.2]] | PDF 34). Reglas aritméticas | [[es/lectures-2025-26/lecture-61-62\|61–62]] |
 | [[es/lectures-2025-26/lecture-61-62#Diapositiva impresa 23 (pp. PDF 37). Derivación de la aplicación inversa — teorema 6.2.3\|Teorema 6.2.3]] | PDF 37). Derivación de la aplicación inversa | [[es/lectures-2025-26/lecture-61-62\|61–62]] |
 | [[es/lectures-2025-26/lecture-61-62#^def-6-3-1\|Definición 6.3.1]] | Si $E$ es abierto en $\mathbb R^n$, una aplicación $f:E\to\mathbb R^m$ se llama … | [[es/lectures-2025-26/lecture-61-62\|61–62]] |
+| [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 5 (pp. PDF 7). La diferenciabilidad continua implica diferenciabilidad — teorema 6.3.1\|Teorema 6.3.1]] | PDF 7). La diferenciabilidad continua implica diferenciabilidad | [[es/lectures-2025-26/lecture-63-64\|63–64]] |
 | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 4 (pp. PDF 4). Lema del incremento coordenado — lema 6.3.1\|Lema 6.3.1]] | PDF 4). Lema del incremento coordenado | [[es/lectures-2025-26/lecture-63-64\|63–64]] |
 | [[es/lectures-2025-26/lecture-61-62#^def-6-3-2\|Definición 6.3.2]] | Sean $E\subset\mathbb R^n$ y $f:E\to\mathbb R^m$. | [[es/lectures-2025-26/lecture-61-62\|61–62]] |
 | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 6 (pp. PDF 11). Derivadas parciales de orden superior — definición 6.4.1\|Definición 6.4.1]] | PDF 11). Derivadas parciales de orden superior | [[es/lectures-2025-26/lecture-63-64\|63–64]] |

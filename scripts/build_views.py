@@ -40,6 +40,7 @@ from urllib.parse import quote, unquote
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import mdtext  # noqa: E402
+from course_layout import LINKING_PROFILE, chapter_for_section, lecture_chapter  # noqa: E402
 from term_registry import CHAPTER_STATEMENTS, GLOSSARY, LABELS, TERMS  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -74,7 +75,8 @@ REFERENCE_WORDS = {
            (r"corolarios?", "corollary"), (r"observaci(?:ón|ones)", "remark"),
            (r"proposici(?:ón|ones)", "proposition")],
 }
-NOT_A_STATEMENT = re.compile(r"proof|доказательств|demostraci|continu|продолжени|idea|идея|sketch|набросок", re.I)
+NOT_A_STATEMENT = re.compile(r"proof|доказательств|demostraci|continuation|continued|continuaci[oó]n|\(cont\.|"
+                             r"продолжени|окончани|\bidea\b|идея|sketch|набросок", re.I)
 NUMBER = r"\d+\.\d+\.\d+"
 PROOF_LABEL = re.compile(r"(?:proof|доказательство|demostración)\b", re.I)
 ANCHOR_RE = re.compile(r'<a id="([^"]+)"></a>')
@@ -109,6 +111,9 @@ class Note:
         parts = rel.split("/")
         self.lang = parts[0] if parts[0] in LANGS else None
         self.kind = classify(rel)
+        front = mdtext.split_frontmatter(text)[0]
+        self.numbering = frontmatter_value(front, "numbering")  # "lecture" in chapters 22+
+        self.reference_numbering = frontmatter_value(front, "reference_numbering")
         self.chapter = chapter_of(self)
 
     @property
@@ -116,21 +121,27 @@ class Note:
         return self.text.split("\n")
 
 
+def frontmatter_value(front: str, key: str) -> str | None:
+    match = re.search(rf'(?m)^{key}:\s*"?([^"\n]*?)"?\s*$', front)
+    return match.group(1) if match else None
+
+
 def classify(rel: str) -> str:
     parts = rel.split("/")
     name = parts[-1]
     if len(parts) == 2 and parts[0] in LANGS:
-        if re.fullmatch(r"(0[1-9]|1\d|2[01])-.+\.md", name):
+        if re.fullmatch(r"(0[1-9]|[1-9]\d)-.+\.md", name):
             return "chapter"
         return {"index.md": "index", "glossary.md": "glossary", "term-index.md": "term-index"}.get(name, "support")
     if len(parts) == 3 and parts[1] == LECTURES:
         return "lecture" if name.startswith("lecture-") else "index"
     if rel.startswith("ru/lectures/"):
         return "register" if re.match(r"\d\d-", name) else ("index" if name == "index.md" else "support")
-    if rel.startswith("ru/exam/tickets/"):
-        return "ticket"
-    if rel.startswith("ru/exam/"):
-        return "index"
+    exam = re.match(r"ru/exam(?:-sem\d+)?/", rel)
+    if exam:
+        if "/tickets/" in rel:
+            return "ticket"
+        return "index" if name == "index.md" else "exam"
     if rel.startswith("ru/purgatory/"):
         return "purgatory"
     return "other"
@@ -140,11 +151,18 @@ LECTURER_TO_COURSE = {1: 2, 2: 4, 3: 7, 4: 9, 5: 14, 6: 15}
 
 
 def chapter_of(note: Note) -> int | None:
-    """Course chapter a note belongs to (restricts ambiguous terms)."""
+    """Course chapter a note belongs to (restricts ambiguous terms).
+
+    Lecture-numbered chapters, and the lectures and tickets that belong to them,
+    borrow the term filter of a classic chapter (``LINKING_PROFILE``).
+    """
     name = note.rel.split("/")[-1]
     if note.kind == "chapter" or (note.kind == "support" and name[:2].isdigit()):
-        return int(name[:2])
+        return LINKING_PROFILE.get(int(name[:2]), int(name[:2]))
     if note.kind == "lecture":
+        course = frontmatter_value(mdtext.split_frontmatter(note.text)[0], "course_chapter")
+        if course and course.isdigit():
+            return LINKING_PROFILE.get(int(course), int(course))
         first = int(re.match(r"lecture-(\d+)", name).group(1))
         for limit, chapter in ((7, 2), (13, 3), (21, 5), (35, 7), (53, 9), (60, 14)):
             if first <= limit:
@@ -153,9 +171,21 @@ def chapter_of(note: Note) -> int | None:
     if note.kind == "register":
         return LECTURER_TO_COURSE.get(int(re.search(r"-(\d)-\d+\.md$", name).group(1)))
     if note.kind == "ticket":
+        numbered = re.search(r'(?m)^lecture_section:\s*"?(\d+)\.(\d+)"?\s*$', note.text)
+        if numbered:
+            course = chapter_for_section(int(numbered.group(1)), int(numbered.group(2)))
+            return LINKING_PROFILE.get(course, course) if course else None
         section = re.search(r'(?m)^lecture_section:\s*"?\d\d-[^"]*-(\d)-\d+\.md', note.text)
         return LECTURER_TO_COURSE.get(int(section.group(1))) if section else None
     return None
+
+
+def lecture_numbered(note: Note) -> bool:
+    return note.kind == "chapter" and note.numbering == "lecture"
+
+
+def ticket_number(rel: str) -> int:
+    return int(re.match(r"\d+", rel.rsplit("/", 1)[-1]).group())
 
 
 def lecture_numbers(name: str) -> list[int]:
@@ -220,8 +250,11 @@ def add_anchors(note: Note) -> None:
     existing = set(ANCHOR_RE.findall(note.text))
     out: list[str] = []
     in_fence = None
-    if note.kind == "chapter":
+    classic = note.kind == "chapter" and not lecture_numbered(note)
+    if classic:
         chapter = int(note.rel.split("/")[-1][:2])
+        if chapter not in CHAPTER_STATEMENTS:
+            raise SystemExit(f"{note.rel}: add CHAPTER_STATEMENTS[{chapter}] or 'numbering: lecture'")
         statements = list(CHAPTER_STATEMENTS[chapter])
         quote_index = -1
     for i, line in enumerate(lines):
@@ -236,7 +269,14 @@ def add_anchors(note: Note) -> None:
             out.append(line)
             continue
         previous = out[-1] if out else ""
-        if note.kind == "chapter":
+        if lecture_numbered(note):
+            section = re.match(r"^## §(\d+)\.(\d+)\b", line)
+            if section:
+                anchor = f"sec-{section.group(1)}-{section.group(2)}"
+                if anchor not in existing:
+                    out.append(f'<a id="{anchor}"></a>')
+                    existing.add(anchor)
+        if classic:
             section = re.match(r"^## (\d+)\.(\d+)\s", line)
             if section:
                 anchor = f"sec-{section.group(1)}-{section.group(2)}"
@@ -249,10 +289,14 @@ def add_anchors(note: Note) -> None:
                 quote_index += 1
                 if quote_index >= 1:
                     anchor = statements[quote_index - 1][0]
+                    present = re.match(r'^> <a id="([^"]+)"></a>', line)
+                    if present and present.group(1) != anchor:
+                        raise SystemExit(f"{note.rel}: labelled statement {quote_index} carries anchor "
+                                         f"{present.group(1)}, CHAPTER_STATEMENTS expects {anchor}")
                     if anchor not in existing:
                         line = "> " + f'<a id="{anchor}"></a>' + line[2:]
                         existing.add(anchor)
-        elif note.kind in ("lecture", "register") and note.lang:
+        elif (note.kind in ("lecture", "register") or lecture_numbered(note)) and note.lang:
             for kind, number in statement_sites(line, note.lang):
                 anchor = anchor_id(kind, number)
                 if anchor in existing:
@@ -266,7 +310,7 @@ def add_anchors(note: Note) -> None:
                     start = match.start()
                     line = line[:start] + f'<a id="{anchor}"></a>' + line[start:]
         out.append(line)
-    if note.kind == "chapter" and quote_index != len(statements):
+    if classic and quote_index != len(statements):
         raise SystemExit(f"{note.rel}: expected {len(statements)} labelled statements, found {quote_index}")
     note.text = "\n".join(out)
 
@@ -316,9 +360,10 @@ def numbered_index(notes, anchors):
     """First site of each numbered statement, per language and collection."""
     index = {}
     for lang in LANGS:
-        for collection in ("lecture", "register"):
+        for collection in ("lecture", "register", "course"):
             table = {}
-            rels = sorted((r for r, n in notes.items() if n.lang == lang and n.kind == collection), key=lecture_order)
+            members = (lambda n: lecture_numbered(n)) if collection == "course" else (lambda n: n.kind == collection)
+            rels = sorted((r for r, n in notes.items() if n.lang == lang and members(n)), key=lecture_order)
             for rel in rels:
                 for anchor_id_, anchor in anchors[rel].items():
                     if re.fullmatch(r"(def|thm|lem|cor|rem|prop)-\d+-\d+-\d+", anchor_id_):
@@ -389,13 +434,18 @@ def rewrite_navigation(note: Note, notes: dict[str, Note]) -> None:
             return " · ".join(items + [l for l in others if "term-index.md" not in l])
         replace_nav(note, build, lambda links: any("](index.md)" in l for l in links))
     elif note.kind in ("ticket", "register"):
-        siblings = sorted(r for r, n in notes.items() if n.kind == note.kind)
+        if note.kind == "ticket":
+            folder = note.rel.rsplit("/", 1)[0]
+            siblings = sorted((r for r, n in notes.items() if n.kind == "ticket" and r.rsplit("/", 1)[0] == folder),
+                              key=ticket_number)
+        else:
+            siblings = sorted(r for r, n in notes.items() if n.kind == note.kind)
         pos = siblings.index(note.rel)
 
         def label(rel):
             name = rel.rsplit("/", 1)[-1]
             if note.kind == "ticket":
-                return f"{ui['ticket']} {int(name[:2])}"
+                return f"{ui['ticket']} {ticket_number(rel)}"
             sec = re.search(r"-(\d+)-(\d+)\.md$", name)
             return f"§{sec.group(1)}.{sec.group(2)}"
 
@@ -408,8 +458,8 @@ def rewrite_navigation(note: Note, notes: dict[str, Note]) -> None:
             if pos + 1 < len(siblings):
                 items.append(f"[{label(siblings[pos + 1])} →]({relpath(siblings[pos + 1], note.rel)})")
             return " · ".join(items)
-        index_link = "](../index.md)" if note.kind == "ticket" else "](index.md)"
-        replace_nav(note, build, lambda links: any(index_link in l for l in links))
+        index_links = ("](../index.md)", "](../EXAM_SEM3.md)") if note.kind == "ticket" else ("](index.md)",)
+        replace_nav(note, build, lambda links: any(i in l for l in links for i in index_links))
 
 
 def replace_nav(note: Note, new, predicate) -> None:
@@ -437,24 +487,27 @@ class TermMatcher:
 
     def __init__(self, lang: str):
         buckets, generic = defaultdict(list), []
+        owners: dict[str, list] = defaultdict(list)
         for term in TERMS:
             for phrase in term.phrases(lang):
-                entry = (len(phrase), phrase.replace("–", "[–-]"), term)
-                (buckets[phrase[0].casefold()] if phrase[0].isalpha() else generic).append(entry)
+                owners[phrase].append(term)
+        for phrase, terms in owners.items():
+            entry = (len(phrase), phrase.replace("–", "[–-]"), terms)
+            (buckets[phrase[0].casefold()] if phrase[0].isalpha() else generic).append(entry)
         self.lookup = {}
         self.regexes = {key: self._compile(entries + generic) for key, entries in buckets.items()}
         self.generic = self._compile(generic) if generic else None
 
     def _compile(self, entries):
         groups = []
-        for _, pattern, term in sorted(entries, key=lambda e: -e[0]):
+        for _, pattern, terms in sorted(entries, key=lambda e: -e[0]):
             name = f"t{len(self.lookup)}"
-            self.lookup[name] = term
+            self.lookup[name] = terms
             groups.append(f"(?P<{name}>{pattern})")
         return re.compile("(?:" + "|".join(groups) + r")(?![\w-])", re.I)
 
     def finditer(self, flat: str):
-        """Yield (match, term); characters masked as NUL are never inside a match."""
+        """Yield (match, terms); characters masked as NUL are never inside a match."""
         pos = 0
         while True:
             word = self.WORD_START.search(flat, pos)
@@ -497,10 +550,12 @@ class Linker:
 
     def resolve_numbered(self, note: Note, anchor: str) -> str | None:
         lang = note.lang
-        if note.kind in ("register", "ticket", "purgatory") or (note.rel.startswith("ru/lectures/")):
-            order = [("ru", "register"), ("ru", "lecture")]
+        if note.kind in ("register", "ticket", "purgatory", "exam") or (note.rel.startswith("ru/lectures/")):
+            order = [("ru", "register"), ("ru", "lecture"), ("ru", "course")]
+        elif note.kind in ("chapter", "support"):
+            order = [(lang, "course"), (lang, "lecture"), (lang, "register")]
         else:
-            order = [(lang, "lecture"), (lang, "register")]
+            order = [(lang, "lecture"), (lang, "register"), (lang, "course")]
         for key in order:
             hit = self.numbered.get(key, {}).get(anchor)
             if hit:
@@ -508,10 +563,14 @@ class Linker:
         return None
 
     def resolve_term(self, note: Note, term) -> str | None:
-        if note.kind in ("lecture", "register", "ticket", "purgatory") and term.lec:
+        if note.kind in ("lecture", "register", "ticket", "purgatory", "exam") and term.lec:
             hit = self.resolve_numbered(note, term.lec)
             if hit:
                 return hit
+        if lecture_numbered(note) and term.lec:
+            hit = self.numbered.get((note.lang, "course"), {}).get(term.lec)
+            if hit:
+                return hit.target
         number, _, frag = term.target.partition("#")
         rel = self.chapters.get((note.lang, int(number)))
         if rel and frag in self.anchors[rel]:
@@ -574,7 +633,9 @@ class Linker:
                 for k in range(*bold.span()):
                     mask[k] = True
         own = set(ANCHOR_RE.findall(line)) | own_block
-        for match in REFERENCE_RE[lang].finditer(line):
+        # Text quoting another year's numbering (e.g. forecast tickets) is not linked by number.
+        foreign = note.reference_numbering not in (None, "2025/26")
+        for match in ([] if foreign else REFERENCE_RE[lang].finditer(line)):
             if any(mask[match.start():match.end()]):
                 continue
             kind = reference_kind(lang, match.group("word"))
@@ -594,13 +655,13 @@ class Linker:
         term_mask = mdtext.protected_mask(line, protect_bold=True)
         taken = [(a, b) for a, b, _ in edits]
         flat = "".join("\x00" if term_mask[k] else ch for k, ch in enumerate(line))
-        for match, term in self.terms[lang].finditer(flat):
+        for match, terms in self.terms[lang].finditer(flat):
             if any(a < match.end() and match.start() < b for a, b in taken):
                 continue
-            if term.chapters and note.chapter is not None:
-                low, high = term.chapters
-                if not low <= note.chapter <= high:
-                    continue
+            term = next((t for t in terms if not (t.chapters and note.chapter is not None
+                                                  and not t.chapters[0] <= note.chapter <= t.chapters[1])), None)
+            if term is None:
+                continue
             target = self.resolve_term(note, term)
             if not target or term.id in linked or relpath(target, note.rel) in linked:
                 continue
@@ -647,35 +708,35 @@ INDEX_TEXT = {
     "en": {
         "title": "Index of terms and theorems",
         "intro": ("Every entry jumps straight to the place where the notion is defined or the result is stated. "
-                  "The **Course** column points to the concise 21-chapter course; the **Lectures** column points to "
+                  "The **Course** column points to the concise course chapters; the **Lectures** column points to "
                   "the numbered statement in the 2025/26 lecture notes. The same links are inserted automatically at "
                   "the first mention of each term inside every note."),
         "terms": "Terms", "theorems": "Named theorems and results", "numbered": "Numbered statements of the 2025/26 lectures",
         "numbered_intro": "Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture that states the item is linked.",
         "cols": ("Term", "Course", "Lectures"), "ncols": ("Statement", "Summary", "Lecture"),
-        "chapter": "Chapter", "lecture": "Lecture",
+        "chapter": "Chapter", "chapter_short": "ch.", "lecture": "Lecture",
     },
     "ru": {
         "title": "Указатель терминов и теорем",
         "intro": ("Каждая строка ведёт прямо к месту, где понятие определено или утверждение сформулировано. "
-                  "Столбец **Курс** ведёт в краткий курс из 21 главы, столбец **Лекции** — к пронумерованному "
+                  "Столбец **Курс** ведёт в главы краткого курса, столбец **Лекции** — к пронумерованному "
                   "утверждению в конспектах лекций 2025/26. Такие же ссылки автоматически расставлены при первом "
                   "упоминании термина в каждой заметке."),
         "terms": "Термины", "theorems": "Именные теоремы и результаты", "numbered": "Пронумерованные утверждения лекций 2025/26",
         "numbered_intro": "Нумерация лектора: *глава.параграф.пункт*. Ссылка ведёт на первую лекцию, где утверждение сформулировано.",
         "cols": ("Термин", "Курс", "Лекции"), "ncols": ("Утверждение", "Кратко", "Лекция"),
-        "chapter": "Глава", "lecture": "Лекция", "register": "Экзаменационный реестр",
+        "chapter": "Глава", "chapter_short": "гл.", "lecture": "Лекция", "register": "Экзаменационный реестр",
     },
     "es": {
         "title": "Índice de términos y teoremas",
         "intro": ("Cada entrada lleva directamente al lugar donde se define la noción o se enuncia el resultado. "
-                  "La columna **Curso** apunta al curso conciso de 21 capítulos; la columna **Lecciones**, al enunciado "
+                  "La columna **Curso** apunta a los capítulos del curso conciso; la columna **Lecciones**, al enunciado "
                   "numerado de los apuntes 2025/26. Los mismos enlaces se insertan automáticamente en la primera "
                   "mención de cada término dentro de cada nota."),
         "terms": "Términos", "theorems": "Teoremas y resultados con nombre", "numbered": "Enunciados numerados de las lecciones 2025/26",
         "numbered_intro": "La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enlaza la primera lección que lo enuncia.",
         "cols": ("Término", "Curso", "Lecciones"), "ncols": ("Enunciado", "Resumen", "Lección"),
-        "chapter": "Capítulo", "lecture": "Lección",
+        "chapter": "Capítulo", "chapter_short": "cap.", "lecture": "Lección",
     },
 }
 
@@ -725,8 +786,12 @@ def build_term_index(lang: str, notes, linker: Linker) -> str:
         chapter_rel = linker.chapters.get((lang, int(number)))
         course = ""
         if chapter_rel and frag in linker.anchors[chapter_rel]:
-            label = f"{int(number)}" + (f".{frag.split('-')[-1]}" if frag.startswith("sec-") else "")
-            course = f"[§{label}]({relpath(chapter_rel + '#' + frag, rel)})"
+            if lecture_chapter(int(number)):
+                parts = frag.split("-")
+                label = f"{t['chapter_short']} {int(number)} · §{parts[1]}.{parts[2]}"
+            else:
+                label = "§" + f"{int(number)}" + (f".{frag.split('-')[-1]}" if frag.startswith("sec-") else "")
+            course = f"[{label}]({relpath(chapter_rel + '#' + frag, rel)})"
         lecture = ""
         if term.lec:
             fake.kind = "lecture"
@@ -862,7 +927,8 @@ class ObsidianBuilder:
         elif note.kind == "chapter":
             alias = f"{title} ({note.lang})"
         elif note.kind == "ticket":
-            alias = f"Билет {int(name[:2])}"
+            track = re.match(r"ru/exam-sem(\d+)/", note.rel)
+            alias = f"Билет {ticket_number(note.rel)}" + (f" (семестр {track.group(1)})" if track else "")
         if alias and "aliases:" not in front:
             extra.append(f"aliases: [{json.dumps(alias, ensure_ascii=False)}]")
         if "tags:" not in front and note.lang:

@@ -7,7 +7,7 @@ generated: true
 
 [Course index](index.md) · [Lecture index](lectures-2025-26/index.md) · [Glossary](glossary.md)
 
-Every entry jumps straight to the place where the notion is defined or the result is stated. The **Course** column points to the concise 21-chapter course; the **Lectures** column points to the numbered statement in the 2025/26 lecture notes. The same links are inserted automatically at the first mention of each term inside every note.
+Every entry jumps straight to the place where the notion is defined or the result is stated. The **Course** column points to the concise course chapters; the **Lectures** column points to the numbered statement in the 2025/26 lecture notes. The same links are inserted automatically at the first mention of each term inside every note.
 
 ## Named theorems and results
 
@@ -94,7 +94,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | connected set | [§13.5](13-metric-spaces.md#sec-13-5) | — |
 | conservative field | [§18.1](18-vector-calculus.md#sec-18-1) | — |
 | continuity at a point | [§5.3](05-limits-continuity.md#sec-5-3) | [Definition 2.5.1](lectures-2025-26/lecture-16.md#def-2-5-1) |
-| continuously differentiable map | [§15.1](15-multivariable-differentiation.md#sec-15-1) | — |
+| continuously differentiable map | [§15.1](15-multivariable-differentiation.md#sec-15-1) | [Theorem 6.3.1](lectures-2025-26/lecture-63-64.md#thm-6-3-1) |
 | convergent sequence | [§3.1](03-sequences.md#sec-3-1) | [Definition 2.1.3](lectures-2025-26/lecture-08.md#def-2-1-3) |
 | convex function | [§7.4](07-taylor-convexity.md#sec-7-4) | [Definition 3.8.1](lectures-2025-26/lecture-31-32.md#def-3-8-1) |
 | countable set | [§1.5](01-logic-sets-functions.md#sec-1-5) | [Definition 1.2.5](lectures-2025-26/lecture-01-02.md#def-1-2-5) |
@@ -525,6 +525,7 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [Theorem 6.2.2](lectures-2025-26/lecture-61-62.md#thm-6-2-2) | 34). Arithmetic rules | [61–62](lectures-2025-26/lecture-61-62.md) |
 | [Theorem 6.2.3](lectures-2025-26/lecture-61-62.md#thm-6-2-3) | 37). Differentiating an inverse map | [61–62](lectures-2025-26/lecture-61-62.md) |
 | [Definition 6.3.1](lectures-2025-26/lecture-61-62.md#def-6-3-1) | If $`E`$ is open in $`\mathbb R^n`$, a map $`f:E\to\mathbb R^m`$ is differentiable on … | [61–62](lectures-2025-26/lecture-61-62.md) |
+| [Theorem 6.3.1](lectures-2025-26/lecture-63-64.md#thm-6-3-1) | 7). Continuous differentiability implies differentiability | [63–64](lectures-2025-26/lecture-63-64.md) |
 | [Lemma 6.3.1](lectures-2025-26/lecture-63-64.md#lem-6-3-1) | 4). Coordinate-increment lemma | [63–64](lectures-2025-26/lecture-63-64.md) |
 | [Definition 6.3.2](lectures-2025-26/lecture-61-62.md#def-6-3-2) | Let $`E\subset\mathbb R^n`$ and $`f:E\to\mathbb R^m`$. | [61–62](lectures-2025-26/lecture-61-62.md) |
 | [Definition 6.4.1](lectures-2025-26/lecture-63-64.md#def-6-4-1) | 11). Higher-order partial derivatives | [63–64](lectures-2025-26/lecture-63-64.md) |

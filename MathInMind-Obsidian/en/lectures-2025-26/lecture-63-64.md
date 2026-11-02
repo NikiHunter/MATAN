@@ -150,7 +150,7 @@ For $k,s\in\mathbb N$ with $k<s$, the slide states the equivalence:
 
 For example, if $E\subset\mathbb R^2$ and $f\in C^3(E,\mathbb R)$, every second-order partial derivative belongs to $C^1(E,\mathbb R)$. The notes add:
 
-1. $s=1$ is the class of continuously differentiable maps;
+1. $s=1$ is the class of [[#Printed slide 5 (PDF p. 7). Continuous differentiability implies differentiability — Theorem 6.3.1|continuously differentiable]] maps;
 2. the partial derivative of order zero is $f$ itself;
 3. $f$ is $s$-times continuously differentiable at $a$ exactly when each coordinate function of $f$ is $s$-times continuously differentiable at $a$.
 

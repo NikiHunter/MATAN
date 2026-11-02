@@ -1,6 +1,6 @@
 """Terminology and theorem registry used for automatic cross-linking.
 
-Each entry names one concept, the place in the 21-chapter course where it is
+Each entry names one concept, the place in the course chapters where it is
 explained (``"NN#anchor"``; the same anchor exists in all three languages),
 optionally the numbered statement of the 2025/26 lectures that states it
 (``lec``), and the phrases that mention it in each language.

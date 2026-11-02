@@ -150,7 +150,7 @@ Para $k,s\in\mathbb N$, $k<s$, la diapositiva afirma la equivalencia:
 
 Por ejemplo, si $E\subset\mathbb R^2$ y $f\in C^3(E,\mathbb R)$, cada derivada parcial de segundo orden pertenece a $C^1(E,\mathbb R)$. También se anota:
 
-1. el caso $s=1$ corresponde a una aplicación continuamente diferenciable;
+1. el caso $s=1$ corresponde a una aplicación [[#Diapositiva impresa 5 (pp. PDF 7). La diferenciabilidad continua implica diferenciabilidad — teorema 6.3.1|continuamente diferenciable]];
 2. la derivada parcial de orden cero es la propia función $f$;
 3. $f$ es continuamente diferenciable $s$ veces en $a$ si y solo si cada función coordenada de $f$ es continuamente diferenciable $s$ veces en $a$.
 

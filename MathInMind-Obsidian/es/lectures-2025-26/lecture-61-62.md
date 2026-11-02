@@ -450,7 +450,7 @@ Para funciones de una variable, diferenciabilidad en un punto equivale a existen
 > Sean $E\subset\mathbb R^n$ y $f:E\to\mathbb R^m$.
 >
 > 1. Si $a\in E$, todas las derivadas parciales primeras de $f$ están definidas en un entorno de $a$ y son continuas en $a$, entonces $f$ es [[es/15-multivariable-differentiation#15.1 Derivada total|continuamente diferenciable]] en $a$.
-> 2. Si $E$ es abierto y $f$ es continuamente diferenciable en cada punto de $E$, entonces $f$ es continuamente diferenciable en $E$.
+> 2. Si $E$ es abierto y $f$ es [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 5 (pp. PDF 7). La diferenciabilidad continua implica diferenciabilidad — teorema 6.3.1|continuamente diferenciable]] en cada punto de $E$, entonces $f$ es continuamente diferenciable en $E$.
 
 ^def-6-3-2
 

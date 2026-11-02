@@ -52,6 +52,7 @@ The one-variable mean value theorem gives some $`\theta_k\in(0,1)`$ and $`c_k=x^
 
 For a scalar function, continuity of each first partial derivative at $`a`$ makes these derivatives bounded on a sufficiently small neighborhood of $`a`$. Applying [Lemma 6.3.1](#lem-6-3-1) to nearby points gives a bound for each increment by a constant times the sum of the coordinate changes, which tends to zero with the increment. Thus $`f`$ is continuous throughout a smaller neighborhood of $`a`$. For a map $`f:E\to\mathbb R^m`$, apply the scalar argument to each coordinate function.
 
+<a id="thm-6-3-1"></a>
 ## Printed slide 5 (PDF p. 7). Continuous differentiability implies differentiability — Theorem 6.3.1
 
 Let $`E\subset\mathbb R^n`$, let $`a`$ be an [interior point](lecture-57-58.md#def-5-3-3), and suppose $`f:E\to\mathbb R^m`$ is [continuously differentiable](../15-multivariable-differentiation.md#sec-15-1) at $`a`$. Then:
@@ -151,7 +152,7 @@ For $`k,s\in\mathbb N`$ with $`k<s`$, the slide states the equivalence:
 
 For example, if $`E\subset\mathbb R^2`$ and $`f\in C^3(E,\mathbb R)`$, every second-order partial derivative belongs to $`C^1(E,\mathbb R)`$. The notes add:
 
-1. $`s=1`$ is the class of continuously differentiable maps;
+1. $`s=1`$ is the class of [continuously differentiable](#thm-6-3-1) maps;
 2. the partial derivative of order zero is $`f`$ itself;
 3. $`f`$ is $`s`$-times continuously differentiable at $`a`$ exactly when each coordinate function of $`f`$ is $`s`$-times continuously differentiable at $`a`$.
 

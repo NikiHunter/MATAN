@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Проверка формул и frontmatter без внешних зависимостей.
+r"""Проверка формул и frontmatter без внешних зависимостей.
 
 Запуск:  python3 ocr/check_formulas.py [каталоги...]
-По умолчанию проверяются lectures/ и obsidian/.
+По умолчанию проверяется дословная транскрипция ocr/raw/.
+(Конспекты MathInMind/ проверяет scripts/validate_course.py.)
 
 Что проверяется:
   1. YAML frontmatter есть, открыт/закрыт и разбирается как простой YAML.
@@ -21,7 +22,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DIRS = ("lectures", "obsidian")
+DEFAULT_DIRS = ("ocr/raw",)
 
 BEGIN = re.compile(r"\\(begin|end)\{([^}]*)\}")
 KNOWN_SINGLE = set("\\{}%&_#$|~.,;:!()-+/*'\"[]<>?=@^` ")

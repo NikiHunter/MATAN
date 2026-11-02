@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Validate the lecture-aligned Russian exam track without external dependencies."""
+"""Validate the lecture-aligned Russian exam tracks without external dependencies.
+
+Semester 2: ``ru/exam/`` (72 tickets, the reexam master ``REEXAM_SEM2.md``),
+the lecture register ``ru/lectures/`` and the Purgatory.  Semester 3:
+``ru/exam-sem3/`` (master ``EXAM_SEM3.md``; its ticket list fixes the count).
+"""
 
 from __future__ import annotations
 
@@ -14,7 +19,19 @@ ROOT = Path(__file__).resolve().parents[1]
 RU = ROOT / "MathInMind" / "ru"
 LECTURES = RU / "lectures"
 TICKETS = RU / "exam" / "tickets"
+REEXAM = RU / "exam" / "REEXAM_SEM2.md"
+SEM3 = RU / "exam-sem3"
+SEM3_MASTER = SEM3 / "EXAM_SEM3.md"
+SEM3_TICKETS = SEM3 / "tickets"
 PURGATORY = RU / "purgatory"
+TICKET_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Разобранный пример", "## Проверка готовности")
+# Added to every semester-2 ticket together with the reexam master.
+REEXAM_HEADINGS = ("## Доказательство", "## Задачи", "## Если снять условие")
+SEM3_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Доказательство", "## Разобранный пример",
+                 "## Если снять условие", "## Проверка готовности")
+SEM3_MASTER_HEADINGS = ("## Формат экзамена", "## Билеты", "## Сквозные вопросы", "## Чистилище",
+                        "## Задачи", "## Шпаргалка", "## Пробные экзамены")
+NUMBERED_FRAGMENT = re.compile(r"^(?:def|thm|lem|cor|prop|rem|sec)-[\d-]+$|^p\d{3}$")
 SOURCE_ROOT = ROOT / "source"
 SOURCE_LECTURES = SOURCE_ROOT / "MathInMind" / "МАТАН_Л"
 
@@ -75,6 +92,9 @@ def check_text_basics(path: Path, text: str) -> None:
     for marker in ("TODO", "TBD", "PLACEHOLDER", "lorem ipsum"):
         if marker.lower() in text.lower():
             fail(path, f"unfinished marker: {marker}")
+    for marker in ("⟦", "[!warning]"):
+        if marker in text:
+            fail(path, f"transcription marker {marker!r} does not belong in the exam track")
     if text.count("```") % 2:
         fail(path, "unbalanced fenced code blocks")
     if text.count("$$") % 2:
@@ -124,7 +144,7 @@ def check_links(path: Path, text: str, source_safe: bool = False) -> None:
             continue
         if "#" in raw and resolved.suffix == ".md":
             fragment = raw.split("#", 1)[1]
-            if fragment.startswith(("def-", "thm-", "lem-", "cor-")):
+            if NUMBERED_FRAGMENT.match(fragment):
                 target_text = resolved.read_text(encoding="utf-8")
                 if f'<a id="{fragment}"></a>' not in target_text:
                     fail(path, f"missing explicit anchor {fragment} in {resolved.relative_to(ROOT)}")
@@ -178,12 +198,76 @@ def validate_tickets() -> None:
         text = read(path)
         if not re.search(rf"(?m)^ticket:\s*{n}\s*$", text):
             fail(path, f"frontmatter must contain ticket: {n}")
-        for heading in ("## Вопрос", "## Эталонный ответ", "## Разобранный пример", "## Проверка готовности"):
-            if heading not in text:
+        headings = TICKET_HEADINGS + (REEXAM_HEADINGS if REEXAM.is_file() else ())
+        for heading in headings:
+            if not re.search(rf"(?m)^{re.escape(heading)}\s*$", text):
                 fail(path, f"missing section: {heading}")
         if len(text) < 1200:
             fail(path, "ticket answer is unexpectedly short")
     print(f"Exam tickets: {len(actual)} individual notes")
+
+
+def validate_reexam() -> None:
+    """The reexam master is the entry point to all 72 tickets of semester 2."""
+    if not REEXAM.is_file():
+        return
+    text = REEXAM.read_text(encoding="utf-8")
+    linked = {int(n) for n in re.findall(r"\]\(tickets/(\d{2})\.md(?:#[^)]*)?\)", text)}
+    if linked != set(range(1, 73)):
+        fail(REEXAM, f"must link every ticket 01–72; missing={sorted(set(range(1, 73)) - linked)}")
+    print(f"Reexam master: {len(linked)} tickets linked")
+
+
+def validate_sem3_track() -> list[Path]:
+    """Semester 3: the master's ticket table fixes the count; forecast tickets are labelled."""
+    if not SEM3_MASTER.is_file():
+        return []
+    master = SEM3_MASTER.read_text(encoding="utf-8")
+    for heading in SEM3_MASTER_HEADINGS:
+        if not re.search(rf"(?m)^{re.escape(heading)}\b", master):
+            fail(SEM3_MASTER, f"missing section: {heading}")
+    numbers = sorted({int(n) for n in re.findall(r"\]\(tickets/(\d{2,3})\.md(?:#[^)]*)?\)", master)})
+    if not numbers or numbers != list(range(1, numbers[-1] + 1)):
+        fail(SEM3_MASTER, f"ticket links must run 1..N without gaps; found {numbers[:5]}…")
+        return []
+    count = numbers[-1]
+    expected = {f"{n:02d}.md" for n in range(1, count + 1)}
+    actual = {p.name for p in SEM3_TICKETS.glob("*.md")}
+    if actual != expected:
+        fail(SEM3_TICKETS, f"ticket set mismatch; missing={sorted(expected - actual)}, extra={sorted(actual - expected)}")
+    paths = []
+    forecasts = 0
+    for n in range(1, count + 1):
+        path = SEM3_TICKETS / f"{n:02d}.md"
+        if not path.is_file():
+            continue
+        paths.append(path)
+        text = path.read_text(encoding="utf-8")
+        front = text[4:text.find("\n---\n", 4)] if text.startswith("---\n") else ""
+        if not re.search(rf"(?m)^ticket:\s*{n}\s*$", front):
+            fail(path, f"frontmatter must contain ticket: {n}")
+        for heading in SEM3_HEADINGS:
+            if not re.search(rf"(?m)^{re.escape(heading)}\s*$", text):
+                fail(path, f"missing section: {heading}")
+        if len(text) < 1500:
+            fail(path, "ticket answer is unexpectedly short")
+        if re.search(r"(?m)^forecast:\s*true\s*$", front):
+            forecasts += 1
+            if not re.search(r'(?m)^reference_numbering:\s*"?2024"?\s*$', front):
+                fail(path, 'forecast tickets must declare reference_numbering: "2024"')
+            if "> **Прогноз.**" not in text:
+                fail(path, "forecast tickets must open with a visible «Прогноз» note")
+            if re.search(r"\]\([^)]*#(?:def|thm|lem|cor|prop|rem)-\d", text):
+                fail(path, "forecast tickets must not link to numbered statements of the 2025/26 lectures")
+        else:
+            lecture = re.search(r'(?m)^lecture:\s*"?([\d-]+)"?\s*$', front)
+            section = re.search(r'(?m)^lecture_section:\s*"?(\d+\.\d+)"?\s*$', front)
+            if not lecture or not section:
+                fail(path, "ticket must name its lecture and lecture_section (or be marked forecast: true)")
+            elif not (RU / "lectures-2025-26" / f"lecture-{lecture.group(1)}.md").is_file():
+                fail(path, f"lecture-{lecture.group(1)}.md does not exist")
+    print(f"Semester-3 exam: {count} tickets ({forecasts} forecast)")
+    return [SEM3_MASTER, *paths]
 
 
 def validate_purgatory() -> None:
@@ -218,6 +302,9 @@ def main(argv: list[str] | None = None) -> int:
     required = [LECTURES / "index.md", LECTURES / "terms.md", RU / "exam" / "index.md", PURGATORY / "definitions.md", PURGATORY / "questions.md"]
     required.extend(LECTURES / name for name in SECTIONS)
     required.extend(TICKETS / f"{n:02d}.md" for n in range(1, 73))
+    if REEXAM.is_file():
+        required.append(REEXAM)
+    required.extend(validate_sem3_track())
     for path in required:
         text = read(path)
         check_frontmatter(path, text)
@@ -225,6 +312,7 @@ def main(argv: list[str] | None = None) -> int:
         check_links(path, text, source_safe=args.source_safe)
     validate_lecture_register(compare_source_archive=not args.source_safe)
     validate_tickets()
+    validate_reexam()
     validate_purgatory()
     if errors:
         print(f"Exam-track validation failed with {len(errors)} error(s):", file=sys.stderr)

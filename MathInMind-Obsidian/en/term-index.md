@@ -8,7 +8,7 @@ tags: [mathinmind/en, mathinmind/term-index]
 
 [[en/index|Course index]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/glossary|Glossary]]
 
-Every entry jumps straight to the place where the notion is defined or the result is stated. The **Course** column points to the concise 21-chapter course; the **Lectures** column points to the numbered statement in the 2025/26 lecture notes. The same links are inserted automatically at the first mention of each term inside every note.
+Every entry jumps straight to the place where the notion is defined or the result is stated. The **Course** column points to the concise course chapters; the **Lectures** column points to the numbered statement in the 2025/26 lecture notes. The same links are inserted automatically at the first mention of each term inside every note.
 
 ## Named theorems and results
 
@@ -95,7 +95,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | connected set | [[en/13-metric-spaces#13.5 Continuity and connectedness\|§13.5]] | — |
 | conservative field | [[en/18-vector-calculus#18.1 Line integrals\|§18.1]] | — |
 | continuity at a point | [[en/05-limits-continuity#5.3 Continuity\|§5.3]] | [[en/lectures-2025-26/lecture-16#^def-2-5-1\|Definition 2.5.1]] |
-| continuously differentiable map | [[en/15-multivariable-differentiation#15.1 The total derivative\|§15.1]] | — |
+| continuously differentiable map | [[en/15-multivariable-differentiation#15.1 The total derivative\|§15.1]] | [[en/lectures-2025-26/lecture-63-64#Printed slide 5 (PDF p. 7). Continuous differentiability implies differentiability — Theorem 6.3.1\|Theorem 6.3.1]] |
 | convergent sequence | [[en/03-sequences#3.1 The definition of a limit\|§3.1]] | [[en/lectures-2025-26/lecture-08#^def-2-1-3\|Definition 2.1.3]] |
 | convex function | [[en/07-taylor-convexity#7.4 Convex functions\|§7.4]] | [[en/lectures-2025-26/lecture-31-32#^def-3-8-1\|Definition 3.8.1]] |
 | countable set | [[en/01-logic-sets-functions#1.5 Countability\|§1.5]] | [[en/lectures-2025-26/lecture-01-02#^def-1-2-5\|Definition 1.2.5]] |
@@ -526,6 +526,7 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-61-62#Printed slide 20 (PDF p. 34). Arithmetic rules — Theorem 6.2.2\|Theorem 6.2.2]] | 34). Arithmetic rules | [[en/lectures-2025-26/lecture-61-62\|61–62]] |
 | [[en/lectures-2025-26/lecture-61-62#Printed slide 23 (PDF p. 37). Differentiating an inverse map — Theorem 6.2.3\|Theorem 6.2.3]] | 37). Differentiating an inverse map | [[en/lectures-2025-26/lecture-61-62\|61–62]] |
 | [[en/lectures-2025-26/lecture-61-62#^def-6-3-1\|Definition 6.3.1]] | If $E$ is open in $\mathbb R^n$, a map $f:E\to\mathbb R^m$ is differentiable on … | [[en/lectures-2025-26/lecture-61-62\|61–62]] |
+| [[en/lectures-2025-26/lecture-63-64#Printed slide 5 (PDF p. 7). Continuous differentiability implies differentiability — Theorem 6.3.1\|Theorem 6.3.1]] | 7). Continuous differentiability implies differentiability | [[en/lectures-2025-26/lecture-63-64\|63–64]] |
 | [[en/lectures-2025-26/lecture-63-64#Printed slide 4 (PDF p. 4). Coordinate-increment lemma — Lemma 6.3.1\|Lemma 6.3.1]] | 4). Coordinate-increment lemma | [[en/lectures-2025-26/lecture-63-64\|63–64]] |
 | [[en/lectures-2025-26/lecture-61-62#^def-6-3-2\|Definition 6.3.2]] | Let $E\subset\mathbb R^n$ and $f:E\to\mathbb R^m$. | [[en/lectures-2025-26/lecture-61-62\|61–62]] |
 | [[en/lectures-2025-26/lecture-63-64#Printed slide 6 (PDF p. 11). Higher-order partial derivatives — Definition 6.4.1\|Definition 6.4.1]] | 11). Higher-order partial derivatives | [[en/lectures-2025-26/lecture-63-64\|63–64]] |

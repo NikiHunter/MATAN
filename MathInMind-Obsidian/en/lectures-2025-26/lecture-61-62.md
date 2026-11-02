@@ -450,7 +450,7 @@ For one-variable functions, differentiability at a point is equivalent to existe
 > Let $E\subset\mathbb R^n$ and $f:E\to\mathbb R^m$.
 >
 > 1. If $a\in E$, all first partial derivatives of $f$ are defined in a neighborhood of $a$ and are continuous at $a$, then $f$ is [[en/15-multivariable-differentiation#15.1 The total derivative|continuously differentiable]] at $a$.
-> 2. If $E$ is open and $f$ is continuously differentiable at every point of $E$, then $f$ is continuously differentiable on $E$.
+> 2. If $E$ is open and $f$ is [[en/lectures-2025-26/lecture-63-64#Printed slide 5 (PDF p. 7). Continuous differentiability implies differentiability — Theorem 6.3.1|continuously differentiable]] at every point of $E$, then $f$ is continuously differentiable on $E$.
 
 ^def-6-3-2
 

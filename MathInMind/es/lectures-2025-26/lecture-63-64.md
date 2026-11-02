@@ -52,6 +52,7 @@ Por el teorema del valor medio de una variable, existen $`\theta_k\in(0,1)`$ y $
 
 Basta probar el caso escalar; para una aplicación $`f:E\to\mathbb R^m`$ se aplica el argumento a cada función coordenada. La continuidad de las derivadas parciales primeras en $`a`$ las acota en algún entorno de $`a`$. El [lema 6.3.1](#lem-6-3-1), aplicado a puntos próximos, acota cada incremento por una constante multiplicada por la suma de los cambios de coordenadas, cantidad que tiende a cero con el incremento. Por tanto, $`f`$ es continua en un entorno suficientemente pequeño de $`a`$.
 
+<a id="thm-6-3-1"></a>
 ## Diapositiva impresa 5 (pp. PDF 7). La diferenciabilidad continua implica diferenciabilidad — teorema 6.3.1
 
 Sea $`E\subset\mathbb R^n`$, sea $`a`$ un punto interior y supongamos que $`f:E\to\mathbb R^m`$ es [continuamente diferenciable](../15-multivariable-differentiation.md#sec-15-1) en $`a`$. Entonces:
@@ -151,7 +152,7 @@ Para $`k,s\in\mathbb N`$, $`k<s`$, la diapositiva afirma la equivalencia:
 
 Por ejemplo, si $`E\subset\mathbb R^2`$ y $`f\in C^3(E,\mathbb R)`$, cada derivada parcial de segundo orden pertenece a $`C^1(E,\mathbb R)`$. También se anota:
 
-1. el caso $`s=1`$ corresponde a una aplicación continuamente diferenciable;
+1. el caso $`s=1`$ corresponde a una aplicación [continuamente diferenciable](#thm-6-3-1);
 2. la derivada parcial de orden cero es la propia función $`f`$;
 3. $`f`$ es continuamente diferenciable $`s`$ veces en $`a`$ si y solo si cada función coordenada de $`f`$ es continuamente diferenciable $`s`$ veces en $`a`$.
 

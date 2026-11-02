@@ -12,39 +12,17 @@ from pathlib import Path
 from urllib.parse import unquote
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import ocr_issues  # noqa: E402
+from course_layout import (CHAPTERS, LAST_LECTURE, LECTURE_CHAPTERS, SEMESTERS,  # noqa: E402
+                           semester_of)
 from mdtext import inline_spans, to_dollar_math  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 VAULT = ROOT / "MathInMind"
 LANGUAGES = ("en", "ru", "es")
-CHAPTERS = (
-    "01-logic-sets-functions.md",
-    "02-real-numbers.md",
-    "03-sequences.md",
-    "04-numeric-series.md",
-    "05-limits-continuity.md",
-    "06-derivatives.md",
-    "07-taylor-convexity.md",
-    "08-riemann-integration.md",
-    "09-improper-integrals-applications.md",
-    "10-function-sequences-series.md",
-    "11-power-series.md",
-    "12-fourier-series.md",
-    "13-metric-spaces.md",
-    "14-several-variables.md",
-    "15-multivariable-differentiation.md",
-    "16-implicit-functions-extrema.md",
-    "17-multiple-integrals.md",
-    "18-vector-calculus.md",
-    "19-measure-theory.md",
-    "20-lebesgue-integration.md",
-    "21-lp-spaces.md",
-)
 SUPPORTING = ("index.md", "00-notation.md", "formula-sheet.md", "glossary.md", "term-index.md")
 EXPECTED = set(CHAPTERS + SUPPORTING)
 LECTURE_DIRECTORY = "lectures-2025-26"
-LAST_LECTURE = 64
-SEMESTER_ONE_LAST = 32
 LECTURE_BATCHES = {
     "31-38": tuple(f"lecture-{n}.md" for n in ("31-32", "33-34", "35", "36", "37-38")),
     "39-44": tuple(f"lecture-{n}.md" for n in ("39-40", "41-42", "43-44")),
@@ -53,7 +31,12 @@ LECTURE_BATCHES = {
     "55-60": tuple(f"lecture-{n}.md" for n in ("55-56", "57-58", "59-60")),
     "61-64": tuple(f"lecture-{n}.md" for n in ("61-62", "63-64")),
 }
-NEW_LECTURES = tuple(name for filenames in LECTURE_BATCHES.values() for name in filenames)
+# Batches transcribed from notebook photos and video frames (ocr/raw/pNNN.md)
+# instead of PDFs; their manifests map pages to lectures.
+NOTEBOOK_BATCHES: tuple[str, ...] = ()
+PAGE_ANCHOR_ANY = re.compile(r'<a id="(p\d{3})"></a>')
+PAGE_ANCHOR_LINE = re.compile(r'(?m)^<a id="(p\d{3})"></a>$')
+GENERATED_FRAGMENT = re.compile(r"^(?:sec|def|thm|lem|cor|rem|prop)-[\d-]+$|^p\d{3}$")
 # One level of brackets in a label is needed for interval notation in image alt text.
 LINK_RE = re.compile(r"(!?)\[(?:[^\[\]\n]|\[[^\[\]\n]*\])*\]\(([^)\n]+)\)")
 
@@ -178,6 +161,28 @@ def check_links(path: Path, text: str) -> None:
             continue
         if not resolved.exists():
             fail(path, f"broken local link: {raw}")
+    check_fragments(path, text)
+
+
+def check_fragments(path: Path, text: str) -> None:
+    """Links to generated anchors (sections, numbered statements, pages) must hit an <a id>."""
+    cache: dict[Path, str] = {}
+    for match in LINK_RE.finditer(without_fenced_code(text)):
+        raw = match.group(2).strip()
+        raw = raw[1:raw.index(">")] if raw.startswith("<") and ">" in raw else raw.split(maxsplit=1)[0]
+        raw = unquote(raw)
+        if raw.startswith(("http://", "https://", "mailto:", "obsidian:")) or "#" not in raw:
+            continue
+        target_part, _, fragment = raw.partition("#")
+        if not GENERATED_FRAGMENT.match(fragment):
+            continue
+        target = (path.parent / target_part).resolve() if target_part else path.resolve()
+        if target.suffix != ".md" or not target.is_file():
+            continue
+        if target not in cache:
+            cache[target] = target.read_text(encoding="utf-8")
+        if f'<a id="{fragment}"></a>' not in cache[target]:
+            fail(path, f"link to a missing anchor: {raw}")
 
 
 def metadata(text: str) -> dict[str, str]:
@@ -246,6 +251,8 @@ def numbered_statements(text: str) -> list[tuple[str, str]]:
         "Теорема": "theorem", "Theorem": "theorem", "Teorema": "theorem",
         "Лемма": "lemma", "Lemma": "lemma", "Lema": "lemma",
         "Следствие": "corollary", "Corollary": "corollary", "Corolario": "corollary",
+        "Утверждение": "proposition", "Proposition": "proposition", "Proposición": "proposition",
+        "Замечание": "remark", "Remark": "remark", "Observación": "remark",
     }
     pattern = r"\*\*(" + "|".join(kinds) + r")\s+(\d+\.\d+\.\d+)"
     lookup = {kind.casefold(): value for kind, value in kinds.items()}
@@ -297,8 +304,9 @@ def check_lecture_tree() -> list[Path]:
                  f"duplicate/extra={sorted((coverage - expected).elements())}")
         if f"0–{LAST_LECTURE}" not in index_text:
             fail(index, f"index must state current lecture coverage: 0–{LAST_LECTURE}")
-        if "0–32" not in index_text or "33–64" not in index_text:
-            fail(index, "index must state both semester ranges: 0–32 and 33–64")
+        for semester, first, last in SEMESTERS:
+            if f"{first}–{last}" not in index_text:
+                fail(index, f"index must state the range of semester {semester}: {first}–{last}")
         if not re.search(r"дублир|duplic", index_text, re.IGNORECASE):
             fail(index, "index must flag the duplicated semester-2 material")
         links = {(directory / raw).resolve() for _, raw in local_links(index_text)}
@@ -308,6 +316,17 @@ def check_lecture_tree() -> list[Path]:
     for lang, names in names_by_language.items():
         if names != reference:
             fail(VAULT / lang / LECTURE_DIRECTORY, "lecture filenames differ between languages")
+    registered = Counter(name for names in LECTURE_BATCHES.values() for name in names)
+    registered.update(notebook_lecture_files())
+    for name in sorted(reference):
+        match = re.fullmatch(r"lecture-([\d-]+)\.md", name)
+        try:
+            later = bool(match) and number_range(match.group(1))[0] >= 31
+        except ValueError:
+            continue
+        if later and registered[name] != 1:
+            fail(VAULT / LANGUAGES[0] / LECTURE_DIRECTORY / name,
+                 "lecture must belong to exactly one provenance batch")
     return checked
 
 
@@ -387,7 +406,7 @@ def check_new_lecture_batch(batch: str = "31-38") -> int:
         if filename not in expected_lectures:
             continue
         try:
-            expected_semester = 1 if max(number_range(source.get("lecture", ""))) <= SEMESTER_ONE_LAST else 2
+            expected_semester = semester_of(max(number_range(source.get("lecture", ""))))
         except (ValueError, TypeError) as exc:
             fail(manifest, f"invalid lecture metadata: {exc}")
             continue
@@ -478,6 +497,261 @@ def check_new_lecture_batch(batch: str = "31-38") -> int:
     return len(figures)
 
 
+def notebook_manifest(batch: str) -> dict | None:
+    path = VAULT / "assets" / LECTURE_DIRECTORY / f"figures-{batch}.json"
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def notebook_lecture_files() -> list[str]:
+    names: list[str] = []
+    for batch in NOTEBOOK_BATCHES:
+        lectures = (notebook_manifest(batch) or {}).get("lectures", {})
+        if isinstance(lectures, dict):
+            names.extend(lectures)
+    return names
+
+
+def raw_page_metadata() -> dict[str, dict[str, str]] | None:
+    raw = ROOT / "ocr" / "raw"
+    if not raw.is_dir():
+        return None
+    return {p.stem: metadata(p.read_text(encoding="utf-8")) for p in sorted(raw.glob("p*.md"))}
+
+
+def check_notebook_batch(batch: str) -> int:
+    """Check a batch transcribed from notebook pages and video frames (ocr/raw/pNNN.md).
+
+    Every original page belongs to exactly one lecture and is marked there by a
+    page anchor; technical duplicates are taken from the manifest and ocr/raw.
+    """
+    assets = VAULT / "assets" / LECTURE_DIRECTORY
+    manifest = assets / f"figures-{batch}.json"
+    try:
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+        sources, pages, lectures, figures = data["sources"], data["pages"], data["lectures"], data["figures"]
+        if not all(isinstance(x, dict) for x in (sources, pages, lectures)) or not isinstance(figures, list):
+            raise ValueError("sources, pages and lectures must be objects and figures a list")
+        if not all(isinstance(v, dict) for v in [*sources.values(), *pages.values(), *lectures.values(), *figures]):
+            raise ValueError("records must be objects")
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        fail(manifest, f"invalid/missing provenance manifest: {exc}")
+        return 0
+    for name, source in sources.items():
+        if source.get("kind") not in ("notebook", "video"):
+            fail(manifest, f"source {name}: kind must be notebook or video")
+        digest = source.get("sha256")
+        if digest is not None and not (isinstance(digest, str) and re.fullmatch(r"[0-9a-f]{64}", digest)):
+            fail(manifest, f"source {name}: invalid SHA-256")
+    for page, record in pages.items():
+        if not re.fullmatch(r"p\d{3}", page):
+            fail(manifest, f"invalid page id: {page}")
+        if record.get("source") not in sources:
+            fail(manifest, f"page {page}: unknown source")
+        if not re.fullmatch(r"[0-9a-f]{12}", str(record.get("sha256_prefix", ""))):
+            fail(manifest, f"page {page}: invalid sha256_prefix")
+        twin = record.get("duplicate_of")
+        if twin is not None and (twin not in pages or pages[twin].get("duplicate_of") is not None):
+            fail(manifest, f"page {page}: duplicate_of must name an original page")
+    raw = raw_page_metadata()
+    if raw is not None:
+        if set(raw) != set(pages):
+            fail(manifest, f"pages differ from ocr/raw: missing={sorted(set(raw) - set(pages))}, "
+                 f"extra={sorted(set(pages) - set(raw))}")
+        for page, meta in raw.items():
+            record = pages.get(page)
+            if record is None:
+                continue
+            if meta.get("original") != record.get("original"):
+                fail(manifest, f"page {page}: original name differs from ocr/raw")
+            if meta.get("duplicate_of") != record.get("duplicate_of"):
+                fail(manifest, f"page {page}: duplicate_of differs from ocr/raw")
+    originals = Counter(p for p, r in pages.items() if r.get("duplicate_of") is None)
+    cited = Counter(p for record in lectures.values() for p in record.get("pages", []))
+    if cited != originals:
+        fail(manifest, "every original page must belong to exactly one lecture; "
+             f"missing={sorted((originals - cited).elements())}, extra={sorted((cited - originals).elements())}")
+    figure_by_file = {}
+    for figure in figures:
+        name = str(figure.get("file", ""))
+        match = re.fullmatch(r"lec(\d+(?:-\d+)*)-(p\d{3})-[a-z0-9-]+\.jpg", name)
+        lecture_file = figure.get("lecture_file")
+        if (not match or lecture_file not in lectures or f"lecture-{match.group(1)}.md" != lecture_file
+                or match.group(2) != figure.get("page")
+                or figure.get("page") not in lectures[lecture_file].get("pages", [])):
+            fail(manifest, f"figure {name!r}: file name, page and lecture must agree")
+            continue
+        if name in figure_by_file:
+            fail(manifest, f"duplicate figure record: {name}")
+        figure_by_file[name] = figure
+        if any(type(figure.get(k)) is not int or figure[k] <= 0 for k in ("width", "height")):
+            fail(manifest, f"invalid output dimensions for {name}")
+        if figure.get("reviewed_individually") is not True:
+            fail(manifest, f"individual visual review not recorded for {name}")
+        image = assets / name
+        if not image.is_file():
+            fail(image, "missing figure")
+            continue
+        content = image.read_bytes()
+        if not content.startswith(b"\xff\xd8\xff") or not content.endswith(b"\xff\xd9"):
+            fail(image, "not a complete JPEG")
+        digest = hashlib.sha256(content).hexdigest()
+        if digest != figure.get("sha256"):
+            fail(image, "JPEG checksum differs from the provenance manifest")
+        origin = ROOT / str(figure.get("origin", ""))
+        if not figure.get("origin") or not origin.is_file():
+            # Scans p022+ are not kept in Git; a crop of them must record its box.
+            if figure.get("crop_box") is None:
+                fail(manifest, f"origin of {name} is missing")
+        elif figure.get("crop_box") is None and hashlib.sha256(origin.read_bytes()).hexdigest() != digest:
+            fail(manifest, f"{name} is not a byte copy of its origin")
+    referenced = set()
+    labels = ("translated display formulas or inline-math inventory differ",
+              "numbered statement order/types differ between translations",
+              "figure references/order differ between translations",
+              "page anchors differ between translations",
+              "open-issue markers differ between translations")
+    for filename, record in lectures.items():
+        try:
+            numbers = number_range(str(record.get("lecture", "")))
+        except ValueError as exc:
+            fail(manifest, f"{filename}: {exc}")
+            continue
+        if filename != f"lecture-{record['lecture']}.md":
+            fail(manifest, f"{filename}: lecture number does not match the file name")
+        own_pages = list(record.get("pages", []))
+        expected = {"lecture": record["lecture"], "semester": str(semester_of(max(numbers))),
+                    "source_pages": ", ".join(own_pages)}
+        if record.get("date"):
+            expected["date"] = record["date"]
+        if record.get("course_chapter") is not None:
+            expected["course_chapter"] = str(record["course_chapter"])
+        reference = None
+        for lang in LANGUAGES:
+            path = VAULT / lang / LECTURE_DIRECTORY / filename
+            if not path.is_file():
+                fail(path, "missing lecture translation")
+                continue
+            text = path.read_text(encoding="utf-8")
+            meta = metadata(text)
+            for key, value in expected.items():
+                if meta.get(key) != value:
+                    fail(path, f"metadata {key} must be {value!r}")
+            anchors = PAGE_ANCHOR_LINE.findall(text)
+            if PAGE_ANCHOR_ANY.findall(text) != anchors:
+                fail(path, "page anchors must stand alone on their own line")
+            if anchors != own_pages:
+                fail(path, "page anchors must list the lecture's pages exactly once, in order")
+            if re.search(r"(?m)^\s*>\s*\[!", text):
+                fail(path, "Obsidian callouts are not allowed in the GitHub view")
+            images = [(path.parent / raw).resolve() for is_image, raw in local_links(text) if is_image]
+            for image in images:
+                figure = figure_by_file.get(image.name)
+                if image.parent != assets.resolve() or not figure or figure.get("lecture_file") != filename:
+                    fail(path, f"unregistered or misattributed figure: {image.name}")
+                else:
+                    referenced.add(image.name)
+            current = (math_tokens(text), numbered_statements(text), [i.name for i in images], anchors,
+                       ocr_issues.ANY_MARKER_RE.findall(text))
+            if reference is None:
+                reference = current
+                continue
+            for got, want, message in zip(current, reference, labels):
+                if got != want:
+                    fail(path, message)
+    if referenced != set(figure_by_file):
+        fail(manifest, f"unreferenced figures: {sorted(set(figure_by_file) - referenced)}")
+    return len(figure_by_file)
+
+
+SECTION_HEADING = re.compile(r"(?m)^## §(\d+)\.(\d+)\b")
+CLASSIC_SECTION_HEADING = re.compile(r"(?m)^## \d+\.\d+\s")
+CORE_KINDS = {"definition", "theorem", "lemma", "corollary"}
+
+
+def lecture_statement_inventory(lang: str) -> set[tuple[str, str]]:
+    result: set[tuple[str, str]] = set()
+    for path in (VAULT / lang / LECTURE_DIRECTORY).glob("lecture-*.md"):
+        result.update(numbered_statements(path.read_text(encoding="utf-8")))
+    return result
+
+
+def check_lecture_chapters() -> None:
+    """Chapters 22+ follow the lecturer's chapters: §-headings and the lectures' statement numbers."""
+    for chapter in LECTURE_CHAPTERS:
+        reference = None
+        k = chapter.lecturer_chapter
+        first, last = chapter.sections
+        for lang in LANGUAGES:
+            path = VAULT / lang / chapter.filename
+            if not path.is_file():
+                continue  # reported as a missing file
+            text = path.read_text(encoding="utf-8")
+            meta = metadata(text)
+            for key, value in (("numbering", "lecture"), ("lecturer_chapter", str(k))):
+                if meta.get(key) != value:
+                    fail(path, f"metadata {key} must be {value!r}")
+            sections = [(int(a), int(b)) for a, b in SECTION_HEADING.findall(text)]
+            if sections != [(k, s) for s in range(first, last + 1)]:
+                fail(path, f"expected headings ## §{k}.{first} … ## §{k}.{last}, once each and in order; "
+                     f"found {sections}")
+            if CLASSIC_SECTION_HEADING.search(text):
+                fail(path, "lecture-numbered chapters use ## §K.s headings, not ## N.M")
+            statements = numbered_statements(text)
+            counts = Counter(statements)
+            for item, n in counts.items():
+                if n > 1:
+                    fail(path, f"statement {item} is labelled {n} times")
+            for kind, number in statements:
+                c, s, _ = (int(x) for x in number.split("."))
+                if c != k or not first <= s <= last:
+                    fail(path, f"{kind} {number} lies outside §{k}.{first}–§{k}.{last}")
+            lectures = lecture_statement_inventory(lang)
+            missing = sorted((kind, n) for kind, n in lectures
+                             if kind in CORE_KINDS and int(n.split(".")[0]) == k
+                             and first <= int(n.split(".")[1]) <= last and (kind, n) not in counts)
+            if missing:
+                fail(path, f"statements of the lectures missing from the chapter: {missing}")
+            unknown = sorted(set(statements) - lectures)
+            if unknown:
+                fail(path, f"statements not found in the lectures: {unknown}")
+            current = (sections, statements, math_tokens(text))
+            if reference is None:
+                reference = current
+            elif current != reference:
+                fail(path, "sections, statements or formulas differ from the other languages")
+
+
+def check_ocr_markers() -> list[Path]:
+    """Open transcription issues may stay visible only in the lectures, for a manual fix."""
+    open_rows = ocr_issues.open_ids(ROOT)
+    for path in sorted(VAULT.rglob("*.md")):
+        text = path.read_text(encoding="utf-8")
+        if "⟦" not in text:
+            continue
+        lecture = path.parent.name == LECTURE_DIRECTORY and path.name.startswith("lecture-")
+        scan = text if lecture else without_inline_code(without_fenced_code(text))
+        for number, line in enumerate(scan.split("\n"), 1):
+            for match in ocr_issues.ANY_MARKER_RE.finditer(line):
+                marker = match.group(0)
+                if not lecture:
+                    fail(path, f"line {number}: issue marker {marker} outside the lecture notes")
+                    continue
+                ident = ocr_issues.MARKER_RE.fullmatch(marker)
+                if not ident:
+                    fail(path, f"line {number}: malformed issue marker {marker}")
+                elif ident.group(1) not in open_rows:
+                    fail(path, f"line {number}: {marker} is not an open row of ocr/ISSUES.md")
+                elif any(a <= match.start() < b for a, b, kind in inline_spans(line) if kind != "code"):
+                    fail(path, f"line {number}: issue marker inside a formula")
+    others = [ROOT / "ISSUES.md", ROOT / "ocr" / "ISSUES.md", ROOT / "ocr" / "RESOLVED.md",
+              ROOT / "ocr" / "MANIFEST.md", ROOT / "ocr" / "SPLIT_PROPOSAL.md"]
+    return [path for path in others if path.is_file()]
+
+
 def main() -> int:
     errors.clear()
     checked_paths: list[Path] = []
@@ -511,8 +785,14 @@ def main() -> int:
 
     checked_paths.extend(check_lecture_tree())
     figure_count = sum(check_new_lecture_batch(batch) for batch in LECTURE_BATCHES)
+    figure_count += sum(check_notebook_batch(batch) for batch in NOTEBOOK_BATCHES)
+    check_lecture_chapters()
+    for path in check_ocr_markers():
+        checked_paths.append(path)
+        check_links(path, path.read_text(encoding="utf-8"))
     # Check entry points and the provenance guide for every registered batch.
-    guides = [VAULT / "assets" / LECTURE_DIRECTORY / f"provenance-{batch}.md" for batch in LECTURE_BATCHES]
+    guides = [VAULT / "assets" / LECTURE_DIRECTORY / f"provenance-{batch}.md"
+              for batch in (*LECTURE_BATCHES, *NOTEBOOK_BATCHES)]
     for path in (ROOT / "README.md", VAULT / "README.md", VAULT / "ru/lectures/index.md", *guides):
         if path.is_file():
             checked_paths.append(path)
@@ -547,8 +827,13 @@ def main() -> int:
     print(f"  Languages: {', '.join(LANGUAGES)}")
     print(f"  Core chapters: {len(CHAPTERS)} per language")
     print(f"  2025/26 lecture coverage: 0–{LAST_LECTURE} in all languages")
-    print(f"  Semesters: 0–32 / 33–64; duplicated 33–{LAST_LECTURE} cross-references checked")
+    print("  Semesters: " + " / ".join(f"{first}–{last}" for _, first, last in SEMESTERS)
+          + "; duplicated semester-2 cross-references checked")
     print(f"  Illustrated batches: {', '.join(LECTURE_BATCHES)}; PDF/slide headings, metadata and translation parity checked")
+    if NOTEBOOK_BATCHES:
+        print(f"  Notebook batches: {', '.join(NOTEBOOK_BATCHES)}; page anchors, open-issue markers and parity checked")
+    if LECTURE_CHAPTERS:
+        print(f"  Lecture-numbered chapters: {', '.join(str(c.number) for c in LECTURE_CHAPTERS)}")
     print(f"  Shared JPEG crops with provenance and matching checksums: {figure_count}")
     print(f"  Markdown files checked: {len(checked_paths)}")
     print(f"  Mermaid diagrams checked: {mermaid_count}")
