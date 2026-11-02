@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 29–30 — Fórmula de Taylor–Lagrange, monotonía y extremos"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 29-30
 date: 2025-12-11
 source: "ma25_26-lectures_29-30_notes.pdf"

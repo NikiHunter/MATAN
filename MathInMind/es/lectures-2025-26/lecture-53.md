@@ -1,7 +1,7 @@
 ---
 title: "Lección 53 — longitud de caminos y trabajo"
 lang: es
-course: "Математический анализ, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 53
 semester: 2
 date: 2026-04-23

@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 22–23 — Derivada y diferenciabilidad, tangente, reglas de derivación"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 22-23
 date: 2025-11-13
 source: "ma25_26_lectures_22-23_notes.pdf"

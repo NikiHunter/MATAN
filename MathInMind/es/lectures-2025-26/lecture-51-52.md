@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 51–52 — área, volumen, caminos y aplicaciones de la integral"
 lang: es
-course: "Математический анализ, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 51-52
 semester: 2
 date: 2026-04-16

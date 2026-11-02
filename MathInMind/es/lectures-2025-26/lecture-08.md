@@ -1,7 +1,7 @@
 ---
 title: "Lección 8 — Límite de una sucesión: definición, unicidad, acotación, paso al límite en desigualdades, teorema del emparedado"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 8
 source: "ма25_26_лекция_8_notes.pdf"
 ---

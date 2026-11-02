@@ -1,7 +1,7 @@
 ---
 title: "Lección 3 — Conjuntos a lo sumo numerables y el continuo"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 3
 date: 2025-09-11
 source: "ма25_26_лекция_3_notes.pdf"

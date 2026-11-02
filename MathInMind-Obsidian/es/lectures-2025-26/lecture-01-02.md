@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 1–2 — Aplicaciones, equipotencia, conjuntos numerables"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: "1–2"
 date: 2025-09-04
 source: "ma25_26-lectures_1-2_notes.pdf"

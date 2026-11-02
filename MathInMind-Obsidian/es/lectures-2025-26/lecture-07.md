@@ -1,7 +1,7 @@
 ---
 title: "Lección 7 — Máximo y mínimo de un conjunto finito, consecuencias en ℤ y ℕ, densidad de ℚ en ℝ"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 7
 source: "ma25_26_лекция_7_notes.pdf"
 aliases: ["Lección 7 (es)"]

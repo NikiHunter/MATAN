@@ -1,7 +1,7 @@
 ---
 title: "Lección 15 — Conservación del signo, aritmética de límites de funciones, composición, límites laterales, funciones monótonas, criterio de Cauchy para funciones"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 15
 date: 2025-10-23
 source: "ма25_26_лекция_15_notes_pdf.pdf"

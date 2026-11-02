@@ -1,7 +1,7 @@
 ---
 title: "Lección 14 — Puntos de acumulación y puntos aislados, límite de una función por Cauchy y por Heine, unicidad y acotación local"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 14
 date: 2025-10-16
 source: "ма25_26_лекция_14_notes.pdf"

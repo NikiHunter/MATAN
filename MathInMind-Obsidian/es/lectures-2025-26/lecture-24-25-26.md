@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 24–26 — Función inversa y diferencial, teoremas del valor medio, regla de L'Hôpital"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 24-25-26
 date: 2025-11-20
 source: "ma25_26-lectures_24-25-26_notes.pdf"

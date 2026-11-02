@@ -1,7 +1,7 @@
 ---
 title: "Лекции 61–62: производная по вектору, матрица Якоби и правила дифференцирования"
 lang: ru
-course: "Математический анализ 2025/26"
+course: "Математический анализ, 2025/26"
 lecture: 61-62
 semester: 2
 date: 2026-05-21
@@ -12,6 +12,8 @@ aliases: ["Лекции 61–62 (ru)"]
 tags: [mathinmind/ru, mathinmind/lecture]
 ---
 # Лекции 61–62 — производная по вектору, матрица Якоби и правила дифференцирования
+
+[[ru/lectures-2025-26/lecture-59-60|← Лекции 59–60]] · [[ru/lectures-2025-26/index|Указатель лекций]] · [[ru/lectures-2025-26/lecture-63-64|Лекции 63–64 →]] · [[ru/term-index|Термины и теоремы]] · [[en/lectures-2025-26/lecture-61-62|English]] · [[es/lectures-2025-26/lecture-61-62|Español]]
 
 > [!info] Источник и нумерация
 > Расшифровка подготовлена только по приложенному PDF `ma25_26-lectures_61-62_notes.pdf.txt`; исходная папка не просматривалась. Разделы идут в порядке физических страниц PDF. Номера «печатных слайдов» — номера в нижнем колонтитуле 1–25; они отделены от страниц PDF 1–40. Для рукописных страниц номер слайда не приписывается. Текст печатных слайдов сверялся со слоем PDF и изображениями страниц; рукописные доказательства, вычисления и пометки читались по рендерам. См. [[assets/lectures-2025-26/provenance-61-64|инвентарь страниц, хеш источника и происхождение иллюстраций]] и [машиночитаемый манифест](../../assets/lectures-2025-26/figures-61-64.json).
@@ -132,11 +134,11 @@ $$
 Если $f:E\to\mathbb R^m$ дифференцируемо во внутренней точке $a\in E\subset\mathbb R^n$, то
 
 $$
-d_af(h)=\sum_{k=1}^{n}\frac{\partial f}{\partial x_k}(a)h_k\quad\text{for all }h\in\mathbb R^n; \tag{6.1.5}
+d_af(h)=\sum_{k=1}^{n}\frac{\partial f}{\partial x_k}(a)h_k\quad\text{при всех }h\in\mathbb R^n; \tag{6.1.5}
 $$
 
 $$
-\frac{\partial f}{\partial e}(a)=\sum_{k=1}^{n}\frac{\partial f}{\partial x_k}(a)e_k\quad\text{for all }e\in\mathbb R^n\setminus\{0\}. \tag{6.1.6}
+\frac{\partial f}{\partial e}(a)=\sum_{k=1}^{n}\frac{\partial f}{\partial x_k}(a)e_k\quad\text{при всех }e\in\mathbb R^n\setminus\{0\}. \tag{6.1.6}
 $$
 
 ## Рукописная страница (стр. PDF 13). Доказательство теоремы 6.1.2
@@ -310,7 +312,7 @@ $$
 Третий пример:
 
 $$
-f(x,y)=\begin{cases}1,&x>0\text{ and }y=x^2,\\0,&\text{otherwise}.\end{cases}
+f(x,y)=\begin{cases}1,&x>0\text{ и }y=x^2,\\0,&\text{иначе}.\end{cases}
 $$
 
 ## Рукописная страница (стр. PDF 29). Разрывная функция со всеми производными по направлениям
@@ -318,7 +320,7 @@ $$
 Для третьего примера $f(1/k,1/k^2)=1$, хотя $(1/k,1/k^2)\to(0,0)$ и $f(0,0)=0$; следовательно, $f$ разрывна в начале координат. При любом фиксированном $e=(a,b)$ прямая $(ta,tb)$ пересекает кривую $y=x^2$, $x>0$ не более чем при одном ненулевом параметре $t$ в окрестности нуля. Поэтому для всех достаточно малых ненулевых $t$ имеем $f(te)=0$, и
 
 $$
-\frac{\partial f}{\partial e}(0,0)=0\qquad\text{for every }e\in\mathbb R^2\setminus\{0\}.
+\frac{\partial f}{\partial e}(0,0)=0\qquad\text{для всех }e\in\mathbb R^2\setminus\{0\}.
 $$
 
 ![Рукописный пример разрывной функции с производными по всем направлениям](../../assets/lectures-2025-26/lec61-62-p29-zero-directional-derivatives-example.jpg)
@@ -457,3 +459,7 @@ $$
 ## Перекрёстные ссылки
 
 Эта расшифровка дублирует темы следующих разделов русского тематического регистра (материал семестра 2, лекции 33–64): [[ru/lectures/14-differentiability-6-1|§6.1 — дифференцируемость, матрица Якоби и градиент]], [[ru/lectures/15-differentiation-rules-6-2|§6.2 — правила дифференцирования]] и [[ru/lectures/16-continuous-differentiability-6-3|§6.3 — непрерывная дифференцируемость]]. [[ru/lectures/index|Указатель регистра]].
+
+---
+
+[[ru/lectures-2025-26/lecture-59-60|← Лекции 59–60]] · [[ru/lectures-2025-26/index|Указатель лекций]] · [[ru/lectures-2025-26/lecture-63-64|Лекции 63–64 →]] · [[ru/term-index|Термины и теоремы]] · [[en/lectures-2025-26/lecture-61-62|English]] · [[es/lectures-2025-26/lecture-61-62|Español]]

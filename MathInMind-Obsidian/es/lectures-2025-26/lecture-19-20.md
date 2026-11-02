@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 19–20 — Funciones monótonas y función inversa, límites notables"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 19-20
 date: 2025-11-06
 source: "ma25_26-lectures_19-20_notes.pdf"

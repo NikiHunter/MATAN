@@ -1,7 +1,7 @@
 ---
 title: "Lectures 61–62: Directional derivatives, Jacobians and differentiation rules"
 lang: en
-course: "Mathematical Analysis 2025/26"
+course: "Mathematical Analysis, 2025/26"
 lecture: 61-62
 semester: 2
 date: 2026-05-21
@@ -12,6 +12,8 @@ aliases: ["Lectures 61–62 (en)"]
 tags: [mathinmind/en, mathinmind/lecture]
 ---
 # Lectures 61–62 — Directional derivatives, Jacobians and differentiation rules
+
+[[en/lectures-2025-26/lecture-59-60|← Lectures 59–60]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/lectures-2025-26/lecture-63-64|Lectures 63–64 →]] · [[en/term-index|Terms & theorems]] · [[ru/lectures-2025-26/lecture-61-62|Русский]] · [[es/lectures-2025-26/lecture-61-62|Español]]
 
 > [!info] Source and numbering
 > Transcribed solely from the attached PDF `ma25_26-lectures_61-62_notes.pdf.txt`; the source archive was not consulted. Section headings follow the physical PDF pages, in order. “Printed slide” numbers are the footer numbers 1–25 and are kept distinct from PDF pages 1–40; handwritten pages have no printed-slide number. The typed slide text was checked against its text layer and page image; handwritten proofs, calculations and annotations were read from the rendered pages. See the [[assets/lectures-2025-26/provenance-61-64|page inventory, source hash and crop provenance]] and [machine-readable manifest](../../assets/lectures-2025-26/figures-61-64.json).
@@ -457,3 +459,7 @@ For one-variable functions, differentiability at a point is equivalent to existe
 ## Cross-references
 
 This transcription overlaps the following Russian thematic sections (semester-2 material, lectures 33–64): [[ru/lectures/14-differentiability-6-1|§6.1 — differentiability, Jacobian and gradient]], [[ru/lectures/15-differentiation-rules-6-2|§6.2 — differentiation rules]], and [[ru/lectures/16-continuous-differentiability-6-3|§6.3 — continuous differentiability]]. The existing register index is [[ru/lectures/index|here]].
+
+---
+
+[[en/lectures-2025-26/lecture-59-60|← Lectures 59–60]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/lectures-2025-26/lecture-63-64|Lectures 63–64 →]] · [[en/term-index|Terms & theorems]] · [[ru/lectures-2025-26/lecture-61-62|Русский]] · [[es/lectures-2025-26/lecture-61-62|Español]]

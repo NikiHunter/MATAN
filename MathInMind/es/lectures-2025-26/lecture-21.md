@@ -1,7 +1,7 @@
 ---
 title: "Lección 21 — Comparación de funciones: O, o, equivalencia; asíntotas"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 21
 date: 2025-11-13
 source: "ma25_26_lecture_21_notes.pdf"

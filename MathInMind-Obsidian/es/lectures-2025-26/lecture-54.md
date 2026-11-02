@@ -1,7 +1,7 @@
 ---
 title: "Lección 54 — funciones de varias variables y sucesiones vectoriales"
 lang: es
-course: "Математический анализ, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 54
 semester: 2
 date: 2026-04-23

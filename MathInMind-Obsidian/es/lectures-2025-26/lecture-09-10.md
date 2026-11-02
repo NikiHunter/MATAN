@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 9–10 — Sucesiones infinitésimas e infinitamente grandes, aritmética de límites, indeterminaciones"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: "9–10"
 date: 2025-10-02
 source: "ma25_26-lectures_9-10_notes.pdf"

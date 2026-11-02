@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 17–18 — Propiedades de las funciones continuas: Weierstrass, continuidad uniforme, Cantor, Bolzano–Cauchy"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 17-18
 date: 2025-10-30
 source: "ma25_26-lectures_17-18_notes.pdf"

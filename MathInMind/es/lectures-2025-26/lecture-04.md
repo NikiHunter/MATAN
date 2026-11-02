@@ -1,7 +1,7 @@
 ---
 title: "Lección 4 — Axiomas de los números reales"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 4
 date: 2025-09-11
 source: "ма25_26_лекция_4_notes.pdf"

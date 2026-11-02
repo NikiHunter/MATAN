@@ -191,7 +191,7 @@ $$
 
 
 $$
-\gamma(t_1)=\gamma(t_2)\Longrightarrow t_1=t_2\text{ or }\{t_1,t_2\}=\{a,b\}
+\gamma(t_1)=\gamma(t_2)\Longrightarrow t_1=t_2\text{ или }\{t_1,t_2\}=\{a,b\}
 $$
 
 ## Печатный слайд 15 (стр. PDF 16) — Обратный путь и эквивалентность

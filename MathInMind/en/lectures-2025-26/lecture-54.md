@@ -1,7 +1,7 @@
 ---
 title: "Lecture 54 — multivariable functions and vector sequences"
 lang: en
-course: "Математический анализ, 2025/26"
+course: "Mathematical Analysis, 2025/26"
 lecture: 54
 semester: 2
 date: 2026-04-23

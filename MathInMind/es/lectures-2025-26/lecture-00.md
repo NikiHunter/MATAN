@@ -1,7 +1,7 @@
 ---
 title: "Lección 0 — Conjuntos y lógica matemática"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 0
 date: 2025-09-01
 source: "МА2526_лекция_0.pdf"

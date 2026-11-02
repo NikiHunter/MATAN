@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 5–6 — Intervalos, axiomas de Arquímedes y de Cantor, inducción, binomio de Newton, sup e inf"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: "5–6"
 source: "ma25_26-lectures_5-6_notes.pdf"
 ---

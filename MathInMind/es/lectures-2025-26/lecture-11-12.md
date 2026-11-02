@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 11–12 — Cotas exactas, sucesiones monótonas, el número e, subsucesiones, teorema de Bolzano–Weierstrass"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: "11–12"
 date: 2025-10-09
 source: "ma25_26-lectures_11-12_notes.pdf"

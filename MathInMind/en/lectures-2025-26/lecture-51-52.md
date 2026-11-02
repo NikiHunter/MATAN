@@ -1,7 +1,7 @@
 ---
 title: "Lectures 51–52 — area, volume, paths and integral applications"
 lang: en
-course: "Математический анализ, 2025/26"
+course: "Mathematical Analysis, 2025/26"
 lecture: 51-52
 semester: 2
 date: 2026-04-16

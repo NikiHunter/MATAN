@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 61–62: derivadas direccionales, Jacobiano y reglas de derivación"
 lang: es
-course: "Análisis matemático 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 61-62
 semester: 2
 date: 2026-05-21
@@ -12,6 +12,8 @@ aliases: ["Lecciones 61–62 (es)"]
 tags: [mathinmind/es, mathinmind/lecture]
 ---
 # Lecciones 61–62 — derivadas direccionales, Jacobiano y reglas de derivación
+
+[[es/lectures-2025-26/lecture-59-60|← Lecciones 59–60]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/lectures-2025-26/lecture-63-64|Lecciones 63–64 →]] · [[es/term-index|Términos y teoremas]] · [[ru/lectures-2025-26/lecture-61-62|Русский]] · [[en/lectures-2025-26/lecture-61-62|English]]
 
 > [!info] Fuente y numeración
 > Transcripción elaborada exclusivamente a partir del PDF adjunto `ma25_26-lectures_61-62_notes.pdf.txt`; no se consultó la carpeta de fuentes. Las secciones siguen el orden de las páginas físicas del PDF. Los números de «diapositiva impresa» son los pies de página 1–25 y se distinguen de las páginas PDF 1–40; las páginas manuscritas no reciben número de diapositiva. El texto impreso se cotejó con la capa de texto y las imágenes; las demostraciones, cálculos y anotaciones manuscritos se leyeron en las páginas renderizadas. Véanse el [[assets/lectures-2025-26/provenance-61-64|inventario de páginas, hash de la fuente y procedencia de recortes]] y el [manifiesto legible por máquina](../../assets/lectures-2025-26/figures-61-64.json).
@@ -457,3 +459,7 @@ Para funciones de una variable, diferenciabilidad en un punto equivale a existen
 ## Referencias cruzadas
 
 Esta transcripción coincide temáticamente con las siguientes secciones del registro ruso (material del semestre 2, lecciones 33–64): [[ru/lectures/14-differentiability-6-1|§6.1 — diferenciabilidad, Jacobiano y gradiente]], [[ru/lectures/15-differentiation-rules-6-2|§6.2 — reglas de derivación]] y [[ru/lectures/16-continuous-differentiability-6-3|§6.3 — diferenciabilidad continua]]. El [[ru/lectures/index|índice del registro]] ofrece la navegación general.
+
+---
+
+[[es/lectures-2025-26/lecture-59-60|← Lecciones 59–60]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/lectures-2025-26/lecture-63-64|Lecciones 63–64 →]] · [[es/term-index|Términos y teoremas]] · [[ru/lectures-2025-26/lecture-61-62|Русский]] · [[en/lectures-2025-26/lecture-61-62|English]]

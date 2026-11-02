@@ -1,7 +1,7 @@
 ---
 title: "Lecciones 27–28 — Derivadas de orden superior, fórmula de Taylor–Peano"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 27-28
 date: 2025-12-04
 source: "ma25_26-lectures_27-28_notes.pdf"

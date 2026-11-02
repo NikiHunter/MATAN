@@ -1,7 +1,7 @@
 ---
 title: "Lección 13 — Límites superior e inferior, sucesiones fundamentales, criterio de Cauchy"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 13
 date: 2025-10-16
 source: "ma25_26_лекция_13_notes.pdf"

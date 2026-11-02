@@ -1,7 +1,7 @@
 ---
 title: "Lección 16 — Continuidad en un punto, puntos de discontinuidad, funciones de Dirichlet y de Riemann"
 lang: es
-course: "Análisis Matemático, 2025/26"
+course: "Análisis matemático, 2025/26"
 lecture: 16
 date: 2025-10-23
 source: "ма25_26_лекция_16_notes.pdf"
