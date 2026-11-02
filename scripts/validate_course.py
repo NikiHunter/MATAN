@@ -14,7 +14,7 @@ from urllib.parse import unquote
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ocr_issues  # noqa: E402
 from course_layout import (CHAPTERS, LAST_LECTURE, LECTURE_CHAPTERS, SEMESTERS,  # noqa: E402
-                           semester_of)
+                           TRANSLATED_UP_TO, semester_of)
 from mdtext import inline_spans, to_dollar_math  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -298,13 +298,14 @@ def check_lecture_tree() -> list[Path]:
                 fail(path, "lecture is unexpectedly short; full notes are required")
             if index_text.count(f"]({path.name})") != 1:
                 fail(index, f"must link to {path.name} exactly once")
-        expected = Counter(range(LAST_LECTURE + 1))
+        covered = LAST_LECTURE if lang == "ru" else TRANSLATED_UP_TO
+        expected = Counter(range(covered + 1))
         if coverage != expected:
-            fail(directory, f"lecture coverage must be exactly 0–{LAST_LECTURE}; "
+            fail(directory, f"lecture coverage must be exactly 0–{covered}; "
                  f"missing={sorted((expected - coverage).elements())}, "
                  f"duplicate/extra={sorted((coverage - expected).elements())}")
-        if f"0–{LAST_LECTURE}" not in index_text:
-            fail(index, f"index must state current lecture coverage: 0–{LAST_LECTURE}")
+        if f"0–{covered}" not in index_text:
+            fail(index, f"index must state current lecture coverage: 0–{covered}")
         for semester, first, last in SEMESTERS:
             if f"{first}–{last}" not in index_text:
                 fail(index, f"index must state the range of semester {semester}: {first}–{last}")
@@ -313,10 +314,15 @@ def check_lecture_tree() -> list[Path]:
         links = {(directory / raw).resolve() for _, raw in local_links(index_text)}
         if (VAULT / "ru/lectures/index.md").resolve() not in links:
             fail(index, "index must link to the existing semester-2 folder")
-    reference = names_by_language[LANGUAGES[0]]
+    def translated(name: str) -> bool:
+        match = re.fullmatch(r"lecture-([\d-]+)\.md", name)
+        return not match or int(match.group(1).split("-")[0]) <= TRANSLATED_UP_TO
+
+    reference = {n for n in names_by_language["ru"] if translated(n)}
     for lang, names in names_by_language.items():
-        if names != reference:
+        if {n for n in names if translated(n)} != reference or (lang != "ru" and names != reference):
             fail(VAULT / lang / LECTURE_DIRECTORY, "lecture filenames differ between languages")
+    reference = names_by_language["ru"]
     registered = Counter(name for names in LECTURE_BATCHES.values() for name in names)
     registered.update(notebook_lecture_files())
     for name in sorted(reference):
@@ -631,7 +637,8 @@ def check_notebook_batch(batch: str) -> int:
         if record.get("course_chapter") is not None:
             expected["course_chapter"] = str(record["course_chapter"])
         reference = None
-        for lang in LANGUAGES:
+        pending = min(numbers) > TRANSLATED_UP_TO
+        for lang in (("ru",) if pending else LANGUAGES):
             path = VAULT / lang / LECTURE_DIRECTORY / filename
             if not path.is_file():
                 fail(path, "missing lecture translation")
