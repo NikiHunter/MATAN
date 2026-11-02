@@ -254,7 +254,8 @@ def numbered_statements(text: str) -> list[tuple[str, str]]:
         "Утверждение": "proposition", "Proposition": "proposition", "Proposición": "proposition",
         "Замечание": "remark", "Remark": "remark", "Observación": "remark",
     }
-    pattern = r"\*\*(" + "|".join(kinds) + r")\s+(\d+\.\d+\.\d+)"
+    # «Определение 8.1.4а» (a letter-suffixed item) is not a separately numbered statement.
+    pattern = r"\*\*(" + "|".join(kinds) + r")\s+(\d+\.\d+\.\d+)(?![\w.]*\w)"
     lookup = {kind.casefold(): value for kind, value in kinds.items()}
     return [(lookup[kind.casefold()], number)
             for kind, number in re.findall(pattern, text, re.IGNORECASE)]
