@@ -605,3 +605,8 @@ generated: true
 | [Определение 9.1.1](lectures-2025-26/lecture-75-76.md#def-9-1-1) | Интеграл, зависящий от параметра, — это функция вида | [75–76](lectures-2025-26/lecture-75-76.md) | — |
 | [Теорема 9.1.1](lectures-2025-26/lecture-75-76.md#thm-9-1-1) | Пусть $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$ и $`f=f(x,y)\in C(P)`$. … | [75–76](lectures-2025-26/lecture-75-76.md) | — |
 | [Теорема 9.1.2](lectures-2025-26/lecture-75-76.md#thm-9-1-2) | Пусть $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$, $`f=f(x,y)\in C(P)`$ и … | [75–76](lectures-2025-26/lecture-75-76.md) | — |
+| [Теорема 9.1.3](lectures-2025-26/lecture-77-78.md#thm-9-1-3) | Пусть $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$ и $`f=f(x,y)\in C(P)`$. … | [77–78](lectures-2025-26/lecture-77-78.md) | — |
+| [Определение 9.2.1](lectures-2025-26/lecture-77-78.md#def-9-2-1) | Будем говорить, что $`I(y)`$ сходится равномерно относительно $`y\in Y`$ (равномерно на … | [77–78](lectures-2025-26/lecture-77-78.md) | — |
+| [Теорема 9.2.1](lectures-2025-26/lecture-77-78.md#thm-9-2-1) | Пусть функция $`f`$ непрерывна на $`[a,b)\times[c,d]`$, $`y_0\in[c,d]`$, и несобственный … | [77–78](lectures-2025-26/lecture-77-78.md) | — |
+| [Теорема 9.2.2](lectures-2025-26/lecture-77-78.md#thm-9-2-2) | Пусть выполнены следующие условия: | [77–78](lectures-2025-26/lecture-77-78.md) | — |
+| [Теорема 9.2.3](lectures-2025-26/lecture-77-78.md#thm-9-2-3) | Пусть выполнены следующие условия: | [77–78](lectures-2025-26/lecture-77-78.md) | — |
