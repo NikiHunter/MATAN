@@ -56,14 +56,16 @@ Rules:
 
 - Frontmatter: `title: "Билет N. <Тема>"`, `lang: ru`, `ticket: N`, `lecture: "AA-BB"`,
   `lecture_section: "K.s"`. Forecast tickets (71–95) add `forecast: true`, `reference_numbering: "2024"`.
-- Nav line: `[Все билеты](../EXAM_SEM3.md) · [Лекции AA–BB](../../lectures-2025-26/lecture-AA-BB.md) · [← Билет N-1](…) · [Билет N+1 →](…)`.
+- Nav line (as in tickets 02–10): `[← Билет N-1](…) · [Все билеты](../EXAM_SEM3.md) · [Лекции AA–BB](../../lectures-2025-26/lecture-AA-BB.md) · [Билет N+1 →](…)`;
+  the last written ticket has no `[Билет N+1 →]` until the next one exists (the validator rejects broken links).
 - `> **Лекционная опора:** …` with links to the exact `#def-K-s-i` / `#thm-K-s-i` / `#p0NN` anchors.
   Forecast: instead `> **Прогноз.** Билет по гл. 11–13; лекций 2025/26 ещё нет, нумерация по слайдам 2024/25 (стр. NNN).`
 - Headings, in this order: `## Вопрос`, `## Эталонный ответ`, `## Доказательство`,
   `## Разобранный пример`, `## Если снять условие`, `## Проверка готовности`.
 - «Эталонный ответ» = what to say in 2–3 minutes (notation, statement, idea). «Доказательство» = full proof
   as in the lecture. «Если снять условие» = 1–3 counterexamples. «Проверка готовности» = 3–5 self-check
-  questions with `<details>` answers.
+  questions with `<details>` answers
+  (numbered questions, then one `<details>` / `<summary>Ответы</summary>` block with numbered answers, as in tickets 06–10).
 
 **Sources by block** (titles, lectures and § are in the ticket table of `EXAM_SEM3.md`):
 
@@ -80,11 +82,14 @@ Rules:
 
 **Also edit per ticket:** in `EXAM_SEM3.md` turn the number cell `| NN |` into `| [NN](tickets/NN.md) |`
 and the status `прочитано · билет не написан` into `прочитано` (forecast: `прогноз`). Fix the
-`[Билет N+1 →]` link of the previous ticket.
+`[Билет N+1 →]` link of the previous ticket. Update «Готовы билеты 01–NN» in the «Состояние» note of
+`EXAM_SEM3.md` and «tickets 01–NN written» in `README.md`.
 
-**Check:** `python3 scripts/validate_exam_track.py --source-safe` (ticket count grows; no broken anchors).
+**Check:** `python3 scripts/build_views.py` first — it links the first mention of each registered term in the new
+tickets and writes their Obsidian copies (review the added links; pre-link a phrase yourself if the automatic link
+splits it) — then `python3 scripts/validate_exam_track.py --source-safe` (ticket count grows; no broken anchors).
 
-- [ ] 06–10 · [ ] 11–15 · [ ] 16–20 · [ ] 21–25 · [ ] 26–30 · [ ] 31–35 · [ ] 36–40 · [ ] 41–45
+- [x] 06–10 · [ ] 11–15 · [ ] 16–20 · [ ] 21–25 · [ ] 26–30 · [ ] 31–35 · [ ] 36–40 · [ ] 41–45
 - [ ] 46–50 · [ ] 51–55 · [ ] 56–60 · [ ] 61–65 · [ ] 66–70 · [ ] 71–75 · [ ] 76–80 · [ ] 81–85
 - [ ] 86–90 · [ ] 91–95
 
