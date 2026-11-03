@@ -5,6 +5,8 @@ for semester 3 is in place. The goals below are ordered by priority. Each one en
 proves it is done. Course content is written in Russian; keep the lecturer's numbering and terminology
 (§6.5…§10.4, «Теорема 8.4.1», «допустимое множество», …).
 
+The file-by-file plan and the prompt to write each file are in [`WRITING_GUIDE.md`](WRITING_GUIDE.md).
+
 ## G1. Semester-3 exam: finish `MathInMind/ru/exam-sem3/EXAM_SEM3.md`
 
 - Write tickets 06–95 in `MathInMind/ru/exam-sem3/tickets/NN.md` in the format of tickets 01–05:
