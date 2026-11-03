@@ -998,6 +998,8 @@ class ObsidianBuilder:
                 block.append(current)
                 j += 1
             ids = pending_heading_anchor + [a for l in block[:1] for a in ANCHOR_RE.findall(l)]
+            # Statements restored inside a longer blockquote carry their anchor on a later line.
+            ids += [a for l in block[1:] for a in ANCHOR_RE.findall(l)]
             pending_heading_anchor = []
             block = [ANCHOR_RE.sub("", l) for l in block]
             block = self.callout(block)

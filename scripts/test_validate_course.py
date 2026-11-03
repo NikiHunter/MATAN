@@ -101,6 +101,12 @@ class ChronologyRegressionTests(unittest.TestCase):
             target.mkdir(parents=True)
             for path in source.glob("*.md"):
                 shutil.copyfile(path, target / path.name)
+        # Lectures after 64 are registered through the notebook manifest.
+        assets = self.vault / "assets" / course.LECTURE_DIRECTORY
+        assets.mkdir(parents=True)
+        for batch in course.NOTEBOOK_BATCHES:
+            name = f"figures-{batch}.json"
+            shutil.copyfile(course.VAULT / "assets" / course.LECTURE_DIRECTORY / name, assets / name)
 
     def run_tree(self) -> list[str]:
         # Links are tested separately; this fixture copies only lecture text.
@@ -634,10 +640,12 @@ class Lectures61To64RegressionTests(BatchFixture, unittest.TestCase):
 
 class BatchOrchestrationTests(unittest.TestCase):
     def test_main_checks_all_manifests(self) -> None:
-        with patch.object(course, "check_new_lecture_batch", return_value=0) as check, patch("builtins.print"):
+        with patch.object(course, "check_new_lecture_batch", return_value=0) as check, \
+                patch.object(course, "check_notebook_batch", return_value=0) as notebook, patch("builtins.print"):
             self.assertEqual(course.main(), 0)
         self.assertEqual(check.call_args_list, [call("31-38"), call("39-44"), call("45-50"),
                                                  call("51-54"), call("55-60"), call("61-64")])
+        self.assertEqual(notebook.call_args_list, [call("65-84")])
 
 
 if __name__ == "__main__":

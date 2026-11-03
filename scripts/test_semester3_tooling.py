@@ -146,7 +146,7 @@ class NotebookVault:
         return self.vault / lang / course.LECTURE_DIRECTORY / "lecture-65-66.md"
 
     def run_batch(self) -> list[str]:
-        with patch.multiple(course, ROOT=self.root, VAULT=self.vault), \
+        with patch.multiple(course, ROOT=self.root, VAULT=self.vault, TRANSLATED_UP_TO=100), \
                 patch.object(course, "semester_of", lambda n: 3 if n >= 65 else course_layout.semester_of(n)):
             course.check_notebook_batch("65-84")
         return list(course.errors)
@@ -160,6 +160,13 @@ class NotebookVault:
 class NotebookBatchTests(NotebookVault, unittest.TestCase):
     def test_complete_batch_passes(self) -> None:
         self.assertEqual(self.run_batch(), [])
+
+    def test_untranslated_lectures_need_only_russian(self) -> None:
+        for lang in ("en", "es"):
+            self.lecture(lang).unlink()
+        with patch.multiple(course, ROOT=self.root, VAULT=self.vault, TRANSLATED_UP_TO=64):
+            course.check_notebook_batch("65-84")
+        self.assertEqual(course.errors, [])
 
     def test_duplicate_page_must_not_be_cited(self) -> None:
         self.manifest["lectures"]["lecture-65-66.md"]["pages"].append("p003")
