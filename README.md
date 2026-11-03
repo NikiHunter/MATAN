@@ -1,15 +1,15 @@
 # MATAN — Mathematical Analysis / Математический анализ / Análisis matemático
 
-A trilingual mathematical analysis course: 21 concise chapters, full illustrated notes of the 2025/26 lectures (0–64) and a Russian exam track. Every term and theorem is linked to the place where it is defined.
+A trilingual mathematical analysis course: 21 concise chapters, full illustrated notes of the 2025/26 lectures 0–64 in three languages, cleaned semester-3 lectures 65–84 in Russian, and Russian exam tracks. Every term and theorem is linked to the place where it is defined.
 
 ## Start here
 
 | | English | Русский | Español |
 |---|---|---|---|
 | Course, 21 chapters | [Course index](MathInMind/en/index.md) | [Оглавление курса](MathInMind/ru/index.md) | [Índice del curso](MathInMind/es/index.md) |
-| Lectures 2025/26, 0–64 | [Lecture index](MathInMind/en/lectures-2025-26/index.md) | [Указатель лекций](MathInMind/ru/lectures-2025-26/index.md) | [Índice de lecciones](MathInMind/es/lectures-2025-26/index.md) |
+| Lectures 2025/26, 0–84 (65–84 in Russian) | [Lecture index](MathInMind/en/lectures-2025-26/index.md) | [Указатель лекций](MathInMind/ru/lectures-2025-26/index.md) | [Índice de lecciones](MathInMind/es/lectures-2025-26/index.md) |
 | Terms and theorems | [Index](MathInMind/en/term-index.md) | [Указатель](MathInMind/ru/term-index.md) | [Índice](MathInMind/es/term-index.md) |
-| Exam track | — | [72 билета](MathInMind/ru/exam/index.md) · [реестр лекций](MathInMind/ru/lectures/index.md) | — |
+| Exam track | — | [72 билета](MathInMind/ru/exam/index.md) · [реестр лекций](MathInMind/ru/lectures/index.md) · [экзамен, семестр 3](MathInMind/ru/exam-sem3/EXAM_SEM3.md) | — |
 
 ## Two views: GitHub and Obsidian
 
@@ -64,6 +64,14 @@ For lectures 31–64 every page was reviewed and every final image checked indiv
 | 61–64 | 82 | 2 | 26 | [figures-61-64.json](MathInMind/assets/lectures-2025-26/figures-61-64.json) | [provenance-61-64.md](MathInMind/assets/lectures-2025-26/provenance-61-64.md) |
 | **31–64** | **564** | **19** | **92** | | |
 
+## Semester 3 (lectures 65–98, in progress)
+
+Lectures 65–84 were cleaned from a student's notebook (pages `p001`–`p082`) and from Zoom frames of lectures 83–84 (`p083`–`p124`) into study notes that keep the lecturer's numbering (§6.5–§10.4): [`MathInMind/ru/lectures-2025-26/`](MathInMind/ru/lectures-2025-26/index.md). Their English and Spanish translations are still to be made.
+
+- Provenance: the verbatim page transcription is in [`ocr/raw/`](ocr/raw/p001.md); every disputed place is decided in [`ocr/RESOLVED.md`](ocr/RESOLVED.md) (542 entries, with the basis of each decision); [`ocr/ISSUES.md`](ocr/ISSUES.md) lists the open ones (none at present). Corrections of slips are marked «Поправка к источнику» in the lectures, restorations of lost pages «Восстановлено».
+- Exam preparation: [`EXAM_SEM3.md`](MathInMind/ru/exam-sem3/EXAM_SEM3.md) — 95 projected tickets (70 on lectures 65–84, 25 forecast from the 2024/25 course for chapters 11–13), tickets 01–05 written.
+- What is left — the rest of the exam track, the semester-2 reexam, chapters 22–26 in the lecturer's numbering, translations, the chapter audit — is in [`GOALS.md`](GOALS.md); known defects are in [`ISSUES.md`](ISSUES.md).
+
 ## Lecture-aligned exam track (Russian)
 
 The Russian exam track uses `МАТАН_Л` as its primary source and keeps the lecture numbering:
@@ -86,6 +94,8 @@ python3 scripts/build_views.py --check
 python3 scripts/validate_course.py
 python3 scripts/validate_exam_track.py --source-safe
 python3 -m unittest discover -s scripts -p 'test_*.py'
+python3 ocr/check_issues.py
+python3 ocr/check_formulas.py
 ```
 
 They check that both views are up to date and that every Obsidian wikilink resolves to an existing note, block or heading; language and index parity; continuous 2025/26 lecture coverage (0–64); semester metadata and duplicate-material links for 33–64; figure provenance and translation parity for all illustrated batches; all 72 tickets; Purgatory assets and numbering; YAML metadata; local links; balanced code fences and math delimiters; and basic Mermaid safety.

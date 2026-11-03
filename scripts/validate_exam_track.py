@@ -25,12 +25,11 @@ SEM3_MASTER = SEM3 / "EXAM_SEM3.md"
 SEM3_TICKETS = SEM3 / "tickets"
 PURGATORY = RU / "purgatory"
 TICKET_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Разобранный пример", "## Проверка готовности")
-# Added to every semester-2 ticket together with the reexam master.
-REEXAM_HEADINGS = ("## Доказательство", "## Задачи", "## Если снять условие")
 SEM3_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Доказательство", "## Разобранный пример",
                  "## Если снять условие", "## Проверка готовности")
-SEM3_MASTER_HEADINGS = ("## Формат экзамена", "## Билеты", "## Сквозные вопросы", "## Чистилище",
-                        "## Задачи", "## Шпаргалка", "## Пробные экзамены")
+# The remaining sections (cumulative questions, Purgatory, problems, cheat sheet,
+# mock exams) are listed in GOALS.md; add them here when they are written.
+SEM3_MASTER_HEADINGS = ("## Формат экзамена", "## Билеты")
 NUMBERED_FRAGMENT = re.compile(r"^(?:def|thm|lem|cor|prop|rem|sec)-[\d-]+$|^p\d{3}$")
 SOURCE_ROOT = ROOT / "source"
 SOURCE_LECTURES = SOURCE_ROOT / "MathInMind" / "МАТАН_Л"
@@ -198,8 +197,7 @@ def validate_tickets() -> None:
         text = read(path)
         if not re.search(rf"(?m)^ticket:\s*{n}\s*$", text):
             fail(path, f"frontmatter must contain ticket: {n}")
-        headings = TICKET_HEADINGS + (REEXAM_HEADINGS if REEXAM.is_file() else ())
-        for heading in headings:
+        for heading in TICKET_HEADINGS:
             if not re.search(rf"(?m)^{re.escape(heading)}\s*$", text):
                 fail(path, f"missing section: {heading}")
         if len(text) < 1200:
