@@ -89,7 +89,7 @@ and the status `прочитано · билет не написан` into `пр
 tickets and writes their Obsidian copies (review the added links; pre-link a phrase yourself if the automatic link
 splits it) — then `python3 scripts/validate_exam_track.py --source-safe` (ticket count grows; no broken anchors).
 
-- [x] 06–10 · [x] 11–15 · [ ] 16–20 · [ ] 21–25 · [ ] 26–30 · [ ] 31–35 · [ ] 36–40 · [ ] 41–45
+- [x] 06–10 · [x] 11–15 · [x] 16–20 · [ ] 21–25 · [ ] 26–30 · [ ] 31–35 · [ ] 36–40 · [ ] 41–45
 - [ ] 46–50 · [ ] 51–55 · [ ] 56–60 · [ ] 61–65 · [ ] 66–70 · [ ] 71–75 · [ ] 76–80 · [ ] 81–85
 - [ ] 86–90 · [ ] 91–95
 
