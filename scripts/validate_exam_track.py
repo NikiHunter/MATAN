@@ -27,9 +27,9 @@ PURGATORY = RU / "purgatory"
 TICKET_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Разобранный пример", "## Проверка готовности")
 SEM3_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Доказательство", "## Разобранный пример",
                  "## Если снять условие", "## Проверка готовности")
-# The remaining sections (cumulative questions, Purgatory, problems, cheat sheet,
-# mock exams) are listed in GOALS.md; add them here when they are written.
-SEM3_MASTER_HEADINGS = ("## Формат экзамена", "## Билеты")
+# All seven sections of the semester-3 master (G1.b).
+SEM3_MASTER_HEADINGS = ("## Формат экзамена", "## Билеты", "## Сквозные вопросы", "## Чистилище", "## Задачи",
+                        "## Шпаргалка", "## Пробные экзамены")
 NUMBERED_FRAGMENT = re.compile(r"^(?:def|thm|lem|cor|prop|rem|sec)-[\d-]+$|^p\d{3}$")
 SOURCE_ROOT = ROOT / "source"
 SOURCE_LECTURES = SOURCE_ROOT / "MathInMind" / "МАТАН_Л"

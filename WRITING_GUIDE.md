@@ -97,21 +97,21 @@ splits it) — then `python3 scripts/validate_exam_track.py --source-safe` (tick
 
 Append after the ticket table, one section per session:
 
-- [ ] `## Сквозные вопросы` — ~60 cumulative questions over semesters 1–3 (limits, continuity, Taylor,
+- [x] `## Сквозные вопросы` — ~60 cumulative questions over semesters 1–3 (limits, continuity, Taylor,
   Riemann integral, series, ℝⁿ differentiability, implicit maps); each: question + 1–3-line answer + link
   to the lecture anchor. Sources: `MathInMind/ru/lectures-2025-26/`, `MathInMind/ru/exam/tickets/`.
-- [ ] `## Чистилище` — ~120 short follow-ups («а если…», «почему нельзя…») grouped by § 6.5…10.4 and
+- [x] `## Чистилище` — ~120 short follow-ups («а если…», «почему нельзя…») grouped by § 6.5…10.4 and
   гл. 11–13; answer in `<details>`. Model: `MathInMind/ru/purgatory/`.
-- [ ] `## Задачи` — ~30 typical and hard problems with full solutions; state explicitly that no past
+- [x] `## Задачи` — ~30 typical and hard problems with full solutions; state explicitly that no past
   papers exist and the problems are modelled on lecture examples and Демидович. Mix: series tests,
   uniform convergence, power-series radius, parameter integrals/Γ/B, extrema with constraints, double
   integrals with change of order.
-- [ ] `## Шпаргалка` — formula sheet: Taylor in ℝⁿ, extremum criteria, series tests table, Weierstrass /
+- [x] `## Шпаргалка` — formula sheet: Taylor in ℝⁿ, extremum criteria, series tests table, Weierstrass /
   Abel / Dirichlet, power-series formulas, Γ/B identities, Fubini, change of variables, Green / Gauss /
   Stokes (forecast). Model: `MathInMind/ru/formula-sheet.md`.
-- [ ] `## Пробные экзамены` — 4 variants, each 2 tickets + 1 problem + 3 follow-ups, full solutions in
+- [x] `## Пробные экзамены` — 4 variants, each 2 tickets + 1 problem + 3 follow-ups, full solutions in
   `<details>`.
-- [ ] Then set `SEM3_MASTER_HEADINGS` in `scripts/validate_exam_track.py` (line 32) to all seven headings:
+- [x] Then set `SEM3_MASTER_HEADINGS` in `scripts/validate_exam_track.py` (line 32) to all seven headings:
   `Формат экзамена, Билеты, Сквозные вопросы, Чистилище, Задачи, Шпаргалка, Пробные экзамены`.
 
 **Check:** validator reports 95 tickets and no missing sections.
