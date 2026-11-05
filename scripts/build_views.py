@@ -563,11 +563,14 @@ class Linker:
         return None
 
     def resolve_term(self, note: Note, term) -> str | None:
-        if note.kind in ("lecture", "register", "ticket", "purgatory", "exam") and term.lec:
+        # Notes that quote another year's numbering (forecast tickets) must not point at
+        # numbered statements of the 2025/26 lectures; they link terms to course chapters only.
+        foreign = note.reference_numbering not in (None, "2025/26")
+        if not foreign and note.kind in ("lecture", "register", "ticket", "purgatory", "exam") and term.lec:
             hit = self.resolve_numbered(note, term.lec)
             if hit:
                 return hit
-        if lecture_numbered(note) and term.lec:
+        if not foreign and lecture_numbered(note) and term.lec:
             hit = self.numbered.get((note.lang, "course"), {}).get(term.lec)
             if hit:
                 return hit.target
