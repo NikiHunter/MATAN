@@ -91,7 +91,7 @@ splits it) — then `python3 scripts/validate_exam_track.py --source-safe` (tick
 
 - [x] 06–10 · [x] 11–15 · [x] 16–20 · [x] 21–25 · [x] 26–30 · [x] 31–35 · [x] 36–40 · [x] 41–45
 - [x] 46–50 · [x] 51–55 · [x] 56–60 · [x] 61–65 · [x] 66–70 · [x] 71–75 · [x] 76–80 · [x] 81–85
-- [x] 86–90 · [ ] 91–95
+- [x] 86–90 · [x] 91–95
 
 ### G1.b Master sections in `MathInMind/ru/exam-sem3/EXAM_SEM3.md`
 
