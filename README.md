@@ -69,7 +69,7 @@ For lectures 31–64 every page was reviewed and every final image checked indiv
 Lectures 65–84 were cleaned from a student's notebook (pages `p001`–`p082`) and from Zoom frames of lectures 83–84 (`p083`–`p124`) into study notes that keep the lecturer's numbering (§6.5–§10.4): [`MathInMind/ru/lectures-2025-26/`](MathInMind/ru/lectures-2025-26/index.md). Their English and Spanish translations are still to be made.
 
 - Provenance: the verbatim page transcription is in [`ocr/raw/`](ocr/raw/p001.md); every disputed place is decided in [`ocr/RESOLVED.md`](ocr/RESOLVED.md) (542 entries, with the basis of each decision); [`ocr/ISSUES.md`](ocr/ISSUES.md) lists the open ones (none at present). Corrections of slips are marked «Поправка к источнику» in the lectures, restorations of lost pages «Восстановлено».
-- Exam preparation: [`EXAM_SEM3.md`](MathInMind/ru/exam-sem3/EXAM_SEM3.md) — 95 projected tickets (70 on lectures 65–84, 25 forecast from the 2024/25 course for chapters 11–13), tickets 01–65 written.
+- Exam preparation: [`EXAM_SEM3.md`](MathInMind/ru/exam-sem3/EXAM_SEM3.md) — 95 projected tickets (70 on lectures 65–84, 25 forecast from the 2024/25 course for chapters 11–13), tickets 01–70 written.
 - What is left — the rest of the exam track, the semester-2 reexam, chapters 22–26 in the lecturer's numbering, translations, the chapter audit — is in [`GOALS.md`](GOALS.md); known defects are in [`ISSUES.md`](ISSUES.md).
 
 ## Lecture-aligned exam track (Russian)
