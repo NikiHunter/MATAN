@@ -563,3 +563,7 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-67-68#^def-7-1-1\|Definición 7.1.1]] | Sea dada una sucesión $(a_n)$, $a_n\in\mathbb R$, $n\in\mathbb N$. Entonces … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
 | [[es/lectures-2025-26/lecture-67-68#^def-7-1-2\|Definición 7.1.2]] | La serie $\sum_{n=1}^{\infty}a_n$ converge si la suma de la serie $S$ existe y es … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
 | [[es/lectures-2025-26/lecture-67-68#^def-7-2-1\|Definición 7.2.1]] | La serie $\sum_{n=1}^{\infty}a_n$ se llama absolutamente convergente si la serie … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-69-70#^def-7-3-1\|Definición 7.3.1]] | Una serie $\sum_{n=1}^{\infty}a_n$ se llama positiva si $a_n\ge0$ para todo $n$. | [[es/lectures-2025-26/lecture-69-70\|69–70]] |
+| [[es/lectures-2025-26/lecture-69-70#^def-7-4-1\|Definición 7.4.1]] | Si la serie $\sum_{n=1}^{\infty}a_n$ converge, mientras que la serie correspondiente … | [[es/lectures-2025-26/lecture-69-70\|69–70]] |
+| [[es/lectures-2025-26/lecture-69-70#^def-7-5-1\|Definición 7.5.1]] | Sean dadas una serie $\sum_{n=1}^{\infty}a_n$ y una aplicación biyectiva … | [[es/lectures-2025-26/lecture-69-70\|69–70]] |
+| [[es/lectures-2025-26/lecture-69-70#^def-7-5-2\|Definición 7.5.2]] | Diremos que una serie $\sum_{n=1}^{\infty}a_n$ tiene la propiedad conmutativa si para … | [[es/lectures-2025-26/lecture-69-70\|69–70]] |

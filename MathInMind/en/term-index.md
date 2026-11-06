@@ -562,3 +562,7 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [Definition 7.1.1](lectures-2025-26/lecture-67-68.md#def-7-1-1) | Let a sequence $`(a_n)`$, $`a_n\in\mathbb R`$, $`n\in\mathbb N`$ be given. Then … | [67–68](lectures-2025-26/lecture-67-68.md) |
 | [Definition 7.1.2](lectures-2025-26/lecture-67-68.md#def-7-1-2) | The series $`\sum_{n=1}^{\infty}a_n`$ converges if the sum of the series $`S`$ exists and … | [67–68](lectures-2025-26/lecture-67-68.md) |
 | [Definition 7.2.1](lectures-2025-26/lecture-67-68.md#def-7-2-1) | The series $`\sum_{n=1}^{\infty}a_n`$ is called absolutely convergent if the series … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Definition 7.3.1](lectures-2025-26/lecture-69-70.md#def-7-3-1) | A series $`\sum_{n=1}^{\infty}a_n`$ is called positive if $`a_n\ge0`$ for all $`n`$. | [69–70](lectures-2025-26/lecture-69-70.md) |
+| [Definition 7.4.1](lectures-2025-26/lecture-69-70.md#def-7-4-1) | If the series $`\sum_{n=1}^{\infty}a_n`$ converges while the corresponding series … | [69–70](lectures-2025-26/lecture-69-70.md) |
+| [Definition 7.5.1](lectures-2025-26/lecture-69-70.md#def-7-5-1) | Let a series $`\sum_{n=1}^{\infty}a_n`$ and a bijective map … | [69–70](lectures-2025-26/lecture-69-70.md) |
+| [Definition 7.5.2](lectures-2025-26/lecture-69-70.md#def-7-5-2) | We say that a series $`\sum_{n=1}^{\infty}a_n`$ has the commutative property if for every … | [69–70](lectures-2025-26/lecture-69-70.md) |

@@ -562,3 +562,7 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [Definición 7.1.1](lectures-2025-26/lecture-67-68.md#def-7-1-1) | Sea dada una sucesión $`(a_n)`$, $`a_n\in\mathbb R`$, $`n\in\mathbb N`$. Entonces … | [67–68](lectures-2025-26/lecture-67-68.md) |
 | [Definición 7.1.2](lectures-2025-26/lecture-67-68.md#def-7-1-2) | La serie $`\sum_{n=1}^{\infty}a_n`$ converge si la suma de la serie $`S`$ existe y es … | [67–68](lectures-2025-26/lecture-67-68.md) |
 | [Definición 7.2.1](lectures-2025-26/lecture-67-68.md#def-7-2-1) | La serie $`\sum_{n=1}^{\infty}a_n`$ se llama absolutamente convergente si la serie … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Definición 7.3.1](lectures-2025-26/lecture-69-70.md#def-7-3-1) | Una serie $`\sum_{n=1}^{\infty}a_n`$ se llama positiva si $`a_n\ge0`$ para todo $`n`$. | [69–70](lectures-2025-26/lecture-69-70.md) |
+| [Definición 7.4.1](lectures-2025-26/lecture-69-70.md#def-7-4-1) | Si la serie $`\sum_{n=1}^{\infty}a_n`$ converge, mientras que la serie correspondiente … | [69–70](lectures-2025-26/lecture-69-70.md) |
+| [Definición 7.5.1](lectures-2025-26/lecture-69-70.md#def-7-5-1) | Sean dadas una serie $`\sum_{n=1}^{\infty}a_n`$ y una aplicación biyectiva … | [69–70](lectures-2025-26/lecture-69-70.md) |
+| [Definición 7.5.2](lectures-2025-26/lecture-69-70.md#def-7-5-2) | Diremos que una serie $`\sum_{n=1}^{\infty}a_n`$ tiene la propiedad conmutativa si para … | [69–70](lectures-2025-26/lecture-69-70.md) |
