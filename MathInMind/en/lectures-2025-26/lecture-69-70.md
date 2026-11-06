@@ -10,7 +10,7 @@ course_chapter: 23
 ---
 # Lectures 69–70 — positive series, convergence tests, series with terms of arbitrary sign, rearrangements
 
-[← Lectures 67–68](lecture-67-68.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [Español](../../es/lectures-2025-26/lecture-69-70.md)
+[← Lectures 67–68](lecture-67-68.md) · [Lecture index](index.md) · [Lectures 71–72 →](lecture-71-72.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [Español](../../es/lectures-2025-26/lecture-69-70.md)
 
 > **Source and numbering.** These notes were copied from a handwritten notebook (pages p022–p029; the raw page text is in [`ocr/raw/`](../../../ocr/raw/p022.md)). Page p022 contains only the heading “Lectures 69–70” and a short two-item plan of the class, read only partially (“… conv.”, “Oth. ex. covered”); the rest of the page is empty. Therefore the definition of a positive series and the statements of its properties, whose proofs begin on page p023, are restored from the slides of the 2024/25 course. Between pages p025 and p026 the statement of the Cauchy test and the beginning of its proof are lost, between pages p028 and p029 Abel's transformation, the Dirichlet test and the statement of the Abel test; these places are restored as well. The numbering of definitions is the lecturer's; the lecturer does not number the convergence tests. Slips in the notes are corrected and marked with “Source correction” blocks; lost passages are restored and marked with “Restored” blocks; the tags match [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Places that still have to be checked against the notebook are listed in [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
 
@@ -284,8 +284,8 @@ An example of a rearrangement that changes the sum of a series and the commutati
 - The beginning of chapter 7 (numerical series, properties of series, the Bolzano–Cauchy criterion for series, absolute convergence): [lectures 67–68](lecture-67-68.md).
 - Facts used: [Theorem 2.3.3](lecture-11-12.md#thm-2-3-3) on the limit of a monotone sequence; [Theorem 2.3.7](lecture-13.md#thm-2-3-7), the Bolzano–Cauchy criterion for sequences.
 - The Dirichlet and Abel tests for [improper integrals](lecture-47-48.md#def-4-5-2): [Theorem 4.5.4](lecture-49-50.md#thm-4-5-4) (lectures 49–50).
-- Continuation: an example of a rearrangement of a series and the commutative properties — [lectures 71–72](../../ru/lectures-2025-26/lecture-71-72.md).
+- Continuation: an example of a rearrangement of a series and the commutative properties — [lectures 71–72](lecture-71-72.md).
 
 ---
 
-[← Lectures 67–68](lecture-67-68.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [Español](../../es/lectures-2025-26/lecture-69-70.md)
+[← Lectures 67–68](lecture-67-68.md) · [Lecture index](index.md) · [Lectures 71–72 →](lecture-71-72.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [Español](../../es/lectures-2025-26/lecture-69-70.md)

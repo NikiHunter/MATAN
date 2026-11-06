@@ -10,7 +10,7 @@ course_chapter: 23
 ---
 # Lecciones 69–70 — series positivas, criterios de convergencia, series de términos de signo arbitrario, reordenaciones
 
-[← Lecciones 67–68](lecture-67-68.md) · [Índice de lecciones](index.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [English](../../en/lectures-2025-26/lecture-69-70.md)
+[← Lecciones 67–68](lecture-67-68.md) · [Índice de lecciones](index.md) · [Lecciones 71–72 →](lecture-71-72.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [English](../../en/lectures-2025-26/lecture-69-70.md)
 
 > **Fuente y numeración.** Los apuntes se copiaron de un cuaderno manuscrito (págs. p022–p029; el texto bruto de las páginas está en [`ocr/raw/`](../../../ocr/raw/p022.md)). La pág. p022 contiene solo el título «Lecciones 69–70» y un breve plan de la clase de dos puntos, leídos solo en parte («… conv.», «Otros ej. vistos»); el resto de la página está vacío. Por eso la definición de serie positiva y los enunciados de sus propiedades, cuyas demostraciones comienzan en la pág. p023, se restauran a partir de las diapositivas del curso 2024/25. Entre las págs. p025 y p026 se perdieron el enunciado del criterio de Cauchy y el comienzo de su demostración; entre las págs. p028 y p029, la transformación de Abel, el criterio de Dirichlet y el enunciado del criterio de Abel; estos lugares también se restauran. La numeración de las definiciones es la del profesor; el profesor no numera los criterios de convergencia. Los lapsus de los apuntes se corrigen y se marcan con bloques «Corrección de la fuente»; los pasajes perdidos se restauran y se marcan con bloques «Restaurado»; las etiquetas corresponden a [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Los lugares que aún hay que cotejar con el cuaderno se enumeran en [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
 
@@ -284,8 +284,8 @@ Un ejemplo de reordenación que cambia la suma de una serie y las propiedades co
 - Comienzo del capítulo 7 (serie numérica, propiedades de las series, criterio de Bolzano–Cauchy para series, convergencia absoluta): [lecciones 67–68](lecture-67-68.md).
 - Hechos usados: [teorema 2.3.3](lecture-11-12.md#thm-2-3-3) sobre el límite de una sucesión monótona; [teorema 2.3.7](lecture-13.md#thm-2-3-7), el criterio de Bolzano–Cauchy para sucesiones.
 - Los criterios de Dirichlet y de Abel para [integrales impropias](lecture-47-48.md#def-4-5-2): [teorema 4.5.4](lecture-49-50.md#thm-4-5-4) (lecciones 49–50).
-- Continuación: un ejemplo de reordenación de una serie y las propiedades conmutativas — [lecciones 71–72](../../ru/lectures-2025-26/lecture-71-72.md).
+- Continuación: un ejemplo de reordenación de una serie y las propiedades conmutativas — [lecciones 71–72](lecture-71-72.md).
 
 ---
 
-[← Lecciones 67–68](lecture-67-68.md) · [Índice de lecciones](index.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [English](../../en/lectures-2025-26/lecture-69-70.md)
+[← Lecciones 67–68](lecture-67-68.md) · [Índice de lecciones](index.md) · [Lecciones 71–72 →](lecture-71-72.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-69-70.md) · [English](../../en/lectures-2025-26/lecture-69-70.md)

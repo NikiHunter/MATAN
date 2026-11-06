@@ -12,7 +12,7 @@ tags: [mathinmind/en, mathinmind/lecture]
 ---
 # Lectures 69–70 — positive series, convergence tests, series with terms of arbitrary sign, rearrangements
 
-[[en/lectures-2025-26/lecture-67-68|← Lectures 67–68]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/term-index|Terms & theorems]] · [[ru/lectures-2025-26/lecture-69-70|Русский]] · [[es/lectures-2025-26/lecture-69-70|Español]]
+[[en/lectures-2025-26/lecture-67-68|← Lectures 67–68]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/lectures-2025-26/lecture-71-72|Lectures 71–72 →]] · [[en/term-index|Terms & theorems]] · [[ru/lectures-2025-26/lecture-69-70|Русский]] · [[es/lectures-2025-26/lecture-69-70|Español]]
 
 > [!info] Source and numbering
 > These notes were copied from a handwritten notebook (pages p022–p029; the raw page text is in [`ocr/raw/`](https://github.com/NikiHunter/matan/blob/main/ocr/raw/p022.md)). Page p022 contains only the heading “Lectures 69–70” and a short two-item plan of the class, read only partially (“… conv.”, “Oth. ex. covered”); the rest of the page is empty. Therefore the definition of a positive series and the statements of its properties, whose proofs begin on page p023, are restored from the slides of the 2024/25 course. Between pages p025 and p026 the statement of the Cauchy test and the beginning of its proof are lost, between pages p028 and p029 Abel's transformation, the Dirichlet test and the statement of the Abel test; these places are restored as well. The numbering of definitions is the lecturer's; the lecturer does not number the convergence tests. Slips in the notes are corrected and marked with “Source correction” blocks; lost passages are restored and marked with “Restored” blocks; the tags match [`ocr/RESOLVED.md`](https://github.com/NikiHunter/matan/blob/main/ocr/RESOLVED.md). Places that still have to be checked against the notebook are listed in [`ocr/ISSUES.md`](https://github.com/NikiHunter/matan/blob/main/ocr/ISSUES.md).
@@ -307,8 +307,8 @@ An example of a rearrangement that changes the sum of a series and the commutati
 - The beginning of chapter 7 (numerical series, properties of series, the Bolzano–Cauchy criterion for series, absolute convergence): [[en/lectures-2025-26/lecture-67-68|lectures 67–68]].
 - Facts used: [[en/lectures-2025-26/lecture-11-12#^thm-2-3-3|Theorem 2.3.3]] on the limit of a monotone sequence; [[en/lectures-2025-26/lecture-13#^thm-2-3-7|Theorem 2.3.7]], the Bolzano–Cauchy criterion for sequences.
 - The Dirichlet and Abel tests for [[en/lectures-2025-26/lecture-47-48#^def-4-5-2|improper integrals]]: [[en/lectures-2025-26/lecture-49-50#^thm-4-5-4|Theorem 4.5.4]] (lectures 49–50).
-- Continuation: an example of a rearrangement of a series and the commutative properties — [[ru/lectures-2025-26/lecture-71-72|lectures 71–72]].
+- Continuation: an example of a rearrangement of a series and the commutative properties — [[en/lectures-2025-26/lecture-71-72|lectures 71–72]].
 
 ---
 
-[[en/lectures-2025-26/lecture-67-68|← Lectures 67–68]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/term-index|Terms & theorems]] · [[ru/lectures-2025-26/lecture-69-70|Русский]] · [[es/lectures-2025-26/lecture-69-70|Español]]
+[[en/lectures-2025-26/lecture-67-68|← Lectures 67–68]] · [[en/lectures-2025-26/index|Lecture index]] · [[en/lectures-2025-26/lecture-71-72|Lectures 71–72 →]] · [[en/term-index|Terms & theorems]] · [[ru/lectures-2025-26/lecture-69-70|Русский]] · [[es/lectures-2025-26/lecture-69-70|Español]]

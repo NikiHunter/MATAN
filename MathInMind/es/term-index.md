@@ -566,3 +566,18 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [Definición 7.4.1](lectures-2025-26/lecture-69-70.md#def-7-4-1) | Si la serie $`\sum_{n=1}^{\infty}a_n`$ converge, mientras que la serie correspondiente … | [69–70](lectures-2025-26/lecture-69-70.md) |
 | [Definición 7.5.1](lectures-2025-26/lecture-69-70.md#def-7-5-1) | Sean dadas una serie $`\sum_{n=1}^{\infty}a_n`$ y una aplicación biyectiva … | [69–70](lectures-2025-26/lecture-69-70.md) |
 | [Definición 7.5.2](lectures-2025-26/lecture-69-70.md#def-7-5-2) | Diremos que una serie $`\sum_{n=1}^{\infty}a_n`$ tiene la propiedad conmutativa si para … | [69–70](lectures-2025-26/lecture-69-70.md) |
+
+### Capítulo 8
+
+| Enunciado | Resumen | Lección |
+|---|---|---|
+| [Definición 8.1.1](lectures-2025-26/lecture-71-72.md#def-8-1-1) | Diremos que la sucesión $`(f_n)`$ converge en $`X`$ a $`f`$ puntualmente si para cada … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definición 8.1.2](lectures-2025-26/lecture-71-72.md#def-8-1-2) | $`f_n\to f`$ uniformemente en el conjunto $`E\subset X`$ si | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definición 8.1.3](lectures-2025-26/lecture-71-72.md#def-8-1-3) | La magnitud | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definición 8.1.4](lectures-2025-26/lecture-71-72.md#def-8-1-4) | $`f_n\rightrightarrows f`$ si para todo $`\varepsilon>0`$ existe $`N`$ tal que … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Teorema 8.2.1](lectures-2025-26/lecture-71-72.md#thm-8-2-1) | continuidad de la función límite | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Teorema 8.2.2](lectures-2025-26/lecture-71-72.md#thm-8-2-2) | paso al límite bajo el signo integral | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Teorema 8.2.3](lectures-2025-26/lecture-71-72.md#thm-8-2-3) | derivación de la función límite | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definición 8.3.1](lectures-2025-26/lecture-71-72.md#def-8-3-1) | Sea dada una sucesión de funciones $`u_n:X\to\mathbb R`$, $`n\in\mathbb N`$. La expresión … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Teorema 8.3.1](lectures-2025-26/lecture-71-72.md#thm-8-3-1) | Sean dadas una serie de funciones $`u_n\in C([a,b])`$, $`n\in\mathbb N`$, y … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definición 8.3.2](lectures-2025-26/lecture-71-72.md#def-8-3-2) | La serie $`\sum_{n=1}^{\infty}u_n(x)`$ se llama uniformemente convergente en el conjunto … | [71–72](lectures-2025-26/lecture-71-72.md) |

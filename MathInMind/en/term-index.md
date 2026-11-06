@@ -566,3 +566,18 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [Definition 7.4.1](lectures-2025-26/lecture-69-70.md#def-7-4-1) | If the series $`\sum_{n=1}^{\infty}a_n`$ converges while the corresponding series … | [69–70](lectures-2025-26/lecture-69-70.md) |
 | [Definition 7.5.1](lectures-2025-26/lecture-69-70.md#def-7-5-1) | Let a series $`\sum_{n=1}^{\infty}a_n`$ and a bijective map … | [69–70](lectures-2025-26/lecture-69-70.md) |
 | [Definition 7.5.2](lectures-2025-26/lecture-69-70.md#def-7-5-2) | We say that a series $`\sum_{n=1}^{\infty}a_n`$ has the commutative property if for every … | [69–70](lectures-2025-26/lecture-69-70.md) |
+
+### Chapter 8
+
+| Statement | Summary | Lecture |
+|---|---|---|
+| [Definition 8.1.1](lectures-2025-26/lecture-71-72.md#def-8-1-1) | We say that the sequence $`(f_n)`$ converges on $`X`$ to $`f`$ pointwise if for each … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definition 8.1.2](lectures-2025-26/lecture-71-72.md#def-8-1-2) | $`f_n\to f`$ uniformly on the set $`E\subset X`$ if | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definition 8.1.3](lectures-2025-26/lecture-71-72.md#def-8-1-3) | The quantity | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definition 8.1.4](lectures-2025-26/lecture-71-72.md#def-8-1-4) | $`f_n\rightrightarrows f`$ if for every $`\varepsilon>0`$ there is $`N`$ such that … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Theorem 8.2.1](lectures-2025-26/lecture-71-72.md#thm-8-2-1) | continuity of the limit function | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Theorem 8.2.2](lectures-2025-26/lecture-71-72.md#thm-8-2-2) | passage to the limit under the integral sign | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Theorem 8.2.3](lectures-2025-26/lecture-71-72.md#thm-8-2-3) | differentiation of the limit function | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definition 8.3.1](lectures-2025-26/lecture-71-72.md#def-8-3-1) | Let a sequence of functions $`u_n:X\to\mathbb R`$, $`n\in\mathbb N`$, be given. The … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Theorem 8.3.1](lectures-2025-26/lecture-71-72.md#thm-8-3-1) | Let a series of functions $`u_n\in C([a,b])`$, $`n\in\mathbb N`$, be given, and … | [71–72](lectures-2025-26/lecture-71-72.md) |
+| [Definition 8.3.2](lectures-2025-26/lecture-71-72.md#def-8-3-2) | The series $`\sum_{n=1}^{\infty}u_n(x)`$ is called uniformly convergent on the set … | [71–72](lectures-2025-26/lecture-71-72.md) |
