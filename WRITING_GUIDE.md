@@ -172,7 +172,7 @@ with one `<details>` answer block.
 **Model:** the existing EN/ES translation of `lecture-63-64.md`.
 
 - Translate prose only; formulas, `#p0NN` page anchors, `#def/#thm` labels and figures stay byte-identical.
-- [ ] After all 20 files: `TRANSLATED_UP_TO = LAST_LECTURE` in `scripts/course_layout.py` (line 24);
+- [x] After all 20 files: `TRANSLATED_UP_TO = LAST_LECTURE` in `scripts/course_layout.py` (line 24);
   restore language links in the RU nav lines; replace «Russian only» notes in EN/ES lecture indexes by
   full tables.
 
