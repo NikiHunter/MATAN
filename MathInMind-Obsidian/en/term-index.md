@@ -590,4 +590,19 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-73-74#^def-8-4-2\|Definition 8.4.2]] | The quantity $R\in[0,+\infty]$ is called the radius of convergence of the series … | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
 | [[en/lectures-2025-26/lecture-73-74#^thm-8-4-2\|Theorem 8.4.2]] | uniform convergence of power series | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
 | [[en/lectures-2025-26/lecture-73-74#^rem-8-4-2\|Remark 8.4.2]] | The substitution $x-a=y$ reduces series (8.4.1) to a power series in powers of $y$ … | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-75-76#^def-8-4-3\|Definition 8.4.3]] | Let $f$ have derivatives of all orders at the point $a$. The numbers … | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
 | [[en/lectures-2025-26/lecture-73-74#^thm-8-4-3\|Theorem 8.4.3]] | Abel's theorem on power series | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-75-76#^def-8-4-4\|Definition 8.4.4]] | Let $-\infty\le A<B\le+\infty$, $f:(A,B)\to\mathbb R$, $a\in(A,B)$. The function … | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-8-4-4\|Theorem 8.4.4]] | integration of power series | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-8-4-5\|Theorem 8.4.5]] | radii of power series | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-8-4-6\|Theorem 8.4.6]] | differentiation of power series | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-8-4-7\|Theorem 8.4.7]] | uniqueness of the expansion of a function in a power series | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-8-4-8\|Theorem 8.4.8]] | a test for the expandability of a function in a Taylor series | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+
+### Chapter 9
+
+| Statement | Summary | Lecture |
+|---|---|---|
+| [[en/lectures-2025-26/lecture-75-76#^def-9-1-1\|Definition 9.1.1]] | An integral depending on a parameter is a function of the form | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-9-1-1\|Theorem 9.1.1]] | Let $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$ and $f=f(x,y)\in C(P)$. … | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-75-76#^thm-9-1-2\|Theorem 9.1.2]] | Let $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$, $f=f(x,y)\in C(P)$ and … | [[en/lectures-2025-26/lecture-75-76\|75–76]] |

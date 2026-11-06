@@ -589,4 +589,19 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [Definición 8.4.2](lectures-2025-26/lecture-73-74.md#def-8-4-2) | La magnitud $`R\in[0,+\infty]`$ se llama radio de convergencia de la serie … | [73–74](lectures-2025-26/lecture-73-74.md) |
 | [Teorema 8.4.2](lectures-2025-26/lecture-73-74.md#thm-8-4-2) | convergencia uniforme de las series de potencias | [73–74](lectures-2025-26/lecture-73-74.md) |
 | [Observación 8.4.2](lectures-2025-26/lecture-73-74.md#rem-8-4-2) | El cambio $`x-a=y`$ reduce la serie (8.4.1) a una serie de potencias de $`y`$ con centro … | [73–74](lectures-2025-26/lecture-73-74.md) |
+| [Definición 8.4.3](lectures-2025-26/lecture-75-76.md#def-8-4-3) | Supongamos que $`f`$ tiene derivadas de todos los órdenes en el punto $`a`$. Los números … | [75–76](lectures-2025-26/lecture-75-76.md) |
 | [Teorema 8.4.3](lectures-2025-26/lecture-73-74.md#thm-8-4-3) | teorema de Abel sobre series de potencias | [73–74](lectures-2025-26/lecture-73-74.md) |
+| [Definición 8.4.4](lectures-2025-26/lecture-75-76.md#def-8-4-4) | Sean $`-\infty\le A<B\le+\infty`$, $`f:(A,B)\to\mathbb R`$, $`a\in(A,B)`$. La función … | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 8.4.4](lectures-2025-26/lecture-75-76.md#thm-8-4-4) | integración de series de potencias | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 8.4.5](lectures-2025-26/lecture-75-76.md#thm-8-4-5) | sobre los radios de las series de potencias | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 8.4.6](lectures-2025-26/lecture-75-76.md#thm-8-4-6) | derivación de series de potencias | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 8.4.7](lectures-2025-26/lecture-75-76.md#thm-8-4-7) | unicidad del desarrollo de una función en serie de potencias | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 8.4.8](lectures-2025-26/lecture-75-76.md#thm-8-4-8) | criterio de desarrollabilidad de una función en serie de Taylor | [75–76](lectures-2025-26/lecture-75-76.md) |
+
+### Capítulo 9
+
+| Enunciado | Resumen | Lección |
+|---|---|---|
+| [Definición 9.1.1](lectures-2025-26/lecture-75-76.md#def-9-1-1) | Una integral dependiente de un parámetro es una función de la forma | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 9.1.1](lectures-2025-26/lecture-75-76.md#thm-9-1-1) | Sean $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$ y $`f=f(x,y)\in C(P)`$. … | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Teorema 9.1.2](lectures-2025-26/lecture-75-76.md#thm-9-1-2) | Sean $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$, $`f=f(x,y)\in C(P)`$ y … | [75–76](lectures-2025-26/lecture-75-76.md) |

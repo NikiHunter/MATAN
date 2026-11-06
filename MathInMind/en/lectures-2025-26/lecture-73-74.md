@@ -10,7 +10,7 @@ course_chapter: 24
 ---
 # Lectures 73–74 — properties of uniformly convergent series, power series, Abel's theorem
 
-[← Lectures 71–72](lecture-71-72.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-73-74.md) · [Español](../../es/lectures-2025-26/lecture-73-74.md)
+[← Lectures 71–72](lecture-71-72.md) · [Lecture index](index.md) · [Lectures 75–76 →](lecture-75-76.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-73-74.md) · [Español](../../es/lectures-2025-26/lecture-73-74.md)
 
 > **Source and numbering.** These notes were copied from a handwritten notebook (pages p042, p044–p049; the raw page text is in [`ocr/raw/`](../../../ocr/raw/p042.md); page p043 is a technical duplicate of p042). The record “Lectures 73–74” begins in the margin of page p042 with the plan of the class: properties of uniformly convergent functional series; the Cauchy–Hadamard formula; power series; Abel's theorem. [Theorem 8.3.2](#thm-8-3-2) is written twice on page p042 (at the end of the previous class and once more — with a heading and the hypothesis — before the proof) and is given here once. In the notebook the coefficients of a power series are denoted $`C_k`$; here, as on the lecturer's slides, they are denoted $`c_k`$ (the letter $`C_n`$ denotes the majorants in the [Weierstrass test](../10-function-sequences-series.md#weierstrass-m-test)). The numbering of definitions and theorems is the lecturer's. Slips in the notes are corrected and marked with “Source correction” blocks; lost passages are restored and marked with “Restored” blocks; the tags match [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Places that still have to be checked against the notebook are listed in [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
 
@@ -289,8 +289,8 @@ The interval of convergence is empty: the series converges only for $`x=2`$ (at 
 
 - Course topic: [chapter 10 “Sequences and series of functions”](../10-function-sequences-series.md) — [§10.3 “Continuity and integration”](../10-function-sequences-series.md#sec-10-3), [§10.4 “Differentiation”](../10-function-sequences-series.md#sec-10-4); [chapter 11 “Power series and analytic functions”](../11-power-series.md) — [§11.1 “Radius of convergence”](../11-power-series.md#sec-11-1), [§11.2 “Uniform convergence and operations”](../11-power-series.md#sec-11-2), [Abel's theorem](../11-power-series.md#abel-theorem).
 - Facts used: [Theorems 8.2.1](lecture-71-72.md#thm-8-2-1)–[8.2.3](lecture-71-72.md#thm-8-2-3) and [8.3.1](lecture-71-72.md#thm-8-3-1), the Weierstrass test and the Bolzano–Cauchy criterion for uniform convergence — [lectures 71–72](lecture-71-72.md); the Cauchy and d'Alembert tests, Abel's transformation, the sum of the series $`\sum\frac{(-1)^{k-1}}{k}=\ln2`$ — [lectures 69–70](lecture-69-70.md); the [upper limit](lecture-13.md#def-2-3-9) ([Definition 2.3.9](lecture-13.md#def-2-3-9)).
-- Continuation of §8.4 (integration and differentiation of power series, [Taylor series](../11-power-series.md#sec-11-3), [analytic functions](../11-power-series.md#sec-11-4)): [lectures 75–76](../../ru/lectures-2025-26/lecture-75-76.md).
+- Continuation of §8.4 (integration and differentiation of power series, [Taylor series](../11-power-series.md#sec-11-3), [analytic functions](../11-power-series.md#sec-11-4)): [lectures 75–76](lecture-75-76.md).
 
 ---
 
-[← Lectures 71–72](lecture-71-72.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-73-74.md) · [Español](../../es/lectures-2025-26/lecture-73-74.md)
+[← Lectures 71–72](lecture-71-72.md) · [Lecture index](index.md) · [Lectures 75–76 →](lecture-75-76.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-73-74.md) · [Español](../../es/lectures-2025-26/lecture-73-74.md)
