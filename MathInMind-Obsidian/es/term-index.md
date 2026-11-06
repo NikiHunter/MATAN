@@ -611,3 +611,17 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-77-78#^thm-9-2-1\|Teorema 9.2.1]] | Sean la función $f$ continua en $[a,b)\times[c,d]$, $y_0\in[c,d]$, y la integral … | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
 | [[es/lectures-2025-26/lecture-77-78#^thm-9-2-2\|Teorema 9.2.2]] | Supongamos que se cumplen las condiciones siguientes: | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
 | [[es/lectures-2025-26/lecture-77-78#^thm-9-2-3\|Teorema 9.2.3]] | Supongamos que se cumplen las condiciones siguientes: | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-9-3-1\|Definición 9.3.1]] | La función gamma (en el punto $y$) es la función dada por la fórmula | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+
+### Capítulo 10
+
+| Enunciado | Resumen | Lección |
+|---|---|---|
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-1\|Definición 10.1.1]] | El conjunto | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^thm-10-1-1\|Teorema 10.1.1]] | condición necesaria de integrabilidad | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-2\|Definición 10.1.2]] | Al paralelepípedo $I=I_{a,b}$ se le asigna el número | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-3\|Definición 10.1.3]] | La representación del paralelepípedo $I$ descrita arriba como unión … | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-4\|Definición 10.1.4]] | Si en cada paralelepípedo $I_j$ de la partición $P$ se fija un punto … | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-5\|Definición 10.1.5]] | La suma | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-6\|Definición 10.1.6]] | ($I\subset\mathbb R^n$) La magnitud | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-79-80#^def-10-1-7\|Definición 10.1.7]] | Si para una función $f:I\to\mathbb R$ existe el límite finito indicado en la definición … | [[es/lectures-2025-26/lecture-79-80\|79–80]] |

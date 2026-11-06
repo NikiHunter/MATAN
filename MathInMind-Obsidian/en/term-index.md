@@ -611,3 +611,17 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-77-78#^thm-9-2-1\|Theorem 9.2.1]] | Let the function $f$ be continuous on $[a,b)\times[c,d]$, $y_0\in[c,d]$, and let … | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
 | [[en/lectures-2025-26/lecture-77-78#^thm-9-2-2\|Theorem 9.2.2]] | Let the following conditions hold: | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
 | [[en/lectures-2025-26/lecture-77-78#^thm-9-2-3\|Theorem 9.2.3]] | Let the following conditions hold: | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-9-3-1\|Definition 9.3.1]] | The gamma function (at the point $y$) is the function given by the formula | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+
+### Chapter 10
+
+| Statement | Summary | Lecture |
+|---|---|---|
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-1\|Definition 10.1.1]] | The set | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^thm-10-1-1\|Theorem 10.1.1]] | necessary condition for integrability | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-2\|Definition 10.1.2]] | To the box $I=I_{a,b}$ we assign the number | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-3\|Definition 10.1.3]] | The representation of the box $I$ described above as the union $I=\bigcup_{j=1}^kI_j$ … | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-4\|Definition 10.1.4]] | If in each box $I_j$ of the partition $P$ some point $\xi_j\in I_j$ is fixed, we … | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-5\|Definition 10.1.5]] | The sum | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-6\|Definition 10.1.6]] | ($I\subset\mathbb R^n$) The quantity | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-79-80#^def-10-1-7\|Definition 10.1.7]] | If for a function $f:I\to\mathbb R$ the finite limit indicated in Definition 10.1.6 … | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
