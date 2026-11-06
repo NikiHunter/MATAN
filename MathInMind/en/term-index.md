@@ -548,3 +548,17 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [Theorem 6.6.1](lectures-2025-26/lecture-65-66.md#thm-6-6-1) | implicit map theorem | [65–66](lectures-2025-26/lecture-65-66.md) |
 | [Definition 6.7.1](lectures-2025-26/lecture-65-66.md#def-6-7-1) | Suppose that $`E\subset\mathbb R^n`$, $`a\in E`$, $`f:E\to\mathbb R`$. | [65–66](lectures-2025-26/lecture-65-66.md) |
 | [Theorem 6.7.1](lectures-2025-26/lecture-65-66.md#thm-6-7-1) | necessary condition for an extremum | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Definition 6.7.2](lectures-2025-26/lecture-67-68.md#def-6-7-2) | Let $`E\subset\mathbb R^n`$, $`a\in E`$, $`m\in\mathbb N`$, $`m<n`$ … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Theorem 6.7.2](lectures-2025-26/lecture-67-68.md#thm-6-7-2) | sufficient condition for an extremum | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Definition 6.7.3](lectures-2025-26/lecture-67-68.md#def-6-7-3) | Let $`N`$ be a linear subspace of $`\mathbb R^n`$, and $`f`$ a quadratic form on … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Theorem 6.7.3](lectures-2025-26/lecture-67-68.md#thm-6-7-3) | necessary condition for a relative extremum | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Theorem 6.7.4](lectures-2025-26/lecture-67-68.md#thm-6-7-4) | Let $`m,n\in\mathbb N`$, $`m<n`$, let the set $`E`$ be open in $`\mathbb R^n`$ … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Theorem 6.7.5](lectures-2025-26/lecture-67-68.md#thm-6-7-5) | sufficient condition for a relative extremum | [67–68](lectures-2025-26/lecture-67-68.md) |
+
+### Chapter 7
+
+| Statement | Summary | Lecture |
+|---|---|---|
+| [Definition 7.1.1](lectures-2025-26/lecture-67-68.md#def-7-1-1) | Let a sequence $`(a_n)`$, $`a_n\in\mathbb R`$, $`n\in\mathbb N`$ be given. Then … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Definition 7.1.2](lectures-2025-26/lecture-67-68.md#def-7-1-2) | The series $`\sum_{n=1}^{\infty}a_n`$ converges if the sum of the series $`S`$ exists and … | [67–68](lectures-2025-26/lecture-67-68.md) |
+| [Definition 7.2.1](lectures-2025-26/lecture-67-68.md#def-7-2-1) | The series $`\sum_{n=1}^{\infty}a_n`$ is called absolutely convergent if the series … | [67–68](lectures-2025-26/lecture-67-68.md) |

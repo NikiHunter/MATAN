@@ -10,9 +10,9 @@ course_chapter: 22
 ---
 # Lecciones 65–66 — fórmula de Taylor para aplicaciones de varias variables, aplicaciones implícitas, condición necesaria de extremo
 
-[← Lecciones 63–64](lecture-63-64.md) · [Índice de lecciones](index.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [English](../../en/lectures-2025-26/lecture-65-66.md)
+[← Lecciones 63–64](lecture-63-64.md) · [Índice de lecciones](index.md) · [Lecciones 67–68 →](lecture-67-68.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [English](../../en/lectures-2025-26/lecture-65-66.md)
 
-> **Fuente y numeración.** Los apuntes se copiaron de un cuaderno manuscrito (págs. p001–p011; el texto bruto de las páginas está en [`ocr/raw/`](../../../ocr/raw/p001.md)) y se cotejaron con los escaneos de esas páginas. La fecha en el recuadro de la pág. p001 es «3 de septiembre». El plan de la clase anotado en el cuaderno: existencia y unicidad del polinomio de Taylor multivariado; fórmulas de Taylor–Peano y de Taylor–Lagrange; la [función implícita](../16-implicit-functions-extrema.md#sec-16-3); extremos. La mitad inferior de la pág. p005 (la afirmación (∗) y su demostración) falta en la transcripción de la página y se transcribió a partir del escaneo. La demostración del [teorema 6.7.1](#thm-6-7-1) comienza en la pág. p011 y termina al principio de las [lecciones 67–68](../../ru/lectures-2025-26/lecture-67-68.md). La numeración de definiciones y teoremas es la del profesor (cotejada con las diapositivas del curso 2024/25). Los lapsus de los apuntes se corrigen y se marcan con bloques «Corrección de la fuente»; los pasajes perdidos se restauran y se marcan con bloques «Restaurado»; las etiquetas corresponden a [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Los lugares que aún hay que cotejar con el cuaderno se enumeran en [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
+> **Fuente y numeración.** Los apuntes se copiaron de un cuaderno manuscrito (págs. p001–p011; el texto bruto de las páginas está en [`ocr/raw/`](../../../ocr/raw/p001.md)) y se cotejaron con los escaneos de esas páginas. La fecha en el recuadro de la pág. p001 es «3 de septiembre». El plan de la clase anotado en el cuaderno: existencia y unicidad del polinomio de Taylor multivariado; fórmulas de Taylor–Peano y de Taylor–Lagrange; la [función implícita](../16-implicit-functions-extrema.md#sec-16-3); extremos. La mitad inferior de la pág. p005 (la afirmación (∗) y su demostración) falta en la transcripción de la página y se transcribió a partir del escaneo. La demostración del [teorema 6.7.1](#thm-6-7-1) comienza en la pág. p011 y termina al principio de las [lecciones 67–68](lecture-67-68.md). La numeración de definiciones y teoremas es la del profesor (cotejada con las diapositivas del curso 2024/25). Los lapsus de los apuntes se corrigen y se marcan con bloques «Corrección de la fuente»; los pasajes perdidos se restauran y se marcan con bloques «Restaurado»; las etiquetas corresponden a [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Los lugares que aún hay que cotejar con el cuaderno se enumeran en [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
 
 ## §6.5. Fórmula de Taylor
 
@@ -438,14 +438,14 @@ Tal punto $`a`$ se llama punto estacionario de la función $`f`$.
 ```math
 F(t)=f(a+th),\qquad t\in\left(-\frac{\delta}{\|h\|},\frac{\delta}{\|h\|}\right).
 ```
-*El final de la demostración está en las [lecciones 67–68](../../ru/lectures-2025-26/lecture-67-68.md).*
+*El final de la demostración está en las [lecciones 67–68](lecture-67-68.md).*
 
 ## Referencias cruzadas
 
 - Tema en el curso: [capítulo 15 «Diferenciación de aplicaciones de varias variables»](../15-multivariable-differentiation.md), [capítulo 16 «Funciones inversas e implícitas; extremos»](../16-implicit-functions-extrema.md); la fórmula de Taylor en una variable — [capítulo 7 «Teoremas del valor medio, fórmula de Taylor y convexidad»](../07-taylor-convexity.md).
 - Hechos usados de las [lecciones 63–64](lecture-63-64.md): el [lema 6.3.1](lecture-63-64.md#lem-6-3-1) sobre los incrementos por coordenadas, la [definición 6.4.2](lecture-63-64.md#def-6-4-2) ([aplicación diferenciable](lecture-59-60.md#def-6-1-2) $`s`$ veces), el [teorema 6.4.1](lecture-63-64.md#thm-6-4-1) sobre la igualdad de las [derivadas mixtas](lecture-63-64.md#thm-6-4-1), la [definición 6.4.3](lecture-63-64.md#def-6-4-3) y el [teorema 6.4.2](lecture-63-64.md#thm-6-4-2) (diferenciales de orden superior, multiíndices); el registro temático del semestre 2: [§6.3](../../ru/lectures/16-continuous-differentiability-6-3.md), [§6.4](../../ru/lectures/17-higher-derivatives-6-4.md).
-- Continuación: el final de la demostración del [teorema 6.7.1](#thm-6-7-1), las condiciones suficientes de extremo, el extremo condicionado y el comienzo del capítulo 7 «[Series numéricas](../04-numeric-series.md#sec-4-1)» — [lecciones 67–68](../../ru/lectures-2025-26/lecture-67-68.md).
+- Continuación: el final de la demostración del [teorema 6.7.1](#thm-6-7-1), las condiciones suficientes de extremo, el extremo condicionado y el comienzo del capítulo 7 «[Series numéricas](../04-numeric-series.md#sec-4-1)» — [lecciones 67–68](lecture-67-68.md).
 
 ---
 
-[← Lecciones 63–64](lecture-63-64.md) · [Índice de lecciones](index.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [English](../../en/lectures-2025-26/lecture-65-66.md)
+[← Lecciones 63–64](lecture-63-64.md) · [Índice de lecciones](index.md) · [Lecciones 67–68 →](lecture-67-68.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [English](../../en/lectures-2025-26/lecture-65-66.md)

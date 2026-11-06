@@ -549,3 +549,17 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-65-66#^thm-6-6-1\|Teorema 6.6.1]] | de la aplicación implícita | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
 | [[es/lectures-2025-26/lecture-65-66#^def-6-7-1\|Definición 6.7.1]] | Supongamos que $E\subset\mathbb R^n$, $a\in E$, $f:E\to\mathbb R$. | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
 | [[es/lectures-2025-26/lecture-65-66#^thm-6-7-1\|Teorema 6.7.1]] | condición necesaria de extremo | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-67-68#^def-6-7-2\|Definición 6.7.2]] | Sean $E\subset\mathbb R^n$, $a\in E$, $m\in\mathbb N$, $m<n$ … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^thm-6-7-2\|Teorema 6.7.2]] | condición suficiente de extremo | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^def-6-7-3\|Definición 6.7.3]] | Sean $N$ un subespacio lineal de $\mathbb R^n$ y $f$ una forma cuadrática en … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^thm-6-7-3\|Teorema 6.7.3]] | condición necesaria de extremo relativo | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^thm-6-7-4\|Teorema 6.7.4]] | Sean $m,n\in\mathbb N$, $m<n$, el conjunto $E$ abierto en $\mathbb R^n$ … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^thm-6-7-5\|Teorema 6.7.5]] | condición suficiente de extremo relativo | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+
+### Capítulo 7
+
+| Enunciado | Resumen | Lección |
+|---|---|---|
+| [[es/lectures-2025-26/lecture-67-68#^def-7-1-1\|Definición 7.1.1]] | Sea dada una sucesión $(a_n)$, $a_n\in\mathbb R$, $n\in\mathbb N$. Entonces … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^def-7-1-2\|Definición 7.1.2]] | La serie $\sum_{n=1}^{\infty}a_n$ converge si la suma de la serie $S$ existe y es … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |
+| [[es/lectures-2025-26/lecture-67-68#^def-7-2-1\|Definición 7.2.1]] | La serie $\sum_{n=1}^{\infty}a_n$ se llama absolutamente convergente si la serie … | [[es/lectures-2025-26/lecture-67-68\|67–68]] |

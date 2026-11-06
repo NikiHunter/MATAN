@@ -10,9 +10,9 @@ course_chapter: 22
 ---
 # Lectures 65–66 — Taylor's formula for maps of several variables, implicit maps, necessary condition for an extremum
 
-[← Lectures 63–64](lecture-63-64.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [Español](../../es/lectures-2025-26/lecture-65-66.md)
+[← Lectures 63–64](lecture-63-64.md) · [Lecture index](index.md) · [Lectures 67–68 →](lecture-67-68.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [Español](../../es/lectures-2025-26/lecture-65-66.md)
 
-> **Source and numbering.** These notes were copied from a handwritten notebook (pages p001–p011; the raw page text is in [`ocr/raw/`](../../../ocr/raw/p001.md)) and checked against the scans of those pages. The date in the frame on page p001 is “3 September”. The plan of the class written in the notebook: existence and uniqueness of the multivariate Taylor polynomial; the Taylor–Peano and Taylor–Lagrange formulas; the [implicit function](../16-implicit-functions-extrema.md#sec-16-3); extrema. The lower half of page p005 (statement (∗) and its proof) is missing from the page transcription and was typed from the scan. The proof of [Theorem 6.7.1](#thm-6-7-1) starts on page p011 and ends at the beginning of [lectures 67–68](../../ru/lectures-2025-26/lecture-67-68.md). The numbering of definitions and theorems is the lecturer's (checked against the slides of the 2024/25 course). Slips in the notes are corrected and marked with “Source correction” blocks; lost passages are restored and marked with “Restored” blocks; the tags match [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Places that still have to be checked against the notebook are listed in [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
+> **Source and numbering.** These notes were copied from a handwritten notebook (pages p001–p011; the raw page text is in [`ocr/raw/`](../../../ocr/raw/p001.md)) and checked against the scans of those pages. The date in the frame on page p001 is “3 September”. The plan of the class written in the notebook: existence and uniqueness of the multivariate Taylor polynomial; the Taylor–Peano and Taylor–Lagrange formulas; the [implicit function](../16-implicit-functions-extrema.md#sec-16-3); extrema. The lower half of page p005 (statement (∗) and its proof) is missing from the page transcription and was typed from the scan. The proof of [Theorem 6.7.1](#thm-6-7-1) starts on page p011 and ends at the beginning of [lectures 67–68](lecture-67-68.md). The numbering of definitions and theorems is the lecturer's (checked against the slides of the 2024/25 course). Slips in the notes are corrected and marked with “Source correction” blocks; lost passages are restored and marked with “Restored” blocks; the tags match [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Places that still have to be checked against the notebook are listed in [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
 
 ## §6.5. Taylor's formula
 
@@ -438,14 +438,14 @@ Such a point $`a`$ is called a stationary point of the function $`f`$.
 ```math
 F(t)=f(a+th),\qquad t\in\left(-\frac{\delta}{\|h\|},\frac{\delta}{\|h\|}\right).
 ```
-*The end of the proof is in [lectures 67–68](../../ru/lectures-2025-26/lecture-67-68.md).*
+*The end of the proof is in [lectures 67–68](lecture-67-68.md).*
 
 ## Cross-references
 
 - Course topic: [chapter 15 “Differentiation of maps of several variables”](../15-multivariable-differentiation.md), [chapter 16 “Inverse and implicit functions; extrema”](../16-implicit-functions-extrema.md); the one-variable Taylor formula — [chapter 7 “Mean value theorems, Taylor's formula and convexity”](../07-taylor-convexity.md).
 - Facts used from [lectures 63–64](lecture-63-64.md): [Lemma 6.3.1](lecture-63-64.md#lem-6-3-1) on increments along the coordinates, [Definition 6.4.2](lecture-63-64.md#def-6-4-2) (a $`s`$ times [differentiable map](lecture-59-60.md#def-6-1-2)), [Theorem 6.4.1](lecture-63-64.md#thm-6-4-1) on the equality of [mixed derivatives](lecture-63-64.md#thm-6-4-1), [Definition 6.4.3](lecture-63-64.md#def-6-4-3) and [Theorem 6.4.2](lecture-63-64.md#thm-6-4-2) (higher-order differentials, multi-indices); the thematic register of semester 2: [§6.3](../../ru/lectures/16-continuous-differentiability-6-3.md), [§6.4](../../ru/lectures/17-higher-derivatives-6-4.md).
-- Continuation: the end of the proof of [Theorem 6.7.1](#thm-6-7-1), sufficient conditions for an extremum, conditional extremum and the beginning of chapter 7 “[Numerical series](../04-numeric-series.md#sec-4-1)” — [lectures 67–68](../../ru/lectures-2025-26/lecture-67-68.md).
+- Continuation: the end of the proof of [Theorem 6.7.1](#thm-6-7-1), sufficient conditions for an extremum, conditional extremum and the beginning of chapter 7 “[Numerical series](../04-numeric-series.md#sec-4-1)” — [lectures 67–68](lecture-67-68.md).
 
 ---
 
-[← Lectures 63–64](lecture-63-64.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [Español](../../es/lectures-2025-26/lecture-65-66.md)
+[← Lectures 63–64](lecture-63-64.md) · [Lecture index](index.md) · [Lectures 67–68 →](lecture-67-68.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-65-66.md) · [Español](../../es/lectures-2025-26/lecture-65-66.md)
