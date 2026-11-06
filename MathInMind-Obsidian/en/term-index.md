@@ -582,3 +582,12 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-71-72#^def-8-3-1\|Definition 8.3.1]] | Let a sequence of functions $u_n:X\to\mathbb R$, $n\in\mathbb N$, be given. The … | [[en/lectures-2025-26/lecture-71-72\|71–72]] |
 | [[en/lectures-2025-26/lecture-71-72#^thm-8-3-1\|Theorem 8.3.1]] | Let a series of functions $u_n\in C([a,b])$, $n\in\mathbb N$, be given, and … | [[en/lectures-2025-26/lecture-71-72\|71–72]] |
 | [[en/lectures-2025-26/lecture-71-72#^def-8-3-2\|Definition 8.3.2]] | The series $\sum_{n=1}^{\infty}u_n(x)$ is called uniformly convergent on the set … | [[en/lectures-2025-26/lecture-71-72\|71–72]] |
+| [[en/lectures-2025-26/lecture-73-74#^thm-8-3-2\|Theorem 8.3.2]] | termwise integration | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^thm-8-3-3\|Theorem 8.3.3]] | termwise differentiation | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^def-8-4-1\|Definition 8.4.1]] | A series of the form | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^thm-8-4-1\|Theorem 8.4.1]] | Cauchy–Hadamard formula | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^rem-8-4-1\|Remark 8.4.1]] | By the Cauchy test, for $\|x-a\|<R$ the series $\sum_{k=0}^{\infty}c_k(x-a)^k$ … | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^def-8-4-2\|Definition 8.4.2]] | The quantity $R\in[0,+\infty]$ is called the radius of convergence of the series … | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^thm-8-4-2\|Theorem 8.4.2]] | uniform convergence of power series | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^rem-8-4-2\|Remark 8.4.2]] | The substitution $x-a=y$ reduces series (8.4.1) to a power series in powers of $y$ … | [[en/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[en/lectures-2025-26/lecture-73-74#^thm-8-4-3\|Theorem 8.4.3]] | Abel's theorem on power series | [[en/lectures-2025-26/lecture-73-74\|73–74]] |

@@ -582,3 +582,12 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-71-72#^def-8-3-1\|Definición 8.3.1]] | Sea dada una sucesión de funciones $u_n:X\to\mathbb R$, $n\in\mathbb N$. La expresión … | [[es/lectures-2025-26/lecture-71-72\|71–72]] |
 | [[es/lectures-2025-26/lecture-71-72#^thm-8-3-1\|Teorema 8.3.1]] | Sean dadas una serie de funciones $u_n\in C([a,b])$, $n\in\mathbb N$, y … | [[es/lectures-2025-26/lecture-71-72\|71–72]] |
 | [[es/lectures-2025-26/lecture-71-72#^def-8-3-2\|Definición 8.3.2]] | La serie $\sum_{n=1}^{\infty}u_n(x)$ se llama uniformemente convergente en el conjunto … | [[es/lectures-2025-26/lecture-71-72\|71–72]] |
+| [[es/lectures-2025-26/lecture-73-74#^thm-8-3-2\|Teorema 8.3.2]] | integración término a término | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^thm-8-3-3\|Teorema 8.3.3]] | derivación término a término | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^def-8-4-1\|Definición 8.4.1]] | Una serie de la forma | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^thm-8-4-1\|Teorema 8.4.1]] | fórmula de Cauchy–Hadamard | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^rem-8-4-1\|Observación 8.4.1]] | Por el criterio de Cauchy, para $\|x-a\|<R$ la serie $\sum_{k=0}^{\infty}c_k(x-a)^k$ … | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^def-8-4-2\|Definición 8.4.2]] | La magnitud $R\in[0,+\infty]$ se llama radio de convergencia de la serie … | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^thm-8-4-2\|Teorema 8.4.2]] | convergencia uniforme de las series de potencias | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^rem-8-4-2\|Observación 8.4.2]] | El cambio $x-a=y$ reduce la serie (8.4.1) a una serie de potencias de $y$ con centro … | [[es/lectures-2025-26/lecture-73-74\|73–74]] |
+| [[es/lectures-2025-26/lecture-73-74#^thm-8-4-3\|Teorema 8.4.3]] | teorema de Abel sobre series de potencias | [[es/lectures-2025-26/lecture-73-74\|73–74]] |

@@ -21,7 +21,7 @@ SEMESTERS = ((1, 0, 32), (2, 33, 64), (3, 65, 84))
 LAST_LECTURE = SEMESTERS[-1][2]
 # Lectures after this number exist in Russian only until their English and
 # Spanish translations are added; then raise it to LAST_LECTURE.
-TRANSLATED_UP_TO = 72
+TRANSLATED_UP_TO = 74
 
 
 def semester_of(lecture: int) -> int:
