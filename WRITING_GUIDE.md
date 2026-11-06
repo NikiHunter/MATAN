@@ -128,7 +128,7 @@ Append after the ticket table, one section per session:
   «Ключевые определения для допуска»; «Чистилище: семестр 1» (~100 follow-ups on lectures 0–32);
   «Контрпримеры и что если убрать условие» (~40); «Пробные пересдачи» (3 variants, full solutions).
 - [x] Link it from `MathInMind/ru/exam/index.md`.
-- [ ] Optional: add «Доказательство», «Задачи», «Если снять условие» to the 72 ticket files.
+- [x] Optional: add «Доказательство», «Задачи», «Если снять условие» to the 72 ticket files.
 
 **Check:** exam validator prints «Reexam master: 72 tickets linked».
 

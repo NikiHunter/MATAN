@@ -78,7 +78,7 @@ Lectures 65–84 were cleaned from a student's notebook (pages `p001`–`p082`) 
 The Russian exam track uses `МАТАН_Л` as its primary source and keeps the lecture numbering:
 
 - [17 lecture sections and 148 original numbered items](MathInMind/ru/lectures/index.md), plus a clearly labelled reconstruction of Theorem 6.4.1;
-- [72 individual exam-ticket answers](MathInMind/ru/exam/index.md) with worked examples;
+- [72 individual exam-ticket answers](MathInMind/ru/exam/index.md) with proofs, worked examples, problems and dropped-condition notes;
 - [54 Purgatory definitions](MathInMind/ru/purgatory/definitions.md) linked to 53 supplied scans and a transparent reconstruction for missing scan 15;
 - [300 possible Purgatory question themes](MathInMind/ru/purgatory/questions.md).
 

@@ -24,7 +24,9 @@ SEM3 = RU / "exam-sem3"
 SEM3_MASTER = SEM3 / "EXAM_SEM3.md"
 SEM3_TICKETS = SEM3 / "tickets"
 PURGATORY = RU / "purgatory"
-TICKET_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Разобранный пример", "## Проверка готовности")
+# Semester-2 tickets: the original four sections plus the proof, problems and dropped-condition notes (G2).
+TICKET_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Доказательство", "## Разобранный пример", "## Задачи",
+                   "## Если снять условие", "## Проверка готовности")
 SEM3_HEADINGS = ("## Вопрос", "## Эталонный ответ", "## Доказательство", "## Разобранный пример",
                  "## Если снять условие", "## Проверка готовности")
 # All seven sections of the semester-3 master (G1.b).
