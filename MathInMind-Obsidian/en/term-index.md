@@ -606,3 +606,8 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-75-76#^def-9-1-1\|Definition 9.1.1]] | An integral depending on a parameter is a function of the form | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
 | [[en/lectures-2025-26/lecture-75-76#^thm-9-1-1\|Theorem 9.1.1]] | Let $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$ and $f=f(x,y)\in C(P)$. … | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
 | [[en/lectures-2025-26/lecture-75-76#^thm-9-1-2\|Theorem 9.1.2]] | Let $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$, $f=f(x,y)\in C(P)$ and … | [[en/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[en/lectures-2025-26/lecture-77-78#^thm-9-1-3\|Theorem 9.1.3]] | Let $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$ and $f=f(x,y)\in C(P)$. … | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[en/lectures-2025-26/lecture-77-78#^def-9-2-1\|Definition 9.2.1]] | We say that $I(y)$ converges uniformly with respect to $y\in Y$ (uniformly on $Y$) … | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[en/lectures-2025-26/lecture-77-78#^thm-9-2-1\|Theorem 9.2.1]] | Let the function $f$ be continuous on $[a,b)\times[c,d]$, $y_0\in[c,d]$, and let … | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[en/lectures-2025-26/lecture-77-78#^thm-9-2-2\|Theorem 9.2.2]] | Let the following conditions hold: | [[en/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[en/lectures-2025-26/lecture-77-78#^thm-9-2-3\|Theorem 9.2.3]] | Let the following conditions hold: | [[en/lectures-2025-26/lecture-77-78\|77–78]] |

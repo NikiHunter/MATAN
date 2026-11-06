@@ -606,3 +606,8 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-75-76#^def-9-1-1\|Definición 9.1.1]] | Una integral dependiente de un parámetro es una función de la forma | [[es/lectures-2025-26/lecture-75-76\|75–76]] |
 | [[es/lectures-2025-26/lecture-75-76#^thm-9-1-1\|Teorema 9.1.1]] | Sean $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$ y $f=f(x,y)\in C(P)$. … | [[es/lectures-2025-26/lecture-75-76\|75–76]] |
 | [[es/lectures-2025-26/lecture-75-76#^thm-9-1-2\|Teorema 9.1.2]] | Sean $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$, $f=f(x,y)\in C(P)$ y … | [[es/lectures-2025-26/lecture-75-76\|75–76]] |
+| [[es/lectures-2025-26/lecture-77-78#^thm-9-1-3\|Teorema 9.1.3]] | Sean $P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}$ y $f=f(x,y)\in C(P)$. … | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[es/lectures-2025-26/lecture-77-78#^def-9-2-1\|Definición 9.2.1]] | Diremos que $I(y)$ converge uniformemente respecto de $y\in Y$ (uniformemente en … | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[es/lectures-2025-26/lecture-77-78#^thm-9-2-1\|Teorema 9.2.1]] | Sean la función $f$ continua en $[a,b)\times[c,d]$, $y_0\in[c,d]$, y la integral … | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[es/lectures-2025-26/lecture-77-78#^thm-9-2-2\|Teorema 9.2.2]] | Supongamos que se cumplen las condiciones siguientes: | [[es/lectures-2025-26/lecture-77-78\|77–78]] |
+| [[es/lectures-2025-26/lecture-77-78#^thm-9-2-3\|Teorema 9.2.3]] | Supongamos que se cumplen las condiciones siguientes: | [[es/lectures-2025-26/lecture-77-78\|77–78]] |

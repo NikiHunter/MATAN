@@ -10,7 +10,7 @@ course_chapter: 24
 ---
 # Lectures 75–76 — integration and differentiation of power series, Taylor series, integrals depending on a parameter
 
-[← Lectures 73–74](lecture-73-74.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-75-76.md) · [Español](../../es/lectures-2025-26/lecture-75-76.md)
+[← Lectures 73–74](lecture-73-74.md) · [Lecture index](index.md) · [Lectures 77–78 →](lecture-77-78.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-75-76.md) · [Español](../../es/lectures-2025-26/lecture-75-76.md)
 
 > **Source and numbering.** These notes were copied from a handwritten notebook (pages p050–p057; the raw page text is in [`ocr/raw/`](../../../ocr/raw/p050.md)). Page p050 begins with an example to the [Cauchy–Hadamard formula](../11-power-series.md#sec-11-1) that completes the previous class; next to it in the margin, in red, are the heading “Lectures 75–76” and the plan of the class, read only partially (integration of power series; radii, power series and the Taylor series, analytic functions; the third item is illegible), and in a frame the mark “80 (15 Oct)” (apparently a page number and the date of the class). The coefficients of power series, denoted $`C_k`$ in the notebook, are denoted $`c_k`$ here, as on the lecturer's slides. The numbering of definitions and theorems is the lecturer's. Slips in the notes are corrected and marked with “Source correction” blocks; lost passages are restored and marked with “Restored” blocks; the tags match [`ocr/RESOLVED.md`](../../../ocr/RESOLVED.md). Places that still have to be checked against the notebook are listed in [`ocr/ISSUES.md`](../../../ocr/ISSUES.md).
 
@@ -402,8 +402,8 @@ x^2u''+xu'+(x^2-n^2)u=\int_0^{\pi}\Bigl[-x^2\sin^2\varphi\cos(n\varphi-x\sin\var
 - Course topic: [chapter 11 “Power series and analytic functions”](../11-power-series.md) — [§11.2 “Uniform convergence and operations”](../11-power-series.md#sec-11-2), [§11.3 “Standard expansions”](../11-power-series.md#sec-11-3), [§11.4 “Analyticity is not smoothness”](../11-power-series.md#sec-11-4) (it also has the function $`e^{-1/x^2}`$, whose Taylor series converges, but not to it: case 3 of the list above); [the Dirichlet test for integrals](../09-improper-integrals-applications.md#dirichlet-test-for-integrals) (convergence of the integral $`\int_0^{+\infty}\frac{\sin x}{x}\,dx`$).
 - The beginning of §8.4 ([Definitions 8.4.1](lecture-73-74.md#def-8-4-1), [8.4.2](lecture-73-74.md#def-8-4-2), the Cauchy–Hadamard formula, [Theorems 8.4.2](lecture-73-74.md#thm-8-4-2) and Abel's [8.4.3](lecture-73-74.md#thm-8-4-3)): [lectures 73–74](lecture-73-74.md); [Theorems 8.2.2](lecture-71-72.md#thm-8-2-2), [8.3.1](lecture-71-72.md#thm-8-3-1)–[8.3.3](lecture-73-74.md#thm-8-3-3) and the Weierstrass test — [lectures 71–72](lecture-71-72.md) and [lectures 73–74](lecture-73-74.md).
 - Taylor's formula and [Lemma 3.6.2](lecture-29-30.md#lem-3-6-2) on the estimate of the remainder: [lectures 29–30](lecture-29-30.md).
-- Continuation of chapter 9 (improper integrals depending on a parameter): [lectures 77–78](../../ru/lectures-2025-26/lecture-77-78.md).
+- Continuation of chapter 9 (improper integrals depending on a parameter): [lectures 77–78](lecture-77-78.md).
 
 ---
 
-[← Lectures 73–74](lecture-73-74.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-75-76.md) · [Español](../../es/lectures-2025-26/lecture-75-76.md)
+[← Lectures 73–74](lecture-73-74.md) · [Lecture index](index.md) · [Lectures 77–78 →](lecture-77-78.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-75-76.md) · [Español](../../es/lectures-2025-26/lecture-75-76.md)

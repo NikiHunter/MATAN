@@ -605,3 +605,8 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [Definition 9.1.1](lectures-2025-26/lecture-75-76.md#def-9-1-1) | An integral depending on a parameter is a function of the form | [75–76](lectures-2025-26/lecture-75-76.md) |
 | [Theorem 9.1.1](lectures-2025-26/lecture-75-76.md#thm-9-1-1) | Let $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$ and $`f=f(x,y)\in C(P)`$. … | [75–76](lectures-2025-26/lecture-75-76.md) |
 | [Theorem 9.1.2](lectures-2025-26/lecture-75-76.md#thm-9-1-2) | Let $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$, $`f=f(x,y)\in C(P)`$ and … | [75–76](lectures-2025-26/lecture-75-76.md) |
+| [Theorem 9.1.3](lectures-2025-26/lecture-77-78.md#thm-9-1-3) | Let $`P=\{(x,y)\in\mathbb R^2:\ a\le x\le b,\ c\le y\le d\}`$ and $`f=f(x,y)\in C(P)`$. … | [77–78](lectures-2025-26/lecture-77-78.md) |
+| [Definition 9.2.1](lectures-2025-26/lecture-77-78.md#def-9-2-1) | We say that $`I(y)`$ converges uniformly with respect to $`y\in Y`$ (uniformly on $`Y`$) … | [77–78](lectures-2025-26/lecture-77-78.md) |
+| [Theorem 9.2.1](lectures-2025-26/lecture-77-78.md#thm-9-2-1) | Let the function $`f`$ be continuous on $`[a,b)\times[c,d]`$, $`y_0\in[c,d]`$, and let … | [77–78](lectures-2025-26/lecture-77-78.md) |
+| [Theorem 9.2.2](lectures-2025-26/lecture-77-78.md#thm-9-2-2) | Let the following conditions hold: | [77–78](lectures-2025-26/lecture-77-78.md) |
+| [Theorem 9.2.3](lectures-2025-26/lecture-77-78.md#thm-9-2-3) | Let the following conditions hold: | [77–78](lectures-2025-26/lecture-77-78.md) |
