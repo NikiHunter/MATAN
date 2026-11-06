@@ -53,7 +53,7 @@ Intervals are $(a,b)$ open, $[a,b]$ closed, and $[a,b)$ or $(a,b]$ half-open. Un
 | $f'$, $\partial_i f$, $Df$ | ordinary, partial, and [[en/15-multivariable-differentiation#15.1 The total derivative\|total derivatives]] |
 | $\nabla f$, $Hf$ | [[en/15-multivariable-differentiation#15.2 Partial and directional derivatives\|gradient]] and [[en/15-multivariable-differentiation#15.4 Higher derivatives and Taylor's formula\|Hessian]] |
 | $\Vert x\Vert _p$ | $p$-norm; $\Vert x\Vert$ usually means [[en/14-several-variables#14.1 Euclidean space and norms\|Euclidean norm]] |
-| $\langle f,g\rangle$ | [[en/21-lp-spaces#21.4 The Hilbert space L2\|inner product]], specified in context |
+| $\langle f,g\rangle$ | [[en/21-lp-spaces#^sec-21-4\|inner product]], specified in context |
 | [[en/19-measure-theory#19.4 Measurable functions\|a.e.]] | almost everywhere, outside a [[en/08-riemann-integration#8.2 Riemann sums and properties\|null set]] |
 | $C^k$, $C^\infty$ | $k$ times continuously differentiable, infinitely [[en/06-derivatives#6.1 Definition and linear approximation\|differentiable]] |
 

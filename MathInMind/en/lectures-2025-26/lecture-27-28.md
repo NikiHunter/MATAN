@@ -119,7 +119,7 @@ C(E) \supset C^1(E) \supset \cdots \supset C^n(E) \supset C^{n+1}(E) \supset \cd
 **Remarks.**
 
 1. All inclusions are strict.
-2. The class of functions differentiable on $`E`$ is strictly larger than the class of functions [continuously differentiable](../15-multivariable-differentiation.md#sec-15-1) on $`E`$.
+2. The class of functions differentiable on $`E`$ is strictly larger than the class of functions continuously differentiable on $`E`$.
 
 ### Handwritten page 13 (PDF p. 13). Examples for the remarks
 

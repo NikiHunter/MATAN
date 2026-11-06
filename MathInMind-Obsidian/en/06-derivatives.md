@@ -97,7 +97,7 @@ $$
 ## 6.4 Local information from the derivative
 
 > [!theorem] Fermat's theorem
-> If $f$ has a local extremum at an [[en/13-metric-spaces#13.2 Open and closed sets|interior point]] $a$ and is differentiable there, then $f'(a)=0$.
+> If $f$ has a local extremum at an interior point $a$ and is differentiable there, then $f'(a)=0$.
 
 ^fermat-theorem
 

@@ -51,7 +51,7 @@ $$
 2. для скалярной $\lambda(x)$:
 
    $$d_a(\lambda f)=f(a)d_a\lambda+\lambda(a)d_af;$$
-3. для [[ru/21-lp-spaces#21.4 Гильбертово пространство L2|скалярного произведения]]:
+3. для [[ru/21-lp-spaces#^sec-21-4|скалярного произведения]]:
 
    $$d_a(f\cdot g)=g(a)\cdot d_af+f(a)\cdot d_ag;$$
 4. для скалярных $f,g$ и $g(a)\ne0$:

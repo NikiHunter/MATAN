@@ -90,7 +90,7 @@ $$
 
 ## Diapositiva impresa 8 (pp. PDF 9) — Otras propiedades de la norma
 
-La desigualdad triangular inversa acota la diferencia de normas por la norma de la diferencia. Cauchy–Schwarz acota el [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|producto escalar]]; cada coordenada no supera la norma euclídea.
+La desigualdad triangular inversa acota la diferencia de normas por la norma de la diferencia. Cauchy–Schwarz acota el [[es/21-lp-spaces#^sec-21-4|producto escalar]]; cada coordenada no supera la norma euclídea.
 
 
 $$

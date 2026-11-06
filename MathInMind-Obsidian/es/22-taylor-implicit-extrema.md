@@ -10,7 +10,7 @@ tags: [mathinmind/es, mathinmind/chapter]
 ---
 # 22. Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos
 
-[[es/21-lp-spaces|← 21. Espacios Lp y modos de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/23-numerical-series|23. Series numéricas →]]
+[[es/21-lp-spaces|← 21. Espacios Lᵖ y modos de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/23-numerical-series|23. Series numéricas →]]
 
 > [!abstract] Objetivo
 > Exponer el final del capítulo 6 del profesor (§6.5–§6.7, [[es/lectures-2025-26/lecture-65-66|clases 65–66]] y [[es/lectures-2025-26/lecture-67-68|67–68]]) conservando la numeración del profesor: la [[#^def-6-5-1|fórmula de Taylor]] en varias variables, el [[#^thm-6-6-1|teorema de la aplicación implícita]], los extremos libres y condicionados. Una exposición más breve de los mismos temas, sin la numeración del profesor, está en los capítulos [[es/15-multivariable-differentiation|15]] y [[es/16-implicit-functions-extrema|16]].
@@ -78,7 +78,7 @@ Es el caso $s=0$ del [[#^thm-6-5-2|teorema 6.5.2]]. Para aplicaciones la igualda
 
 ^thm-6-5-4
 
-*Idea de la demostración.* Para el vector unitario $e$ con la dirección del lado izquierdo (bajo el signo de la [[es/14-several-variables#14.1 Espacio euclidiano y normas|norma]]), la función $g=\langle f,e\rangle$ es escalar; se le aplica el [[#^thm-6-5-2|teorema 6.5.2]] y después la [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|desigualdad de Cauchy–Schwarz]] $|\langle v,e\rangle|\le\|v\|$.
+*Idea de la demostración.* Para el vector unitario $e$ con la dirección del lado izquierdo (bajo el signo de la [[es/14-several-variables#14.1 Espacio euclidiano y normas|norma]]), la función $g=\langle f,e\rangle$ es escalar; se le aplica el [[#^thm-6-5-2|teorema 6.5.2]] y después la [[es/21-lp-spaces#^sec-21-4|desigualdad de Cauchy–Schwarz]] $|\langle v,e\rangle|\le\|v\|$.
 
 > [!theorem] Teorema 6.5.5 (estimación del resto)
 > Sean el conjunto $E$ abierto en $\mathbb R^n$, $s\in\mathbb Z_+$, $f\in C^{s+1}(E,\mathbb R^m)$, $a,x\in E$, $a\ne x$, $\Delta_{a,x}\subset E$, y
@@ -216,4 +216,4 @@ El extremo condicionado se busca entre las soluciones del sistema $\operatorname
 
 ---
 
-[[es/21-lp-spaces|← 21. Espacios Lp y modos de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/23-numerical-series|23. Series numéricas →]]
+[[es/21-lp-spaces|← 21. Espacios Lᵖ y modos de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/23-numerical-series|23. Series numéricas →]]

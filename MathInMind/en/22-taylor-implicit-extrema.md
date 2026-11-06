@@ -8,7 +8,7 @@ lecturer_chapter: 6
 ---
 # 22. Taylor's Formula in ℝⁿ, Implicit Maps, Extrema
 
-[← 21. Lp Spaces and Modes of Convergence](21-lp-spaces.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [23. Numerical Series →](23-numerical-series.md)
+[← 21. Lᵖ Spaces and Modes of Convergence](21-lp-spaces.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [23. Numerical Series →](23-numerical-series.md)
 
 > **Goal.** Present the end of the lecturer's chapter 6 (§6.5–§6.7, [lectures 65–66](lectures-2025-26/lecture-65-66.md) and [67–68](lectures-2025-26/lecture-67-68.md)), keeping the lecturer's numbering: the multivariate [Taylor formula](#def-6-5-1), the [implicit map theorem](#thm-6-6-1), unconstrained and [constrained extrema](16-implicit-functions-extrema.md#sec-16-4). A shorter treatment of the same topics without the lecturer's numbering is in chapters [15](15-multivariable-differentiation.md) and [16](16-implicit-functions-extrema.md).
 
@@ -168,4 +168,4 @@ A conditional extremum is sought among the solutions of the system $`\operatorna
 
 ---
 
-[← 21. Lp Spaces and Modes of Convergence](21-lp-spaces.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [23. Numerical Series →](23-numerical-series.md)
+[← 21. Lᵖ Spaces and Modes of Convergence](21-lp-spaces.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [23. Numerical Series →](23-numerical-series.md)

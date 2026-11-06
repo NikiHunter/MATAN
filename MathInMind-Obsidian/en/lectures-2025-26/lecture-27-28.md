@@ -144,7 +144,7 @@ $$
 **Remarks.**
 
 1. All inclusions are strict.
-2. The class of functions differentiable on $E$ is strictly larger than the class of functions [[en/15-multivariable-differentiation#15.1 The total derivative|continuously differentiable]] on $E$.
+2. The class of functions differentiable on $E$ is strictly larger than the class of functions continuously differentiable on $E$.
 
 ### Handwritten page 13 (PDF p. 13). Examples for the remarks
 

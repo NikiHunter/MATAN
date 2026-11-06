@@ -62,7 +62,7 @@ El conjunto $`\{q\in\mathbb Q:q^2<2\}`$ no tiene supremo racional, por lo que $`
 
 > <a id="archimedean-property"></a>**Propiedad arquimediana.** Para todo $`x\in\mathbb R`$ existe $`n\in\mathbb N`$ con $`n>x`$. Equivalentemente, para todo $`\varepsilon>0`$ hay $`n`$ tal que $`1/n<\varepsilon`$.
 
-Si $`\mathbb N`$ estuviera [acotado superiormente](#sec-2-2), su supremo $`s`$ cumpliría $`s-1<n<s`$ para algún entero $`n`$, lo que daría $`n+1>s`$, una contradicción.
+Si $`\mathbb N`$ estuviera [acotado superiormente](#sec-2-2), existiría un natural $`n`$ con $`s-1<n\le s`$ para su supremo $`s`$ (el número $`s-1`$ no es cota superior de $`\mathbb N`$), y entonces $`n+1>s`$ con $`n+1\in\mathbb N`$, una contradicción.
 
 > <a id="density-of-rationals"></a>**Densidad de los racionales.** Si $`a<b`$, existe $`q\in\mathbb Q`$ con $`a<q<b`$.
 

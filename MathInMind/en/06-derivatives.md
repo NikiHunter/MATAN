@@ -94,7 +94,7 @@ Higher derivatives are defined recursively by $`f^{(n+1)}=(f^{(n)})'`$. Leibniz'
 <a id="sec-6-4"></a>
 ## 6.4 Local information from the derivative
 
-> <a id="fermat-theorem"></a>**Fermat's theorem.** If $`f`$ has a local extremum at an [interior point](13-metric-spaces.md#sec-13-2) $`a`$ and is differentiable there, then $`f'(a)=0`$.
+> <a id="fermat-theorem"></a>**Fermat's theorem.** If $`f`$ has a local extremum at an interior point $`a`$ and is differentiable there, then $`f'(a)=0`$.
 
 The converse is false: $`x^3`$ has zero derivative at zero but no extremum. If $`f'(x)>0`$ throughout an interval, $`f`$ is strictly increasing there; this follows from the [mean value theorem](07-taylor-convexity.md#lagrange-mean-value-theorem) in the next chapter.
 

@@ -62,7 +62,7 @@ CHAPTER_STATEMENTS = {
         ("ftc-first-part", "theorem"), ("newton-leibniz-formula", "theorem")],
     9: [("dirichlet-test-for-integrals", "theorem")],
     10: [("weierstrass-m-test", "theorem"), ("uniform-limit-continuity", "theorem"),
-         ("uniform-limit-integration", "theorem")],
+         ("uniform-limit-integration", "theorem"), ("uniform-limit-differentiation", "theorem")],
     11: [("abel-theorem", "theorem")],
     12: [("dirichlet-pointwise-theorem", "theorem")],
     13: [("heine-borel-theorem", "theorem"), ("baire-category-theorem", "theorem")],
@@ -409,7 +409,7 @@ TERMS: list[Term] = [
     T("closed-set", "13#sec-13-2", (r"closed sets?",), (r"замкнут\w* множеств\w*",), (r"conjuntos? cerrados?",),
       lec="thm-5-3-1"),
     T("interior", "13#sec-13-2", (r"interior points?", r"interiors? of (?:a|the) set"),
-      (r"внутренн\w* точк\w*", r"внутренност\w*"), (r"puntos? interiores?", r"interior de (?:un|el) conjunto"),
+      (r"внутренн\w* точк\w*", r"внутренност\w*"), (r"puntos? interiores?", r"interior de (?:un|el) conjunto"), chapters=(13, 21),
       lec="def-5-3-3"),
     T("closure", "13#sec-13-2", (r"closures? of (?:a|the) set", r"closure"), (r"замыкани\w*",), (r"clausuras?", r"adherencias?"),
       lec="def-5-3-2"),
@@ -463,7 +463,7 @@ TERMS: list[Term] = [
        lec="thm-6-4-1"),
     T("continuously-differentiable", "15#sec-15-1", (r"continuously differentiable", r"C\^1 maps"),
       (r"непрерывно дифференцируем\w*",), (r"continuamente (?:derivables?|diferenciables?)", r"de clase C"),
-      lec="thm-6-3-1"),
+      lec="thm-6-3-1", chapters=(13, 21)),
 
     # 16. Implicit functions and extrema
     TH("inverse-function-theorem", "16#inverse-function-theorem", (r"inverse function theorem",),

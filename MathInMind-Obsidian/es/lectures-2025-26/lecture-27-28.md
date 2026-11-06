@@ -148,7 +148,7 @@ $$
 **Observaciones.**
 
 1. Todas las inclusiones son estrictas.
-2. La clase de las funciones derivables en $E$ es estrictamente más amplia que la clase de las funciones [[es/15-multivariable-differentiation#15.1 Derivada total|continuamente diferenciables]] en $E$.
+2. La clase de las funciones derivables en $E$ es estrictamente más amplia que la clase de las funciones continuamente diferenciables en $E$.
 
 ### Página manuscrita 13 (p. PDF 13). Ejemplos para las observaciones
 

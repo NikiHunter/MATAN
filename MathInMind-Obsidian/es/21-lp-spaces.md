@@ -1,9 +1,9 @@
 ---
-title: "Espacios Lp y modos de convergencia"
+title: "Espacios Lᵖ y modos de convergencia"
 lang: es
 chapter: 21
 part: "Análisis moderno"
-aliases: ["Espacios Lp y modos de convergencia (es)"]
+aliases: ["Espacios Lᵖ y modos de convergencia (es)"]
 tags: [mathinmind/es, mathinmind/chapter]
 ---
 # 21. Espacios $L^p$ y modos de convergencia
@@ -33,7 +33,7 @@ Para $p=\infty$, $\|f\|_\infty$ es el supremo esencial: el menor $M$ tal que $|f
 
 ^holder-inequality
 
-Para $p=q=2$ es [[#21.4 El espacio de Hilbert L2|Cauchy–Schwarz]]. La **desigualdad de Minkowski** es la triangular
+Para $p=q=2$ es [[#^sec-21-4|Cauchy–Schwarz]]. La **desigualdad de Minkowski** es la triangular
 
 $$
 \|f+g\|_p\le\|f\|_p+\|g\|_p.
@@ -68,9 +68,9 @@ La densidad de funciones continuas falla en $L^\infty$: un [[es/10-function-sequ
 
 Truncamiento, regularización y aproximación por simples son técnicas estándar que reducen problemas a estimaciones en una subclase densa.
 
-## 21.4 El espacio de Hilbert L2
+## 21.4 El espacio de Hilbert $L^2$
 
-El espacio $L^2$ tiene producto interno
+El espacio $L^2$ tiene producto interno ^sec-21-4
 
 $$
 \langle f,g\rangle=\int_Xf\overline{g}\,d\mu,

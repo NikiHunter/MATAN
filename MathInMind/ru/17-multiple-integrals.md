@@ -75,9 +75,9 @@ dV=\rho^2\sin\varphi\,d\rho\,d\varphi\,d\theta,
 Двойные и тройные интегралы вычисляют
 
 ```math
-\operatorname{area}(D)=\iint_D1\,dA,
+S(D)=\iint_D1\,dA,
 \qquad
-\operatorname{vol}(\Omega)=\iiint_\Omega1\,dV.
+V(\Omega)=\iiint_\Omega1\,dV.
 ```
 
 При плотности $`\rho`$ масса равна $`M=\int_\Omega\rho\,dV`$, а координаты центра масс:

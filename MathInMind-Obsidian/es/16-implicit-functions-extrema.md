@@ -32,7 +32,7 @@ Por ejemplo, $f(x,y)=x^2-y^2$ tiene hessiana $\operatorname{diag}(2,-2)$ en el o
 
 ## 16.2 Teorema de la función inversa
 
-> [!theorem] Teorema
+> [!theorem] Teorema de la función inversa
 > Sea $F:\mathbb R^n\to\mathbb R^n$ de clase $C^1$ cerca de $a$, con $DF(a)$ invertible. Entonces $F$ aplica biyectivamente un entorno de $a$ sobre un entorno de $F(a)$, la inversa es $C^1$ y
 > $$
 > DF^{-1}(F(a))=(DF(a))^{-1}.
@@ -92,7 +92,7 @@ $$
 1=2\lambda x,\qquad 1=2\lambda y,
 $$
 
-así que $x=y$. En la circunferencia aparecen $\pm(1/\sqrt2,1/\sqrt2)$. El máximo es $\sqrt2$ y el mínimo $-\sqrt2$. Coincide con [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|Cauchy–Schwarz]]: $|x+y|\le\sqrt2\sqrt{x^2+y^2}$.
+así que $x=y$. En la circunferencia aparecen $\pm(1/\sqrt2,1/\sqrt2)$. El máximo es $\sqrt2$ y el mínimo $-\sqrt2$. Coincide con [[es/21-lp-spaces#^sec-21-4|Cauchy–Schwarz]]: $|x+y|\le\sqrt2\sqrt{x^2+y^2}$.
 
 ## Errores frecuentes
 

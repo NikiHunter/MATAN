@@ -722,7 +722,7 @@ $`\frac{(-1)^n}{\sqrt n+(-1)^n}=\frac{(-1)^n(\sqrt n-(-1)^n)}{n-1}=\frac{(-1)^n\
 Поточечно $`f_n\to0`$. На $`[0,1]`$: $`\sup f_n=f_n\bigl(\frac1n\bigr)=\frac12\not\to0`$ — сходимость неравномерная. На $`[\delta,1]`$: $`0\le f_n(x)\le\frac{nx}{n^2x^2}=\frac1{nx}\le\frac1{n\delta}\to0`$ — равномерная.
 </details>
 
-**Задача 14.** Докажите, что $`\zeta(x)=\sum_{n\ge1}n^{-x}`$ [непрерывно дифференцируема](../lectures/16-continuous-differentiability-6-3.md#thm-6-3-1) на $`(1,\infty)`$. Сходится ли ряд равномерно на $`(1,\infty)`$?
+**Задача 14.** Докажите, что $`\zeta(x)=\sum_{n\ge1}n^{-x}`$ имеет непрерывную производную на $`(1,\infty)`$. Сходится ли ряд равномерно на $`(1,\infty)`$?
 
 <details>
 <summary>Решение</summary>

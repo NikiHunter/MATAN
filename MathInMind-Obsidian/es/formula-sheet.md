@@ -125,7 +125,7 @@ $$
 \iint_{\partial\Omega}F\cdot n\,dS=\iiint_\Omega\nabla\cdot F\,dV.
 $$
 
-## Medida, Lebesgue y Lp — [[es/19-measure-theory|capítulos 19–21]]
+## Medida, Lebesgue y $L^p$ — [[es/19-measure-theory|capítulos 19–21]]
 
 - Convergencia monótona: $0\le f_n\uparrow f\implies\int f_n\uparrow\int f$.
 - Fatou: $\int\liminf f_n\le\liminf\int f_n$ para $f_n\ge0$.
@@ -142,4 +142,4 @@ $$
 \langle f,g\rangle_{L^2}=\int f\overline g\,d\mu.
 $$
 
-En [[es/19-measure-theory#19.2 Medidas|espacios de medida]] finita, $r<p\implies L^p\subseteq L^r$. Todo $L^p$ es completo; $L^2$ es un [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|espacio de Hilbert]].
+En [[es/19-measure-theory#19.2 Medidas|espacios de medida]] finita, $r<p\implies L^p\subseteq L^r$. Todo $L^p$ es completo; $L^2$ es un [[es/21-lp-spaces#^sec-21-4|espacio de Hilbert]].

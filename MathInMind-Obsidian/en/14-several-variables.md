@@ -22,7 +22,7 @@ $$
 \qquad d(x,y)=\|x-y\|_2.
 $$
 
-The [[en/21-lp-spaces#21.4 The Hilbert space L2|Cauchy–Schwarz inequality]] $|x\cdot y|\le\|x\|_2\|y\|_2$ gives the triangle inequality. Other common norms are $\|x\|_1=\sum|x_i|$ and $\|x\|_\infty=\max|x_i|$.
+The [[en/21-lp-spaces#^sec-21-4|Cauchy–Schwarz inequality]] $|x\cdot y|\le\|x\|_2\|y\|_2$ gives the triangle inequality. Other common norms are $\|x\|_1=\sum|x_i|$ and $\|x\|_\infty=\max|x_i|$.
 
 All norms on a finite-dimensional real vector space are equivalent: for any two norms there are constants $c,C>0$ with $c\|x\|_a\le\|x\|_b\le C\|x\|_a$. Thus convergence, openness, and continuity do not depend on the chosen norm in $\mathbb R^n$.
 

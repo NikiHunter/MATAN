@@ -27,7 +27,7 @@ when the limit exists finitely. For an integrand unbounded near $`b`$, define
 =\lim_{t\to b^-}\int_a^t f(x)\,dx.
 ```
 
-If both endpoints are problematic, split at an [interior point](13-metric-spaces.md#sec-13-2) and require convergence of both pieces independently. On $`(-\infty,\infty)`$, the two tails must converge separately. The symmetric limit called the **principal value** may exist even when the improper integral does not.
+If both endpoints are problematic, split at an interior point and require convergence of both pieces independently. On $`(-\infty,\infty)`$, the two tails must converge separately. The symmetric limit called the **principal value** may exist even when the improper integral does not.
 
 For example,
 
@@ -44,7 +44,11 @@ For nonnegative integrands, boundedness of the truncated integrals is equivalent
 
 [Absolute convergence](04-numeric-series.md#sec-4-3) means $`\int|f|`$ converges and implies ordinary convergence under the usual local-integrability assumptions. Conditional convergence can occur for oscillatory integrands.
 
-> <a id="dirichlet-test-for-integrals"></a>**Dirichlet's test for integrals.** If $`F(T)=\int_a^T f`$ is bounded and $`g`$ decreases to zero with suitable regularity, then $`\int_a^\infty f(x)g(x)\,dx`$ converges.
+> <a id="dirichlet-test-for-integrals"></a>**Dirichlet's and Abel's tests for integrals.** Let $`f\in C([a,+\infty))`$ and let $`g\in C^1([a,+\infty))`$ be monotone.
+> 1. (Dirichlet) If $`F(T)=\int_a^T f`$ is bounded on $`[a,+\infty)`$ and $`g(x)\to0`$ as $`x\to+\infty`$, then $`\int_a^\infty f(x)g(x)\,dx`$ converges.
+> 2. (Abel) If $`\int_a^\infty f(x)\,dx`$ converges and $`g`$ is bounded, then $`\int_a^\infty f(x)g(x)\,dx`$ converges.
+
+Dirichlet's test is proved by integration by parts: $`\int_a^Bfg=F(B)g(B)-\int_a^BFg'`$, where $`F(B)g(B)\to0`$ and $`\int_a^\infty|Fg'|\le M\int_a^\infty|g'|=M|g(a)|`$ for $`|F|\le M`$ (the [derivative](06-derivatives.md#sec-6-1) $`g'`$ keeps its sign). Abel's test reduces to it: a bounded monotone $`g`$ has a limit $`c`$, and $`fg=f(g-c)+cf`$.
 
 Thus $`\int_1^\infty\sin x/x\,dx`$ converges conditionally: [integration by parts](08-riemann-integration.md#sec-8-4) or [Dirichlet's test](#dirichlet-test-for-integrals) proves convergence, while comparison on intervals around multiples of $`\pi`$ shows that $`\int|\sin x|/x`$ diverges.
 
@@ -65,7 +69,7 @@ In [polar coordinates](17-multiple-integrals.md#sec-17-3), the area swept by $`r
 A=\frac12\int_\alpha^\beta r(\theta)^2\,d\theta.
 ```
 
-The length of a [continuously differentiable](15-multivariable-differentiation.md#sec-15-1) curve $`\gamma(t)=(x(t),y(t))`$ is
+The length of a continuously differentiable curve $`\gamma(t)=(x(t),y(t))`$ is
 
 ```math
 L=\int_a^b\sqrt{x'(t)^2+y'(t)^2}\,dt.

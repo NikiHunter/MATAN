@@ -63,7 +63,7 @@ Los desarrollos de medio rango en senos y cosenos representan, respectivamente, 
 <a id="sec-12-3"></a>
 ## 12.3 Convergencia
 
-> <a id="dirichlet-pointwise-theorem"></a>**Teorema puntual de Dirichlet.** Si una $`f`$ periódica es continua a trozos y [continuamente derivable](15-multivariable-differentiation.md#sec-15-1) a trozos, su [serie de Fourier](#sec-12-1) converge en cada punto a
+> <a id="dirichlet-pointwise-theorem"></a>**Teorema puntual de Dirichlet.** Si una $`f`$ periódica es continua a trozos y continuamente derivable a trozos, su [serie de Fourier](#sec-12-1) converge en cada punto a
 > ```math
 > \frac{f(x^-)+f(x^+)}2.
 > ```

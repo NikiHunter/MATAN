@@ -1,9 +1,9 @@
 ---
-title: "Lp Spaces and Modes of Convergence"
+title: "Lᵖ Spaces and Modes of Convergence"
 lang: en
 chapter: 21
 part: "Modern analysis"
-aliases: ["Lp Spaces and Modes of Convergence (en)"]
+aliases: ["Lᵖ Spaces and Modes of Convergence (en)"]
 tags: [mathinmind/en, mathinmind/chapter]
 ---
 # 21. $L^p$ Spaces and Modes of Convergence
@@ -33,7 +33,7 @@ For $p=\infty$, $\|f\|_\infty$ is the essential supremum: the smallest $M$ such 
 
 ^holder-inequality
 
-For $p=q=2$, this is [[#21.4 The Hilbert space L2|Cauchy–Schwarz]]. **Minkowski's inequality** is the triangle inequality
+For $p=q=2$, this is [[#^sec-21-4|Cauchy–Schwarz]]. **Minkowski's inequality** is the triangle inequality
 
 $$
 \|f+g\|_p\le\|f\|_p+\|g\|_p.
@@ -68,9 +68,9 @@ Density of continuous functions fails in $L^\infty$ with the essential-sup norm:
 
 Truncation, mollification, and approximation by simple functions are standard techniques. They turn analytic problems into estimates on a dense subclass.
 
-## 21.4 The Hilbert space L2
+## 21.4 The Hilbert space $L^2$
 
-The space $L^2$ has inner product
+The space $L^2$ has inner product ^sec-21-4
 
 $$
 \langle f,g\rangle=\int_Xf\overline{g}\,d\mu,

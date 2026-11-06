@@ -1,5 +1,5 @@
 ---
-title: "Lp Spaces and Modes of Convergence"
+title: "Lᵖ Spaces and Modes of Convergence"
 lang: en
 chapter: 21
 part: "Modern analysis"
@@ -63,7 +63,7 @@ Density of continuous functions fails in $`L^\infty`$ with the essential-sup nor
 Truncation, mollification, and approximation by simple functions are standard techniques. They turn analytic problems into estimates on a dense subclass.
 
 <a id="sec-21-4"></a>
-## 21.4 The Hilbert space L2
+## 21.4 The Hilbert space $`L^2`$
 
 The space $`L^2`$ has inner product
 

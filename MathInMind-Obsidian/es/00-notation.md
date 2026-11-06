@@ -53,9 +53,9 @@ Los intervalos son $(a,b)$ abierto, $[a,b]$ cerrado y $[a,b)$ o $(a,b]$ semiabie
 | $f'$, $\partial_i f$, $Df$ | [[es/06-derivatives#6.1 Definición y aproximación lineal\|derivada]] ordinaria, parcial y total |
 | $\nabla f$, $Hf$ | [[es/15-multivariable-differentiation#15.2 Derivadas parciales y direccionales\|gradiente]] y [[es/15-multivariable-differentiation#15.4 Derivadas superiores y Taylor\|hessiana]] |
 | $\Vert x\Vert _p$ | norma $p$; $\Vert x\Vert$ suele ser la [[es/14-several-variables#14.1 Espacio euclidiano y normas\|norma euclidiana]] |
-| $\langle f,g\rangle$ | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|producto interno]], especificado en el contexto |
+| $\langle f,g\rangle$ | [[es/21-lp-spaces#^sec-21-4\|producto interno]], especificado en el contexto |
 | [[es/19-measure-theory#19.4 Funciones medibles\|c.t.p.]] | casi en todas partes, fuera de un [[es/08-riemann-integration#8.2 Sumas de Riemann y propiedades\|conjunto nulo]] |
-| $C^k$, $C^\infty$ | $k$ veces [[es/15-multivariable-differentiation#15.1 Derivada total\|continuamente derivable]], infinitamente derivable |
+| $C^k$, $C^\infty$ | $k$ veces continuamente derivable, infinitamente derivable |
 
 En notación asintótica, indica siempre el régimen, como $x\to0$ o $n\to\infty$. En integrales, $dA$ y $dV$ son elementos de área y volumen; $d\mu$ identifica la medida.
 

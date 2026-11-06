@@ -31,7 +31,7 @@ Por ejemplo, $`f(x,y)=x^2-y^2`$ tiene hessiana $`\operatorname{diag}(2,-2)`$ en 
 <a id="sec-16-2"></a>
 ## 16.2 Teorema de la función inversa
 
-> <a id="inverse-function-theorem"></a>**Teorema.** Sea $`F:\mathbb R^n\to\mathbb R^n`$ de clase $`C^1`$ cerca de $`a`$, con $`DF(a)`$ invertible. Entonces $`F`$ aplica biyectivamente un entorno de $`a`$ sobre un entorno de $`F(a)`$, la inversa es $`C^1`$ y
+> <a id="inverse-function-theorem"></a>**Teorema de la función inversa.** Sea $`F:\mathbb R^n\to\mathbb R^n`$ de clase $`C^1`$ cerca de $`a`$, con $`DF(a)`$ invertible. Entonces $`F`$ aplica biyectivamente un entorno de $`a`$ sobre un entorno de $`F(a)`$, la inversa es $`C^1`$ y
 > ```math
 > DF^{-1}(F(a))=(DF(a))^{-1}.
 > ```

@@ -8,7 +8,7 @@ tags: [mathinmind/es, mathinmind/chapter]
 ---
 # 20. Integración de Lebesgue y teoremas de convergencia
 
-[[es/19-measure-theory|← 19. Teoría de la medida y funciones medibles]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/21-lp-spaces|21. Espacios Lp y modos de convergencia →]]
+[[es/19-measure-theory|← 19. Teoría de la medida y funciones medibles]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/21-lp-spaces|21. Espacios Lᵖ y modos de convergencia →]]
 
 > [!abstract] Objetivo
 > Definir la [[#20.1 Construcción de la integral|integral de Lebesgue]] y aplicar los teoremas de límite que la hacen más flexible que la de Riemann.
@@ -132,4 +132,4 @@ $$
 
 ---
 
-[[es/19-measure-theory|← 19. Teoría de la medida y funciones medibles]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/21-lp-spaces|21. Espacios Lp y modos de convergencia →]]
+[[es/19-measure-theory|← 19. Teoría de la medida y funciones medibles]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/21-lp-spaces|21. Espacios Lᵖ y modos de convergencia →]]

@@ -123,7 +123,7 @@ C(E) \supset C^1(E) \supset \cdots \supset C^n(E) \supset C^{n+1}(E) \supset \cd
 **Observaciones.**
 
 1. Todas las inclusiones son estrictas.
-2. La clase de las funciones derivables en $`E`$ es estrictamente más amplia que la clase de las funciones [continuamente diferenciables](../15-multivariable-differentiation.md#sec-15-1) en $`E`$.
+2. La clase de las funciones derivables en $`E`$ es estrictamente más amplia que la clase de las funciones continuamente diferenciables en $`E`$.
 
 ### Página manuscrita 13 (p. PDF 13). Ejemplos para las observaciones
 

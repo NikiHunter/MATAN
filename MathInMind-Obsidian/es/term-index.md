@@ -25,7 +25,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | criterios de Dirichlet y Abel para integrales | [[es/09-improper-integrals-applications#^dirichlet-test-for-integrals\|§9]] | [[es/lectures-2025-26/lecture-49-50#^thm-4-5-4\|Teorema 4.5.4]] |
 | criterios de Dirichlet y Abel para series | [[es/23-numerical-series#§7.4. Series de términos de signo arbitrario\|cap. 23 · §7.4]] | — |
 | densidad de los racionales | [[es/02-real-numbers#^density-of-rationals\|§2]] | [[es/lectures-2025-26/lecture-07#^thm-1-3-3\|Teorema 1.3.3]] |
-| desigualdad de Cauchy–Schwarz | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|§21.4]] | [[es/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Teorema 4.4.6]] |
+| desigualdad de Cauchy–Schwarz | [[es/21-lp-spaces#^sec-21-4\|§21.4]] | [[es/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Teorema 4.4.6]] |
 | desigualdad de Hölder | [[es/21-lp-spaces#^holder-inequality\|§21]] | [[es/lectures-2025-26/lecture-47-48#^thm-4-4-5\|Teorema 4.4.5]] |
 | desigualdad de Jensen | [[es/07-taylor-convexity#^jensen-inequality\|§7]] | [[es/lectures-2025-26/lecture-45-46#^thm-4-4-4\|Teorema 4.4.4]] |
 | desigualdad de Minkowski | [[es/21-lp-spaces#21.1 Definición y desigualdades básicas\|§21.1]] | — |
@@ -124,7 +124,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | ε-entorno | [[es/03-sequences#3.1 Definición de límite\|§3.1]] | [[es/lectures-2025-26/lecture-08#^def-2-1-4\|Definición 2.1.4]] |
 | entorno perforado | [[es/05-limits-continuity#5.1 Límite en un punto\|§5.1]] | [[es/lectures-2025-26/lecture-14#^def-2-4-2\|Definición 2.4.2]] |
 | espacio completo | [[es/13-metric-spaces#13.3 Convergencia y completitud\|§13.3]] | — |
-| espacio de Hilbert, producto interno | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|§21.4]] | — |
+| espacio de Hilbert, producto interno | [[es/21-lp-spaces#^sec-21-4\|§21.4]] | — |
 | espacio $L^p$ | [[es/21-lp-spaces#21.1 Definición y desigualdades básicas\|§21.1]] | — |
 | espacio métrico | [[es/13-metric-spaces#13.1 Métricas y ejemplos\|§13.1]] | — |
 | extremo local | [[es/06-derivatives#6.4 Información local\|§6.4]] | [[es/lectures-2025-26/lecture-29-30#^def-3-7-1\|Definición 3.7.1]] |

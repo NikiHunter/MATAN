@@ -177,7 +177,7 @@ $$
 f(a+h)=f(a)+f'(a)\cdot h+o(h)\qquad(h\to0).
 $$
 
-Cuando $m=1$, el producto $f'(a)\cdot h$ puede interpretarse tanto como producto de matrices como [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|producto escalar]] $\nabla f(a)\cdot h$; ambos dan el mismo resultado.
+Cuando $m=1$, el producto $f'(a)\cdot h$ puede interpretarse tanto como producto de matrices como [[es/21-lp-spaces#^sec-21-4|producto escalar]] $\nabla f(a)\cdot h$; ambos dan el mismo resultado.
 
 ## Diapositiva impresa 13 (pp. PDF 17). Diferenciabilidad de las funciones coordenadas — lema 6.1.1
 

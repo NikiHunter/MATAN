@@ -6,7 +6,7 @@ part: "Análisis moderno"
 ---
 # 20. Integración de Lebesgue y teoremas de convergencia
 
-[← 19. Teoría de la medida y funciones medibles](19-measure-theory.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [21. Espacios Lp y modos de convergencia →](21-lp-spaces.md)
+[← 19. Teoría de la medida y funciones medibles](19-measure-theory.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [21. Espacios Lᵖ y modos de convergencia →](21-lp-spaces.md)
 
 > **Objetivo.** Definir la [integral de Lebesgue](#sec-20-1) y aplicar los teoremas de límite que la hacen más flexible que la de Riemann.
 
@@ -127,4 +127,4 @@ Estas funciones crecen hacia $`x^{-1/2}`$ para $`0<x<1`$. La convergencia monót
 
 ---
 
-[← 19. Teoría de la medida y funciones medibles](19-measure-theory.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [21. Espacios Lp y modos de convergencia →](21-lp-spaces.md)
+[← 19. Teoría de la medida y funciones medibles](19-measure-theory.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [21. Espacios Lᵖ y modos de convergencia →](21-lp-spaces.md)

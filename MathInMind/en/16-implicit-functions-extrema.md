@@ -31,7 +31,7 @@ For example, $`f(x,y)=x^2-y^2`$ has Hessian $`\operatorname{diag}(2,-2)`$ at the
 <a id="sec-16-2"></a>
 ## 16.2 Inverse function theorem
 
-> <a id="inverse-function-theorem"></a>**Theorem.** Let $`F:\mathbb R^n\to\mathbb R^n`$ be $`C^1`$ near $`a`$, and suppose $`DF(a)`$ is invertible. Then $`F`$ maps a neighborhood of $`a`$ bijectively onto a neighborhood of $`F(a)`$, the inverse is $`C^1`$, and
+> <a id="inverse-function-theorem"></a>**Inverse function theorem.** Let $`F:\mathbb R^n\to\mathbb R^n`$ be $`C^1`$ near $`a`$, and suppose $`DF(a)`$ is invertible. Then $`F`$ maps a neighborhood of $`a`$ bijectively onto a neighborhood of $`F(a)`$, the inverse is $`C^1`$, and
 > ```math
 > DF^{-1}(F(a))=(DF(a))^{-1}.
 > ```

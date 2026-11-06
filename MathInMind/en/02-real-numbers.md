@@ -62,7 +62,7 @@ The set $`\{q\in\mathbb Q:q^2<2\}`$ has no rational supremum, so $`\mathbb Q`$ i
 
 > <a id="archimedean-property"></a>**Archimedean property.** For every $`x\in\mathbb R`$ there is $`n\in\mathbb N`$ with $`n>x`$. Equivalently, for every $`\varepsilon>0`$ there is $`n`$ such that $`1/n<\varepsilon`$.
 
-If $`\mathbb N`$ were [bounded above](#sec-2-2), its supremum $`s`$ would satisfy $`s-1<n<s`$ for some integer $`n`$, forcing $`n+1>s`$, a contradiction.
+If $`\mathbb N`$ were [bounded above](#sec-2-2), there would be a natural number $`n`$ with $`s-1<n\le s`$ for its supremum $`s`$ (the number $`s-1`$ is not an upper bound of $`\mathbb N`$), and then $`n+1>s`$ with $`n+1\in\mathbb N`$, a contradiction.
 
 > <a id="density-of-rationals"></a>**Density of rationals.** If $`a<b`$, there exists $`q\in\mathbb Q`$ with $`a<q<b`$.
 

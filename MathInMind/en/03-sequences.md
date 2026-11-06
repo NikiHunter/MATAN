@@ -88,6 +88,24 @@ These limits exist because the tail suprema decrease and tail infima increase. A
 
 For $`a_n=(-1)^n`$, the limit superior is $`1`$ and the limit inferior is $`-1`$. The definitions extend naturally to unbounded sequences using $`\pm\infty`$.
 
+## Worked example
+
+**A limit with a root.** Let us find the limit of $`a_n=\sqrt{n^2+n}-n`$ and check the answer against the definition. Multiply by the conjugate:
+
+```math
+a_n=\frac{n}{\sqrt{n^2+n}+n}=\frac{1}{\sqrt{1+1/n}+1}.
+```
+
+Since $`\sqrt{1+1/n}\to1`$, the limit laws give $`a_n\to\frac12`$. Check by the definition: with $`s=\sqrt{1+1/n}>1`$,
+
+```math
+\Bigl|a_n-\frac12\Bigr|=\frac{s-1}{2(s+1)}=\frac{1/n}{2(s+1)^2}<\frac{1}{8n},
+```
+
+so for a given $`\varepsilon>0`$ any $`N>\frac{1}{8\varepsilon}`$ works.
+
+**Divergence via subsequences.** The sequence $`b_n=(-1)^n\frac{n}{n+1}`$ is bounded, but its even subsequence tends to $`1`$ and its odd subsequence to $`-1`$. If $`(b_n)`$ converged, all its subsequences would have the same limit, so $`(b_n)`$ diverges; here $`\limsup b_n=1`$, $`\liminf b_n=-1`$.
+
 ## Common pitfalls
 
 1. Boundedness alone does not imply convergence.

@@ -68,7 +68,7 @@ The set $\{q\in\mathbb Q:q^2<2\}$ has no rational supremum, so $\mathbb Q$ is in
 
 ^archimedean-property
 
-If $\mathbb N$ were [[#2.2 Supremum and infimum|bounded above]], its supremum $s$ would satisfy $s-1<n<s$ for some integer $n$, forcing $n+1>s$, a contradiction.
+If $\mathbb N$ were [[#2.2 Supremum and infimum|bounded above]], there would be a natural number $n$ with $s-1<n\le s$ for its supremum $s$ (the number $s-1$ is not an upper bound of $\mathbb N$), and then $n+1>s$ with $n+1\in\mathbb N$, a contradiction.
 
 > [!theorem] Density of rationals
 > If $a<b$, there exists $q\in\mathbb Q$ with $a<q<b$.

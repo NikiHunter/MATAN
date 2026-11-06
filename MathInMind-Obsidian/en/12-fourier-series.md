@@ -35,7 +35,7 @@ $$
 
 The symbol $\sim$ initially means only that these are the associated coefficients; equality requires a convergence theorem.
 
-The system $\{1,\cos nx,\sin nx\}$ is orthogonal under the [[en/21-lp-spaces#21.4 The Hilbert space L2|inner product]]
+The system $\{1,\cos nx,\sin nx\}$ is orthogonal under the [[en/21-lp-spaces#^sec-21-4|inner product]]
 
 $$
 \langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx.
@@ -64,7 +64,7 @@ Half-range sine and cosine expansions represent, respectively, odd and even peri
 ## 12.3 Convergence
 
 > [!theorem] Dirichlet's pointwise theorem
-> If a periodic $f$ is piecewise continuous and piecewise [[en/15-multivariable-differentiation#15.1 The total derivative|continuously differentiable]], its [[#12.1 Trigonometric system and coefficients|Fourier series]] converges at every point to
+> If a periodic $f$ is piecewise continuous and piecewise continuously differentiable, its [[#12.1 Trigonometric system and coefficients|Fourier series]] converges at every point to
 > $$
 > \frac{f(x^-)+f(x^+)}2.
 > $$

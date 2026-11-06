@@ -68,7 +68,7 @@ El conjunto $\{q\in\mathbb Q:q^2<2\}$ no tiene supremo racional, por lo que $\ma
 
 ^archimedean-property
 
-Si $\mathbb N$ estuviera [[#2.2 Supremo e ínfimo|acotado superiormente]], su supremo $s$ cumpliría $s-1<n<s$ para algún entero $n$, lo que daría $n+1>s$, una contradicción.
+Si $\mathbb N$ estuviera [[#2.2 Supremo e ínfimo|acotado superiormente]], existiría un natural $n$ con $s-1<n\le s$ para su supremo $s$ (el número $s-1$ no es cota superior de $\mathbb N$), y entonces $n+1>s$ con $n+1\in\mathbb N$, una contradicción.
 
 > [!theorem] Densidad de los racionales
 > Si $a<b$, existe $q\in\mathbb Q$ con $a<q<b$.

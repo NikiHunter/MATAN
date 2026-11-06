@@ -8,7 +8,7 @@ lecturer_chapter: 6
 ---
 # 22. Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos
 
-[← 21. Espacios Lp y modos de convergencia](21-lp-spaces.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [23. Series numéricas →](23-numerical-series.md)
+[← 21. Espacios Lᵖ y modos de convergencia](21-lp-spaces.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [23. Series numéricas →](23-numerical-series.md)
 
 > **Objetivo.** Exponer el final del capítulo 6 del profesor (§6.5–§6.7, [clases 65–66](lectures-2025-26/lecture-65-66.md) y [67–68](lectures-2025-26/lecture-67-68.md)) conservando la numeración del profesor: la [fórmula de Taylor](#def-6-5-1) en varias variables, el [teorema de la aplicación implícita](#thm-6-6-1), los extremos libres y condicionados. Una exposición más breve de los mismos temas, sin la numeración del profesor, está en los capítulos [15](15-multivariable-differentiation.md) y [16](16-implicit-functions-extrema.md).
 
@@ -168,4 +168,4 @@ El extremo condicionado se busca entre las soluciones del sistema $`\operatornam
 
 ---
 
-[← 21. Espacios Lp y modos de convergencia](21-lp-spaces.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [23. Series numéricas →](23-numerical-series.md)
+[← 21. Espacios Lᵖ y modos de convergencia](21-lp-spaces.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [23. Series numéricas →](23-numerical-series.md)

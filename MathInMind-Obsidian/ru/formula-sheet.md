@@ -125,7 +125,7 @@ $$
 \iint_{\partial\Omega}F\cdot n\,dS=\iiint_\Omega\nabla\cdot F\,dV.
 $$
 
-## Мера, Лебег и Lp — [[ru/19-measure-theory|главы 19–21]]
+## Мера, Лебег и $L^p$ — [[ru/19-measure-theory|главы 19–21]]
 
 - Монотонная сходимость: $0\le f_n\uparrow f\implies\int f_n\uparrow\int f$.
 - Фату: $\int\liminf f_n\le\liminf\int f_n$ для $f_n\ge0$.
@@ -142,4 +142,4 @@ $$
 \langle f,g\rangle_{L^2}=\int f\overline g\,d\mu.
 $$
 
-На пространстве конечной [[ru/19-measure-theory#19.2 Меры|меры]] $r<p\implies L^p\subseteq L^r$. Все $L^p$ полны; $L^2$ — [[ru/21-lp-spaces#21.4 Гильбертово пространство L2|гильбертово пространство]].
+На пространстве конечной [[ru/19-measure-theory#19.2 Меры|меры]] $r<p\implies L^p\subseteq L^r$. Все $L^p$ полны; $L^2$ — [[ru/21-lp-spaces#^sec-21-4|гильбертово пространство]].

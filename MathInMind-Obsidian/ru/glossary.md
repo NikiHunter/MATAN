@@ -44,7 +44,7 @@ tags: [mathinmind/ru, mathinmind/glossary]
 | [[en/16-implicit-functions-extrema#16.3 Implicit function theorem\|implicit function]] | [[ru/16-implicit-functions-extrema#16.3 Теорема о неявной функции\|неявная функция]] | [[es/16-implicit-functions-extrema#16.3 Teorema de la función implícita\|función implícita]] |
 | [[en/22-taylor-implicit-extrema#^def-6-6-1\|implicit map]] | [[ru/22-taylor-implicit-extrema#^def-6-6-1\|неявное отображение]] | [[es/22-taylor-implicit-extrema#^def-6-6-1\|aplicación implícita]] |
 | [[en/02-real-numbers#2.2 Supremum and infimum\|infimum]] | [[ru/02-real-numbers#2.2 Супремум и инфимум\|инфимум, точная нижняя грань]] | [[es/02-real-numbers#2.2 Supremo e ínfimo\|ínfimo]] |
-| [[en/21-lp-spaces#21.4 The Hilbert space L2\|inner product]] | [[ru/21-lp-spaces#21.4 Гильбертово пространство L2\|скалярное произведение]] | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|producto interno]] |
+| [[en/21-lp-spaces#^sec-21-4\|inner product]] | [[ru/21-lp-spaces#^sec-21-4\|скалярное произведение]] | [[es/21-lp-spaces#^sec-21-4\|producto interno]] |
 | [[en/08-riemann-integration#8.2 Riemann sums and properties\|integrable]] | [[ru/08-riemann-integration#8.2 Интегральные суммы и свойства\|интегрируемый]] | [[es/08-riemann-integration#8.2 Sumas de Riemann y propiedades\|integrable]] |
 | [[en/25-parameter-integrals#^def-9-1-1\|integral depending on a parameter]] | [[ru/25-parameter-integrals#^def-9-1-1\|интеграл, зависящий от параметра]] | [[es/25-parameter-integrals#^def-9-1-1\|integral dependiente de un parámetro]] |
 | [[en/13-metric-spaces#13.2 Open and closed sets\|interior]] | [[ru/13-metric-spaces#13.2 Открытые и замкнутые множества\|внутренность]] | [[es/13-metric-spaces#13.2 Conjuntos abiertos y cerrados\|interior]] |
@@ -61,8 +61,8 @@ tags: [mathinmind/ru, mathinmind/glossary]
 | [[en/14-several-variables#14.1 Euclidean space and norms\|norm]] | [[ru/14-several-variables#14.1 Евклидово пространство и нормы\|норма]] | [[es/14-several-variables#14.1 Espacio euclidiano y normas\|norma]] |
 | [[en/08-riemann-integration#8.2 Riemann sums and properties\|null set]] | [[ru/08-riemann-integration#8.2 Интегральные суммы и свойства\|множество меры ноль]] | [[es/08-riemann-integration#8.2 Sumas de Riemann y propiedades\|conjunto nulo]] |
 | [[en/13-metric-spaces#13.2 Open and closed sets\|open set]] | [[ru/13-metric-spaces#13.2 Открытые и замкнутые множества\|открытое множество]] | [[es/13-metric-spaces#13.2 Conjuntos abiertos y cerrados\|conjunto abierto]] |
-| [[en/21-lp-spaces#21.4 The Hilbert space L2\|orthogonal projection]] | [[ru/21-lp-spaces#21.4 Гильбертово пространство L2\|ортогональная проекция]] | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|proyección ortogonal]] |
-| [[en/21-lp-spaces#21.4 The Hilbert space L2\|orthonormal basis]] | [[ru/21-lp-spaces#21.4 Гильбертово пространство L2\|ортонормированный базис]] | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|base ortonormal]] |
+| [[en/21-lp-spaces#^sec-21-4\|orthogonal projection]] | [[ru/21-lp-spaces#^sec-21-4\|ортогональная проекция]] | [[es/21-lp-spaces#^sec-21-4\|proyección ortogonal]] |
+| [[en/21-lp-spaces#^sec-21-4\|orthonormal basis]] | [[ru/21-lp-spaces#^sec-21-4\|ортонормированный базис]] | [[es/21-lp-spaces#^sec-21-4\|base ortonormal]] |
 | [[en/11-power-series#11.1 Radius of convergence\|power series]] | [[ru/11-power-series#11.1 Радиус сходимости\|степенной ряд]] | [[es/11-power-series#11.1 Radio de convergencia\|serie de potencias]] |
 | [[en/03-sequences#3.1 The definition of a limit\|sequence]] | [[ru/03-sequences#3.1 Определение предела\|последовательность]] | [[es/03-sequences#3.1 Definición de límite\|sucesión]] |
 | [[en/04-numeric-series#4.1 Convergence through partial sums\|series]] | [[ru/04-numeric-series#4.1 Частичные суммы\|ряд]] | [[es/04-numeric-series#4.1 Sumas parciales\|serie]] |

@@ -23,7 +23,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | Cauchy criterion for sequences | [[en/03-sequences#3.4 Subsequences and Cauchy sequences\|§3.4]] | [[en/lectures-2025-26/lecture-13#^thm-2-3-7\|Theorem 2.3.7]] |
 | Cauchy's condensation lemma | [[en/23-numerical-series#§7.3. Positive series\|ch. 23 · §7.3]] | — |
 | Cauchy's mean value theorem | [[en/07-taylor-convexity#^cauchy-mean-value-theorem\|§7]] | [[en/lectures-2025-26/lecture-24-25-26#^thm-3-4-4\|Theorem 3.4.4]] |
-| Cauchy–Schwarz inequality | [[en/21-lp-spaces#21.4 The Hilbert space L2\|§21.4]] | [[en/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Theorem 4.4.6]] |
+| Cauchy–Schwarz inequality | [[en/21-lp-spaces#^sec-21-4\|§21.4]] | [[en/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Theorem 4.4.6]] |
 | Cavalieri's principle | [[en/26-multiple-riemann-integral#^thm-10-4-2\|ch. 26 · §10.4]] | [[en/lectures-2025-26/lecture-83-84#^thm-10-4-2\|Theorem 10.4.2]] |
 | chain rule | [[en/06-derivatives#^chain-rule\|§6]] | [[en/lectures-2025-26/lecture-22-23#^thm-3-3-1\|Theorem 3.3.1]] |
 | Clairaut–Schwarz theorem | [[en/15-multivariable-differentiation#^clairaut-schwarz-theorem\|§15]] | [[en/lectures-2025-26/lecture-63-64#Printed slide 16 (PDF p. 30). Sufficient conditions for equality — Theorem 6.4.1\|Theorem 6.4.1]] |
@@ -123,7 +123,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | gamma function | [[en/25-parameter-integrals#^def-9-3-1\|ch. 25 · §9.3]] | [[en/lectures-2025-26/lecture-79-80#^def-9-3-1\|Definition 9.3.1]] |
 | gradient | [[en/15-multivariable-differentiation#15.2 Partial and directional derivatives\|§15.2]] | [[en/lectures-2025-26/lecture-61-62#Printed slide 11 (PDF p. 14). Jacobian matrix and gradient — Definition 6.1.6\|Definition 6.1.6]] |
 | Hessian | [[en/15-multivariable-differentiation#15.4 Higher derivatives and Taylor's formula\|§15.4]] | — |
-| Hilbert space, inner product | [[en/21-lp-spaces#21.4 The Hilbert space L2\|§21.4]] | — |
+| Hilbert space, inner product | [[en/21-lp-spaces#^sec-21-4\|§21.4]] | — |
 | implicit map | [[en/22-taylor-implicit-extrema#^def-6-6-1\|ch. 22 · §6.6]] | [[en/lectures-2025-26/lecture-65-66#^def-6-6-1\|Definition 6.6.1]] |
 | improper integral | [[en/09-improper-integrals-applications#9.1 Definitions\|§9.1]] | [[en/lectures-2025-26/lecture-47-48#^def-4-5-2\|Definition 4.5.2]] |
 | infimum | [[en/02-real-numbers#2.2 Supremum and infimum\|§2.2]] | [[en/lectures-2025-26/lecture-11-12#^def-2-3-2\|Definition 2.3.2]] |

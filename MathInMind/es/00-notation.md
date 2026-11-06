@@ -54,7 +54,7 @@ Los intervalos son $`(a,b)`$ abierto, $`[a,b]`$ cerrado y $`[a,b)`$ o $`(a,b]`$ 
 | $`\Vert x\Vert _p`$ | norma $`p`$; $`\Vert x\Vert`$ suele ser la [norma euclidiana](14-several-variables.md#sec-14-1) |
 | $`\langle f,g\rangle`$ | [producto interno](21-lp-spaces.md#sec-21-4), especificado en el contexto |
 | [c.t.p.](19-measure-theory.md#sec-19-4) | casi en todas partes, fuera de un [conjunto nulo](08-riemann-integration.md#sec-8-2) |
-| $`C^k`$, $`C^\infty`$ | $`k`$ veces [continuamente derivable](15-multivariable-differentiation.md#sec-15-1), infinitamente derivable |
+| $`C^k`$, $`C^\infty`$ | $`k`$ veces continuamente derivable, infinitamente derivable |
 
 En notación asintótica, indica siempre el régimen, como $`x\to0`$ o $`n\to\infty`$. En integrales, $`dA`$ y $`dV`$ son elementos de área y volumen; $`d\mu`$ identifica la medida.
 

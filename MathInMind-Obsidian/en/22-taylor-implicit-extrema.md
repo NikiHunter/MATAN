@@ -10,7 +10,7 @@ tags: [mathinmind/en, mathinmind/chapter]
 ---
 # 22. Taylor's Formula in ℝⁿ, Implicit Maps, Extrema
 
-[[en/21-lp-spaces|← 21. Lp Spaces and Modes of Convergence]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/23-numerical-series|23. Numerical Series →]]
+[[en/21-lp-spaces|← 21. Lᵖ Spaces and Modes of Convergence]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/23-numerical-series|23. Numerical Series →]]
 
 > [!abstract] Goal
 > Present the end of the lecturer's chapter 6 (§6.5–§6.7, [[en/lectures-2025-26/lecture-65-66|lectures 65–66]] and [[en/lectures-2025-26/lecture-67-68|67–68]]), keeping the lecturer's numbering: the multivariate [[#^def-6-5-1|Taylor formula]], the [[#^thm-6-6-1|implicit map theorem]], unconstrained and [[en/16-implicit-functions-extrema#16.4 Lagrange multipliers|constrained extrema]]. A shorter treatment of the same topics without the lecturer's numbering is in chapters [[en/15-multivariable-differentiation|15]] and [[en/16-implicit-functions-extrema|16]].
@@ -78,7 +78,7 @@ This is the case $s=0$ of [[#^thm-6-5-2|theorem 6.5.2]]. For maps the equality f
 
 ^thm-6-5-4
 
-*Proof idea.* For the unit vector $e$ pointing in the direction of the left-hand side (under the [[en/14-several-variables#14.1 Euclidean space and norms|norm]] sign), the function $g=\langle f,e\rangle$ is scalar; [[#^thm-6-5-2|theorem 6.5.2]] is applied to it, followed by the [[en/21-lp-spaces#21.4 The Hilbert space L2|Cauchy–Schwarz inequality]] $|\langle v,e\rangle|\le\|v\|$.
+*Proof idea.* For the unit vector $e$ pointing in the direction of the left-hand side (under the [[en/14-several-variables#14.1 Euclidean space and norms|norm]] sign), the function $g=\langle f,e\rangle$ is scalar; [[#^thm-6-5-2|theorem 6.5.2]] is applied to it, followed by the [[en/21-lp-spaces#^sec-21-4|Cauchy–Schwarz inequality]] $|\langle v,e\rangle|\le\|v\|$.
 
 > [!theorem] Theorem 6.5.5 (estimate of the remainder)
 > Let the set $E$ be open in $\mathbb R^n$, $s\in\mathbb Z_+$, $f\in C^{s+1}(E,\mathbb R^m)$, $a,x\in E$, $a\ne x$, $\Delta_{a,x}\subset E$, and
@@ -216,4 +216,4 @@ A conditional extremum is sought among the solutions of the system $\operatornam
 
 ---
 
-[[en/21-lp-spaces|← 21. Lp Spaces and Modes of Convergence]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/23-numerical-series|23. Numerical Series →]]
+[[en/21-lp-spaces|← 21. Lᵖ Spaces and Modes of Convergence]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/23-numerical-series|23. Numerical Series →]]

@@ -22,7 +22,7 @@ $$
 \qquad d(x,y)=\|x-y\|_2.
 $$
 
-La [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|desigualdad de Cauchy–Schwarz]] $|x\cdot y|\le\|x\|_2\|y\|_2$ da la desigualdad triangular. Otras normas son $\|x\|_1=\sum|x_i|$ y $\|x\|_\infty=\max|x_i|$.
+La [[es/21-lp-spaces#^sec-21-4|desigualdad de Cauchy–Schwarz]] $|x\cdot y|\le\|x\|_2\|y\|_2$ da la desigualdad triangular. Otras normas son $\|x\|_1=\sum|x_i|$ y $\|x\|_\infty=\max|x_i|$.
 
 Todas las normas en un espacio vectorial real de dimensión finita son equivalentes: existen $c,C>0$ con $c\|x\|_a\le\|x\|_b\le C\|x\|_a$. Por ello convergencia, apertura y continuidad no dependen de la norma elegida en $\mathbb R^n$.
 

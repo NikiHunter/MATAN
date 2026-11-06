@@ -77,7 +77,7 @@ Las integrales difieren a lo sumo en $`(b-a)\sup|f_n-f|`$. La convergencia puntu
 
 La convergencia uniforme de $`f_n`$ no basta para derivar el límite. Un teorema suficiente es:
 
-> Si las $`f_n`$ son [continuamente derivables](15-multivariable-differentiation.md#sec-15-1) en un intervalo acotado $`[a,b]`$, $`f_n(x_0)`$ converge en un punto y $`f_n'\to g`$ uniformemente, entonces $`f_n`$ converge uniformemente en $`[a,b]`$ a una función [derivable](06-derivatives.md#sec-6-1) $`f`$ y $`f'=g`$.
+> <a id="uniform-limit-differentiation"></a>**Teorema de derivación.** Si las $`f_n`$ son continuamente derivables en un intervalo acotado $`[a,b]`$, $`f_n(x_0)`$ converge en un punto y $`f_n'\to g`$ uniformemente, entonces $`f_n`$ converge uniformemente en $`[a,b]`$ a una función [derivable](06-derivatives.md#sec-6-1) $`f`$ y $`f'=g`$.
 
 Para series en un intervalo acotado, se deriva término a término cuando la serie derivada converge uniformemente y la original converge en algún punto.
 

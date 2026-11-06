@@ -8,7 +8,7 @@ tags: [mathinmind/en, mathinmind/chapter]
 ---
 # 20. Lebesgue Integration and Convergence Theorems
 
-[[en/19-measure-theory|← 19. Measure Theory and Measurable Functions]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/21-lp-spaces|21. Lp Spaces and Modes of Convergence →]]
+[[en/19-measure-theory|← 19. Measure Theory and Measurable Functions]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/21-lp-spaces|21. Lᵖ Spaces and Modes of Convergence →]]
 
 > [!abstract] Goal
 > Define the [[#20.1 Construction of the integral|Lebesgue integral]] and apply the limit theorems that make it more flexible than [[en/08-riemann-integration#8.2 Riemann sums and properties|Riemann integration]].
@@ -132,4 +132,4 @@ $$
 
 ---
 
-[[en/19-measure-theory|← 19. Measure Theory and Measurable Functions]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/21-lp-spaces|21. Lp Spaces and Modes of Convergence →]]
+[[en/19-measure-theory|← 19. Measure Theory and Measurable Functions]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/21-lp-spaces|21. Lᵖ Spaces and Modes of Convergence →]]

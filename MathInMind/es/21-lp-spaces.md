@@ -1,5 +1,5 @@
 ---
-title: "Espacios Lp y modos de convergencia"
+title: "Espacios Lᵖ y modos de convergencia"
 lang: es
 chapter: 21
 part: "Análisis moderno"
@@ -63,7 +63,7 @@ La densidad de funciones continuas falla en $`L^\infty`$: un [límite uniforme](
 Truncamiento, regularización y aproximación por simples son técnicas estándar que reducen problemas a estimaciones en una subclase densa.
 
 <a id="sec-21-4"></a>
-## 21.4 El espacio de Hilbert L2
+## 21.4 El espacio de Hilbert $`L^2`$
 
 El espacio $`L^2`$ tiene producto interno
 

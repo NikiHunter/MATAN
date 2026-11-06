@@ -88,7 +88,7 @@ Si $g\circ f$ es inyectiva, $f$ es inyectiva. Si $g\circ f$ es suprayectiva, $g$
 
 ## 1.5 Numerabilidad
 
-Los conjuntos $A,B$ tienen el mismo cardinal si existe una [[#1.4 Funciones|biyección]] $A\to B$. Un conjunto es **numerable** si es finito o tiene el cardinal de $\mathbb N$. Así, $\mathbb Z$ y $\mathbb Q$ son numerables. El argumento diagonal de Cantor demuestra que $\mathbb R$ y el conjunto de sucesiones binarias infinitas no son numerables.
+Los conjuntos $A,B$ tienen el mismo cardinal si existe una [[#1.4 Funciones|biyección]] $A\to B$. Un conjunto es **numerable** si tiene el cardinal de $\mathbb N$; un conjunto finito o numerable se llama **a lo sumo numerable**. Así, $\mathbb Z$ y $\mathbb Q$ son numerables. El argumento diagonal de Cantor demuestra que $\mathbb R$ y el conjunto de sucesiones binarias infinitas no son numerables.
 
 > [!theorem] Teorema de Cantor
 > No existe una suprayección de $A$ sobre su conjunto potencia $\mathcal P(A)$. Dada $f:A\to\mathcal P(A)$, el conjunto $D=\{x\in A:x\notin f(x)\}$ no está en el recorrido: si $D=f(a)$, se obtiene $a\in D\iff a\notin D$.

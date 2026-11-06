@@ -6,7 +6,7 @@ part: "Modern analysis"
 ---
 # 20. Lebesgue Integration and Convergence Theorems
 
-[← 19. Measure Theory and Measurable Functions](19-measure-theory.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [21. Lp Spaces and Modes of Convergence →](21-lp-spaces.md)
+[← 19. Measure Theory and Measurable Functions](19-measure-theory.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [21. Lᵖ Spaces and Modes of Convergence →](21-lp-spaces.md)
 
 > **Goal.** Define the [Lebesgue integral](#sec-20-1) and apply the limit theorems that make it more flexible than [Riemann integration](08-riemann-integration.md#sec-8-2).
 
@@ -127,4 +127,4 @@ These functions increase to $`x^{-1/2}`$ for $`0<x<1`$. Monotone convergence giv
 
 ---
 
-[← 19. Measure Theory and Measurable Functions](19-measure-theory.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [21. Lp Spaces and Modes of Convergence →](21-lp-spaces.md)
+[← 19. Measure Theory and Measurable Functions](19-measure-theory.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [21. Lᵖ Spaces and Modes of Convergence →](21-lp-spaces.md)

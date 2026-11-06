@@ -63,7 +63,7 @@ Half-range sine and cosine expansions represent, respectively, odd and even peri
 <a id="sec-12-3"></a>
 ## 12.3 Convergence
 
-> <a id="dirichlet-pointwise-theorem"></a>**Dirichlet's pointwise theorem.** If a periodic $`f`$ is piecewise continuous and piecewise [continuously differentiable](15-multivariable-differentiation.md#sec-15-1), its [Fourier series](#sec-12-1) converges at every point to
+> <a id="dirichlet-pointwise-theorem"></a>**Dirichlet's pointwise theorem.** If a periodic $`f`$ is piecewise continuous and piecewise continuously differentiable, its [Fourier series](#sec-12-1) converges at every point to
 > ```math
 > \frac{f(x^-)+f(x^+)}2.
 > ```

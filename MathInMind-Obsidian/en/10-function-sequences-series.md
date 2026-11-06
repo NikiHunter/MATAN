@@ -85,7 +85,10 @@ Indeed, the integrals differ by at most $(b-a)\sup|f_n-f|$. Pointwise convergenc
 
 Uniform convergence of $f_n$ alone does not justify differentiating the limit. A sufficient theorem is:
 
-> If $f_n$ are [[en/15-multivariable-differentiation#15.1 The total derivative|continuously differentiable]] on a bounded interval $[a,b]$, $f_n(x_0)$ converges at one point, and $f_n'\to g$ uniformly, then $f_n$ converges uniformly on $[a,b]$ to a [[en/06-derivatives#6.1 Definition and linear approximation|differentiable]] $f$ and $f'=g$.
+> [!theorem] Differentiation theorem
+> If $f_n$ are continuously differentiable on a bounded interval $[a,b]$, $f_n(x_0)$ converges at one point, and $f_n'\to g$ uniformly, then $f_n$ converges uniformly on $[a,b]$ to a [[en/06-derivatives#6.1 Definition and linear approximation|differentiable]] $f$ and $f'=g$.
+
+^uniform-limit-differentiation
 
 For series on a bounded interval, differentiate term by term when the differentiated series converges uniformly and the original series converges at one point.
 

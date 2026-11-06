@@ -123,7 +123,7 @@ dV=\rho^2\sin\varphi\,d\rho\,d\varphi\,d\theta.
 \iint_{\partial\Omega}F\cdot n\,dS=\iiint_\Omega\nabla\cdot F\,dV.
 ```
 
-## Мера, Лебег и Lp — [главы 19–21](19-measure-theory.md)
+## Мера, Лебег и $`L^p`$ — [главы 19–21](19-measure-theory.md)
 
 - Монотонная сходимость: $`0\le f_n\uparrow f\implies\int f_n\uparrow\int f`$.
 - Фату: $`\int\liminf f_n\le\liminf\int f_n`$ для $`f_n\ge0`$.

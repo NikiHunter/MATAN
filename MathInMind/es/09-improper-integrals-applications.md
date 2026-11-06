@@ -44,7 +44,11 @@ Para integrandos no negativos, la acotación de las integrales truncadas equival
 
 La [convergencia absoluta](04-numeric-series.md#sec-4-3) significa que $`\int|f|`$ converge e implica la ordinaria bajo integrabilidad local usual. Puede haber convergencia condicional con integrandos oscilatorios.
 
-> <a id="dirichlet-test-for-integrals"></a>**Criterio de Dirichlet.** Si $`F(T)=\int_a^T f`$ está acotada y $`g`$ decrece a cero con regularidad adecuada, entonces $`\int_a^\infty f(x)g(x)\,dx`$ converge.
+> <a id="dirichlet-test-for-integrals"></a>**Criterios de Dirichlet y de Abel.** Sean $`f\in C([a,+\infty))`$ y $`g\in C^1([a,+\infty))`$ monótona.
+> 1. (Dirichlet) Si $`F(T)=\int_a^T f`$ está acotada en $`[a,+\infty)`$ y $`g(x)\to0`$ cuando $`x\to+\infty`$, entonces $`\int_a^\infty f(x)g(x)\,dx`$ converge.
+> 2. (Abel) Si $`\int_a^\infty f(x)\,dx`$ converge y $`g`$ está acotada, entonces $`\int_a^\infty f(x)g(x)\,dx`$ converge.
+
+El [criterio de Dirichlet](#dirichlet-test-for-integrals) se demuestra integrando por partes: $`\int_a^Bfg=F(B)g(B)-\int_a^BFg'`$, donde $`F(B)g(B)\to0`$ y $`\int_a^\infty|Fg'|\le M\int_a^\infty|g'|=M|g(a)|`$ si $`|F|\le M`$ (la [derivada](06-derivatives.md#sec-6-1) $`g'`$ conserva el signo). El de Abel se reduce a él: una $`g`$ monótona y acotada tiene límite $`c`$, y $`fg=f(g-c)+cf`$.
 
 Así, $`\int_1^\infty\sin x/x\,dx`$ converge condicionalmente: partes o Dirichlet prueban convergencia, mientras que comparaciones cerca de múltiplos de $`\pi`$ muestran que $`\int|\sin x|/x`$ diverge.
 
@@ -65,7 +69,7 @@ En [coordenadas polares](17-multiple-integrals.md#sec-17-3), el área barrida po
 A=\frac12\int_\alpha^\beta r(\theta)^2\,d\theta.
 ```
 
-La longitud de una curva [continuamente derivable](15-multivariable-differentiation.md#sec-15-1) $`\gamma(t)=(x(t),y(t))`$ es
+La longitud de una curva continuamente derivable $`\gamma(t)=(x(t),y(t))`$ es
 
 ```math
 L=\int_a^b\sqrt{x'(t)^2+y'(t)^2}\,dt.

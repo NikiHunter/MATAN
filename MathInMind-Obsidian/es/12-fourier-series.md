@@ -35,7 +35,7 @@ $$
 
 Al principio, $\sim$ solo asocia estos coeficientes; la igualdad requiere un teorema de convergencia.
 
-El sistema $\{1,\cos nx,\sin nx\}$ es ortogonal con el [[es/21-lp-spaces#21.4 El espacio de Hilbert L2|producto interno]]
+El sistema $\{1,\cos nx,\sin nx\}$ es ortogonal con el [[es/21-lp-spaces#^sec-21-4|producto interno]]
 
 $$
 \langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx.
@@ -64,7 +64,7 @@ Los desarrollos de medio rango en senos y cosenos representan, respectivamente, 
 ## 12.3 Convergencia
 
 > [!theorem] Teorema puntual de Dirichlet
-> Si una $f$ periódica es continua a trozos y [[es/15-multivariable-differentiation#15.1 Derivada total|continuamente derivable]] a trozos, su [[#12.1 Sistema trigonométrico y coeficientes|serie de Fourier]] converge en cada punto a
+> Si una $f$ periódica es continua a trozos y continuamente derivable a trozos, su [[#12.1 Sistema trigonométrico y coeficientes|serie de Fourier]] converge en cada punto a
 > $$
 > \frac{f(x^-)+f(x^+)}2.
 > $$

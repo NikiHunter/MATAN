@@ -87,7 +87,7 @@ If $`g\circ f`$ is injective, then $`f`$ is injective. If $`g\circ f`$ is surjec
 <a id="sec-1-5"></a>
 ## 1.5 Countability
 
-Sets $`A,B`$ have the same cardinality if a [bijection](#sec-1-4) $`A\to B`$ exists. A set is **countable** if it is finite or has the cardinality of $`\mathbb N`$. Thus $`\mathbb Z`$ and $`\mathbb Q`$ are countable. Cantor's diagonal argument shows that $`\mathbb R`$ and the set of infinite binary sequences are uncountable.
+Sets $`A,B`$ have the same cardinality if a [bijection](#sec-1-4) $`A\to B`$ exists. A set is **countable** if it has the cardinality of $`\mathbb N`$; a set that is finite or countable is called **at most countable**. Thus $`\mathbb Z`$ and $`\mathbb Q`$ are countable. Cantor's diagonal argument shows that $`\mathbb R`$ and the set of infinite binary sequences are uncountable.
 
 > <a id="cantor-theorem"></a>**Cantor's theorem.** There is no surjection from $`A`$ onto its power set $`\mathcal P(A)`$. If $`f:A\to\mathcal P(A)`$, the set $`D=\{x\in A:x\notin f(x)\}`$ is not in the range of $`f`$: assuming $`D=f(a)`$ leads to $`a\in D\iff a\notin D`$.
 

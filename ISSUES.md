@@ -5,24 +5,25 @@ Repository-wide issue log. The semester-3 transcription has its own tables: [`oc
 
 ## Open — course chapters 01–21
 
-Found by the audit of 2 November 2026; not fixed yet. Line numbers refer to the Russian file; the English and
-Spanish files have the same defect at the same place unless noted.
+None at present: the rows found by the audit of 2 November 2026 were fixed in the G5 pass below.
 
-| File | Line | Type | Problem | Fix |
-|---|---|---|---|---|
-| `MathInMind/*/01-logic-sets-functions.md` | 90 | MATH | «счётно» defined as «конечно или равномощно ℕ», contradicting lectures 1–3 (Опр 1.2.5, 1.2.6) | счётно = равномощно ℕ; add «не более чем счётно» = конечно или счётно |
-| `MathInMind/*/02-real-numbers.md` | 65 | MATH | Archimedean proof: «целое $n$ с $s-1<n<s$» | «натуральное $n$ с $s-1<n\le s$», then $n+1>s$ |
-| `MathInMind/*/03-sequences.md` | — | GAP | the only chapter without a worked example | add `## Разобранный пример` |
-| `MathInMind/*/09-improper-integrals-applications.md` | 47 | MATH | Dirichlet test stated vaguely («с подходящей регулярностью»); Abel's test missing although the term registry links «признак Абеля» here | precise Dirichlet and Abel tests |
-| `MathInMind/*/10-function-sequences-series.md` | 78 | STYLE | theorem on differentiating a limit is an unlabelled blockquote (no anchor, no callout) | label it; add `uniform-limit-differentiation` to `CHAPTER_STATEMENTS[10]` |
-| `MathInMind/*/16-implicit-functions-extrema.md` | 32 | STYLE | inverse function theorem labelled just «Теорема» | «Теорема об обратной функции» |
-| `MathInMind/*/21-lp-spaces.md` | 2, 66 | TYPO | plain «Lp», «L2» in the title and a heading (propagates to nav bars) | $L^p$, $L^2$ |
-| `MathInMind/*/formula-sheet.md` | 126 | TYPO | plain «Lp» | $L^p$ |
-| `MathInMind/ru/17-multiple-integrals.md` | 76, 78 | STYLE | `\operatorname{area}`, `\operatorname{vol}` in Russian text | $S(D)$, $V(\Omega)$ |
-| `MathInMind/ru/18-vector-calculus.md` | 93 | STYLE | `\operatorname{area}` | $S(D)$ |
-| `MathInMind/ru/09-improper-integrals-applications.md` | 100 | STYLE | `\mathrm{avg}` | $\bar f$ |
-| `MathInMind/*/09…`, `10…`, `12…` | 68, 78, 66 | LINK | «непрерывно дифференцируем…» in one-variable chapters links to `15-multivariable-differentiation.md#sec-15-1` | unlink; restrict the term `continuously-differentiable` to chapters 13–21 |
-| `MathInMind/*/06-derivatives.md`, `09-…` | 97, 30 | LINK | «внутренней точке» links to the metric-space chapter | unlink or restrict the term |
+## Fixed in the G5 audit (6 November 2026)
+
+All fixes are in the Russian, English and Spanish files unless the row names one language.
+
+| File | Type | Was | Fix |
+|---|---|---|---|
+| `MathInMind/*/01-logic-sets-functions.md` | MATH | «счётно» defined as «конечно или равномощно ℕ» | счётно = равномощно ℕ; «не более чем счётно» = конечно или счётно (Опр 1.2.5, 1.2.6) |
+| `MathInMind/*/02-real-numbers.md` | MATH | Archimedean proof used «целое $n$ с $s-1<n<s$» | natural $n$ with $s-1<n\le s$ ($s-1$ is not an upper bound), then $n+1>s$ |
+| `MathInMind/*/03-sequences.md` | GAP | no worked example | `## Разобранный пример`: $\sqrt{n^2+n}-n\to\frac12$ with an $\varepsilon$–$N$ check; divergence of $(-1)^n\frac{n}{n+1}$ via subsequences |
+| `MathInMind/*/09-improper-integrals-applications.md` | MATH | Dirichlet test «с подходящей регулярностью», no Abel test | precise Dirichlet and Abel tests ($f\in C$, $g\in C^1$ monotone, as Th 4.5.4) with the proof by parts and the reduction of Abel to Dirichlet |
+| `MathInMind/*/10-function-sequences-series.md` | STYLE | differentiation theorem was an unlabelled blockquote | labelled «Теорема о дифференцировании»; anchor `uniform-limit-differentiation` in `CHAPTER_STATEMENTS[10]` |
+| `MathInMind/*/16-implicit-functions-extrema.md` | STYLE | inverse function theorem labelled «Теорема» | «Теорема об обратной функции» |
+| `MathInMind/*/21-lp-spaces.md` | TYPO | plain «Lp», «L2» in the title and §21.4 | title «Lᵖ» (plain text, it feeds the nav bars and Obsidian aliases); heading $L^2$ |
+| `MathInMind/*/formula-sheet.md` | TYPO | plain «Lp» in a heading | $L^p$ |
+| `MathInMind/ru/17-multiple-integrals.md`, `ru/18-vector-calculus.md`, `ru/09-improper-integrals-applications.md` | STYLE | `\operatorname{area}`, `\operatorname{vol}`, `\mathrm{avg}` in Russian text | $S(D)$, $V(\Omega)$, $\bar f$ |
+| `MathInMind/*/09…`, `10…`, `12…`, `es/00-notation.md`, `*/lectures-2025-26/lecture-27-28.md`, `ru/exam-sem3/tickets/39.md`, `ru/exam-sem3/EXAM_SEM3.md` | LINK | one-variable «непрерывно дифференцируем…» linked to the multivariable notion (§15.1, Th 6.3.1) | unlinked (reworded in the exam master); term `continuously-differentiable` restricted to chapters 13–21 |
+| `MathInMind/*/06-derivatives.md`, `09-…` | LINK | «внутренней точке» of an interval linked to the metric-space chapter | unlinked; term `interior` restricted to chapters 13–21 |
 
 ## Fixed in this pass (2 November 2026)
 

@@ -647,7 +647,7 @@ tags: [mathinmind/ru, mathinmind/exam]
 > [!answer]- Решение
 > Поточечно $f_n\to0$. На $[0,1]$: $\sup f_n=f_n\bigl(\frac1n\bigr)=\frac12\not\to0$ — сходимость неравномерная. На $[\delta,1]$: $0\le f_n(x)\le\frac{nx}{n^2x^2}=\frac1{nx}\le\frac1{n\delta}\to0$ — равномерная.
 
-**Задача 14.** Докажите, что $\zeta(x)=\sum_{n\ge1}n^{-x}$ [[ru/lectures/16-continuous-differentiability-6-3#Теорема 6.3.1 — последствия непрерывной дифференцируемости|непрерывно дифференцируема]] на $(1,\infty)$. Сходится ли ряд равномерно на $(1,\infty)$?
+**Задача 14.** Докажите, что $\zeta(x)=\sum_{n\ge1}n^{-x}$ имеет непрерывную производную на $(1,\infty)$. Сходится ли ряд равномерно на $(1,\infty)$?
 
 > [!answer]- Решение
 > На $[1+\delta,\infty)$: $n^{-x}\le n^{-1-\delta}$ и $\frac{\ln n}{n^x}\le\frac{\ln n}{n^{1+\delta}}\le\frac{C_\delta}{n^{1+\delta/2}}$ — по Вейерштрассу ряд и ряд производных сходятся равномерно, поэтому $\zeta\in C^1[1+\delta,\infty)$ и $\zeta'(x)=-\sum\frac{\ln n}{n^x}$; $\delta$ произвольно. На $(1,\infty)$ равномерной сходимости нет: при любом $N$ имеем $\sup_{x>1}\sum_{n>N}n^{-x}\ge\lim_{x\to1+}\sum_{n=N+1}^{2N}n^{-x}=\sum_{n=N+1}^{2N}\frac1n\ge\frac12$.

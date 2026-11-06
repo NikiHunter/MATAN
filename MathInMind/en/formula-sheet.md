@@ -123,7 +123,7 @@ General [change of variables](17-multiple-integrals.md#sec-17-2): $`dv=|\det DT|
 \iint_{\partial\Omega}F\cdot n\,dS=\iiint_\Omega\nabla\cdot F\,dV.
 ```
 
-## Measure, Lebesgue, and Lp — [Chapters 19–21](19-measure-theory.md)
+## Measure, Lebesgue, and $`L^p`$ — [Chapters 19–21](19-measure-theory.md)
 
 - Monotone convergence: $`0\le f_n\uparrow f\implies\int f_n\uparrow\int f`$.
 - Fatou: $`\int\liminf f_n\le\liminf\int f_n`$ for $`f_n\ge0`$.

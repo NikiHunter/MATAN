@@ -92,6 +92,24 @@ Estos límites existen porque los supremos de las colas decrecen y los ínfimos 
 
 Para $a_n=(-1)^n$, el límite superior es $1$ y el inferior $-1$. Las definiciones se extienden a sucesiones no acotadas mediante $\pm\infty$.
 
+## Ejemplo resuelto
+
+**Un límite con raíz.** Hallemos el límite de $a_n=\sqrt{n^2+n}-n$ y comprobemos la respuesta con la definición. Multiplicamos por el conjugado:
+
+$$
+a_n=\frac{n}{\sqrt{n^2+n}+n}=\frac{1}{\sqrt{1+1/n}+1}.
+$$
+
+Como $\sqrt{1+1/n}\to1$, la aritmética de límites da $a_n\to\frac12$. Comprobación por la definición: con $s=\sqrt{1+1/n}>1$,
+
+$$
+\Bigl|a_n-\frac12\Bigr|=\frac{s-1}{2(s+1)}=\frac{1/n}{2(s+1)^2}<\frac{1}{8n},
+$$
+
+así que, dado $\varepsilon>0$, sirve cualquier $N>\frac{1}{8\varepsilon}$.
+
+**Divergencia mediante subsucesiones.** La sucesión $b_n=(-1)^n\frac{n}{n+1}$ está acotada, pero su subsucesión par tiende a $1$ y la impar a $-1$. Si $(b_n)$ convergiera, todas sus subsucesiones tendrían el mismo límite, luego $(b_n)$ diverge; aquí $\limsup b_n=1$, $\liminf b_n=-1$.
+
 ## Errores frecuentes
 
 1. La acotación por sí sola no implica convergencia.
