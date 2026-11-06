@@ -12,6 +12,8 @@ tags: [mathinmind/es, mathinmind/chapter]
 
 > [!abstract] Objetivo
 > Definir la integral mediante [[#8.1 Particiones y sumas de Darboux|particiones]], relacionarla con la derivación y calcular [[#8.2 Sumas de Riemann y propiedades|integrales definidas]] con rigor.
+>
+> **En la numeración del profesor:** [[es/25-parameter-integrals|capítulo 25 «Integrales dependientes de un parámetro»]] (§9.1–§9.3, clases 75–80); [[es/26-multiple-riemann-integral|capítulo 26 «La integral múltiple de Riemann»]] (§10.1–§10.4, clases 79–84).
 
 ## 8.1 Particiones y sumas de Darboux
 

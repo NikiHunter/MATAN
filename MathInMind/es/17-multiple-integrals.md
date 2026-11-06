@@ -9,6 +9,8 @@ part: "Integración en varias variables"
 [← 16. Funciones inversas e implícitas; extremos](16-implicit-functions-extrema.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [18. Cálculo vectorial y teoremas integrales →](18-vector-calculus.md)
 
 > **Objetivo.** Calcular integrales en regiones multidimensionales mediante iteración, simetría y cambios geométricos de coordenadas.
+>
+> **En la numeración del profesor:** [capítulo 26 «La integral múltiple de Riemann»](26-multiple-riemann-integral.md) (§10.1–§10.4, clases 79–84).
 
 <a id="sec-17-1"></a>
 ## 17.1 Definición e integrales iteradas

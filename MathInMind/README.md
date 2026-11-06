@@ -4,8 +4,8 @@ A trilingual course in mathematical analysis. Pick a language and a starting poi
 
 | | English | Русский | Español |
 |---|---|---|---|
-| Course, 21 chapters | [Course index](en/index.md) | [Оглавление](ru/index.md) | [Índice del curso](es/index.md) |
-| Lectures 2025/26, 0–64 | [Lecture index](en/lectures-2025-26/index.md) | [Указатель лекций](ru/lectures-2025-26/index.md) | [Índice de lecciones](es/lectures-2025-26/index.md) |
+| Course, 26 chapters | [Course index](en/index.md) | [Оглавление](ru/index.md) | [Índice del curso](es/index.md) |
+| Lectures 2025/26, 0–84 | [Lecture index](en/lectures-2025-26/index.md) | [Указатель лекций](ru/lectures-2025-26/index.md) | [Índice de lecciones](es/lectures-2025-26/index.md) |
 | Every term and theorem | [Terms & theorems](en/term-index.md) | [Термины и теоремы](ru/term-index.md) | [Términos y teoremas](es/term-index.md) |
 | Glossary | [Glossary](en/glossary.md) | [Глоссарий](ru/glossary.md) | [Glosario](es/glossary.md) |
 

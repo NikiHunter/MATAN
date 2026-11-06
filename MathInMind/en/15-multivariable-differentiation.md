@@ -81,7 +81,7 @@ A function is $`C^k`$ if all partial derivatives through order $`k`$ exist and a
 
 > <a id="clairaut-schwarz-theorem"></a>**Clairaut–Schwarz theorem.** If mixed second partial derivatives are continuous near a point, their order can be interchanged: $`f_{xy}=f_{yx}`$.
 
-For $`f\in C^2`$, the Hessian $`Hf(a)`$ is the symmetric matrix of second partial derivatives. Second-order Taylor expansion is
+For $`f\in C^2`$, the Hessian $`Hf(a)`$ is the symmetric matrix of second partial derivatives. Second-order [Taylor expansion](22-taylor-implicit-extrema.md#def-6-5-1) is
 
 ```math
 f(a+h)=f(a)+\nabla f(a)\cdot h

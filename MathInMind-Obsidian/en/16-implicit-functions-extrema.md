@@ -12,6 +12,8 @@ tags: [mathinmind/en, mathinmind/chapter]
 
 > [!abstract] Goal
 > Apply nondegenerate derivative conditions and find local or [[#16.4 Lagrange multipliers|constrained extrema]] systematically.
+>
+> **In the lecturer's numbering:** [[en/22-taylor-implicit-extrema|chapter 22 “Taylor's Formula in ℝⁿ, Implicit Maps, Extrema”]] (§6.6–§6.7, lectures 65–68).
 
 ## 16.1 Unconstrained local extrema
 

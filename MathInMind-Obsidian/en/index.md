@@ -7,7 +7,7 @@ tags: [mathinmind/en, mathinmind/index]
 
 **English** · [[ru/index|Русский]] · [[es/index|Español]]
 
-A rigorous course from first principles to modern integration, in 21 chapters. Read it here on GitHub, or open `MathInMind-Obsidian/` as an Obsidian vault for wikilinks, hover previews and theorem callouts; [[en/00-notation|the guide to both views]] explains the difference.
+A rigorous course from first principles to modern integration, in 26 chapters. Read it here on GitHub, or open `MathInMind-Obsidian/` as an Obsidian vault for wikilinks, hover previews and theorem callouts; [[en/00-notation|the guide to both views]] explains the difference.
 
 ## Study aids
 
@@ -19,7 +19,7 @@ A rigorous course from first principles to modern integration, in 21 chapters. R
 
 ## Illustrated lectures 2025/26
 
-- [[en/lectures-2025-26/index|Index of all lectures 0–64]]: full transcriptions of the 2025/26 lectures, Russian originals with English and Spanish translations, including the handwritten proofs and figures.
+- [[en/lectures-2025-26/index|Index of all lectures 0–84]]: full transcriptions of the 2025/26 lectures, Russian originals with English and Spanish translations, including the handwritten proofs and figures.
 - **Semester 1:** lectures 0–32. **Semester 2:** lectures 33–64. Semester 2 overlaps the Russian exam-oriented [[ru/lectures/index|register `ru/lectures/`]]; every lecture links to the matching register section.
 - Where each figure comes from (PDF, page and crop) is recorded batch by batch in [`assets/lectures-2025-26/`](https://github.com/NikiHunter/matan/tree/main/MathInMind/assets/lectures-2025-26).
 
@@ -34,6 +34,8 @@ flowchart TD
     B --> E
     C --> F[Chapters 19 to 21 Modern analysis]
     D --> F
+    C --> G[Chapters 22 to 26 Semester 3 by the lecturer chapters]
+    E --> G
 ```
 
 ## Part I — Foundations
@@ -75,6 +77,16 @@ flowchart TD
 20. [[en/20-lebesgue-integration|Lebesgue integration and convergence theorems]].
 21. [[en/21-lp-spaces|$L^p$ spaces and modes of convergence]] — Hölder, completeness, Hilbert-space geometry.
 
+## Part VII — Semester 3: the lecturer's chapters
+
+Chapters 22–26 follow the lecturer's chapters 6–10 of 2025/26: the `§K.s` headings and the numbers of definitions and theorems match [[en/lectures-2025-26/index|lectures 65–84]].
+
+22. [[en/22-taylor-implicit-extrema|Taylor's formula in ℝⁿ, implicit maps, extrema]] — §6.5–§6.7.
+23. [[en/23-numerical-series|Numerical series]] — §7.1–§7.5.
+24. [[en/24-functional-power-series|Functional and power series]] — §8.1–§8.4.
+25. [[en/25-parameter-integrals|Integrals depending on a parameter]] — §9.1–§9.3.
+26. [[en/26-multiple-riemann-integral|The multiple Riemann integral]] — §10.1–§10.4.
+
 ## Suggested study routine
 
 1. Read the goals and reproduce each definition without looking.
@@ -83,4 +95,4 @@ flowchart TD
 4. Keep a personal error log and link it to the relevant chapter.
 5. Review with the formula sheet only after understanding the derivations; it is not a substitute for the theory.
 
-For a first course, study Chapters 1–12 and 14–18, using Chapter 13 as needed. For a second course, review the earlier summaries and concentrate on Chapters 13 and 19–21. The original supplied lecture archive is documented separately in [source notes](https://github.com/NikiHunter/matan/blob/main/source/README.md).
+For a first course, study Chapters 1–12 and 14–18, using Chapter 13 as needed. For a second course, review the earlier summaries and concentrate on Chapters 13 and 19–21. For the semester-3 exam, use Chapters 22–26, which keep the lecturer's numbering. The original supplied lecture archive is documented separately in [source notes](https://github.com/NikiHunter/matan/blob/main/source/README.md).

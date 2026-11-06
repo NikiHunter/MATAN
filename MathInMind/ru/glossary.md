@@ -10,16 +10,22 @@ lang: ru
 
 | English | Русский | Español |
 |---|---|---|
+| [Abel transformation](../en/23-numerical-series.md#sec-7-4) | [преобразование Абеля](23-numerical-series.md#sec-7-4) | [transformación de Abel](../es/23-numerical-series.md#sec-7-4) |
 | [absolute convergence](../en/04-numeric-series.md#sec-4-3) | [абсолютная сходимость](04-numeric-series.md#sec-4-3) | [convergencia absoluta](../es/04-numeric-series.md#sec-4-3) |
+| [admissible set](../en/26-multiple-riemann-integral.md#def-10-2-1) | [допустимое множество](26-multiple-riemann-integral.md#def-10-2-1) | [conjunto admisible](../es/26-multiple-riemann-integral.md#def-10-2-1) |
 | [almost everywhere](../en/19-measure-theory.md#sec-19-4) | [почти всюду](19-measure-theory.md#sec-19-4) | [casi en todas partes](../es/19-measure-theory.md#sec-19-4) |
 | [analytic function](../en/11-power-series.md#sec-11-4) | [аналитическая функция](11-power-series.md#sec-11-4) | [función analítica](../es/11-power-series.md#sec-11-4) |
+| [beta function](../en/25-parameter-integrals.md#sec-9-3) | [бета-функция](25-parameter-integrals.md#sec-9-3) | [función beta](../es/25-parameter-integrals.md#sec-9-3) |
 | [boundary](../en/13-metric-spaces.md#sec-13-2) | [граница](13-metric-spaces.md#sec-13-2) | [frontera](../es/13-metric-spaces.md#sec-13-2) |
 | [bounded](../en/02-real-numbers.md#sec-2-2) | [ограниченный](02-real-numbers.md#sec-2-2) | [acotado](../es/02-real-numbers.md#sec-2-2) |
+| [brick](../en/26-multiple-riemann-integral.md#def-10-1-1) | [брус](26-multiple-riemann-integral.md#def-10-1-1) | [paralelepípedo](../es/26-multiple-riemann-integral.md#def-10-1-1) |
 | [Cauchy sequence](../en/03-sequences.md#sec-3-4) | [фундаментальная последовательность, последовательность Коши](03-sequences.md#sec-3-4) | [sucesión de Cauchy](../es/03-sequences.md#sec-3-4) |
+| [Cavalieri's principle](../en/26-multiple-riemann-integral.md#thm-10-4-2) | [принцип Кавальери](26-multiple-riemann-integral.md#thm-10-4-2) | [principio de Cavalieri](../es/26-multiple-riemann-integral.md#thm-10-4-2) |
 | [closed set](../en/13-metric-spaces.md#sec-13-2) | [замкнутое множество](13-metric-spaces.md#sec-13-2) | [conjunto cerrado](../es/13-metric-spaces.md#sec-13-2) |
 | [closure](../en/13-metric-spaces.md#sec-13-2) | [замыкание](13-metric-spaces.md#sec-13-2) | [clausura](../es/13-metric-spaces.md#sec-13-2) |
 | [compact](../en/13-metric-spaces.md#sec-13-4) | [компактный](13-metric-spaces.md#sec-13-4) | [compacto](../es/13-metric-spaces.md#sec-13-4) |
 | [complete space](../en/13-metric-spaces.md#sec-13-3) | [полное пространство](13-metric-spaces.md#sec-13-3) | [espacio completo](../es/13-metric-spaces.md#sec-13-3) |
+| [condensation test](../en/23-numerical-series.md#sec-7-3) | [признак сгущения (лемма Коши)](23-numerical-series.md#sec-7-3) | [criterio de condensación](../es/23-numerical-series.md#sec-7-3) |
 | [connected](../en/13-metric-spaces.md#sec-13-5) | [связный](13-metric-spaces.md#sec-13-5) | [conexo](../es/13-metric-spaces.md#sec-13-5) |
 | [continuity](../en/05-limits-continuity.md#sec-5-3) | [непрерывность](05-limits-continuity.md#sec-5-3) | [continuidad](../es/05-limits-continuity.md#sec-5-3) |
 | [convergence](../en/03-sequences.md#sec-3-1) | [сходимость](03-sequences.md#sec-3-1) | [convergencia](../es/03-sequences.md#sec-3-1) |
@@ -31,15 +37,19 @@ lang: ru
 | [divergence of a vector field](../en/18-vector-calculus.md#sec-18-3) | [дивергенция векторного поля](18-vector-calculus.md#sec-18-3) | [divergencia de un campo vectorial](../es/18-vector-calculus.md#sec-18-3) |
 | domain | область определения | dominio |
 | [essential supremum](../en/21-lp-spaces.md#sec-21-1) | [существенный супремум](21-lp-spaces.md#sec-21-1) | [supremo esencial](../es/21-lp-spaces.md#sec-21-1) |
+| [gamma function](../en/25-parameter-integrals.md#def-9-3-1) | [гамма-функция](25-parameter-integrals.md#def-9-3-1) | [función gamma](../es/25-parameter-integrals.md#def-9-3-1) |
 | [gradient](../en/15-multivariable-differentiation.md#sec-15-2) | [градиент](15-multivariable-differentiation.md#sec-15-2) | [gradiente](../es/15-multivariable-differentiation.md#sec-15-2) |
 | [Hessian](../en/15-multivariable-differentiation.md#sec-15-4) | [гессиан, матрица Гессе](15-multivariable-differentiation.md#sec-15-4) | [hessiana, matriz hessiana](../es/15-multivariable-differentiation.md#sec-15-4) |
 | [implicit function](../en/16-implicit-functions-extrema.md#sec-16-3) | [неявная функция](16-implicit-functions-extrema.md#sec-16-3) | [función implícita](../es/16-implicit-functions-extrema.md#sec-16-3) |
+| [implicit map](../en/22-taylor-implicit-extrema.md#def-6-6-1) | [неявное отображение](22-taylor-implicit-extrema.md#def-6-6-1) | [aplicación implícita](../es/22-taylor-implicit-extrema.md#def-6-6-1) |
 | [infimum](../en/02-real-numbers.md#sec-2-2) | [инфимум, точная нижняя грань](02-real-numbers.md#sec-2-2) | [ínfimo](../es/02-real-numbers.md#sec-2-2) |
 | [inner product](../en/21-lp-spaces.md#sec-21-4) | [скалярное произведение](21-lp-spaces.md#sec-21-4) | [producto interno](../es/21-lp-spaces.md#sec-21-4) |
 | [integrable](../en/08-riemann-integration.md#sec-8-2) | [интегрируемый](08-riemann-integration.md#sec-8-2) | [integrable](../es/08-riemann-integration.md#sec-8-2) |
+| [integral depending on a parameter](../en/25-parameter-integrals.md#def-9-1-1) | [интеграл, зависящий от параметра](25-parameter-integrals.md#def-9-1-1) | [integral dependiente de un parámetro](../es/25-parameter-integrals.md#def-9-1-1) |
 | [interior](../en/13-metric-spaces.md#sec-13-2) | [внутренность](13-metric-spaces.md#sec-13-2) | [interior](../es/13-metric-spaces.md#sec-13-2) |
 | [Jacobian determinant](../en/17-multiple-integrals.md#sec-17-2) | [якобиан](17-multiple-integrals.md#sec-17-2) | [determinante jacobiano](../es/17-multiple-integrals.md#sec-17-2) |
 | [Jacobian matrix](../en/15-multivariable-differentiation.md#sec-15-1) | [матрица Якоби](15-multivariable-differentiation.md#sec-15-1) | [matriz jacobiana](../es/15-multivariable-differentiation.md#sec-15-1) |
+| [Jordan measure](../en/26-multiple-riemann-integral.md#def-10-2-5) | [мера Жордана](26-multiple-riemann-integral.md#def-10-2-5) | [medida de Jordan](../es/26-multiple-riemann-integral.md#def-10-2-5) |
 | [limit](../en/03-sequences.md#sec-3-1) | [предел](03-sequences.md#sec-3-1) | [límite](../es/03-sequences.md#sec-3-1) |
 | [limit inferior](../en/03-sequences.md#sec-3-5) | [нижний предел](03-sequences.md#sec-3-5) | [límite inferior](../es/03-sequences.md#sec-3-5) |
 | [limit superior](../en/03-sequences.md#sec-3-5) | [верхний предел](03-sequences.md#sec-3-5) | [límite superior](../es/03-sequences.md#sec-3-5) |

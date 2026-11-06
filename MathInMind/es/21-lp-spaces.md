@@ -6,7 +6,7 @@ part: "Análisis moderno"
 ---
 # 21. Espacios $`L^p`$ y modos de convergencia
 
-[← 20. Integración de Lebesgue y teoremas de convergencia](20-lebesgue-integration.md) · [Índice](index.md) · [Términos y teoremas](term-index.md)
+[← 20. Integración de Lebesgue y teoremas de convergencia](20-lebesgue-integration.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [22. Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos →](22-taylor-implicit-extrema.md)
 
 > **Objetivo.** Tratar funciones como puntos de [espacios normados](14-several-variables.md#sec-14-1) y relacionar convergencia en $`L^p`$, [casi en todas partes](19-measure-theory.md#sec-19-4) y en media cuadrática.
 
@@ -122,4 +122,4 @@ En $`(1,\infty)`$, la misma función pertenece a $`L^p`$ exactamente cuando $`\a
 
 ---
 
-[← 20. Integración de Lebesgue y teoremas de convergencia](20-lebesgue-integration.md) · [Índice](index.md) · [Términos y teoremas](term-index.md)
+[← 20. Integración de Lebesgue y teoremas de convergencia](20-lebesgue-integration.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [22. Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos →](22-taylor-implicit-extrema.md)

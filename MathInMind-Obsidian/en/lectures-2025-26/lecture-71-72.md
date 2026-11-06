@@ -121,7 +121,7 @@ Notation: $f_n\rightrightarrows f$ for uniform convergence, $f_n\to f$ for point
 Questions arise naturally. ^p034
 
 1. Let $X\subset\mathbb R$ and let all $f_n$ be continuous (at a point or on a set). Will $f$ be continuous?
-2. Let $X\subset\mathbb R$ and let all $f_n$ be differentiable (at a point or on a set). Will $f$ be differentiable? If so, is it true that $f_n'\to f'$?
+2. Let $X\subset\mathbb R$ and let all $f_n$ be [[en/lectures-2025-26/lecture-22-23#^def-3-2-1|differentiable]] (at a point or on a set). Will $f$ be differentiable? If so, is it true that $f_n'\to f'$?
 3. Let all $f_n$ be integrable on $[a,b]$. Will $f$ be integrable? If so, is it true that $\int_a^bf_n\to\int_a^bf$?
 
 ### Uniform convergence in terms of an ε-neighbourhood

@@ -12,6 +12,8 @@ tags: [mathinmind/en, mathinmind/chapter]
 
 > [!abstract] Goal
 > Define integration through [[#8.1 Partitions and Darboux sums|partitions]], connect it with differentiation, and evaluate [[#8.2 Riemann sums and properties|definite integrals]] rigorously.
+>
+> **In the lecturer's numbering:** [[en/25-parameter-integrals|chapter 25 “Integrals Depending on a Parameter”]] (§9.1–§9.3, lectures 75–80); [[en/26-multiple-riemann-integral|chapter 26 “The Multiple Riemann Integral”]] (§10.1–§10.4, lectures 79–84).
 
 ## 8.1 Partitions and Darboux sums
 

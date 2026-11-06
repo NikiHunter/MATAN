@@ -21,14 +21,17 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | Bolzano–Weierstrass theorem | [[en/03-sequences#^bolzano-weierstrass-theorem\|§3]] | [[en/lectures-2025-26/lecture-11-12#^thm-2-3-4\|Theorem 2.3.4]] |
 | Cantor's theorem (power set) | [[en/01-logic-sets-functions#^cantor-theorem\|§1]] | — |
 | Cauchy criterion for sequences | [[en/03-sequences#3.4 Subsequences and Cauchy sequences\|§3.4]] | [[en/lectures-2025-26/lecture-13#^thm-2-3-7\|Theorem 2.3.7]] |
+| Cauchy's condensation lemma | [[en/23-numerical-series#§7.3. Positive series\|ch. 23 · §7.3]] | — |
 | Cauchy's mean value theorem | [[en/07-taylor-convexity#^cauchy-mean-value-theorem\|§7]] | [[en/lectures-2025-26/lecture-24-25-26#^thm-3-4-4\|Theorem 3.4.4]] |
 | Cauchy–Schwarz inequality | [[en/21-lp-spaces#21.4 The Hilbert space L2\|§21.4]] | [[en/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Theorem 4.4.6]] |
+| Cavalieri's principle | [[en/26-multiple-riemann-integral#^thm-10-4-2\|ch. 26 · §10.4]] | [[en/lectures-2025-26/lecture-83-84#^thm-10-4-2\|Theorem 10.4.2]] |
 | chain rule | [[en/06-derivatives#^chain-rule\|§6]] | [[en/lectures-2025-26/lecture-22-23#^thm-3-3-1\|Theorem 3.3.1]] |
 | Clairaut–Schwarz theorem | [[en/15-multivariable-differentiation#^clairaut-schwarz-theorem\|§15]] | [[en/lectures-2025-26/lecture-63-64#Printed slide 16 (PDF p. 30). Sufficient conditions for equality — Theorem 6.4.1\|Theorem 6.4.1]] |
 | completeness axiom | [[en/02-real-numbers#^completeness-axiom\|§2]] | — |
 | Darboux's theorem (intermediate values of f′) | [[en/06-derivatives#^darboux-property\|§6]] | [[en/lectures-2025-26/lecture-31-32#^thm-3-7-6\|Theorem 3.7.6]] |
 | density of the rationals | [[en/02-real-numbers#^density-of-rationals\|§2]] | [[en/lectures-2025-26/lecture-07#^thm-1-3-3\|Theorem 1.3.3]] |
-| Dirichlet and Abel tests | [[en/09-improper-integrals-applications#^dirichlet-test-for-integrals\|§9]] | [[en/lectures-2025-26/lecture-49-50#^thm-4-5-4\|Theorem 4.5.4]] |
+| Dirichlet and Abel tests for integrals | [[en/09-improper-integrals-applications#^dirichlet-test-for-integrals\|§9]] | [[en/lectures-2025-26/lecture-49-50#^thm-4-5-4\|Theorem 4.5.4]] |
+| Dirichlet and Abel tests for series | [[en/23-numerical-series#§7.4. Series with terms of arbitrary sign\|ch. 23 · §7.4]] | — |
 | Dirichlet's pointwise theorem | [[en/12-fourier-series#^dirichlet-pointwise-theorem\|§12]] | — |
 | divergence theorem (Gauss–Ostrogradsky) | [[en/18-vector-calculus#^divergence-theorem\|§18]] | — |
 | dominated convergence theorem | [[en/20-lebesgue-integration#^dominated-convergence-theorem\|§20]] | — |
@@ -43,6 +46,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | Heine–Cantor theorem | [[en/05-limits-continuity#^heine-cantor-theorem\|§5]] | [[en/lectures-2025-26/lecture-17-18#^thm-2-5-4\|Theorem 2.5.4]] |
 | Hölder's inequality | [[en/21-lp-spaces#^holder-inequality\|§21]] | [[en/lectures-2025-26/lecture-47-48#^thm-4-4-5\|Theorem 4.4.5]] |
 | implicit function theorem | [[en/16-implicit-functions-extrema#16.3 Implicit function theorem\|§16.3]] | — |
+| implicit map theorem | [[en/22-taylor-implicit-extrema#^thm-6-6-1\|ch. 22 · §6.6]] | [[en/lectures-2025-26/lecture-65-66#^thm-6-6-1\|Theorem 6.6.1]] |
 | integrability criterion (Riemann–Darboux) | [[en/08-riemann-integration#^integrability-criterion\|§8]] | [[en/lectures-2025-26/lecture-39-40#^thm-4-2-1\|Theorem 4.2.1]] |
 | intermediate value theorem | [[en/05-limits-continuity#^intermediate-value-theorem\|§5]] | [[en/lectures-2025-26/lecture-17-18#^thm-2-5-5\|Theorem 2.5.5]] |
 | inverse function theorem | [[en/16-implicit-functions-extrema#^inverse-function-theorem\|§16]] | — |
@@ -71,17 +75,21 @@ Every entry jumps straight to the place where the notion is defined or the resul
 
 | Term | Course | Lectures |
 |---|---|---|
+| Abel transformation (summation by parts) | [[en/23-numerical-series#§7.4. Series with terms of arbitrary sign\|ch. 23 · §7.4]] | — |
 | absolute convergence | [[en/04-numeric-series#4.3 Absolute and conditional convergence\|§4.3]] | — |
 | absolutely convergent integral | [[en/09-improper-integrals-applications#9.2 Convergence tests\|§9.2]] | [[en/lectures-2025-26/lecture-49-50#^def-4-5-4\|Definition 4.5.4]] |
+| admissible set | [[en/26-multiple-riemann-integral#^def-10-2-1\|ch. 26 · §10.2]] | [[en/lectures-2025-26/lecture-81-82#^def-10-2-1\|Definition 10.2.1]] |
 | almost everywhere | [[en/19-measure-theory#19.4 Measurable functions\|§19.4]] | — |
 | analytic function | [[en/11-power-series#11.4 Analytic does not mean merely smooth\|§11.4]] | — |
 | antiderivative, indefinite integral | [[en/08-riemann-integration#8.3 Fundamental theorem of calculus\|§8.3]] | [[en/lectures-2025-26/lecture-36#^def-4-1-1\|Definition 4.1.1]] |
 | arc length, rectifiable curve | [[en/09-improper-integrals-applications#9.3 Area, arc length, and volume\|§9.3]] | [[en/lectures-2025-26/lecture-53#^thm-4-7-1\|Theorem 4.7.1]] |
 | asymptote | [[en/05-limits-continuity#5.2 Algebra, composition, and asymptotic behavior\|§5.2]] | [[en/lectures-2025-26/lecture-21#^thm-2-6-2\|Theorem 2.6.2]] |
 | asymptotic notation (o, O, ~) | [[en/05-limits-continuity#5.2 Algebra, composition, and asymptotic behavior\|§5.2]] | — |
+| beta function | [[en/25-parameter-integrals#§9.3. The gamma function\|ch. 25 · §9.3]] | — |
 | bijective map | [[en/01-logic-sets-functions#1.4 Functions\|§1.4]] | [[en/lectures-2025-26/lecture-01-02#^def-1-1-6\|Definition 1.1.6]] |
 | boundary | [[en/13-metric-spaces#13.2 Open and closed sets\|§13.2]] | [[en/lectures-2025-26/lecture-57-58#Printed slide 5 (PDF p. 7) — The boundary of a set — Definition 5.3.4\|Definition 5.3.4]] |
 | bounded set | [[en/02-real-numbers#2.2 Supremum and infimum\|§2.2]] | [[en/lectures-2025-26/lecture-05-06#^def-1-3-7\|Definition 1.3.7]] |
+| brick (interval in ℝⁿ) | [[en/26-multiple-riemann-integral#^def-10-1-1\|ch. 26 · §10.1]] | [[en/lectures-2025-26/lecture-79-80#^def-10-1-1\|Definition 10.1.1]] |
 | Cauchy (fundamental) sequence | [[en/03-sequences#3.4 Subsequences and Cauchy sequences\|§3.4]] | [[en/lectures-2025-26/lecture-13#^def-2-3-10\|Definition 2.3.10]] |
 | change of variables in an integral | [[en/08-riemann-integration#8.4 Computation techniques\|§8.4]] | [[en/lectures-2025-26/lecture-37-38#^thm-4-1-5\|Theorem 4.1.5]] |
 | change of variables, Jacobian | [[en/17-multiple-integrals#17.2 Change of variables\|§17.2]] | — |
@@ -112,20 +120,25 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | Euclidean norm and space | [[en/14-several-variables#14.1 Euclidean space and norms\|§14.1]] | [[en/lectures-2025-26/lecture-54#^def-5-1-1\|Definition 5.1.1]] |
 | extended real line | [[en/02-real-numbers#2.4 Nested intervals and the real line\|§2.4]] | [[en/lectures-2025-26/lecture-05-06#^def-1-3-4\|Definition 1.3.4]] |
 | Fourier series and coefficients | [[en/12-fourier-series#12.1 Trigonometric system and coefficients\|§12.1]] | — |
+| gamma function | [[en/25-parameter-integrals#^def-9-3-1\|ch. 25 · §9.3]] | [[en/lectures-2025-26/lecture-79-80#^def-9-3-1\|Definition 9.3.1]] |
 | gradient | [[en/15-multivariable-differentiation#15.2 Partial and directional derivatives\|§15.2]] | [[en/lectures-2025-26/lecture-61-62#Printed slide 11 (PDF p. 14). Jacobian matrix and gradient — Definition 6.1.6\|Definition 6.1.6]] |
 | Hessian | [[en/15-multivariable-differentiation#15.4 Higher derivatives and Taylor's formula\|§15.4]] | — |
 | Hilbert space, inner product | [[en/21-lp-spaces#21.4 The Hilbert space L2\|§21.4]] | — |
+| implicit map | [[en/22-taylor-implicit-extrema#^def-6-6-1\|ch. 22 · §6.6]] | [[en/lectures-2025-26/lecture-65-66#^def-6-6-1\|Definition 6.6.1]] |
 | improper integral | [[en/09-improper-integrals-applications#9.1 Definitions\|§9.1]] | [[en/lectures-2025-26/lecture-47-48#^def-4-5-2\|Definition 4.5.2]] |
 | infimum | [[en/02-real-numbers#2.2 Supremum and infimum\|§2.2]] | [[en/lectures-2025-26/lecture-11-12#^def-2-3-2\|Definition 2.3.2]] |
 | infinitely large sequence | [[en/03-sequences#3.2 Limit laws\|§3.2]] | [[en/lectures-2025-26/lecture-09-10#^def-2-2-4\|Definition 2.2.4]] |
 | infinitesimal sequence | [[en/03-sequences#3.2 Limit laws\|§3.2]] | [[en/lectures-2025-26/lecture-09-10#^def-2-2-1\|Definition 2.2.1]] |
 | inflection point | [[en/07-taylor-convexity#7.4 Convex functions\|§7.4]] | [[en/lectures-2025-26/lecture-35#^def-3-8-3\|Definition 3.8.3]] |
 | injective map | [[en/01-logic-sets-functions#1.4 Functions\|§1.4]] | [[en/lectures-2025-26/lecture-01-02#^def-1-1-4\|Definition 1.1.4]] |
+| integral depending on a parameter | [[en/25-parameter-integrals#^def-9-1-1\|ch. 25 · §9.1]] | [[en/lectures-2025-26/lecture-75-76#^def-9-1-1\|Definition 9.1.1]] |
+| integral over a set | [[en/26-multiple-riemann-integral#^def-10-2-4\|ch. 26 · §10.2]] | [[en/lectures-2025-26/lecture-81-82#^def-10-2-4\|Definition 10.2.4]] |
 | integration by parts | [[en/08-riemann-integration#8.4 Computation techniques\|§8.4]] | [[en/lectures-2025-26/lecture-37-38#^thm-4-1-4\|Theorem 4.1.4]] |
 | interior point, interior | [[en/13-metric-spaces#13.2 Open and closed sets\|§13.2]] | [[en/lectures-2025-26/lecture-57-58#Printed slide 4 (PDF p. 4) — The interior of a set — Definition 5.3.3\|Definition 5.3.3]] |
 | inverse map | [[en/01-logic-sets-functions#1.4 Functions\|§1.4]] | [[en/lectures-2025-26/lecture-01-02#^def-1-1-8\|Definition 1.1.8]] |
 | iterated limits | [[en/14-several-variables#^iterated-limit-warning\|§14]] | [[en/lectures-2025-26/lecture-57-58#^def-5-4-2\|Definition 5.4.2]] |
 | Jacobian matrix | [[en/15-multivariable-differentiation#15.1 The total derivative\|§15.1]] | [[en/lectures-2025-26/lecture-61-62#Printed slide 11 (PDF p. 14). Jacobian matrix and gradient — Definition 6.1.6\|Definition 6.1.6]] |
+| Jordan measure (volume) | [[en/26-multiple-riemann-integral#^def-10-2-5\|ch. 26 · §10.2]] | [[en/lectures-2025-26/lecture-81-82#^def-10-2-5\|Definition 10.2.5]] |
 | $L^p$ space | [[en/21-lp-spaces#21.1 Definition and basic inequalities\|§21.1]] | — |
 | Lagrange multipliers | [[en/16-implicit-functions-extrema#16.4 Lagrange multipliers\|§16.4]] | — |
 | Lebesgue integral | [[en/20-lebesgue-integration#20.1 Construction of the integral\|§20.1]] | — |
@@ -155,6 +168,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | partial (subsequential) limit | [[en/03-sequences#3.5 Limit superior and inferior\|§3.5]] | [[en/lectures-2025-26/lecture-11-12#^def-2-3-8\|Definition 2.3.8]] |
 | partial derivative | [[en/15-multivariable-differentiation#15.2 Partial and directional derivatives\|§15.2]] | [[en/lectures-2025-26/lecture-61-62#Printed slide 8 (PDF p. 9). Partial derivatives — Definition 6.1.5\|Definition 6.1.5]] |
 | partition and its mesh | [[en/08-riemann-integration#8.1 Partitions and Darboux sums\|§8.1]] | [[en/lectures-2025-26/lecture-37-38#^def-4-2-2\|Definition 4.2.2]] |
+| partition of a brick | [[en/26-multiple-riemann-integral#^def-10-1-3\|ch. 26 · §10.1]] | [[en/lectures-2025-26/lecture-79-80#^def-10-1-3\|Definition 10.1.3]] |
 | points of discontinuity | [[en/05-limits-continuity#5.3 Continuity\|§5.3]] | [[en/lectures-2025-26/lecture-16#^def-2-5-4\|Definition 2.5.4]] |
 | pointwise convergence | [[en/10-function-sequences-series#10.1 Two modes of convergence\|§10.1]] | — |
 | polar, cylindrical, spherical coordinates | [[en/17-multiple-integrals#17.3 Choosing coordinates\|§17.3]] | — |
@@ -175,12 +189,14 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | surface integral and flux | [[en/18-vector-calculus#18.2 Surface integrals and flux\|§18.2]] | — |
 | surjective map | [[en/01-logic-sets-functions#1.4 Functions\|§1.4]] | [[en/lectures-2025-26/lecture-01-02#^def-1-1-5\|Definition 1.1.5]] |
 | tangent plane | [[en/15-multivariable-differentiation#15.3 Chain rule and tangent planes\|§15.3]] | — |
+| Taylor polynomial in ℝⁿ | [[en/22-taylor-implicit-extrema#^def-6-5-1\|ch. 22 · §6.5]] | [[en/lectures-2025-26/lecture-65-66#^def-6-5-1\|Definition 6.5.1]] |
 | Taylor series | [[en/11-power-series#11.3 Standard expansions\|§11.3]] | — |
 | Taylor's formula and remainders | [[en/07-taylor-convexity#7.3 Taylor's formula\|§7.3]] | [[en/lectures-2025-26/lecture-27-28#^thm-3-6-3\|Theorem 3.6.3]] |
 | total derivative (differential of a map) | [[en/15-multivariable-differentiation#15.1 The total derivative\|§15.1]] | [[en/lectures-2025-26/lecture-59-60#^def-6-1-2\|Definition 6.1.2]] |
 | uncountable set | [[en/01-logic-sets-functions#1.5 Countability\|§1.5]] | [[en/lectures-2025-26/lecture-03#^thm-1-2-5\|Theorem 1.2.5]] |
 | uniform continuity | [[en/05-limits-continuity#5.4 Uniform continuity\|§5.4]] | [[en/lectures-2025-26/lecture-17-18#^def-2-5-7\|Definition 2.5.7]] |
 | uniform convergence | [[en/10-function-sequences-series#10.1 Two modes of convergence\|§10.1]] | — |
+| uniform convergence of an improper integral | [[en/25-parameter-integrals#^def-9-2-1\|ch. 25 · §9.2]] | [[en/lectures-2025-26/lecture-77-78#^def-9-2-1\|Definition 9.2.1]] |
 | upper and lower bounds | [[en/02-real-numbers#2.2 Supremum and infimum\|§2.2]] | — |
 
 ## Numbered statements of the 2025/26 lectures

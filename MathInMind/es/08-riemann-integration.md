@@ -9,6 +9,8 @@ part: "Cálculo de una variable"
 [← 7. Teoremas del valor medio, Taylor y convexidad](07-taylor-convexity.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [9. Integrales impropias y aplicaciones →](09-improper-integrals-applications.md)
 
 > **Objetivo.** Definir la integral mediante [particiones](#sec-8-1), relacionarla con la derivación y calcular [integrales definidas](#sec-8-2) con rigor.
+>
+> **En la numeración del profesor:** [capítulo 25 «Integrales dependientes de un parámetro»](25-parameter-integrals.md) (§9.1–§9.3, clases 75–80); [capítulo 26 «La integral múltiple de Riemann»](26-multiple-riemann-integral.md) (§10.1–§10.4, clases 79–84).
 
 <a id="sec-8-1"></a>
 ## 8.1 Particiones y sumas de Darboux

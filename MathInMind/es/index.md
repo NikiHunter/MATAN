@@ -6,7 +6,7 @@ lang: es
 
 [English](../en/index.md) · [Русский](../ru/index.md) · **Español**
 
-Un curso riguroso desde los fundamentos hasta la integración moderna, en 21 capítulos. Léelo aquí en GitHub o abre `MathInMind-Obsidian/` como vault de Obsidian para tener wikienlaces, vista previa al pasar el ratón y recuadros de teoremas; [la guía de ambas vistas](00-notation.md) explica la diferencia.
+Un curso riguroso desde los fundamentos hasta la integración moderna, en 26 capítulos. Léelo aquí en GitHub o abre `MathInMind-Obsidian/` como vault de Obsidian para tener wikienlaces, vista previa al pasar el ratón y recuadros de teoremas; [la guía de ambas vistas](00-notation.md) explica la diferencia.
 
 ## Material de apoyo
 
@@ -18,7 +18,7 @@ Un curso riguroso desde los fundamentos hasta la integración moderna, en 21 cap
 
 ## Lecciones ilustradas 2025/26
 
-- [Índice de todas las lecciones 0–64](lectures-2025-26/index.md): transcripciones completas de las lecciones 2025/26, originales en ruso con traducciones al inglés y al español, incluidas las demostraciones manuscritas y las figuras.
+- [Índice de todas las lecciones 0–84](lectures-2025-26/index.md): transcripciones completas de las lecciones 2025/26, originales en ruso con traducciones al inglés y al español, incluidas las demostraciones manuscritas y las figuras.
 - **Semestre 1:** lecciones 0–32. **Semestre 2:** lecciones 33–64. El semestre 2 se solapa con el [registro ruso `ru/lectures/`](../ru/lectures/index.md), orientado al examen; cada lección enlaza con la sección correspondiente del registro.
 - El origen de cada figura (PDF, página y recorte) se registra por lotes en [`assets/lectures-2025-26/`](../assets/lectures-2025-26/).
 
@@ -33,6 +33,8 @@ flowchart TD
     B --> E
     C --> F[Capitulos 19 a 21 Analisis moderno]
     D --> F
+    C --> G[Capitulos 22 a 26 Semestre 3 segun el profesor]
+    E --> G
 ```
 
 ## Parte I — Fundamentos
@@ -74,6 +76,16 @@ flowchart TD
 20. [Integración de Lebesgue y teoremas de convergencia](20-lebesgue-integration.md).
 21. [Espacios $`L^p`$ y modos de convergencia](21-lp-spaces.md) — Hölder, completitud, geometría de Hilbert.
 
+## Parte VII — Semestre 3: capítulos del profesor
+
+Los capítulos 22–26 siguen los capítulos 6–10 del profesor de 2025/26: los encabezados `§K.s` y los números de definiciones y teoremas coinciden con las [lecciones 65–84](lectures-2025-26/index.md).
+
+22. [Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos](22-taylor-implicit-extrema.md) — §6.5–§6.7.
+23. [Series numéricas](23-numerical-series.md) — §7.1–§7.5.
+24. [Series funcionales y de potencias](24-functional-power-series.md) — §8.1–§8.4.
+25. [Integrales dependientes de un parámetro](25-parameter-integrals.md) — §9.1–§9.3.
+26. [La integral múltiple de Riemann](26-multiple-riemann-integral.md) — §10.1–§10.4.
+
 ## Rutina de estudio sugerida
 
 1. Lee los objetivos y reproduce cada definición sin mirar.
@@ -82,4 +94,4 @@ flowchart TD
 4. Lleva un registro personal de errores y enlázalo con los capítulos.
 5. Repasa con la hoja de fórmulas solo después de entender las deducciones; no sustituye la teoría.
 
-Para un primer curso, estudia los capítulos 1–12 y 14–18, consultando el 13 cuando sea necesario. Para un segundo curso, repasa los resúmenes y concéntrate en los capítulos 13 y 19–21. El archivo de lecciones original se documenta en las [notas de fuentes](../../source/README.md).
+Para un primer curso, estudia los capítulos 1–12 y 14–18, consultando el 13 cuando sea necesario. Para un segundo curso, repasa los resúmenes y concéntrate en los capítulos 13 y 19–21. Para el examen del tercer semestre, usa los capítulos 22–26, que conservan la numeración del profesor. El archivo de lecciones original se documenta en las [notas de fuentes](../../source/README.md).

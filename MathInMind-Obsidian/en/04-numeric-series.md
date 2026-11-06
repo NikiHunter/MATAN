@@ -12,6 +12,8 @@ tags: [mathinmind/en, mathinmind/chapter]
 
 > [!abstract] Goal
 > Distinguish types of convergence and select an appropriate convergence test.
+>
+> **In the lecturer's numbering:** [[en/23-numerical-series|chapter 23 “Numerical Series”]] (§7.1–§7.5, lectures 67–72).
 
 ## 4.1 Convergence through partial sums
 

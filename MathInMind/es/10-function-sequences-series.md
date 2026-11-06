@@ -9,6 +9,8 @@ part: "Procesos infinitos"
 [← 9. Integrales impropias y aplicaciones](09-improper-integrals-applications.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [11. Series de potencias y funciones analíticas →](11-power-series.md)
 
 > **Objetivo.** Distinguir [convergencia puntual](#sec-10-1) y uniforme y saber cuándo los límites conmutan con las operaciones del análisis.
+>
+> **En la numeración del profesor:** [capítulo 24 «Series funcionales y de potencias»](24-functional-power-series.md) (§8.1–§8.3, clases 71–74).
 
 <a id="sec-10-1"></a>
 ## 10.1 Dos modos de convergencia

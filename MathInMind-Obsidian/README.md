@@ -7,8 +7,8 @@ A trilingual course in mathematical analysis. Pick a language and a starting poi
 
 | | English | Русский | Español |
 |---|---|---|---|
-| Course, 21 chapters | [[en/index\|Course index]] | [[ru/index\|Оглавление]] | [[es/index\|Índice del curso]] |
-| Lectures 2025/26, 0–64 | [[en/lectures-2025-26/index\|Lecture index]] | [[ru/lectures-2025-26/index\|Указатель лекций]] | [[es/lectures-2025-26/index\|Índice de lecciones]] |
+| Course, 26 chapters | [[en/index\|Course index]] | [[ru/index\|Оглавление]] | [[es/index\|Índice del curso]] |
+| Lectures 2025/26, 0–84 | [[en/lectures-2025-26/index\|Lecture index]] | [[ru/lectures-2025-26/index\|Указатель лекций]] | [[es/lectures-2025-26/index\|Índice de lecciones]] |
 | Every term and theorem | [[en/term-index\|Terms & theorems]] | [[ru/term-index\|Термины и теоремы]] | [[es/term-index\|Términos y teoremas]] |
 | Glossary | [[en/glossary\|Glossary]] | [[ru/glossary\|Глоссарий]] | [[es/glossary\|Glosario]] |
 

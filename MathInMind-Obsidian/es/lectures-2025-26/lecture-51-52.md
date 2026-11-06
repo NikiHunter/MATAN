@@ -108,7 +108,7 @@ La página manuscrita ofrece tres demostraciones breves. La monotonía se obtien
 
 ^def-4-6-3
 
-El volumen de los cuerpos cubables de $\mathbb R^3$ satisface aditividad, normalización en paralelepípedos rectangulares e invariancia por movimientos.
+El volumen de los cuerpos cubables de $\mathbb R^3$ satisface aditividad, normalización en [[es/lectures-2025-26/lecture-79-80#^def-10-1-1|paralelepípedos]] rectangulares e invariancia por movimientos.
 
 
 $$

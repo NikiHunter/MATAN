@@ -9,11 +9,13 @@ part: "Integration in several variables"
 [← 16. Inverse and Implicit Functions; Extrema](16-implicit-functions-extrema.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [18. Vector Calculus and Integral Theorems →](18-vector-calculus.md)
 
 > **Goal.** Evaluate integrals over multidimensional regions using iteration, symmetry, and geometric coordinate changes.
+>
+> **In the lecturer's numbering:** [chapter 26 “The Multiple Riemann Integral”](26-multiple-riemann-integral.md) (§10.1–§10.4, lectures 79–84).
 
 <a id="sec-17-1"></a>
 ## 17.1 Definition and iterated integrals
 
-For a bounded function on a rectangle $`R=\prod_{i=1}^{n}[a_i,b_i]`$, [partitions](08-riemann-integration.md#sec-8-1) into small rectangles define lower and upper Darboux sums using volumes $`\Delta V_j`$. Integrability again means that upper and lower sums can be made arbitrarily close. Continuous functions on closed bounded Jordan-measurable regions are integrable.
+For a bounded function on a rectangle $`R=\prod_{i=1}^{n}[a_i,b_i]`$, [partitions](08-riemann-integration.md#sec-8-1) into small rectangles define lower and upper Darboux sums using volumes $`\Delta V_j`$. Integrability again means that upper and lower sums can be made arbitrarily close. Continuous functions on closed bounded [Jordan-measurable](26-multiple-riemann-integral.md#def-10-2-5) regions are integrable.
 
 > <a id="fubini-theorem-continuous"></a>**Fubini's theorem — continuous case.** If $`f`$ is continuous on $`R=[a,b]\times[c,d]`$, then
 > ```math

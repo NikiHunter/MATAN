@@ -94,7 +94,7 @@ $\square$
 > (T212, U213, M214). En los apuntes, como en la fórmula de Cauchy–Hadamard (lecciones 73–74), figuran límites ordinarios en lugar de superiores, y la cadena final se escribe «$\lim\sqrt[n]{|nC_n|}\le\lim\sqrt[n]{|C_n|}\le(1+\varepsilon)\lim\sqrt[n]{|C_n|}$», con los dos primeros miembros intercambiados. Lo correcto es $\varlimsup\sqrt[n]{|c_n|}\le\varlimsup\sqrt[n]{n|c_n|}\le(1+\varepsilon)\varlimsup\sqrt[n]{|c_n|}$ (FS p78). La línea «$\forall\varepsilon>0$, $\exists k\in\mathbb N$: $k>1$, por $\exists N:\forall n>N$» se lee como «fijemos $\varepsilon>0$; como $\sqrt[n]n\to1$, existe $N$ tal que para todo $n>N$…».
 
 > [!note] Restaurado
-> (aclaración del enunciado, según la exposición estándar). El [[#^thm-8-4-5|teorema 8.4.5]] afirma solo la igualdad de los radios; el comportamiento de las tres series en los extremos del intervalo de convergencia puede ser distinto. Por ejemplo, la serie $\sum_{k=1}^{\infty}\frac{x^k}{k^2}$ ($R=1$) converge para $x=1$, mientras que la serie derivada $\sum_{k=1}^{\infty}\frac{x^{k-1}}{k}$ se convierte en la serie armónica para $x=1$ y diverge.
+> (aclaración del enunciado, según la exposición estándar). El [[#^thm-8-4-5|teorema 8.4.5]] afirma solo la igualdad de los radios; el comportamiento de las tres series en los extremos del intervalo de convergencia puede ser distinto. Por ejemplo, la serie $\sum_{k=1}^{\infty}\frac{x^k}{k^2}$ ($R=1$) converge para $x=1$, mientras que la serie [[es/lectures-2025-26/lecture-22-23#^def-3-1-1|derivada]] $\sum_{k=1}^{\infty}\frac{x^{k-1}}{k}$ se convierte en la serie armónica para $x=1$ y diverge.
 
 ### Derivación de series de potencias
 
@@ -103,7 +103,7 @@ $\square$
 > $$
 > f(x)=\sum_{k=0}^{\infty}c_k(x-a)^k .
 > $$
-> Entonces la función $f$ es infinitamente derivable en el conjunto $|x-a|<R$, y la serie puede derivarse término a término cualquier número de veces:
+> Entonces la función $f$ es infinitamente [[es/lectures-2025-26/lecture-22-23#^def-3-2-1|derivable]] en el conjunto $|x-a|<R$, y la serie puede derivarse término a término cualquier número de veces:
 > $$
 > f^{(m)}(x)=\sum_{k=m}^{\infty}k(k-1)\dots(k-m+1)\,c_k(x-a)^{k-m},\qquad |x-a|<R,\quad m\in\mathbb N .
 > $$
@@ -121,7 +121,7 @@ Denotemos $\psi_k(x):=c_k\bigl(x^{k-1}+x^{k-2}x_1+\dots+x_1^{k-1}\bigr)$: son po
 $$
 |\psi_k(x)|=\bigl|c_k\bigl(x^{k-1}+x^{k-2}x_1+\dots+x_1^{k-1}\bigr)\bigr|\le k|c_k|\rho^{k-1}\qquad(|x|\le\rho).
 $$
-Como $\rho<R$, y la serie $\sum kc_kx^{k-1}$ tiene radio de convergencia $R$ por el [[#^thm-8-4-5|teorema 8.4.5]], en el punto $x=\rho$ converge absolutamente (una serie de potencias converge absolutamente en su intervalo de convergencia, [[es/lectures-2025-26/lecture-73-74#^rem-8-4-1|observación 8.4.1]]), es decir, la serie $\sum_{k=1}^{\infty}k|c_k|\rho^{k-1}$ converge. Por el [[es/10-function-sequences-series#^weierstrass-m-test|criterio de Weierstrass]] la serie $\sum_{k=1}^{\infty}\psi_k(x)$ converge uniformemente en $[-\rho,\rho]$ (con mayor razón en $[-\rho,\rho]\setminus\{x_1\}$), y por el [[es/lectures-2025-26/lecture-71-72#^thm-8-3-1|teorema 8.3.1]] su suma $\Psi(x)$ es continua en $[-\rho,\rho]$. Para $x\ne x_1$ se tiene $\Psi(x)=\frac{f(x)-f(x_1)}{x-x_1}$, y $\psi_k(x_1)=kc_kx_1^{k-1}$. Por tanto (paso al límite término a término),
+Como $\rho<R$, y la serie $\sum kc_kx^{k-1}$ tiene radio de convergencia $R$ por el [[#^thm-8-4-5|teorema 8.4.5]], en el punto $x=\rho$ [[es/04-numeric-series#4.3 Convergencia absoluta y condicional|converge absolutamente]] (una serie de potencias converge absolutamente en su intervalo de convergencia, [[es/lectures-2025-26/lecture-73-74#^rem-8-4-1|observación 8.4.1]]), es decir, la serie $\sum_{k=1}^{\infty}k|c_k|\rho^{k-1}$ converge. Por el [[es/10-function-sequences-series#^weierstrass-m-test|criterio de Weierstrass]] la serie $\sum_{k=1}^{\infty}\psi_k(x)$ converge uniformemente en $[-\rho,\rho]$ (con mayor razón en $[-\rho,\rho]\setminus\{x_1\}$), y por el [[es/lectures-2025-26/lecture-71-72#^thm-8-3-1|teorema 8.3.1]] su suma $\Psi(x)$ es continua en $[-\rho,\rho]$. Para $x\ne x_1$ se tiene $\Psi(x)=\frac{f(x)-f(x_1)}{x-x_1}$, y $\psi_k(x_1)=kc_kx_1^{k-1}$. Por tanto (paso al límite término a término),
 $$
 \lim_{x\to x_1}\frac{f(x)-f(x_1)}{x-x_1}=\lim_{x\to x_1}\Psi(x)=\Psi(x_1)=\sum_{k=1}^{\infty}\lim_{x\to x_1}c_k\bigl(x^{k-1}+x^{k-2}x_1+\dots+x_1^{k-1}\bigr)=\sum_{k=1}^{\infty}kc_kx_1^{k-1}.
 $$
@@ -189,7 +189,7 @@ La [[es/04-numeric-series#4.1 Sumas parciales|suma parcial]] de la serie de Tayl
 $$
 T_{n,f}(x)=\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k
 $$
-es el polinomio de Taylor. Por la definición de suma de una serie, la convergencia de la serie de Taylor a $f(x)$ significa que $T_{n,f}(x)\to f(x)$ cuando $n\to\infty$, es decir, que el resto $R_{n,f}(x):=f(x)-T_{n,f}(x)$ tiende a cero.
+es el [[es/lectures-2025-26/lecture-27-28#^thm-3-6-3|polinomio de Taylor]]. Por la definición de suma de una serie, la convergencia de la serie de Taylor a $f(x)$ significa que $T_{n,f}(x)\to f(x)$ cuando $n\to\infty$, es decir, que el resto $R_{n,f}(x):=f(x)-T_{n,f}(x)$ tiende a cero.
 
 > [!theorem] Teorema 8.4.8 (criterio de desarrollabilidad de una función en serie de Taylor)
 > Supongamos que
@@ -259,7 +259,7 @@ Por los [[#^thm-8-4-6|teoremas 8.4.6]] y [[#^thm-8-4-7|8.4.7]], una función ana
 ## §9.1. Integrales propias dependientes de un parámetro
 
 
-Comienza el capítulo 9 «Integrales dependientes de un parámetro». Primero, un ejemplo que muestra qué preguntas surgen al trabajar con tales integrales. ^p055
+Comienza el capítulo 9 «[[#^def-9-1-1|Integrales dependientes de un parámetro]]». Primero, un ejemplo que muestra qué preguntas surgen al trabajar con tales integrales. ^p055
 
 **Ejemplo.** Consideremos
 $$
@@ -311,7 +311,7 @@ Nota en rojo al pie de la página: «❶ Lo de arriba hay que justificarlo».
 > (T239, T521). En los apuntes la [[es/lectures-2025-26/lecture-36#^def-4-1-1|primitiva]] se escribe «$I'(y)=-\int\frac{dy}{1+y^2}=-\operatorname{arctg}y+C$»; a la izquierda debe figurar $I(y)$. La línea «$\Rightarrow I(y)=-\int_0^{+\infty}e^{-xy}\frac{\sin x}{x}dx+\int_0^{+\infty}0\,dx=0$» está deformada; en su sentido es el paso al límite cuando $y\to+\infty$: $I(y)\to\int_0^{+\infty}0\,dx=0$.
 
 > [!note] Restaurado
-> (según estimaciones estándar; en los apuntes estos pasos se marcan como pendientes de justificación). El límite cuando $y\to+\infty$ se justifica enseguida: como $\left|\frac{\sin x}{x}\right|\le1$, para $y>0$ se tiene $|I(y)|\le\int_0^{+\infty}e^{-xy}\,dx=\frac1y\to0$. Los demás pasos —la derivación bajo el signo de una [[es/lectures-2025-26/lecture-47-48#^def-4-5-2|integral impropia]] (paso ❶) y la igualdad $I(0)=\lim_{y\to0+}I(y)$, necesaria porque la fórmula para $I'(y)$ se dedujo solo para $y>0$ (para $y=0$ la integral $J(0)=\int_0^{+\infty}\sin x\,dx$ diverge)— requieren la convergencia uniforme de una integral impropia respecto de un parámetro y se justificarán más adelante (§9.2).
+> (según estimaciones estándar; en los apuntes estos pasos se marcan como pendientes de justificación). El límite cuando $y\to+\infty$ se justifica enseguida: como $\left|\frac{\sin x}{x}\right|\le1$, para $y>0$ se tiene $|I(y)|\le\int_0^{+\infty}e^{-xy}\,dx=\frac1y\to0$. Los demás pasos —la derivación bajo el signo de una [[es/lectures-2025-26/lecture-47-48#^def-4-5-2|integral impropia]] (paso ❶) y la igualdad $I(0)=\lim_{y\to0+}I(y)$, necesaria porque la fórmula para $I'(y)$ se dedujo solo para $y>0$ (para $y=0$ la integral $J(0)=\int_0^{+\infty}\sin x\,dx$ diverge)— requieren la [[es/lectures-2025-26/lecture-77-78#^def-9-2-1|convergencia uniforme de una integral impropia]] respecto de un parámetro y se justificarán más adelante (§9.2).
 
 
 > [!definition] Definición 9.1.1
@@ -380,7 +380,7 @@ es decir, $I(y)\to I(y_0)$ cuando $y\to y_0$. Como el punto $y_0\in[c,d]$ es arb
 $$
 \frac{I(y_0+h)-I(y_0)}{h}=\frac1h\int_a^b\bigl(f(x,y_0+h)-f(x,y_0)\bigr)\,dx .
 $$
-Para cada $x\in[a,b]$ la función $t\mapsto f(x,t)$ es derivable en $[c,d]$, y por el teorema de Lagrange
+Para cada $x\in[a,b]$ la función $t\mapsto f(x,t)$ es derivable en $[c,d]$, y por el [[es/lectures-2025-26/lecture-24-25-26#^thm-3-4-3|teorema de Lagrange]]
 $$
 \frac{f(x,y_0+h)-f(x,y_0)}{h}=\frac{\partial f}{\partial y}(x,y_0+\theta h),\qquad 0<\theta<1
 $$

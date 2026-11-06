@@ -8,7 +8,7 @@ tags: [mathinmind/en, mathinmind/chapter]
 ---
 # 21. $L^p$ Spaces and Modes of Convergence
 
-[[en/20-lebesgue-integration|← 20. Lebesgue Integration and Convergence Theorems]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]]
+[[en/20-lebesgue-integration|← 20. Lebesgue Integration and Convergence Theorems]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/22-taylor-implicit-extrema|22. Taylor's Formula in ℝⁿ, Implicit Maps, Extrema →]]
 
 > [!abstract] Goal
 > Treat functions as points of [[en/14-several-variables#14.1 Euclidean space and norms|normed spaces]] and relate $L^p$, almost-everywhere, and mean-square convergence.
@@ -124,4 +124,4 @@ On $(1,\infty)$, the same function belongs to $L^p$ exactly when $\alpha p>1$. T
 
 ---
 
-[[en/20-lebesgue-integration|← 20. Lebesgue Integration and Convergence Theorems]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]]
+[[en/20-lebesgue-integration|← 20. Lebesgue Integration and Convergence Theorems]] · [[en/index|Course index]] · [[en/term-index|Terms & theorems]] · [[en/22-taylor-implicit-extrema|22. Taylor's Formula in ℝⁿ, Implicit Maps, Extrema →]]

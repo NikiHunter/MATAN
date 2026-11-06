@@ -8,7 +8,7 @@ tags: [mathinmind/es, mathinmind/chapter]
 ---
 # 21. Espacios $L^p$ y modos de convergencia
 
-[[es/20-lebesgue-integration|← 20. Integración de Lebesgue y teoremas de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]]
+[[es/20-lebesgue-integration|← 20. Integración de Lebesgue y teoremas de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/22-taylor-implicit-extrema|22. Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos →]]
 
 > [!abstract] Objetivo
 > Tratar funciones como puntos de [[es/14-several-variables#14.1 Espacio euclidiano y normas|espacios normados]] y relacionar convergencia en $L^p$, [[es/19-measure-theory#19.4 Funciones medibles|casi en todas partes]] y en media cuadrática.
@@ -124,4 +124,4 @@ En $(1,\infty)$, la misma función pertenece a $L^p$ exactamente cuando $\alpha 
 
 ---
 
-[[es/20-lebesgue-integration|← 20. Integración de Lebesgue y teoremas de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]]
+[[es/20-lebesgue-integration|← 20. Integración de Lebesgue y teoremas de convergencia]] · [[es/index|Índice]] · [[es/term-index|Términos y teoremas]] · [[es/22-taylor-implicit-extrema|22. Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos →]]

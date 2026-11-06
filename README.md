@@ -1,13 +1,13 @@
 # MATAN — Mathematical Analysis / Математический анализ / Análisis matemático
 
-A trilingual mathematical analysis course: 21 concise chapters, full illustrated notes of the 2025/26 lectures 0–64 in three languages, cleaned semester-3 lectures 65–84 in Russian, and Russian exam tracks. Every term and theorem is linked to the place where it is defined.
+A trilingual mathematical analysis course: 26 concise chapters (22–26 follow the lecturer's numbering for semester 3), full notes of the 2025/26 lectures 0–84 in three languages, and Russian exam tracks. Every term and theorem is linked to the place where it is defined.
 
 ## Start here
 
 | | English | Русский | Español |
 |---|---|---|---|
-| Course, 21 chapters | [Course index](MathInMind/en/index.md) | [Оглавление курса](MathInMind/ru/index.md) | [Índice del curso](MathInMind/es/index.md) |
-| Lectures 2025/26, 0–84 (65–84 in Russian) | [Lecture index](MathInMind/en/lectures-2025-26/index.md) | [Указатель лекций](MathInMind/ru/lectures-2025-26/index.md) | [Índice de lecciones](MathInMind/es/lectures-2025-26/index.md) |
+| Course, 26 chapters | [Course index](MathInMind/en/index.md) | [Оглавление курса](MathInMind/ru/index.md) | [Índice del curso](MathInMind/es/index.md) |
+| Lectures 2025/26, 0–84 | [Lecture index](MathInMind/en/lectures-2025-26/index.md) | [Указатель лекций](MathInMind/ru/lectures-2025-26/index.md) | [Índice de lecciones](MathInMind/es/lectures-2025-26/index.md) |
 | Terms and theorems | [Index](MathInMind/en/term-index.md) | [Указатель](MathInMind/ru/term-index.md) | [Índice](MathInMind/es/term-index.md) |
 | Exam track | — | [72 билета](MathInMind/ru/exam/index.md) · [реестр лекций](MathInMind/ru/lectures/index.md) · [экзамен, семестр 3](MathInMind/ru/exam-sem3/EXAM_SEM3.md) | — |
 
@@ -34,7 +34,7 @@ Plain `$...$` math is fine in new text; the build converts it. Never edit `MathI
 
 ## What is included
 
-The 21 chapters move from logic and the real numbers to sequences, series, differential and integral calculus, functions of several variables, vector calculus, measure theory, Lebesgue integration, and $`L^p`$ spaces. Every chapter contains learning goals, precise definitions, core theorems, examples, common mistakes, and exercises with short answers. Each language also has a notation guide, formula sheet, glossary and an index of terms and theorems.
+The 21 classic chapters move from logic and the real numbers to sequences, series, differential and integral calculus, functions of several variables, vector calculus, measure theory, Lebesgue integration, and $`L^p`$ spaces; chapters 22–26 retell the semester-3 lectures (the lecturer's chapters 6–10) with the lecturer's §-numbering. Every chapter contains learning goals, precise definitions, core theorems, examples, common mistakes, and exercises with short answers. Each language also has a notation guide, formula sheet, glossary and an index of terms and theorems.
 
 ```mermaid
 flowchart LR
@@ -66,10 +66,11 @@ For lectures 31–64 every page was reviewed and every final image checked indiv
 
 ## Semester 3 (lectures 65–98, in progress)
 
-Lectures 65–84 were cleaned from a student's notebook (pages `p001`–`p082`) and from Zoom frames of lectures 83–84 (`p083`–`p124`) into study notes that keep the lecturer's numbering (§6.5–§10.4): [`MathInMind/ru/lectures-2025-26/`](MathInMind/ru/lectures-2025-26/index.md). Their English and Spanish translations are still to be made.
+Lectures 65–84 were cleaned from a student's notebook (pages `p001`–`p082`) and from Zoom frames of lectures 83–84 (`p083`–`p124`) into study notes that keep the lecturer's numbering (§6.5–§10.4): [`MathInMind/ru/lectures-2025-26/`](MathInMind/ru/lectures-2025-26/index.md). Their English and Spanish translations are in [`MathInMind/en/lectures-2025-26/`](MathInMind/en/lectures-2025-26/index.md) and [`MathInMind/es/lectures-2025-26/`](MathInMind/es/lectures-2025-26/index.md).
 
 - Provenance: the verbatim page transcription is in [`ocr/raw/`](ocr/raw/p001.md); every disputed place is decided in [`ocr/RESOLVED.md`](ocr/RESOLVED.md) (542 entries, with the basis of each decision); [`ocr/ISSUES.md`](ocr/ISSUES.md) lists the open ones (none at present). Corrections of slips are marked «Поправка к источнику» in the lectures, restorations of lost pages «Восстановлено».
-- Exam preparation: [`EXAM_SEM3.md`](MathInMind/ru/exam-sem3/EXAM_SEM3.md) — 95 projected tickets (70 on lectures 65–84, 25 forecast from the 2024/25 course for chapters 11–13), tickets 01–95 written.
+- Exam preparation: [`EXAM_SEM3.md`](MathInMind/ru/exam-sem3/EXAM_SEM3.md) — 95 projected tickets (70 on lectures 65–84, 25 forecast from the 2024/25 course for chapters 11–13), tickets 01–95 written, plus cross-cutting questions, a purgatory, problems, a cheat sheet and mock exams; the semester-2 reexam is prepared in [`REEXAM_SEM2.md`](MathInMind/ru/exam/REEXAM_SEM2.md).
+- Chapters [22–26](MathInMind/en/index.md) present the same material as a course text in all three languages, with the lecturer's §-headings and statement numbers.
 - What is left — the rest of the exam track, the semester-2 reexam, chapters 22–26 in the lecturer's numbering, translations, the chapter audit — is in [`GOALS.md`](GOALS.md); known defects are in [`ISSUES.md`](ISSUES.md).
 
 ## Lecture-aligned exam track (Russian)

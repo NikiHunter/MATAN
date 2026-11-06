@@ -9,6 +9,8 @@ part: "Fundamentos"
 [← 3. Sucesiones y límites](03-sequences.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [5. Límites y continuidad de funciones →](05-limits-continuity.md)
 
 > **Objetivo.** Distinguir los tipos de convergencia y elegir un criterio adecuado.
+>
+> **En la numeración del profesor:** [capítulo 23 «Series numéricas»](23-numerical-series.md) (§7.1–§7.5, clases 67–72).
 
 <a id="sec-4-1"></a>
 ## 4.1 Sumas parciales

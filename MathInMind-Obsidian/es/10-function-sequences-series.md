@@ -12,6 +12,8 @@ tags: [mathinmind/es, mathinmind/chapter]
 
 > [!abstract] Objetivo
 > Distinguir [[#10.1 Dos modos de convergencia|convergencia puntual]] y uniforme y saber cuándo los límites conmutan con las operaciones del análisis.
+>
+> **En la numeración del profesor:** [[es/24-functional-power-series|capítulo 24 «Series funcionales y de potencias»]] (§8.1–§8.3, clases 71–74).
 
 ## 10.1 Dos modos de convergencia
 

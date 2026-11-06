@@ -9,6 +9,8 @@ part: "Procesos infinitos"
 [← 10. Sucesiones y series de funciones](10-function-sequences-series.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [12. Series de Fourier →](12-fourier-series.md)
 
 > **Objetivo.** Determinar regiones de convergencia, operar término a término y distinguir suavidad de analiticidad.
+>
+> **En la numeración del profesor:** [capítulo 24 «Series funcionales y de potencias»](24-functional-power-series.md) (§8.4, clases 73–76).
 
 <a id="sec-11-1"></a>
 ## 11.1 Radio de convergencia

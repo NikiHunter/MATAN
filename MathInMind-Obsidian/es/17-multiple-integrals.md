@@ -12,6 +12,8 @@ tags: [mathinmind/es, mathinmind/chapter]
 
 > [!abstract] Objetivo
 > Calcular integrales en regiones multidimensionales mediante iteración, simetría y cambios geométricos de coordenadas.
+>
+> **En la numeración del profesor:** [[es/26-multiple-riemann-integral|capítulo 26 «La integral múltiple de Riemann»]] (§10.1–§10.4, clases 79–84).
 
 ## 17.1 Definición e integrales iteradas
 

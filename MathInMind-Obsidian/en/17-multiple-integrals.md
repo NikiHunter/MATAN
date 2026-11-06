@@ -12,10 +12,12 @@ tags: [mathinmind/en, mathinmind/chapter]
 
 > [!abstract] Goal
 > Evaluate integrals over multidimensional regions using iteration, symmetry, and geometric coordinate changes.
+>
+> **In the lecturer's numbering:** [[en/26-multiple-riemann-integral|chapter 26 “The Multiple Riemann Integral”]] (§10.1–§10.4, lectures 79–84).
 
 ## 17.1 Definition and iterated integrals
 
-For a bounded function on a rectangle $R=\prod_{i=1}^{n}[a_i,b_i]$, [[en/08-riemann-integration#8.1 Partitions and Darboux sums|partitions]] into small rectangles define lower and upper Darboux sums using volumes $\Delta V_j$. Integrability again means that upper and lower sums can be made arbitrarily close. Continuous functions on closed bounded Jordan-measurable regions are integrable.
+For a bounded function on a rectangle $R=\prod_{i=1}^{n}[a_i,b_i]$, [[en/08-riemann-integration#8.1 Partitions and Darboux sums|partitions]] into small rectangles define lower and upper Darboux sums using volumes $\Delta V_j$. Integrability again means that upper and lower sums can be made arbitrarily close. Continuous functions on closed bounded [[en/26-multiple-riemann-integral#^def-10-2-5|Jordan-measurable]] regions are integrable.
 
 > [!theorem] Fubini's theorem — continuous case
 > If $f$ is continuous on $R=[a,b]\times[c,d]$, then

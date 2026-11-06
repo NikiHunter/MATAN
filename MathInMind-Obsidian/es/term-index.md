@@ -22,7 +22,8 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | criterio M de Weierstrass | [[es/10-function-sequences-series#^weierstrass-m-test\|§10]] | — |
 | criterio secuencial (de Heine) | [[es/05-limits-continuity#5.1 Límite en un punto\|§5.1]] | [[es/lectures-2025-26/lecture-14#^thm-2-4-1\|Teorema 2.4.1]] |
 | criterio uniforme de Cauchy | [[es/10-function-sequences-series#10.2 Criterio uniforme de Cauchy\|§10.2]] | — |
-| criterios de Dirichlet y Abel | [[es/09-improper-integrals-applications#^dirichlet-test-for-integrals\|§9]] | [[es/lectures-2025-26/lecture-49-50#^thm-4-5-4\|Teorema 4.5.4]] |
+| criterios de Dirichlet y Abel para integrales | [[es/09-improper-integrals-applications#^dirichlet-test-for-integrals\|§9]] | [[es/lectures-2025-26/lecture-49-50#^thm-4-5-4\|Teorema 4.5.4]] |
+| criterios de Dirichlet y Abel para series | [[es/23-numerical-series#§7.4. Series de términos de signo arbitrario\|cap. 23 · §7.4]] | — |
 | densidad de los racionales | [[es/02-real-numbers#^density-of-rationals\|§2]] | [[es/lectures-2025-26/lecture-07#^thm-1-3-3\|Teorema 1.3.3]] |
 | desigualdad de Cauchy–Schwarz | [[es/21-lp-spaces#21.4 El espacio de Hilbert L2\|§21.4]] | [[es/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Teorema 4.4.6]] |
 | desigualdad de Hölder | [[es/21-lp-spaces#^holder-inequality\|§21]] | [[es/lectures-2025-26/lecture-47-48#^thm-4-4-5\|Teorema 4.4.5]] |
@@ -30,8 +31,10 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | desigualdad de Minkowski | [[es/21-lp-spaces#21.1 Definición y desigualdades básicas\|§21.1]] | — |
 | fórmula de Newton–Leibniz | [[es/08-riemann-integration#^newton-leibniz-formula\|§8]] | [[es/lectures-2025-26/lecture-43-44#^thm-4-3-2\|Teorema 4.3.2]] |
 | identidad de Parseval, desigualdad de Bessel | [[es/12-fourier-series#12.4 Identidad de Parseval\|§12.4]] | — |
+| lema de condensación de Cauchy | [[es/23-numerical-series#§7.3. Series positivas\|cap. 23 · §7.3]] | — |
 | lema de Fatou | [[es/20-lebesgue-integration#^fatou-lemma\|§20]] | — |
 | límite uniforme de funciones continuas | [[es/10-function-sequences-series#^uniform-limit-continuity\|§10]] | — |
+| principio de Cavalieri | [[es/26-multiple-riemann-integral#^thm-10-4-2\|cap. 26 · §10.4]] | [[es/lectures-2025-26/lecture-83-84#^thm-10-4-2\|Teorema 10.4.2]] |
 | propiedad arquimediana | [[es/02-real-numbers#^archimedean-property\|§2]] | [[es/lectures-2025-26/lecture-05-06#^def-1-3-5\|Definición 1.3.5]] |
 | regla de L'Hôpital | [[es/07-taylor-convexity#7.2 Regla de L'Hôpital\|§7.2]] | [[es/lectures-2025-26/lecture-24-25-26#^thm-3-4-5\|Teorema 3.4.5]] |
 | regla de la cadena | [[es/06-derivatives#^chain-rule\|§6]] | [[es/lectures-2025-26/lecture-22-23#^thm-3-3-1\|Teorema 3.3.1]] |
@@ -51,6 +54,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | teorema de Green | [[es/18-vector-calculus#^green-theorem\|§18]] | — |
 | teorema de Heine–Borel | [[es/13-metric-spaces#^heine-borel-theorem\|§13]] | [[es/lectures-2025-26/lecture-57-58#^thm-5-3-5\|Teorema 5.3.5]] |
 | teorema de Heine–Cantor | [[es/05-limits-continuity#^heine-cantor-theorem\|§5]] | [[es/lectures-2025-26/lecture-17-18#^thm-2-5-4\|Teorema 2.5.4]] |
+| teorema de la aplicación implícita | [[es/22-taylor-implicit-extrema#^thm-6-6-1\|cap. 22 · §6.6]] | [[es/lectures-2025-26/lecture-65-66#^thm-6-6-1\|Teorema 6.6.1]] |
 | teorema de la divergencia (Gauss) | [[es/18-vector-calculus#^divergence-theorem\|§18]] | — |
 | teorema de la función implícita | [[es/16-implicit-functions-extrema#16.3 Teorema de la función implícita\|§16.3]] | — |
 | teorema de la función inversa | [[es/16-implicit-functions-extrema#^inverse-function-theorem\|§16]] | — |
@@ -73,6 +77,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 |---|---|---|
 | aplicación biyectiva | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-6\|Definición 1.1.6]] |
 | aplicación de clase C¹ | [[es/15-multivariable-differentiation#15.1 Derivada total\|§15.1]] | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 5 (pp. PDF 7). La diferenciabilidad continua implica diferenciabilidad — teorema 6.3.1\|Teorema 6.3.1]] |
+| aplicación implícita | [[es/22-taylor-implicit-extrema#^def-6-6-1\|cap. 22 · §6.6]] | [[es/lectures-2025-26/lecture-65-66#^def-6-6-1\|Definición 6.6.1]] |
 | aplicación inversa | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-8\|Definición 1.1.8]] |
 | aplicación inyectiva | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-4\|Definición 1.1.4]] |
 | aplicación sobreyectiva | [[es/01-logic-sets-functions#1.4 Funciones\|§1.4]] | [[es/lectures-2025-26/lecture-01-02#^def-1-1-5\|Definición 1.1.5]] |
@@ -85,6 +90,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | clausura | [[es/13-metric-spaces#13.2 Conjuntos abiertos y cerrados\|§13.2]] | [[es/lectures-2025-26/lecture-55-56#^def-5-3-2\|Definición 5.3.2]] |
 | conjunto abierto | [[es/13-metric-spaces#13.2 Conjuntos abiertos y cerrados\|§13.2]] | [[es/lectures-2025-26/lecture-55-56#^def-5-3-1\|Definición 5.3.1]] |
 | conjunto acotado | [[es/02-real-numbers#2.2 Supremo e ínfimo\|§2.2]] | [[es/lectures-2025-26/lecture-05-06#^def-1-3-7\|Definición 1.3.7]] |
+| conjunto admisible | [[es/26-multiple-riemann-integral#^def-10-2-1\|cap. 26 · §10.2]] | [[es/lectures-2025-26/lecture-81-82#^def-10-2-1\|Definición 10.2.1]] |
 | conjunto cerrado | [[es/13-metric-spaces#13.2 Conjuntos abiertos y cerrados\|§13.2]] | [[es/lectures-2025-26/lecture-55-56#^thm-5-3-1\|Teorema 5.3.1]] |
 | conjunto compacto | [[es/13-metric-spaces#13.4 Compacidad\|§13.4]] | [[es/lectures-2025-26/lecture-57-58#^def-5-3-7\|Definición 5.3.7]] |
 | conjunto conexo | [[es/13-metric-spaces#13.5 Continuidad y conexión\|§13.5]] | — |
@@ -98,6 +104,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | convergencia condicional | [[es/04-numeric-series#4.3 Convergencia absoluta y condicional\|§4.3]] | — |
 | convergencia puntual | [[es/10-function-sequences-series#10.1 Dos modos de convergencia\|§10.1]] | — |
 | convergencia uniforme | [[es/10-function-sequences-series#10.1 Dos modos de convergencia\|§10.1]] | — |
+| convergencia uniforme de una integral impropia | [[es/25-parameter-integrals#^def-9-2-1\|cap. 25 · §9.2]] | [[es/lectures-2025-26/lecture-77-78#^def-9-2-1\|Definición 9.2.1]] |
 | coordenadas polares, cilíndricas, esféricas | [[es/17-multiple-integrals#17.3 Elección de coordenadas\|§17.3]] | — |
 | cotas superior e inferior | [[es/02-real-numbers#2.2 Supremo e ínfimo\|§2.2]] | — |
 | criterio de comparación (series) | [[es/04-numeric-series#4.2 Términos no negativos\|§4.2]] | — |
@@ -123,8 +130,10 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | extremo local | [[es/06-derivatives#6.4 Información local\|§6.4]] | [[es/lectures-2025-26/lecture-29-30#^def-3-7-1\|Definición 3.7.1]] |
 | frontera | [[es/13-metric-spaces#13.2 Conjuntos abiertos y cerrados\|§13.2]] | [[es/lectures-2025-26/lecture-57-58#Diapositiva impresa 5 (pp. PDF 7) — La frontera de un conjunto — definición 5.3.4\|Definición 5.3.4]] |
 | función analítica | [[es/11-power-series#11.4 Analítica no significa solamente suave\|§11.4]] | — |
+| función beta | [[es/25-parameter-integrals#§9.3. La función gamma\|cap. 25 · §9.3]] | — |
 | función convexa | [[es/07-taylor-convexity#7.4 Funciones convexas\|§7.4]] | [[es/lectures-2025-26/lecture-31-32#^def-3-8-1\|Definición 3.8.1]] |
 | función derivable | [[es/06-derivatives#6.1 Definición y aproximación lineal\|§6.1]] | [[es/lectures-2025-26/lecture-22-23#^def-3-2-1\|Definición 3.2.1]] |
+| función gamma | [[es/25-parameter-integrals#^def-9-3-1\|cap. 25 · §9.3]] | [[es/lectures-2025-26/lecture-79-80#^def-9-3-1\|Definición 9.3.1]] |
 | función medible | [[es/19-measure-theory#19.4 Funciones medibles\|§19.4]] | — |
 | función simple | [[es/19-measure-theory#19.4 Funciones medibles\|§19.4]] | — |
 | fórmula de Maclaurin | [[es/07-taylor-convexity#7.3 Fórmula de Taylor\|§7.3]] | — |
@@ -139,7 +148,9 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | integral de línea | [[es/18-vector-calculus#18.1 Integrales de línea\|§18.1]] | — |
 | integral de Riemann | [[es/08-riemann-integration#8.2 Sumas de Riemann y propiedades\|§8.2]] | [[es/lectures-2025-26/lecture-39-40#^def-4-2-6\|Definición 4.2.6]] |
 | integral de superficie y flujo | [[es/18-vector-calculus#18.2 Integrales de superficie y flujo\|§18.2]] | — |
+| integral dependiente de un parámetro | [[es/25-parameter-integrals#^def-9-1-1\|cap. 25 · §9.1]] | [[es/lectures-2025-26/lecture-75-76#^def-9-1-1\|Definición 9.1.1]] |
 | integral impropia | [[es/09-improper-integrals-applications#9.1 Definiciones\|§9.1]] | [[es/lectures-2025-26/lecture-47-48#^def-4-5-2\|Definición 4.5.2]] |
+| integral sobre un conjunto | [[es/26-multiple-riemann-integral#^def-10-2-4\|cap. 26 · §10.2]] | [[es/lectures-2025-26/lecture-81-82#^def-10-2-4\|Definición 10.2.4]] |
 | integrales múltiples e iteradas | [[es/17-multiple-integrals#17.1 Definición e integrales iteradas\|§17.1]] | — |
 | longitud de arco, curva rectificable | [[es/09-improper-integrals-applications#9.3 Área, longitud y volumen\|§9.3]] | [[es/lectures-2025-26/lecture-53#^thm-4-7-1\|Teorema 4.7.1]] |
 | límite de una función | [[es/05-limits-continuity#5.1 Límite en un punto\|§5.1]] | [[es/lectures-2025-26/lecture-14#^def-2-4-4\|Definición 2.4.4]] |
@@ -150,14 +161,18 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | límites superior e inferior | [[es/03-sequences#3.5 Límite superior e inferior\|§3.5]] | [[es/lectures-2025-26/lecture-13#Definición 2.3.9 (límites superior e inferior)\|Definición 2.3.9]] |
 | matriz jacobiana | [[es/15-multivariable-differentiation#15.1 Derivada total\|§15.1]] | [[es/lectures-2025-26/lecture-61-62#Diapositiva impresa 11 (pp. PDF 14). Matriz jacobiana y gradiente — definición 6.1.6\|Definición 6.1.6]] |
 | medida | [[es/19-measure-theory#19.2 Medidas\|§19.2]] | — |
+| medida de Jordan (volumen) | [[es/26-multiple-riemann-integral#^def-10-2-5\|cap. 26 · §10.2]] | [[es/lectures-2025-26/lecture-81-82#^def-10-2-5\|Definición 10.2.5]] |
 | medida de Lebesgue | [[es/19-measure-theory#19.3 Medida de Lebesgue\|§19.3]] | [[es/lectures-2025-26/lecture-51-52#^def-4-6-6\|Definición 4.6.6]] |
 | multiplicadores de Lagrange | [[es/16-implicit-functions-extrema#16.4 Multiplicadores de Lagrange\|§16.4]] | — |
 | norma | [[es/14-several-variables#14.1 Espacio euclidiano y normas\|§14.1]] | — |
 | norma y espacio euclidianos | [[es/14-several-variables#14.1 Espacio euclidiano y normas\|§14.1]] | [[es/lectures-2025-26/lecture-54#^def-5-1-1\|Definición 5.1.1]] |
 | notación asintótica (o, O, ~) | [[es/05-limits-continuity#5.2 Álgebra, composición y comportamiento asintótico\|§5.2]] | — |
 | oscilación de una función | [[es/08-riemann-integration#8.1 Particiones y sumas de Darboux\|§8.1]] | [[es/lectures-2025-26/lecture-39-40#^def-4-2-9\|Definición 4.2.9]] |
+| paralelepípedo (intervalo en ℝⁿ) | [[es/26-multiple-riemann-integral#^def-10-1-1\|cap. 26 · §10.1]] | [[es/lectures-2025-26/lecture-79-80#^def-10-1-1\|Definición 10.1.1]] |
+| partición de un paralelepípedo | [[es/26-multiple-riemann-integral#^def-10-1-3\|cap. 26 · §10.1]] | [[es/lectures-2025-26/lecture-79-80#^def-10-1-3\|Definición 10.1.3]] |
 | partición y su diámetro | [[es/08-riemann-integration#8.1 Particiones y sumas de Darboux\|§8.1]] | [[es/lectures-2025-26/lecture-37-38#^def-4-2-2\|Definición 4.2.2]] |
 | plano tangente | [[es/15-multivariable-differentiation#15.3 Regla de la cadena y planos tangentes\|§15.3]] | — |
+| polinomio de Taylor en ℝⁿ | [[es/22-taylor-implicit-extrema#^def-6-5-1\|cap. 22 · §6.5]] | [[es/lectures-2025-26/lecture-65-66#^def-6-5-1\|Definición 6.5.1]] |
 | primitiva, integral indefinida | [[es/08-riemann-integration#8.3 Teorema fundamental del cálculo\|§8.3]] | [[es/lectures-2025-26/lecture-36#^def-4-1-1\|Definición 4.1.1]] |
 | punto de acumulación | [[es/05-limits-continuity#5.1 Límite en un punto\|§5.1]] | [[es/lectures-2025-26/lecture-14#^def-2-4-1\|Definición 2.4.1]] |
 | punto de inflexión | [[es/07-taylor-convexity#7.4 Funciones convexas\|§7.4]] | [[es/lectures-2025-26/lecture-35#^def-3-8-3\|Definición 3.8.3]] |
@@ -180,6 +195,7 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | sumas de Darboux | [[es/08-riemann-integration#8.1 Particiones y sumas de Darboux\|§8.1]] | [[es/lectures-2025-26/lecture-39-40#^def-4-2-8\|Definición 4.2.8]] |
 | supremo | [[es/02-real-numbers#2.2 Supremo e ínfimo\|§2.2]] | [[es/lectures-2025-26/lecture-11-12#^def-2-3-1\|Definición 2.3.1]] |
 | supremo esencial | [[es/21-lp-spaces#21.1 Definición y desigualdades básicas\|§21.1]] | — |
+| transformación de Abel (sumación por partes) | [[es/23-numerical-series#§7.4. Series de términos de signo arbitrario\|cap. 23 · §7.4]] | — |
 | valor principal | [[es/09-improper-integrals-applications#9.1 Definiciones\|§9.1]] | — |
 | ínfimo | [[es/02-real-numbers#2.2 Supremo e ínfimo\|§2.2]] | [[es/lectures-2025-26/lecture-11-12#^def-2-3-2\|Definición 2.3.2]] |
 

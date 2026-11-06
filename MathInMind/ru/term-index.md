@@ -19,6 +19,7 @@ generated: true
 | критерий интегрируемости (Римана–Дарбу) | [§8](08-riemann-integration.md#integrability-criterion) | [Теорема 4.2.1](lectures-2025-26/lecture-39-40.md#thm-4-2-1) |
 | критерий Коши для последовательностей | [§3.4](03-sequences.md#sec-3-4) | [Теорема 2.3.7](lectures-2025-26/lecture-13.md#thm-2-3-7) |
 | критерий Лебега интегрируемости по Риману | [§8.2](08-riemann-integration.md#sec-8-2) | [Теорема 4.2.5](lectures-2025-26/lecture-41-42.md#thm-4-2-5) |
+| лемма Коши о сгущении | [гл. 23 · §7.3](23-numerical-series.md#sec-7-3) | — |
 | лемма Фату | [§20](20-lebesgue-integration.md#fatou-lemma) | — |
 | неравенство Гёльдера | [§21](21-lp-spaces.md#holder-inequality) | [Теорема 4.4.5](lectures-2025-26/lecture-47-48.md#thm-4-4-5) |
 | неравенство Йенсена | [§7](07-taylor-convexity.md#jensen-inequality) | [Теорема 4.4.4](lectures-2025-26/lecture-45-46.md#thm-4-4-4) |
@@ -31,7 +32,9 @@ generated: true
 | правило цепочки (производная композиции) | [§6](06-derivatives.md#chain-rule) | [Теорема 3.3.1](lectures-2025-26/lecture-22-23.md#thm-3-3-1) |
 | признак Вейерштрасса | [§10](10-function-sequences-series.md#weierstrass-m-test) | — |
 | признак Лейбница | [§4](04-numeric-series.md#alternating-series-test) | — |
-| признаки Дирихле и Абеля | [§9](09-improper-integrals-applications.md#dirichlet-test-for-integrals) | [Теорема 4.5.4](lectures-2025-26/lecture-49-50.md#thm-4-5-4) |
+| признаки Дирихле и Абеля для интегралов | [§9](09-improper-integrals-applications.md#dirichlet-test-for-integrals) | [Теорема 4.5.4](lectures-2025-26/lecture-49-50.md#thm-4-5-4) |
+| признаки Дирихле и Абеля для рядов | [гл. 23 · §7.4](23-numerical-series.md#sec-7-4) | — |
+| принцип Кавальери | [гл. 26 · §10.4](26-multiple-riemann-integral.md#thm-10-4-2) | [Теорема 10.4.2](lectures-2025-26/lecture-83-84.md#thm-10-4-2) |
 | равенство Парсеваля, неравенство Бесселя | [§12.4](12-fourier-series.md#sec-12-4) | — |
 | равномерный критерий Коши | [§10.2](10-function-sequences-series.md#sec-10-2) | — |
 | равномерный предел непрерывных функций | [§10](10-function-sequences-series.md#uniform-limit-continuity) | — |
@@ -56,6 +59,7 @@ generated: true
 | теорема о вложенных отрезках | [§2](02-real-numbers.md#nested-interval-theorem) | [Теорема 2.3.1](lectures-2025-26/lecture-11-12.md#thm-2-3-1) |
 | теорема о двух милиционерах | [§3.2](03-sequences.md#sec-3-2) | [Теорема 2.1.4](lectures-2025-26/lecture-08.md#thm-2-1-4) |
 | теорема о неявной функции | [§16.3](16-implicit-functions-extrema.md#sec-16-3) | — |
+| теорема о неявном отображении | [гл. 22 · §6.6](22-taylor-implicit-extrema.md#thm-6-6-1) | [Теорема 6.6.1](lectures-2025-26/lecture-65-66.md#thm-6-6-1) |
 | теорема об обратной функции | [§16](16-implicit-functions-extrema.md#inverse-function-theorem) | — |
 | теорема Рисса–Фишера | [§21](21-lp-spaces.md#riesz-fischer-theorem) | — |
 | теорема Ролля | [§7](07-taylor-convexity.md#rolle-theorem) | [Теорема 3.4.2](lectures-2025-26/lecture-24-25-26.md#thm-3-4-2) |
@@ -77,11 +81,14 @@ generated: true
 | асимптотические обозначения (o, O, ~) | [§5.2](05-limits-continuity.md#sec-5-2) | — |
 | бесконечно большая | [§3.2](03-sequences.md#sec-3-2) | [Определение 2.2.4](lectures-2025-26/lecture-09-10.md#def-2-2-4) |
 | бесконечно малая | [§3.2](03-sequences.md#sec-3-2) | [Определение 2.2.1](lectures-2025-26/lecture-09-10.md#def-2-2-1) |
+| бета-функция | [гл. 25 · §9.3](25-parameter-integrals.md#sec-9-3) | — |
 | биективное отображение | [§1.4](01-logic-sets-functions.md#sec-1-4) | [Определение 1.1.6](lectures-2025-26/lecture-01-02.md#def-1-1-6) |
+| брус (промежуток в ℝⁿ) | [гл. 26 · §10.1](26-multiple-riemann-integral.md#def-10-1-1) | [Определение 10.1.1](lectures-2025-26/lecture-79-80.md#def-10-1-1) |
 | верхний и нижний пределы | [§3.5](03-sequences.md#sec-3-5) | [Определение 2.3.9](lectures-2025-26/lecture-13.md#def-2-3-9) |
 | верхняя и нижняя границы | [§2.2](02-real-numbers.md#sec-2-2) | — |
 | внутренняя точка, внутренность | [§13.2](13-metric-spaces.md#sec-13-2) | [Определение 5.3.3](lectures-2025-26/lecture-57-58.md#def-5-3-3) |
 | выпуклая функция | [§7.4](07-taylor-convexity.md#sec-7-4) | [Определение 3.8.1](lectures-2025-26/lecture-31-32.md#def-3-8-1) |
+| гамма-функция | [гл. 25 · §9.3](25-parameter-integrals.md#def-9-3-1) | [Определение 9.3.1](lectures-2025-26/lecture-79-80.md#def-9-3-1) |
 | гессиан (матрица Гессе) | [§15.4](15-multivariable-differentiation.md#sec-15-4) | — |
 | гильбертово пространство, скалярное произведение | [§21.4](21-lp-spaces.md#sec-21-4) | — |
 | главное значение | [§9.1](09-improper-integrals-applications.md#sec-9-1) | — |
@@ -92,6 +99,7 @@ generated: true
 | дифференциал | [§6.3](06-derivatives.md#sec-6-3) | [Определение 3.3.1](lectures-2025-26/lecture-24-25-26.md#def-3-3-1) |
 | дифференцируемая функция | [§6.1](06-derivatives.md#sec-6-1) | [Определение 3.2.1](lectures-2025-26/lecture-22-23.md#def-3-2-1) |
 | длина дуги, спрямляемая кривая | [§9.3](09-improper-integrals-applications.md#sec-9-3) | [Теорема 4.7.1](lectures-2025-26/lecture-53.md#thm-4-7-1) |
+| допустимое множество | [гл. 26 · §10.2](26-multiple-riemann-integral.md#def-10-2-1) | [Определение 10.2.1](lectures-2025-26/lecture-81-82.md#def-10-2-1) |
 | евклидова норма и пространство | [§14.1](14-several-variables.md#sec-14-1) | [Определение 5.1.1](lectures-2025-26/lecture-54.md#def-5-1-1) |
 | замена переменной в интеграле | [§8.4](08-riemann-integration.md#sec-8-4) | [Теорема 4.1.5](lectures-2025-26/lecture-37-38.md#thm-4-1-5) |
 | замена переменных, якобиан | [§17.2](17-multiple-integrals.md#sec-17-2) | — |
@@ -99,7 +107,9 @@ generated: true
 | замыкание | [§13.2](13-metric-spaces.md#sec-13-2) | [Определение 5.3.2](lectures-2025-26/lecture-55-56.md#def-5-3-2) |
 | измеримая функция | [§19.4](19-measure-theory.md#sec-19-4) | — |
 | интеграл Лебега | [§20.1](20-lebesgue-integration.md#sec-20-1) | — |
+| интеграл по множеству | [гл. 26 · §10.2](26-multiple-riemann-integral.md#def-10-2-4) | [Определение 10.2.4](lectures-2025-26/lecture-81-82.md#def-10-2-4) |
 | интеграл Римана | [§8.2](08-riemann-integration.md#sec-8-2) | [Определение 4.2.6](lectures-2025-26/lecture-39-40.md#def-4-2-6) |
+| интеграл, зависящий от параметра | [гл. 25 · §9.1](25-parameter-integrals.md#def-9-1-1) | [Определение 9.1.1](lectures-2025-26/lecture-75-76.md#def-9-1-1) |
 | интегральная сумма Римана | [§8.2](08-riemann-integration.md#sec-8-2) | [Определение 4.2.4](lectures-2025-26/lecture-37-38.md#def-4-2-4) |
 | интегрирование по частям | [§8.4](08-riemann-integration.md#sec-8-4) | [Теорема 4.1.4](lectures-2025-26/lecture-37-38.md#thm-4-1-4) |
 | инфимум (точная нижняя грань) | [§2.2](02-real-numbers.md#sec-2-2) | [Определение 2.3.2](lectures-2025-26/lecture-11-12.md#def-2-3-2) |
@@ -114,8 +124,10 @@ generated: true
 | математическая индукция | [§1](01-logic-sets-functions.md#example-induction) | — |
 | матрица Якоби | [§15.1](15-multivariable-differentiation.md#sec-15-1) | [Определение 6.1.6](lectures-2025-26/lecture-61-62.md#def-6-1-6) |
 | мера | [§19.2](19-measure-theory.md#sec-19-2) | — |
+| мера Жордана (объём) | [гл. 26 · §10.2](26-multiple-riemann-integral.md#def-10-2-5) | [Определение 10.2.5](lectures-2025-26/lecture-81-82.md#def-10-2-5) |
 | мера Лебега | [§19.3](19-measure-theory.md#sec-19-3) | [Определение 4.6.6](lectures-2025-26/lecture-51-52.md#def-4-6-6) |
 | метрическое пространство | [§13.1](13-metric-spaces.md#sec-13-1) | — |
+| многочлен Тейлора в ℝⁿ | [гл. 22 · §6.5](22-taylor-implicit-extrema.md#def-6-5-1) | [Определение 6.5.1](lectures-2025-26/lecture-65-66.md#def-6-5-1) |
 | множество меры нуль | [§8.2](08-riemann-integration.md#sec-8-2) | [Определение 4.2.11](lectures-2025-26/lecture-41-42.md#def-4-2-11) |
 | множители Лагранжа | [§16.4](16-implicit-functions-extrema.md#sec-16-4) | — |
 | монотонная последовательность | [§3.3](03-sequences.md#sec-3-3) | [Определение 2.3.5](lectures-2025-26/lecture-11-12.md#def-2-3-5) |
@@ -123,6 +135,7 @@ generated: true
 | непрерывность в точке | [§5.3](05-limits-continuity.md#sec-5-3) | [Определение 2.5.1](lectures-2025-26/lecture-16.md#def-2-5-1) |
 | несобственный интеграл | [§9.1](09-improper-integrals-applications.md#sec-9-1) | [Определение 4.5.2](lectures-2025-26/lecture-47-48.md#def-4-5-2) |
 | несчётное множество | [§1.5](01-logic-sets-functions.md#sec-1-5) | [Теорема 1.2.5](lectures-2025-26/lecture-03.md#thm-1-2-5) |
+| неявное отображение | [гл. 22 · §6.6](22-taylor-implicit-extrema.md#def-6-6-1) | [Определение 6.6.1](lectures-2025-26/lecture-65-66.md#def-6-6-1) |
 | норма | [§14.1](14-several-variables.md#sec-14-1) | — |
 | обратное отображение | [§1.4](01-logic-sets-functions.md#sec-1-4) | [Определение 1.1.8](lectures-2025-26/lecture-01-02.md#def-1-1-8) |
 | ограниченное множество | [§2.2](02-real-numbers.md#sec-2-2) | [Определение 1.3.7](lectures-2025-26/lecture-05-06.md#def-1-3-7) |
@@ -144,6 +157,7 @@ generated: true
 | предел последовательности | [§3.1](03-sequences.md#sec-3-1) | [Определение 2.1.2](lectures-2025-26/lecture-08.md#def-2-1-2) |
 | предел функции | [§5.1](05-limits-continuity.md#sec-5-1) | [Определение 2.4.4](lectures-2025-26/lecture-14.md#def-2-4-4) |
 | предельная точка множества | [§5.1](05-limits-continuity.md#sec-5-1) | [Определение 2.4.1](lectures-2025-26/lecture-14.md#def-2-4-1) |
+| преобразование Абеля | [гл. 23 · §7.4](23-numerical-series.md#sec-7-4) | — |
 | признак сравнения (ряды) | [§4.2](04-numeric-series.md#sec-4-2) | — |
 | признак сравнения для интегралов | [§9.2](09-improper-integrals-applications.md#sec-9-2) | [Теорема 4.5.3](lectures-2025-26/lecture-47-48.md#thm-4-5-3) |
 | признаки Даламбера и Коши | [§4.2](04-numeric-series.md#sec-4-2) | — |
@@ -155,8 +169,10 @@ generated: true
 | пространство $`L^p`$ | [§21.1](21-lp-spaces.md#sec-21-1) | — |
 | равномерная непрерывность | [§5.4](05-limits-continuity.md#sec-5-4) | [Определение 2.5.7](lectures-2025-26/lecture-17-18.md#def-2-5-7) |
 | равномерная сходимость | [§10.1](10-function-sequences-series.md#sec-10-1) | — |
+| равномерная сходимость несобственного интеграла | [гл. 25 · §9.2](25-parameter-integrals.md#def-9-2-1) | [Определение 9.2.1](lectures-2025-26/lecture-77-78.md#def-9-2-1) |
 | равномощные множества | [§1.5](01-logic-sets-functions.md#sec-1-5) | [Определение 1.2.1](lectures-2025-26/lecture-01-02.md#def-1-2-1) |
 | радиус сходимости | [§11.1](11-power-series.md#sec-11-1) | — |
+| разбиение бруса | [гл. 26 · §10.1](26-multiple-riemann-integral.md#def-10-1-3) | [Определение 10.1.3](lectures-2025-26/lecture-79-80.md#def-10-1-3) |
 | разбиение и его ранг | [§8.1](08-riemann-integration.md#sec-8-1) | [Определение 4.2.2](lectures-2025-26/lecture-37-38.md#def-4-2-2) |
 | расширенная числовая прямая | [§2.4](02-real-numbers.md#sec-2-4) | [Определение 1.3.4](lectures-2025-26/lecture-05-06.md#def-1-3-4) |
 | ряд Тейлора | [§11.3](11-power-series.md#sec-11-3) | — |

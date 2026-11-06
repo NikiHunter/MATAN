@@ -50,7 +50,7 @@ y $d_a^2f$ es la forma cuadrática de matriz $D^2f(a)$: $d_a^2f(h)=\sum_{i,j=1}^
 > [!note] Restaurado
 > (según la demostración estándar, cf. Zorich, t. 1, cap. VIII; en el cuaderno el teorema figura sin demostración).
 >
-> **Demostración.** Como $f$ es dos veces diferenciable en el punto $a$ y $d_af=0$, por la fórmula de Taylor–Peano ([[es/lectures-2025-26/lecture-65-66#^thm-6-5-1|teorema 6.5.1]] para $s=2$, escrita mediante diferenciales)
+> **Demostración.** Como $f$ es dos veces diferenciable en el punto $a$ y $d_af=0$, por la [[es/lectures-2025-26/lecture-65-66#^def-6-5-1|fórmula de Taylor]]–Peano ([[es/lectures-2025-26/lecture-65-66#^thm-6-5-1|teorema 6.5.1]] para $s=2$, escrita mediante diferenciales)
 > $$
 > f(a+h)-f(a)=\frac12\,d_a^2f(h)+r(h),\qquad r(h)=o(\|h\|^2)\quad(h\to0).
 > $$
@@ -437,7 +437,7 @@ y por el criterio de Bolzano–Cauchy la serie $\sum_{k=1}^{\infty}a_k$ converge
 ## Referencias cruzadas
 
 - Tema en el curso: [[es/16-implicit-functions-extrema|capítulo 16 «Funciones inversas e implícitas; extremos»]], [[es/04-numeric-series|capítulo 4 «Series numéricas»]].
-- Hechos usados: la fórmula de Taylor–Peano ([[es/lectures-2025-26/lecture-65-66#^thm-6-5-1|teorema 6.5.1]]), la afirmación (∗) de la demostración del [[es/lectures-2025-26/lecture-65-66#^thm-6-5-2|teorema 6.5.2]], el [[es/lectures-2025-26/lecture-65-66#^thm-6-6-1|teorema 6.6.1]] de la aplicación implícita y su observación — [[es/lectures-2025-26/lecture-65-66|lecciones 65–66]]; el [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 16 (pp. PDF 30). Condiciones suficientes de igualdad — teorema 6.4.1|teorema 6.4.1]] sobre la igualdad de las derivadas mixtas y el [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 21 (pp. PDF 41). Cálculo de diferenciales de orden superior — teorema 6.4.2|teorema 6.4.2]] sobre las diferenciales de orden superior — [[es/lectures-2025-26/lecture-63-64|lecciones 63–64]]; el criterio de Bolzano–Cauchy para sucesiones — [[es/lectures-2025-26/lecture-13#^thm-2-3-7|teorema 2.3.7]].
+- Hechos usados: la fórmula de Taylor–Peano ([[es/lectures-2025-26/lecture-65-66#^thm-6-5-1|teorema 6.5.1]]), la afirmación (∗) de la demostración del [[es/lectures-2025-26/lecture-65-66#^thm-6-5-2|teorema 6.5.2]], el [[es/lectures-2025-26/lecture-65-66#^thm-6-6-1|teorema 6.6.1]] de la [[es/lectures-2025-26/lecture-65-66#^def-6-6-1|aplicación implícita]] y su observación — [[es/lectures-2025-26/lecture-65-66|lecciones 65–66]]; el [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 16 (pp. PDF 30). Condiciones suficientes de igualdad — teorema 6.4.1|teorema 6.4.1]] sobre la igualdad de las derivadas mixtas y el [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 21 (pp. PDF 41). Cálculo de diferenciales de orden superior — teorema 6.4.2|teorema 6.4.2]] sobre las diferenciales de orden superior — [[es/lectures-2025-26/lecture-63-64|lecciones 63–64]]; el criterio de Bolzano–Cauchy para sucesiones — [[es/lectures-2025-26/lecture-13#^thm-2-3-7|teorema 2.3.7]].
 - Continuación: series positivas, criterios de comparación, criterios de d'Alembert y de Cauchy — [[es/lectures-2025-26/lecture-69-70|lecciones 69–70]].
 
 ---

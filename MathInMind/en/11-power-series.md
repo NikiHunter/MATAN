@@ -9,6 +9,8 @@ part: "Infinite processes"
 [← 10. Sequences and Series of Functions](10-function-sequences-series.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [12. Fourier Series →](12-fourier-series.md)
 
 > **Goal.** Determine convergence regions, manipulate [power series](#sec-11-1) term by term, and distinguish smoothness from analyticity.
+>
+> **In the lecturer's numbering:** [chapter 24 “Functional and Power Series”](24-functional-power-series.md) (§8.4, lectures 73–76).
 
 <a id="sec-11-1"></a>
 ## 11.1 Radius of convergence

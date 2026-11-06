@@ -65,7 +65,13 @@ class LectureChapter:
     profile: int  # classic chapter whose term filter (term.chapters) this chapter borrows
 
 
-LECTURE_CHAPTERS: tuple[LectureChapter, ...] = ()
+LECTURE_CHAPTERS: tuple[LectureChapter, ...] = (
+    LectureChapter(22, "22-taylor-implicit-extrema.md", 6, (5, 7), 16),
+    LectureChapter(23, "23-numerical-series.md", 7, (1, 5), 4),
+    LectureChapter(24, "24-functional-power-series.md", 8, (1, 4), 10),
+    LectureChapter(25, "25-parameter-integrals.md", 9, (1, 3), 10),
+    LectureChapter(26, "26-multiple-riemann-integral.md", 10, (1, 4), 17),
+)
 
 CHAPTERS = CLASSIC_CHAPTERS + tuple(c.filename for c in LECTURE_CHAPTERS)
 LINKING_PROFILE = {c.number: c.profile for c in LECTURE_CHAPTERS}

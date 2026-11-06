@@ -153,16 +153,16 @@ those lectures as a labelled blockquote under its own number; worked example; ty
 with one `<details>` answer block.
 
 **After the RU files:**
-- [ ] Register in `scripts/course_layout.py` → `LECTURE_CHAPTERS` (line 68) with the profiles above.
-- [ ] List in `MathInMind/{ru,en,es}/index.md`; cross-links from chapters 04, 08, 10, 11, 16, 17.
-- [ ] Terms in `scripts/term_registry.py` (+ `_LABELS`, glossary) — the list is in `GOALS.md` G3;
+- [x] Register in `scripts/course_layout.py` → `LECTURE_CHAPTERS` (line 68) with the profiles above.
+- [x] List in `MathInMind/{ru,en,es}/index.md`; cross-links from chapters 04, 08, 10, 11, 16, 17.
+- [x] Terms in `scripts/term_registry.py` (+ `_LABELS`, glossary) — the list is in `GOALS.md` G3;
   move «мера Жордана» off `lebesgue-measure`.
-- [ ] EN and ES versions (same structure, translated).
+- [x] EN and ES versions (same structure, translated).
 
 **Check:** `python3 scripts/validate_course.py` (headings, completeness, RU/EN/ES parity).
 
-- [ ] 22 ru · [ ] 23 ru · [ ] 24 ru · [ ] 25 ru · [ ] 26 ru · [ ] registry · [ ] terms
-- [ ] 22–26 en · [ ] 22–26 es
+- [x] 22 ru · [x] 23 ru · [x] 24 ru · [x] 25 ru · [x] 26 ru · [x] registry · [x] terms
+- [x] 22–26 en · [x] 22–26 es
 
 ---
 

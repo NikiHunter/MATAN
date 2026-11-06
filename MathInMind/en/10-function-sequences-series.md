@@ -9,6 +9,8 @@ part: "Infinite processes"
 [← 9. Improper Integrals and Applications](09-improper-integrals-applications.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [11. Power Series and Analytic Functions →](11-power-series.md)
 
 > **Goal.** Distinguish pointwise from [uniform convergence](#sec-10-1) and know when limits commute with analytic operations.
+>
+> **In the lecturer's numbering:** [chapter 24 “Functional and Power Series”](24-functional-power-series.md) (§8.1–§8.3, lectures 71–74).
 
 <a id="sec-10-1"></a>
 ## 10.1 Two modes of convergence

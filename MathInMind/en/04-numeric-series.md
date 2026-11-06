@@ -9,6 +9,8 @@ part: "Foundations"
 [← 3. Sequences and Limits](03-sequences.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [5. Limits and Continuity of Functions →](05-limits-continuity.md)
 
 > **Goal.** Distinguish types of convergence and select an appropriate convergence test.
+>
+> **In the lecturer's numbering:** [chapter 23 “Numerical Series”](23-numerical-series.md) (§7.1–§7.5, lectures 67–72).
 
 <a id="sec-4-1"></a>
 ## 4.1 Convergence through partial sums

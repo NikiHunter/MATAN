@@ -12,6 +12,8 @@ tags: [mathinmind/en, mathinmind/chapter]
 
 > [!abstract] Goal
 > Determine convergence regions, manipulate [[#11.1 Radius of convergence|power series]] term by term, and distinguish smoothness from analyticity.
+>
+> **In the lecturer's numbering:** [[en/24-functional-power-series|chapter 24 “Functional and Power Series”]] (§8.4, lectures 73–76).
 
 ## 11.1 Radius of convergence
 

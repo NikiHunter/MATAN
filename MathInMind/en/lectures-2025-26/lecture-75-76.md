@@ -91,7 +91,7 @@ $`\square`$
 ```math
 f(x)=\sum_{k=0}^{\infty}c_k(x-a)^k .
 ```
-Then the function $`f`$ is infinitely differentiable on the set $`|x-a|<R`$, and the series can be differentiated termwise any number of times:
+Then the function $`f`$ is infinitely [differentiable](lecture-22-23.md#def-3-2-1) on the set $`|x-a|<R`$, and the series can be differentiated termwise any number of times:
 ```math
 f^{(m)}(x)=\sum_{k=m}^{\infty}k(k-1)\dots(k-m+1)\,c_k(x-a)^{k-m},\qquad |x-a|<R,\quad m\in\mathbb N .
 ```
@@ -127,7 +127,7 @@ Then $`f\in C^\infty(a-R,a+R)`$, and the coefficients $`c_k`$ are uniquely deter
 c_k=\frac{f^{(k)}(a)}{k!} .
 ```
 
-**Proof.** By [Theorem 8.4.6](#thm-8-4-6) the function $`f`$ is infinitely differentiable on $`(a-R,a+R)`$ (each of its derivatives is differentiable and hence continuous, i.e. $`f\in C^\infty(a-R,a+R)`$) and
+**Proof.** By [Theorem 8.4.6](#thm-8-4-6) the function $`f`$ is infinitely differentiable on $`(a-R,a+R)`$ (each of its [derivatives](lecture-22-23.md#def-3-1-1) is differentiable and hence continuous, i.e. $`f\in C^\infty(a-R,a+R)`$) and
 ```math
 f^{(m)}(x)=\sum_{k=m}^{\infty}k(k-1)\dots(k-m+1)\,c_k(x-a)^{k-m}\qquad\forall m\in\mathbb N,\ |x-a|<R .
 ```
@@ -169,7 +169,7 @@ The [partial sum](../04-numeric-series.md#sec-4-1) of the Taylor series
 ```math
 T_{n,f}(x)=\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k
 ```
-is the Taylor polynomial. By the definition of the sum of a series, convergence of the Taylor series to $`f(x)`$ means that $`T_{n,f}(x)\to f(x)`$ as $`n\to\infty`$, i.e. that the remainder $`R_{n,f}(x):=f(x)-T_{n,f}(x)`$ tends to zero.
+is the [Taylor polynomial](lecture-27-28.md#thm-3-6-3). By the definition of the sum of a series, convergence of the Taylor series to $`f(x)`$ means that $`T_{n,f}(x)\to f(x)`$ as $`n\to\infty`$, i.e. that the remainder $`R_{n,f}(x):=f(x)-T_{n,f}(x)`$ tends to zero.
 
 <a id="thm-8-4-8"></a>**Theorem 8.4.8 (a test for the expandability of a function in a Taylor series).** Let
 
@@ -230,7 +230,7 @@ By [Theorems 8.4.6](#thm-8-4-6) and [8.4.7](#thm-8-4-7) a function analytic at t
 
 <a id="p055"></a>
 
-Chapter 9 “Integrals depending on a parameter” begins. First an example showing what questions arise when working with such integrals.
+Chapter 9 “[Integrals depending on a parameter](#def-9-1-1)” begins. First an example showing what questions arise when working with such integrals.
 
 **Example.** Consider
 ```math
@@ -278,7 +278,7 @@ A note in red at the bottom of the page: “❶ The above has to be justified”
 
 > **Source correction** (T239, T521). In the notes the [antiderivative](lecture-36.md#def-4-1-1) is written as “$`I'(y)=-\int\frac{dy}{1+y^2}=-\operatorname{arctg}y+C`$” — on the left there should be $`I(y)`$. The line “$`\Rightarrow I(y)=-\int_0^{+\infty}e^{-xy}\frac{\sin x}{x}dx+\int_0^{+\infty}0\,dx=0`$” is garbled; in meaning it is the passage to the limit as $`y\to+\infty`$: $`I(y)\to\int_0^{+\infty}0\,dx=0`$.
 
-> **Restored** (by standard estimates; in the notes these steps are marked as requiring justification). The limit as $`y\to+\infty`$ is justified at once: since $`\left|\frac{\sin x}{x}\right|\le1`$, for $`y>0`$ we have $`|I(y)|\le\int_0^{+\infty}e^{-xy}\,dx=\frac1y\to0`$. The other passages — differentiation under the sign of an [improper integral](lecture-47-48.md#def-4-5-2) (step ❶) and the equality $`I(0)=\lim_{y\to0+}I(y)`$, which is needed because the formula for $`I'(y)`$ was derived only for $`y>0`$ (for $`y=0`$ the integral $`J(0)=\int_0^{+\infty}\sin x\,dx`$ diverges) — require uniform convergence of an improper integral with respect to a parameter and will be justified later (§9.2).
+> **Restored** (by standard estimates; in the notes these steps are marked as requiring justification). The limit as $`y\to+\infty`$ is justified at once: since $`\left|\frac{\sin x}{x}\right|\le1`$, for $`y>0`$ we have $`|I(y)|\le\int_0^{+\infty}e^{-xy}\,dx=\frac1y\to0`$. The other passages — differentiation under the sign of an [improper integral](lecture-47-48.md#def-4-5-2) (step ❶) and the equality $`I(0)=\lim_{y\to0+}I(y)`$, which is needed because the formula for $`I'(y)`$ was derived only for $`y>0`$ (for $`y=0`$ the integral $`J(0)=\int_0^{+\infty}\sin x\,dx`$ diverges) — require [uniform convergence of an improper integral](lecture-77-78.md#def-9-2-1) with respect to a parameter and will be justified later (§9.2).
 
 <a id="p056"></a>
 
@@ -336,7 +336,7 @@ On the lecturer's slide this formula is called Leibniz's formula (rule); a note 
 ```math
 \frac{I(y_0+h)-I(y_0)}{h}=\frac1h\int_a^b\bigl(f(x,y_0+h)-f(x,y_0)\bigr)\,dx .
 ```
-For each $`x\in[a,b]`$ the function $`t\mapsto f(x,t)`$ is differentiable on $`[c,d]`$, and by Lagrange's theorem
+For each $`x\in[a,b]`$ the function $`t\mapsto f(x,t)`$ is differentiable on $`[c,d]`$, and by [Lagrange's theorem](lecture-24-25-26.md#thm-3-4-3)
 ```math
 \frac{f(x,y_0+h)-f(x,y_0)}{h}=\frac{\partial f}{\partial y}(x,y_0+\theta h),\qquad 0<\theta<1
 ```

@@ -12,6 +12,8 @@ tags: [mathinmind/es, mathinmind/chapter]
 
 > [!abstract] Objetivo
 > Aplicar condiciones de no degeneración de la derivada y hallar extremos locales o condicionados sistemáticamente.
+>
+> **En la numeración del profesor:** [[es/22-taylor-implicit-extrema|capítulo 22 «Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos»]] (§6.6–§6.7, clases 65–68).
 
 ## 16.1 Extremos locales sin restricciones
 

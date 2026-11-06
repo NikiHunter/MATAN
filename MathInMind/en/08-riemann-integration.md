@@ -9,6 +9,8 @@ part: "One-variable calculus"
 [← 7. Mean Value Theorems, Taylor Expansion, and Convexity](07-taylor-convexity.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [9. Improper Integrals and Applications →](09-improper-integrals-applications.md)
 
 > **Goal.** Define integration through [partitions](#sec-8-1), connect it with differentiation, and evaluate [definite integrals](#sec-8-2) rigorously.
+>
+> **In the lecturer's numbering:** [chapter 25 “Integrals Depending on a Parameter”](25-parameter-integrals.md) (§9.1–§9.3, lectures 75–80); [chapter 26 “The Multiple Riemann Integral”](26-multiple-riemann-integral.md) (§10.1–§10.4, lectures 79–84).
 
 <a id="sec-8-1"></a>
 ## 8.1 Partitions and Darboux sums

@@ -12,6 +12,8 @@ tags: [mathinmind/en, mathinmind/chapter]
 
 > [!abstract] Goal
 > Distinguish pointwise from [[#10.1 Two modes of convergence|uniform convergence]] and know when limits commute with analytic operations.
+>
+> **In the lecturer's numbering:** [[en/24-functional-power-series|chapter 24 “Functional and Power Series”]] (§8.1–§8.3, lectures 71–74).
 
 ## 10.1 Two modes of convergence
 

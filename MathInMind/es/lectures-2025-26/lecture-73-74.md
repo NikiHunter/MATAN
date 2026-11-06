@@ -69,7 +69,7 @@ entonces $`S\in C^1([a,b])`$ y
 \Bigl(\sum_{n=1}^{\infty}u_n(x)\Bigr)'=\sum_{n=1}^{\infty}u_n'(x)=S'(x),\qquad x\in[a,b].
 ```
 
-> **Corrección de la fuente** (S169). La segunda afirmación del teorema está escrita en el margen como «$`\sum u_n(x)=\sum u'_n(x)=S(x)`$», sin los signos de derivada; corregido según la diapositiva del curso 2024/25 (FS p69).
+> **Corrección de la fuente** (S169). La segunda afirmación del teorema está escrita en el margen como «$`\sum u_n(x)=\sum u'_n(x)=S(x)`$», sin los signos de [derivada](lecture-22-23.md#def-3-1-1); corregido según la diapositiva del curso 2024/25 (FS p69).
 
 **Demostración.** Pongamos $`S_n(x)=u_1(x)+\dots+u_n(x)`$. Entonces $`S_n\in C^1([a,b])`$, y por la condición 1 $`S_n\to S`$ puntualmente en $`[a,b]`$. Además,
 ```math
@@ -112,7 +112,7 @@ Observemos que para $`x=a`$ la serie (8.4.1) converge a la suma $`c_0`$, ya que 
 
 **Observación.** La desigualdad $`|x-a|<R`$ define en la recta real el intervalo $`(a-R,a+R)`$, el intervalo de convergencia.
 
-- Si $`R=+\infty`$, el intervalo de convergencia coincide con $`\mathbb R`$, y la serie $`\sum c_k(x-a)^k`$ converge absolutamente para todo $`x\in\mathbb R`$.
+- Si $`R=+\infty`$, el intervalo de convergencia coincide con $`\mathbb R`$, y la serie $`\sum c_k(x-a)^k`$ [converge absolutamente](../04-numeric-series.md#sec-4-3) para todo $`x\in\mathbb R`$.
 - Si $`R=0`$, el intervalo de convergencia es vacío, y la serie converge solo para $`x=a`$.
 - Si $`0<R<+\infty`$, la serie $`\sum c_k(x-a)^k`$ converge absolutamente para $`|x-a|<R`$ y diverge para $`|x-a|>R`$, es decir, converge en el intervalo de convergencia $`(a-R,a+R)`$ y diverge fuera del segmento $`[a-R,a+R]`$; en los extremos $`x=a\pm R`$ son posibles tanto la convergencia como la divergencia.
 
@@ -224,7 +224,7 @@ Entonces la serie $`\sum_{k=1}^{\infty}f_k(x)g_k(x)`$ converge uniformemente en 
 
 > **Restaurado** (según la demostración estándar, cf. Zorich/Fichtenholz; en los apuntes y en las diapositivas el criterio se da sin demostración).
 >
-> **Demostración.** Fijemos $`n`$ y pongamos $`F_n(x):=0`$, $`F_m(x):=\sum_{j=n+1}^{m}f_j(x)`$ para $`m>n`$. Como $`f_k=F_k-F_{k-1}`$ para $`k>n`$, para $`m>n`$ (transformación de Abel, lecciones 69–70)
+> **Demostración.** Fijemos $`n`$ y pongamos $`F_n(x):=0`$, $`F_m(x):=\sum_{j=n+1}^{m}f_j(x)`$ para $`m>n`$. Como $`f_k=F_k-F_{k-1}`$ para $`k>n`$, para $`m>n`$ ([transformación de Abel](../23-numerical-series.md#sec-7-4), lecciones 69–70)
 > ```math
 > \sum_{k=n+1}^{m}f_k(x)g_k(x)=\sum_{k=n+1}^{m}\bigl(F_k(x)-F_{k-1}(x)\bigr)g_k(x)=F_m(x)g_m(x)+\sum_{k=n+1}^{m-1}F_k(x)\bigl(g_k(x)-g_{k+1}(x)\bigr).
 > ```

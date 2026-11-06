@@ -44,7 +44,7 @@ y $`d_a^2f`$ es la forma cuadrática de matriz $`D^2f(a)`$: $`d_a^2f(h)=\sum_{i,
 
 > **Restaurado** (según la demostración estándar, cf. Zorich, t. 1, cap. VIII; en el cuaderno el teorema figura sin demostración).
 >
-> **Demostración.** Como $`f`$ es dos veces diferenciable en el punto $`a`$ y $`d_af=0`$, por la fórmula de Taylor–Peano ([teorema 6.5.1](lecture-65-66.md#thm-6-5-1) para $`s=2`$, escrita mediante diferenciales)
+> **Demostración.** Como $`f`$ es dos veces diferenciable en el punto $`a`$ y $`d_af=0`$, por la [fórmula de Taylor](lecture-65-66.md#def-6-5-1)–Peano ([teorema 6.5.1](lecture-65-66.md#thm-6-5-1) para $`s=2`$, escrita mediante diferenciales)
 > ```math
 > f(a+h)-f(a)=\frac12\,d_a^2f(h)+r(h),\qquad r(h)=o(\|h\|^2)\quad(h\to0).
 > ```
@@ -404,7 +404,7 @@ y por el criterio de Bolzano–Cauchy la serie $`\sum_{k=1}^{\infty}a_k`$ conver
 ## Referencias cruzadas
 
 - Tema en el curso: [capítulo 16 «Funciones inversas e implícitas; extremos»](../16-implicit-functions-extrema.md), [capítulo 4 «Series numéricas»](../04-numeric-series.md).
-- Hechos usados: la fórmula de Taylor–Peano ([teorema 6.5.1](lecture-65-66.md#thm-6-5-1)), la afirmación (∗) de la demostración del [teorema 6.5.2](lecture-65-66.md#thm-6-5-2), el [teorema 6.6.1](lecture-65-66.md#thm-6-6-1) de la aplicación implícita y su observación — [lecciones 65–66](lecture-65-66.md); el [teorema 6.4.1](lecture-63-64.md#thm-6-4-1) sobre la igualdad de las derivadas mixtas y el [teorema 6.4.2](lecture-63-64.md#thm-6-4-2) sobre las diferenciales de orden superior — [lecciones 63–64](lecture-63-64.md); el criterio de Bolzano–Cauchy para sucesiones — [teorema 2.3.7](lecture-13.md#thm-2-3-7).
+- Hechos usados: la fórmula de Taylor–Peano ([teorema 6.5.1](lecture-65-66.md#thm-6-5-1)), la afirmación (∗) de la demostración del [teorema 6.5.2](lecture-65-66.md#thm-6-5-2), el [teorema 6.6.1](lecture-65-66.md#thm-6-6-1) de la [aplicación implícita](lecture-65-66.md#def-6-6-1) y su observación — [lecciones 65–66](lecture-65-66.md); el [teorema 6.4.1](lecture-63-64.md#thm-6-4-1) sobre la igualdad de las derivadas mixtas y el [teorema 6.4.2](lecture-63-64.md#thm-6-4-2) sobre las diferenciales de orden superior — [lecciones 63–64](lecture-63-64.md); el criterio de Bolzano–Cauchy para sucesiones — [teorema 2.3.7](lecture-13.md#thm-2-3-7).
 - Continuación: series positivas, criterios de comparación, criterios de d'Alembert y de Cauchy — [lecciones 69–70](lecture-69-70.md).
 
 ---

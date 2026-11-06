@@ -9,6 +9,8 @@ part: "Several variables and topology"
 [← 15. Differentiation of Several-Variable Mappings](15-multivariable-differentiation.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [17. Multiple Integrals and Change of Variables →](17-multiple-integrals.md)
 
 > **Goal.** Apply nondegenerate derivative conditions and find local or [constrained extrema](#sec-16-4) systematically.
+>
+> **In the lecturer's numbering:** [chapter 22 “Taylor's Formula in ℝⁿ, Implicit Maps, Extrema”](22-taylor-implicit-extrema.md) (§6.6–§6.7, lectures 65–68).
 
 <a id="sec-16-1"></a>
 ## 16.1 Unconstrained local extrema

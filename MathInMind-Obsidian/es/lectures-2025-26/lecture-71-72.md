@@ -121,7 +121,7 @@ Notación: $f_n\rightrightarrows f$ para la convergencia uniforme, $f_n\to f$ pa
 Surgen preguntas de forma natural. ^p034
 
 1. Sean $X\subset\mathbb R$ y todas las $f_n$ continuas (en un punto o en un conjunto). ¿Será continua $f$?
-2. Sean $X\subset\mathbb R$ y todas las $f_n$ diferenciables (en un punto o en un conjunto). ¿Será diferenciable $f$? En caso afirmativo, ¿es cierto que $f_n'\to f'$?
+2. Sean $X\subset\mathbb R$ y todas las $f_n$ [[es/lectures-2025-26/lecture-22-23#^def-3-2-1|diferenciables]] (en un punto o en un conjunto). ¿Será diferenciable $f$? En caso afirmativo, ¿es cierto que $f_n'\to f'$?
 3. Sean todas las $f_n$ integrables en $[a,b]$. ¿Será integrable $f$? En caso afirmativo, ¿es cierto que $\int_a^bf_n\to\int_a^bf$?
 
 ### La convergencia uniforme en términos de un ε-entorno

@@ -79,7 +79,7 @@ $$
 $$
 
 > [!info] Source correction
-> (S169). The second assertion of the theorem is written in the margin as “$\sum u_n(x)=\sum u'_n(x)=S(x)$” — without the derivative signs; corrected according to the slide of the 2024/25 course (FS p69).
+> (S169). The second assertion of the theorem is written in the margin as “$\sum u_n(x)=\sum u'_n(x)=S(x)$” — without the [[en/lectures-2025-26/lecture-22-23#^def-3-1-1|derivative]] signs; corrected according to the slide of the 2024/25 course (FS p69).
 
 **Proof.** Put $S_n(x)=u_1(x)+\dots+u_n(x)$. Then $S_n\in C^1([a,b])$, and by condition 1 $S_n\to S$ pointwise on $[a,b]$. Further,
 $$
@@ -135,7 +135,7 @@ Note that for $x=a$ series (8.4.1) converges to the sum $c_0$, since the terms w
 - If $R=0$, the interval of convergence is empty, and the series converges only for $x=a$.
 - If $0<R<+\infty$, the series $\sum c_k(x-a)^k$ converges absolutely for $|x-a|<R$ and diverges for $|x-a|>R$, i.e. it converges on the interval of convergence $(a-R,a+R)$ and diverges outside the segment $[a-R,a+R]$; at the endpoints $x=a\pm R$ both convergence and divergence are possible.
 
-Absolute convergence for $|x-a|<R$ is justified below ([[#^rem-8-4-1|Remark 8.4.1]]).
+[[en/04-numeric-series#4.3 Absolute and conditional convergence|Absolute convergence]] for $|x-a|<R$ is justified below ([[#^rem-8-4-1|Remark 8.4.1]]).
 
 > [!info] Source correction
 > (S176). In the notes the last item ends with the words “i.e. the set of conv. $(a-R,a+R)$” (uncertain reading; the same in the 2022 notes, M3S p88). The set of convergence contains the interval $(a-R,a+R)$ and is contained in the segment $[a-R,a+R]$, but it may contain the endpoints: for example, the series $\sum_{k=1}^{\infty}\frac{x^k}{k^2}$ (example below) has $R=1$ and converges on the whole segment $[-1,1]$, since $\left|\frac{x^k}{k^2}\right|\le\frac1{k^2}$ for $|x|\le1$. The behaviour of the series at the points $x=a\pm R$ is not determined by the radius and is studied separately.
@@ -260,7 +260,7 @@ Then the series $\sum_{k=1}^{\infty}f_k(x)g_k(x)$ converges uniformly on $X$.
 > [!note] Restored
 > (by the standard proof, cf. Zorich/Fichtenholz; in the notes and on the slides the test is given without proof).
 >
-> **Proof.** Fix $n$ and put $F_n(x):=0$, $F_m(x):=\sum_{j=n+1}^{m}f_j(x)$ for $m>n$. Since $f_k=F_k-F_{k-1}$ for $k>n$, for $m>n$ (Abel's transformation, lectures 69–70)
+> **Proof.** Fix $n$ and put $F_n(x):=0$, $F_m(x):=\sum_{j=n+1}^{m}f_j(x)$ for $m>n$. Since $f_k=F_k-F_{k-1}$ for $k>n$, for $m>n$ ([[en/23-numerical-series#§7.4. Series with terms of arbitrary sign|Abel's transformation]], lectures 69–70)
 > $$
 > \sum_{k=n+1}^{m}f_k(x)g_k(x)=\sum_{k=n+1}^{m}\bigl(F_k(x)-F_{k-1}(x)\bigr)g_k(x)=F_m(x)g_m(x)+\sum_{k=n+1}^{m-1}F_k(x)\bigl(g_k(x)-g_{k+1}(x)\bigr).
 > $$

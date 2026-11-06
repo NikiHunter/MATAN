@@ -12,6 +12,8 @@ tags: [mathinmind/es, mathinmind/chapter]
 
 > [!abstract] Objetivo
 > Distinguir los tipos de convergencia y elegir un criterio adecuado.
+>
+> **En la numeración del profesor:** [[es/23-numerical-series|capítulo 23 «Series numéricas»]] (§7.1–§7.5, clases 67–72).
 
 ## 4.1 Sumas parciales
 

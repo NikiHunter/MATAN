@@ -6,7 +6,7 @@ part: "Modern analysis"
 ---
 # 21. $`L^p`$ Spaces and Modes of Convergence
 
-[← 20. Lebesgue Integration and Convergence Theorems](20-lebesgue-integration.md) · [Course index](index.md) · [Terms & theorems](term-index.md)
+[← 20. Lebesgue Integration and Convergence Theorems](20-lebesgue-integration.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [22. Taylor's Formula in ℝⁿ, Implicit Maps, Extrema →](22-taylor-implicit-extrema.md)
 
 > **Goal.** Treat functions as points of [normed spaces](14-several-variables.md#sec-14-1) and relate $`L^p`$, almost-everywhere, and mean-square convergence.
 
@@ -122,4 +122,4 @@ On $`(1,\infty)`$, the same function belongs to $`L^p`$ exactly when $`\alpha p>
 
 ---
 
-[← 20. Lebesgue Integration and Convergence Theorems](20-lebesgue-integration.md) · [Course index](index.md) · [Terms & theorems](term-index.md)
+[← 20. Lebesgue Integration and Convergence Theorems](20-lebesgue-integration.md) · [Course index](index.md) · [Terms & theorems](term-index.md) · [22. Taylor's Formula in ℝⁿ, Implicit Maps, Extrema →](22-taylor-implicit-extrema.md)

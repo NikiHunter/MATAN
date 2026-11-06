@@ -12,6 +12,8 @@ tags: [mathinmind/es, mathinmind/chapter]
 
 > [!abstract] Objetivo
 > Determinar regiones de convergencia, operar término a término y distinguir suavidad de analiticidad.
+>
+> **En la numeración del profesor:** [[es/24-functional-power-series|capítulo 24 «Series funcionales y de potencias»]] (§8.4, clases 73–76).
 
 ## 11.1 Radio de convergencia
 

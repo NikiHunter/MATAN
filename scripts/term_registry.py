@@ -203,7 +203,7 @@ TERMS: list[Term] = [
       (r"проколот\w* окрестност\w*",), (r"entornos? perforados?", r"entornos? reducidos?"), lec="def-2-4-2"),
     T("limit-of-function", "05#sec-5-1", (r"limits? of (?:a|the) function", r"Cauchy definition of the limit",
                                           r"Heine definition"),
-      (r"предел\w* функци\w*", r"определени\w* (?:предела )?по (?:Коши|Гейне)"),
+      (r"предел(?!ьн)\w* функци\w*", r"определени\w* (?:предела )?по (?:Коши|Гейне)"),
       (r"límites? de (?:una|la) función", r"definición de (?:Cauchy|Heine)"), lec="def-2-4-4", chapters=(0, 12)),
     TH("sequential-criterion", "05#sec-5-1", (r"sequential criterion", r"Heine(?:'s)? criterion"),
        (r"критери\w* Гейне", r"языке последовательностей"), (r"criterio (?:secuencial|de Heine)",), lec="thm-2-4-1"),
@@ -294,7 +294,7 @@ TERMS: list[Term] = [
       (r"первообразн\w*", r"неопределённ\w* интеграл\w*", r"неопределенн\w* интеграл\w*"),
       (r"primitivas?", r"antiderivadas?", r"integral(?:es)? indefinidas?"), lec="def-4-1-1"),
     T("partition", "08#sec-8-1", (r"partitions?", r"mesh of (?:a|the) partition"), (r"разбиени\w*", r"ранг\w* разбиения"),
-      (r"particiones", r"partición", r"diámetro de (?:la|una) partición"), lec="def-4-2-2", chapters=(0, 17)),
+      (r"particiones", r"partición", r"diámetro de (?:la|una) partición"), lec="def-4-2-2", chapters=(0, 16)),
     T("darboux-sums", "08#sec-8-1", (r"(?:upper|lower) (?:Darboux )?sums?", r"Darboux sums?", r"Darboux integrals?"),
       (r"(?:верхн|нижн)\w* (?:сумм|интеграл)\w* Дарбу", r"сумм\w* Дарбу", r"интеграл\w* Дарбу"),
       (r"sumas? (?:superior(?:es)?|inferior(?:es)?) de Darboux", r"sumas? de Darboux", r"integral(?:es)? de Darboux"),
@@ -354,7 +354,12 @@ TERMS: list[Term] = [
     TH("dirichlet-abel-integrals", "09#dirichlet-test-for-integrals",
        (r"Dirichlet(?:'s)? test(?: for integrals)?", r"Abel(?:'s)? test(?: for integrals)?", r"Dirichlet–Abel tests?"),
        (r"признак\w* Дирихле", r"признак\w* Абеля", r"признак\w* Абеля–Дирихле"),
-       (r"criterio de Dirichlet", r"criterio de Abel", r"criterios de Abel–Dirichlet"), lec="thm-4-5-4"),
+       (r"criterio de Dirichlet", r"criterio de Abel", r"criterios de Abel–Dirichlet"), lec="thm-4-5-4", chapters=(5, 21)),
+    # The same tests for numerical series (chapter 4 profile: chapters 4 and 23, lectures 69–70, their tickets).
+    TH("dirichlet-abel-series", "23#sec-7-4",
+       (r"Dirichlet(?:'s)? test(?: for integrals)?", r"Abel(?:'s)? test(?: for integrals)?", r"Dirichlet–Abel tests?"),
+       (r"признак\w* Дирихле", r"признак\w* Абеля", r"признак\w* Абеля–Дирихле"),
+       (r"criterio de Dirichlet", r"criterio de Abel", r"criterios de Abel–Dirichlet"), chapters=(0, 4)),
     T("arc-length", "09#sec-9-3", (r"arc lengths?", r"lengths? of (?:a|the) (?:curve|path)", r"rectifiable"),
       (r"длин\w* (?:дуги|кривой|пути)", r"спрямляем\w*"), (r"longitud(?:es)? de (?:arco|una curva|la curva|un camino)",
                                                        r"rectificables?"), lec="thm-4-7-1"),
@@ -511,12 +516,12 @@ TERMS: list[Term] = [
     T("sigma-algebra", "19#sec-19-1", (r"sigma-algebras?", r"σ-algebras?"), (r"сигма-алгебр\w*", r"σ-алгебр\w*"),
       (r"sigma-álgebras?", r"σ-álgebras?")),
     T("measure", "19#sec-19-2", (r"countably additive", r"measure spaces?", r"(?<!Lebesgue )measures?(?! zero)"),
-      (r"счётно-аддитивн\w*", r"счетно-аддитивн\w*", r"пространств\w* с мерой", r"мер(?:а|ы|у|ой|ами|ах|ам)(?! нуль| ноль| Лебега)"),
-      (r"numerablemente aditiv[ao]s?", r"espacios? de medida", r"medidas?(?! nula| cero| de Lebesgue)"),
+      (r"счётно-аддитивн\w*", r"счетно-аддитивн\w*", r"пространств\w* с мерой", r"мер(?:а|ы|у|ой|ами|ах|ам)(?! нуль| ноль| Лебега| Жордана)"),
+      (r"numerablemente aditiv[ao]s?", r"espacios? de medida", r"medidas?(?! nula| cero| de Lebesgue| de Jordan)"),
       chapters=(19, 21)),
-    T("lebesgue-measure", "19#sec-19-3", (r"Lebesgue measures?", r"outer measures?", r"Jordan measures?"),
-      (r"мер\w* Лебега", r"лебегов\w* мер\w*", r"внешн\w* мер\w*", r"мер\w* Жордана"),
-      (r"medidas? de Lebesgue", r"medidas? exteriores?", r"medidas? de Jordan"), lec="def-4-6-6"),
+    T("lebesgue-measure", "19#sec-19-3", (r"Lebesgue measures?", r"outer measures?"),
+      (r"мер\w* Лебега", r"лебегов\w* мер\w*", r"внешн\w* мер\w*"),
+      (r"medidas? de Lebesgue", r"medidas? exteriores?"), lec="def-4-6-6"),
     T("measurable-function", "19#sec-19-4", (r"measurable (?:functions?|sets?)", r"measurable"),
       (r"измерим\w*",), (r"medibles?",), chapters=(19, 21)),
     T("almost-everywhere", "19#sec-19-4", (r"almost everywhere", r"a\.e\."), (r"почти всюду", r"п\.в\."),
@@ -558,6 +563,46 @@ TERMS: list[Term] = [
        r"proyecci(?:ón|ones) ortogonal(?:es)?")),
     T("dense-subset", "21#sec-21-3", (r"dense (?:subsets?|subspaces?|sets?)",), (r"плотн\w* (?:подмножеств|множеств|подпространств)\w*",),
       (r"(?:subconjuntos?|conjuntos?|subespacios?) dens[oa]s?",), chapters=(13, 21)),
+    # 22–26. Semester 3: the lecturer's chapters 6–10 (lecture numbering)
+    T("taylor-polynomial-rn", "22#def-6-5-1", (r"Taylor(?:'s)? (?:formula|polynomials?|expansions?|theorem)",),
+      (r"формул\w* Тейлора", r"многочлен\w* Тейлора"), (r"fórmula de Taylor", r"polinomios? de Taylor"),
+      lec="def-6-5-1", chapters=(15, 16)),
+    T("implicit-map", "22#def-6-6-1", (r"implicit maps?", r"implicit mappings?"), (r"неявн\w* отображени\w*",),
+      (r"aplicaci(?:ón|ones) implícitas?",), lec="def-6-6-1"),
+    TH("implicit-map-theorem", "22#thm-6-6-1", (r"implicit map theorem", r"implicit mapping theorem"),
+       (r"теорем\w* о неявн\w* отображени\w*",), (r"teorema de la aplicación implícita",), lec="thm-6-6-1"),
+    TH("cauchy-condensation", "23#sec-7-3", (r"Cauchy(?:'s)? condensation (?:test|lemma)", r"condensation (?:test|lemma)",
+                                             r"Cauchy's lemma"),
+       (r"лемм\w* Коши(?: о сгущении)?", r"признак\w* сгущения"), (r"lema de Cauchy(?: de condensación)?",
+                                                                    r"criterio de condensación"), chapters=(4, 4)),
+    T("abel-transformation", "23#sec-7-4", (r"Abel(?:'s)? transformation", r"summation by parts"),
+      (r"преобразовани\w* Абеля",), (r"transformaci(?:ón|ones) de Abel", r"sumación por partes")),
+    T("parameter-integral", "25#def-9-1-1", (r"integrals? depending on a parameter", r"parameter-dependent integrals?"),
+      (r"интеграл\w*,? зависящ\w* от параметра", r"интеграл\w* с параметром"),
+      (r"integral(?:es)? dependientes? de un parámetro", r"integral(?:es)? paramétricas?"), lec="def-9-1-1"),
+    T("uniform-convergence-integral", "25#def-9-2-1",
+      (r"uniform convergence of (?:an |the )?improper integrals?", r"uniformly convergent improper integrals?"),
+      (r"равномерн\w* сходимост\w* несобственн\w* интеграл\w*",),
+      (r"convergencia uniforme de (?:una |la )?integral(?:es)? impropias?",), lec="def-9-2-1"),
+    T("gamma-function", "25#def-9-3-1", (r"gamma functions?", r"Euler(?:'s)? gamma function"),
+      (r"гамма-функци\w*",), (r"funci(?:ón|ones) gamma",), lec="def-9-3-1"),
+    T("beta-function", "25#sec-9-3", (r"beta functions?",), (r"бета-функци\w*",), (r"funci(?:ón|ones) beta",)),
+    T("brick", "26#def-10-1-1", (r"bricks?",), (r"брус\w*",), (r"paralelepípedos?",), lec="def-10-1-1"),
+    T("brick-partition", "26#def-10-1-3", (r"partitions?",), (r"разбиени\w*",), (r"particiones", r"partición"),
+      lec="def-10-1-3", chapters=(17, 17)),
+    T("admissible-set", "26#def-10-2-1", (r"admissible sets?",), (r"допустим\w* множеств\w*",),
+      (r"conjuntos? admisibles?",), lec="def-10-2-1", chapters=(17, 17)),
+    T("integral-over-set", "26#def-10-2-4", (r"integrals? over (?:a|an|the) (?:bounded |admissible )?set",),
+      (r"интеграл\w* по (?:ограниченн\w* |допустим\w* )?множеств\w*",),
+      (r"integral(?:es)? sobre (?:un|el) conjunto(?: acotado| admisible)?",), lec="def-10-2-4", chapters=(17, 17)),
+    T("jordan-measure", "26#def-10-2-5", (r"Jordan measures?", r"Jordan[- ]measurable", r"sets? of Jordan measure zero",
+                                          r"sets? of volume zero"),
+      (r"мер\w* Жордана", r"измерим\w* по Жордану", r"множеств\w* меры нуль в смысле Жордана",
+       r"множеств\w* объёма нуль"),
+      (r"medidas? de Jordan", r"medibles? en el sentido de Jordan", r"conjuntos? de medida nula en el sentido de Jordan",
+       r"conjuntos? de volumen nulo"), lec="def-10-2-5"),
+    TH("cavalieri", "26#thm-10-4-2", (r"Cavalieri(?:'s)? principle",), (r"принцип\w* Кавальери",),
+       (r"principio de Cavalieri",), lec="thm-10-4-2"),
 ]
 
 # Glossary rows (English column) -> term id, for linking the trilingual table.
@@ -588,7 +633,11 @@ GLOSSARY = {
     "radius of convergence": "radius-of-convergence", "Hilbert space": "hilbert-space",
     "Banach space": "lp-space", "conservative field": "conservative-field", "partition": "partition",
     "Riemann sum": "riemann-sum", "Darboux sum": "darboux-sums", "monotone sequence": "monotone-sequence",
-    "neighborhood": "neighbourhood", "neighbourhood": "neighbourhood", "limit point": "limit-point",
+    "neighborhood": "neighbourhood",
+    "Abel transformation": "abel-transformation", "admissible set": "admissible-set", "beta function": "beta-function",
+    "brick": "brick", "Cavalieri's principle": "cavalieri", "condensation test": "cauchy-condensation",
+    "gamma function": "gamma-function", "implicit map": "implicit-map",
+    "integral depending on a parameter": "parameter-integral", "Jordan measure": "jordan-measure", "neighbourhood": "neighbourhood", "limit point": "limit-point",
     "uniformly continuous": "uniform-continuity", "metric space": "metric-space",
 }
 
@@ -685,7 +734,8 @@ improper-integral | improper integral | несобственный интегр�
 principal-value | principal value | главное значение | valor principal
 comparison-test-integrals | comparison test for integrals | признак сравнения для интегралов | criterio de comparación para integrales
 absolute-convergence-integral | absolutely convergent integral | абсолютно сходящийся интеграл | integral absolutamente convergente
-dirichlet-abel-integrals | Dirichlet and Abel tests | признаки Дирихле и Абеля | criterios de Dirichlet y Abel
+dirichlet-abel-integrals | Dirichlet and Abel tests for integrals | признаки Дирихле и Абеля для интегралов | criterios de Dirichlet y Abel para integrales
+dirichlet-abel-series | Dirichlet and Abel tests for series | признаки Дирихле и Абеля для рядов | criterios de Dirichlet y Abel para series
 arc-length | arc length, rectifiable curve | длина дуги, спрямляемая кривая | longitud de arco, curva rectificable
 path | smooth path | гладкий путь | camino suave
 pointwise-convergence | pointwise convergence | поточечная сходимость | convergencia puntual
@@ -757,6 +807,21 @@ essential-supremum | essential supremum | существенный супрем�
 riesz-fischer | Riesz–Fischer theorem | теорема Рисса–Фишера | teorema de Riesz–Fischer
 hilbert-space | Hilbert space, inner product | гильбертово пространство, скалярное произведение | espacio de Hilbert, producto interno
 dense-subset | dense subset | плотное подмножество | subconjunto denso
+taylor-polynomial-rn | Taylor polynomial in ℝⁿ | многочлен Тейлора в ℝⁿ | polinomio de Taylor en ℝⁿ
+implicit-map | implicit map | неявное отображение | aplicación implícita
+implicit-map-theorem | implicit map theorem | теорема о неявном отображении | teorema de la aplicación implícita
+cauchy-condensation | Cauchy's condensation lemma | лемма Коши о сгущении | lema de condensación de Cauchy
+abel-transformation | Abel transformation (summation by parts) | преобразование Абеля | transformación de Abel (sumación por partes)
+parameter-integral | integral depending on a parameter | интеграл, зависящий от параметра | integral dependiente de un parámetro
+uniform-convergence-integral | uniform convergence of an improper integral | равномерная сходимость несобственного интеграла | convergencia uniforme de una integral impropia
+gamma-function | gamma function | гамма-функция | función gamma
+beta-function | beta function | бета-функция | función beta
+brick | brick (interval in ℝⁿ) | брус (промежуток в ℝⁿ) | paralelepípedo (intervalo en ℝⁿ)
+brick-partition | partition of a brick | разбиение бруса | partición de un paralelepípedo
+admissible-set | admissible set | допустимое множество | conjunto admisible
+jordan-measure | Jordan measure (volume) | мера Жордана (объём) | medida de Jordan (volumen)
+integral-over-set | integral over a set | интеграл по множеству | integral sobre un conjunto
+cavalieri | Cavalieri's principle | принцип Кавальери | principio de Cavalieri
 """
 
 LABELS = {}

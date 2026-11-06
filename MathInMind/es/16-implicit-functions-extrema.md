@@ -9,6 +9,8 @@ part: "Varias variables y topología"
 [← 15. Derivación de aplicaciones de varias variables](15-multivariable-differentiation.md) · [Índice](index.md) · [Términos y teoremas](term-index.md) · [17. Integrales múltiples y cambio de variables →](17-multiple-integrals.md)
 
 > **Objetivo.** Aplicar condiciones de no degeneración de la derivada y hallar extremos locales o condicionados sistemáticamente.
+>
+> **En la numeración del profesor:** [capítulo 22 «Fórmula de Taylor en ℝⁿ, aplicaciones implícitas, extremos»](22-taylor-implicit-extrema.md) (§6.6–§6.7, clases 65–68).
 
 <a id="sec-16-1"></a>
 ## 16.1 Extremos locales sin restricciones

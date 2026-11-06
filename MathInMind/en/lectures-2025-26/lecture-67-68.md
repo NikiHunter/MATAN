@@ -404,7 +404,7 @@ and by the Bolzano–Cauchy criterion the series $`\sum_{k=1}^{\infty}a_k`$ conv
 ## Cross-references
 
 - Course topic: [chapter 16 “Inverse and implicit functions; extrema”](../16-implicit-functions-extrema.md), [chapter 4 “Numerical series”](../04-numeric-series.md).
-- Facts used: the Taylor–Peano formula ([Theorem 6.5.1](lecture-65-66.md#thm-6-5-1)), statement (∗) from the proof of [Theorem 6.5.2](lecture-65-66.md#thm-6-5-2), the implicit map [Theorem 6.6.1](lecture-65-66.md#thm-6-6-1) and the remark to it — [lectures 65–66](lecture-65-66.md); [Theorem 6.4.1](lecture-63-64.md#thm-6-4-1) on the equality of mixed derivatives and [Theorem 6.4.2](lecture-63-64.md#thm-6-4-2) on higher-order differentials — [lectures 63–64](lecture-63-64.md); the Bolzano–Cauchy criterion for sequences — [Theorem 2.3.7](lecture-13.md#thm-2-3-7).
+- Facts used: the Taylor–Peano formula ([Theorem 6.5.1](lecture-65-66.md#thm-6-5-1)), statement (∗) from the proof of [Theorem 6.5.2](lecture-65-66.md#thm-6-5-2), the [implicit map](lecture-65-66.md#def-6-6-1) [Theorem 6.6.1](lecture-65-66.md#thm-6-6-1) and the remark to it — [lectures 65–66](lecture-65-66.md); [Theorem 6.4.1](lecture-63-64.md#thm-6-4-1) on the equality of mixed derivatives and [Theorem 6.4.2](lecture-63-64.md#thm-6-4-2) on higher-order differentials — [lectures 63–64](lecture-63-64.md); the Bolzano–Cauchy criterion for sequences — [Theorem 2.3.7](lecture-13.md#thm-2-3-7).
 - Continuation: positive series, comparison tests, the d'Alembert and Cauchy tests — [lectures 69–70](lecture-69-70.md).
 
 ---
