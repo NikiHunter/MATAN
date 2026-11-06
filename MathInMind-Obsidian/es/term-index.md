@@ -620,8 +620,22 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-1\|Definición 10.1.1]] | El conjunto | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[es/lectures-2025-26/lecture-79-80#^thm-10-1-1\|Teorema 10.1.1]] | condición necesaria de integrabilidad | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-2\|Definición 10.1.2]] | Al paralelepípedo $I=I_{a,b}$ se le asigna el número | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-81-82#^thm-10-1-2\|Teorema 10.1.2]] | criterio de Lebesgue | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-3\|Definición 10.1.3]] | La representación del paralelepípedo $I$ descrita arriba como unión … | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-81-82#^thm-10-1-3\|Teorema 10.1.3]] | criterio de Darboux | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-4\|Definición 10.1.4]] | Si en cada paralelepípedo $I_j$ de la partición $P$ se fija un punto … | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-5\|Definición 10.1.5]] | La suma | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-6\|Definición 10.1.6]] | ($I\subset\mathbb R^n$) La magnitud | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[es/lectures-2025-26/lecture-79-80#^def-10-1-7\|Definición 10.1.7]] | Si para una función $f:I\to\mathbb R$ existe el límite finito indicado en la definición … | [[es/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-1-8\|Definición 10.1.8]] | Diremos que cierta propiedad se cumple en casi todo punto del conjunto $M$ si el … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-1-9\|Definición 10.1.9]] | Las magnitudes | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-1-10\|Definición 10.1.10]] | Se llaman integral inferior y superior (de Darboux) de la función $f:I\to\mathbb R$ en … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-2-1\|Definición 10.2.1]] | Un conjunto $\Omega\subset\mathbb R^n$ se llama admisible si está acotado en … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^thm-10-2-1\|Teorema 10.2.1]] | Una función $f:\Omega\to\mathbb R$ es integrable en un conjunto admisible $\Omega$ si … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-2-2\|Definición 10.2.2]] | Sea $\Omega\subset\mathbb R^n$ un conjunto admisible. La función | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-2-4\|Definición 10.2.3]] | Sea la función $f$ definida en el conjunto $\Omega$. Entonces | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-2-4\|Definición 10.2.4]] | La integral de la función $f$ sobre el conjunto (acotado) $\Omega$ se define mediante … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-2-5\|Definición 10.2.5]] | La medida (de Jordan), o volumen, de un conjunto acotado $\Omega\subset\mathbb R^n$ es … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^def-10-2-6\|Definición 10.2.6]] | Un conjunto $\Omega\subset\mathbb R^n$ se llama conjunto de medida nula en el sentido … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^thm-10-3-1\|Teorema 10.3.1]] | Sean $\Omega_1$, $\Omega_2$ conjuntos admisibles en $\mathbb R^n$, y $f$ una … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-81-82#^prop-10-3-1\|Proposición 10.3.1]] | Si $f\in R(\Omega)$, entonces $\|f\|\in R(\Omega)$ y se cumple la desigualdad | [[es/lectures-2025-26/lecture-81-82\|81–82]] |

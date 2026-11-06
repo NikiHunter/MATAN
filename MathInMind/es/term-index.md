@@ -619,8 +619,22 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [Definición 10.1.1](lectures-2025-26/lecture-79-80.md#def-10-1-1) | El conjunto | [79–80](lectures-2025-26/lecture-79-80.md) |
 | [Teorema 10.1.1](lectures-2025-26/lecture-79-80.md#thm-10-1-1) | condición necesaria de integrabilidad | [79–80](lectures-2025-26/lecture-79-80.md) |
 | [Definición 10.1.2](lectures-2025-26/lecture-79-80.md#def-10-1-2) | Al paralelepípedo $`I=I_{a,b}`$ se le asigna el número | [79–80](lectures-2025-26/lecture-79-80.md) |
+| [Teorema 10.1.2](lectures-2025-26/lecture-81-82.md#thm-10-1-2) | criterio de Lebesgue | [81–82](lectures-2025-26/lecture-81-82.md) |
 | [Definición 10.1.3](lectures-2025-26/lecture-79-80.md#def-10-1-3) | La representación del paralelepípedo $`I`$ descrita arriba como unión … | [79–80](lectures-2025-26/lecture-79-80.md) |
+| [Teorema 10.1.3](lectures-2025-26/lecture-81-82.md#thm-10-1-3) | criterio de Darboux | [81–82](lectures-2025-26/lecture-81-82.md) |
 | [Definición 10.1.4](lectures-2025-26/lecture-79-80.md#def-10-1-4) | Si en cada paralelepípedo $`I_j`$ de la partición $`P`$ se fija un punto … | [79–80](lectures-2025-26/lecture-79-80.md) |
 | [Definición 10.1.5](lectures-2025-26/lecture-79-80.md#def-10-1-5) | La suma | [79–80](lectures-2025-26/lecture-79-80.md) |
 | [Definición 10.1.6](lectures-2025-26/lecture-79-80.md#def-10-1-6) | ($`I\subset\mathbb R^n`$) La magnitud | [79–80](lectures-2025-26/lecture-79-80.md) |
 | [Definición 10.1.7](lectures-2025-26/lecture-79-80.md#def-10-1-7) | Si para una función $`f:I\to\mathbb R`$ existe el límite finito indicado en la definición … | [79–80](lectures-2025-26/lecture-79-80.md) |
+| [Definición 10.1.8](lectures-2025-26/lecture-81-82.md#def-10-1-8) | Diremos que cierta propiedad se cumple en casi todo punto del conjunto $`M`$ si el … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.1.9](lectures-2025-26/lecture-81-82.md#def-10-1-9) | Las magnitudes | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.1.10](lectures-2025-26/lecture-81-82.md#def-10-1-10) | Se llaman integral inferior y superior (de Darboux) de la función $`f:I\to\mathbb R`$ en … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.2.1](lectures-2025-26/lecture-81-82.md#def-10-2-1) | Un conjunto $`\Omega\subset\mathbb R^n`$ se llama admisible si está acotado en … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Teorema 10.2.1](lectures-2025-26/lecture-81-82.md#thm-10-2-1) | Una función $`f:\Omega\to\mathbb R`$ es integrable en un conjunto admisible $`\Omega`$ si … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.2.2](lectures-2025-26/lecture-81-82.md#def-10-2-2) | Sea $`\Omega\subset\mathbb R^n`$ un conjunto admisible. La función | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.2.3](lectures-2025-26/lecture-81-82.md#def-10-2-3) | Sea la función $`f`$ definida en el conjunto $`\Omega`$. Entonces | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.2.4](lectures-2025-26/lecture-81-82.md#def-10-2-4) | La integral de la función $`f`$ sobre el conjunto (acotado) $`\Omega`$ se define mediante … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.2.5](lectures-2025-26/lecture-81-82.md#def-10-2-5) | La medida (de Jordan), o volumen, de un conjunto acotado $`\Omega\subset\mathbb R^n`$ es … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Definición 10.2.6](lectures-2025-26/lecture-81-82.md#def-10-2-6) | Un conjunto $`\Omega\subset\mathbb R^n`$ se llama conjunto de medida nula en el sentido … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Teorema 10.3.1](lectures-2025-26/lecture-81-82.md#thm-10-3-1) | Sean $`\Omega_1`$, $`\Omega_2`$ conjuntos admisibles en $`\mathbb R^n`$, y $`f`$ una … | [81–82](lectures-2025-26/lecture-81-82.md) |
+| [Proposición 10.3.1](lectures-2025-26/lecture-81-82.md#prop-10-3-1) | Si $`f\in R(\Omega)`$, entonces $`\|f\|\in R(\Omega)`$ y se cumple la desigualdad | [81–82](lectures-2025-26/lecture-81-82.md) |

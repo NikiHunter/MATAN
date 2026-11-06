@@ -620,8 +620,22 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-1\|Definition 10.1.1]] | The set | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[en/lectures-2025-26/lecture-79-80#^thm-10-1-1\|Theorem 10.1.1]] | necessary condition for integrability | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-2\|Definition 10.1.2]] | To the box $I=I_{a,b}$ we assign the number | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-81-82#^thm-10-1-2\|Theorem 10.1.2]] | Lebesgue's criterion | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-3\|Definition 10.1.3]] | The representation of the box $I$ described above as the union $I=\bigcup_{j=1}^kI_j$ … | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-81-82#^thm-10-1-3\|Theorem 10.1.3]] | Darboux's criterion | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-4\|Definition 10.1.4]] | If in each box $I_j$ of the partition $P$ some point $\xi_j\in I_j$ is fixed, we … | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-5\|Definition 10.1.5]] | The sum | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-6\|Definition 10.1.6]] | ($I\subset\mathbb R^n$) The quantity | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
 | [[en/lectures-2025-26/lecture-79-80#^def-10-1-7\|Definition 10.1.7]] | If for a function $f:I\to\mathbb R$ the finite limit indicated in Definition 10.1.6 … | [[en/lectures-2025-26/lecture-79-80\|79–80]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-1-8\|Definition 10.1.8]] | We say that some property holds almost everywhere on a set $M$ if the subset of $M$ … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-1-9\|Definition 10.1.9]] | The quantities | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-1-10\|Definition 10.1.10]] | The lower and upper (Darboux) integrals of the function $f:I\to\mathbb R$ on the box … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-2-1\|Definition 10.2.1]] | A set $\Omega\subset\mathbb R^n$ is called admissible if it is bounded in … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^thm-10-2-1\|Theorem 10.2.1]] | A function $f:\Omega\to\mathbb R$ is integrable on an admissible set $\Omega$ if and … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-2-2\|Definition 10.2.2]] | Let $\Omega\subset\mathbb R^n$ be an admissible set. The function | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-2-4\|Definition 10.2.3]] | Let the function $f$ be defined on the set $\Omega$. Then | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-2-4\|Definition 10.2.4]] | The integral of the function $f$ over a (bounded) set $\Omega$ is defined by the … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-2-5\|Definition 10.2.5]] | The (Jordan) measure, or volume, of a bounded set $\Omega\subset\mathbb R^n$ is the … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^def-10-2-6\|Definition 10.2.6]] | A set $\Omega\subset\mathbb R^n$ is called a set of measure zero in the sense of … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^thm-10-3-1\|Theorem 10.3.1]] | Let $\Omega_1$, $\Omega_2$ be admissible sets in $\mathbb R^n$, and let $f$ be a … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-81-82#^prop-10-3-1\|Proposition 10.3.1]] | If $f\in R(\Omega)$, then $\|f\|\in R(\Omega)$ and the following inequality holds: | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
