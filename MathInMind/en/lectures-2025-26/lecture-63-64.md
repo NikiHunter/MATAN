@@ -11,7 +11,7 @@ typed_slides: 21
 ---
 # Lectures 63–64 — Continuous differentiability and higher derivatives
 
-[← Lectures 61–62](lecture-61-62.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [Español](../../es/lectures-2025-26/lecture-63-64.md)
+[← Lectures 61–62](lecture-61-62.md) · [Lecture index](index.md) · [Lectures 65–66 →](lecture-65-66.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [Español](../../es/lectures-2025-26/lecture-63-64.md)
 
 > **Source and numbering.** Transcribed solely from the attached PDF `ma25_26-lectures_63-64_notes.pdf.txt`; the source archive was not consulted. Sections follow physical PDF pages 1–42 in order. “Printed slide” numbers are the footer sequence 1–21 and remain distinct from PDF pages; handwritten pages are not assigned slide numbers. Typed slides were checked against both text layer and image; handwritten proofs, examples and annotations were read from the rendered pages. See the [page inventory, source hash and crop provenance](../../assets/lectures-2025-26/provenance-61-64.md) and [machine-readable manifest](../../assets/lectures-2025-26/figures-61-64.json).
 >
@@ -445,4 +445,4 @@ This transcription duplicates the corresponding thematic chapters for semester 2
 
 ---
 
-[← Lectures 61–62](lecture-61-62.md) · [Lecture index](index.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [Español](../../es/lectures-2025-26/lecture-63-64.md)
+[← Lectures 61–62](lecture-61-62.md) · [Lecture index](index.md) · [Lectures 65–66 →](lecture-65-66.md) · [Terms & theorems](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [Español](../../es/lectures-2025-26/lecture-63-64.md)

@@ -11,7 +11,7 @@ typed_slides: 21
 ---
 # Lecciones 63–64 — diferenciabilidad continua y derivadas de orden superior
 
-[← Lecciones 61–62](lecture-61-62.md) · [Índice de lecciones](index.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [English](../../en/lectures-2025-26/lecture-63-64.md)
+[← Lecciones 61–62](lecture-61-62.md) · [Índice de lecciones](index.md) · [Lecciones 65–66 →](lecture-65-66.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [English](../../en/lectures-2025-26/lecture-63-64.md)
 
 > **Fuente y numeración.** Transcripción elaborada exclusivamente a partir del PDF adjunto `ma25_26-lectures_63-64_notes.pdf.txt`; no se consultó la carpeta de fuentes. Las secciones siguen el orden de las páginas físicas 1–42 del PDF. Los números de «diapositiva impresa» son la secuencia del pie de página 1–21 y se distinguen de las páginas PDF; las páginas manuscritas no reciben número de diapositiva. Las diapositivas impresas se cotejaron con la capa de texto y las imágenes; las demostraciones, ejemplos y anotaciones manuscritos se leyeron en los renderizados. Véanse el [inventario de páginas, hash de la fuente y procedencia de recortes](../../assets/lectures-2025-26/provenance-61-64.md) y el [manifiesto legible por máquina](../../assets/lectures-2025-26/figures-61-64.json).
 >
@@ -445,4 +445,4 @@ Esta transcripción se solapa con los capítulos temáticos correspondientes del
 
 ---
 
-[← Lecciones 61–62](lecture-61-62.md) · [Índice de lecciones](index.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [English](../../en/lectures-2025-26/lecture-63-64.md)
+[← Lecciones 61–62](lecture-61-62.md) · [Índice de lecciones](index.md) · [Lecciones 65–66 →](lecture-65-66.md) · [Términos y teoremas](../term-index.md) · [Русский](../../ru/lectures-2025-26/lecture-63-64.md) · [English](../../en/lectures-2025-26/lecture-63-64.md)

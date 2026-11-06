@@ -537,3 +537,14 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [Definición 6.4.3](lectures-2025-26/lecture-63-64.md#def-6-4-3) | PDF 39). Diferenciales de orden superior | [63–64](lectures-2025-26/lecture-63-64.md) |
 | [Lema 6.4.3](lectures-2025-26/lecture-63-64.md#lem-6-4-3) | PDF 25). Incremento doble y derivadas mixtas | [63–64](lectures-2025-26/lecture-63-64.md) |
 | [Lema 6.4.4](lectures-2025-26/lecture-63-64.md#lem-6-4-4) | PDF 28). Criterio de igualdad | [63–64](lectures-2025-26/lecture-63-64.md) |
+| [Definición 6.5.1](lectures-2025-26/lecture-65-66.md#def-6-5-1) | Sean $`E\subset\mathbb R^n`$, $`a`$ un punto interior de $`E`$, $`f:E\to\mathbb R^m`$ … | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.5.1](lectures-2025-26/lecture-65-66.md#thm-6-5-1) | fórmula de Taylor–Peano | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Lema 6.5.1](lectures-2025-26/lecture-65-66.md#lem-6-5-1) | Sean $`E\subset\mathbb R^n`$, $`a`$ un punto interior de $`E`$, $`s\in\mathbb N`$, la … | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.5.2](lectures-2025-26/lecture-65-66.md#thm-6-5-2) | fórmula de Taylor–Lagrange | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.5.3](lectures-2025-26/lecture-65-66.md#thm-6-5-3) | del valor medio | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.5.4](lectures-2025-26/lecture-65-66.md#thm-6-5-4) | fórmula de Taylor–Lagrange para aplicaciones | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.5.5](lectures-2025-26/lecture-65-66.md#thm-6-5-5) | estimación del resto | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Definición 6.6.1](lectures-2025-26/lecture-65-66.md#def-6-6-1) | La aplicación $`\psi`$ introducida en el teorema 6.6.1 se llama aplicación implícita … | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.6.1](lectures-2025-26/lecture-65-66.md#thm-6-6-1) | de la aplicación implícita | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Definición 6.7.1](lectures-2025-26/lecture-65-66.md#def-6-7-1) | Supongamos que $`E\subset\mathbb R^n`$, $`a\in E`$, $`f:E\to\mathbb R`$. | [65–66](lectures-2025-26/lecture-65-66.md) |
+| [Teorema 6.7.1](lectures-2025-26/lecture-65-66.md#thm-6-7-1) | condición necesaria de extremo | [65–66](lectures-2025-26/lecture-65-66.md) |

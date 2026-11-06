@@ -538,3 +538,14 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 19 (pp. PDF 39). Diferenciales de orden superior — definición 6.4.3\|Definición 6.4.3]] | PDF 39). Diferenciales de orden superior | [[es/lectures-2025-26/lecture-63-64\|63–64]] |
 | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 13 (pp. PDF 25). Incremento doble y derivadas mixtas — lema 6.4.3\|Lema 6.4.3]] | PDF 25). Incremento doble y derivadas mixtas | [[es/lectures-2025-26/lecture-63-64\|63–64]] |
 | [[es/lectures-2025-26/lecture-63-64#Diapositiva impresa 15 (pp. PDF 28). Criterio de igualdad — lema 6.4.4\|Lema 6.4.4]] | PDF 28). Criterio de igualdad | [[es/lectures-2025-26/lecture-63-64\|63–64]] |
+| [[es/lectures-2025-26/lecture-65-66#^def-6-5-1\|Definición 6.5.1]] | Sean $E\subset\mathbb R^n$, $a$ un punto interior de $E$, $f:E\to\mathbb R^m$ … | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-5-1\|Teorema 6.5.1]] | fórmula de Taylor–Peano | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^lem-6-5-1\|Lema 6.5.1]] | Sean $E\subset\mathbb R^n$, $a$ un punto interior de $E$, $s\in\mathbb N$, la … | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-5-2\|Teorema 6.5.2]] | fórmula de Taylor–Lagrange | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-5-3\|Teorema 6.5.3]] | del valor medio | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-5-4\|Teorema 6.5.4]] | fórmula de Taylor–Lagrange para aplicaciones | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-5-5\|Teorema 6.5.5]] | estimación del resto | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^def-6-6-1\|Definición 6.6.1]] | La aplicación $\psi$ introducida en el teorema 6.6.1 se llama aplicación implícita … | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-6-1\|Teorema 6.6.1]] | de la aplicación implícita | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^def-6-7-1\|Definición 6.7.1]] | Supongamos que $E\subset\mathbb R^n$, $a\in E$, $f:E\to\mathbb R$. | [[es/lectures-2025-26/lecture-65-66\|65–66]] |
+| [[es/lectures-2025-26/lecture-65-66#^thm-6-7-1\|Teorema 6.7.1]] | condición necesaria de extremo | [[es/lectures-2025-26/lecture-65-66\|65–66]] |

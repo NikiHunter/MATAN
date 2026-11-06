@@ -13,7 +13,7 @@ tags: [mathinmind/es, mathinmind/lecture]
 ---
 # Lecciones 63–64 — diferenciabilidad continua y derivadas de orden superior
 
-[[es/lectures-2025-26/lecture-61-62|← Lecciones 61–62]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/term-index|Términos y teoremas]] · [[ru/lectures-2025-26/lecture-63-64|Русский]] · [[en/lectures-2025-26/lecture-63-64|English]]
+[[es/lectures-2025-26/lecture-61-62|← Lecciones 61–62]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/lectures-2025-26/lecture-65-66|Lecciones 65–66 →]] · [[es/term-index|Términos y teoremas]] · [[ru/lectures-2025-26/lecture-63-64|Русский]] · [[en/lectures-2025-26/lecture-63-64|English]]
 
 > [!info] Fuente y numeración
 > Transcripción elaborada exclusivamente a partir del PDF adjunto `ma25_26-lectures_63-64_notes.pdf.txt`; no se consultó la carpeta de fuentes. Las secciones siguen el orden de las páginas físicas 1–42 del PDF. Los números de «diapositiva impresa» son la secuencia del pie de página 1–21 y se distinguen de las páginas PDF; las páginas manuscritas no reciben número de diapositiva. Las diapositivas impresas se cotejaron con la capa de texto y las imágenes; las demostraciones, ejemplos y anotaciones manuscritos se leyeron en los renderizados. Véanse el [[assets/lectures-2025-26/provenance-61-64|inventario de páginas, hash de la fuente y procedencia de recortes]] y el [manifiesto legible por máquina](../../assets/lectures-2025-26/figures-61-64.json).
@@ -437,4 +437,4 @@ Esta transcripción se solapa con los capítulos temáticos correspondientes del
 
 ---
 
-[[es/lectures-2025-26/lecture-61-62|← Lecciones 61–62]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/term-index|Términos y teoremas]] · [[ru/lectures-2025-26/lecture-63-64|Русский]] · [[en/lectures-2025-26/lecture-63-64|English]]
+[[es/lectures-2025-26/lecture-61-62|← Lecciones 61–62]] · [[es/lectures-2025-26/index|Índice de lecciones]] · [[es/lectures-2025-26/lecture-65-66|Lecciones 65–66 →]] · [[es/term-index|Términos y teoremas]] · [[ru/lectures-2025-26/lecture-63-64|Русский]] · [[en/lectures-2025-26/lecture-63-64|English]]
