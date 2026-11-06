@@ -122,12 +122,12 @@ Append after the ticket table, one section per session:
 
 **Model:** `MathInMind/ru/exam-sem3/EXAM_SEM3.md` (structure), tickets in `MathInMind/ru/exam/tickets/` (72 files).
 
-- [ ] Frontmatter `title`, `lang: ru`; sections in this order:
+- [x] Frontmatter `title`, `lang: ru`; sections in this order:
   «Как устроена пересдача»; «Билеты и где их доказательства» (table of all 72, link `tickets/NN.md` +
   anchor of the full proof in lectures 33–64 or the register `MathInMind/ru/lectures/`);
   «Ключевые определения для допуска»; «Чистилище: семестр 1» (~100 follow-ups on lectures 0–32);
   «Контрпримеры и что если убрать условие» (~40); «Пробные пересдачи» (3 variants, full solutions).
-- [ ] Link it from `MathInMind/ru/exam/index.md`.
+- [x] Link it from `MathInMind/ru/exam/index.md`.
 - [ ] Optional: add «Доказательство», «Задачи», «Если снять условие» to the 72 ticket files.
 
 **Check:** exam validator prints «Reexam master: 72 tickets linked».
