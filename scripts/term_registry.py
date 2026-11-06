@@ -318,12 +318,14 @@ TERMS: list[Term] = [
     TH("lebesgue-criterion-riemann", "08#sec-8-2", (r"Lebesgue(?:'s)? criterion",), (r"критери\w* Лебега",),
        (r"criterio de Lebesgue",), lec="thm-4-2-5"),
     TH("mean-value-integrals", "08#mean-value-theorem-for-integrals",
-       (r"mean value theorems? for integrals", r"integral mean value theorem", r"first mean value theorem",
-        r"second mean value theorem", r"Bonnet(?:'s)? (?:formula|theorem)"),
-       (r"(?:первая|вторая|первой|второй) теорем\w* о среднем", r"теорем\w* о среднем для интеграл\w*",
-        r"формул\w* Бонне", r"теорем\w* Бонне"),
-       (r"teorema del valor medio (?:integral|para integrales)", r"(?:primer|segundo) teorema del valor medio",
-        r"fórmula de Bonnet", r"teorema de Bonnet"), lec="thm-4-3-1"),
+       (r"mean value theorems? for integrals", r"integral mean value theorem", r"first mean value theorem"),
+       (r"(?:первая|первой|первую) теорем\w* о среднем", r"теорем\w* о среднем для интеграл\w*"),
+       (r"teorema del valor medio (?:integral|para integrales)", r"primer teorema del valor medio"), lec="thm-4-3-1"),
+    # The second mean value theorem (Bonnet) is Theorem 4.4.3, not the first one (4.3.1).
+    TH("second-mean-value", "08#mean-value-theorem-for-integrals",
+       (r"second mean value theorem", r"Bonnet(?:'s)? (?:formula|theorem)"),
+       (r"(?:вторая|второй|вторую) теорем\w* о среднем", r"формул\w* Бонне", r"теорем\w* Бонне"),
+       (r"segundo teorema del valor medio", r"fórmula de Bonnet", r"teorema de Bonnet"), lec="thm-4-4-3"),
     TH("ftc", "08#sec-8-3", (r"fundamental theorem of (?:calculus|analysis)", r"integral with a variable upper limit"),
        (r"основн\w* теорем\w* (?:анализа|интегрального исчисления)", r"интеграл\w* с переменным верхним пределом"),
        (r"teorema fundamental del cálculo", r"integral con límite superior variable"), lec="thm-4-3-2"),
@@ -724,7 +726,8 @@ riemann-integral | Riemann integral | интеграл Римана | integral d
 oscillation | oscillation of a function | колебание функции | oscilación de una función
 measure-zero-riemann | set of measure zero | множество меры нуль | conjunto de medida nula
 lebesgue-criterion-riemann | Lebesgue criterion for Riemann integrability | критерий Лебега интегрируемости по Риману | criterio de Lebesgue de integrabilidad
-mean-value-integrals | mean value theorems for integrals | теоремы о среднем для интегралов | teoremas del valor medio integral
+mean-value-integrals | first mean value theorem for integrals | первая теорема о среднем для интегралов | primer teorema del valor medio integral
+second-mean-value | second mean value theorem (Bonnet) | вторая теорема о среднем (Бонне) | segundo teorema del valor medio (Bonnet)
 ftc | fundamental theorem of calculus | основная теорема анализа | teorema fundamental del cálculo
 newton-leibniz | Newton–Leibniz formula | формула Ньютона–Лейбница | fórmula de Newton–Leibniz
 integration-by-parts | integration by parts | интегрирование по частям | integración por partes

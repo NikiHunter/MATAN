@@ -16,6 +16,7 @@ tags: [mathinmind/ru, mathinmind/term-index]
 |---|---|---|
 | аксиома полноты | [[ru/02-real-numbers#^completeness-axiom\|§2]] | — |
 | архимедовость | [[ru/02-real-numbers#^archimedean-property\|§2]] | [[ru/lectures-2025-26/lecture-05-06#^def-1-3-5\|Определение 1.3.5]] |
+| вторая теорема о среднем (Бонне) | [[ru/08-riemann-integration#^mean-value-theorem-for-integrals\|§8]] | [[ru/lectures-2025-26/lecture-45-46#^thm-4-4-3\|Теорема 4.4.3]] |
 | критерий Гейне | [[ru/05-limits-continuity#5.1 Предел в точке\|§5.1]] | [[ru/lectures-2025-26/lecture-14#^thm-2-4-1\|Теорема 2.4.1]] |
 | критерий интегрируемости (Римана–Дарбу) | [[ru/08-riemann-integration#^integrability-criterion\|§8]] | [[ru/lectures-2025-26/lecture-39-40#^thm-4-2-1\|Теорема 4.2.1]] |
 | критерий Коши для последовательностей | [[ru/03-sequences#3.4 Подпоследовательности и критерий Коши\|§3.4]] | [[ru/lectures-2025-26/lecture-13#^thm-2-3-7\|Теорема 2.3.7]] |
@@ -27,6 +28,7 @@ tags: [mathinmind/ru, mathinmind/term-index]
 | неравенство Коши–Буняковского | [[ru/21-lp-spaces#^sec-21-4\|§21.4]] | [[ru/lectures-2025-26/lecture-47-48#^thm-4-4-6\|Теорема 4.4.6]] |
 | неравенство Минковского | [[ru/21-lp-spaces#21.1 Определение и основные неравенства\|§21.1]] | — |
 | основная теорема анализа | [[ru/08-riemann-integration#8.3 Основная теорема анализа\|§8.3]] | [[ru/lectures-2025-26/lecture-43-44#^thm-4-3-2\|Теорема 4.3.2]] |
+| первая теорема о среднем для интегралов | [[ru/08-riemann-integration#^mean-value-theorem-for-integrals\|§8]] | [[ru/lectures-2025-26/lecture-43-44#^thm-4-3-1\|Теорема 4.3.1]] |
 | перестановка членов ряда | [[ru/04-numeric-series#^rearrangement-warning\|§4]] | — |
 | плотность рациональных чисел | [[ru/02-real-numbers#^density-of-rationals\|§2]] | [[ru/lectures-2025-26/lecture-07#^thm-1-3-3\|Теорема 1.3.3]] |
 | правило Лопиталя | [[ru/07-taylor-convexity#7.2 Правило Лопиталя\|§7.2]] | [[ru/lectures-2025-26/lecture-24-25-26#^thm-3-4-5\|Теорема 3.4.5]] |
@@ -68,7 +70,6 @@ tags: [mathinmind/ru, mathinmind/term-index]
 | теорема Ферма | [[ru/06-derivatives#^fermat-theorem\|§6]] | [[ru/lectures-2025-26/lecture-24-25-26#^thm-3-4-1\|Теорема 3.4.1]] |
 | теорема Фубини | [[ru/17-multiple-integrals#^fubini-theorem-continuous\|§17]] | — |
 | теорема Фубини–Тонелли | [[ru/20-lebesgue-integration#20.4 Произведение мер и Фубини–Тонелли\|§20.4]] | — |
-| теоремы о среднем для интегралов | [[ru/08-riemann-integration#^mean-value-theorem-for-integrals\|§8]] | [[ru/lectures-2025-26/lecture-43-44#^thm-4-3-1\|Теорема 4.3.1]] |
 | формула Ньютона–Лейбница | [[ru/08-riemann-integration#^newton-leibniz-formula\|§8]] | [[ru/lectures-2025-26/lecture-43-44#^thm-4-3-2\|Теорема 4.3.2]] |
 
 ## Термины

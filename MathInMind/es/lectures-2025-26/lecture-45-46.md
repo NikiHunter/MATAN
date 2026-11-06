@@ -240,7 +240,7 @@ Como $`F(c)=\int_a^c f`$, al sustituir en la línea anterior se obtiene
 
 ### Página manuscrita (PDF p. 21). Esquema geométrico del intervalo
 
-El dibujo manuscrito marca $`[a,b]`$, el punto $`c`$ y las dos partes $`\int_a^c f`$ y $`\int_c^b f`$. El arco rojo abarca el intervalo completo y el verde la primera parte. Es un esquema de la descomposición de la fórmula de Bonnet, no una gráfica de una función.
+El dibujo manuscrito marca $`[a,b]`$, el punto $`c`$ y las dos partes $`\int_a^c f`$ y $`\int_c^b f`$. El arco rojo abarca el intervalo completo y el verde la primera parte. Es un esquema de la descomposición de la [fórmula de Bonnet](#thm-4-4-3), no una gráfica de una función.
 
 ![PDF p. 21: esquema original de Bonnet con c y los dos intervalos de integración](../../assets/lectures-2025-26/lec45-46-p21-bonnet-interval.jpg)
 

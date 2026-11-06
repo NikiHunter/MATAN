@@ -15,6 +15,7 @@ generated: true
 |---|---|---|
 | аксиома полноты | [§2](02-real-numbers.md#completeness-axiom) | — |
 | архимедовость | [§2](02-real-numbers.md#archimedean-property) | [Определение 1.3.5](lectures-2025-26/lecture-05-06.md#def-1-3-5) |
+| вторая теорема о среднем (Бонне) | [§8](08-riemann-integration.md#mean-value-theorem-for-integrals) | [Теорема 4.4.3](lectures-2025-26/lecture-45-46.md#thm-4-4-3) |
 | критерий Гейне | [§5.1](05-limits-continuity.md#sec-5-1) | [Теорема 2.4.1](lectures-2025-26/lecture-14.md#thm-2-4-1) |
 | критерий интегрируемости (Римана–Дарбу) | [§8](08-riemann-integration.md#integrability-criterion) | [Теорема 4.2.1](lectures-2025-26/lecture-39-40.md#thm-4-2-1) |
 | критерий Коши для последовательностей | [§3.4](03-sequences.md#sec-3-4) | [Теорема 2.3.7](lectures-2025-26/lecture-13.md#thm-2-3-7) |
@@ -26,6 +27,7 @@ generated: true
 | неравенство Коши–Буняковского | [§21.4](21-lp-spaces.md#sec-21-4) | [Теорема 4.4.6](lectures-2025-26/lecture-47-48.md#thm-4-4-6) |
 | неравенство Минковского | [§21.1](21-lp-spaces.md#sec-21-1) | — |
 | основная теорема анализа | [§8.3](08-riemann-integration.md#sec-8-3) | [Теорема 4.3.2](lectures-2025-26/lecture-43-44.md#thm-4-3-2) |
+| первая теорема о среднем для интегралов | [§8](08-riemann-integration.md#mean-value-theorem-for-integrals) | [Теорема 4.3.1](lectures-2025-26/lecture-43-44.md#thm-4-3-1) |
 | перестановка членов ряда | [§4](04-numeric-series.md#rearrangement-warning) | — |
 | плотность рациональных чисел | [§2](02-real-numbers.md#density-of-rationals) | [Теорема 1.3.3](lectures-2025-26/lecture-07.md#thm-1-3-3) |
 | правило Лопиталя | [§7.2](07-taylor-convexity.md#sec-7-2) | [Теорема 3.4.5](lectures-2025-26/lecture-24-25-26.md#thm-3-4-5) |
@@ -67,7 +69,6 @@ generated: true
 | теорема Ферма | [§6](06-derivatives.md#fermat-theorem) | [Теорема 3.4.1](lectures-2025-26/lecture-24-25-26.md#thm-3-4-1) |
 | теорема Фубини | [§17](17-multiple-integrals.md#fubini-theorem-continuous) | — |
 | теорема Фубини–Тонелли | [§20.4](20-lebesgue-integration.md#sec-20-4) | — |
-| теоремы о среднем для интегралов | [§8](08-riemann-integration.md#mean-value-theorem-for-integrals) | [Теорема 4.3.1](lectures-2025-26/lecture-43-44.md#thm-4-3-1) |
 | формула Ньютона–Лейбница | [§8](08-riemann-integration.md#newton-leibniz-formula) | [Теорема 4.3.2](lectures-2025-26/lecture-43-44.md#thm-4-3-2) |
 
 ## Термины

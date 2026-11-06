@@ -33,11 +33,13 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | lema de condensación de Cauchy | [cap. 23 · §7.3](23-numerical-series.md#sec-7-3) | — |
 | lema de Fatou | [§20](20-lebesgue-integration.md#fatou-lemma) | — |
 | límite uniforme de funciones continuas | [§10](10-function-sequences-series.md#uniform-limit-continuity) | — |
+| primer teorema del valor medio integral | [§8](08-riemann-integration.md#mean-value-theorem-for-integrals) | [Teorema 4.3.1](lectures-2025-26/lecture-43-44.md#thm-4-3-1) |
 | principio de Cavalieri | [cap. 26 · §10.4](26-multiple-riemann-integral.md#thm-10-4-2) | [Teorema 10.4.2](lectures-2025-26/lecture-83-84.md#thm-10-4-2) |
 | propiedad arquimediana | [§2](02-real-numbers.md#archimedean-property) | [Definición 1.3.5](lectures-2025-26/lecture-05-06.md#def-1-3-5) |
 | regla de L'Hôpital | [§7.2](07-taylor-convexity.md#sec-7-2) | [Teorema 3.4.5](lectures-2025-26/lecture-24-25-26.md#thm-3-4-5) |
 | regla de la cadena | [§6](06-derivatives.md#chain-rule) | [Teorema 3.3.1](lectures-2025-26/lecture-22-23.md#thm-3-3-1) |
 | reordenación de series | [§4](04-numeric-series.md#rearrangement-warning) | — |
+| segundo teorema del valor medio (Bonnet) | [§8](08-riemann-integration.md#mean-value-theorem-for-integrals) | [Teorema 4.4.3](lectures-2025-26/lecture-45-46.md#thm-4-4-3) |
 | teorema de Abel | [§11](11-power-series.md#abel-theorem) | — |
 | teorema de Baire | [§13](13-metric-spaces.md#baire-category-theorem) | — |
 | teorema de Bolzano–Weierstrass | [§3](03-sequences.md#bolzano-weierstrass-theorem) | [Teorema 2.3.4](lectures-2025-26/lecture-11-12.md#thm-2-3-4) |
@@ -68,7 +70,6 @@ Cada entrada lleva directamente al lugar donde se define la noción o se enuncia
 | teorema del valor medio de Lagrange | [§7](07-taylor-convexity.md#lagrange-mean-value-theorem) | [Teorema 3.4.3](lectures-2025-26/lecture-24-25-26.md#thm-3-4-3) |
 | teorema fundamental del cálculo | [§8.3](08-riemann-integration.md#sec-8-3) | [Teorema 4.3.2](lectures-2025-26/lecture-43-44.md#thm-4-3-2) |
 | teorema puntual de Dirichlet | [§12](12-fourier-series.md#dirichlet-pointwise-theorem) | — |
-| teoremas del valor medio integral | [§8](08-riemann-integration.md#mean-value-theorem-for-integrals) | [Teorema 4.3.1](lectures-2025-26/lecture-43-44.md#thm-4-3-1) |
 
 ## Términos
 

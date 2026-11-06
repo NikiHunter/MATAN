@@ -38,6 +38,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | extreme value theorem (Weierstrass) | [[en/05-limits-continuity#^extreme-value-theorem\|§5]] | — |
 | Fatou's lemma | [[en/20-lebesgue-integration#^fatou-lemma\|§20]] | — |
 | Fermat's theorem | [[en/06-derivatives#^fermat-theorem\|§6]] | [[en/lectures-2025-26/lecture-24-25-26#^thm-3-4-1\|Theorem 3.4.1]] |
+| first mean value theorem for integrals | [[en/08-riemann-integration#^mean-value-theorem-for-integrals\|§8]] | [[en/lectures-2025-26/lecture-43-44#^thm-4-3-1\|Theorem 4.3.1]] |
 | Fubini's theorem | [[en/17-multiple-integrals#^fubini-theorem-continuous\|§17]] | — |
 | Fubini–Tonelli theorem | [[en/20-lebesgue-integration#20.4 Product measures and Fubini–Tonelli\|§20.4]] | — |
 | fundamental theorem of calculus | [[en/08-riemann-integration#8.3 Fundamental theorem of calculus\|§8.3]] | [[en/lectures-2025-26/lecture-43-44#^thm-4-3-2\|Theorem 4.3.2]] |
@@ -54,7 +55,6 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | L'Hôpital's rule | [[en/07-taylor-convexity#7.2 L'Hôpital's rule\|§7.2]] | [[en/lectures-2025-26/lecture-24-25-26#^thm-3-4-5\|Theorem 3.4.5]] |
 | Lagrange's mean value theorem | [[en/07-taylor-convexity#^lagrange-mean-value-theorem\|§7]] | [[en/lectures-2025-26/lecture-24-25-26#^thm-3-4-3\|Theorem 3.4.3]] |
 | Lebesgue criterion for Riemann integrability | [[en/08-riemann-integration#8.2 Riemann sums and properties\|§8.2]] | [[en/lectures-2025-26/lecture-41-42#^thm-4-2-5\|Theorem 4.2.5]] |
-| mean value theorems for integrals | [[en/08-riemann-integration#^mean-value-theorem-for-integrals\|§8]] | [[en/lectures-2025-26/lecture-43-44#^thm-4-3-1\|Theorem 4.3.1]] |
 | Minkowski's inequality | [[en/21-lp-spaces#21.1 Definition and basic inequalities\|§21.1]] | — |
 | monotone convergence theorem (Lebesgue) | [[en/20-lebesgue-integration#^lebesgue-monotone-convergence-theorem\|§20]] | — |
 | monotone convergence theorem (sequences) | [[en/03-sequences#^monotone-convergence-theorem\|§3]] | [[en/lectures-2025-26/lecture-11-12#^thm-2-3-3\|Theorem 2.3.3]] |
@@ -64,6 +64,7 @@ Every entry jumps straight to the place where the notion is defined or the resul
 | rearrangement of series | [[en/04-numeric-series#^rearrangement-warning\|§4]] | — |
 | Riesz–Fischer theorem | [[en/21-lp-spaces#^riesz-fischer-theorem\|§21]] | — |
 | Rolle's theorem | [[en/07-taylor-convexity#^rolle-theorem\|§7]] | [[en/lectures-2025-26/lecture-24-25-26#^thm-3-4-2\|Theorem 3.4.2]] |
+| second mean value theorem (Bonnet) | [[en/08-riemann-integration#^mean-value-theorem-for-integrals\|§8]] | [[en/lectures-2025-26/lecture-45-46#^thm-4-4-3\|Theorem 4.4.3]] |
 | sequential (Heine) criterion | [[en/05-limits-continuity#5.1 Limit at a point\|§5.1]] | [[en/lectures-2025-26/lecture-14#^thm-2-4-1\|Theorem 2.4.1]] |
 | squeeze theorem | [[en/03-sequences#3.2 Limit laws\|§3.2]] | [[en/lectures-2025-26/lecture-08#^thm-2-1-4\|Theorem 2.1.4]] |
 | Stokes' theorem | [[en/18-vector-calculus#^stokes-theorem\|§18]] | — |

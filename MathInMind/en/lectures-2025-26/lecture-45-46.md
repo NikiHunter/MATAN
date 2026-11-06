@@ -240,7 +240,7 @@ Since $`F(c)=\int_a^c f`$, substitution into the previous line gives
 
 ### Handwritten page (PDF p. 21). Geometric interval sketch
 
-The handwritten sketch marks $`[a,b]`$, the point $`c`$, and the two integral pieces $`\int_a^c f`$ and $`\int_c^b f`$. The red arc spans the full interval and the green arc the first part. It illustrates the decomposition in [Bonnet's formula](lecture-43-44.md#thm-4-3-1); it is not a graph of a function.
+The handwritten sketch marks $`[a,b]`$, the point $`c`$, and the two integral pieces $`\int_a^c f`$ and $`\int_c^b f`$. The red arc spans the full interval and the green arc the first part. It illustrates the decomposition in [Bonnet's formula](#thm-4-4-3); it is not a graph of a function.
 
 ![PDF p. 21: original Bonnet interval sketch with c and the two integration intervals](../../assets/lectures-2025-26/lec45-46-p21-bonnet-interval.jpg)
 
