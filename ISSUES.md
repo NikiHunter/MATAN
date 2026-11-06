@@ -25,6 +25,11 @@ All fixes are in the Russian, English and Spanish files unless the row names one
 | `MathInMind/*/09…`, `10…`, `12…`, `es/00-notation.md`, `*/lectures-2025-26/lecture-27-28.md`, `ru/exam-sem3/tickets/39.md`, `ru/exam-sem3/EXAM_SEM3.md` | LINK | one-variable «непрерывно дифференцируем…» linked to the multivariable notion (§15.1, Th 6.3.1) | unlinked (reworded in the exam master); term `continuously-differentiable` restricted to chapters 13–21 |
 | `MathInMind/*/06-derivatives.md`, `09-…` | LINK | «внутренней точке» of an interval linked to the metric-space chapter | unlinked; term `interior` restricted to chapters 13–21 |
 
+**Mathematical read (6 November 2026).** Every section of chapters 01–21 was read, and every worked example and
+exercise answer was recomputed in the Russian file; the formulas of the English and Spanish worked examples and
+answers were compared with the Russian ones (identical up to punctuation). No further mathematical defects were
+found; the Spanish answer to exercise 3 of chapter 03 now states $\limsup=1$, $\liminf=-1$ like the other two.
+
 ## Fixed in this pass (2 November 2026)
 
 | File | Type | Was | Fix |

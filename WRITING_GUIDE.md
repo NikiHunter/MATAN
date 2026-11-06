@@ -189,6 +189,9 @@ notebook-batch check (RU/EN/ES parity).
 One `ISSUES.md` «Open» row per session: fix in ru/en/es, move the row to «Closed». Then one chapter per
 session: recompute worked examples and exercise answers.
 
+- [x] All 13 «Open» rows fixed in ru/en/es (6 November 2026).
+- [x] Chapters 01–21 read; worked examples and exercise answers recomputed.
+
 ## G6. Lectures 85–98
 
 Blocked until the material arrives. Steps are in `GOALS.md` G6.

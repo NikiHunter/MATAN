@@ -123,7 +123,7 @@ así que, dado $`\varepsilon>0`$, sirve cualquier $`N>\frac{1}{8\varepsilon}`$.
 
 1. El error absoluto es $`19/(2(2n+5))`$, menor que $`5/n`$; elige $`N>5/\varepsilon`$.
 2. Se aplica el [teorema de convergencia monótona](#monotone-convergence-theorem); el límite se denota $`e`$.
-3. Las subsucesiones par e impar tienden a $`1`$ y $`-1`$, respectivamente.
+3. Las subsucesiones par e impar tienden a $`1`$ y $`-1`$, respectivamente, así que el límite superior es $`1`$ y el inferior $`-1`$.
 </details>
 
 ---

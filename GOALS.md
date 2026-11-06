@@ -1,7 +1,9 @@
 # Goals — what is left to do
 
-State on 3 November 2026. Lectures 65–84 (semester 3) are cleaned and integrated in Russian; the tooling
-for semester 3 is in place. The goals below are ordered by priority. Each one ends with the check that
+State on 6 November 2026. G1–G5 are done: the semester-3 exam track (95 tickets and all sections of
+`EXAM_SEM3.md`), the semester-2 reexam master, chapters 22–26 in three languages, English and Spanish
+lectures 65–84, and the audit of chapters 01–21. G6 waits for the material of lectures 85–98. (On 3 November
+lectures 65–84 had just been cleaned and integrated in Russian, with the semester-3 tooling in place.) The goals below are ordered by priority. Each one ends with the check that
 proves it is done. Course content is written in Russian; keep the lecturer's numbering and terminology
 (§6.5…§10.4, «Теорема 8.4.1», «допустимое множество», …).
 
