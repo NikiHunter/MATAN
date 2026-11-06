@@ -639,3 +639,8 @@ Numbers follow the lecturer's scheme *chapter.section.item*. The first lecture t
 | [[en/lectures-2025-26/lecture-81-82#^def-10-2-6\|Definition 10.2.6]] | A set $\Omega\subset\mathbb R^n$ is called a set of measure zero in the sense of … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[en/lectures-2025-26/lecture-81-82#^thm-10-3-1\|Theorem 10.3.1]] | Let $\Omega_1$, $\Omega_2$ be admissible sets in $\mathbb R^n$, and let $f$ be a … | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[en/lectures-2025-26/lecture-81-82#^prop-10-3-1\|Proposition 10.3.1]] | If $f\in R(\Omega)$, then $\|f\|\in R(\Omega)$ and the following inequality holds: | [[en/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[en/lectures-2025-26/lecture-83-84#^thm-10-4-1\|Theorem 10.4.1]] | Fubini | [[en/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[en/lectures-2025-26/lecture-83-84#^cor-10-4-1\|Corollary 10.4.1]] | Let $I=I_1\times I_2\times\dots\times I_n\subset\mathbb R^n$ … | [[en/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[en/lectures-2025-26/lecture-83-84#^thm-10-4-2\|Theorem 10.4.2]] | Cavalieri's principle | [[en/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[en/lectures-2025-26/lecture-83-84#^cor-10-4-2\|Corollary 10.4.2]] | Let $D\subset\mathbb R^{n-1}$ be an admissible set, let the functions … | [[en/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[en/lectures-2025-26/lecture-83-84#^cor-10-4-3\|Corollary 10.4.3]] | Under the hypotheses of Corollary 10.4.2 (the set $D$ is admissible … | [[en/lectures-2025-26/lecture-83-84\|83–84]] |

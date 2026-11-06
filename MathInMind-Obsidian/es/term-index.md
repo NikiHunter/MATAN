@@ -639,3 +639,8 @@ La numeración sigue el esquema del profesor *capítulo.sección.punto*. Se enla
 | [[es/lectures-2025-26/lecture-81-82#^def-10-2-6\|Definición 10.2.6]] | Un conjunto $\Omega\subset\mathbb R^n$ se llama conjunto de medida nula en el sentido … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[es/lectures-2025-26/lecture-81-82#^thm-10-3-1\|Teorema 10.3.1]] | Sean $\Omega_1$, $\Omega_2$ conjuntos admisibles en $\mathbb R^n$, y $f$ una … | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
 | [[es/lectures-2025-26/lecture-81-82#^prop-10-3-1\|Proposición 10.3.1]] | Si $f\in R(\Omega)$, entonces $\|f\|\in R(\Omega)$ y se cumple la desigualdad | [[es/lectures-2025-26/lecture-81-82\|81–82]] |
+| [[es/lectures-2025-26/lecture-83-84#^thm-10-4-1\|Teorema 10.4.1]] | Fubini | [[es/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[es/lectures-2025-26/lecture-83-84#^cor-10-4-1\|Corolario 10.4.1]] | Sean $I=I_1\times I_2\times\dots\times I_n\subset\mathbb R^n$ … | [[es/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[es/lectures-2025-26/lecture-83-84#^thm-10-4-2\|Teorema 10.4.2]] | principio de Cavalieri | [[es/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[es/lectures-2025-26/lecture-83-84#^cor-10-4-2\|Corolario 10.4.2]] | Sean $D\subset\mathbb R^{n-1}$ un conjunto admisible, las funciones … | [[es/lectures-2025-26/lecture-83-84\|83–84]] |
+| [[es/lectures-2025-26/lecture-83-84#^cor-10-4-3\|Corolario 10.4.3]] | Bajo las hipótesis del corolario 10.4.2 (el conjunto $D$ es admisible … | [[es/lectures-2025-26/lecture-83-84\|83–84]] |
