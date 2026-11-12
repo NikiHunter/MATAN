@@ -70,6 +70,7 @@ Lectures 65–84 were cleaned from a student's notebook (pages `p001`–`p082`) 
 
 - Provenance: the verbatim page transcription is in [`ocr/raw/`](ocr/raw/p001.md); every disputed place is decided in [`ocr/RESOLVED.md`](ocr/RESOLVED.md) (542 entries, with the basis of each decision); [`ocr/ISSUES.md`](ocr/ISSUES.md) lists the open ones (none at present). Corrections of slips are marked «Поправка к источнику» in the lectures, restorations of lost pages «Восстановлено».
 - Exam preparation: [`EXAM_SEM3.md`](MathInMind/ru/exam-sem3/EXAM_SEM3.md) — 95 projected tickets (70 on lectures 65–84, 25 forecast from the 2024/25 course for chapters 11–13), tickets 01–95 written, plus cross-cutting questions, a purgatory, problems, a cheat sheet and mock exams; the semester-2 reexam is prepared in [`REEXAM_SEM2.md`](MathInMind/ru/exam/REEXAM_SEM2.md).
+- Seminar homework (NM-204, HW 1–4): worked solutions with a «why it works» note for every problem, in Russian — [`MathInMind/ru/seminar-sem3/`](MathInMind/ru/seminar-sem3/index.md).
 - Chapters [22–26](MathInMind/en/index.md) present the same material as a course text in all three languages, with the lecturer's §-headings and statement numbers.
 - What is left — lectures 85–98 once their material arrives, then chapters 27–29 and read versions of the forecast tickets 71–95 — is in [`GOALS.md`](GOALS.md); [`ISSUES.md`](ISSUES.md) has no open rows for chapters 01–21.
 
