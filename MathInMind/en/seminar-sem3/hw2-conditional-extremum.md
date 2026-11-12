@@ -15,6 +15,8 @@ This page solves problems 2.1–2.3 (HW 2) and 2'.1–2'.3 (the constrained-extr
 
 ## Why the Lagrange method works
 
+> **At the seminar.** On 9 Sep the sufficient condition was stated through the bordered Hessian: [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1), with a table of the signs of the minors. It is handy when the constraint cannot be solved explicitly.
+
 On the set $`M=\{\varphi=0\}`$ not every displacement is allowed, only those tangent to $`M`$: the vectors $`h`$ with $`d\varphi_j(h)=0`$. At an extremum $`f`$ must not change to first order along allowed directions, that is, $`df(h)=0`$ for every tangent $`h`$. This means precisely that $`\nabla f`$ is orthogonal to the tangent space, i.e. lies in the span of the normals $`\nabla\varphi_j`$. The independence of the gradients is needed so that the tangent space really describes $`M`$ near the point ([implicit mapping theorem](../lectures-2025-26/lecture-65-66.md#thm-6-6-1)).
 
 Three consequences used below.
@@ -23,7 +25,10 @@ Three consequences used below.
 - The Lagrange condition is **necessary**. A stationary point still has to be examined: by the second differential, by a direct estimate, or by compactness (a continuous function on a compact set attains its greatest and least values, and those points must be among the stationary ones).
 - If $`d^2L`$ is degenerate on the tangent space, the sufficient condition is silent and one has to look at the function itself (problems 2.3 and 2'.3).
 
+<a id="p-2-1"></a>
 ## Problem 2.1
+
+> **At the seminar.** [Example 4.2](notes-1-taylor-extremum.md#ex-4-2) (18 Sep): the same problem with the bordered Hessian, $`\det\widetilde H=6(1-x-y)`$.
 
 **Statement.** $`f(x,y)=x^3+y^3-3xy`$, $`M=\{x=y\}`$. Find all points of constrained local extremum.
 
@@ -39,6 +44,7 @@ $`g'(x)=6x^2-6x=6x(x-1)`$, zeros: $`x=0`$ and $`x=1`$. $`g''(x)=12x-6`$: $`g''(0
 
 **Why it works.** Both extrema are local, not global: $`g(x)\to\pm\infty`$ as $`x\to\pm\infty`$. It is instructive to compare with the unconstrained problem: $`(1;1)`$ is an unconstrained minimum of $`f`$, so it remains a minimum on any curve through it. But $`(0;0)`$ is a saddle of $`f`$ in the plane (the Hessian $`\begin{pmatrix}0&-3\\-3&0\end{pmatrix}`$ is indefinite), while along the line $`x=y`$ the form $`-6\,dx\,dy`$ equals $`-6\,dx^2<0`$: restricting to $`M`$ "selects" the direction along which the saddle looks like a maximum. A constrained extremum can appear where there is no unconstrained one.
 
+<a id="p-2-2"></a>
 ## Problem 2.2
 
 **Statement.** $`a>0`$, $`f(x,y,z)=e^{x+2y+3z}`$, $`M=\{x^2+2y^2+3z^2=a\}`$. Find all points of constrained local extremum.
@@ -61,7 +67,10 @@ $`M`$ is an ellipsoid; it is closed and bounded, hence compact; $`f`$ is continu
 ```
 with equality only when $`x=y=z`$. Strictness is visible from here too.
 
+<a id="p-2-3"></a>
 ## Problem 2.3
+
+> **At the seminar.** [Example 5.1](notes-1-taylor-extremum.md#ex-5-1) (20 Sep) solves the $`y^2`$ variant: a minimum at $`(0;0;0;0)`$, a maximum at $`(-\frac23;-\frac23;-\frac43;-\frac43)`$ and two saddle points.
 
 **Statement.** $`f(x,y,z,t)=x^3+y^3+z^3+2t^2`$, $`M=\{x=y,\ z=t\}`$. Find all points of constrained local extremum.
 
@@ -81,8 +90,9 @@ which is positive for $`x>0`$ and negative for $`x<0`$. So in every neighbourhoo
 
 **Why it works.** In the variable $`z`$ everything is "fine": $`z^3+2z^2`$ has a minimum at $`z=0`$ and a maximum at $`z=-\frac43`$. The term $`2x^3`$ spoils it: the stationary point of a cube is an inflection. An extremum of a function of several variables requires an extremum along every direction at once; one "bad" direction is enough. This is an example showing that the Lagrange equations do not guarantee an extremum.
 
-> **Remark on a variant of the statement.** In the shortened HW 3 file the same problem is typeset with $`y^2`$ instead of $`y^3`$: $`f=x^3+y^2+z^3+2t^2`$. Then $`g(x,z)=(x^3+x^2)+(z^3+2z^2)`$, the stationary points are $`x\in\{0,-\tfrac23\}`$, $`z\in\{0,-\tfrac43\}`$, the Hessian is $`\operatorname{diag}(6x+2,\ 6z+4)`$, and the answer is different: $`(0;0;0;0)`$ is a strict constrained local minimum ($`f=0`$), $`(-\tfrac23;-\tfrac23;-\tfrac43;-\tfrac43)`$ is a strict constrained local maximum ($`f=\tfrac4{27}+\tfrac{32}{27}=\tfrac43`$), and $`(0;0;-\tfrac43;-\tfrac43)`$ and $`(-\tfrac23;-\tfrac23;0;0)`$ are saddles. The solution above follows HW 2, which has $`y^3`$.
+> **Remark on a variant of the statement.** In the shortened HW 3 file the same problem is typeset with $`y^2`$ instead of $`y^3`$: $`f=x^3+y^2+z^3+2t^2`$. Then $`g(x,z)=(x^3+x^2)+(z^3+2z^2)`$, the stationary points are $`x\in\{0,-\tfrac23\}`$, $`z\in\{0,-\tfrac43\}`$, the Hessian is $`\operatorname{diag}(6x+2,\ 6z+4)`$, and the answer is different: $`(0;0;0;0)`$ is a strict constrained local minimum ($`f=0`$), $`(-\tfrac23;-\tfrac23;-\tfrac43;-\tfrac43)`$ is a strict constrained local maximum ($`f=\tfrac4{27}+\tfrac{32}{27}=\tfrac43`$), and $`(0;0;-\tfrac43;-\tfrac43)`$ and $`(-\tfrac23;-\tfrac23;0;0)`$ are saddles. The solution above follows HW 2, which has $`y^3`$. The seminar on 20 Sep worked out exactly the $`y^2`$ variant ([Example 5.1](notes-1-taylor-extremum.md#ex-5-1)), so the $`y^3`$ in HW 2 may be a typo; worth checking with the teacher.
 
+<a id="p-2p-1"></a>
 ## Problem 2'.1
 
 **Statement.** $`f=xyz`$, $`M=\{x^2+y^2+z^2=1,\ x+y-z=0\}`$. Find all points of constrained extremum and the extremal values.
@@ -119,6 +129,7 @@ f=-xyw=-\frac{\cos3\varphi}{3\sqrt6}.
 ```
 On the circle $`f`$ is just $`\cos3\varphi`$ up to a factor: three maxima and three minima alternate every $`60^\circ`$, and there can be no other extrema. Opposite points give opposite values because $`f`$ is odd and $`M`$ is symmetric about the origin.
 
+<a id="p-2p-2"></a>
 ## Problem 2'.2
 
 **Statement.** $`n,m\in\mathbb N`$, $`a>0`$, $`f_m(x)=\sum_{k=1}^nx_k^m`$, $`M=\{\sum_{k=1}^nx_k=a\}`$. Find all points of constrained extremum and the extremal values.
@@ -163,6 +174,7 @@ So for odd $`m\ge3`$ the only extremum point is $`P=(\frac an,\dots,\frac an)`$,
 
 Is the minimum global for odd $`m`$? For $`n=2`$ — yes: $`f_m(a-T,T)=(a-T)^m+T^m`$ is a polynomial of even degree $`m-1`$ with leading coefficient $`ma>0`$; it is bounded below and has the single stationary point $`T=\frac a2`$. For $`n\ge3`$ — no: at the points $`(T,T,a-2T,0,\dots,0)`$ the value $`2T^m+(a-2T)^m`$ behaves like $`(2-2^m)T^m\to-\infty`$ as $`T\to+\infty`$. For odd $`m\ge3`$ and $`n\ge2`$, $`f_m`$ is never bounded above.
 
+<a id="p-2p-3"></a>
 ## Problem 2'.3
 
 **Statement.** $`n\in\mathbb N`$, $`m_k\in\mathbb N`$, $`m_k\ge2`$, $`a>0`$, $`f(x)=\prod_{k=1}^nx_k^{m_k}`$, $`M=\{\sum_{k=1}^nx_k=a\}`$. Find all points of constrained extremum and the extremal values.

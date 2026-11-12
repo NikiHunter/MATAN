@@ -96,6 +96,9 @@ Sentido: si $x\in\ell_p$ e $y\in\ell_{p'}$, entonces $xy\in\ell_1$. Para $p=p'=2
 
 ## Problema 4.3 (bases de conjuntos)
 
+> [!note] En el seminario
+> Cómo se usa la base $n\to\infty$ en las series: [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#Definición 10.1. Sucesiones finalmente positivas|definición 10.1]] (16 oct.).
+
 **Definición del enunciado.** Una familia $\mathcal B$ de subconjuntos no vacíos de $X$ es una base sobre $X$ si (B1) $\bigcup_{D\in\mathcal B}D=X$ y (B2) para cualesquiera $D_1,D_2\in\mathcal B$ existe $D_3\in\mathcal B$ con $D_3\subset D_1\cap D_2$.
 
 Todas las familias siguientes son **encajadas**: de dos elementos cualesquiera, uno está contenido en el otro. Entonces (B2) se cumple automáticamente: como $D_3$ sirve el menor de los dos, que es igual a $D_1\cap D_2$. Así que en cada caso hay que comprobar tres cosas: que los elementos no son vacíos, que la familia es encajada, y (B1).
@@ -141,6 +144,9 @@ porque para $r>0$ en $A_{3,r}$ no hay números $x\le0$.
 
 ## Problema 4.4
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-4-examples-tests#^rem-14-2|Observación 14.2]] (11 nov.).
+
 **Enunciado.** Deducir el criterio de d'Alembert (problema 3.7) del criterio de Raabe (problema 3.9).
 
 **Demostración.** Sea $a_n>0$ para $n>N_0$.
@@ -162,6 +168,8 @@ para $n>N_2$. Se cumple la condición 2) del criterio de Raabe: la serie diverge
 ## Problema 4.5$^{**}$
 
 **Enunciado.** Dar un ejemplo de serie convergente para la que el conjunto $\bigl\{k:\ 1<\frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}$ sea numerable.
+
+^p-4-5
 
 **Solución.** Definimos los términos por parejas: para $m\in\mathbb N$
 $$
@@ -189,6 +197,9 @@ La exigencia adicional $1<\frac{a_k}{a_{k+1}}$ excluye ejemplos baratos como 3.8
 
 ## Problema 4.6 (formas límite de los criterios)
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-4-examples-tests#^prop-14-3|Proposición 14.3]] (11 nov.) y el resumen [[es/seminar-sem3/notes-4-examples-tests#Cómo se comparan los criterios|cómo se comparan los criterios]].
+
 **Enunciado.** $a_k>0$ para $k\ge N_0$; $C_k=\sqrt[k]{a_k}$, $D_k=\dfrac{a_k}{a_{k+1}}$, $R_k=k\Bigl(\dfrac{a_k}{a_{k+1}}-1\Bigr)$. Demostrar seis afirmaciones.
 
 El recurso común: si $u_k\to L$ y $L<c$, entonces $u_k<c$ para todo $k$ suficientemente grande (definición de límite con $\varepsilon=c-L$); análogamente si $L>c$. Un límite da una desigualdad «a partir de cierto índice»: justo lo que exigen los criterios en forma no límite.
@@ -210,6 +221,9 @@ El recurso común: si $u_k\to L$ y $L<c$, entonces $u_k<c$ para todo $k$ suficie
 Cuidado con el sentido: aquí $D_k=\frac{a_k}{a_{k+1}}$ es el cociente del término anterior entre el siguiente, el inverso del habitual $\frac{a_{k+1}}{a_k}$. Por eso $D_k\to L<1$ significa que los términos **crecen** y la serie diverge, y $L>1$ significa convergencia; para $C_k$ es al revés. La restricción $L\ge0$ en los apartados 3) y 5) del enunciado no es esencial: la demostración solo usa $L<1$.
 
 ## Problema 4.7
+
+> [!note] En el seminario
+> El apartado 3) es el [[es/seminar-sem3/notes-4-examples-tests#^ex-14-1|ejemplo 14.1]] (11 nov.).
 
 **1) $a_k=\dfrac{\prod_{m=1}^k(2025+m)}{\prod_{m=1}^k(2m-1)}$: converge.**
 
@@ -245,6 +259,9 @@ El numerador $k^{1/k}\ge1$. El denominador: de $1+t\le e^t$ se obtiene $\bigl(1+
 
 ## Problema 4.8
 
+> [!note] En el seminario
+> Las dos series se resolvieron el 30 oct.: $a_k$ en el [[es/seminar-sem3/notes-4-examples-tests#^ex-13-2|ejemplo 13.2]], $b_k$ en el [[es/seminar-sem3/notes-4-examples-tests#^ex-13-1|ejemplo 13.1]].
+
 **La serie $a_k=\dfrac{\sqrt{k+1}-\sqrt{k-1}}{k^\alpha}$: converge para $\alpha>\frac12$, diverge para $\alpha\le\frac12$.**
 
 Multiplicamos y dividimos por el conjugado:
@@ -279,6 +296,9 @@ Por la forma no límite 3.7, 2) la serie diverge: los términos crecen, $b_k\ge 
 **Respuesta.** $\sum a_k$ converge para $\alpha>\frac12$ (con cualquier $\beta$), $\sum b_k$ converge para $\beta<e$ (con cualquier $\alpha$).
 
 ## Problema 4.9
+
+> [!note] En el seminario
+> Una serie del mismo tipo que $b_k$ es el ejemplo tras el [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^cor-11-1|corolario 11.1]] (21 oct.).
 
 En las cuatro series los términos son positivos y $D_k=\frac{a_k}{a_{k+1}}\to1$, con $D_k>1$ para todo $k$. Por tanto **el criterio de d'Alembert no es aplicable**: la condición de divergencia $D_k\le1$ no se cumple para ningún $k$, y la de convergencia $D_k\ge1+\beta$ con $\beta>0$ constante falla para $k$ grande (si no, el límite sería al menos $1+\beta$). Funciona Raabe.
 

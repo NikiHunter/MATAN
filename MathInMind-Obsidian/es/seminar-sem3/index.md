@@ -1,9 +1,9 @@
 ---
-title: "Seminario NM-204, semestre 3 — soluciones de las tareas"
+title: "Seminario NM-204, semestre 3 — soluciones de las tareas y apuntes"
 lang: es
 tags: [mathinmind/es, mathinmind/other]
 ---
-# Seminario NM-204, semestre 3: soluciones de las tareas
+# Seminario NM-204, semestre 3: soluciones de las tareas y apuntes de los seminarios
 
 [[ru/seminar-sem3/index|Русский]] · [[en/seminar-sem3/index|English]] · **Español**
 
@@ -21,6 +21,33 @@ Los problemas pasan de una tarea a la siguiente con los mismos números, así qu
 | Tarea 4 | [[es/seminar-sem3/hw4-series-inequalities-bases\|Series, desigualdades, bases]] | 4.1–4.12 | Hölder, bases, criterios en forma límite, criterio integral, Leibniz |
 
 **Control 1.** [[es/seminar-sem3/test1-guide|Cómo prepararse]]: la estructura probable, métodos para cada ejercicio, errores típicos y un plan de tres días; [[es/seminar-sem3/test1-variants|variantes de práctica]]: tres variantes con el formato 1.1, 1.2, 2.1, 2.2, 3, 4 y sus soluciones.
+
+## Apuntes de los seminarios
+
+Registros de las pizarras del 4 de septiembre al 11 de noviembre de 2026, reelaborados a partir de la transcripción OCR de la carpeta [`sem3_notes`](https://github.com/NikiHunter/matan/blob/main/sem3_notes/README.md) (en ruso). Los números de los enunciados se conservan como en la pizarra, los razonamientos están reescritos con más claridad, los errores de reconocimiento están corregidos y enumerados al final de cada parte, y cada enunciado enlaza con su problema de la tarea. En las soluciones de las tareas esos problemas llevan la nota «En el seminario» con el enlace de vuelta.
+
+| Parte | Fechas | Contenido |
+|---|---|---|
+| [[es/seminar-sem3/notes-1-taylor-extremum\|1. Fórmula de Taylor y extremos condicionados]] | 4–20 sep. | Taylor en $\mathbb R^n$, el teorema de la hessiana orlada con tabla de signos, problemas 1.1, 1.4, 2.1, 2.3 |
+| [[es/seminar-sem3/notes-2-series-basics\|2. Fundamentos de series]] | 2–7 oct. | convergencia, criterio de Cauchy, series no negativas, comparación, criterio de la raíz, comparación generalizada |
+| [[es/seminar-sem3/notes-3-kummer-dalembert-raabe\|3. Criterios de Kummer, d'Alembert y Raabe]] | 16–28 oct. | Kummer y sus casos particulares, por qué no basta «para infinitos $n$», series $\sum\frac{c_k}{k^d}$ |
+| [[es/seminar-sem3/notes-4-examples-tests\|4. Ejemplos y comparación de criterios]] | 28 oct. – 11 nov. | sumas de senos y cosenos, problemas 4.4, 4.6–4.8, qué criterio es más fuerte |
+
+**Qué seminario corresponde a cada problema.**
+
+| Fecha | Qué se resolvió | Tareas |
+|---|---|---|
+| 4 sep. | Taylor para $x^3+y^3+z^3-3xyz$, definición de extremo condicionado | [[es/seminar-sem3/hw1-taylor#Problema 1.1\|1.1]] |
+| 9 sep. | el teorema sobre extremos condicionados (hessiana orlada) | toda la [[es/seminar-sem3/hw2-conditional-extremum\|tarea 2]] |
+| 18 sep. | Taylor para $x^2\sin(xy)e^{y+z}$; $x^3+y^3-3xy$ sobre una recta | [[es/seminar-sem3/hw1-taylor#Problema 1.4\|1.4]], [[es/seminar-sem3/hw2-conditional-extremum#Problema 2.1\|2.1]] |
+| 20 sep. | un extremo en $\mathbb R^4$ con dos ligaduras | [[es/seminar-sem3/hw2-conditional-extremum#Problema 2.3\|2.3]], variante con $y^2$ |
+| 2 oct., 3 oct. | condición necesaria, series no negativas, criterio de comparación | (F1)–(F3), [[es/seminar-sem3/hw3-numerical-series#Problema 3.1\|3.1]], [[es/seminar-sem3/hw3-numerical-series#Problema 3.5\|3.5]] |
+| 7 oct. | $\sum\sin(kx_0)$, criterio de Cauchy, comparación generalizada | [[es/seminar-sem3/hw3-numerical-series#Problema 3.3\|3.3]], [[es/seminar-sem3/hw3-numerical-series#Problema 3.4 (criterio de comparación generalizado)\|3.4]] |
+| 16 oct. | $\sum\frac1{k!}$, Kummer, d'Alembert, la serie de $2^{-k}$ y $3^{-k}$ | [[es/seminar-sem3/hw3-numerical-series#Problema 3.5\|3.5]]–[[es/seminar-sem3/hw3-numerical-series#Problema 3.8\|3.8]] |
+| 21 oct. | criterio de Raabe, la condición «para infinitos $n$» | [[es/seminar-sem3/hw3-numerical-series#Problema 3.9 (criterio de Raabe)\|3.9]], [[es/seminar-sem3/hw3-numerical-series#^p-3-10\|3.10]] |
+| 28 oct. | $\sum\frac{c_k}{k^d}$, sumas de senos acotadas | [[es/seminar-sem3/hw3-numerical-series#^p-3-11\|3.11]], [[es/seminar-sem3/hw3-numerical-series#Problema 3.2\|3.2]] |
+| 30 oct. | $\sum\frac{\beta^kk!}{k^k}$, $\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}$, sumas de cosenos | [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.8\|4.8]], [[es/seminar-sem3/hw3-numerical-series#Problema 3.3\|3.3]] |
+| 11 nov. | una serie con $c_k\to1$, Raabe ⟹ d'Alembert, formas límite | [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.7\|4.7]], [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.4\|4.4]], [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.6 (formas límite de los criterios)\|4.6]] |
 
 ## Respuestas en una página
 
@@ -59,7 +86,7 @@ Los problemas pasan de una tarea a la siguiente con los mismos números, así qu
 ## Qué conviene aclarar con el profesor
 
 1. **Problema 4.3, familias $\mathcal M_3$ y $\mathcal M_5$.** Con el parámetro $r\in(0;+\infty)$ sus uniones son $\mathbb R\setminus\{0\}$ y $(0;+\infty)$, no $\mathbb R$, de modo que la primera condición de la definición de base sobre $\mathbb R$ literalmente no se cumple. En la solución se demuestra lo que es cierto y se indica cómo corregir el enunciado.
-2. **Problema 2.3.** En la tarea 2 figura $y^3$; en el archivo abreviado de la tarea 3, $y^2$. Las respuestas difieren; están resueltas ambas variantes, con $y^3$ como principal.
+2. **Problema 2.3.** En la tarea 2 figura $y^3$; en el archivo abreviado de la tarea 3, $y^2$. Las respuestas difieren; están resueltas ambas variantes, con $y^3$ como principal. En el seminario del 20 sep. se resolvió precisamente la variante con $y^2$ ([[es/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|ejemplo 5.1]]), así que el $y^3$ de la tarea 2 puede ser una errata.
 3. **Problema 2'.2, la indicación.** «El caso trivial $k=1$» se ha leído como $m=1$ ($k$ es el índice de sumación en el enunciado).
 
 ## Cómo encajan las tareas

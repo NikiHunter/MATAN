@@ -1,8 +1,8 @@
 ---
-title: "Seminar NM-204, semester 3 — homework solutions"
+title: "Seminar NM-204, semester 3 — homework solutions and notes"
 lang: en
 ---
-# Seminar NM-204, semester 3: homework solutions
+# Seminar NM-204, semester 3: homework solutions and seminar notes
 
 [Русский](../../ru/seminar-sem3/index.md) · **English** · [Español](../../es/seminar-sem3/index.md)
 
@@ -20,6 +20,34 @@ Problems are carried over from one assignment to the next under the same numbers
 | HW 4 | [Series, inequalities, bases](hw4-series-inequalities-bases.md) | 4.1–4.12 | Hölder, bases, limit tests, integral test, Leibniz |
 
 **Test 1.** [How to prepare](test1-guide.md) — the likely structure, methods for each task, typical mistakes and a three-day plan; [practice variants](test1-variants.md) — three variants in the format 1.1, 1.2, 2.1, 2.2, 3, 4 with solutions.
+
+<a id="seminar-notes"></a>
+## Seminar notes
+
+Records of the boards from 4 September to 11 November 2026, reworked from the OCR transcription in [`sem3_notes`](../../../sem3_notes/README.md) (in Russian). Statement numbers are kept as on the board, the arguments are rewritten more clearly, recognition errors are corrected and listed at the end of each part, and every statement links to its homework problem. In the homework solutions such problems carry an "At the seminar" note pointing back.
+
+| Part | Dates | What is inside |
+|---|---|---|
+| [1. Taylor's formula and conditional extrema](notes-1-taylor-extremum.md) | 4–20 Sep | Taylor in $`\mathbb R^n`$, the bordered-Hessian theorem with a sign table, Problems 1.1, 1.4, 2.1, 2.3 |
+| [2. Basics of series](notes-2-series-basics.md) | 2–7 Oct | convergence, Cauchy's criterion, non-negative series, comparison, Cauchy's root test, generalised comparison |
+| [3. Kummer's, d'Alembert's and Raabe's tests](notes-3-kummer-dalembert-raabe.md) | 16–28 Oct | Kummer and its special cases, why "for infinitely many $`n`$" is not enough, series $`\sum\frac{c_k}{k^d}`$ |
+| [4. Examples and comparing the tests](notes-4-examples-tests.md) | 28 Oct – 11 Nov | sums of sines and cosines, Problems 4.4, 4.6–4.8, which test is stronger |
+
+**Which seminar goes with which problem.**
+
+| Date | What was worked out | Homework |
+|---|---|---|
+| 4 Sep | Taylor for $`x^3+y^3+z^3-3xyz`$, definition of a conditional extremum | [1.1](hw1-taylor.md#p-1-1) |
+| 9 Sep | the theorem on conditional extrema (bordered Hessian) | all of [HW 2](hw2-conditional-extremum.md) |
+| 18 Sep | Taylor for $`x^2\sin(xy)e^{y+z}`$; $`x^3+y^3-3xy`$ on a line | [1.4](hw1-taylor.md#p-1-4), [2.1](hw2-conditional-extremum.md#p-2-1) |
+| 20 Sep | an extremum in $`\mathbb R^4`$ with two constraints | [2.3](hw2-conditional-extremum.md#p-2-3), the $`y^2`$ variant |
+| 2 Oct, 3 Oct | necessary condition, non-negative series, comparison test | (F1)–(F3), [3.1](hw3-numerical-series.md#p-3-1), [3.5](hw3-numerical-series.md#p-3-5) |
+| 7 Oct | $`\sum\sin(kx_0)`$, Cauchy's test, generalised comparison | [3.3](hw3-numerical-series.md#p-3-3), [3.4](hw3-numerical-series.md#p-3-4) |
+| 16 Oct | $`\sum\frac1{k!}`$, Kummer, d'Alembert, the series of $`2^{-k}`$ and $`3^{-k}`$ | [3.5](hw3-numerical-series.md#p-3-5)–[3.8](hw3-numerical-series.md#p-3-8) |
+| 21 Oct | Raabe's test, the condition "for infinitely many $`n`$" | [3.9](hw3-numerical-series.md#p-3-9), [3.10](hw3-numerical-series.md#p-3-10) |
+| 28 Oct | $`\sum\frac{c_k}{k^d}`$, bounded sums of sines | [3.11](hw3-numerical-series.md#p-3-11), [3.2](hw3-numerical-series.md#p-3-2) |
+| 30 Oct | $`\sum\frac{\beta^kk!}{k^k}`$, $`\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}`$, sums of cosines | [4.8](hw4-series-inequalities-bases.md#p-4-8), [3.3](hw3-numerical-series.md#p-3-3) |
+| 11 Nov | a series with $`c_k\to1`$, Raabe ⟹ d'Alembert, limit forms | [4.7](hw4-series-inequalities-bases.md#p-4-7), [4.4](hw4-series-inequalities-bases.md#p-4-4), [4.6](hw4-series-inequalities-bases.md#p-4-6) |
 
 ## Answers on one page
 
@@ -58,7 +86,7 @@ Problems are carried over from one assignment to the next under the same numbers
 ## What to clarify with the instructor
 
 1. **Problem 4.3, families $`\mathcal M_3`$ and $`\mathcal M_5`$.** With the parameter $`r\in(0;+\infty)`$ their unions are $`\mathbb R\setminus\{0\}`$ and $`(0;+\infty)`$, not $`\mathbb R`$, so the first condition in the definition of a base on $`\mathbb R`$ literally fails. The solution proves what is true and says how to repair the statement.
-2. **Problem 2.3.** HW 2 has $`y^3`$, the shortened HW 3 file has $`y^2`$. The answers differ; both variants are solved, with $`y^3`$ as the main one.
+2. **Problem 2.3.** HW 2 has $`y^3`$, the shortened HW 3 file has $`y^2`$. The answers differ; both variants are solved, with $`y^3`$ as the main one. The seminar on 20 Sep worked out exactly the $`y^2`$ variant ([Example 5.1](notes-1-taylor-extremum.md#ex-5-1)), so the $`y^3`$ in HW 2 may be a typo.
 3. **Problem 2'.2, the hint.** "The trivial case $`k=1`$" is read as $`m=1`$ ($`k`$ is the summation index in the statement).
 
 ## How the assignments fit together

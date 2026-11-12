@@ -17,6 +17,9 @@ This page solves problems 2.1–2.3 (HW 2) and 2'.1–2'.3 (the constrained-extr
 
 ## Why the Lagrange method works
 
+> [!note] At the seminar
+> On 9 Sep the sufficient condition was stated through the bordered Hessian: [[en/seminar-sem3/notes-1-taylor-extremum#Theorem 3.1. Conditional extrema and the bordered Hessian|Theorem 3.1]], with a table of the signs of the minors. It is handy when the constraint cannot be solved explicitly.
+
 On the set $M=\{\varphi=0\}$ not every displacement is allowed, only those tangent to $M$: the vectors $h$ with $d\varphi_j(h)=0$. At an extremum $f$ must not change to first order along allowed directions, that is, $df(h)=0$ for every tangent $h$. This means precisely that $\nabla f$ is orthogonal to the tangent space, i.e. lies in the span of the normals $\nabla\varphi_j$. The independence of the gradients is needed so that the tangent space really describes $M$ near the point ([[en/lectures-2025-26/lecture-65-66#^thm-6-6-1|implicit mapping theorem]]).
 
 Three consequences used below.
@@ -26,6 +29,9 @@ Three consequences used below.
 - If $d^2L$ is degenerate on the tangent space, the sufficient condition is silent and one has to look at the function itself (problems 2.3 and 2'.3).
 
 ## Problem 2.1
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-1-taylor-extremum#^ex-4-2|Example 4.2]] (18 Sep): the same problem with the bordered Hessian, $\det\widetilde H=6(1-x-y)$.
 
 **Statement.** $f(x,y)=x^3+y^3-3xy$, $M=\{x=y\}$. Find all points of constrained local extremum.
 
@@ -65,6 +71,9 @@ with equality only when $x=y=z$. Strictness is visible from here too.
 
 ## Problem 2.3
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Example 5.1]] (20 Sep) solves the $y^2$ variant: a minimum at $(0;0;0;0)$, a maximum at $(-\frac23;-\frac23;-\frac43;-\frac43)$ and two saddle points.
+
 **Statement.** $f(x,y,z,t)=x^3+y^3+z^3+2t^2$, $M=\{x=y,\ z=t\}$. Find all points of constrained local extremum.
 
 **Solution.** $M$ is a two-dimensional plane; parametrise it as $(x,x,z,z)$, $(x,z)\in\mathbb R^2$. The problem is equivalent to finding the local extrema of
@@ -84,7 +93,7 @@ which is positive for $x>0$ and negative for $x<0$. So in every neighbourhood of
 **Why it works.** In the variable $z$ everything is "fine": $z^3+2z^2$ has a minimum at $z=0$ and a maximum at $z=-\frac43$. The term $2x^3$ spoils it: the stationary point of a cube is an inflection. An extremum of a function of several variables requires an extremum along every direction at once; one "bad" direction is enough. This is an example showing that the Lagrange equations do not guarantee an extremum.
 
 > [!remark] Remark on a variant of the statement
-> In the shortened HW 3 file the same problem is typeset with $y^2$ instead of $y^3$: $f=x^3+y^2+z^3+2t^2$. Then $g(x,z)=(x^3+x^2)+(z^3+2z^2)$, the stationary points are $x\in\{0,-\tfrac23\}$, $z\in\{0,-\tfrac43\}$, the Hessian is $\operatorname{diag}(6x+2,\ 6z+4)$, and the answer is different: $(0;0;0;0)$ is a strict constrained local minimum ($f=0$), $(-\tfrac23;-\tfrac23;-\tfrac43;-\tfrac43)$ is a strict constrained local maximum ($f=\tfrac4{27}+\tfrac{32}{27}=\tfrac43$), and $(0;0;-\tfrac43;-\tfrac43)$ and $(-\tfrac23;-\tfrac23;0;0)$ are saddles. The solution above follows HW 2, which has $y^3$.
+> In the shortened HW 3 file the same problem is typeset with $y^2$ instead of $y^3$: $f=x^3+y^2+z^3+2t^2$. Then $g(x,z)=(x^3+x^2)+(z^3+2z^2)$, the stationary points are $x\in\{0,-\tfrac23\}$, $z\in\{0,-\tfrac43\}$, the Hessian is $\operatorname{diag}(6x+2,\ 6z+4)$, and the answer is different: $(0;0;0;0)$ is a strict constrained local minimum ($f=0$), $(-\tfrac23;-\tfrac23;-\tfrac43;-\tfrac43)$ is a strict constrained local maximum ($f=\tfrac4{27}+\tfrac{32}{27}=\tfrac43$), and $(0;0;-\tfrac43;-\tfrac43)$ and $(-\tfrac23;-\tfrac23;0;0)$ are saddles. The solution above follows HW 2, which has $y^3$. The seminar on 20 Sep worked out exactly the $y^2$ variant ([[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Example 5.1]]), so the $y^3$ in HW 2 may be a typo; worth checking with the teacher.
 
 ## Problem 2'.1
 

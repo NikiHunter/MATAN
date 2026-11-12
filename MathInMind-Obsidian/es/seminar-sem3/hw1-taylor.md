@@ -34,6 +34,9 @@ De aquí salen dos conclusiones prácticas.
 
 ## Problema 1.1
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-1-taylor-extremum#^ex-2-2|Ejemplo 2.2]] (4 sep.): el mismo problema; en la pizarra se resuelve el punto $(1;-1;2)$.
+
 **Enunciado.** $f(x,y,z)=x^3+y^3+z^3-3xyz$. Desarrollar por la fórmula de Taylor en los puntos $(1;1;1)$ y $(1;-1;2)$.
 
 **Solución.** Derivadas parciales:
@@ -163,6 +166,9 @@ Es la misma suma $\frac1{4!}\sum_{|\alpha|=4}\frac{4!}{\alpha!}\partial^\alpha f
 **Comprobación.** $h=(0,0,h_3)$: $f=e^{(3+h_3)^2}=e^9e^{6h_3+h_3^2}=e^9\bigl(1+6h_3+19h_3^2+42h_3^3+\dots\bigr)$, ya que $\frac{36}{2}+1=19$ y $\frac{216}{6}+6=42$.
 
 ## Problema 1.4
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-1-taylor-extremum#^ex-4-1|Ejemplo 4.1]] (18 sep.): todas las derivadas hasta el orden dos y sus valores en el punto, reunidos en una tabla.
 
 **Enunciado.** $f(x,y,z)=x^2\sin(xy)\,e^{y+z}$. Hallar la forma explícita del desarrollo de Taylor hasta grado dos con resto en forma de Lagrange en el punto $a=(-1;\pi;2)$.
 

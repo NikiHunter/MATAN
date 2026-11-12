@@ -11,6 +11,7 @@ hw: 4
 
 This page solves the new problems 4.1–4.12. The "old" problems of this assignment are solved earlier: 1.2 in [HW 1](hw1-taylor.md); 2.2 and 2'.1–2'.3 in [HW 2](hw2-conditional-extremum.md); 3.1–3.3, 3.10, 3.11 in [HW 3](hw3-numerical-series.md). The references (F1)–(F3) are the three facts from the beginning of [HW 3](hw3-numerical-series.md): the necessary condition for convergence, the bounded-partial-sums criterion for non-negative series, and the independence of convergence from finitely many terms.
 
+<a id="p-4-1"></a>
 ## Problem 4.1
 
 **Statement.** $`p>1`$, $`p'=\frac p{p-1}`$, $`b_k\ge0`$, $`\sum_{k=1}^nb_k^{p'}=1`$. Find the points of constrained extremum of $`f(x)=\sum_{k=1}^nb_kx_k`$ on the set $`M=\{x:\ x_k\ge0,\ \sum_{k=1}^nx_k^p=1\}`$.
@@ -61,6 +62,7 @@ If all $`b_k>0`$, the right-hand side is positive for small $`x_k`$ (not all zer
 
 The condition $`\sum b_k^{p'}=1`$ is a normalisation. It is what makes the maximum equal exactly $`1`$; this is Hölder's inequality for normalised tuples (problem 4.2).
 
+<a id="p-4-2"></a>
 ## Problem 4.2 (Hölder's inequality)
 
 **Statement.** $`p>1`$, $`p'=\frac p{p-1}`$, all numbers are non-negative. Prove:
@@ -93,7 +95,10 @@ The series $`\sum x_ky_k`$ is non-negative and its partial sums are bounded abov
 
 Meaning: if $`x\in\ell_p`$ and $`y\in\ell_{p'}`$, then $`xy\in\ell_1`$. For $`p=p'=2`$ this is the Cauchy–Schwarz inequality. Equality in 1) holds if and only if the tuples $`(a_k^p)`$ and $`(b_k^{p'})`$ are proportional — the equality condition from 4.1.
 
+<a id="p-4-3"></a>
 ## Problem 4.3 (bases of sets)
+
+> **At the seminar.** How the base $`n\to\infty`$ is used for series: [Definition 10.1](notes-3-kummer-dalembert-raabe.md#def-10-1) (16 Oct).
 
 **Definition from the statement.** A family $`\mathcal B`$ of non-empty subsets of $`X`$ is a base on $`X`$ if (B1) $`\bigcup_{D\in\mathcal B}D=X`$ and (B2) for any $`D_1,D_2\in\mathcal B`$ there is $`D_3\in\mathcal B`$ with $`D_3\subset D_1\cap D_2`$.
 
@@ -137,7 +142,10 @@ because for $`r>0`$ the set $`A_{3,r}`$ contains no numbers $`x\le0`$.
 
 **Why it works.** A base is a way of saying "far enough" or "close enough" in one language for all kinds of limits. An element of a base is a "neighbourhood" of where we are heading: $`D_k`$ is "all indices from $`k`$ on" ($`n\to\infty`$); $`A_{1,r}`$ is $`x\to\infty`$; $`A_{3,r}`$ is $`x\to+\infty`$; $`A_{4,r}`$ is $`x\to x_0`$ (with the point $`x_0`$ itself); $`A_{5,r}`$ and $`A_{6,r}`$ are $`x\to x_0+0`$ and $`x\to x_0-0`$. Condition (B2) is needed so that "$`P`$ holds on $`D_1`$" and "$`Q`$ holds on $`D_2`$" imply "$`P`$ and $`Q`$ hold on some $`D_3`$" — uniqueness of the limit and the arithmetic of limits rest on this. Non-emptiness of the elements is needed for the limit to be unique (on the empty set anything is true).
 
+<a id="p-4-4"></a>
 ## Problem 4.4
+
+> **At the seminar.** [Remark 14.2](notes-4-examples-tests.md#rem-14-2) (11 Nov).
 
 **Statement.** Derive d'Alembert's test (problem 3.7) from Raabe's test (problem 3.9).
 
@@ -157,6 +165,7 @@ for $`n>N_2`$. Condition 2) of Raabe's test holds — the series diverges. $`\bl
 
 **Why it works.** Raabe's scale is finer: d'Alembert requires the ratio to be separated from one by a constant gap $`\beta`$, while Raabe is content with a gap of order $`\frac{1+\gamma}n`$, which itself tends to zero. A constant gap sooner or later exceeds any $`\frac cn`$, so everything d'Alembert sees, Raabe sees too. The converse is false: for $`a_n=\frac1{n^2}`$ the ratio is $`(1+\frac1n)^2\to1`$, d'Alembert is silent, Raabe gives convergence. Both tests are special cases of Kummer's with $`x_n=1`$ and $`x_n=n`$: the slower $`\sum\frac1{x_n}`$ diverges, the stronger the test.
 
+<a id="p-4-5"></a>
 ## Problem 4.5$`^{**}`$
 
 **Statement.** Give an example of a convergent series for which the set $`\bigl\{k:\ 1<\frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}`$ is countable.
@@ -185,7 +194,10 @@ i.e. $`1<\frac{a_k}{a_{k+1}}\le1+\frac1k`$. So the set contains all odd numbers 
 
 The extra requirement $`1<\frac{a_k}{a_{k+1}}`$ excludes cheap examples like 3.8, where the terms grow on the "bad" steps. Here the terms honestly decrease on the bad steps, but no faster than harmonic ones — and still divergence does not follow from the infinitude of such steps. Upshot: in part 2) of Raabe's test the condition must hold for all indices from some point on.
 
+<a id="p-4-6"></a>
 ## Problem 4.6 (limit forms of the tests)
+
+> **At the seminar.** [Proposition 14.3](notes-4-examples-tests.md#prop-14-3) (11 Nov) and the summary [how the tests compare](notes-4-examples-tests.md#tests-compared).
 
 **Statement.** $`a_k>0`$ for $`k\ge N_0`$; $`C_k=\sqrt[k]{a_k}`$, $`D_k=\dfrac{a_k}{a_{k+1}}`$, $`R_k=k\Bigl(\dfrac{a_k}{a_{k+1}}-1\Bigr)`$. Prove six statements.
 
@@ -207,7 +219,10 @@ The common device: if $`u_k\to L`$ and $`L<c`$, then $`u_k<c`$ for all sufficien
 
 Beware of the direction: here $`D_k=\frac{a_k}{a_{k+1}}`$ is the ratio of the previous term to the next one, the reciprocal of the usual $`\frac{a_{k+1}}{a_k}`$. So $`D_k\to L<1`$ means the terms **grow** and the series diverges, and $`L>1`$ means convergence; for $`C_k`$ it is the other way round. The restriction $`L\ge0`$ in parts 3) and 5) of the statement is immaterial: the proof only uses $`L<1`$.
 
+<a id="p-4-7"></a>
 ## Problem 4.7
+
+> **At the seminar.** Part 3) is [Example 14.1](notes-4-examples-tests.md#ex-14-1) (11 Nov).
 
 **1) $`a_k=\dfrac{\prod_{m=1}^k(2025+m)}{\prod_{m=1}^k(2m-1)}`$ — converges.**
 
@@ -241,7 +256,10 @@ The numerator $`k^{1/k}\ge1`$. The denominator: from $`1+t\le e^t`$ we get $`\bi
 
 **Answer.** $`\sum a_k`$ and $`\sum b_k`$ converge, $`\sum c_k`$ diverges.
 
+<a id="p-4-8"></a>
 ## Problem 4.8
+
+> **At the seminar.** Both series were worked out on 30 Oct: $`a_k`$ in [Example 13.2](notes-4-examples-tests.md#ex-13-2), $`b_k`$ in [Example 13.1](notes-4-examples-tests.md#ex-13-1).
 
 **The series $`a_k=\dfrac{\sqrt{k+1}-\sqrt{k-1}}{k^\alpha}`$: converges for $`\alpha>\frac12`$, diverges for $`\alpha\le\frac12`$.**
 
@@ -276,7 +294,10 @@ By the pre-limit form 3.7, 2) the series diverges: the terms increase, $`b_k\ge 
 
 **Answer.** $`\sum a_k`$ converges for $`\alpha>\frac12`$ (for any $`\beta`$), $`\sum b_k`$ converges for $`\beta<e`$ (for any $`\alpha`$).
 
+<a id="p-4-9"></a>
 ## Problem 4.9
+
+> **At the seminar.** A series of the same kind as $`b_k`$ is the example after [Corollary 11.1](notes-3-kummer-dalembert-raabe.md#cor-11-1) (21 Oct).
 
 In all four series the terms are positive and $`D_k=\frac{a_k}{a_{k+1}}\to1`$, with $`D_k>1`$ for all $`k`$. Therefore **d'Alembert's test is not applicable**: the divergence condition $`D_k\le1`$ holds for no $`k`$, and the convergence condition $`D_k\ge1+\beta`$ with a constant $`\beta>0`$ fails for large $`k`$ (otherwise the limit would be at least $`1+\beta`$). Raabe's test works.
 
@@ -319,6 +340,7 @@ By 4.6, 6) the series converges. Without a limit: $`\frac3{2k+18}\ge\frac{5/4}{k
 
 D'Alembert's test only distinguishes exponential behaviour ($`a_k\approx q^k`$) and always gives $`D_k\to1`$ on power-law decay.
 
+<a id="p-4-10"></a>
 ## Problem 4.10 (Cauchy's integral test)
 
 **Statement.** $`f\colon[1;+\infty)\to\mathbb R`$; on $`[N_0;+\infty)`$ the function $`f`$ is non-increasing and non-negative; $`f`$ is integrable on every $`[N_0;x]`$. Prove: the series $`\sum_{k=1}^\infty f(k)`$ converges $`\iff`$ the finite limit $`\lim_{x\to+\infty}I_f(x)`$ exists, where $`I_f(x)=\int_{N_0}^xf(y)\,dy`$.
@@ -350,6 +372,7 @@ The partial sums of the non-negative series $`\sum_{k>N_0}f(k)`$ are bounded, it
 
 Where each hypothesis is used: monotonicity — in (2) (without it the values at integer points say nothing about the function in between: $`f(x)=\sin^2(\pi x)`$ gives a zero series and a divergent integral); non-negativity — in the monotonicity of $`I_f`$ and in (F2); integrability — for $`I_f`$ to be defined. The hypotheses are needed only from some $`N_0`$ on, because convergence is a property of the tail. The test turns a question about a series into a question about an integral, which can often be computed explicitly: this is how one gets $`\sum\frac1{k^\alpha}`$ (converges for $`\alpha>1`$) and $`\sum\frac{1}{k\ln^\alpha k}`$ (converges for $`\alpha>1`$).
 
+<a id="p-4-11"></a>
 ## Problem 4.11 (Leibniz's test)
 
 **Statement.** For all $`k`$: $`a_ka_{k+1}<0`$ and $`|a_{k+1}|\le|a_k|`$; $`a_k\to0`$. Prove that $`\sum a_k`$ converges. $`^*`$ Is this true under the condition $`a_ka_{k+1}\le0`$?
@@ -385,6 +408,7 @@ The two subsequences $`(S_{2m})`$ and $`(S_{2m+1})`$, which together exhaust all
 
 The role of the hypotheses: monotonicity of the absolute values gives the nesting, $`a_k\to0`$ gives the shrinking. Without monotonicity the statement is false: the series $`1-\frac12+\frac12-\frac14+\frac13-\frac18+\dots`$ (positive terms $`\frac1m`$, negative $`-\frac1{2^m}`$) alternates, its terms tend to zero, but it diverges, because the positive part is the harmonic series while the negative part converges.
 
+<a id="p-4-12"></a>
 ## Problem 4.12
 
 **Statement.** $`\alpha>0`$. Using problem 4.11, prove the convergence of six series.

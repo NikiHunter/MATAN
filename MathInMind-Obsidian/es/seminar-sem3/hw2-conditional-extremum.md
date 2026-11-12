@@ -17,6 +17,9 @@ Aquí se resuelven los problemas 2.1–2.3 (tarea 2) y 2'.1–2'.3 (la serie sob
 
 ## Por qué funciona el método de Lagrange
 
+> [!note] En el seminario
+> El 9 sep. la condición suficiente se enunció con la matriz hessiana orlada: [[es/seminar-sem3/notes-1-taylor-extremum#Teorema 3.1. Extremos condicionados y la matriz hessiana orlada|teorema 3.1]], con una tabla de signos de los menores. Es cómoda cuando la ligadura no se despeja explícitamente.
+
 Sobre el conjunto $M=\{\varphi=0\}$ no se permiten todos los desplazamientos, solo los tangentes a $M$: los $h$ con $d\varphi_j(h)=0$. En un punto de extremo $f$ no debe cambiar en primer orden a lo largo de las direcciones permitidas, es decir, $df(h)=0$ para todo $h$ tangente. Esto significa justamente que $\nabla f$ es ortogonal al espacio tangente, o sea, que pertenece a la envoltura lineal de las normales $\nabla\varphi_j$. La independencia de los gradientes hace falta para que el espacio tangente describa de verdad a $M$ cerca del punto ([[es/lectures-2025-26/lecture-65-66#^thm-6-6-1|teorema de la aplicación implícita]]).
 
 Tres consecuencias que usamos más abajo.
@@ -26,6 +29,9 @@ Tres consecuencias que usamos más abajo.
 - Si $d^2L$ es degenerada sobre el espacio tangente, la condición suficiente calla y hay que mirar la propia función (problemas 2.3 y 2'.3).
 
 ## Problema 2.1
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-1-taylor-extremum#^ex-4-2|Ejemplo 4.2]] (18 sep.): el mismo problema con la hessiana orlada, $\det\widetilde H=6(1-x-y)$.
 
 **Enunciado.** $f(x,y)=x^3+y^3-3xy$, $M=\{x=y\}$. Hallar todos los puntos de extremo local condicionado.
 
@@ -65,6 +71,9 @@ con igualdad solo cuando $x=y=z$. De aquí se ve también que los extremos son e
 
 ## Problema 2.3
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Ejemplo 5.1]] (20 sep.): se resuelve la variante con $y^2$; mínimo en $(0;0;0;0)$, máximo en $(-\frac23;-\frac23;-\frac43;-\frac43)$ y dos puntos de silla.
+
 **Enunciado.** $f(x,y,z,t)=x^3+y^3+z^3+2t^2$, $M=\{x=y,\ z=t\}$. Hallar todos los puntos de extremo local condicionado.
 
 **Solución.** $M$ es un plano bidimensional; lo parametrizamos como $(x,x,z,z)$, $(x,z)\in\mathbb R^2$. El problema equivale a buscar los extremos locales de
@@ -84,7 +93,7 @@ expresión positiva para $x>0$ y negativa para $x<0$. Así que en todo entorno d
 **Por qué funciona.** En la variable $z$ todo va «bien»: $z^3+2z^2$ tiene un mínimo en $z=0$ y un máximo en $z=-\frac43$. Lo estropea el sumando $2x^3$: el punto estacionario de un cubo es una inflexión. Un extremo de una función de varias variables exige un extremo en todas las direcciones a la vez; basta una dirección «mala». Es un ejemplo de que las igualdades de Lagrange no garantizan un extremo.
 
 > [!remark] Observación sobre una variante del enunciado
-> En el archivo abreviado de la tarea 3 el mismo problema aparece con $y^2$ en lugar de $y^3$: $f=x^3+y^2+z^3+2t^2$. Entonces $g(x,z)=(x^3+x^2)+(z^3+2z^2)$, los puntos estacionarios son $x\in\{0,-\tfrac23\}$, $z\in\{0,-\tfrac43\}$, la hessiana es $\operatorname{diag}(6x+2,\ 6z+4)$, y la respuesta es otra: $(0;0;0;0)$ es un mínimo local condicionado estricto ($f=0$), $(-\tfrac23;-\tfrac23;-\tfrac43;-\tfrac43)$ es un máximo local condicionado estricto ($f=\tfrac4{27}+\tfrac{32}{27}=\tfrac43$), y $(0;0;-\tfrac43;-\tfrac43)$ y $(-\tfrac23;-\tfrac23;0;0)$ son puntos de silla. La solución de arriba sigue la tarea 2, donde figura $y^3$.
+> En el archivo abreviado de la tarea 3 el mismo problema aparece con $y^2$ en lugar de $y^3$: $f=x^3+y^2+z^3+2t^2$. Entonces $g(x,z)=(x^3+x^2)+(z^3+2z^2)$, los puntos estacionarios son $x\in\{0,-\tfrac23\}$, $z\in\{0,-\tfrac43\}$, la hessiana es $\operatorname{diag}(6x+2,\ 6z+4)$, y la respuesta es otra: $(0;0;0;0)$ es un mínimo local condicionado estricto ($f=0$), $(-\tfrac23;-\tfrac23;-\tfrac43;-\tfrac43)$ es un máximo local condicionado estricto ($f=\tfrac4{27}+\tfrac{32}{27}=\tfrac43$), y $(0;0;-\tfrac43;-\tfrac43)$ y $(-\tfrac23;-\tfrac23;0;0)$ son puntos de silla. La solución de arriba sigue la tarea 2, donde figura $y^3$. En el seminario del 20 sep. se resolvió precisamente la variante con $y^2$ ([[es/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|ejemplo 5.1]]), así que el $y^3$ de la tarea 2 puede ser una errata; conviene consultarlo con el profesor.
 
 ## Problema 2'.1
 

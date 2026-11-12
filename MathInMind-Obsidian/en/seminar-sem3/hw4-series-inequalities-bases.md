@@ -96,6 +96,9 @@ Meaning: if $x\in\ell_p$ and $y\in\ell_{p'}$, then $xy\in\ell_1$. For $p=p'=2$ t
 
 ## Problem 4.3 (bases of sets)
 
+> [!note] At the seminar
+> How the base $n\to\infty$ is used for series: [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#Definition 10.1. Eventually positive sequences|Definition 10.1]] (16 Oct).
+
 **Definition from the statement.** A family $\mathcal B$ of non-empty subsets of $X$ is a base on $X$ if (B1) $\bigcup_{D\in\mathcal B}D=X$ and (B2) for any $D_1,D_2\in\mathcal B$ there is $D_3\in\mathcal B$ with $D_3\subset D_1\cap D_2$.
 
 All the families below are **nested**: of any two elements, one is contained in the other. Then (B2) holds automatically: the smaller of the two serves as $D_3$, it equals $D_1\cap D_2$. So in each case three things have to be checked: non-emptiness of the elements, nestedness, and (B1).
@@ -141,6 +144,9 @@ because for $r>0$ the set $A_{3,r}$ contains no numbers $x\le0$.
 
 ## Problem 4.4
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-4-examples-tests#^rem-14-2|Remark 14.2]] (11 Nov).
+
 **Statement.** Derive d'Alembert's test (problem 3.7) from Raabe's test (problem 3.9).
 
 **Proof.** Let $a_n>0$ for $n>N_0$.
@@ -162,6 +168,8 @@ for $n>N_2$. Condition 2) of Raabe's test holds — the series diverges. $\black
 ## Problem 4.5$^{**}$
 
 **Statement.** Give an example of a convergent series for which the set $\bigl\{k:\ 1<\frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}$ is countable.
+
+^p-4-5
 
 **Solution.** Define the terms in pairs: for $m\in\mathbb N$
 $$
@@ -189,6 +197,9 @@ The extra requirement $1<\frac{a_k}{a_{k+1}}$ excludes cheap examples like 3.8, 
 
 ## Problem 4.6 (limit forms of the tests)
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-4-examples-tests#^prop-14-3|Proposition 14.3]] (11 Nov) and the summary [[en/seminar-sem3/notes-4-examples-tests#How the tests compare|how the tests compare]].
+
 **Statement.** $a_k>0$ for $k\ge N_0$; $C_k=\sqrt[k]{a_k}$, $D_k=\dfrac{a_k}{a_{k+1}}$, $R_k=k\Bigl(\dfrac{a_k}{a_{k+1}}-1\Bigr)$. Prove six statements.
 
 The common device: if $u_k\to L$ and $L<c$, then $u_k<c$ for all sufficiently large $k$ (the definition of a limit with $\varepsilon=c-L$); similarly for $L>c$. A limit yields an inequality "from some index on" — exactly what the tests in pre-limit form require.
@@ -210,6 +221,9 @@ The common device: if $u_k\to L$ and $L<c$, then $u_k<c$ for all sufficiently la
 Beware of the direction: here $D_k=\frac{a_k}{a_{k+1}}$ is the ratio of the previous term to the next one, the reciprocal of the usual $\frac{a_{k+1}}{a_k}$. So $D_k\to L<1$ means the terms **grow** and the series diverges, and $L>1$ means convergence; for $C_k$ it is the other way round. The restriction $L\ge0$ in parts 3) and 5) of the statement is immaterial: the proof only uses $L<1$.
 
 ## Problem 4.7
+
+> [!note] At the seminar
+> Part 3) is [[en/seminar-sem3/notes-4-examples-tests#^ex-14-1|Example 14.1]] (11 Nov).
 
 **1) $a_k=\dfrac{\prod_{m=1}^k(2025+m)}{\prod_{m=1}^k(2m-1)}$ — converges.**
 
@@ -245,6 +259,9 @@ The numerator $k^{1/k}\ge1$. The denominator: from $1+t\le e^t$ we get $\bigl(1+
 
 ## Problem 4.8
 
+> [!note] At the seminar
+> Both series were worked out on 30 Oct: $a_k$ in [[en/seminar-sem3/notes-4-examples-tests#^ex-13-2|Example 13.2]], $b_k$ in [[en/seminar-sem3/notes-4-examples-tests#^ex-13-1|Example 13.1]].
+
 **The series $a_k=\dfrac{\sqrt{k+1}-\sqrt{k-1}}{k^\alpha}$: converges for $\alpha>\frac12$, diverges for $\alpha\le\frac12$.**
 
 Multiply and divide by the conjugate:
@@ -279,6 +296,9 @@ By the pre-limit form 3.7, 2) the series diverges: the terms increase, $b_k\ge b
 **Answer.** $\sum a_k$ converges for $\alpha>\frac12$ (for any $\beta$), $\sum b_k$ converges for $\beta<e$ (for any $\alpha$).
 
 ## Problem 4.9
+
+> [!note] At the seminar
+> A series of the same kind as $b_k$ is the example after [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^cor-11-1|Corollary 11.1]] (21 Oct).
 
 In all four series the terms are positive and $D_k=\frac{a_k}{a_{k+1}}\to1$, with $D_k>1$ for all $k$. Therefore **d'Alembert's test is not applicable**: the divergence condition $D_k\le1$ holds for no $k$, and the convergence condition $D_k\ge1+\beta$ with a constant $\beta>0$ fails for large $k$ (otherwise the limit would be at least $1+\beta$). Raabe's test works.
 

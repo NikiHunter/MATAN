@@ -14,6 +14,9 @@ Aquí se resuelven los problemas 3.1–3.11. Los problemas 1.2 y 2.2 de la secci
 
 ## Tres hechos en los que se apoya todo
 
+> [!note] En el seminario
+> (F1) es el [[es/seminar-sem3/notes-2-series-basics#Corolario 6.5. Condición necesaria de convergencia|corolario 6.5]], (F2) la [[es/seminar-sem3/notes-2-series-basics#Proposición 7.1. Criterio de convergencia de una serie no negativa|proposición 7.1]], (F3) la [[es/seminar-sem3/notes-2-series-basics#Proposición 6.3. Un número finito de términos no influye en la convergencia|proposición 6.3]] y el criterio de comparación clásico la [[es/seminar-sem3/notes-2-series-basics#Proposición 7.5. El criterio de comparación|proposición 7.5]] (2–3 oct.).
+
 Notación: $S_n=\sum_{k=1}^na_k$ es la suma parcial.
 
 > [!note] (F1) Condición necesaria
@@ -31,6 +34,9 @@ Toda la cadena de problemas 3.4 → 3.6 → 3.7, 3.9 está construida igual: cad
 
 ## Problema 3.1
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^lem-11-3|Lema 11.3]] (21 oct.); la serie $\sum(-1)^n$ es el [[es/seminar-sem3/notes-2-series-basics#^ex-7-4|ejemplo 7.4]] (3 oct.).
+
 **Enunciado.** La serie $\sum a_k$ converge. Demostrar que la sucesión de sumas parciales está acotada.
 
 **Demostración.** Por definición de convergencia existe el límite finito $S=\lim S_n$. Tomemos $\varepsilon=1$: existe $N$ tal que $|S_n-S|<1$ para todo $n>N$, es decir, $|S_n|<|S|+1$. Pongamos
@@ -42,6 +48,9 @@ Entonces $|S_n|\le C$ para todo $n\in\mathbb N$. $\blacksquare$
 **Por qué funciona.** Es simplemente el teorema «toda sucesión convergente está acotada» aplicado a $(S_n)$: los términos lejanos quedan apretados cerca del límite, y de los restantes hay un número finito. El recíproco es falso: la serie $\sum(-1)^k$ tiene sumas parciales acotadas $-1,0,-1,0,\dots$ y diverge. La acotación de las sumas parciales equivale a la convergencia solo para series de signo constante (F2). Los problemas 3.2 y 3.3 dan otros dos ejemplos de sumas parciales acotadas de series divergentes.
 
 ## Problema 3.2
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-4-examples-tests#^ex-12-3|Ejemplo 12.3]] (28–30 oct.).
 
 **Enunciado.** $x_0\in\mathbb R$. Demostrar que las sumas parciales de $\sum_{k=1}^\infty\sin(kx_0)$ están acotadas.
 
@@ -70,6 +79,9 @@ La cota no depende de $n$. $\blacksquare$
 **Por qué funciona.** Multiplicar por $2\sin\frac{x_0}2$ convierte cada sumando en la diferencia de dos valores «vecinos» de una misma sucesión $c_k=\cos\bigl((k-\frac12)x_0\bigr)$: el sumando vale $c_k-c_{k+1}$. En la suma todo lo interior se cancela (suma telescópica) y solo quedan los extremos. Geométricamente, $\sin(kx_0)$ son las proyecciones de un vector que gira cada vez un ángulo $x_0$; la suma de tales vectores recorre una circunferencia de radio $\frac1{2|\sin(x_0/2)|}$ y no se va al infinito. Cuando $x_0\to2\pi m$ la cota empeora (el radio crece), pero en el propio $2\pi m$ todos los sumandos son nulos. La cota depende de $x_0$ pero no de $n$: eso basta.
 
 ## Problema 3.3
+
+> [!note] En el seminario
+> La serie de senos converge solo para $x_0\in\pi\mathbb Z$: [[es/seminar-sem3/notes-2-series-basics#^ex-8-1|ejemplo 8.1]] (7 oct.); la identidad para las sumas de cosenos: [[es/seminar-sem3/notes-4-examples-tests#^ex-12-4|ejemplo 12.4]] (30 oct.).
 
 **Enunciado.** $x_0\in\mathbb R$. Demostrar que la serie $\sum_{k=1}^\infty\cos(kx_0)$ diverge. $^*$ ¿Para qué $x_0$ están acotadas sus sumas parciales?
 
@@ -100,6 +112,9 @@ Aquí entra también el caso $\cos x_0=-1$: allí $S_n\in\{-1,0\}$.
 
 ## Problema 3.4 (criterio de comparación generalizado)
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-2-series-basics#^thm-8-3|Teorema 8.3]] (7 oct.): la demostración multiplicando los cocientes.
+
 **Enunciado.** Para $n>N_0$: $a_n>0$, $b_n>0$ y $\dfrac{a_{n+1}}{a_n}\le\dfrac{b_{n+1}}{b_n}$. Demostrar: a) si $\sum b_k$ converge, entonces $\sum a_k$ converge; b) si $\sum a_k$ diverge, entonces $\sum b_k$ diverge.
 
 **Demostración.** Reescribamos la condición: para $n>N_0$
@@ -124,6 +139,9 @@ b) Es el contrarrecíproco de a): si $\sum b_k$ convergiera, por a) convergería
 
 ## Problema 3.5
 
+> [!note] En el seminario
+> El apartado b) es el [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^ex-9-1|ejemplo 9.1]] (16 oct.); la serie patrón $\sum\frac1{k(k+1)}$ es el [[es/seminar-sem3/notes-2-series-basics#^ex-7-2|ejemplo 7.2]].
+
 **Enunciado.** Demostrar la convergencia de $\sum_{k=1}^\infty\frac1{k!}$: a) con el criterio clásico de comparación; b) con el generalizado.
 
 Patrón: la serie $\sum_{k=1}^\infty\frac{1}{k(k+1)}$ converge (sus sumas parciales valen $1-\frac1{n+1}$).
@@ -143,6 +161,9 @@ La desigualdad $\frac1{k+1}\le\frac k{k+2}$ equivale a $k+2\le k^2+k$, es decir,
 **Por qué funciona.** El factorial crece más rápido que cualquier polinomio, así que $\frac1{k!}$ queda con holgura por debajo de un patrón del tipo $\frac1{k^2}$. En el apartado b) se ve para qué sirve el criterio generalizado: el cociente de términos consecutivos $\frac1{k+1}$ de la serie factorial tiende a cero, el del patrón, $\frac k{k+2}$, tiende a uno, y son más fáciles de comparar que los propios términos. Para $k=1$ la desigualdad de cocientes falla ($\frac12>\frac13$), pero el criterio solo la necesita a partir de cierto índice.
 
 ## Problema 3.6 (criterio de Kummer)
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^thm-10-2|Teorema 10.2]] (16 oct.).
 
 **Enunciado.** $x_n>0$ para todo $n$; $a_n>0$ para $n>N_0$.
 
@@ -178,6 +199,9 @@ El criterio de Kummer no es un criterio sino un molde: cada sucesión $(x_n)$ da
 
 ## Problema 3.7 (criterio de d'Alembert)
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^cor-10-3|Corolario 10.3]] (16 oct.).
+
 **Enunciado.** $a_n>0$ para $n>N_0$. 1) Si $\dfrac{a_n}{a_{n+1}}\ge1+\beta$ para $n>N_1$, $\beta>0$, la serie converge. 2) Si $\dfrac{a_n}{a_{n+1}}\le1$ para $n>N_2$, la serie diverge.
 
 **Demostración.** Aplicamos el criterio de Kummer con $x_n=1$ para todo $n$. Entonces
@@ -190,6 +214,9 @@ $$
 **Por qué funciona.** En el apartado 1) $a_{n+1}\le\frac{a_n}{1+\beta}$: los términos decrecen no más despacio que una progresión geométrica de razón $q=\frac1{1+\beta}<1$. En el apartado 2) $a_{n+1}\ge a_n>0$: los términos no decrecen y no tienden a cero, falla (F1). Es importante que en 1) se necesita un margen $\beta>0$ independiente de $n$: la condición $\frac{a_n}{a_{n+1}}>1$ no basta (serie armónica: $\frac{a_n}{a_{n+1}}=1+\frac1n>1$, y la serie diverge). Ese «margen que tiende a cero» es lo que trata el criterio de Raabe.
 
 ## Problema 3.8
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^ex-10-4|Ejemplo 10.4]] (16 oct.).
 
 **Enunciado.** $a_k=2^{-k}$ para $k$ impar, $a_k=3^{-k}$ para $k$ par. Demostrar: 1) la serie converge; 2) los conjuntos $\bigl\{k:\ \frac{a_k}{a_{k+1}}\le1\bigr\}$ y $\bigl\{k:\ \frac{a_k}{a_{k+1}}\ge\frac92\bigr\}$ son numerables.
 
@@ -210,6 +237,9 @@ Así, el primer conjunto son todos los números pares y el segundo todos los imp
 En el criterio de la raíz de Cauchy esa sustitución sí es legítima: si $\sqrt[k]{a_k}\ge1$ para infinitos $k$, entonces $a_k\ge1$ para infinitos $k$, el término general no tiende a cero y la serie diverge. La diferencia es que la raíz estima el **propio** término, mientras que el cociente solo ve su cambio en un paso: un paso hacia arriba no impide que la serie decrezca en conjunto. Para nuestra serie $\sqrt[k]{a_k}\le\frac12$, y el criterio de Cauchy da la convergencia de inmediato, mientras que d'Alembert no da nada (ninguna de sus condiciones se cumple a partir de cierto índice).
 
 ## Problema 3.9 (criterio de Raabe)
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^cor-11-1|Corolario 11.1]] (21 oct.), con un ejemplo en el que d'Alembert no decide y Raabe da divergencia.
 
 **Enunciado.** $a_n>0$ para $n>N_0$. 1) Si $\dfrac{a_n}{a_{n+1}}\ge1+\dfrac{1+\gamma}n$ para $n>N_1$, $\gamma>0$, la serie converge. 2) Si $\dfrac{a_n}{a_{n+1}}\le1+\dfrac1n$ para $n>N_2$, la serie diverge.
 
@@ -233,6 +263,11 @@ El criterio de Raabe es más fuerte que el de d'Alembert (problema 4.4 de la tar
 
 ## Problema 3.10$^*$
 
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^rem-11-2|Observación 11.2]] (21 oct.), con el mismo ejemplo.
+
+^p-3-10
+
 **Enunciado.** Dar un ejemplo de serie convergente para la que el conjunto $\bigl\{k:\ \frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}$ sea numerable.
 
 **Solución.** Sirve la serie del problema 3.8: $a_k=2^{-k}$ para $k$ impar y $a_k=3^{-k}$ para $k$ par. Converge, todos sus términos son positivos y, como allí se mostró:
@@ -247,6 +282,11 @@ El conjunto es el de todos los números pares, que es numerable. $\blacksquare$
 Un ejemplo más fino, en el que el cociente está en el intervalo semiabierto $(1;1+\frac1k]$ para infinitos $k$ (los términos decrecen, pero despacio), se construye en el problema 4.5 de la [[es/seminar-sem3/hw4-series-inequalities-bases|tarea 4]]; también sirve aquí.
 
 ## Problema 3.11$^{**}$
+
+> [!note] En el seminario
+> [[es/seminar-sem3/notes-3-kummer-dalembert-raabe#^thm-12-1|Teorema 12.1]] (28 oct.): la demostración con la fórmula de Taylor con resto de Peano.
+
+^p-3-11
 
 **Enunciado.** $\alpha\in\mathbb R$, $0<M_1\le C_k\le M_2$, $a_k=\dfrac{C_k}{k^\alpha}$. ¿Para qué $\alpha$ converge $\sum a_k$?
 

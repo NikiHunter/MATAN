@@ -11,7 +11,10 @@ hw: 3
 
 This page solves problems 3.1–3.11. Problems 1.2 and 2.2 from the "old" section are solved in [HW 1](hw1-taylor.md) and [HW 2](hw2-conditional-extremum.md), the series 2'.1–2'.3 in [HW 2](hw2-conditional-extremum.md).
 
+<a id="facts"></a>
 ## Three facts everything rests on
+
+> **At the seminar.** (F1) is [Corollary 6.5](notes-2-series-basics.md#cor-6-5), (F2) is [Proposition 7.1](notes-2-series-basics.md#prop-7-1), (F3) is [Proposition 6.3](notes-2-series-basics.md#prop-6-3), and the classical comparison test is [Proposition 7.5](notes-2-series-basics.md#prop-7-5) (2–3 Oct).
 
 Notation: $`S_n=\sum_{k=1}^na_k`$ is the partial sum.
 
@@ -25,7 +28,10 @@ Notation: $`S_n=\sum_{k=1}^na_k`$ is the partial sum.
 
 The whole chain of problems 3.4 → 3.6 → 3.7, 3.9 is built the same way: each next test is the previous one applied to a well-chosen "reference" series.
 
+<a id="p-3-1"></a>
 ## Problem 3.1
+
+> **At the seminar.** [Lemma 11.3](notes-3-kummer-dalembert-raabe.md#lem-11-3) (21 Oct); the series $`\sum(-1)^n`$ is [Example 7.4](notes-2-series-basics.md#ex-7-4) (3 Oct).
 
 **Statement.** The series $`\sum a_k`$ converges. Prove that the sequence of partial sums is bounded.
 
@@ -37,7 +43,10 @@ Then $`|S_n|\le C`$ for all $`n\in\mathbb N`$. $`\blacksquare`$
 
 **Why it works.** This is just the theorem "a convergent sequence is bounded" applied to $`(S_n)`$: the far terms are squeezed near the limit, and only finitely many remain. The converse is false: the series $`\sum(-1)^k`$ has bounded partial sums $`-1,0,-1,0,\dots`$ and diverges. Boundedness of partial sums is equivalent to convergence only for series of constant sign (F2). Problems 3.2 and 3.3 give two more examples of bounded partial sums of divergent series.
 
+<a id="p-3-2"></a>
 ## Problem 3.2
+
+> **At the seminar.** [Example 12.3](notes-4-examples-tests.md#ex-12-3) (28–30 Oct).
 
 **Statement.** $`x_0\in\mathbb R`$. Prove that the partial sums of $`\sum_{k=1}^\infty\sin(kx_0)`$ are bounded.
 
@@ -65,7 +74,10 @@ The bound does not depend on $`n`$. $`\blacksquare`$
 
 **Why it works.** Multiplying by $`2\sin\frac{x_0}2`$ turns each term into a difference of two "neighbouring" values of one sequence $`c_k=\cos\bigl((k-\frac12)x_0\bigr)`$: the term equals $`c_k-c_{k+1}`$. In the sum everything inside cancels (telescoping), only the ends remain. Geometrically, $`\sin(kx_0)`$ are projections of a vector that turns by the angle $`x_0`$ each time; the sum of such vectors walks along a circle of radius $`\frac1{2|\sin(x_0/2)|}`$ and does not escape to infinity. As $`x_0\to2\pi m`$ the bound gets worse (the radius grows), but at $`2\pi m`$ itself all terms are zero. The bound depends on $`x_0`$ but not on $`n`$ — that is enough.
 
+<a id="p-3-3"></a>
 ## Problem 3.3
+
+> **At the seminar.** The sine series converges only for $`x_0\in\pi\mathbb Z`$: [Example 8.1](notes-2-series-basics.md#ex-8-1) (7 Oct); the identity for sums of cosines: [Example 12.4](notes-4-examples-tests.md#ex-12-4) (30 Oct).
 
 **Statement.** $`x_0\in\mathbb R`$. Prove that the series $`\sum_{k=1}^\infty\cos(kx_0)`$ diverges. $`^*`$ For which $`x_0`$ are its partial sums bounded?
 
@@ -94,7 +106,10 @@ This includes the case $`\cos x_0=-1`$: there $`S_n\in\{-1,0\}`$.
 
 **Why it works.** Cosines cancel each other "on average" just like sines, so the sums are bounded. But the terms do not decay, and the sum never settles: it wanders forever over a bounded set. The only exception is $`x_0=2\pi m`$, where all terms equal $`1`$ and nothing cancels. Compare with 3.2: the series of sines consists of zeros and converges for $`x_0\in\pi\mathbb Z`$, and diverges for $`x_0\notin\pi\mathbb Z`$ for the same reason. If $`\sin(kx_0)\to0`$, then $`\cos(2kx_0)=1-2\sin^2(kx_0)\to1`$ and $`\sin(2kx_0)\to0`$, whence $`\sin((2k+1)x_0)=\sin(2kx_0)\cos x_0+\cos(2kx_0)\sin x_0\to\sin x_0\ne0`$, although this is a subsequence of a sequence tending to zero.
 
+<a id="p-3-4"></a>
 ## Problem 3.4 (generalised comparison test)
+
+> **At the seminar.** [Theorem 8.3](notes-2-series-basics.md#thm-8-3) (7 Oct): the proof by multiplying the ratios.
 
 **Statement.** For $`n>N_0`$: $`a_n>0`$, $`b_n>0`$ and $`\dfrac{a_{n+1}}{a_n}\le\dfrac{b_{n+1}}{b_n}`$. Prove: a) if $`\sum b_k`$ converges, then $`\sum a_k`$ converges; b) if $`\sum a_k`$ diverges, then $`\sum b_k`$ diverges.
 
@@ -118,7 +133,10 @@ b) This is the contrapositive of a): if $`\sum b_k`$ converged, then by a) $`\su
 
 **Why it works.** The ratio $`\frac{a_{n+1}}{a_n}`$ is the "rate of decay" of the series per step. The condition says that at each step $`a_n`$ decays no slower than $`b_n`$. But then over many steps $`a_n`$ also decays no slower, i.e. $`a_n`$ is at most $`b_n`$ up to a constant factor — and a constant factor does not affect convergence. The generalised test is the classical one with ratios compared instead of the terms themselves; it is convenient when the ratio $`\frac{a_{n+1}}{a_n}`$ is simpler than $`a_n`$ itself (factorials, products).
 
+<a id="p-3-5"></a>
 ## Problem 3.5
+
+> **At the seminar.** Part b) is [Example 9.1](notes-3-kummer-dalembert-raabe.md#ex-9-1) (16 Oct); the reference series $`\sum\frac1{k(k+1)}`$ is [Example 7.2](notes-2-series-basics.md#ex-7-2).
 
 **Statement.** Prove that $`\sum_{k=1}^\infty\frac1{k!}`$ converges: a) by the classical comparison test; b) by the generalised one.
 
@@ -138,7 +156,10 @@ The inequality $`\frac1{k+1}\le\frac k{k+2}`$ is equivalent to $`k+2\le k^2+k`$,
 
 **Why it works.** The factorial grows faster than any polynomial, so $`\frac1{k!}`$ is comfortably below a $`\frac1{k^2}`$-like reference. Part b) shows what the generalised test is good for: the ratio of consecutive terms $`\frac1{k+1}`$ of the factorial series tends to zero, that of the reference, $`\frac k{k+2}`$, tends to one, and they are easier to compare than the terms themselves. For $`k=1`$ the ratio inequality fails ($`\frac12>\frac13`$), but the test only needs it from some index on.
 
+<a id="p-3-6"></a>
 ## Problem 3.6 (Kummer's test)
+
+> **At the seminar.** [Theorem 10.2](notes-3-kummer-dalembert-raabe.md#thm-10-2) (16 Oct).
 
 **Statement.** $`x_n>0`$ for all $`n`$; $`a_n>0`$ for $`n>N_0`$.
 
@@ -172,7 +193,10 @@ In part 2 the weighted term $`x_na_n`$ does not decrease, so $`a_n\ge\frac{\math
 
 Kummer's test is not a single test but a template: every sequence $`(x_n)`$ gives its own test. The slower $`\sum\frac1{x_n}`$ diverges, the finer the test: $`x_n=1`$ gives d'Alembert (3.7), $`x_n=n`$ gives Raabe (3.9), $`x_n=n\ln n`$ gives Bertrand's test.
 
+<a id="p-3-7"></a>
 ## Problem 3.7 (d'Alembert's test)
+
+> **At the seminar.** [Corollary 10.3](notes-3-kummer-dalembert-raabe.md#cor-10-3) (16 Oct).
 
 **Statement.** $`a_n>0`$ for $`n>N_0`$. 1) If $`\dfrac{a_n}{a_{n+1}}\ge1+\beta`$ for $`n>N_1`$, $`\beta>0`$, the series converges. 2) If $`\dfrac{a_n}{a_{n+1}}\le1`$ for $`n>N_2`$, the series diverges.
 
@@ -185,7 +209,10 @@ x_n\frac{a_n}{a_{n+1}}-x_{n+1}=\frac{a_n}{a_{n+1}}-1 .
 
 **Why it works.** In part 1) $`a_{n+1}\le\frac{a_n}{1+\beta}`$: the terms decay no slower than a geometric progression with ratio $`q=\frac1{1+\beta}<1`$. In part 2) $`a_{n+1}\ge a_n>0`$: the terms do not decrease and do not tend to zero, so (F1) fails. It matters that 1) needs a gap $`\beta>0`$ independent of $`n`$: the condition $`\frac{a_n}{a_{n+1}}>1`$ is not enough (harmonic series: $`\frac{a_n}{a_{n+1}}=1+\frac1n>1`$, and the series diverges). This "gap tending to zero" is what Raabe's test handles.
 
+<a id="p-3-8"></a>
 ## Problem 3.8
+
+> **At the seminar.** [Example 10.4](notes-3-kummer-dalembert-raabe.md#ex-10-4) (16 Oct).
 
 **Statement.** $`a_k=2^{-k}`$ for odd $`k`$, $`a_k=3^{-k}`$ for even $`k`$. Prove: 1) the series converges; 2) the sets $`\bigl\{k:\ \frac{a_k}{a_{k+1}}\le1\bigr\}`$ and $`\bigl\{k:\ \frac{a_k}{a_{k+1}}\ge\frac92\bigr\}`$ are countable.
 
@@ -205,7 +232,10 @@ So the first set is all even numbers and the second is all odd numbers. Each is 
 
 For Cauchy's root test such a replacement is legitimate: if $`\sqrt[k]{a_k}\ge1`$ for infinitely many $`k`$, then $`a_k\ge1`$ for infinitely many $`k`$, the general term does not tend to zero, and the series diverges. The difference is that the root estimates the term **itself**, while the ratio only sees its change over one step: one step up does not prevent the series from decaying overall. For our series $`\sqrt[k]{a_k}\le\frac12`$, so Cauchy's test gives convergence at once, while d'Alembert's gives nothing (neither of its conditions holds from some index on).
 
+<a id="p-3-9"></a>
 ## Problem 3.9 (Raabe's test)
+
+> **At the seminar.** [Corollary 11.1](notes-3-kummer-dalembert-raabe.md#cor-11-1) (21 Oct), with an example where d'Alembert is silent and Raabe gives divergence.
 
 **Statement.** $`a_n>0`$ for $`n>N_0`$. 1) If $`\dfrac{a_n}{a_{n+1}}\ge1+\dfrac{1+\gamma}n`$ for $`n>N_1`$, $`\gamma>0`$, the series converges. 2) If $`\dfrac{a_n}{a_{n+1}}\le1+\dfrac1n`$ for $`n>N_2`$, the series diverges.
 
@@ -227,7 +257,10 @@ By 3.6, 2) the series diverges. $`\blacksquare`$
 
 Raabe's test is stronger than d'Alembert's (problem 4.4 of HW 4): it works where $`\frac{a_n}{a_{n+1}}\to1`$ and d'Alembert is silent. But it has its own "dead zone": a coefficient of $`\frac1n`$ tending to $`1`$ from above (for example, $`a_n=\frac1{n\ln^2n}`$).
 
+<a id="p-3-10"></a>
 ## Problem 3.10$`^*`$
+
+> **At the seminar.** [Remark 11.2](notes-3-kummer-dalembert-raabe.md#rem-11-2) (21 Oct), with the same example.
 
 **Statement.** Give an example of a convergent series for which the set $`\bigl\{k:\ \frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}`$ is countable.
 
@@ -242,7 +275,10 @@ The set equals the set of all even numbers, which is countable. $`\blacksquare`$
 
 A finer example, where the ratio lies in the half-open interval $`(1;1+\frac1k]`$ for infinitely many $`k`$ (the terms decrease, but slowly), is built in problem 4.5 of [HW 4](hw4-series-inequalities-bases.md); it fits here as well.
 
+<a id="p-3-11"></a>
 ## Problem 3.11$`^{**}`$
+
+> **At the seminar.** [Theorem 12.1](notes-3-kummer-dalembert-raabe.md#thm-12-1) (28 Oct): the proof via Taylor's formula with the Peano remainder.
 
 **Statement.** $`\alpha\in\mathbb R`$, $`0<M_1\le C_k\le M_2`$, $`a_k=\dfrac{C_k}{k^\alpha}`$. For which $`\alpha`$ does $`\sum a_k`$ converge?
 

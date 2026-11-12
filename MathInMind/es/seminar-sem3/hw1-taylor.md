@@ -30,7 +30,10 @@ De aquí salen dos conclusiones prácticas.
 1. **La parte homogénea de grado $`k`$ del desarrollo es $`d^k_af(h)/k!`$** y está determinada de forma única: si $`f(a+h)=\sum_{k\le s}P_k(h)+o(|h|^s)`$ con $`P_k`$ un polinomio homogéneo de grado $`k`$, entonces $`P_k(h)=d_a^kf(h)/k!`$ (unicidad del polinomio de Taylor). Así que no es obligatorio calcular derivadas parciales: cualquier transformación legítima que dé un polinomio en $`h`$ con el resto correcto da exactamente el polinomio de Taylor.
 2. **Para un polinomio de grado $`N`$ la suma se corta:** todas las derivadas de orden $`N+1`$ son nulas, de modo que el resto de Lagrange con $`s=N`$ es idénticamente cero. Desarrollar un polinomio es simplemente sustituir $`x=a_1+h_1,\dots`$ y abrir paréntesis; la «serie de Taylor» es finita y es igual a $`f`$ exactamente, para todo $`h`$ y no solo para los pequeños.
 
+<a id="p-1-1"></a>
 ## Problema 1.1
+
+> **En el seminario.** [Ejemplo 2.2](notes-1-taylor-extremum.md#ex-2-2) (4 sep.): el mismo problema; en la pizarra se resuelve el punto $`(1;-1;2)`$.
 
 **Enunciado.** $`f(x,y,z)=x^3+y^3+z^3-3xyz`$. Desarrollar por la fórmula de Taylor en los puntos $`(1;1;1)`$ y $`(1;-1;2)`$.
 
@@ -70,6 +73,7 @@ En las variables originales $`h_1=x-1`$, $`h_2=y+1`$, $`h_3=z-2`$.
 
 **Comprobación.** Con $`h=(1,0,0)`$ en el primer punto: $`f(2,1,1)=8+1+1-6=4`$, la fórmula da $`3+1=4`$. En el segundo punto: $`f(2,-1,2)=8-1+8+12=27`$, la fórmula da $`14+9+3+1=27`$.
 
+<a id="p-1-2"></a>
 ## Problema 1.2
 
 **Enunciado.** $`f(x,y)=5x^4-4x^2y^2+3y^4-2xy+1`$. Desarrollar por la fórmula de Taylor en el punto $`(-3;2)`$.
@@ -115,6 +119,7 @@ Reunimos $`d^k_af(h)/k!`$ con los coeficientes binomiales:
 
 **Comprobación.** $`h=(1,0)`$: $`f(-2,2)=80-64+48+8+1=73`$; la fórmula da $`322-448+254-60+5=73`$. $`h=(0,1)`$: $`f(-3,3)=405-324+243+18+1=343`$; la fórmula da $`322-42+36+24+3=343`$.
 
+<a id="p-1-3"></a>
 ## Problema 1.3
 
 **Enunciado.** $`f(x,y,z)=e^{xy+z^2}`$. Hallar la forma explícita del desarrollo de Taylor hasta grado tres con resto en forma de Lagrange en el punto $`a=(-2;0;3)`$.
@@ -160,7 +165,10 @@ Es la misma suma $`\frac1{4!}\sum_{|\alpha|=4}\frac{4!}{\alpha!}\partial^\alpha 
 
 **Comprobación.** $`h=(0,0,h_3)`$: $`f=e^{(3+h_3)^2}=e^9e^{6h_3+h_3^2}=e^9\bigl(1+6h_3+19h_3^2+42h_3^3+\dots\bigr)`$, ya que $`\frac{36}{2}+1=19`$ y $`\frac{216}{6}+6=42`$.
 
+<a id="p-1-4"></a>
 ## Problema 1.4
+
+> **En el seminario.** [Ejemplo 4.1](notes-1-taylor-extremum.md#ex-4-1) (18 sep.): todas las derivadas hasta el orden dos y sus valores en el punto, reunidos en una tabla.
 
 **Enunciado.** $`f(x,y,z)=x^2\sin(xy)\,e^{y+z}`$. Hallar la forma explícita del desarrollo de Taylor hasta grado dos con resto en forma de Lagrange en el punto $`a=(-1;\pi;2)`$.
 

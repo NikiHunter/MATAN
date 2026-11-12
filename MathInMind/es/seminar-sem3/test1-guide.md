@@ -6,7 +6,7 @@ lang: es
 
 [Русский](../../ru/seminar-sem3/test1-guide.md) · [English](../../en/seminar-sem3/test1-guide.md) · **Español**
 
-[Todas las tareas](index.md) · [Variantes de práctica →](test1-variants.md)
+[Todas las tareas](index.md) · [Apuntes de los seminarios](index.md#seminar-notes) · [Variantes de práctica →](test1-variants.md)
 
 > **Qué es esto.** Un plan de preparación para el control 1 basado en las tareas 1–4. La estructura del control es la que se ha comunicado: cuatro ejercicios, apartados **1.1, 1.2, 2.1, 2.2, 3, 4**; los ejercicios 1 y 2 tratan de la fórmula de Taylor y los extremos, los ejercicios 3 y 4 de series. No existen variantes reales: los tipos de problemas de abajo son un pronóstico a partir de las tareas, no una filtración. El reparto de temas por apartados es una suposición.
 
@@ -61,7 +61,7 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 
 - Condición necesaria de extremo libre: $`\nabla f=0`$. Suficiente: el signo de $`d^2f`$ (definida positiva, mínimo; definida negativa, máximo; indefinida, no hay extremo; semidefinida, el criterio calla).
 - Criterio de Sylvester para $`2\times2`$: $`\Delta_1=f_{xx}`$, $`\Delta_2=f_{xx}f_{yy}-f_{xy}^2`$. $`\Delta_2>0,\ \Delta_1>0`$: mínimo; $`\Delta_2>0,\ \Delta_1<0`$: máximo; $`\Delta_2<0`$: silla; $`\Delta_2=0`$: estudiar a mano.
-- Extremo condicionado: $`L=f-\sum\lambda_j\varphi_j`$, el sistema $`\nabla L=0`$ más las ecuaciones de ligadura; la condición suficiente es el signo de $`d^2L`$ **sobre el espacio tangente** $`\{h:\ d\varphi_j(h)=0\}`$.
+- Extremo condicionado: $`L=f-\sum\lambda_j\varphi_j`$, el sistema $`\nabla L=0`$ más las ecuaciones de ligadura; la condición suficiente es el signo de $`d^2L`$ **sobre el espacio tangente** $`\{h:\ d\varphi_j(h)=0\}`$. En el seminario esa misma condición se comprobaba con los signos de los menores de la hessiana orlada; el método está más abajo.
 
 **Método cuando la ligadura se despeja explícitamente (apartado 2.1).**
 
@@ -76,6 +76,13 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 2. Resolver el sistema de Lagrange. No dividir por una expresión que pueda ser cero sin tratar ese caso: escribir $`(x-y)(z+2\lambda)=0`$ y estudiar ambas alternativas.
 3. Determinar el tipo de los puntos. La vía más rápida cuando $`M`$ es compacto (esfera, elipsoide, circunferencia): «$`f`$ es continua sobre un compacto, luego alcanza sus valores máximo y mínimo, y se alcanzan en puntos estacionarios»; después, comparar los valores.
 4. Escribir la respuesta: puntos, tipo, valores extremos.
+
+**El método de la hessiana orlada (como en el seminario, [teorema 3.1](notes-1-taylor-extremum.md#thm-3-1)).**
+
+1. Escribir $`\mathcal L=f+\sum_k\lambda_kg_k`$ y resolver el sistema de $`n+m`$ ecuaciones: todas las derivadas parciales de $`\mathcal L`$ respecto de $`x_j`$ y de $`\lambda_k`$ se anulan.
+2. Formar $`\widetilde H=\begin{pmatrix}0&J_g\\ J_g^{T}&H_{\mathcal L}\end{pmatrix}`$ y hallar los menores $`\Delta_{2m+1},\dots,\Delta_{n+m}`$ primero en un punto genérico, como se aconsejó en el seminario.
+3. Sustituir cada punto estacionario junto con su $`\lambda`$. Todos los signos iguales a $`(-1)^m`$: mínimo; el signo de $`\Delta_k`$ igual a $`(-1)^{k-m}`$: máximo; menores no nulos con otros signos: no hay extremo; $`\Delta_{n+m}=0`$: el criterio no decide, hay que estudiarlo a mano.
+4. El caso más frecuente, $`n=2`$, $`m=1`$: $`\det\widetilde H<0`$, mínimo; $`\det\widetilde H>0`$, máximo ([ejemplo 4.2](notes-1-taylor-extremum.md#ex-4-2)). Para $`n=4`$, $`m=2`$: mínimo, $`\Delta_5>0`$, $`\Delta_6>0`$; máximo, $`\Delta_5<0`$, $`\Delta_6>0`$ ([ejemplo 5.1](notes-1-taylor-extremum.md#ex-5-1)).
 
 **Errores típicos.**
 
@@ -108,6 +115,9 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 | Criterio integral | $`f(k+1)\le\int_k^{k+1}f\le f(k)`$ | [4.10](hw4-series-inequalities-bases.md) |
 | Acotación de las sumas $`\sum\sin(kx_0)`$ | multiplicar por $`2\sin\frac{x_0}2`$, suma telescópica | [3.2](hw3-numerical-series.md) |
 | $`\sum\cos(kx_0)`$ diverge | $`\cos(2kx_0)=2\cos^2(kx_0)-1`$, el término general no tiende a cero | [3.3](hw3-numerical-series.md) |
+| Criterio de la raíz de Cauchy | $`\sqrt[n]{a_n}\le q`$ ⟺ $`a_n\le q^n`$; para la divergencia bastan infinitos $`n`$ | [teorema 8.2](notes-2-series-basics.md#thm-8-2) |
+| $`\sum\sin(kx_0)`$ converge ⟺ $`x_0\in\pi\mathbb Z`$ | $`\cos(kx_0)`$ se expresa con $`\sin(kx_0)`$ y $`\sin((k+1)x_0)`$ | [ejemplo 8.1](notes-2-series-basics.md#ex-8-1) |
+| $`\sum\frac{c_k}{k^d}`$ converge ⟺ $`d>1`$ | comparación con $`\frac{M_2}{k^d}`$ y después Raabe | [3.11](hw3-numerical-series.md#p-3-11), [teorema 12.1](notes-3-kummer-dalembert-raabe.md#thm-12-1) |
 
 **Los criterios en la notación del seminario.** Atención: en el seminario se usa el cociente $`\dfrac{a_n}{a_{n+1}}`$ (el anterior entre el siguiente), no $`\dfrac{a_{n+1}}{a_n}`$.
 
@@ -116,6 +126,7 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 | Kummer | $`x_n\frac{a_n}{a_{n+1}}-x_{n+1}\ge\alpha>0`$ | $`x_n\frac{a_n}{a_{n+1}}-x_{n+1}\le0`$ y $`\sum\frac1{x_n}`$ diverge |
 | d'Alembert | $`\frac{a_n}{a_{n+1}}\ge1+\beta`$, $`\beta>0`$ | $`\frac{a_n}{a_{n+1}}\le1`$ |
 | Raabe | $`\frac{a_n}{a_{n+1}}\ge1+\frac{1+\gamma}n`$, $`\gamma>0`$ | $`\frac{a_n}{a_{n+1}}\le1+\frac1n`$ |
+| Cauchy | $`\sqrt[n]{a_n}\le q<1`$ | $`\sqrt[n]{a_n}\ge1`$ para infinitos $`n`$ |
 | Cauchy (forma límite) | $`\sqrt[k]{a_k}\to L<1`$ | $`\sqrt[k]{a_k}\to L>1`$ |
 | Leibniz | los signos alternan, $`\lvert a_k\rvert`$ es no creciente, $`a_k\to0`$ | — |
 
@@ -159,18 +170,34 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 - Comparación $`a_k\le b_k`$ para series de signo variable: los criterios de comparación solo valen para las no negativas.
 - El valor frontera de un parámetro no se trata aparte ($`\beta=e`$ en [4.8](hw4-series-inequalities-bases.md)).
 
+<a id="seminar-notes"></a>
+## Qué repasar en los apuntes de los seminarios
+
+Los [apuntes](index.md#seminar-notes) muestran en qué forma se dio la teoría en el seminario. En el control es sensato escribir con la misma notación: sucesiones finalmente positivas, el cociente $`\frac{a_n}{a_{n+1}}`$, la función de Lagrange con signo «más», la hessiana orlada.
+
+| Apartado | Qué repasar | Dónde |
+|---|---|---|
+| 1.1 | la fórmula de Taylor con multiíndices; por qué el resto de un polinomio es cero | [ejemplo 2.2](notes-1-taylor-extremum.md#ex-2-2) |
+| 1.2 | la tabla de derivadas, los factores $`\frac1{\alpha!}`$, el resto en $`u+t_0h`$ | [ejemplo 4.1](notes-1-taylor-extremum.md#ex-4-1), [observación 2.1](notes-1-taylor-extremum.md#rem-2-1) |
+| 2.1 | la hessiana orlada con ligaduras lineales: una ligadura y dos | [ejemplo 4.2](notes-1-taylor-extremum.md#ex-4-2), [ejemplo 5.1](notes-1-taylor-extremum.md#ex-5-1) |
+| 2.2 | el enunciado del teorema y la tabla de signos de los menores | [teorema 3.1](notes-1-taylor-extremum.md#thm-3-1), [ejemplo 3.2](notes-1-taylor-extremum.md#ex-3-2) |
+| 3 | las demostraciones de la pizarra: comparación, Cauchy, comparación generalizada, Kummer, d'Alembert, Raabe, Raabe ⟹ d'Alembert | [parte 2](notes-2-series-basics.md), [teorema 10.2 y sus corolarios](notes-3-kummer-dalembert-raabe.md#thm-10-2), [observación 14.2](notes-4-examples-tests.md#rem-14-2) |
+| 4 | series con parámetro y ejemplos en los que los criterios fallan | [ejemplos 13.1, 13.2](notes-4-examples-tests.md#ex-13-1), [14.1](notes-4-examples-tests.md#ex-14-1), [10.4](notes-3-kummer-dalembert-raabe.md#ex-10-4), [observación 12.2](notes-3-kummer-dalembert-raabe.md#rem-12-2) |
+
+En el seminario el problema 2.3 se resolvió en la variante con $`y^2`$ ([ejemplo 5.1](notes-1-taylor-extremum.md#ex-5-1)), mientras que la tarea 2 tiene $`y^3`$. Si aparece un problema parecido, comprueba primero la potencia del enunciado: las respuestas son distintas.
+
 ## Plan de preparación
 
 **Día 1: Taylor y extremos.**
 
-1. Leer las secciones «La idea general» de la [tarea 1](hw1-taylor.md) y «Por qué funciona el método de Lagrange» de la [tarea 2](hw2-conditional-extremum.md).
+1. Leer las secciones «La idea general» de la [tarea 1](hw1-taylor.md) y «Por qué funciona el método de Lagrange» de la [tarea 2](hw2-conditional-extremum.md), y después la [parte 1 de los apuntes](notes-1-taylor-extremum.md), sobre todo el teorema 3.1 con su tabla de signos.
 2. Resolver de nuevo, sin mirar la solución, 1.2 y 1.4, y después 2.2 y 2'.1. Comparar.
 3. Resolver los apartados 1.1, 1.2, 2.1, 2.2 de la [variante A](test1-variants.md) con tiempo: 40 minutos.
 
 **Día 2: series.**
 
-1. Aprender la tabla de criterios y los tres hechos básicos.
-2. Por escrito, con el cuaderno cerrado, demostrar 3.4, 3.6, 3.7, 3.9, 4.11. Comparar con las soluciones.
+1. Aprender la tabla de criterios y los tres hechos básicos; leer las [partes 2–4 de los apuntes](notes-2-series-basics.md).
+2. Por escrito, con el cuaderno cerrado, demostrar 3.4, 3.6, 3.7, 3.9, 4.11 y el criterio de la raíz de Cauchy ([teorema 8.2](notes-2-series-basics.md#thm-8-2)). Comparar con las soluciones.
 3. Rehacer 4.7–4.9 y 4.12.
 4. Resolver los ejercicios 3 y 4 de la [variante A](test1-variants.md): 40 minutos.
 
@@ -192,6 +219,8 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 8. ¿Converge $`\sum\frac{e^kk!}{k^k}`$, y por qué la forma límite no ayuda aquí?
 9. ¿Qué tres condiciones necesita el criterio de Leibniz?
 10. Dé un ejemplo de serie divergente con sumas parciales acotadas.
+11. ¿Qué menores de la hessiana orlada se comprueban con $`n=4`$, $`m=2`$, y qué signos indican un máximo?
+12. ¿Por qué en el criterio de Cauchy bastan «infinitos $`n`$» para la divergencia y en el de d'Alembert no?
 
 <details>
 <summary>Respuestas</summary>
@@ -206,4 +235,6 @@ Para dos variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xx
 8. Diverge. El límite del cociente es $`1`$, pero $`\frac{a_k}{a_{k+1}}=\frac1e\bigl(1+\frac1k\bigr)^k<1`$ para todo $`k`$: se aplica la forma no límite de d'Alembert.
 9. Los signos alternan, los módulos son no crecientes, el término general tiende a cero.
 10. $`\sum(-1)^k`$, o $`\sum\cos(kx_0)`$ para $`x_0\notin2\pi\mathbb Z`$.
+11. $`\Delta_5`$ y $`\Delta_6`$; un máximo es $`\Delta_5<0`$, $`\Delta_6>0`$, es decir, el signo de $`\Delta_k`$ es $`(-1)^{k-m}`$ ([ejemplo 5.1](notes-1-taylor-extremum.md#ex-5-1)).
+12. $`\sqrt[n]{a_n}\ge1`$ significa $`a_n\ge1`$, e infinitos términos así impiden que $`a_n\to0`$. Un cociente solo describe un paso: la serie del [ejemplo 10.4](notes-3-kummer-dalembert-raabe.md#ex-10-4) crece infinitas veces y aun así converge.
 </details>

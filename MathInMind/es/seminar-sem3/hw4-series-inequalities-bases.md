@@ -11,6 +11,7 @@ hw: 4
 
 Aquí se resuelven los problemas nuevos 4.1–4.12. Los problemas «antiguos» de esta tarea están resueltos antes: 1.2 en la [tarea 1](hw1-taylor.md); 2.2 y 2'.1–2'.3 en la [tarea 2](hw2-conditional-extremum.md); 3.1–3.3, 3.10, 3.11 en la [tarea 3](hw3-numerical-series.md). Las referencias (F1)–(F3) son los tres hechos del comienzo de la [tarea 3](hw3-numerical-series.md): la condición necesaria de convergencia, el criterio de acotación de las sumas parciales para series no negativas y la independencia de la convergencia respecto de un número finito de términos.
 
+<a id="p-4-1"></a>
 ## Problema 4.1
 
 **Enunciado.** $`p>1`$, $`p'=\frac p{p-1}`$, $`b_k\ge0`$, $`\sum_{k=1}^nb_k^{p'}=1`$. Hallar los puntos de extremo condicionado de $`f(x)=\sum_{k=1}^nb_kx_k`$ sobre el conjunto $`M=\{x:\ x_k\ge0,\ \sum_{k=1}^nx_k^p=1\}`$.
@@ -61,6 +62,7 @@ Si todos los $`b_k>0`$, el segundo miembro es positivo para $`x_k`$ pequeños (n
 
 La condición $`\sum b_k^{p'}=1`$ es una normalización. De ella sale que el máximo vale exactamente $`1`$; esto es la desigualdad de Hölder para colecciones normalizadas (problema 4.2).
 
+<a id="p-4-2"></a>
 ## Problema 4.2 (desigualdad de Hölder)
 
 **Enunciado.** $`p>1`$, $`p'=\frac p{p-1}`$, todos los números son no negativos. Demostrar:
@@ -93,7 +95,10 @@ La serie $`\sum x_ky_k`$ es no negativa y sus sumas parciales están acotadas su
 
 Sentido: si $`x\in\ell_p`$ e $`y\in\ell_{p'}`$, entonces $`xy\in\ell_1`$. Para $`p=p'=2`$ es la desigualdad de Cauchy–Schwarz. La igualdad en 1) se alcanza si y solo si las colecciones $`(a_k^p)`$ y $`(b_k^{p'})`$ son proporcionales: la condición de igualdad de 4.1.
 
+<a id="p-4-3"></a>
 ## Problema 4.3 (bases de conjuntos)
+
+> **En el seminario.** Cómo se usa la base $`n\to\infty`$ en las series: [definición 10.1](notes-3-kummer-dalembert-raabe.md#def-10-1) (16 oct.).
 
 **Definición del enunciado.** Una familia $`\mathcal B`$ de subconjuntos no vacíos de $`X`$ es una base sobre $`X`$ si (B1) $`\bigcup_{D\in\mathcal B}D=X`$ y (B2) para cualesquiera $`D_1,D_2\in\mathcal B`$ existe $`D_3\in\mathcal B`$ con $`D_3\subset D_1\cap D_2`$.
 
@@ -137,7 +142,10 @@ porque para $`r>0`$ en $`A_{3,r}`$ no hay números $`x\le0`$.
 
 **Por qué funciona.** Una base es una manera de decir «suficientemente lejos» o «suficientemente cerca» en un mismo lenguaje para todos los tipos de límite. Un elemento de la base es un «entorno» de aquello hacia lo que tendemos: $`D_k`$ es «todos los índices a partir de $`k`$» ($`n\to\infty`$); $`A_{1,r}`$ es $`x\to\infty`$; $`A_{3,r}`$ es $`x\to+\infty`$; $`A_{4,r}`$ es $`x\to x_0`$ (con el propio punto $`x_0`$); $`A_{5,r}`$ y $`A_{6,r}`$ son $`x\to x_0+0`$ y $`x\to x_0-0`$. La condición (B2) hace falta para que de «$`P`$ vale en $`D_1`$» y «$`Q`$ vale en $`D_2`$» se siga «$`P`$ y $`Q`$ valen en cierto $`D_3`$»: en esto descansan la unicidad del límite y la aritmética de los límites. Que los elementos no sean vacíos hace falta para que el límite sea único (sobre el conjunto vacío cualquier cosa es cierta).
 
+<a id="p-4-4"></a>
 ## Problema 4.4
+
+> **En el seminario.** [Observación 14.2](notes-4-examples-tests.md#rem-14-2) (11 nov.).
 
 **Enunciado.** Deducir el criterio de d'Alembert (problema 3.7) del criterio de Raabe (problema 3.9).
 
@@ -157,6 +165,7 @@ para $`n>N_2`$. Se cumple la condición 2) del criterio de Raabe: la serie diver
 
 **Por qué funciona.** La escala de Raabe es más fina: d'Alembert exige que el cociente esté separado de uno por un margen constante $`\beta`$, mientras que a Raabe le basta un margen del orden de $`\frac{1+\gamma}n`$, que tiende a cero. Un margen constante tarde o temprano supera a cualquier $`\frac cn`$, así que todo lo que ve d'Alembert lo ve también Raabe. El recíproco es falso: para $`a_n=\frac1{n^2}`$ el cociente es $`(1+\frac1n)^2\to1`$, d'Alembert calla y Raabe da la convergencia. Ambos criterios son casos particulares de Kummer con $`x_n=1`$ y $`x_n=n`$: cuanto más despacio diverge $`\sum\frac1{x_n}`$, más fuerte es el criterio.
 
+<a id="p-4-5"></a>
 ## Problema 4.5$`^{**}`$
 
 **Enunciado.** Dar un ejemplo de serie convergente para la que el conjunto $`\bigl\{k:\ 1<\frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}`$ sea numerable.
@@ -185,7 +194,10 @@ es decir, $`1<\frac{a_k}{a_{k+1}}\le1+\frac1k`$. Así que el conjunto contiene t
 
 La exigencia adicional $`1<\frac{a_k}{a_{k+1}}`$ excluye ejemplos baratos como 3.8, donde en los pasos «malos» los términos crecen. Aquí en los pasos malos los términos decrecen honradamente, pero no más rápido que los armónicos, y aun así de que haya infinitos de esos pasos no se sigue la divergencia. Conclusión: en el apartado 2) del criterio de Raabe la condición debe cumplirse para todos los índices a partir de alguno.
 
+<a id="p-4-6"></a>
 ## Problema 4.6 (formas límite de los criterios)
+
+> **En el seminario.** [Proposición 14.3](notes-4-examples-tests.md#prop-14-3) (11 nov.) y el resumen [cómo se comparan los criterios](notes-4-examples-tests.md#tests-compared).
 
 **Enunciado.** $`a_k>0`$ para $`k\ge N_0`$; $`C_k=\sqrt[k]{a_k}`$, $`D_k=\dfrac{a_k}{a_{k+1}}`$, $`R_k=k\Bigl(\dfrac{a_k}{a_{k+1}}-1\Bigr)`$. Demostrar seis afirmaciones.
 
@@ -207,7 +219,10 @@ El recurso común: si $`u_k\to L`$ y $`L<c`$, entonces $`u_k<c`$ para todo $`k`$
 
 Cuidado con el sentido: aquí $`D_k=\frac{a_k}{a_{k+1}}`$ es el cociente del término anterior entre el siguiente, el inverso del habitual $`\frac{a_{k+1}}{a_k}`$. Por eso $`D_k\to L<1`$ significa que los términos **crecen** y la serie diverge, y $`L>1`$ significa convergencia; para $`C_k`$ es al revés. La restricción $`L\ge0`$ en los apartados 3) y 5) del enunciado no es esencial: la demostración solo usa $`L<1`$.
 
+<a id="p-4-7"></a>
 ## Problema 4.7
+
+> **En el seminario.** El apartado 3) es el [ejemplo 14.1](notes-4-examples-tests.md#ex-14-1) (11 nov.).
 
 **1) $`a_k=\dfrac{\prod_{m=1}^k(2025+m)}{\prod_{m=1}^k(2m-1)}`$: converge.**
 
@@ -241,7 +256,10 @@ El numerador $`k^{1/k}\ge1`$. El denominador: de $`1+t\le e^t`$ se obtiene $`\bi
 
 **Respuesta.** $`\sum a_k`$ y $`\sum b_k`$ convergen, $`\sum c_k`$ diverge.
 
+<a id="p-4-8"></a>
 ## Problema 4.8
+
+> **En el seminario.** Las dos series se resolvieron el 30 oct.: $`a_k`$ en el [ejemplo 13.2](notes-4-examples-tests.md#ex-13-2), $`b_k`$ en el [ejemplo 13.1](notes-4-examples-tests.md#ex-13-1).
 
 **La serie $`a_k=\dfrac{\sqrt{k+1}-\sqrt{k-1}}{k^\alpha}`$: converge para $`\alpha>\frac12`$, diverge para $`\alpha\le\frac12`$.**
 
@@ -276,7 +294,10 @@ Por la forma no límite 3.7, 2) la serie diverge: los términos crecen, $`b_k\ge
 
 **Respuesta.** $`\sum a_k`$ converge para $`\alpha>\frac12`$ (con cualquier $`\beta`$), $`\sum b_k`$ converge para $`\beta<e`$ (con cualquier $`\alpha`$).
 
+<a id="p-4-9"></a>
 ## Problema 4.9
+
+> **En el seminario.** Una serie del mismo tipo que $`b_k`$ es el ejemplo tras el [corolario 11.1](notes-3-kummer-dalembert-raabe.md#cor-11-1) (21 oct.).
 
 En las cuatro series los términos son positivos y $`D_k=\frac{a_k}{a_{k+1}}\to1`$, con $`D_k>1`$ para todo $`k`$. Por tanto **el criterio de d'Alembert no es aplicable**: la condición de divergencia $`D_k\le1`$ no se cumple para ningún $`k`$, y la de convergencia $`D_k\ge1+\beta`$ con $`\beta>0`$ constante falla para $`k`$ grande (si no, el límite sería al menos $`1+\beta`$). Funciona Raabe.
 
@@ -319,6 +340,7 @@ Por 4.6, 6) la serie converge. Sin límite: $`\frac3{2k+18}\ge\frac{5/4}{k}`$ eq
 
 El criterio de d'Alembert solo distingue el comportamiento exponencial ($`a_k\approx q^k`$) y con decrecimiento potencial siempre da $`D_k\to1`$.
 
+<a id="p-4-10"></a>
 ## Problema 4.10 (criterio integral de Cauchy)
 
 **Enunciado.** $`f\colon[1;+\infty)\to\mathbb R`$; en $`[N_0;+\infty)`$ la función $`f`$ es no creciente y no negativa; $`f`$ es integrable en cada $`[N_0;x]`$. Demostrar: la serie $`\sum_{k=1}^\infty f(k)`$ converge $`\iff`$ existe el límite finito $`\lim_{x\to+\infty}I_f(x)`$, donde $`I_f(x)=\int_{N_0}^xf(y)\,dy`$.
@@ -350,6 +372,7 @@ Las sumas parciales de la serie no negativa $`\sum_{k>N_0}f(k)`$ están acotadas
 
 Dónde se usa cada hipótesis: la monotonía, en (2) (sin ella los valores en los enteros no dicen nada de la función entre ellos: $`f(x)=\sin^2(\pi x)`$ da una serie nula y una integral divergente); la no negatividad, en la monotonía de $`I_f`$ y en (F2); la integrabilidad, para que $`I_f`$ esté definida. Las hipótesis solo hacen falta a partir de cierto $`N_0`$, porque la convergencia es una propiedad de la cola. El criterio convierte una pregunta sobre una serie en una pregunta sobre una integral, que a menudo se calcula explícitamente: así se obtienen $`\sum\frac1{k^\alpha}`$ (converge para $`\alpha>1`$) y $`\sum\frac{1}{k\ln^\alpha k}`$ (converge para $`\alpha>1`$).
 
+<a id="p-4-11"></a>
 ## Problema 4.11 (criterio de Leibniz)
 
 **Enunciado.** Para todo $`k`$: $`a_ka_{k+1}<0`$ y $`|a_{k+1}|\le|a_k|`$; $`a_k\to0`$. Demostrar que $`\sum a_k`$ converge. $`^*`$ ¿Sigue siendo cierto con la condición $`a_ka_{k+1}\le0`$?
@@ -385,6 +408,7 @@ Las dos subsucesiones $`(S_{2m})`$ y $`(S_{2m+1})`$, que juntas agotan todos los
 
 Papel de las hipótesis: la monotonía de los módulos da el encaje, $`a_k\to0`$ da la contracción. Sin monotonía la afirmación es falsa: la serie $`1-\frac12+\frac12-\frac14+\frac13-\frac18+\dots`$ (términos positivos $`\frac1m`$, negativos $`-\frac1{2^m}`$) es alternada, sus términos tienden a cero, pero diverge, porque la parte positiva es la serie armónica y la negativa converge.
 
+<a id="p-4-12"></a>
 ## Problema 4.12
 
 **Enunciado.** $`\alpha>0`$. Usando el problema 4.11, demostrar la convergencia de seis series.

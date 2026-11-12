@@ -14,6 +14,9 @@ This page solves problems 3.1–3.11. Problems 1.2 and 2.2 from the "old" sectio
 
 ## Three facts everything rests on
 
+> [!note] At the seminar
+> (F1) is [[en/seminar-sem3/notes-2-series-basics#Corollary 6.5. Necessary condition for convergence|Corollary 6.5]], (F2) is [[en/seminar-sem3/notes-2-series-basics#Proposition 7.1. Convergence criterion for a non-negative series|Proposition 7.1]], (F3) is [[en/seminar-sem3/notes-2-series-basics#Proposition 6.3. Finitely many terms do not affect convergence|Proposition 6.3]], and the classical comparison test is [[en/seminar-sem3/notes-2-series-basics#Proposition 7.5. The comparison test|Proposition 7.5]] (2–3 Oct).
+
 Notation: $S_n=\sum_{k=1}^na_k$ is the partial sum.
 
 > [!note] (F1) Necessary condition
@@ -31,6 +34,9 @@ The whole chain of problems 3.4 → 3.6 → 3.7, 3.9 is built the same way: each
 
 ## Problem 3.1
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^lem-11-3|Lemma 11.3]] (21 Oct); the series $\sum(-1)^n$ is [[en/seminar-sem3/notes-2-series-basics#^ex-7-4|Example 7.4]] (3 Oct).
+
 **Statement.** The series $\sum a_k$ converges. Prove that the sequence of partial sums is bounded.
 
 **Proof.** By the definition of convergence there is a finite limit $S=\lim S_n$. Take $\varepsilon=1$: there is $N$ such that $|S_n-S|<1$ for all $n>N$, i.e. $|S_n|<|S|+1$. Put
@@ -42,6 +48,9 @@ Then $|S_n|\le C$ for all $n\in\mathbb N$. $\blacksquare$
 **Why it works.** This is just the theorem "a convergent sequence is bounded" applied to $(S_n)$: the far terms are squeezed near the limit, and only finitely many remain. The converse is false: the series $\sum(-1)^k$ has bounded partial sums $-1,0,-1,0,\dots$ and diverges. Boundedness of partial sums is equivalent to convergence only for series of constant sign (F2). Problems 3.2 and 3.3 give two more examples of bounded partial sums of divergent series.
 
 ## Problem 3.2
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-4-examples-tests#^ex-12-3|Example 12.3]] (28–30 Oct).
 
 **Statement.** $x_0\in\mathbb R$. Prove that the partial sums of $\sum_{k=1}^\infty\sin(kx_0)$ are bounded.
 
@@ -70,6 +79,9 @@ The bound does not depend on $n$. $\blacksquare$
 **Why it works.** Multiplying by $2\sin\frac{x_0}2$ turns each term into a difference of two "neighbouring" values of one sequence $c_k=\cos\bigl((k-\frac12)x_0\bigr)$: the term equals $c_k-c_{k+1}$. In the sum everything inside cancels (telescoping), only the ends remain. Geometrically, $\sin(kx_0)$ are projections of a vector that turns by the angle $x_0$ each time; the sum of such vectors walks along a circle of radius $\frac1{2|\sin(x_0/2)|}$ and does not escape to infinity. As $x_0\to2\pi m$ the bound gets worse (the radius grows), but at $2\pi m$ itself all terms are zero. The bound depends on $x_0$ but not on $n$ — that is enough.
 
 ## Problem 3.3
+
+> [!note] At the seminar
+> The sine series converges only for $x_0\in\pi\mathbb Z$: [[en/seminar-sem3/notes-2-series-basics#^ex-8-1|Example 8.1]] (7 Oct); the identity for sums of cosines: [[en/seminar-sem3/notes-4-examples-tests#^ex-12-4|Example 12.4]] (30 Oct).
 
 **Statement.** $x_0\in\mathbb R$. Prove that the series $\sum_{k=1}^\infty\cos(kx_0)$ diverges. $^*$ For which $x_0$ are its partial sums bounded?
 
@@ -100,6 +112,9 @@ This includes the case $\cos x_0=-1$: there $S_n\in\{-1,0\}$.
 
 ## Problem 3.4 (generalised comparison test)
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-2-series-basics#^thm-8-3|Theorem 8.3]] (7 Oct): the proof by multiplying the ratios.
+
 **Statement.** For $n>N_0$: $a_n>0$, $b_n>0$ and $\dfrac{a_{n+1}}{a_n}\le\dfrac{b_{n+1}}{b_n}$. Prove: a) if $\sum b_k$ converges, then $\sum a_k$ converges; b) if $\sum a_k$ diverges, then $\sum b_k$ diverges.
 
 **Proof.** Rewrite the condition: for $n>N_0$
@@ -124,6 +139,9 @@ b) This is the contrapositive of a): if $\sum b_k$ converged, then by a) $\sum a
 
 ## Problem 3.5
 
+> [!note] At the seminar
+> Part b) is [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^ex-9-1|Example 9.1]] (16 Oct); the reference series $\sum\frac1{k(k+1)}$ is [[en/seminar-sem3/notes-2-series-basics#^ex-7-2|Example 7.2]].
+
 **Statement.** Prove that $\sum_{k=1}^\infty\frac1{k!}$ converges: a) by the classical comparison test; b) by the generalised one.
 
 Reference: the series $\sum_{k=1}^\infty\frac{1}{k(k+1)}$ converges (its partial sums equal $1-\frac1{n+1}$).
@@ -143,6 +161,9 @@ The inequality $\frac1{k+1}\le\frac k{k+2}$ is equivalent to $k+2\le k^2+k$, i.e
 **Why it works.** The factorial grows faster than any polynomial, so $\frac1{k!}$ is comfortably below a $\frac1{k^2}$-like reference. Part b) shows what the generalised test is good for: the ratio of consecutive terms $\frac1{k+1}$ of the factorial series tends to zero, that of the reference, $\frac k{k+2}$, tends to one, and they are easier to compare than the terms themselves. For $k=1$ the ratio inequality fails ($\frac12>\frac13$), but the test only needs it from some index on.
 
 ## Problem 3.6 (Kummer's test)
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^thm-10-2|Theorem 10.2]] (16 Oct).
 
 **Statement.** $x_n>0$ for all $n$; $a_n>0$ for $n>N_0$.
 
@@ -178,6 +199,9 @@ Kummer's test is not a single test but a template: every sequence $(x_n)$ gives 
 
 ## Problem 3.7 (d'Alembert's test)
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^cor-10-3|Corollary 10.3]] (16 Oct).
+
 **Statement.** $a_n>0$ for $n>N_0$. 1) If $\dfrac{a_n}{a_{n+1}}\ge1+\beta$ for $n>N_1$, $\beta>0$, the series converges. 2) If $\dfrac{a_n}{a_{n+1}}\le1$ for $n>N_2$, the series diverges.
 
 **Proof.** Apply Kummer's test with $x_n=1$ for all $n$. Then
@@ -190,6 +214,9 @@ $$
 **Why it works.** In part 1) $a_{n+1}\le\frac{a_n}{1+\beta}$: the terms decay no slower than a geometric progression with ratio $q=\frac1{1+\beta}<1$. In part 2) $a_{n+1}\ge a_n>0$: the terms do not decrease and do not tend to zero, so (F1) fails. It matters that 1) needs a gap $\beta>0$ independent of $n$: the condition $\frac{a_n}{a_{n+1}}>1$ is not enough (harmonic series: $\frac{a_n}{a_{n+1}}=1+\frac1n>1$, and the series diverges). This "gap tending to zero" is what Raabe's test handles.
 
 ## Problem 3.8
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^ex-10-4|Example 10.4]] (16 Oct).
 
 **Statement.** $a_k=2^{-k}$ for odd $k$, $a_k=3^{-k}$ for even $k$. Prove: 1) the series converges; 2) the sets $\bigl\{k:\ \frac{a_k}{a_{k+1}}\le1\bigr\}$ and $\bigl\{k:\ \frac{a_k}{a_{k+1}}\ge\frac92\bigr\}$ are countable.
 
@@ -210,6 +237,9 @@ So the first set is all even numbers and the second is all odd numbers. Each is 
 For Cauchy's root test such a replacement is legitimate: if $\sqrt[k]{a_k}\ge1$ for infinitely many $k$, then $a_k\ge1$ for infinitely many $k$, the general term does not tend to zero, and the series diverges. The difference is that the root estimates the term **itself**, while the ratio only sees its change over one step: one step up does not prevent the series from decaying overall. For our series $\sqrt[k]{a_k}\le\frac12$, so Cauchy's test gives convergence at once, while d'Alembert's gives nothing (neither of its conditions holds from some index on).
 
 ## Problem 3.9 (Raabe's test)
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^cor-11-1|Corollary 11.1]] (21 Oct), with an example where d'Alembert is silent and Raabe gives divergence.
 
 **Statement.** $a_n>0$ for $n>N_0$. 1) If $\dfrac{a_n}{a_{n+1}}\ge1+\dfrac{1+\gamma}n$ for $n>N_1$, $\gamma>0$, the series converges. 2) If $\dfrac{a_n}{a_{n+1}}\le1+\dfrac1n$ for $n>N_2$, the series diverges.
 
@@ -233,6 +263,11 @@ Raabe's test is stronger than d'Alembert's (problem 4.4 of HW 4): it works where
 
 ## Problem 3.10$^*$
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^rem-11-2|Remark 11.2]] (21 Oct), with the same example.
+
+^p-3-10
+
 **Statement.** Give an example of a convergent series for which the set $\bigl\{k:\ \frac{a_k}{a_{k+1}}\le1+\frac1k\bigr\}$ is countable.
 
 **Solution.** The series of problem 3.8 works: $a_k=2^{-k}$ for odd $k$ and $a_k=3^{-k}$ for even $k$. It converges, all its terms are positive, and, as shown there:
@@ -247,6 +282,11 @@ The set equals the set of all even numbers, which is countable. $\blacksquare$
 A finer example, where the ratio lies in the half-open interval $(1;1+\frac1k]$ for infinitely many $k$ (the terms decrease, but slowly), is built in problem 4.5 of [[en/seminar-sem3/hw4-series-inequalities-bases|HW 4]]; it fits here as well.
 
 ## Problem 3.11$^{**}$
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^thm-12-1|Theorem 12.1]] (28 Oct): the proof via Taylor's formula with the Peano remainder.
+
+^p-3-11
 
 **Statement.** $\alpha\in\mathbb R$, $0<M_1\le C_k\le M_2$, $a_k=\dfrac{C_k}{k^\alpha}$. For which $\alpha$ does $\sum a_k$ converge?
 

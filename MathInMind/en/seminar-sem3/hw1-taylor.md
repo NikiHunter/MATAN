@@ -30,7 +30,10 @@ Two practical consequences follow.
 1. **The homogeneous part of degree $`k`$ of the expansion equals $`d^k_af(h)/k!`$** and is uniquely determined: if $`f(a+h)=\sum_{k\le s}P_k(h)+o(|h|^s)`$ with $`P_k`$ a homogeneous polynomial of degree $`k`$, then $`P_k(h)=d_a^kf(h)/k!`$ (uniqueness of the Taylor polynomial). So computing partial derivatives is not mandatory: any legitimate manipulation that produces a polynomial in $`h`$ with the right remainder produces exactly the Taylor polynomial.
 2. **For a polynomial of degree $`N`$ the sum terminates:** all derivatives of order $`N+1`$ vanish, so the Lagrange remainder with $`s=N`$ is identically zero. Expanding a polynomial is just substituting $`x=a_1+h_1,\dots`$ and multiplying out; the "Taylor series" is finite and equals $`f`$ exactly, for all $`h`$, not only for small ones.
 
+<a id="p-1-1"></a>
 ## Problem 1.1
+
+> **At the seminar.** [Example 2.2](notes-1-taylor-extremum.md#ex-2-2) (4 Sep): the same problem; the board works out the point $`(1;-1;2)`$.
 
 **Statement.** $`f(x,y,z)=x^3+y^3+z^3-3xyz`$. Expand by Taylor's formula at the points $`(1;1;1)`$ and $`(1;-1;2)`$.
 
@@ -70,6 +73,7 @@ In the original variables $`h_1=x-1`$, $`h_2=y+1`$, $`h_3=z-2`$.
 
 **Check.** For $`h=(1,0,0)`$ at the first point: $`f(2,1,1)=8+1+1-6=4`$, the formula gives $`3+1=4`$. At the second point: $`f(2,-1,2)=8-1+8+12=27`$, the formula gives $`14+9+3+1=27`$.
 
+<a id="p-1-2"></a>
 ## Problem 1.2
 
 **Statement.** $`f(x,y)=5x^4-4x^2y^2+3y^4-2xy+1`$. Expand by Taylor's formula at the point $`(-3;2)`$.
@@ -115,6 +119,7 @@ Assemble $`d^k_af(h)/k!`$ with binomial coefficients:
 
 **Check.** $`h=(1,0)`$: $`f(-2,2)=80-64+48+8+1=73`$; the formula gives $`322-448+254-60+5=73`$. $`h=(0,1)`$: $`f(-3,3)=405-324+243+18+1=343`$; the formula gives $`322-42+36+24+3=343`$.
 
+<a id="p-1-3"></a>
 ## Problem 1.3
 
 **Statement.** $`f(x,y,z)=e^{xy+z^2}`$. Find the explicit Taylor expansion up to degree three with the Lagrange remainder at the point $`a=(-2;0;3)`$.
@@ -160,7 +165,10 @@ This is the same sum $`\frac1{4!}\sum_{|\alpha|=4}\frac{4!}{\alpha!}\partial^\al
 
 **Check.** $`h=(0,0,h_3)`$: $`f=e^{(3+h_3)^2}=e^9e^{6h_3+h_3^2}=e^9\bigl(1+6h_3+19h_3^2+42h_3^3+\dots\bigr)`$, since $`\frac{36}{2}+1=19`$ and $`\frac{216}{6}+6=42`$.
 
+<a id="p-1-4"></a>
 ## Problem 1.4
+
+> **At the seminar.** [Example 4.1](notes-1-taylor-extremum.md#ex-4-1) (18 Sep): all derivatives up to order two and their values at the point, collected in one table.
 
 **Statement.** $`f(x,y,z)=x^2\sin(xy)\,e^{y+z}`$. Find the explicit Taylor expansion up to degree two with the Lagrange remainder at the point $`a=(-1;\pi;2)`$.
 

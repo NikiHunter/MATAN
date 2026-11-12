@@ -19,7 +19,7 @@ A rigorous course from first principles to modern integration, in 26 chapters. R
 ## Illustrated lectures 2025/26
 
 - [Index of all lectures 0–84](lectures-2025-26/index.md): full transcriptions of the 2025/26 lectures, Russian originals with English and Spanish translations, including the handwritten proofs and figures.
-- [Seminar NM-204, semester 3](seminar-sem3/index.md): solutions to homework 1–4 with a «why it works» note for every problem, a test 1 preparation guide and three practice variants.
+- [Seminar NM-204, semester 3](seminar-sem3/index.md): solutions to homework 1–4 with a «why it works» note for every problem, a test 1 preparation guide, three practice variants, and the seminar notes of 4 Sep – 11 Nov with recognition errors corrected.
 - **Semester 1:** lectures 0–32. **Semester 2:** lectures 33–64. Semester 2 overlaps the Russian exam-oriented [register `ru/lectures/`](../ru/lectures/index.md); every lecture links to the matching register section.
 - Where each figure comes from (PDF, page and crop) is recorded batch by batch in [`assets/lectures-2025-26/`](../assets/lectures-2025-26/).
 

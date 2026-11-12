@@ -34,6 +34,9 @@ Two practical consequences follow.
 
 ## Problem 1.1
 
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-1-taylor-extremum#^ex-2-2|Example 2.2]] (4 Sep): the same problem; the board works out the point $(1;-1;2)$.
+
 **Statement.** $f(x,y,z)=x^3+y^3+z^3-3xyz$. Expand by Taylor's formula at the points $(1;1;1)$ and $(1;-1;2)$.
 
 **Solution.** Partial derivatives:
@@ -163,6 +166,9 @@ This is the same sum $\frac1{4!}\sum_{|\alpha|=4}\frac{4!}{\alpha!}\partial^\alp
 **Check.** $h=(0,0,h_3)$: $f=e^{(3+h_3)^2}=e^9e^{6h_3+h_3^2}=e^9\bigl(1+6h_3+19h_3^2+42h_3^3+\dots\bigr)$, since $\frac{36}{2}+1=19$ and $\frac{216}{6}+6=42$.
 
 ## Problem 1.4
+
+> [!note] At the seminar
+> [[en/seminar-sem3/notes-1-taylor-extremum#^ex-4-1|Example 4.1]] (18 Sep): all derivatives up to order two and their values at the point, collected in one table.
 
 **Statement.** $f(x,y,z)=x^2\sin(xy)\,e^{y+z}$. Find the explicit Taylor expansion up to degree two with the Lagrange remainder at the point $a=(-1;\pi;2)$.
 

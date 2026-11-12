@@ -20,7 +20,7 @@ Un curso riguroso desde los fundamentos hasta la integración moderna, en 26 cap
 ## Lecciones ilustradas 2025/26
 
 - [[es/lectures-2025-26/index|Índice de todas las lecciones 0–84]]: transcripciones completas de las lecciones 2025/26, originales en ruso con traducciones al inglés y al español, incluidas las demostraciones manuscritas y las figuras.
-- [[es/seminar-sem3/index|Seminario NM-204, semestre 3]]: soluciones de las tareas 1–4 con una nota «por qué funciona» en cada problema, una guía para el control 1 y tres variantes de práctica.
+- [[es/seminar-sem3/index|Seminario NM-204, semestre 3]]: soluciones de las tareas 1–4 con una nota «por qué funciona» en cada problema, una guía para el control 1, tres variantes de práctica y los apuntes de los seminarios del 4 sep. al 11 nov. con los errores de reconocimiento corregidos.
 - **Semestre 1:** lecciones 0–32. **Semestre 2:** lecciones 33–64. El semestre 2 se solapa con el [[ru/lectures/index|registro ruso `ru/lectures/`]], orientado al examen; cada lección enlaza con la sección correspondiente del registro.
 - El origen de cada figura (PDF, página y recorte) se registra por lotes en [`assets/lectures-2025-26/`](https://github.com/NikiHunter/matan/tree/main/MathInMind/assets/lectures-2025-26).
 

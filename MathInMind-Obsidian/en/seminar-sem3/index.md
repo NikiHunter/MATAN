@@ -1,9 +1,9 @@
 ---
-title: "Seminar NM-204, semester 3 — homework solutions"
+title: "Seminar NM-204, semester 3 — homework solutions and notes"
 lang: en
 tags: [mathinmind/en, mathinmind/other]
 ---
-# Seminar NM-204, semester 3: homework solutions
+# Seminar NM-204, semester 3: homework solutions and seminar notes
 
 [[ru/seminar-sem3/index|Русский]] · **English** · [[es/seminar-sem3/index|Español]]
 
@@ -21,6 +21,33 @@ Problems are carried over from one assignment to the next under the same numbers
 | HW 4 | [[en/seminar-sem3/hw4-series-inequalities-bases\|Series, inequalities, bases]] | 4.1–4.12 | Hölder, bases, limit tests, integral test, Leibniz |
 
 **Test 1.** [[en/seminar-sem3/test1-guide|How to prepare]] — the likely structure, methods for each task, typical mistakes and a three-day plan; [[en/seminar-sem3/test1-variants|practice variants]] — three variants in the format 1.1, 1.2, 2.1, 2.2, 3, 4 with solutions.
+
+## Seminar notes
+
+Records of the boards from 4 September to 11 November 2026, reworked from the OCR transcription in [`sem3_notes`](https://github.com/NikiHunter/matan/blob/main/sem3_notes/README.md) (in Russian). Statement numbers are kept as on the board, the arguments are rewritten more clearly, recognition errors are corrected and listed at the end of each part, and every statement links to its homework problem. In the homework solutions such problems carry an "At the seminar" note pointing back.
+
+| Part | Dates | What is inside |
+|---|---|---|
+| [[en/seminar-sem3/notes-1-taylor-extremum\|1. Taylor's formula and conditional extrema]] | 4–20 Sep | Taylor in $\mathbb R^n$, the bordered-Hessian theorem with a sign table, Problems 1.1, 1.4, 2.1, 2.3 |
+| [[en/seminar-sem3/notes-2-series-basics\|2. Basics of series]] | 2–7 Oct | convergence, Cauchy's criterion, non-negative series, comparison, Cauchy's root test, generalised comparison |
+| [[en/seminar-sem3/notes-3-kummer-dalembert-raabe\|3. Kummer's, d'Alembert's and Raabe's tests]] | 16–28 Oct | Kummer and its special cases, why "for infinitely many $n$" is not enough, series $\sum\frac{c_k}{k^d}$ |
+| [[en/seminar-sem3/notes-4-examples-tests\|4. Examples and comparing the tests]] | 28 Oct – 11 Nov | sums of sines and cosines, Problems 4.4, 4.6–4.8, which test is stronger |
+
+**Which seminar goes with which problem.**
+
+| Date | What was worked out | Homework |
+|---|---|---|
+| 4 Sep | Taylor for $x^3+y^3+z^3-3xyz$, definition of a conditional extremum | [[en/seminar-sem3/hw1-taylor#Problem 1.1\|1.1]] |
+| 9 Sep | the theorem on conditional extrema (bordered Hessian) | all of [[en/seminar-sem3/hw2-conditional-extremum\|HW 2]] |
+| 18 Sep | Taylor for $x^2\sin(xy)e^{y+z}$; $x^3+y^3-3xy$ on a line | [[en/seminar-sem3/hw1-taylor#Problem 1.4\|1.4]], [[en/seminar-sem3/hw2-conditional-extremum#Problem 2.1\|2.1]] |
+| 20 Sep | an extremum in $\mathbb R^4$ with two constraints | [[en/seminar-sem3/hw2-conditional-extremum#Problem 2.3\|2.3]], the $y^2$ variant |
+| 2 Oct, 3 Oct | necessary condition, non-negative series, comparison test | (F1)–(F3), [[en/seminar-sem3/hw3-numerical-series#Problem 3.1\|3.1]], [[en/seminar-sem3/hw3-numerical-series#Problem 3.5\|3.5]] |
+| 7 Oct | $\sum\sin(kx_0)$, Cauchy's test, generalised comparison | [[en/seminar-sem3/hw3-numerical-series#Problem 3.3\|3.3]], [[en/seminar-sem3/hw3-numerical-series#Problem 3.4 (generalised comparison test)\|3.4]] |
+| 16 Oct | $\sum\frac1{k!}$, Kummer, d'Alembert, the series of $2^{-k}$ and $3^{-k}$ | [[en/seminar-sem3/hw3-numerical-series#Problem 3.5\|3.5]]–[[en/seminar-sem3/hw3-numerical-series#Problem 3.8\|3.8]] |
+| 21 Oct | Raabe's test, the condition "for infinitely many $n$" | [[en/seminar-sem3/hw3-numerical-series#Problem 3.9 (Raabe's test)\|3.9]], [[en/seminar-sem3/hw3-numerical-series#^p-3-10\|3.10]] |
+| 28 Oct | $\sum\frac{c_k}{k^d}$, bounded sums of sines | [[en/seminar-sem3/hw3-numerical-series#^p-3-11\|3.11]], [[en/seminar-sem3/hw3-numerical-series#Problem 3.2\|3.2]] |
+| 30 Oct | $\sum\frac{\beta^kk!}{k^k}$, $\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}$, sums of cosines | [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.8\|4.8]], [[en/seminar-sem3/hw3-numerical-series#Problem 3.3\|3.3]] |
+| 11 Nov | a series with $c_k\to1$, Raabe ⟹ d'Alembert, limit forms | [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.7\|4.7]], [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.4\|4.4]], [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.6 (limit forms of the tests)\|4.6]] |
 
 ## Answers on one page
 
@@ -59,7 +86,7 @@ Problems are carried over from one assignment to the next under the same numbers
 ## What to clarify with the instructor
 
 1. **Problem 4.3, families $\mathcal M_3$ and $\mathcal M_5$.** With the parameter $r\in(0;+\infty)$ their unions are $\mathbb R\setminus\{0\}$ and $(0;+\infty)$, not $\mathbb R$, so the first condition in the definition of a base on $\mathbb R$ literally fails. The solution proves what is true and says how to repair the statement.
-2. **Problem 2.3.** HW 2 has $y^3$, the shortened HW 3 file has $y^2$. The answers differ; both variants are solved, with $y^3$ as the main one.
+2. **Problem 2.3.** HW 2 has $y^3$, the shortened HW 3 file has $y^2$. The answers differ; both variants are solved, with $y^3$ as the main one. The seminar on 20 Sep worked out exactly the $y^2$ variant ([[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Example 5.1]]), so the $y^3$ in HW 2 may be a typo.
 3. **Problem 2'.2, the hint.** "The trivial case $k=1$" is read as $m=1$ ($k$ is the summation index in the statement).
 
 ## How the assignments fit together

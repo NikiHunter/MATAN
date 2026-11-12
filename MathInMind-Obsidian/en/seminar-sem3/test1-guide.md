@@ -7,7 +7,7 @@ tags: [mathinmind/en, mathinmind/other]
 
 [[ru/seminar-sem3/test1-guide|Русский]] · **English** · [[es/seminar-sem3/test1-guide|Español]]
 
-[[en/seminar-sem3/index|All assignments]] · [[en/seminar-sem3/test1-variants|Practice variants →]]
+[[en/seminar-sem3/index|All assignments]] · [[en/seminar-sem3/index#Seminar notes|Seminar notes]] · [[en/seminar-sem3/test1-variants|Practice variants →]]
 
 > [!note] What this is
 > A preparation plan for test 1 based on homework 1–4. The structure of the test is as reported: four tasks, items **1.1, 1.2, 2.1, 2.2, 3, 4**; tasks 1 and 2 are on Taylor's formula and extrema, tasks 3 and 4 on series. There are no real papers: the problem types below are a forecast from the homework, not a leak. The assignment of topics to items is a guess.
@@ -63,7 +63,7 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 
 - Necessary condition for an unconstrained extremum: $\nabla f=0$. Sufficient: the sign of $d^2f$ (positive definite — minimum, negative definite — maximum, indefinite — no extremum, semi-definite — the test is silent).
 - Sylvester's criterion for $2\times2$: $\Delta_1=f_{xx}$, $\Delta_2=f_{xx}f_{yy}-f_{xy}^2$. $\Delta_2>0,\ \Delta_1>0$ — minimum; $\Delta_2>0,\ \Delta_1<0$ — maximum; $\Delta_2<0$ — saddle; $\Delta_2=0$ — examine by hand.
-- Constrained extremum: $L=f-\sum\lambda_j\varphi_j$, the system $\nabla L=0$ plus the constraint equations; the sufficient condition is the sign of $d^2L$ **on the tangent space** $\{h:\ d\varphi_j(h)=0\}$.
+- Constrained extremum: $L=f-\sum\lambda_j\varphi_j$, the system $\nabla L=0$ plus the constraint equations; the sufficient condition is the sign of $d^2L$ **on the tangent space** $\{h:\ d\varphi_j(h)=0\}$. At the seminar the same condition was checked through the signs of the minors of the bordered Hessian; the method is below.
 
 **Method when the constraint can be solved explicitly (item 2.1).**
 
@@ -78,6 +78,13 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 2. Solve the Lagrange system. Do not divide by an expression that may be zero without treating that case: write $(x-y)(z+2\lambda)=0$ and handle both alternatives.
 3. Determine the type of the points. The fastest way when $M$ is compact (sphere, ellipsoid, circle): "$f$ is continuous on a compact set, so it attains its greatest and least values, and they are attained at stationary points" — then compare the values.
 4. Write the answer: the points, the type, the extremal values.
+
+**The bordered-Hessian method (as done at the seminar, [[en/seminar-sem3/notes-1-taylor-extremum#Theorem 3.1. Conditional extrema and the bordered Hessian|Theorem 3.1]]).**
+
+1. Write $\mathcal L=f+\sum_k\lambda_kg_k$ and solve the system of $n+m$ equations: all partial derivatives of $\mathcal L$ in $x_j$ and in $\lambda_k$ vanish.
+2. Form $\widetilde H=\begin{pmatrix}0&J_g\\ J_g^{T}&H_{\mathcal L}\end{pmatrix}$ and find the minors $\Delta_{2m+1},\dots,\Delta_{n+m}$ at a general point first, as the seminar advised.
+3. Substitute each stationary point together with its $\lambda$. All signs equal to $(-1)^m$ — a minimum; the sign of $\Delta_k$ equal to $(-1)^{k-m}$ — a maximum; non-zero minors with other signs — no extremum; $\Delta_{n+m}=0$ — the test is silent, examine by hand.
+4. The most common case $n=2$, $m=1$: $\det\widetilde H<0$ — a minimum, $\det\widetilde H>0$ — a maximum ([[en/seminar-sem3/notes-1-taylor-extremum#^ex-4-2|Example 4.2]]). For $n=4$, $m=2$: a minimum is $\Delta_5>0$, $\Delta_6>0$; a maximum is $\Delta_5<0$, $\Delta_6>0$ ([[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Example 5.1]]).
 
 **Typical mistakes.**
 
@@ -110,6 +117,9 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 | Integral test | $f(k+1)\le\int_k^{k+1}f\le f(k)$ | [[en/seminar-sem3/hw4-series-inequalities-bases\|4.10]] |
 | Boundedness of the sums $\sum\sin(kx_0)$ | multiply by $2\sin\frac{x_0}2$, telescoping | [[en/seminar-sem3/hw3-numerical-series\|3.2]] |
 | $\sum\cos(kx_0)$ diverges | $\cos(2kx_0)=2\cos^2(kx_0)-1$, the general term does not tend to zero | [[en/seminar-sem3/hw3-numerical-series\|3.3]] |
+| Cauchy's root test | $\sqrt[n]{a_n}\le q$ ⟺ $a_n\le q^n$; for divergence infinitely many $n$ are enough | [[en/seminar-sem3/notes-2-series-basics#Theorem 8.2. Cauchy's (root) test\|Theorem 8.2]] |
+| $\sum\sin(kx_0)$ converges ⟺ $x_0\in\pi\mathbb Z$ | $\cos(kx_0)$ is expressed through $\sin(kx_0)$ and $\sin((k+1)x_0)$ | [[en/seminar-sem3/notes-2-series-basics#^ex-8-1\|Example 8.1]] |
+| $\sum\frac{c_k}{k^d}$ converges ⟺ $d>1$ | comparison with $\frac{M_2}{k^d}$, then Raabe | [[en/seminar-sem3/hw3-numerical-series#^p-3-11\|3.11]], [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^thm-12-1\|Theorem 12.1]] |
 
 **The tests in the seminar's notation.** Note: the seminar uses the ratio $\dfrac{a_n}{a_{n+1}}$ (previous to next), not $\dfrac{a_{n+1}}{a_n}$.
 
@@ -118,6 +128,7 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 | Kummer | $x_n\frac{a_n}{a_{n+1}}-x_{n+1}\ge\alpha>0$ | $x_n\frac{a_n}{a_{n+1}}-x_{n+1}\le0$ and $\sum\frac1{x_n}$ diverges |
 | d'Alembert | $\frac{a_n}{a_{n+1}}\ge1+\beta$, $\beta>0$ | $\frac{a_n}{a_{n+1}}\le1$ |
 | Raabe | $\frac{a_n}{a_{n+1}}\ge1+\frac{1+\gamma}n$, $\gamma>0$ | $\frac{a_n}{a_{n+1}}\le1+\frac1n$ |
+| Cauchy | $\sqrt[n]{a_n}\le q<1$ | $\sqrt[n]{a_n}\ge1$ for infinitely many $n$ |
 | Cauchy (limit form) | $\sqrt[k]{a_k}\to L<1$ | $\sqrt[k]{a_k}\to L>1$ |
 | Leibniz | signs alternate, $\lvert a_k\rvert$ is non-increasing, $a_k\to0$ | — |
 
@@ -161,18 +172,33 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 - Comparison $a_k\le b_k$ for sign-changing series — comparison tests only work for non-negative ones.
 - The borderline value of a parameter not treated separately ($\beta=e$ in [[en/seminar-sem3/hw4-series-inequalities-bases|4.8]]).
 
+## What to review in the seminar notes
+
+The [[en/seminar-sem3/index#Seminar notes|notes]] show the form in which the theory was given at the seminar. At the test it is sensible to write in the same notation: eventually positive sequences, the ratio $\frac{a_n}{a_{n+1}}$, the Lagrange function with a plus sign, the bordered Hessian.
+
+| Item | What to review | Where |
+|---|---|---|
+| 1.1 | Taylor's formula with multi-indices; why the remainder of a polynomial is zero | [[en/seminar-sem3/notes-1-taylor-extremum#^ex-2-2\|Example 2.2]] |
+| 1.2 | the table of derivatives, the factors $\frac1{\alpha!}$, the remainder at $u+t_0h$ | [[en/seminar-sem3/notes-1-taylor-extremum#^ex-4-1\|Example 4.1]], [[en/seminar-sem3/notes-1-taylor-extremum#Remark 2.1. A segment is the set of convex combinations of its endpoints\|Remark 2.1]] |
+| 2.1 | the bordered Hessian for linear constraints: one constraint and two | [[en/seminar-sem3/notes-1-taylor-extremum#^ex-4-2\|Example 4.2]], [[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1\|Example 5.1]] |
+| 2.2 | the statement of the theorem and the sign table of the minors | [[en/seminar-sem3/notes-1-taylor-extremum#Theorem 3.1. Conditional extrema and the bordered Hessian\|Theorem 3.1]], [[en/seminar-sem3/notes-1-taylor-extremum#^ex-3-2\|Example 3.2]] |
+| 3 | the proofs from the board: comparison, Cauchy, generalised comparison, Kummer, d'Alembert, Raabe, Raabe ⟹ d'Alembert | [[en/seminar-sem3/notes-2-series-basics\|part 2]], [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^thm-10-2\|Theorem 10.2 and its corollaries]], [[en/seminar-sem3/notes-4-examples-tests#^rem-14-2\|Remark 14.2]] |
+| 4 | series with a parameter and examples where the tests fail | [[en/seminar-sem3/notes-4-examples-tests#^ex-13-1\|Examples 13.1, 13.2]], [[en/seminar-sem3/notes-4-examples-tests#^ex-14-1\|14.1]], [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^ex-10-4\|10.4]], [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#Remark 12.2. What to look at for an eventually positive series\|Remark 12.2]] |
+
+At the seminar Problem 2.3 was solved in the $y^2$ variant ([[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Example 5.1]]), while HW 2 has $y^3$. If a similar problem comes up, check the power in the statement first: the answers differ.
+
 ## Preparation plan
 
 **Day 1 — Taylor and extrema.**
 
-1. Read the sections "The general idea" in [[en/seminar-sem3/hw1-taylor|HW 1]] and "Why the Lagrange method works" in [[en/seminar-sem3/hw2-conditional-extremum|HW 2]].
+1. Read the sections "The general idea" in [[en/seminar-sem3/hw1-taylor|HW 1]] and "Why the Lagrange method works" in [[en/seminar-sem3/hw2-conditional-extremum|HW 2]], then [[en/seminar-sem3/notes-1-taylor-extremum|part 1 of the notes]], especially Theorem 3.1 with its sign table.
 2. Solve 1.2 and 1.4 again without looking at the solution, then 2.2 and 2'.1. Compare.
 3. Solve items 1.1, 1.2, 2.1, 2.2 of [[en/seminar-sem3/test1-variants|variant A]] against the clock: 40 minutes.
 
 **Day 2 — series.**
 
-1. Learn the table of tests and the three basic facts.
-2. In writing, with the notebook closed, prove 3.4, 3.6, 3.7, 3.9, 4.11. Compare with the solutions.
+1. Learn the table of tests and the three basic facts; read [[en/seminar-sem3/notes-2-series-basics|parts 2–4 of the notes]].
+2. In writing, with the notebook closed, prove 3.4, 3.6, 3.7, 3.9, 4.11 and Cauchy's root test ([[en/seminar-sem3/notes-2-series-basics#Theorem 8.2. Cauchy's (root) test|Theorem 8.2]]). Compare with the solutions.
 3. Work through 4.7–4.9 and 4.12 again.
 4. Solve tasks 3 and 4 of [[en/seminar-sem3/test1-variants|variant A]]: 40 minutes.
 
@@ -194,6 +220,8 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 8. Does $\sum\frac{e^kk!}{k^k}$ converge, and why does the limit form not help here?
 9. Which three conditions does Leibniz's test need?
 10. Give an example of a divergent series with bounded partial sums.
+11. Which minors of the bordered Hessian are checked for $n=4$, $m=2$, and which signs mean a maximum?
+12. Why are "infinitely many $n$" enough for divergence in Cauchy's test but not in d'Alembert's?
 
 > [!answer]- Answers
 > 1. $6f_{xyz}$: the multinomial coefficient $\frac{3!}{1!\,1!\,1!}$.
@@ -206,3 +234,5 @@ For two variables: $d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2$, $d^3f=f_{xxx}h_
 > 8. It diverges. The limit of the ratio is $1$, but $\frac{a_k}{a_{k+1}}=\frac1e\bigl(1+\frac1k\bigr)^k<1$ for all $k$ — the pre-limit form of d'Alembert's test applies.
 > 9. The signs alternate, the absolute values are non-increasing, the general term tends to zero.
 > 10. $\sum(-1)^k$, or $\sum\cos(kx_0)$ for $x_0\notin2\pi\mathbb Z$.
+> 11. $\Delta_5$ and $\Delta_6$; a maximum is $\Delta_5<0$, $\Delta_6>0$, that is, the sign of $\Delta_k$ is $(-1)^{k-m}$ ([[en/seminar-sem3/notes-1-taylor-extremum#^ex-5-1|Example 5.1]]).
+> 12. $\sqrt[n]{a_n}\ge1$ means $a_n\ge1$, and infinitely many such terms prevent $a_n\to0$. A ratio only describes one step: the series of [[en/seminar-sem3/notes-3-kummer-dalembert-raabe#^ex-10-4|Example 10.4]] grows infinitely often and still converges.

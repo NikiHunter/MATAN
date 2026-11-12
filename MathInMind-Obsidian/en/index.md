@@ -20,7 +20,7 @@ A rigorous course from first principles to modern integration, in 26 chapters. R
 ## Illustrated lectures 2025/26
 
 - [[en/lectures-2025-26/index|Index of all lectures 0–84]]: full transcriptions of the 2025/26 lectures, Russian originals with English and Spanish translations, including the handwritten proofs and figures.
-- [[en/seminar-sem3/index|Seminar NM-204, semester 3]]: solutions to homework 1–4 with a «why it works» note for every problem, a test 1 preparation guide and three practice variants.
+- [[en/seminar-sem3/index|Seminar NM-204, semester 3]]: solutions to homework 1–4 with a «why it works» note for every problem, a test 1 preparation guide, three practice variants, and the seminar notes of 4 Sep – 11 Nov with recognition errors corrected.
 - **Semester 1:** lectures 0–32. **Semester 2:** lectures 33–64. Semester 2 overlaps the Russian exam-oriented [[ru/lectures/index|register `ru/lectures/`]]; every lecture links to the matching register section.
 - Where each figure comes from (PDF, page and crop) is recorded batch by batch in [`assets/lectures-2025-26/`](https://github.com/NikiHunter/matan/tree/main/MathInMind/assets/lectures-2025-26).
 
