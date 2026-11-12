@@ -5,6 +5,8 @@ hw: 3
 ---
 # ДЗ 3. Числовые ряды и признаки сходимости — решения
 
+**Русский** · [English](../../en/seminar-sem3/hw3-numerical-series.md) · [Español](../../es/seminar-sem3/hw3-numerical-series.md)
+
 [← ДЗ 2](hw2-conditional-extremum.md) · [Все задания](index.md) · [ДЗ 4 →](hw4-series-inequalities-bases.md) · [Лекции 67–68, §7.1–§7.2](../lectures-2025-26/lecture-67-68.md) · [Лекции 69–70, §7.3](../lectures-2025-26/lecture-69-70.md)
 
 Здесь решены задачи 3.1–3.11. Задачи 1.2 и 2.2 из раздела «старых» решены в [ДЗ 1](hw1-taylor.md) и [ДЗ 2](hw2-conditional-extremum.md), серия 2'.1–2'.3 — в [ДЗ 2](hw2-conditional-extremum.md).

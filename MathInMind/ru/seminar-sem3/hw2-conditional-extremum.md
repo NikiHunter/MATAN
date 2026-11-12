@@ -5,6 +5,8 @@ hw: 2
 ---
 # ДЗ 2. Условный экстремум — решения
 
+**Русский** · [English](../../en/seminar-sem3/hw2-conditional-extremum.md) · [Español](../../es/seminar-sem3/hw2-conditional-extremum.md)
+
 [← ДЗ 1](hw1-taylor.md) · [Все задания](index.md) · [ДЗ 3 →](hw3-numerical-series.md) · [Лекции 67–68, §6.7](../lectures-2025-26/lecture-67-68.md)
 
 Здесь решены задачи 2.1–2.3 (ДЗ 2) и 2'.1–2'.3 (серия про условный экстремум из ДЗ 3). Задачи 1.2 и 1.4, повторённые в ДЗ 2, решены в [ДЗ 1](hw1-taylor.md).

@@ -6,6 +6,8 @@ tags: [mathinmind/ru, mathinmind/other]
 ---
 # ДЗ 3. Числовые ряды и признаки сходимости — решения
 
+**Русский** · [[en/seminar-sem3/hw3-numerical-series|English]] · [[es/seminar-sem3/hw3-numerical-series|Español]]
+
 [[ru/seminar-sem3/hw2-conditional-extremum|← ДЗ 2]] · [[ru/seminar-sem3/index|Все задания]] · [[ru/seminar-sem3/hw4-series-inequalities-bases|ДЗ 4 →]] · [[ru/lectures-2025-26/lecture-67-68|Лекции 67–68, §7.1–§7.2]] · [[ru/lectures-2025-26/lecture-69-70|Лекции 69–70, §7.3]]
 
 Здесь решены задачи 3.1–3.11. Задачи 1.2 и 2.2 из раздела «старых» решены в [[ru/seminar-sem3/hw1-taylor|ДЗ 1]] и [[ru/seminar-sem3/hw2-conditional-extremum|ДЗ 2]], серия 2'.1–2'.3 — в [[ru/seminar-sem3/hw2-conditional-extremum|ДЗ 2]].

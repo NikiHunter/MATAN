@@ -5,6 +5,8 @@ hw: 1
 ---
 # ДЗ 1. Формула Тейлора в $`\mathbb R^n`$ — решения
 
+**Русский** · [English](../../en/seminar-sem3/hw1-taylor.md) · [Español](../../es/seminar-sem3/hw1-taylor.md)
+
 [Все задания](index.md) · [ДЗ 2 →](hw2-conditional-extremum.md) · [Лекции 65–66, §6.5](../lectures-2025-26/lecture-65-66.md)
 
 > **Опора.** [Теорема 6.5.2 (формула Тейлора–Лагранжа)](../lectures-2025-26/lecture-65-66.md#thm-6-5-2): если $`f`$ дифференцируема $`s+1`$ раз, то

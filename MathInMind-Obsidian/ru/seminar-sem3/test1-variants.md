@@ -5,6 +5,8 @@ tags: [mathinmind/ru, mathinmind/other]
 ---
 # Контрольная 1: пробные варианты с решениями
 
+**Русский** · [[en/seminar-sem3/test1-variants|English]] · [[es/seminar-sem3/test1-variants|Español]]
+
 [[ru/seminar-sem3/index|Все задания]] · [[ru/seminar-sem3/test1-guide|← Как готовиться]]
 
 > [!note] Что это

@@ -6,6 +6,8 @@ tags: [mathinmind/ru, mathinmind/other]
 ---
 # ДЗ 2. Условный экстремум — решения
 
+**Русский** · [[en/seminar-sem3/hw2-conditional-extremum|English]] · [[es/seminar-sem3/hw2-conditional-extremum|Español]]
+
 [[ru/seminar-sem3/hw1-taylor|← ДЗ 1]] · [[ru/seminar-sem3/index|Все задания]] · [[ru/seminar-sem3/hw3-numerical-series|ДЗ 3 →]] · [[ru/lectures-2025-26/lecture-67-68|Лекции 67–68, §6.7]]
 
 Здесь решены задачи 2.1–2.3 (ДЗ 2) и 2'.1–2'.3 (серия про условный экстремум из ДЗ 3). Задачи 1.2 и 1.4, повторённые в ДЗ 2, решены в [[ru/seminar-sem3/hw1-taylor|ДЗ 1]].

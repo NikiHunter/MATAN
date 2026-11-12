@@ -6,6 +6,8 @@ tags: [mathinmind/ru, mathinmind/other]
 ---
 # ДЗ 4. Ряды, неравенство Гёльдера и базы множеств — решения
 
+**Русский** · [[en/seminar-sem3/hw4-series-inequalities-bases|English]] · [[es/seminar-sem3/hw4-series-inequalities-bases|Español]]
+
 [[ru/seminar-sem3/hw3-numerical-series|← ДЗ 3]] · [[ru/seminar-sem3/index|Все задания]] · [[ru/lectures-2025-26/lecture-69-70|Лекции 69–70, §7.3–§7.4]]
 
 Здесь решены новые задачи 4.1–4.12. «Старые» задачи этого задания решены раньше: 1.2 — в [[ru/seminar-sem3/hw1-taylor|ДЗ 1]]; 2.2 и 2'.1–2'.3 — в [[ru/seminar-sem3/hw2-conditional-extremum|ДЗ 2]]; 3.1–3.3, 3.10, 3.11 — в [[ru/seminar-sem3/hw3-numerical-series|ДЗ 3]]. Ссылки (Ф1)–(Ф3) — три факта из начала [[ru/seminar-sem3/hw3-numerical-series|ДЗ 3]]: необходимое условие сходимости, критерий ограниченности частичных сумм для неотрицательных рядов, независимость сходимости от конечного числа членов.

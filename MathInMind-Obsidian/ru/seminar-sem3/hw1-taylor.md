@@ -6,6 +6,8 @@ tags: [mathinmind/ru, mathinmind/other]
 ---
 # ДЗ 1. Формула Тейлора в $\mathbb R^n$ — решения
 
+**Русский** · [[en/seminar-sem3/hw1-taylor|English]] · [[es/seminar-sem3/hw1-taylor|Español]]
+
 [[ru/seminar-sem3/index|Все задания]] · [[ru/seminar-sem3/hw2-conditional-extremum|ДЗ 2 →]] · [[ru/lectures-2025-26/lecture-65-66|Лекции 65–66, §6.5]]
 
 > [!info] Опора
