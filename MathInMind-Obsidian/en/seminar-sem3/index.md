@@ -20,7 +20,7 @@ Problems are carried over from one assignment to the next under the same numbers
 | HW 3 | [[en/seminar-sem3/hw3-numerical-series\|Numerical series]] | 3.1–3.11 | comparison, Kummer, d'Alembert, Raabe |
 | HW 4 | [[en/seminar-sem3/hw4-series-inequalities-bases\|Series, inequalities, bases]] | 4.1–4.12 | Hölder, bases, limit tests, integral test, Leibniz |
 
-**Test 1.** [[en/seminar-sem3/test1-guide|How to prepare]] — the likely structure, methods for each task, typical mistakes and a three-day plan; [[en/seminar-sem3/test1-variants|practice variants]] — three variants in the format 1.1, 1.2, 2.1, 2.2, 3, 4 with solutions.
+**Test of 20 November (Taylor and constrained extrema).** [[en/seminar-sem3/test1-guide|How to prepare]] — the format announced at the consultation (problems 1a, 1b, 2), the instructor's promises, methods, the worked consultation examples 1'.1–1'.3, typical mistakes and a plan; [[en/seminar-sem3/test1-variants|practice variants]] — three variants in this format with solutions. **Series test** (end of November or beginning of December): [[en/seminar-sem3/series-test-guide|how to prepare]] — the material on series and practice problems.
 
 ## Seminar notes
 
@@ -48,6 +48,8 @@ Records of the boards from 4 September to 11 November 2026, reworked from the OC
 | 28 Oct | $\sum\frac{c_k}{k^d}$, bounded sums of sines | [[en/seminar-sem3/hw3-numerical-series#^p-3-11\|3.11]], [[en/seminar-sem3/hw3-numerical-series#Problem 3.2\|3.2]] |
 | 30 Oct | $\sum\frac{\beta^kk!}{k^k}$, $\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}$, sums of cosines | [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.8\|4.8]], [[en/seminar-sem3/hw3-numerical-series#Problem 3.3\|3.3]] |
 | 11 Nov | a series with $c_k\to1$, Raabe ⟹ d'Alembert, limit forms | [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.7\|4.7]], [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.4\|4.4]], [[en/seminar-sem3/hw4-series-inequalities-bases#Problem 4.6 (limit forms of the tests)\|4.6]] |
+| 13 Nov | the parameter integral, uniform parametric convergence (so far only in the corrected [OCR transcription](https://github.com/NikiHunter/matan/blob/main/sem3_notes/13_2026-11-13_%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB_%D0%B8_%D1%80%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C.md), in Russian) | — |
+| consultation | the format of the test of 20 Nov, Examples 1'.1–1'.3 ([[en/seminar-sem3/test1-guide\|worked out in the guide]]) | [[en/seminar-sem3/hw1-taylor#Problem 1.2\|1.2]], [[en/seminar-sem3/hw1-taylor#Problem 1.4\|1.4]], [[en/seminar-sem3/hw2-conditional-extremum\|HW 2]] |
 
 ## Answers on one page
 

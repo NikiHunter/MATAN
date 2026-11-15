@@ -20,7 +20,7 @@ Los problemas pasan de una tarea a la siguiente con los mismos números, así qu
 | Tarea 3 | [[es/seminar-sem3/hw3-numerical-series\|Series numéricas]] | 3.1–3.11 | comparación, Kummer, d'Alembert, Raabe |
 | Tarea 4 | [[es/seminar-sem3/hw4-series-inequalities-bases\|Series, desigualdades, bases]] | 4.1–4.12 | Hölder, bases, criterios en forma límite, criterio integral, Leibniz |
 
-**Control 1.** [[es/seminar-sem3/test1-guide|Cómo prepararse]]: la estructura probable, métodos para cada ejercicio, errores típicos y un plan de tres días; [[es/seminar-sem3/test1-variants|variantes de práctica]]: tres variantes con el formato 1.1, 1.2, 2.1, 2.2, 3, 4 y sus soluciones.
+**Control del 20 de noviembre (Taylor y extremos condicionados).** [[es/seminar-sem3/test1-guide|Cómo prepararse]]: el formato anunciado en la consulta (problemas 1a, 1b, 2), las promesas del profesor, métodos, los ejemplos resueltos de la consulta 1'.1–1'.3, errores típicos y un plan; [[es/seminar-sem3/test1-variants|variantes de práctica]]: tres variantes con este formato y sus soluciones. **Control de series** (finales de noviembre o principios de diciembre): [[es/seminar-sem3/series-test-guide|cómo prepararse]]: el material de series y problemas de práctica.
 
 ## Apuntes de los seminarios
 
@@ -48,6 +48,8 @@ Registros de las pizarras del 4 de septiembre al 11 de noviembre de 2026, reelab
 | 28 oct. | $\sum\frac{c_k}{k^d}$, sumas de senos acotadas | [[es/seminar-sem3/hw3-numerical-series#^p-3-11\|3.11]], [[es/seminar-sem3/hw3-numerical-series#Problema 3.2\|3.2]] |
 | 30 oct. | $\sum\frac{\beta^kk!}{k^k}$, $\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}$, sumas de cosenos | [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.8\|4.8]], [[es/seminar-sem3/hw3-numerical-series#Problema 3.3\|3.3]] |
 | 11 nov. | una serie con $c_k\to1$, Raabe ⟹ d'Alembert, formas límite | [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.7\|4.7]], [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.4\|4.4]], [[es/seminar-sem3/hw4-series-inequalities-bases#Problema 4.6 (formas límite de los criterios)\|4.6]] |
+| 13 nov. | la integral paramétrica, la convergencia paramétrica uniforme (por ahora solo en la [transcripción OCR](https://github.com/NikiHunter/matan/blob/main/sem3_notes/13_2026-11-13_%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB_%D0%B8_%D1%80%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C.md) corregida, en ruso) | — |
+| consulta | el formato del control del 20 nov., ejemplos 1'.1–1'.3 ([[es/seminar-sem3/test1-guide\|resueltos en la guía]]) | [[es/seminar-sem3/hw1-taylor#Problema 1.2\|1.2]], [[es/seminar-sem3/hw1-taylor#Problema 1.4\|1.4]], [[es/seminar-sem3/hw2-conditional-extremum\|tarea 2]] |
 
 ## Respuestas en una página
 

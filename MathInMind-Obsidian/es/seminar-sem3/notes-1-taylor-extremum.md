@@ -7,7 +7,7 @@ tags: [mathinmind/es, mathinmind/other]
 
 [[ru/seminar-sem3/notes-1-taylor-extremum|Русский]] · [[en/seminar-sem3/notes-1-taylor-extremum|English]] · **Español**
 
-[[es/seminar-sem3/index|Todas las tareas y apuntes]] · [[es/seminar-sem3/notes-2-series-basics|Parte 2: fundamentos de series →]]
+[[es/seminar-sem3/index|Todas las tareas y apuntes]] · [[es/seminar-sem3/test1-guide|Cómo prepararse para el control del 20 nov.]] · [[es/seminar-sem3/notes-2-series-basics|Parte 2: fundamentos de series →]]
 
 > [!note] Qué es esto
 > Una versión reelaborada de los seminarios del 4, 9, 18 y 20 de septiembre de 2026. La base es la transcripción OCR de las pizarras manuscritas de la carpeta [`sem3_notes`](https://github.com/NikiHunter/matan/blob/main/sem3_notes/README.md) (en ruso). Los números de los enunciados se conservan como en la pizarra (2.1, 3.1, …) para que coincidan con las referencias del profesor. La redacción formal se ha sustituido por lenguaje llano, y cada enunciado lleva una nota «por qué funciona» y un enlace al problema de la tarea. Todos los cálculos se comprobaron con sympy. Los errores de reconocimiento están corregidos y se enumeran [[#Qué se corrigió respecto a la transcripción OCR|al final de la página]].
@@ -255,4 +255,4 @@ Para $m=2$, mínimo significa $\Delta_5>0$, $\Delta_6>0$; máximo significa $\De
 | [[#^ex-4-2\|4.2]], enunciado | $M=\{x=y^3\}$ | $M=\{x=y\}$: la ligadura es $g=x-y$, como en el problema 2.1 |
 | [[#^ex-5-1\|5.1]], enunciado | $2t^3$ | $2t^2$: así está en la función de Lagrange y en la respuesta $f=\frac43$ |
 
-[[es/seminar-sem3/index|Todas las tareas y apuntes]] · [[es/seminar-sem3/notes-2-series-basics|Parte 2: fundamentos de series →]]
+[[es/seminar-sem3/index|Todas las tareas y apuntes]] · [[es/seminar-sem3/test1-guide|Cómo prepararse para el control del 20 nov.]] · [[es/seminar-sem3/notes-2-series-basics|Parte 2: fundamentos de series →]]

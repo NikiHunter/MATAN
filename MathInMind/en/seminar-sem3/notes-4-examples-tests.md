@@ -6,7 +6,7 @@ lang: en
 
 [Русский](../../ru/seminar-sem3/notes-4-examples-tests.md) · **English** · [Español](../../es/seminar-sem3/notes-4-examples-tests.md)
 
-[← Part 3: Kummer, d'Alembert, Raabe](notes-3-kummer-dalembert-raabe.md) · [All homework and notes](index.md) · [How to prepare for the test →](test1-guide.md)
+[← Part 3: Kummer, d'Alembert, Raabe](notes-3-kummer-dalembert-raabe.md) · [All homework and notes](index.md) · [How to prepare for the series test →](series-test-guide.md)
 
 > **What this is.** A reworked record of the seminars of 28 and 30 October and 11 November 2026, based on the transcription in [`sem3_notes`](../../../sem3_notes/README.md). Statement numbers are as on the board. Example 12.3 was started on 28 October and finished on 30 October; here it is in one piece. At the end there is a summary of which test is stronger; it replaces an incorrect conclusion in the transcription.
 
@@ -163,4 +163,4 @@ In short: d'Alembert's is the weakest; Cauchy's and Raabe's tests decide everyth
 | [14.1](#ex-14-1) | $`c_k=\frac{k^{k+7/2}}{(k+7/2)^k}`$, "$`\lim c_k=\frac77=1`$" and long attempts to recompute | $`c_k=\frac{k^{k+1/k}}{(k+1/k)^k}`$, $`\lim c_k=\frac11=1`$ |
 | [14.3](#prop-14-3) | the conclusion "Cauchy ⟹ d'Alembert ⟹ Raabe, each next one finer" | see the [summary](#tests-compared): d'Alembert is weaker than both, Cauchy and Raabe are incomparable |
 
-[← Part 3](notes-3-kummer-dalembert-raabe.md) · [All homework and notes](index.md) · [How to prepare for the test →](test1-guide.md)
+[← Part 3](notes-3-kummer-dalembert-raabe.md) · [All homework and notes](index.md) · [How to prepare for the series test →](series-test-guide.md)

@@ -20,6 +20,9 @@ Aquí se resuelven los problemas 2.1–2.3 (tarea 2) y 2'.1–2'.3 (la serie sob
 > [!note] En el seminario
 > El 9 sep. la condición suficiente se enunció con la matriz hessiana orlada: [[es/seminar-sem3/notes-1-taylor-extremum#Teorema 3.1. Extremos condicionados y la matriz hessiana orlada|teorema 3.1]], con una tabla de signos de los menores. Es cómoda cuando la ligadura no se despeja explícitamente.
 
+> [!note] En la consulta
+> [[es/seminar-sem3/test1-guide#^ex-1p-3|Ejemplo 1'.3]]: un problema del tipo que habrá en el control del 20 de noviembre ($n=3$, $m=1$), resuelto hasta el final con la hessiana orlada: un mínimo, un máximo y un punto sin extremo.
+
 Sobre el conjunto $M=\{\varphi=0\}$ no se permiten todos los desplazamientos, solo los tangentes a $M$: los $h$ con $d\varphi_j(h)=0$. En un punto de extremo $f$ no debe cambiar en primer orden a lo largo de las direcciones permitidas, es decir, $df(h)=0$ para todo $h$ tangente. Esto significa justamente que $\nabla f$ es ortogonal al espacio tangente, o sea, que pertenece a la envoltura lineal de las normales $\nabla\varphi_j$. La independencia de los gradientes hace falta para que el espacio tangente describa de verdad a $M$ cerca del punto ([[es/lectures-2025-26/lecture-65-66#^thm-6-6-1|teorema de la aplicación implícita]]).
 
 Tres consecuencias que usamos más abajo.

@@ -19,7 +19,7 @@ Los problemas pasan de una tarea a la siguiente con los mismos números, así qu
 | Tarea 3 | [Series numéricas](hw3-numerical-series.md) | 3.1–3.11 | comparación, Kummer, d'Alembert, Raabe |
 | Tarea 4 | [Series, desigualdades, bases](hw4-series-inequalities-bases.md) | 4.1–4.12 | Hölder, bases, criterios en forma límite, criterio integral, Leibniz |
 
-**Control 1.** [Cómo prepararse](test1-guide.md): la estructura probable, métodos para cada ejercicio, errores típicos y un plan de tres días; [variantes de práctica](test1-variants.md): tres variantes con el formato 1.1, 1.2, 2.1, 2.2, 3, 4 y sus soluciones.
+**Control del 20 de noviembre (Taylor y extremos condicionados).** [Cómo prepararse](test1-guide.md): el formato anunciado en la consulta (problemas 1a, 1b, 2), las promesas del profesor, métodos, los ejemplos resueltos de la consulta 1'.1–1'.3, errores típicos y un plan; [variantes de práctica](test1-variants.md): tres variantes con este formato y sus soluciones. **Control de series** (finales de noviembre o principios de diciembre): [cómo prepararse](series-test-guide.md): el material de series y problemas de práctica.
 
 <a id="seminar-notes"></a>
 ## Apuntes de los seminarios
@@ -48,6 +48,8 @@ Registros de las pizarras del 4 de septiembre al 11 de noviembre de 2026, reelab
 | 28 oct. | $`\sum\frac{c_k}{k^d}`$, sumas de senos acotadas | [3.11](hw3-numerical-series.md#p-3-11), [3.2](hw3-numerical-series.md#p-3-2) |
 | 30 oct. | $`\sum\frac{\beta^kk!}{k^k}`$, $`\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}`$, sumas de cosenos | [4.8](hw4-series-inequalities-bases.md#p-4-8), [3.3](hw3-numerical-series.md#p-3-3) |
 | 11 nov. | una serie con $`c_k\to1`$, Raabe ⟹ d'Alembert, formas límite | [4.7](hw4-series-inequalities-bases.md#p-4-7), [4.4](hw4-series-inequalities-bases.md#p-4-4), [4.6](hw4-series-inequalities-bases.md#p-4-6) |
+| 13 nov. | la integral paramétrica, la convergencia paramétrica uniforme (por ahora solo en la [transcripción OCR](../../../sem3_notes/13_2026-11-13_Параметрический_интеграл_и_равномерная_сходимость.md) corregida, en ruso) | — |
+| consulta | el formato del control del 20 nov., ejemplos 1'.1–1'.3 ([resueltos en la guía](test1-guide.md)) | [1.2](hw1-taylor.md#p-1-2), [1.4](hw1-taylor.md#p-1-4), [tarea 2](hw2-conditional-extremum.md) |
 
 ## Respuestas en una página
 

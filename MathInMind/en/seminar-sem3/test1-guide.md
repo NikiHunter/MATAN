@@ -1,240 +1,287 @@
 ---
-title: "Seminar NM-204. Test 1 — how to prepare"
+title: "Seminar NM-204. Test of 20 Nov — how to prepare"
 lang: en
 ---
-# Test 1: how to prepare
+# Test of 20 November 2026: Taylor's formula and constrained extrema
 
 [Русский](../../ru/seminar-sem3/test1-guide.md) · **English** · [Español](../../es/seminar-sem3/test1-guide.md)
 
-[All assignments](index.md) · [Seminar notes](index.md#seminar-notes) · [Practice variants →](test1-variants.md)
+[All assignments](index.md) · [Seminar notes](index.md#seminar-notes) · [Practice variants →](test1-variants.md) · [Series test](series-test-guide.md)
 
-> **What this is.** A preparation plan for test 1 based on homework 1–4. The structure of the test is as reported: four tasks, items **1.1, 1.2, 2.1, 2.2, 3, 4**; tasks 1 and 2 are on Taylor's formula and extrema, tasks 3 and 4 on series. There are no real papers: the problem types below are a forecast from the homework, not a leak. The assignment of topics to items is a guess.
+> **What this is.** Preparation for the test of 20 November 2026, based on the consultation. The format is now known: problem 1 (a — a polynomial, b — a non-polynomial function with the Lagrange remainder) and problem 2 (a constrained extremum). Sources: the board frames of the consultation and a summary of its audio recording ([`sem3_notes`, files 14](../../../sem3_notes/README.md), in Russian), the [seminar notes](index.md#seminar-notes) and homework 1–2. All computations below were checked in sympy. There will be no series on this test: they were moved to a separate test, which has [its own page](series-test-guide.md).
 
-## Likely structure
+<a id="format"></a>
+## What will be on the test
 
-| Item | What will probably be asked | Prototypes in the homework |
-|---|---|---|
-| 1.1 | Expand a polynomial by Taylor's formula at a given point (a finite sum) | [1.1, 1.2](hw1-taylor.md) |
-| 1.2 | Expansion of a non-polynomial function up to degree 2 or 3 with the Lagrange remainder | [1.3, 1.4](hw1-taylor.md) |
-| 2.1 | Constrained extremum where the constraint can be solved explicitly (line, plane) | [2.1, 2.3](hw2-conditional-extremum.md) |
-| 2.2 | Constrained extremum on a compact set by the Lagrange method (ellipsoid, circle) | [2.2, 2'.1](hw2-conditional-extremum.md) |
-| 3 | A proof: a test or a property of series | [3.1–3.9](hw3-numerical-series.md), [4.4, 4.6, 4.10, 4.11](hw4-series-inequalities-bases.md) |
-| 4 | Test 2–3 concrete series for convergence | [3.11](hw3-numerical-series.md), [4.7–4.9, 4.12](hw4-series-inequalities-bases.md) |
+| Problem | What is given | What to do | Models |
+|---|---|---|---|
+| 1a | a polynomial: degree 4 in two variables **or** degree 3 in three; a point $`P`$ | expand it by Taylor's formula at $`P`$ completely; there is no remainder | [Example 1'.1](#ex-1p-1), HW [1.1](hw1-taylor.md#p-1-1), [1.2](hw1-taylor.md#p-1-2) |
+| 1b | a non-polynomial $`f\colon\mathbb R^3\to\mathbb R`$ (sine, cosine, exponential, logarithm, powers); a point $`P`$ | the expansion up to order two with the remainder in Lagrange form; the remainder in general form | [Example 1'.2](#ex-1p-2), HW [1.4](hw1-taylor.md#p-1-4) |
+| 2 | $`f\colon\mathbb R^3\to\mathbb R`$, a set $`M=\{\varphi=0\}`$ given by one polynomial condition | find all points of constrained local extremum and say for each: maximum, minimum or no extremum | [Example 1'.3](#ex-1p-3), HW [2.1](hw2-conditional-extremum.md#p-2-1) |
 
-Less likely but possible: problems with a parameter ([2'.2, 2'.3](hw2-conditional-extremum.md), [4.8](hw4-series-inequalities-bases.md)), Hölder's inequality ([4.1, 4.2](hw4-series-inequalities-bases.md)), examples and counterexamples ([3.8, 3.10](hw3-numerical-series.md), [4.5](hw4-series-inequalities-bases.md)), bases ([4.3](hw4-series-inequalities-bases.md)).
+**What the instructor promised** (according to the recording of the consultation):
 
-## Task 1: Taylor's formula
+- in problem 2 all minors to be checked are non-zero — there will be no "the determinant is zero, further investigation needed" case;
+- problem 2 deliberately contains a maximum, a minimum and a point with no extremum: if all your points came out as extrema, look for a mistake;
+- there will be no cubic equations for $`\lambda`$, only quadratic ones or simpler (Example 1'.3 had a cubic, with the root $`\lambda=1`$ chosen on purpose);
+- in problem 1b the explicit form of the third-order derivatives in the remainder is **not needed**; the remainder is written in general form;
+- the values of sines and cosines will be simple: $`0`$, $`1`$ or $`\pm\frac1{\sqrt2}`$ (angles such as $`\frac\pi4`$, $`\frac{3\pi}4`$, $`\frac{5\pi}4`$);
+- calculators are not allowed. The reasoning is marked: correct logic with one arithmetic slip gets almost full marks, while a solution its author cannot explain gets zero for the whole paper (an oral check is possible).
 
-**What to know by heart.**
+**What will not be there.** Series: the series problem of this test and that of the next one were combined into a separate test at the end of November or the beginning of December, together with the problem «on constant sign» that took a long time at the seminars ([how to prepare](series-test-guide.md)). Parameter integrals and the rest after series go into a small test at the end of December.
+
+<a id="task-1"></a>
+## Problem 1: Taylor's formula
+
+**The formula in the board's notation.** For $`P=(p_1;p_2;p_3)`$, $`X=(x;y;z)`$ and $`f`$ continuously differentiable $`N+1`$ times (on the board, "$`f\in C^\infty(\mathbb R^3)`$"), for **every** point $`X`$ there is $`t_0=t_0(X)\in(0;1)`$ such that
 ```math
-f(a+h)=\sum_{k=0}^{s}\frac{d_a^kf(h)}{k!}+\frac{d_c^{s+1}f(h)}{(s+1)!},\qquad c=a+\theta h,\ \theta\in(0,1),
+f(X)=\sum_{|\alpha|\le N}\frac{D^{\alpha}f(P)}{\alpha!}\,(X-P)^{\alpha}+\sum_{|\alpha|=N+1}\frac{D^{\alpha}f\bigl(P+t_0(X-P)\bigr)}{\alpha!}\,(X-P)^{\alpha}.
+```
+Here $`\alpha=(\alpha_1;\alpha_2;\alpha_3)`$ is a multi-index, $`|\alpha|=\alpha_1+\alpha_2+\alpha_3`$, $`\alpha!=\alpha_1!\,\alpha_2!\,\alpha_3!`$, $`(X-P)^{\alpha}=(x-p_1)^{\alpha_1}(y-p_2)^{\alpha_2}(z-p_3)^{\alpha_3}`$, and $`D^{\alpha}f`$ is the derivative taken $`\alpha_1`$ times in $`x`$, $`\alpha_2`$ times in $`y`$ and $`\alpha_3`$ times in $`z`$.
+
+- Divide by $`\alpha!`$, not by $`|\alpha|!`$: for $`\alpha=(2;1;1)`$ it is $`2`$, not $`24`$. Pure second derivatives are divided by $`2`$, mixed ones such as $`D^{(1;1;0)}f`$ by $`1`$.
+- Each multi-index enters the sum once; there is no need to count how many times a mixed derivative occurs — $`\alpha!`$ takes care of that. The form with differentials $`\frac{d^kf}{k!}`$ and coefficients $`\frac{k!}{\alpha!}`$ ([HW 1](hw1-taylor.md)) gives the same thing.
+- List the multi-indices in order so as not to miss any: with three variables there are $`6`$ of order $`2`$ and $`10`$ of order $`3`$: $`(3;0;0)`$, $`(0;3;0)`$, $`(0;0;3)`$, $`(2;1;0)`$, $`(2;0;1)`$, $`(1;2;0)`$, $`(0;2;1)`$, $`(1;0;2)`$, $`(0;1;2)`$, $`(1;1;1)`$. With two variables there are $`k+1`$ of order $`k`$.
+- First the derivatives at an **arbitrary** point, then substitute $`P`$. If you substitute the point earlier, there is nothing left to differentiate.
+
+**Method for 1a (a polynomial).**
+
+1. Find all derivatives up to the order equal to the degree of the polynomial, in general form.
+2. Write down the non-zero ones and settle the rest in one sentence: "the other derivatives of order $`k`$ are zero".
+3. Substitute $`P`$ showing the intermediate steps: $`20\cdot3^3-8\cdot3\cdot(-2)^2-2\cdot(-2)=448`$, not just $`448`$.
+4. Divide by $`\alpha!`$ — a table is convenient — and assemble the answer.
+5. Say why there is no remainder: the derivatives of order above the degree vanish identically, so the equality is exact for all $`X`$ and the Taylor series is a finite sum.
+6. Check: the top homogeneous part of the answer coincides with the top part of $`f`$ (it does not change when the point moves), and one simple point, for example $`X=P+(1;0;0)`$, gives the same value on both sides.
+
+**Method for 1b (a non-polynomial function).**
+
+1. Derivatives up to order two in general form: $`f`$, three first-order and six second-order ones. Then their values at $`P`$.
+2. The Taylor polynomial of order two: coefficients $`\frac{D^\alpha f(P)}{\alpha!}`$ for $`|\alpha|\le2`$.
+3. The remainder **in general form**, with the intermediate point written out coordinatewise, as on the board:
+```math
+R_2(X)=\sum_{|\alpha|=3}\frac{D^{\alpha}f\bigl(p_1+t_0(x-p_1);\ p_2+t_0(y-p_2);\ p_3+t_0(z-p_3)\bigr)}{\alpha!}\,(x-p_1)^{\alpha_1}(y-p_2)^{\alpha_2}(z-p_3)^{\alpha_3},\qquad t_0\in(0;1).
+```
+4. Refer to the theorem: $`f`$ is infinitely (at least three times) continuously differentiable. If $`f`$ contains a logarithm or a root, state that the formula holds for those $`X`$ whose whole segment $`[P;X]`$ lies in the domain.
+
+Do not find the explicit third-order derivatives: it is not a mistake, but it takes time away from problem 2.
+
+<a id="ex-1p-1"></a>
+### Example 1'.1 (consultation): a polynomial of degree four
+
+**Statement.** $`f(x;y)=5x^4-4x^2y^2+3y^4-2xy+1`$. Expand it into a (finite) Taylor series at the point $`P=(3;-2)`$. This is the polynomial of [problem 1.2](hw1-taylor.md#p-1-2) of HW 1, where the point is $`(-3;2)`$.
+
+**Derivatives at an arbitrary point.**
+```math
+D^{(1;0)}f=20x^3-8xy^2-2y,\qquad D^{(0;1)}f=-8x^2y+12y^3-2x;
 ```
 ```math
-d^kf(h)=\sum_{|\alpha|=k}\frac{k!}{\alpha!}\,\partial^\alpha f\cdot h^\alpha .
+D^{(2;0)}f=60x^2-8y^2,\qquad D^{(1;1)}f=-16xy-2,\qquad D^{(0;2)}f=-8x^2+36y^2;
 ```
-For two variables: $`d^2f=f_{xx}h_1^2+2f_{xy}h_1h_2+f_{yy}h_2^2`$, $`d^3f=f_{xxx}h_1^3+3f_{xxy}h_1^2h_2+3f_{xyy}h_1h_2^2+f_{yyy}h_2^3`$. For three variables the coefficients in $`d^3f`$ are $`1`$ (pure), $`3`$ (of the form $`\partial_i^2\partial_j`$) and $`6`$ (for $`f_{xyz}`$).
+```math
+D^{(3;0)}f=120x,\qquad D^{(2;1)}f=-16y,\qquad D^{(1;2)}f=-16x,\qquad D^{(0;3)}f=72y;
+```
+```math
+D^{(4;0)}f=120,\qquad D^{(2;2)}f=-16,\qquad D^{(0;4)}f=72,\qquad D^{(3;1)}f=D^{(1;3)}f=0;
+```
+the fifth-order derivatives are zero.
 
-**Method for a polynomial (item 1.1).**
+**Values and coefficients.** $`f(P)=5\cdot3^4-4\cdot3^2\cdot(-2)^2+3\cdot(-2)^4-2\cdot3\cdot(-2)+1=405-144+48+12+1=322`$.
 
-1. Introduce $`h_1=x-a_1`$, $`h_2=y-a_2`$, …
-2. Either substitute $`x=a_1+h_1`$, … and multiply out, or compute the derivatives at the point and assemble $`d^kf/k!`$.
-3. Say that the sum stops at the degree of the polynomial: all higher derivatives vanish, the remainder is zero, the equality is exact.
-4. Check: the top homogeneous part must coincide with the top part of the original polynomial; substitute one simple $`h`$ (for example $`(1,0)`$) into both sides.
-
-**Method for the Lagrange remainder (item 1.2).**
-
-1. Compute the value and the derivatives up to order $`s`$ at $`a`$ — this gives the polynomial.
-2. Compute **all** derivatives of order $`s+1`$ in general form (not at $`a`$!).
-3. Write the remainder: $`\frac1{(s+1)!}d^{s+1}f`$ with the derivatives taken at $`c=(a_1+\theta h_1,\dots)`$, and do write "$`\theta\in(0,1)`$".
-4. If the function is a composition $`e^{u}`$, $`\ln u`$, $`\sin u`$ with a polynomial $`u`$, it is faster to work with $`F(t)=f(a+th)`$: $`F^{(k)}(0)/k!`$ are the terms of the expansion, $`F^{(s+1)}(\theta)/(s+1)!`$ is the remainder (this is how [problem 1.3](hw1-taylor.md) is solved).
-
-**Typical mistakes.**
-
-- A forgotten factor $`\frac1{k!}`$ or multinomial coefficient ($`2`$ for $`f_{xy}`$, $`3`$ for $`f_{xxy}`$, $`6`$ for $`f_{xyz}`$).
-- The remainder written at $`a`$ instead of the intermediate point $`c`$; $`\theta\in(0,1)`$ not stated.
-- The Lagrange remainder confused with the Peano remainder $`o(|h|^s)`$: "in Lagrange form" asks for the explicit expression.
-- The answer left in $`x,y`$ without saying what $`h`$ is.
-
-## Task 2: extrema
-
-**What to know.**
-
-- Necessary condition for an unconstrained extremum: $`\nabla f=0`$. Sufficient: the sign of $`d^2f`$ (positive definite — minimum, negative definite — maximum, indefinite — no extremum, semi-definite — the test is silent).
-- Sylvester's criterion for $`2\times2`$: $`\Delta_1=f_{xx}`$, $`\Delta_2=f_{xx}f_{yy}-f_{xy}^2`$. $`\Delta_2>0,\ \Delta_1>0`$ — minimum; $`\Delta_2>0,\ \Delta_1<0`$ — maximum; $`\Delta_2<0`$ — saddle; $`\Delta_2=0`$ — examine by hand.
-- Constrained extremum: $`L=f-\sum\lambda_j\varphi_j`$, the system $`\nabla L=0`$ plus the constraint equations; the sufficient condition is the sign of $`d^2L`$ **on the tangent space** $`\{h:\ d\varphi_j(h)=0\}`$. At the seminar the same condition was checked through the signs of the minors of the bordered Hessian; the method is below.
-
-**Method when the constraint can be solved explicitly (item 2.1).**
-
-1. Parametrise $`M`$ (for example, $`y=x`$) and get a function $`g`$ of fewer variables.
-2. Find the stationary points of $`g`$ and examine them with the second differential.
-3. If the second differential is degenerate, look at the sign of the increment directly (as in [2.3](hw2-conditional-extremum.md): the term $`2x^3`$ changes sign, so there is no extremum).
-4. Go back to the original coordinates; state the type (maximum or minimum, strict or not, local or global) and the value.
-
-**The Lagrange method (item 2.2).**
-
-1. Check regularity: the gradients of the constraints are linearly independent on $`M`$ (usually "they vanish only at a point not on $`M`$").
-2. Solve the Lagrange system. Do not divide by an expression that may be zero without treating that case: write $`(x-y)(z+2\lambda)=0`$ and handle both alternatives.
-3. Determine the type of the points. The fastest way when $`M`$ is compact (sphere, ellipsoid, circle): "$`f`$ is continuous on a compact set, so it attains its greatest and least values, and they are attained at stationary points" — then compare the values.
-4. Write the answer: the points, the type, the extremal values.
-
-**The bordered-Hessian method (as done at the seminar, [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1)).**
-
-1. Write $`\mathcal L=f+\sum_k\lambda_kg_k`$ and solve the system of $`n+m`$ equations: all partial derivatives of $`\mathcal L`$ in $`x_j`$ and in $`\lambda_k`$ vanish.
-2. Form $`\widetilde H=\begin{pmatrix}0&J_g\\ J_g^{T}&H_{\mathcal L}\end{pmatrix}`$ and find the minors $`\Delta_{2m+1},\dots,\Delta_{n+m}`$ at a general point first, as the seminar advised.
-3. Substitute each stationary point together with its $`\lambda`$. All signs equal to $`(-1)^m`$ — a minimum; the sign of $`\Delta_k`$ equal to $`(-1)^{k-m}`$ — a maximum; non-zero minors with other signs — no extremum; $`\Delta_{n+m}=0`$ — the test is silent, examine by hand.
-4. The most common case $`n=2`$, $`m=1`$: $`\det\widetilde H<0`$ — a minimum, $`\det\widetilde H>0`$ — a maximum ([Example 4.2](notes-1-taylor-extremum.md#ex-4-2)). For $`n=4`$, $`m=2`$: a minimum is $`\Delta_5>0`$, $`\Delta_6>0`$; a maximum is $`\Delta_5<0`$, $`\Delta_6>0`$ ([Example 5.1](notes-1-taylor-extremum.md#ex-5-1)).
-
-**Typical mistakes.**
-
-- A stationary point declared an extremum without verification (the Lagrange system is only a necessary condition).
-- $`d^2L`$ examined on the whole space instead of the tangent space.
-- Solutions lost when dividing; the second point with the opposite sign lost.
-- The compactness argument applied to a non-compact $`M`$ (a line, a plane): there may be no greatest value there.
-- Regularity of the constraints not checked.
-
-## Task 3: proofs about series
-
-**Three facts from which almost everything follows** (details at the beginning of [HW 3](hw3-numerical-series.md)):
-
-1. the necessary condition: the series converges ⟹ $`a_k\to0`$;
-2. a series with non-negative terms converges ⟺ its partial sums are bounded above;
-3. finitely many terms do not affect convergence.
-
-**What to be able to prove with the notebook closed** (in decreasing order of likelihood):
-
-| Statement | Key idea in one line | Where |
+| Order | $`D^\alpha f(P)`$ | $`\frac{D^\alpha f(P)}{\alpha!}`$ |
 |---|---|---|
-| A convergent series has bounded partial sums | a convergent sequence is bounded | [3.1](hw3-numerical-series.md) |
-| Generalised comparison test | $`\frac{a_n}{b_n}`$ is non-increasing ⟹ $`a_n\le Cb_n`$ | [3.4](hw3-numerical-series.md) |
-| Kummer's test | multiply by $`a_{n+1}`$, add up, the sum telescopes | [3.6](hw3-numerical-series.md) |
-| D'Alembert's test | Kummer with $`x_n=1`$ | [3.7](hw3-numerical-series.md) |
-| Raabe's test | Kummer with $`x_n=n`$ | [3.9](hw3-numerical-series.md) |
-| Raabe ⟹ d'Alembert | $`1+\beta\ge1+\frac2n`$ for $`n\ge\frac2\beta`$ | [4.4](hw4-series-inequalities-bases.md) |
-| Limit forms of the tests | a limit ⟹ an inequality from some index on | [4.6](hw4-series-inequalities-bases.md) |
-| Leibniz's test | $`S_{2m}`$ is monotone and bounded, $`S_{2m+1}=S_{2m}+a_{2m+1}`$ | [4.11](hw4-series-inequalities-bases.md) |
-| Integral test | $`f(k+1)\le\int_k^{k+1}f\le f(k)`$ | [4.10](hw4-series-inequalities-bases.md) |
-| Boundedness of the sums $`\sum\sin(kx_0)`$ | multiply by $`2\sin\frac{x_0}2`$, telescoping | [3.2](hw3-numerical-series.md) |
-| $`\sum\cos(kx_0)`$ diverges | $`\cos(2kx_0)=2\cos^2(kx_0)-1`$, the general term does not tend to zero | [3.3](hw3-numerical-series.md) |
-| Cauchy's root test | $`\sqrt[n]{a_n}\le q`$ ⟺ $`a_n\le q^n`$; for divergence infinitely many $`n`$ are enough | [Theorem 8.2](notes-2-series-basics.md#thm-8-2) |
-| $`\sum\sin(kx_0)`$ converges ⟺ $`x_0\in\pi\mathbb Z`$ | $`\cos(kx_0)`$ is expressed through $`\sin(kx_0)`$ and $`\sin((k+1)x_0)`$ | [Example 8.1](notes-2-series-basics.md#ex-8-1) |
-| $`\sum\frac{c_k}{k^d}`$ converges ⟺ $`d>1`$ | comparison with $`\frac{M_2}{k^d}`$, then Raabe | [3.11](hw3-numerical-series.md#p-3-11), [Theorem 12.1](notes-3-kummer-dalembert-raabe.md#thm-12-1) |
+| 1 | $`D^{(1;0)}=540-96+4=448`$, $`D^{(0;1)}=144-96-6=42`$ | $`448`$, $`42`$ |
+| 2 | $`D^{(2;0)}=508`$, $`D^{(1;1)}=94`$, $`D^{(0;2)}=72`$ | $`254`$, $`94`$, $`36`$ |
+| 3 | $`D^{(3;0)}=360`$, $`D^{(2;1)}=32`$, $`D^{(1;2)}=-48`$, $`D^{(0;3)}=-144`$ | $`60`$, $`16`$, $`-24`$, $`-24`$ |
+| 4 | $`D^{(4;0)}=120`$, $`D^{(2;2)}=-16`$, $`D^{(0;4)}=72`$ | $`5`$, $`-4`$, $`3`$ |
 
-**The tests in the seminar's notation.** Note: the seminar uses the ratio $`\dfrac{a_n}{a_{n+1}}`$ (previous to next), not $`\dfrac{a_{n+1}}{a_n}`$.
+**Answer.** For all $`(x;y)\in\mathbb R^2`$
+```math
+\begin{aligned}f(x;y)={}&322+448(x-3)+42(y+2)+254(x-3)^2+94(x-3)(y+2)+36(y+2)^2\\&+60(x-3)^3+16(x-3)^2(y+2)-24(x-3)(y+2)^2-24(y+2)^3\\&+5(x-3)^4-4(x-3)^2(y+2)^2+3(y+2)^4 .\end{aligned}
+```
 
-| Test | Converges if, from some index on, | Diverges if, from some index on, |
+**Why it works.** The top part $`5(x-3)^4-4(x-3)^2(y+2)^2+3(y+2)^4`$ repeats the top part of $`f`$. In an intermediate line the board had $`\frac{42}{(0;2)!}(y+2)^2`$ — a slip: $`D^{(0;2)}f(P)=72`$, the coefficient is $`36`$, as in the board's final answer. Since $`f(-x;-y)=f(x;y)`$, the answer of HW 1.2 at $`(-3;2)`$ differs only in the signs of the odd-degree terms.
+
+<a id="ex-1p-2"></a>
+### Example 1'.2 (consultation): $`x^2e^{xy}+y\sin(yz^2)`$
+
+**Statement.** Expand $`f(x;y;z)=x^2e^{xy}+y\sin(yz^2)`$ at $`P=(2;0;1)`$ with the remainder in Lagrange form. At the consultation it was done up to order three; the test asks for order two, so the answer in the test format comes first.
+
+**Derivatives up to order two** at an arbitrary point:
+```math
+D^{(1;0;0)}f=(x^2y+2x)e^{xy},\qquad D^{(0;1;0)}f=x^3e^{xy}+\sin(yz^2)+yz^2\cos(yz^2),\qquad D^{(0;0;1)}f=2y^2z\cos(yz^2);
+```
+```math
+D^{(2;0;0)}f=(x^2y^2+4xy+2)e^{xy},\qquad D^{(1;1;0)}f=(x^3y+3x^2)e^{xy},\qquad D^{(1;0;1)}f=0;
+```
+```math
+D^{(0;2;0)}f=x^4e^{xy}+2z^2\cos(yz^2)-yz^4\sin(yz^2),\qquad D^{(0;1;1)}f=4yz\cos(yz^2)-2y^2z^3\sin(yz^2),\qquad D^{(0;0;2)}f=2y^2\cos(yz^2)-4y^3z^2\sin(yz^2).
+```
+**At $`P`$** ($`e^0=1`$, $`\sin0=0`$, $`\cos0=1`$): $`f(P)=4`$; $`D^{(1;0;0)}f(P)=4`$, $`D^{(0;1;0)}f(P)=8`$, $`D^{(0;0;1)}f(P)=0`$; $`D^{(2;0;0)}f(P)=2`$, $`D^{(1;1;0)}f(P)=12`$, $`D^{(0;2;0)}f(P)=16+2=18`$, the other second-order ones are zero.
+
+**Answer up to order two (the test format).** $`f\in C^\infty(\mathbb R^3)`$, so for every $`(x;y;z)\in\mathbb R^3`$ there is $`t_0\in(0;1)`$ such that
+```math
+f(x;y;z)=4+4(x-2)+8y+(x-2)^2+12(x-2)y+9y^2+\sum_{|\alpha|=3}\frac{D^{\alpha}f\bigl(2+t_0(x-2);\ t_0y;\ 1+t_0(z-1)\bigr)}{\alpha!}\,(x-2)^{\alpha_1}y^{\alpha_2}(z-1)^{\alpha_3}.
+```
+Coefficients: $`\frac{2}{(2;0;0)!}=1`$, $`\frac{12}{(1;1;0)!}=12`$, $`\frac{18}{(0;2;0)!}=9`$.
+
+**Up to order three (as at the consultation).** The non-zero third-order derivatives at $`P`$ are $`D^{(0;3;0)}f(P)=32`$, $`D^{(2;1;0)}f(P)=12`$, $`D^{(1;2;0)}f(P)=32`$, $`D^{(0;2;1)}f(P)=4`$. The polynomial gains the terms
+```math
+\frac{16}{3}y^3+6(x-2)^2y+16(x-2)y^2+2y^2(z-1),
+```
+and the remainder becomes a sum over $`|\alpha|=4`$. The board's line for $`D^{(0;1;2)}f`$ is wrong: the correct one is $`4y(1-y^2z^4)\cos(yz^2)-14y^2z^2\sin(yz^2)`$; at $`P`$ it is $`0`$ anyway.
+
+**Why it works.** Almost everything vanished because $`y=0`$. The instructor warned that the point on the test will be "fairer": values $`\pm\frac1{\sqrt2}`$ are possible, and then the coefficients contain $`\sqrt2`$ (as in [variant C](test1-variants.md#variant-c)).
+
+<a id="task-2"></a>
+## Problem 2: constrained extremum
+
+**The scheme (as at the consultation).**
+
+1. **The Lagrange function:** $`\mathcal L(x;y;z;\lambda)=f(x;y;z)-\lambda\,\varphi(x;y;z)`$, where $`M=\{\varphi=0\}`$. The sign in front of $`\lambda`$ does not matter: the seminar of 9 September used "plus", the consultation "minus". Changing the sign only changes the sign of $`\lambda`$, and the matrix $`\widetilde H`$ at a stationary point stays the same.
+2. **Stationary points of $`\mathcal L`$:** all four first-order partial derivatives vanish; the fourth equation is the condition $`\varphi=0`$ itself.
+3. **Solve the system.** There is no general method; the problems are chosen so that they can be solved. The usual move: the equation in one variable factorises ($`6x(1-\lambda x)=0`$) — treat both cases; express the other variables through $`\lambda`$ and substitute them into the condition — this gives an equation for $`\lambda`$. Prove $`\lambda\ne0`$ first (usually "otherwise $`2=0`$"), and only then divide. Dropping $`\lambda`$ gives the candidate points in $`\mathbb R^3`$.
+4. **The bordered Hessian** at an arbitrary point; the border goes into the first row and the first column, as on the board:
+```math
+\widetilde H=\begin{pmatrix}0&\varphi_x&\varphi_y&\varphi_z\\ \varphi_x&\mathcal L_{xx}&\mathcal L_{xy}&\mathcal L_{xz}\\ \varphi_y&\mathcal L_{xy}&\mathcal L_{yy}&\mathcal L_{yz}\\ \varphi_z&\mathcal L_{xz}&\mathcal L_{yz}&\mathcal L_{zz}\end{pmatrix}.
+```
+5. **Minors.** For $`n=3`$, $`m=1`$ one checks $`n-m=2`$ leading minors: $`\Delta_3`$ — the top-left $`3\times3`$ (border, $`x`$, $`y`$) — and $`\Delta_4=\det\widetilde H`$. First in general form, then substitute each point together with its $`\lambda`$.
+6. **Conclusion** from the table.
+
+| $`\Delta_3`$ | $`\Delta_4`$ | Conclusion |
 |---|---|---|
-| Kummer | $`x_n\frac{a_n}{a_{n+1}}-x_{n+1}\ge\alpha>0`$ | $`x_n\frac{a_n}{a_{n+1}}-x_{n+1}\le0`$ and $`\sum\frac1{x_n}`$ diverges |
-| d'Alembert | $`\frac{a_n}{a_{n+1}}\ge1+\beta`$, $`\beta>0`$ | $`\frac{a_n}{a_{n+1}}\le1`$ |
-| Raabe | $`\frac{a_n}{a_{n+1}}\ge1+\frac{1+\gamma}n`$, $`\gamma>0`$ | $`\frac{a_n}{a_{n+1}}\le1+\frac1n`$ |
-| Cauchy | $`\sqrt[n]{a_n}\le q<1`$ | $`\sqrt[n]{a_n}\ge1`$ for infinitely many $`n`$ |
-| Cauchy (limit form) | $`\sqrt[k]{a_k}\to L<1`$ | $`\sqrt[k]{a_k}\to L>1`$ |
-| Leibniz | signs alternate, $`\lvert a_k\rvert`$ is non-increasing, $`a_k\to0`$ | — |
+| $`<0`$ | $`<0`$ | constrained local minimum: both signs equal $`(-1)^m=-1`$ |
+| $`>0`$ | $`<0`$ | constrained local maximum: the signs alternate, starting with $`(-1)^{m+1}=+1`$ |
+| $`<0`$ | $`>0`$ | no extremum |
+| $`>0`$ | $`>0`$ | no extremum |
 
-**How to write a proof so as not to lose marks.**
+This is [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1) with $`n=3`$, $`m=1`$. The theorem does not cover $`\Delta_k=0`$, but this case will not occur on the test: a zero is a reason to recheck the arithmetic.
 
-- Name explicitly the index from which the inequality holds, and refer to "finitely many terms do not matter".
-- Before multiplying or dividing an inequality, say that the factor is positive.
-- At the end name the criterion used: "the partial sums of a non-negative series are bounded, hence it converges".
+**Quick formulas.** If $`f`$ and $`\varphi`$ are sums of functions of single variables (as in all the examples below), there are no mixed derivatives: $`\mathcal L_{xy}=\mathcal L_{xz}=\mathcal L_{yz}=0`$. Expansion along the first row gives
+```math
+\Delta_3=-\bigl(\varphi_x^2\,\mathcal L_{yy}+\varphi_y^2\,\mathcal L_{xx}\bigr),\qquad
+\Delta_4=-\bigl(\varphi_x^2\,\mathcal L_{yy}\mathcal L_{zz}+\varphi_y^2\,\mathcal L_{xx}\mathcal L_{zz}+\varphi_z^2\,\mathcal L_{xx}\mathcal L_{yy}\bigr).
+```
+On the test, better write out this line of the expansion rather than only its result.
 
-## Task 4: testing series for convergence
+**Careful: where the border goes.** If the gradient of $`\varphi`$ is written in the last row and the last column (as in some notes), the top-left minor of order three is the determinant of the block $`\mathcal L_{xx},\dots`$ without the border, and it gives a wrong answer: in Example 1'.3 it equals $`-216`$ at the maximum point, and the maximum "turns into" a minimum. In that layout $`\Delta_3`$ is the minor on the rows and columns of $`x`$, $`y`$ and the border. It is simpler to put the border first.
 
-**Order of actions.**
+**A check without minors.** The minors encode the sign of $`d^2\mathcal L`$ on the tangent plane $`\{\varphi_x\,dx+\varphi_y\,dy+\varphi_z\,dz=0\}`$: positive definite — a minimum, negative definite — a maximum, indefinite — no extremum. If $`H_{\mathcal L}`$ is diagonal and all its entries have the same sign, the sign is visible at once.
 
-1. **Does the general term tend to zero?** If not — divergent, done ([4.7, 3)](hw4-series-inequalities-bases.md)).
-2. **Sign-changing?** Check Leibniz. If the series has zeros or the signs alternate in groups, drop the zeros or group the terms ([4.12](hw4-series-inequalities-bases.md)).
-3. **Factorials, powers $`q^k`$, $`k^k`$?** Compute $`\frac{a_k}{a_{k+1}}`$. Limit greater than $`1`$ — converges, less than $`1`$ — diverges.
-4. **The limit of the ratio equals $`1`$?** D'Alembert does not work. Compute $`R_k=k\bigl(\frac{a_k}{a_{k+1}}-1\bigr)`$: limit greater than $`1`$ — converges, less than $`1`$ — diverges ([4.9](hw4-series-inequalities-bases.md)).
-5. **Powers, roots, rational expressions in $`k`$?** Bring to the form $`\frac{C_k}{k^\alpha}`$ with $`0<M_1\le C_k\le M_2`$; converges ⟺ $`\alpha>1`$ ([3.11](hw3-numerical-series.md), [4.8](hw4-series-inequalities-bases.md)). A difference of roots — multiply by the conjugate.
-6. **A $`k`$-th power as a whole?** Cauchy's root test.
-7. **Logarithms of the form $`\frac1{k\ln^pk}`$?** The integral test.
-8. **An irregular series** (terms defined piecewise)? Estimate the partial sums directly ([4.7, 2)](hw4-series-inequalities-bases.md)).
+<a id="ex-1p-3"></a>
+### Example 1'.3 (consultation): $`3x^2+2y+6z`$ on $`2x^3+y^2+9z^2=4`$
 
-**Reference series.**
+**Statement.** Find all points of constrained local extremum of $`f(x;y;z)=3x^2+2y+6z`$ on the set $`M=\{(x;y;z)\in\mathbb R^3:\ 2x^3+y^2+9z^2=4\}`$. Here $`n=3`$, $`m=1`$.
 
-| Series | Converges |
-|---|---|
-| $`\sum q^k`$ | for $`\lvert q\rvert<1`$ |
-| $`\sum\frac1{k^\alpha}`$ | for $`\alpha>1`$ |
-| $`\sum\frac{1}{k\ln^pk}`$ | for $`p>1`$ |
-| $`\sum\frac1{k(k+1)}`$, $`\sum\frac1{k!}`$ | yes |
-| $`\sum\frac{(-1)^k}{k^\alpha}`$ | for $`\alpha>0`$ (absolutely for $`\alpha>1`$) |
+**1. The Lagrange function.** $`\mathcal L=3x^2+2y+6z-\lambda\,(2x^3+y^2+9z^2-4)`$.
 
-**Useful limits and inequalities.** $`\bigl(1+\frac1k\bigr)^k\uparrow e`$, so $`\bigl(1+\frac1k\bigr)^k<e`$ for all $`k`$; $`\sqrt[k]k\to1`$; $`1+t\le e^t`$; $`(1+x)^\alpha\ge1+\alpha x`$ for $`\alpha\ge1`$, $`x\ge0`$; $`\ln(k!)\le k\ln k`$.
+**2. The system.**
+```math
+\begin{cases}6x-6\lambda x^2=0,\\ 2-2\lambda y=0,\\ 6-18\lambda z=0,\\ 2x^3+y^2+9z^2=4.\end{cases}
+```
+From the second equation $`\lambda y=1`$, so $`\lambda\ne0`$ and $`y=\frac1\lambda`$; from the third $`z=\frac1{3\lambda}`$. The first one: $`6x(1-\lambda x)=0`$.
 
-**Typical mistakes.**
+- *Case $`x=0`$.* The condition gives $`\frac1{\lambda^2}+9\cdot\frac1{9\lambda^2}=4`$, that is, $`\lambda^2=\frac12`$, $`\lambda=\pm\frac1{\sqrt2}`$. The points $`v^{(1)}=\bigl(0;-\sqrt2;-\frac{\sqrt2}3\bigr)`$ with $`\lambda=-\frac1{\sqrt2}`$ and $`v^{(2)}=\bigl(0;\sqrt2;\frac{\sqrt2}3\bigr)`$ with $`\lambda=\frac1{\sqrt2}`$.
+- *Case $`x=\frac1\lambda`$.* The condition gives $`\frac2{\lambda^3}+\frac2{\lambda^2}=4`$, that is, $`2\lambda^3-\lambda-1=0`$. The root $`\lambda=1`$ is guessed, and $`2\lambda^3-\lambda-1=(\lambda-1)(2\lambda^2+2\lambda+1)`$ with $`2\lambda^2+2\lambda+1=2\bigl(\lambda+\frac12\bigr)^2+\frac12>0`$. The point $`v^{(3)}=\bigl(1;1;\frac13\bigr)`$ with $`\lambda=1`$. (There will be no cubic equations on the test.)
 
-- The ratio upside down: with $`\frac{a_k}{a_{k+1}}\to L`$ the series converges for $`L>1`$, not for $`L<1`$.
-- The conclusion "the limit of the ratio is $`1`$, hence divergent" — no, the test simply does not apply.
-- Leibniz's test applied without checking monotonicity of the absolute values, or in the presence of zero terms.
-- "$`a_k\to0`$, hence convergent" — the necessary condition is not sufficient.
-- Comparison $`a_k\le b_k`$ for sign-changing series — comparison tests only work for non-negative ones.
-- The borderline value of a parameter not treated separately ($`\beta=e`$ in [4.8](hw4-series-inequalities-bases.md)).
+**3. The matrix and the minors.** $`\varphi_x=6x^2`$, $`\varphi_y=2y`$, $`\varphi_z=18z`$; $`\mathcal L_{xx}=6-12\lambda x`$, $`\mathcal L_{yy}=-2\lambda`$, $`\mathcal L_{zz}=-18\lambda`$, the mixed ones are zero.
+```math
+\widetilde H=\begin{pmatrix}0&6x^2&2y&18z\\6x^2&6-12\lambda x&0&0\\2y&0&-2\lambda&0\\18z&0&0&-18\lambda\end{pmatrix},
+```
+```math
+\Delta_3=72\lambda x^4-4y^2(6-12\lambda x),\qquad
+\Delta_4=-1296\lambda^2x^4+72\lambda(6-12\lambda x)\,y^2+648\lambda(6-12\lambda x)\,z^2 .
+```
+
+**4. Signs.**
+
+| Point | $`\lambda`$ | $`\Delta_3`$ | $`\Delta_4`$ | Conclusion | $`f`$ |
+|---|---|---|---|---|---|
+| $`v^{(1)}=\bigl(0;-\sqrt2;-\frac{\sqrt2}3\bigr)`$ | $`-\frac1{\sqrt2}`$ | $`-48`$ | $`-864\sqrt2`$ | minimum | $`-4\sqrt2`$ |
+| $`v^{(2)}=\bigl(0;\sqrt2;\frac{\sqrt2}3\bigr)`$ | $`\frac1{\sqrt2}`$ | $`-48`$ | $`864\sqrt2`$ | no extremum | $`4\sqrt2`$ |
+| $`v^{(3)}=\bigl(1;1;\frac13\bigr)`$ | $`1`$ | $`96`$ | $`-2160`$ | maximum | $`7`$ |
+
+For example, at $`v^{(1)}`$: $`x=0`$, $`6-12\lambda x=6`$, $`y^2=2`$, $`z^2=\frac29`$, so $`\Delta_3=-4\cdot2\cdot6=-48`$ and $`\Delta_4=72\cdot\bigl(-\frac1{\sqrt2}\bigr)\cdot6\cdot2+648\cdot\bigl(-\frac1{\sqrt2}\bigr)\cdot6\cdot\frac29=-\frac{864}{\sqrt2}-\frac{864}{\sqrt2}=-864\sqrt2`$.
+
+**Answer.** $`\bigl(0;-\sqrt2;-\frac{\sqrt2}3\bigr)`$ is a point of constrained local minimum, $`f=-4\sqrt2`$; $`\bigl(1;1;\frac13\bigr)`$ is a point of constrained local maximum, $`f=7`$; at $`\bigl(0;\sqrt2;\frac{\sqrt2}3\bigr)`$ there is no extremum. The sign check is not on the consultation frames; it was recomputed here.
+
+**Why it works.** At $`v^{(1)}`$ the matrix $`H_{\mathcal L}=\operatorname{diag}(6;\sqrt2;9\sqrt2)`$ is positive definite on the whole of $`\mathbb R^3`$, at $`v^{(3)}`$ the matrix $`\operatorname{diag}(-6;-2;-18)`$ is negative definite — the minors confirm this. At $`v^{(2)}`$ the tangent plane is given by $`dy=-3\,dz`$, and on it $`d^2\mathcal L=6\,dx^2-18\sqrt2\,dz^2`$ takes both signs. The set $`M`$ is unbounded ($`x\to-\infty`$ is allowed), so the argument "the greatest value is attained on a compact set" does not work here — the minors are needed.
+
+## Typical mistakes
+
+**Problem 1.**
+
+- Dividing by $`|\alpha|!`$ instead of $`\alpha!`$; a forgotten division by $`2`$ for pure second derivatives or an extra one for mixed derivatives.
+- The point substituted before differentiating.
+- The remainder written at $`P`$ instead of the intermediate point; $`t_0\in(0;1)`$ not stated; the quantifiers swapped ("$`\exists\,t_0`$ for all $`X`$" instead of "for every $`X`$ there is $`t_0`$").
+- A remainder written in problem 1a, or no explanation of why there is none.
+- Numbers without intermediate steps: the marker cannot see where they came from.
+
+**Problem 2.**
+
+- A case lost when factorising: $`x=0`$ **or** $`1-\lambda x=0`$.
+- Dividing by $`\lambda`$ without proving $`\lambda\ne0`$.
+- The border in the last row and the "top-left minor" — a wrong $`\Delta_3`$.
+- The sign rule for unconstrained extrema ("all minors positive — a minimum") instead of the rule with $`(-1)^m`$.
+- A stationary point declared an extremum without a check; the answer does not say that a point has no extremum.
 
 <a id="seminar-notes"></a>
 ## What to review in the seminar notes
 
-The [notes](index.md#seminar-notes) show the form in which the theory was given at the seminar. At the test it is sensible to write in the same notation: eventually positive sequences, the ratio $`\frac{a_n}{a_{n+1}}`$, the Lagrange function with a plus sign, the bordered Hessian.
+The [notes](index.md#seminar-notes) show the form in which the theory was given at the seminar. At the test it is sensible to write in the same notation: $`D^\alpha f`$ and $`\alpha!`$, the intermediate point $`P+t_0(X-P)`$, the bordered Hessian with the border first.
 
-| Item | What to review | Where |
+| Problem | What to review | Where |
 |---|---|---|
-| 1.1 | Taylor's formula with multi-indices; why the remainder of a polynomial is zero | [Example 2.2](notes-1-taylor-extremum.md#ex-2-2) |
-| 1.2 | the table of derivatives, the factors $`\frac1{\alpha!}`$, the remainder at $`u+t_0h`$ | [Example 4.1](notes-1-taylor-extremum.md#ex-4-1), [Remark 2.1](notes-1-taylor-extremum.md#rem-2-1) |
-| 2.1 | the bordered Hessian for linear constraints: one constraint and two | [Example 4.2](notes-1-taylor-extremum.md#ex-4-2), [Example 5.1](notes-1-taylor-extremum.md#ex-5-1) |
-| 2.2 | the statement of the theorem and the sign table of the minors | [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1), [Example 3.2](notes-1-taylor-extremum.md#ex-3-2) |
-| 3 | the proofs from the board: comparison, Cauchy, generalised comparison, Kummer, d'Alembert, Raabe, Raabe ⟹ d'Alembert | [part 2](notes-2-series-basics.md), [Theorem 10.2 and its corollaries](notes-3-kummer-dalembert-raabe.md#thm-10-2), [Remark 14.2](notes-4-examples-tests.md#rem-14-2) |
-| 4 | series with a parameter and examples where the tests fail | [Examples 13.1, 13.2](notes-4-examples-tests.md#ex-13-1), [14.1](notes-4-examples-tests.md#ex-14-1), [10.4](notes-3-kummer-dalembert-raabe.md#ex-10-4), [Remark 12.2](notes-3-kummer-dalembert-raabe.md#rem-12-2) |
+| 1a | Taylor's formula with multi-indices; why the remainder of a polynomial is zero | [Example 2.2](notes-1-taylor-extremum.md#ex-2-2), [Example 1'.1](#ex-1p-1) |
+| 1b | the table of derivatives, the factors $`\frac1{\alpha!}`$, the remainder at $`u+t_0h`$ | [Example 4.1](notes-1-taylor-extremum.md#ex-4-1), [Remark 2.1](notes-1-taylor-extremum.md#rem-2-1), [Example 1'.2](#ex-1p-2) |
+| 2 | the statement of the theorem and the sign table of the minors | [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1), [Example 3.2](notes-1-taylor-extremum.md#ex-3-2) |
+| 2 | the bordered Hessian in examples: $`n=2`$; $`n=4`$, $`m=2`$; $`n=3`$, $`m=1`$, as on the test | [Example 4.2](notes-1-taylor-extremum.md#ex-4-2), [Example 5.1](notes-1-taylor-extremum.md#ex-5-1), [Example 1'.3](#ex-1p-3) |
 
-At the seminar Problem 2.3 was solved in the $`y^2`$ variant ([Example 5.1](notes-1-taylor-extremum.md#ex-5-1)), while HW 2 has $`y^3`$. If a similar problem comes up, check the power in the statement first: the answers differ.
+## Preparation plan (16–19 November)
 
-## Preparation plan
+**Day 1 — Taylor.**
 
-**Day 1 — Taylor and extrema.**
+1. Read the section ["Problem 1"](#task-1) and "The general idea" in [HW 1](hw1-taylor.md).
+2. Without looking at the solutions, expand Example 1'.1 and HW 1.2 (the answers differ in the signs of the odd terms — a good check).
+3. Example 1'.2 and HW 1.4 up to order two, the remainder in general form only.
 
-1. Read the sections "The general idea" in [HW 1](hw1-taylor.md) and "Why the Lagrange method works" in [HW 2](hw2-conditional-extremum.md), then [part 1 of the notes](notes-1-taylor-extremum.md), especially Theorem 3.1 with its sign table.
-2. Solve 1.2 and 1.4 again without looking at the solution, then 2.2 and 2'.1. Compare.
-3. Solve items 1.1, 1.2, 2.1, 2.2 of [variant A](test1-variants.md) against the clock: 40 minutes.
+**Day 2 — constrained extremum.**
 
-**Day 2 — series.**
+1. Read [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1) and the section ["Problem 2"](#task-2); derive the quick formulas for $`\Delta_3`$, $`\Delta_4`$ yourself.
+2. Solve Example 1'.3 completely, with the minors, without looking at the solution.
+3. As a warm-up, HW 2.1 by the bordered Hessian ($`n=2`$, one minor).
 
-1. Learn the table of tests and the three basic facts; read [parts 2–4 of the notes](notes-2-series-basics.md).
-2. In writing, with the notebook closed, prove 3.4, 3.6, 3.7, 3.9, 4.11 and Cauchy's root test ([Theorem 8.2](notes-2-series-basics.md#thm-8-2)). Compare with the solutions.
-3. Work through 4.7–4.9 and 4.12 again.
-4. Solve tasks 3 and 4 of [variant A](test1-variants.md): 40 minutes.
+**Day 3 — practice variants.** [Variant A](test1-variants.md#variant-a) against the clock, without a calculator (aim for an hour and a half; check the actual length of the test), then check against the solutions; then [variant B](test1-variants.md#variant-b).
 
-**Day 3 — a run-through.**
-
-1. [Variant B](test1-variants.md) in full against the clock (80–90 minutes), check against the solutions.
-2. Go over the mistakes and revise the corresponding places.
-3. [Variant C](test1-variants.md) in full against the clock.
+**Day 4 — a run-through.** [Variant C](test1-variants.md#variant-c) against the clock; go over the mistakes of all three variants; answer the self-check questions below.
 
 ## Self-check before the test
 
-1. What is the coefficient of $`h_1h_2h_3`$ in $`d^3f(h)`$?
-2. At which point are the derivatives in the Lagrange remainder taken?
-3. Why is the Taylor expansion of a polynomial a finite sum?
-4. When can one say "the stationary point is a maximum" without computing the second differential?
-5. On which vectors is $`d^2L`$ examined?
-6. Which sequence $`x_n`$ in Kummer's test gives Raabe's test?
-7. What does Raabe's test say about a series with $`\frac{a_n}{a_{n+1}}=1+\frac1{2n+1}`$?
-8. Does $`\sum\frac{e^kk!}{k^k}`$ converge, and why does the limit form not help here?
-9. Which three conditions does Leibniz's test need?
-10. Give an example of a divergent series with bounded partial sums.
-11. Which minors of the bordered Hessian are checked for $`n=4`$, $`m=2`$, and which signs mean a maximum?
-12. Why are "infinitely many $`n`$" enough for divergence in Cauchy's test but not in d'Alembert's?
+1. What is $`(2;0;1)!`$, and what is $`D^{(1;1;1)}f(P)`$ divided by in Taylor's formula?
+2. How many multi-indices $`\alpha`$ with $`|\alpha|=3`$ does a function of three variables have? And with $`|\alpha|=2`$?
+3. Why is there no remainder in problem 1a?
+4. How is the intermediate point of the remainder written for $`P=(2;0;1)`$?
+5. Why can one not write "$`\exists\,t_0\in(0;1)`$: the equality holds for all $`(x;y;z)`$"?
+6. How many minors of the bordered Hessian are checked for $`n=3`$, $`m=1`$, and of which orders?
+7. The signs of $`(\Delta_3;\Delta_4)`$ are $`(+;-)`$. Conclusion? And $`(-;-)`$? And $`(-;+)`$?
+8. The matrix was written with the border in the last row and column. Which minor of order three should be taken?
+9. Does the answer change if one takes $`\mathcal L=f+\lambda\varphi`$ instead of $`f-\lambda\varphi`$?
+10. All three stationary points came out as maxima. What to do?
+11. What are $`\sin\frac{3\pi}4`$ and $`\cos\frac{5\pi}4`$?
+12. When may one refer to the compactness of $`M`$ in problem 2, and what does it not replace?
 
 <details>
 <summary>Answers</summary>
 
-1. $`6f_{xyz}`$: the multinomial coefficient $`\frac{3!}{1!\,1!\,1!}`$.
-2. At the intermediate point $`c=a+\theta h`$, $`\theta\in(0,1)`$.
-3. All derivatives of order above the degree of the polynomial vanish, so the remainder is zero.
-4. When the set $`M`$ is compact: the greatest value is attained and must be attained at a stationary point; it remains to compare the values.
-5. On tangent vectors: $`d\varphi_j(h)=0`$ for all constraints.
-6. $`x_n=n`$.
-7. It diverges: $`1+\frac1{2n+1}\le1+\frac1n`$.
-8. It diverges. The limit of the ratio is $`1`$, but $`\frac{a_k}{a_{k+1}}=\frac1e\bigl(1+\frac1k\bigr)^k<1`$ for all $`k`$ — the pre-limit form of d'Alembert's test applies.
-9. The signs alternate, the absolute values are non-increasing, the general term tends to zero.
-10. $`\sum(-1)^k`$, or $`\sum\cos(kx_0)`$ for $`x_0\notin2\pi\mathbb Z`$.
-11. $`\Delta_5`$ and $`\Delta_6`$; a maximum is $`\Delta_5<0`$, $`\Delta_6>0`$, that is, the sign of $`\Delta_k`$ is $`(-1)^{k-m}`$ ([Example 5.1](notes-1-taylor-extremum.md#ex-5-1)).
-12. $`\sqrt[n]{a_n}\ge1`$ means $`a_n\ge1`$, and infinitely many such terms prevent $`a_n\to0`$. A ratio only describes one step: the series of [Example 10.4](notes-3-kummer-dalembert-raabe.md#ex-10-4) grows infinitely often and still converges.
+1. $`(2;0;1)!=2!\cdot0!\cdot1!=2`$; $`D^{(1;1;1)}f(P)`$ is divided by $`(1;1;1)!=1`$.
+2. $`10`$ and $`6`$.
+3. The derivatives of order above the degree of the polynomial vanish identically, so the remainder is zero for every $`t_0`$ and the equality is exact.
+4. $`\bigl(2+t_0(x-2);\ t_0y;\ 1+t_0(z-1)\bigr)`$, $`t_0\in(0;1)`$.
+5. $`t_0`$ depends on the point: every point $`(x;y;z)`$ has its own.
+6. Two: $`\Delta_3`$ and $`\Delta_4`$ (orders $`2m+1,\dots,n+m`$).
+7. $`(+;-)`$ — a maximum, $`(-;-)`$ — a minimum, $`(-;+)`$ — no extremum.
+8. The minor on the rows and columns of $`x`$, $`y`$ and the border, not the top-left one.
+9. No: $`\lambda`$ changes sign, and $`\widetilde H`$ at the stationary point stays the same.
+10. Recheck: the instructor promised that problem 2 has a maximum, a minimum and a point with no extremum.
+11. $`\frac1{\sqrt2}`$ and $`-\frac1{\sqrt2}`$.
+12. If $`M`$ is compact (a sphere, an ellipsoid), $`f`$ attains its greatest and least values on it, and they are among the stationary points. But this does not show that the other points are not extrema: a point with no extremum still needs the minors. In Example 1'.3 the set $`M`$ is not compact.
 </details>

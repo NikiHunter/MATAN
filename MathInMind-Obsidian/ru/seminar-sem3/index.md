@@ -20,7 +20,7 @@ tags: [mathinmind/ru, mathinmind/other]
 | ДЗ 3 | [[ru/seminar-sem3/hw3-numerical-series\|Числовые ряды]] | 3.1–3.11 | сравнение, Куммер, д'Аламбер, Раабе |
 | ДЗ 4 | [[ru/seminar-sem3/hw4-series-inequalities-bases\|Ряды, неравенства, базы]] | 4.1–4.12 | Гёльдер, базы, предельные признаки, интегральный признак, Лейбниц |
 
-**Контрольная 1.** [[ru/seminar-sem3/test1-guide|Как готовиться]] — вероятная структура, алгоритмы по каждому заданию, типичные ошибки и план на три дня; [[ru/seminar-sem3/test1-variants|пробные варианты]] — три варианта в формате 1.1, 1.2, 2.1, 2.2, 3, 4 с решениями.
+**Контрольная 20.11 (Тейлор и условный экстремум).** [[ru/seminar-sem3/test1-guide|Как готовиться]] — формат, объявленный на консультации (задачи 1а, 1б, 2), обещания преподавателя, алгоритмы, разобранные примеры консультации 1'.1–1'.3, типичные ошибки и план; [[ru/seminar-sem3/test1-variants|пробные варианты]] — три варианта в этом формате с решениями. **Контрольная по рядам** (конец ноября — начало декабря): [[ru/seminar-sem3/series-test-guide|как готовиться]] — материал о рядах и пробные задачи.
 
 ## Конспекты семинаров
 
@@ -48,6 +48,8 @@ tags: [mathinmind/ru, mathinmind/other]
 | 28.10 | $\sum\frac{c_k}{k^d}$, ограниченность сумм синусов | [[ru/seminar-sem3/hw3-numerical-series#^p-3-11\|3.11]], [[ru/seminar-sem3/hw3-numerical-series#Задача 3.2\|3.2]] |
 | 30.10 | $\sum\frac{\beta^kk!}{k^k}$, $\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}$, суммы косинусов | [[ru/seminar-sem3/hw4-series-inequalities-bases#Задача 4.8\|4.8]], [[ru/seminar-sem3/hw3-numerical-series#Задача 3.3\|3.3]] |
 | 11.11 | ряд с $c_k\to1$, Раабе ⟹ д'Аламбер, предельные формы | [[ru/seminar-sem3/hw4-series-inequalities-bases#Задача 4.7\|4.7]], [[ru/seminar-sem3/hw4-series-inequalities-bases#Задача 4.4\|4.4]], [[ru/seminar-sem3/hw4-series-inequalities-bases#Задача 4.6 (предельные формы признаков)\|4.6]] |
+| 13.11 | параметрический интеграл, равномерная параметрическая сходимость (пока только в исправленной [OCR-транскрипции](https://github.com/NikiHunter/matan/blob/main/sem3_notes/13_2026-11-13_%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB_%D0%B8_%D1%80%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C.md)) | — |
+| консультация | формат контрольной 20.11, примеры 1'.1–1'.3 ([[ru/seminar-sem3/test1-guide\|разобраны в подготовке]]) | [[ru/seminar-sem3/hw1-taylor#Задача 1.2\|1.2]], [[ru/seminar-sem3/hw1-taylor#Задача 1.4\|1.4]], [[ru/seminar-sem3/hw2-conditional-extremum\|ДЗ 2]] |
 
 ## Ответы одной страницей
 

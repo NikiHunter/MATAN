@@ -7,7 +7,7 @@ tags: [mathinmind/ru, mathinmind/other]
 
 **Русский** · [[en/seminar-sem3/notes-4-examples-tests|English]] · [[es/seminar-sem3/notes-4-examples-tests|Español]]
 
-[[ru/seminar-sem3/notes-3-kummer-dalembert-raabe|← Часть 3: Куммер, д'Аламбер, Раабе]] · [[ru/seminar-sem3/index|Все задания и конспекты]] · [[ru/seminar-sem3/test1-guide|Как готовиться к контрольной →]]
+[[ru/seminar-sem3/notes-3-kummer-dalembert-raabe|← Часть 3: Куммер, д'Аламбер, Раабе]] · [[ru/seminar-sem3/index|Все задания и конспекты]] · [[ru/seminar-sem3/series-test-guide|Как готовиться к контрольной по рядам →]]
 
 > [!note] Что это
 > Переработанная запись семинаров 28.10, 30.10 и 11.11.2026 по транскрипции из [`sem3_notes`](https://github.com/NikiHunter/matan/blob/main/sem3_notes/README.md). Номера утверждений — как на доске. Пример 12.3 начат 28.10 и закончен 30.10; здесь он собран целиком. В конце — сводка о том, какой признак сильнее; она заменяет неверный вывод из транскрипции.
@@ -164,4 +164,4 @@ $$
 | [[#^ex-14-1\|14.1]] | $c_k=\frac{k^{k+7/2}}{(k+7/2)^k}$, «$\lim c_k=\frac77=1$» и длинные попытки пересчитать | $c_k=\frac{k^{k+1/k}}{(k+1/k)^k}$, $\lim c_k=\frac11=1$ |
 | [[#^prop-14-3\|14.3]] | вывод «Коши ⟹ д'Аламбер ⟹ Раабе, каждый следующий тоньше» | см. [[#Как признаки соотносятся между собой\|сводку]]: д'Аламбер слабее обоих, Коши и Раабе несравнимы |
 
-[[ru/seminar-sem3/notes-3-kummer-dalembert-raabe|← Часть 3]] · [[ru/seminar-sem3/index|Все задания и конспекты]] · [[ru/seminar-sem3/test1-guide|Как готовиться к контрольной →]]
+[[ru/seminar-sem3/notes-3-kummer-dalembert-raabe|← Часть 3]] · [[ru/seminar-sem3/index|Все задания и конспекты]] · [[ru/seminar-sem3/series-test-guide|Как готовиться к контрольной по рядам →]]

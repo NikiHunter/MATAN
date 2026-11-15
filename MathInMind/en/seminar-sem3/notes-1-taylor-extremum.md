@@ -6,7 +6,7 @@ lang: en
 
 [Русский](../../ru/seminar-sem3/notes-1-taylor-extremum.md) · **English** · [Español](../../es/seminar-sem3/notes-1-taylor-extremum.md)
 
-[All homework and notes](index.md) · [Part 2: basics of series →](notes-2-series-basics.md)
+[All homework and notes](index.md) · [How to prepare for the test of 20 Nov](test1-guide.md) · [Part 2: basics of series →](notes-2-series-basics.md)
 
 > **What this is.** A reworked record of the seminars of 4, 9, 18 and 20 September 2026. It is based on the OCR transcription of the handwritten boards in [`sem3_notes`](../../../sem3_notes/README.md) (in Russian). Statement numbers are kept as on the board (2.1, 3.1, …) so that they match the teacher's references. Formal phrasing has been replaced by plain language, and every statement gets a "why it works" note and a link to the homework problem. All computations were checked in sympy. Recognition errors have been corrected and are listed [at the end of the page](#fixes).
 
@@ -253,4 +253,4 @@ For $`m=2`$ a minimum means $`\Delta_5>0`$, $`\Delta_6>0`$; a maximum means $`\D
 | [4.2](#ex-4-2), statement | $`M=\{x=y^3\}`$ | $`M=\{x=y\}`$: the constraint is $`g=x-y`$, as in Problem 2.1 |
 | [5.1](#ex-5-1), statement | $`2t^3`$ | $`2t^2`$: so in the Lagrange function and in the answer $`f=\frac43`$ |
 
-[All homework and notes](index.md) · [Part 2: basics of series →](notes-2-series-basics.md)
+[All homework and notes](index.md) · [How to prepare for the test of 20 Nov](test1-guide.md) · [Part 2: basics of series →](notes-2-series-basics.md)

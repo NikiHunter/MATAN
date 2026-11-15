@@ -17,6 +17,8 @@ This page solves problems 2.1–2.3 (HW 2) and 2'.1–2'.3 (the constrained-extr
 
 > **At the seminar.** On 9 Sep the sufficient condition was stated through the bordered Hessian: [Theorem 3.1](notes-1-taylor-extremum.md#thm-3-1), with a table of the signs of the minors. It is handy when the constraint cannot be solved explicitly.
 
+> **At the consultation.** [Example 1'.3](test1-guide.md#ex-1p-3): a problem of the type that will be on the test of 20 November ($`n=3`$, $`m=1`$), solved to the end with the bordered Hessian — a minimum, a maximum and a point with no extremum.
+
 On the set $`M=\{\varphi=0\}`$ not every displacement is allowed, only those tangent to $`M`$: the vectors $`h`$ with $`d\varphi_j(h)=0`$. At an extremum $`f`$ must not change to first order along allowed directions, that is, $`df(h)=0`$ for every tangent $`h`$. This means precisely that $`\nabla f`$ is orthogonal to the tangent space, i.e. lies in the span of the normals $`\nabla\varphi_j`$. The independence of the gradients is needed so that the tangent space really describes $`M`$ near the point ([implicit mapping theorem](../lectures-2025-26/lecture-65-66.md#thm-6-6-1)).
 
 Three consequences used below.

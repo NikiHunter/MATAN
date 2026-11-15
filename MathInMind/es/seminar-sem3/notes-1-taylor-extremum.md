@@ -6,7 +6,7 @@ lang: es
 
 [Русский](../../ru/seminar-sem3/notes-1-taylor-extremum.md) · [English](../../en/seminar-sem3/notes-1-taylor-extremum.md) · **Español**
 
-[Todas las tareas y apuntes](index.md) · [Parte 2: fundamentos de series →](notes-2-series-basics.md)
+[Todas las tareas y apuntes](index.md) · [Cómo prepararse para el control del 20 nov.](test1-guide.md) · [Parte 2: fundamentos de series →](notes-2-series-basics.md)
 
 > **Qué es esto.** Una versión reelaborada de los seminarios del 4, 9, 18 y 20 de septiembre de 2026. La base es la transcripción OCR de las pizarras manuscritas de la carpeta [`sem3_notes`](../../../sem3_notes/README.md) (en ruso). Los números de los enunciados se conservan como en la pizarra (2.1, 3.1, …) para que coincidan con las referencias del profesor. La redacción formal se ha sustituido por lenguaje llano, y cada enunciado lleva una nota «por qué funciona» y un enlace al problema de la tarea. Todos los cálculos se comprobaron con sympy. Los errores de reconocimiento están corregidos y se enumeran [al final de la página](#fixes).
 
@@ -253,4 +253,4 @@ Para $`m=2`$, mínimo significa $`\Delta_5>0`$, $`\Delta_6>0`$; máximo signific
 | [4.2](#ex-4-2), enunciado | $`M=\{x=y^3\}`$ | $`M=\{x=y\}`$: la ligadura es $`g=x-y`$, como en el problema 2.1 |
 | [5.1](#ex-5-1), enunciado | $`2t^3`$ | $`2t^2`$: así está en la función de Lagrange y en la respuesta $`f=\frac43`$ |
 
-[Todas las tareas y apuntes](index.md) · [Parte 2: fundamentos de series →](notes-2-series-basics.md)
+[Todas las tareas y apuntes](index.md) · [Cómo prepararse para el control del 20 nov.](test1-guide.md) · [Parte 2: fundamentos de series →](notes-2-series-basics.md)

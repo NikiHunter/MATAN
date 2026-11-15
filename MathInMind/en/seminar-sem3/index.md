@@ -19,7 +19,7 @@ Problems are carried over from one assignment to the next under the same numbers
 | HW 3 | [Numerical series](hw3-numerical-series.md) | 3.1–3.11 | comparison, Kummer, d'Alembert, Raabe |
 | HW 4 | [Series, inequalities, bases](hw4-series-inequalities-bases.md) | 4.1–4.12 | Hölder, bases, limit tests, integral test, Leibniz |
 
-**Test 1.** [How to prepare](test1-guide.md) — the likely structure, methods for each task, typical mistakes and a three-day plan; [practice variants](test1-variants.md) — three variants in the format 1.1, 1.2, 2.1, 2.2, 3, 4 with solutions.
+**Test of 20 November (Taylor and constrained extrema).** [How to prepare](test1-guide.md) — the format announced at the consultation (problems 1a, 1b, 2), the instructor's promises, methods, the worked consultation examples 1'.1–1'.3, typical mistakes and a plan; [practice variants](test1-variants.md) — three variants in this format with solutions. **Series test** (end of November or beginning of December): [how to prepare](series-test-guide.md) — the material on series and practice problems.
 
 <a id="seminar-notes"></a>
 ## Seminar notes
@@ -48,6 +48,8 @@ Records of the boards from 4 September to 11 November 2026, reworked from the OC
 | 28 Oct | $`\sum\frac{c_k}{k^d}`$, bounded sums of sines | [3.11](hw3-numerical-series.md#p-3-11), [3.2](hw3-numerical-series.md#p-3-2) |
 | 30 Oct | $`\sum\frac{\beta^kk!}{k^k}`$, $`\sum\frac{\sqrt{k+1}-\sqrt{k-1}}{k^d}`$, sums of cosines | [4.8](hw4-series-inequalities-bases.md#p-4-8), [3.3](hw3-numerical-series.md#p-3-3) |
 | 11 Nov | a series with $`c_k\to1`$, Raabe ⟹ d'Alembert, limit forms | [4.7](hw4-series-inequalities-bases.md#p-4-7), [4.4](hw4-series-inequalities-bases.md#p-4-4), [4.6](hw4-series-inequalities-bases.md#p-4-6) |
+| 13 Nov | the parameter integral, uniform parametric convergence (so far only in the corrected [OCR transcription](../../../sem3_notes/13_2026-11-13_Параметрический_интеграл_и_равномерная_сходимость.md), in Russian) | — |
+| consultation | the format of the test of 20 Nov, Examples 1'.1–1'.3 ([worked out in the guide](test1-guide.md)) | [1.2](hw1-taylor.md#p-1-2), [1.4](hw1-taylor.md#p-1-4), [HW 2](hw2-conditional-extremum.md) |
 
 ## Answers on one page
 

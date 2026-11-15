@@ -6,7 +6,7 @@ lang: es
 
 [Русский](../../ru/seminar-sem3/notes-4-examples-tests.md) · [English](../../en/seminar-sem3/notes-4-examples-tests.md) · **Español**
 
-[← Parte 3: Kummer, d'Alembert, Raabe](notes-3-kummer-dalembert-raabe.md) · [Todas las tareas y apuntes](index.md) · [Cómo prepararse para el control →](test1-guide.md)
+[← Parte 3: Kummer, d'Alembert, Raabe](notes-3-kummer-dalembert-raabe.md) · [Todas las tareas y apuntes](index.md) · [Cómo prepararse para el control de series →](series-test-guide.md)
 
 > **Qué es esto.** Una versión reelaborada de los seminarios del 28 y 30 de octubre y del 11 de noviembre de 2026, a partir de la transcripción de [`sem3_notes`](../../../sem3_notes/README.md). Los números de los enunciados son los de la pizarra. El ejemplo 12.3 se empezó el 28 de octubre y se terminó el 30; aquí está completo. Al final hay un resumen de qué criterio es más fuerte; sustituye una conclusión incorrecta de la transcripción.
 
@@ -163,4 +163,4 @@ En resumen: d'Alembert es el más débil; Cauchy y Raabe deciden todo lo que dec
 | [14.1](#ex-14-1) | $`c_k=\frac{k^{k+7/2}}{(k+7/2)^k}`$, «$`\lim c_k=\frac77=1`$» y largos intentos de recalcular | $`c_k=\frac{k^{k+1/k}}{(k+1/k)^k}`$, $`\lim c_k=\frac11=1`$ |
 | [14.3](#prop-14-3) | la conclusión «Cauchy ⟹ d'Alembert ⟹ Raabe, cada uno más fino que el anterior» | véase el [resumen](#tests-compared): d'Alembert es más débil que los otros dos, y Cauchy y Raabe no son comparables |
 
-[← Parte 3](notes-3-kummer-dalembert-raabe.md) · [Todas las tareas y apuntes](index.md) · [Cómo prepararse para el control →](test1-guide.md)
+[← Parte 3](notes-3-kummer-dalembert-raabe.md) · [Todas las tareas y apuntes](index.md) · [Cómo prepararse para el control de series →](series-test-guide.md)

@@ -77,6 +77,9 @@ En las variables originales $h_1=x-1$, $h_2=y+1$, $h_3=z-2$.
 
 ## Problema 1.2
 
+> [!note] En la consulta
+> [[es/seminar-sem3/test1-guide#Ejemplo 1'.1 (consulta): un polinomio de grado cuatro|Ejemplo 1'.1]]: el mismo polinomio en el punto $(3;-2)$. Como $f(-x;-y)=f(x;y)$, la respuesta de allí solo difiere de la de abajo en los signos de los términos de grado impar.
+
 **Enunciado.** $f(x,y)=5x^4-4x^2y^2+3y^4-2xy+1$. Desarrollar por la fórmula de Taylor en el punto $(-3;2)$.
 
 **Solución.** Pongamos $x=-3+h_1$, $y=2+h_2$ y hallemos las diferenciales en $a=(-3;2)$.
@@ -169,6 +172,9 @@ Es la misma suma $\frac1{4!}\sum_{|\alpha|=4}\frac{4!}{\alpha!}\partial^\alpha f
 
 > [!note] En el seminario
 > [[es/seminar-sem3/notes-1-taylor-extremum#^ex-4-1|Ejemplo 4.1]] (18 sep.): todas las derivadas hasta el orden dos y sus valores en el punto, reunidos en una tabla.
+
+> [!note] En la consulta
+> En el control del 20 de noviembre, en un problema así (hasta orden dos) el resto puede quedarse en forma general: no hacen falta las derivadas de tercer orden explícitas como en la respuesta de abajo ([[es/seminar-sem3/test1-guide#^ex-1p-2|ejemplo 1'.2]]).
 
 **Enunciado.** $f(x,y,z)=x^2\sin(xy)\,e^{y+z}$. Hallar la forma explícita del desarrollo de Taylor hasta grado dos con resto en forma de Lagrange en el punto $a=(-1;\pi;2)$.
 

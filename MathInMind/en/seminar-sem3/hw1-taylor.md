@@ -76,6 +76,8 @@ In the original variables $`h_1=x-1`$, $`h_2=y+1`$, $`h_3=z-2`$.
 <a id="p-1-2"></a>
 ## Problem 1.2
 
+> **At the consultation.** [Example 1'.1](test1-guide.md#ex-1p-1): the same polynomial at the point $`(3;-2)`$. Since $`f(-x;-y)=f(x;y)`$, the answer there differs from the one below only in the signs of the odd-degree terms.
+
 **Statement.** $`f(x,y)=5x^4-4x^2y^2+3y^4-2xy+1`$. Expand by Taylor's formula at the point $`(-3;2)`$.
 
 **Solution.** Put $`x=-3+h_1`$, $`y=2+h_2`$ and find the differentials at $`a=(-3;2)`$.
@@ -169,6 +171,8 @@ This is the same sum $`\frac1{4!}\sum_{|\alpha|=4}\frac{4!}{\alpha!}\partial^\al
 ## Problem 1.4
 
 > **At the seminar.** [Example 4.1](notes-1-taylor-extremum.md#ex-4-1) (18 Sep): all derivatives up to order two and their values at the point, collected in one table.
+
+> **At the consultation.** On the test of 20 November the remainder in such a problem (up to order two) may be left in general form: the explicit third-order derivatives, as in the answer below, are not needed ([Example 1'.2](test1-guide.md#ex-1p-2)).
 
 **Statement.** $`f(x,y,z)=x^2\sin(xy)\,e^{y+z}`$. Find the explicit Taylor expansion up to degree two with the Lagrange remainder at the point $`a=(-1;\pi;2)`$.
 
